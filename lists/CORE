@@ -100,8 +100,6 @@ jfsutils
 kbd
 kernel-firmware
 kernel-headers
-kernel-huge-smp
-kernel-modules-smp
 less
 lha
 libao
