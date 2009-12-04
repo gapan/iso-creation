@@ -17,7 +17,6 @@ automake
 automoc4
 bash
 bin
-bind
 binutils
 bison
 bridge-utils
