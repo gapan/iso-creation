@@ -1,6 +1,3 @@
-salix-man
-lvm2
-salixtools
 a2ps
 aaa_base
 aaa_terminfo
@@ -128,6 +125,7 @@ loadlin
 logrotate
 lsof
 lsscsi
+lvm2
 lzo
 m17n-lib
 m4
@@ -183,6 +181,8 @@ reiserfsprogs
 rp-pppoe
 rsync
 rzip
+salix-man
+salixtools
 screen
 sdparm
 sed
@@ -211,6 +211,7 @@ tcp_wrappers
 tcpdump
 tcsh
 telnet
+terminus-font
 texinfo
 time
 traceroute
@@ -231,4 +232,3 @@ xfsprogs
 xz
 zlib
 zoo
-terminus-font
