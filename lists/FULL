@@ -104,6 +104,8 @@ speex
 sshfs-fuse
 taglib
 taglib-extras
+thunar-archive-plugin
+thunar-media-tags-plugin
 totem-gstreamer
 totem-pl-parser
 transmission
