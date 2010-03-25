@@ -296,6 +296,7 @@ xmodmap
 xorg-cf-files
 xorg-server
 xorg-server-xnest
+xorg-server-xephyr
 xorg-server-xvfb
 xpr
 xprehashprinterlist
