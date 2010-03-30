@@ -17,7 +17,6 @@ dirac
 enchant
 epdfview
 esound
-evolution-data-server
 exaile
 exiv2
 faac
@@ -56,8 +55,6 @@ iwlwifi-5000-ucode
 iwlwifi-5150-ucode
 jre
 libass
-libbonobo
-libbonoboui
 libcaca
 libcdaudio
 libdca
@@ -65,8 +62,6 @@ libdv
 libdvdnav
 libdvdread
 libetpan
-libgnome
-libgnomeui
 libgphoto2
 libgpod
 libid3tag
@@ -87,6 +82,7 @@ ndiswrapper
 obexftp
 openobex
 openoffice
+parole
 pidgin
 poppler
 poppler-data
@@ -108,8 +104,6 @@ taglib
 taglib-extras
 thunar-archive-plugin
 thunar-media-tags-plugin
-totem-gstreamer
-totem-pl-parser
 transmission
 urwid
 verve-plugin
