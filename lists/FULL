@@ -36,6 +36,8 @@ gimp
 gnome-keyring
 gnome-mime-data
 gnome-vfs
+gnonlin
+goocanvas
 gpa
 gst-plugins-bad
 gst-plugins-good
@@ -84,11 +86,13 @@ openobex
 openoffice
 parole
 pidgin
+pitivi
 poppler
 poppler-data
 pycairo
 pycups
 pygobject
+pygoocanvas
 pygtk
 ristretto
 rt61-firmware
