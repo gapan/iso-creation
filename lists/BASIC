@@ -47,6 +47,7 @@ gamin
 gccmakedep
 gd
 gdm
+giflib
 glew
 glproto
 gmime
@@ -67,7 +68,6 @@ intltool
 jasper
 kbproto
 ktsuss
-lbxproxy
 lcms
 libFS
 libICE
@@ -116,7 +116,6 @@ libgsf
 libhangul
 libidl
 libjpeg
-liblbxutil
 libmng
 libnotify
 liboil
@@ -126,7 +125,6 @@ librsvg
 libsexy
 libtheora
 libtiff
-libungif
 libvisual
 libwnck
 libx86
@@ -150,7 +148,6 @@ pango
 pcre
 pixman
 printproto
-proxymngr
 radeontool
 randrproto
 rarian
@@ -215,15 +212,11 @@ xev
 xextproto
 xf86-input-acecad
 xf86-input-aiptek
-xf86-input-citron
-xf86-input-elographics
 xf86-input-evdev
 xf86-input-fpit
-xf86-input-hyperpen
 xf86-input-joystick
 xf86-input-keyboard
 xf86-input-mouse
-xf86-input-mutouch
 xf86-input-penmount
 xf86-input-synaptics
 xf86-input-vmmouse
