@@ -93,7 +93,6 @@ pycups
 pygobject
 pygoocanvas
 pygtk
-ristretto
 rt61-firmware
 rt71w-firmware
 salix-codecs-installer
@@ -110,6 +109,7 @@ thunar-media-tags-plugin
 transmission
 urwid
 verve-plugin
+viewnior
 vorbis-tools
 wavpack
 wicd
