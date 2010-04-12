@@ -30,6 +30,7 @@ curl
 cvs
 cxxlibs
 cyrus-sasl
+dash
 db44
 dbus
 dbus-glib
