@@ -1,4 +1,3 @@
-DirectFB
 GConf
 ORBit2
 Xdialog
@@ -176,7 +175,6 @@ shared-mime-info
 showfont
 sinhala_lklug-font-ttf
 smproxy
-splashy
 startup-notification
 svgalib
 t1lib
