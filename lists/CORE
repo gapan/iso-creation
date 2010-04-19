@@ -36,7 +36,6 @@ dbus-glib
 dbus-python
 dcron
 dev86
-device-mapper
 devs
 dhcpcd
 dialog
