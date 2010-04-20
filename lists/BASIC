@@ -196,6 +196,7 @@ xaw3d
 xbacklight
 xbitmaps
 xcb-proto
+xcb-util
 xclipboard
 xcmiscproto
 xcmsdb
