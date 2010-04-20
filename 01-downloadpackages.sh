@@ -11,4 +11,4 @@ slapt-get --clean
 	done
 } 2>&1 | tee download-$ARCH.log
 
-grep "connect to server" download-$ARCH .log
+grep "connect to server" download-$ARCH.log
