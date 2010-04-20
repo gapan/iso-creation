@@ -99,6 +99,7 @@ salix-codecs-installer
 salixtools-gtk
 samba
 sane
+setuptools
 sox
 speex
 sshfs-fuse
