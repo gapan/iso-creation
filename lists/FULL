@@ -58,6 +58,7 @@ jre
 libass
 libcaca
 libcdaudio
+libcuefile
 libdca
 libdv
 libdvdnav
@@ -67,8 +68,8 @@ libgphoto2
 libgpod
 libid3tag
 libmms
-libmpcdec
 libproxy
+libreplaygain
 libshout
 libsndfile
 libsoup
@@ -77,6 +78,7 @@ libunique
 madplay
 mjpegtools
 mpg123
+musepack-tools
 mutagen
 ndisgtk
 ndiswrapper
