@@ -26,6 +26,7 @@ cdrtools
 cmake
 coreutils
 cpio
+cryptsetup
 curl
 cvs
 cxxlibs
@@ -131,6 +132,7 @@ make
 man
 man-pages
 mc
+mdadm
 mercurial
 mhash
 mkinitrd
