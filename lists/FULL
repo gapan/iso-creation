@@ -5,8 +5,6 @@ babl
 bc
 bluez-firmware
 bluez-hcidump
-bluez-libs
-bluez-utils
 brasero
 catfish
 claws-mail
@@ -84,6 +82,8 @@ musepack-tools
 mutagen
 ndisgtk
 ndiswrapper
+obex-data-server
+obexfs
 obexftp
 openobex
 openoffice
