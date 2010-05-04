@@ -93,7 +93,6 @@ pycairo
 pycups
 pygobject
 pygtk
-ristretto
 rt61-firmware
 rt71w-firmware
 salix-codecs-installer
@@ -111,6 +110,7 @@ totem-pl-parser
 transmission
 urwid
 verve-plugin
+viewnior
 vorbis-tools
 wavpack
 wicd
