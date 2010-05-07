@@ -104,6 +104,7 @@ salixtools-gtk
 samba
 sane
 setuptools
+simple-scan
 sox
 speex
 sshfs-fuse
@@ -138,7 +139,6 @@ xfce4-systemload-plugin
 xfce4-wavelan-plugin
 xfce4-weather-plugin
 xfce4-xkb-plugin
-xsane
 xvidcore
 zd1211-firmware
 zenity
