@@ -20,6 +20,7 @@ desktop-file-utils
 dmxproto
 dri2proto
 encodings
+eggdbus
 evieext
 fixesproto
 font-adobe-100dpi
@@ -147,6 +148,7 @@ obsidian-cursors
 pango
 pcre
 pixman
+polkit
 printproto
 radeontool
 randrproto
