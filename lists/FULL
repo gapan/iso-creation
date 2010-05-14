@@ -10,6 +10,7 @@ catfish
 claws-mail
 cups
 depfinder
+djvulibre
 dirac
 enchant
 esound
@@ -73,6 +74,7 @@ libreplaygain
 libshout
 libsndfile
 libsoup
+libspectre
 libtasn
 libunique
 madplay
