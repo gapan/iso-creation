@@ -104,6 +104,7 @@ rt2870-firmware
 rt61-firmware
 rt71w-firmware
 salix-codecs-installer
+salix-update-notifier
 salixtools-gtk
 samba
 sane
