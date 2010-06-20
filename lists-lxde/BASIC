@@ -88,6 +88,8 @@ libpciaccess
 libpng
 librsvg
 libsexy
+libsoup
+libunique
 libSM
 libtheora
 libtiff
@@ -146,7 +148,7 @@ mesa
 mkcomposecache
 mkfontdir
 mkfontscale
-mozilla-firefox
+midori
 notification-daemon
 numlockx
 obsidian-cursors
@@ -314,3 +316,9 @@ xvinfo
 xwd
 xwininfo
 xwud
+enchant
+icu
+libtasn
+gnome-keyring
+libproxy
+webkit
