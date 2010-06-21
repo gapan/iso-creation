@@ -1,3 +1,4 @@
+ConsoleKit
 GConf
 ORBit2
 Xdialog
@@ -19,6 +20,7 @@ desktop-file-utils
 dmxproto
 dri2proto
 encodings
+eggdbus
 evieext
 fixesproto
 font-adobe-100dpi
@@ -146,6 +148,7 @@ obsidian-cursors
 pango
 pcre
 pixman
+polkit
 printproto
 radeontool
 randrproto
@@ -196,6 +199,7 @@ xaw3d
 xbacklight
 xbitmaps
 xcb-proto
+xcb-util
 xclipboard
 xcmiscproto
 xcmsdb
@@ -234,7 +238,7 @@ xf86-video-intel
 xf86-video-mach64
 xf86-video-mga
 xf86-video-neomagic
-xf86-video-newport
+xf86-video-nouveau
 xf86-video-nv
 xf86-video-openchrome
 xf86-video-r128

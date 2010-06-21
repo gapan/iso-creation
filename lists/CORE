@@ -26,6 +26,7 @@ cdrtools
 cmake
 coreutils
 cpio
+cryptsetup
 curl
 cvs
 cxxlibs
@@ -120,7 +121,6 @@ libxml2
 libzip
 lilo
 lndir
-loadlin
 logrotate
 lsof
 lsscsi
@@ -132,6 +132,7 @@ make
 man
 man-pages
 mc
+mdadm
 mercurial
 mhash
 mkinitrd

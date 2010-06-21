@@ -2,7 +2,7 @@
 
 rm -f CHECKSUMS.md5 PACKAGELIST PACKAGELIST-TEMP
 
-for pkg in `find ./packages -type f -name '*.t[gx]z' -print`
+for pkg in `find ./salix -type f -name '*.t[gx]z' -print`
 do
 	if [ ! -f ${pkg%t[gx]z}md5 ]; then
 		md5sum ${pkg} | sed "s|  \.\(.*\)/\(.*\)|  \2|" > ${pkg%t[gx]z}md5
