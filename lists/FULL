@@ -69,6 +69,7 @@ libgphoto2
 libgpod
 libid3tag
 libmms
+libnl
 libproxy
 libreplaygain
 libshout
@@ -82,6 +83,7 @@ mjpegtools
 mpg123
 musepack-tools
 mutagen
+net-snmp
 ndisgtk
 ndiswrapper
 obex-data-server
