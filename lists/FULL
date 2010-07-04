@@ -78,6 +78,7 @@ libsoup
 libspectre
 libtasn
 libunique
+lilosetup
 madplay
 mjpegtools
 mpg123
@@ -91,6 +92,7 @@ obexfs
 obexftp
 openobex
 openoffice
+os-prober
 parole
 pidgin
 pitivi
