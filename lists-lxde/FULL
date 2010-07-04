@@ -65,6 +65,7 @@ libnl
 libreplaygain
 libshout
 libsndfile
+lilosetup
 lxtask
 madplay
 mjpegtools
@@ -72,13 +73,14 @@ mpg123
 mtpaint
 musepack-tools
 mutagen
-net-snmp
 ndisgtk
 ndiswrapper
+net-snmp
 obex-data-server
 obexfs
 obexftp
 openobex
+os-prober
 pidgin
 poppler
 poppler-data
@@ -103,8 +105,8 @@ scim-input-pad
 scim-m17n
 scim-pinyin
 scim-tables
-simple-scan
 seamonkey-solibs
+simple-scan
 sox
 speex
 sshfs-fuse
