@@ -142,6 +142,7 @@ mkcomposecache
 mkfontdir
 mkfontscale
 mozilla-firefox
+mozilla-firefox-salix
 notification-daemon
 numlockx
 obsidian-cursors
