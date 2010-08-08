@@ -89,6 +89,7 @@ mutagen
 net-snmp
 ndisgtk
 ndiswrapper
+notify-python
 obex-data-server
 obexfs
 obexftp
@@ -105,6 +106,7 @@ pycups
 pygobject
 pygoocanvas
 pygtk
+pyxdg
 rt2860-firmware
 rt2870-firmware
 rt61-firmware
