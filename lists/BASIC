@@ -150,6 +150,9 @@ pango
 pcre
 pixman
 polkit
+pygtk
+pygobject
+pycairo
 printproto
 radeontool
 randrproto
@@ -161,6 +164,7 @@ resourceproto
 rgb
 rstart
 salix-artwork
+salixtools-gtk
 sazanami-fonts-ttf
 scim
 scim-anthy
