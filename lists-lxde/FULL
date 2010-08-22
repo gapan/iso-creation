@@ -89,17 +89,13 @@ os-prober
 pidgin
 poppler
 poppler-data
-pycairo
 pycups
-pygobject
-pygtk
 pyxdg
 rt2860-firmware
 rt2870-firmware
 rt61-firmware
 rt71w-firmware
 salix-codecs-installer
-salixtools-gtk
 samba
 sane
 scim

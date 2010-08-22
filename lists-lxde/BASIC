@@ -15,6 +15,7 @@ desktop-file-utils
 dmxproto
 dri2proto
 eggdbus
+enchant
 encodings
 evieext
 fixesproto
@@ -50,6 +51,7 @@ glproto
 gmime
 gnome-colors-icon-theme
 gnome-icon-theme
+gnome-keyring
 gslapt
 gst-plugins-base
 gstreamer
@@ -59,6 +61,7 @@ hicolor-icon-theme
 iceauth
 ico
 icon-naming-utils
+icu
 imake
 inputproto
 intltool
@@ -86,13 +89,15 @@ libnotify
 liboil
 libpciaccess
 libpng
+libproxy
 librsvg
 libsexy
-libsoup
-libunique
 libSM
+libsoup
+libtasn
 libtheora
 libtiff
+libunique
 libvisual
 libwnck
 libX11
@@ -145,10 +150,10 @@ lxterminal
 makedepend
 menu-cache
 mesa
+midori
 mkcomposecache
 mkfontdir
 mkfontscale
-midori
 notification-daemon
 numlockx
 obsidian-cursors
@@ -159,6 +164,9 @@ pcmanfm
 pcre
 pixman
 printproto
+pycairo
+pygobject
+pygtk
 radeontool
 randrproto
 rarian
@@ -169,6 +177,7 @@ resourceproto
 rgb
 rstart
 salix-artwork
+salixtools-gtk
 sazanami-fonts-ttf
 scripts
 scrnsaverproto
@@ -191,6 +200,7 @@ vbetool
 videoproto
 viewres
 vte
+webkit
 wqy-zenhei-font-ttf
 x11perf
 x11-skel
@@ -294,7 +304,7 @@ xorg-server-xnest
 xorg-server-xvfb
 xpr
 xprehashprinterlist
-xprop
+xpro
 xproto
 xproxymanagementprotocol
 xrandr
@@ -315,9 +325,3 @@ xvinfo
 xwd
 xwininfo
 xwud
-enchant
-icu
-libtasn
-gnome-keyring
-libproxy
-webkit
