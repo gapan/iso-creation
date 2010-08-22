@@ -304,7 +304,7 @@ xorg-server-xnest
 xorg-server-xvfb
 xpr
 xprehashprinterlist
-xpro
+xprop
 xproto
 xproxymanagementprotocol
 xrandr
@@ -324,4 +324,4 @@ xvidtune
 xvinfo
 xwd
 xwininfo
-xwud
+xwu
