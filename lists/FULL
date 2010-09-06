@@ -11,8 +11,8 @@ catfish
 claws-mail
 cups
 depfinder
-djvulibre
 dirac
+djvulibre
 enchant
 esound
 evince
@@ -34,6 +34,7 @@ gigolo
 gimp
 gnome-keyring
 gnome-mime-data
+gnome-python
 gnome-vfs
 gnonlin
 goocanvas
@@ -82,13 +83,14 @@ libtasn
 libunique
 lilosetup
 madplay
+meld
 mjpegtools
 mpg123
 musepack-tools
 mutagen
-net-snmp
 ndisgtk
 ndiswrapper
+net-snmp
 notify-python
 obex-data-server
 obexfs
@@ -103,6 +105,7 @@ poppler
 poppler-data
 pycups
 pygoocanvas
+pyorbit
 pyxdg
 rt2860-firmware
 rt2870-firmware
