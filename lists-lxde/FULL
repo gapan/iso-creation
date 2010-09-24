@@ -72,6 +72,7 @@ libreplaygain
 libshout
 libsndfile
 lilosetup
+lxrandr
 lxtask
 madplay
 meld
@@ -84,6 +85,7 @@ ndisgtk
 ndiswrapper
 net-snmp
 notify-python
+obconf
 obex-data-server
 obexfs
 obexftp
