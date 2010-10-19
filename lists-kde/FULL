@@ -10,6 +10,7 @@ flash-plugin
 foomatic-filters
 ghostscript
 ghostscript-fonts-std
+gst-fluendo-mp3
 gst-plugins-bad
 gst-plugins-good
 gst-python
