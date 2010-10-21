@@ -99,6 +99,15 @@ openobex
 openoffice
 os-prober
 parole
+perl-cairo
+perl-extutils-depends
+perl-extutils-pkgconfig
+perl-File-BaseDir
+perl-File-DesktopEntry
+perl-File-MimeInfo
+perl-glib
+perl-gtk2
+perl-pango
 pidgin
 pitivi
 poppler
@@ -155,4 +164,5 @@ xfce4-xkb-plugin
 xvidcore
 zd1211-firmware
 zenity
+zim
 zope.interface
