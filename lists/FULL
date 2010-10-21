@@ -107,6 +107,7 @@ perl-File-DesktopEntry
 perl-File-MimeInfo
 perl-glib
 perl-gtk2
+perl-gtk2-spell
 perl-pango
 pidgin
 pitivi
