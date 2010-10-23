@@ -10,6 +10,7 @@ flash-plugin
 foomatic-filters
 ghostscript
 ghostscript-fonts-std
+gnupg2
 gst-fluendo-mp3
 gst-plugins-bad
 gst-plugins-good
@@ -53,6 +54,7 @@ ndisgtk
 ndiswrapper
 net-snmp
 os-prober
+qca-gnupg
 poppler
 rt2860-firmware
 rt2870-firmware
