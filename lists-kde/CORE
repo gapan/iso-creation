@@ -52,6 +52,7 @@ enscript
 etc
 ethtool
 expat
+fakeroot
 file
 findutils
 flex
@@ -188,6 +189,7 @@ sharutils
 sip
 slang
 slapt-get
+slapt-src
 slkbuild
 slocate
 smartmontools

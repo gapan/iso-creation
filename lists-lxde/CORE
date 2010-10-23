@@ -52,6 +52,7 @@ enscript
 etc
 ethtool
 expat
+fakeroot
 file
 findutils
 flex
@@ -144,10 +145,10 @@ nc
 ncompress
 ncurses
 neon
-net-tools
 netkit-ftp
 netkit-ntalk
 netkit-routed
+net-tools
 network-scripts
 nfs-utils
 ntfs-3g
@@ -164,8 +165,8 @@ pcmciautils
 perl
 pidentd
 pkg-config
-pm-utils
 pmake
+pm-utils
 popt
 portmap
 ppp
@@ -188,6 +189,7 @@ sharutils
 sip
 slang
 slapt-get
+slapt-src
 slkbuild
 slocate
 smartmontools
@@ -204,8 +206,8 @@ sysvinit
 sysvinit-functions
 sysvinit-scripts
 tar
-tcp_wrappers
 tcpdump
+tcp_wrappers
 tcsh
 telnet
 terminus-font
