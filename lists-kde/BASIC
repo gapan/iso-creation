@@ -58,15 +58,12 @@ gccmakedep
 gd
 giflib
 glew
-glib
 glproto
 gmime
 gslapt
 gst-plugins-base
 gstreamer
-gtk+
 gtk+2
-gtk-engines
 gtk-oxygen-theme
 gtkspell
 hicolor-icon-theme
