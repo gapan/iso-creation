@@ -94,6 +94,7 @@ os-prober
 pidgin
 poppler
 poppler-data
+pyalsaaudio
 pycups
 pyorbit
 pyxdg
@@ -123,6 +124,7 @@ transmission
 urwid
 v4l-utils
 viewnior
+volti
 vorbis-tools
 wavpack
 whaawmp
