@@ -42,7 +42,6 @@ gst-plugins-good
 gst-python
 gtkspell
 gucharmap
-guile
 gutenprint
 gvfs
 hplip
