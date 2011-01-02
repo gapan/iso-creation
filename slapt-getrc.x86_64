@@ -11,8 +11,7 @@ EXCLUDE=^aaa_elflibs,^aaa_base,^devs,^glibc-.*,^kernel-.*,^udev,^rootuser-settin
 # http://www.salixos.org/wiki/index.php/How_to_create_a_local_slackware_repository_with_dependency_support
 # if you want to use another Slackware mirror and keep the dependency
 # information.
-#SOURCE=http://salix.enialis.net/x86_64/slackware-current/:OFFICIAL
-SOURCE=ftp://ftp.ntua.gr/pub/linux/slackware/slackware64-current/:OFFICIAL
+SOURCE=http://salix.enialis.net/x86_64/slackware-current/:OFFICIAL
 SOURCE=http://salix.enialis.net/x86_64/slackware-current/extra/:OFFICIAL
 
 # The Salix repository
