@@ -136,7 +136,6 @@ thunar-media-tags-plugin
 transmission
 urwid
 v4l-utils
-verve-plugin
 viewnior
 vorbis-tools
 wavpack
@@ -158,6 +157,7 @@ xfce4-power-manager
 xfce4-quicklauncher-plugin
 xfce4-screenshooter
 xfce4-systemload-plugin
+xfce4-verve-plugin
 xfce4-wavelan-plugin
 xfce4-weather-plugin
 xfce4-xkb-plugin
