@@ -73,6 +73,7 @@ libgpod
 libid3tag
 libmms
 libproxy
+libreoffice
 libreplaygain
 libshout
 libsndfile
@@ -95,7 +96,6 @@ obex-data-server
 obexfs
 obexftp
 openobex
-openoffice
 os-prober
 parole
 perl-File-BaseDir
