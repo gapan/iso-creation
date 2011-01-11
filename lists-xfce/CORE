@@ -30,6 +30,7 @@ cryptsetup
 curl
 cvs
 cyrus-sasl
+cxxlibs
 db44
 dbus
 dbus-glib
@@ -103,6 +104,7 @@ libarchive
 libcap
 libcddb
 libcdio
+libcgroup
 libelf
 libgcrypt
 libgpg-error
