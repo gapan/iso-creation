@@ -111,7 +111,6 @@ perl-extutils-depends
 perl-extutils-pkgconfig
 perl-glib
 perl-gtk2
-perl-gtk2-spell
 perl-pango
 pidgin
 pitivi
