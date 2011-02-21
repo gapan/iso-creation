@@ -41,6 +41,7 @@ gpa
 gst-plugins-bad
 gst-plugins-good
 gst-python
+gtkman
 gtkspell
 gucharmap
 gutenprint
