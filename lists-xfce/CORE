@@ -19,6 +19,7 @@ binutils
 bison
 bridge-utils
 bzip2
+ca-certificates
 ccache
 cdparanoia
 cdrdao
