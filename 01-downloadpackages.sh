@@ -2,6 +2,11 @@
 
 export LANG=en_US
 
+if [ "$UID" != "0" ]; then
+	echo "You need to be root to run this"
+	exit 1
+fi
+
 if [ ! $# -eq 2 ]; then
 	echo "ERROR. Syntax is: $0 EDITION ARCH"
 	exit 1
