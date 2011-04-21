@@ -34,3 +34,4 @@ slapt-get --clean
 } 2>&1 | tee download-$arch.log
 
 grep "connect to server" download-$arch.log
+grep "No such" download-$arch.log
