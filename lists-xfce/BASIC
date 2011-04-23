@@ -151,6 +151,7 @@ printproto
 pycairo
 pygobject
 pygtk
+pysimpleconfig
 radeontool
 randrproto
 rarian
