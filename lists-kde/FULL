@@ -7,6 +7,7 @@ ebook-tools
 faac
 faad2
 flac
+flash-plugin
 foomatic-filters
 ghostscript
 ghostscript-fonts-std
@@ -62,16 +63,16 @@ ndisgtk
 ndiswrapper
 net-snmp
 os-prober
-poppler
 qca-gnupg
+poppler
 rt2860-firmware
 rt2870-firmware
 rt61-firmware
 rt71w-firmware
 salix-codecs-installer
+shared-desktop-ontologies
 salix-update-notifier
 sane
-shared-desktop-ontologies
 taglib
 urwid
 v4l-utils
