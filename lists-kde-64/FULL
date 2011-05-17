@@ -1,4 +1,3 @@
-agg 
 bangarang
 chmlib
 clementine
@@ -11,12 +10,10 @@ flac
 foomatic-filters
 ghostscript
 ghostscript-fonts-std
-gnash
 gnupg2
 gst-plugins-bad
 gst-plugins-good
 gst-python
-gtkglext 
 gtkman
 hplip
 ibus
@@ -75,7 +72,6 @@ salix-codecs-installer
 salix-update-notifier
 sane
 shared-desktop-ontologies
-speex 
 taglib
 urwid
 v4l-utils
