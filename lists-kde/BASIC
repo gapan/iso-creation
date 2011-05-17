@@ -171,6 +171,7 @@ pycairo
 pycups
 pygobject
 pygtk
+pysimpleconfig
 qca
 qimageblitz
 qt
