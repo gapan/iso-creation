@@ -77,7 +77,7 @@ inputproto
 intltool
 jasper
 kbproto
-kdebase
+kdebase-lite
 kdebase-runtime
 kdebase-workspace
 kdelibs
@@ -154,6 +154,7 @@ mesa
 mkcomposecache
 mkfontdir
 mkfontscale
+mozilla-firefox
 notification-daemon
 numlockx
 openexr
