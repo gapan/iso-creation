@@ -55,6 +55,7 @@ libplist
 libsamplerate
 libspectre
 libvncserver
+libwpd
 lilosetup
 mutagen
 mysql
