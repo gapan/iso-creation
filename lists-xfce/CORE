@@ -18,6 +18,7 @@ bin
 binutils
 bison
 bridge-utils
+btrfs-progs
 bzip2
 ca-certificates
 ccache
