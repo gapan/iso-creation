@@ -55,6 +55,7 @@ libplist
 libsamplerate
 libspectre
 libvncserver
+libvpx
 libwpd
 lilosetup
 mutagen
