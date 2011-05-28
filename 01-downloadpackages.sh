@@ -15,14 +15,16 @@ fi
 edition=$1
 arch=$2
 
-if [ $edition = "xfce" ] || [ $edition = "lxde" ] || [ $edition = "kde" ] || [ $edition = "fluxbox" ];then
+if [ $edition = "xfce" ] || [ $edition = "ratpoison" ] || [ $edition = "lxde" ] || [ $edition = "kde" ] || [ $edition = "fluxbox" ];then
 	ln -sf lists-$edition lists
 else
 	echo "ERROT. Not a valid EDITION"
+	exit 1
 fi
 
 if [ ! $arch = "i486" ] && [ ! $arch = "x86_64" ];then
 	echo "ERROR. Not a valid ARCH"
+	exit 1
 fi
 
 slapt-get -u -c slapt-getrc.$arch
