@@ -55,7 +55,6 @@ glproto
 gmime
 gnome-colors-icon-theme
 gnome-icon-theme
-gslapt
 gst-plugins-base
 gstreamer
 gtk+2
@@ -65,6 +64,7 @@ hicolor-icon-theme
 iceauth
 ico
 icon-naming-utils
+icu
 imake
 imlib2
 inputproto
@@ -112,6 +112,7 @@ libdrm
 liberation-fonts-ttf
 libexif
 libfontenc
+libglade
 libgsf
 libidl
 libjpeg
@@ -153,7 +154,6 @@ printproto
 pycairo
 pygobject
 pygtk
-pysimpleconfig
 radeontool
 randrproto
 rarian
@@ -174,7 +174,6 @@ shared-mime-info
 showfont
 sinhala_lklug-font-ttf
 smproxy
-sourcery
 startup-notification
 svgalib
 t1lib

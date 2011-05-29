@@ -6,6 +6,7 @@ bluez-hcidump
 cups
 depfinder
 dirac
+exiv2
 faac
 faad2
 flac
@@ -21,7 +22,7 @@ gst-python
 gtkspell
 gutenprint
 gvfs
-gvim
+vim-gvim
 hplip
 ipw2100-fw
 ipw2200-fw
@@ -46,13 +47,14 @@ libdvdnav
 libdvdread
 libgphoto2
 libgpod
+libgnome-keyring
 libid3tag
 libmms
 libreplaygain
+libsamplerate
 libshout
 libsigc++
 libsndfile
-libsoup
 libspectre
 libtasn1
 libtorrent
