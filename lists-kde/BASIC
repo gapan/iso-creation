@@ -172,6 +172,7 @@ pycups
 pygobject
 pygtk
 pysimpleconfig
+pyxdg
 qca
 qimageblitz
 qt
