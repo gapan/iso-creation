@@ -115,6 +115,7 @@ libidn
 libieee1284
 libmad
 libmcrypt
+libnl
 libogg
 libpcap
 libpthread-stubs

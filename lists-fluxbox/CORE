@@ -114,6 +114,7 @@ libieee1284
 libmad
 libmcrypt
 libmpc
+libnl
 libogg
 libpthread-stubs
 libraw1394
