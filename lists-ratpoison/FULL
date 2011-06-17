@@ -16,6 +16,7 @@ ghostscript-fonts-std
 gnome-mime-data
 gnome-mount
 gnome-vfs
+gmountman
 gst-plugins-bad
 gst-plugins-good
 gst-python
