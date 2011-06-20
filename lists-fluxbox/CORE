@@ -116,6 +116,7 @@ libmcrypt
 libmpc
 libnl
 libogg
+libpcap
 libpthread-stubs
 libraw1394
 libtermcap

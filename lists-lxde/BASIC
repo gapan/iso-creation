@@ -150,6 +150,7 @@ midori
 mkcomposecache
 mkfontdir
 mkfontscale
+net-snmp
 notification-daemon
 numlockx
 obsidian-cursors
