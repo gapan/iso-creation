@@ -30,8 +30,8 @@ cpio
 cryptsetup
 curl
 cvs
-cyrus-sasl
 cxxlibs
+cyrus-sasl
 db44
 dbus
 dbus-glib

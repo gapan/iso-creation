@@ -151,10 +151,10 @@ nc
 ncompress
 ncurses
 neon
+net-tools
 netkit-ftp
 netkit-ntalk
 netkit-routed
-net-tools
 network-scripts
 nfs-utils
 ntfs-3g
@@ -172,8 +172,8 @@ perl
 pidentd
 pkg-config
 pkgtools
-pmake
 pm-utils
+pmake
 popt
 portmap
 ppp
@@ -214,8 +214,8 @@ sysvinit
 sysvinit-functions
 sysvinit-scripts
 tar
-tcpdump
 tcp_wrappers
+tcpdump
 tcsh
 telnet
 terminus-font
