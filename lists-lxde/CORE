@@ -12,7 +12,6 @@ attr
 autoconf
 autofs
 automake
-automoc4
 bash
 bin
 binutils
