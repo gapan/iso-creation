@@ -15,7 +15,12 @@ fi
 edition=$1
 arch=$2
 
-if [ $edition = "xfce" ] || [ $edition = "ratpoison" ] || [ $edition = "lxde" ] || [ $edition = "kde" ] || [ $edition = "fluxbox" ];then
+if [ $edition = "xfce" ] || \
+	[ $edition = "openbox" ] || \
+	[ $edition = "ratpoison" ] || \
+	[ $edition = "lxde" ] || \
+	[ $edition = "kde" ] || \
+	[ $edition = "fluxbox" ];then
 	ln -sf lists-$edition lists
 else
 	echo "ERROT. Not a valid EDITION"
