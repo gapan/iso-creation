@@ -50,6 +50,7 @@ gdm
 giblib
 giflib
 glew
+glibmm
 glproto
 gmime
 gnome-colors-icon-theme
@@ -123,6 +124,7 @@ liboil
 libpciaccess
 libpng
 librsvg
+libsigc++
 libtheora
 libtiff
 libvisual
@@ -136,7 +138,6 @@ listres
 luit
 lxappearance
 lxmenu-data
-lxrandr
 makedepend
 menu-cache
 mesa
