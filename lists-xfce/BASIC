@@ -137,7 +137,6 @@ mkcomposecache
 mkfontdir
 mkfontscale
 mozilla-firefox
-net-snmp
 notification-daemon
 numlockx
 obsidian-cursors

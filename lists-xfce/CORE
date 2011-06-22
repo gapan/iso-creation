@@ -151,6 +151,7 @@ nc
 ncompress
 ncurses
 neon
+net-snmp
 net-tools
 netkit-ftp
 netkit-ntalk
