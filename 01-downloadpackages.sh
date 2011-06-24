@@ -12,6 +12,11 @@ if [ ! $# -eq 2 ]; then
 	exit 1
 fi
 
+if [ -x /usr/bin/salix-update-notifier ]; then
+	echo "ERROR: salix-update-notifier should not be installed"
+	exit 1
+fi
+
 edition=$1
 arch=$2
 
