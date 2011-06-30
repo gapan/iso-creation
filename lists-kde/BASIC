@@ -168,7 +168,6 @@ polkit
 polkit-kde-1
 polkit-qt-1
 printproto
-pth
 pycairo
 pycups
 pygobject
