@@ -154,7 +154,6 @@ mkcomposecache
 mkfontdir
 mkfontscale
 mozilla-firefox
-notification-daemon
 numlockx
 openexr
 ORBit2
