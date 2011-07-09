@@ -13,7 +13,6 @@ foomatic-filters
 ghostscript
 ghostscript-fonts-std
 gnupg2
-gst-ffmpeg
 gst-plugins-bad
 gst-plugins-good
 gst-python
