@@ -28,7 +28,7 @@ if [ $edition = "xfce" ] || \
 	[ $edition = "fluxbox" ];then
 	ln -sf lists-$edition lists
 else
-	echo "ERROT. Not a valid EDITION"
+	echo "ERROR. Not a valid EDITION"
 	exit 1
 fi
 
