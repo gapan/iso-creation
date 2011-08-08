@@ -64,6 +64,7 @@ libsndfile
 libspectre
 libtasn1
 libtorrent
+libvpx
 madplay
 mjpegtools
 moc
