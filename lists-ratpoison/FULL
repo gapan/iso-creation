@@ -1,3 +1,4 @@
+apvlv
 bashburn
 bc
 bluez
@@ -5,6 +6,7 @@ bluez-firmware
 bluez-hcidump
 cups
 depfinder
+djvulibre
 dirac
 exiv2
 faac
@@ -112,5 +114,4 @@ wireless-tools
 wpa_supplicant
 xmlrpc-c
 xvidcore
-zathura
 zd1211-firmware
