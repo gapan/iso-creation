@@ -55,6 +55,7 @@ glproto
 gmime
 gnome-colors-icon-theme
 gnome-icon-theme
+gslapt
 gst-plugins-base
 gstreamer
 gtk+2
@@ -152,6 +153,7 @@ printproto
 pycairo
 pygobject
 pygtk
+pysimpleconfig
 radeontool
 randrproto
 rarian
@@ -172,6 +174,7 @@ shared-mime-info
 showfont
 sinhala_lklug-font-ttf
 smproxy
+sourcery
 startup-notification
 svgalib
 t1lib
