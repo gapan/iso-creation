@@ -71,6 +71,7 @@ libdv
 libdvdnav
 libdvdread
 libetpan
+libevent
 libgnome-keyring
 libgphoto2
 libgpod
