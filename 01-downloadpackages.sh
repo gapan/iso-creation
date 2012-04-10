@@ -25,6 +25,7 @@ if [ $edition = "xfce" ] || \
 	[ $edition = "ratpoison" ] || \
 	[ $edition = "lxde" ] || \
 	[ $edition = "kde" ] || \
+	[ $edition = "mate" ] || \
 	[ $edition = "fluxbox" ];then
 	ln -sf lists-$edition lists
 else
