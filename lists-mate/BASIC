@@ -53,8 +53,6 @@ giflib
 glew
 glproto
 gmime
-gnome-colors-icon-theme
-gnome-icon-theme
 gnome-mount
 gslapt
 gst-plugins-base
@@ -154,6 +152,7 @@ listres
 luit
 makedepend
 mate-applets
+mate-colors-icon-theme
 mate-conf
 mate-control-center
 mate-corba
