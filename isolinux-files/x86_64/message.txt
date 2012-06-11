@@ -1,0 +1,24 @@
+
+
+Welcome to 09Salix64 __EDITION__07 version 13.37 (Linux kernel 2.6.37.6)!
+
+If you need to pass extra parameters to the kernel, enter them at the prompt
+below after the name of the kernel to boot (huge.s).
+
+In a pinch, you can boot your system from here with a command like:
+
+boot: huge.s root=/dev/sda1 rdinit= ro 
+
+In the example above, /dev/sda1 is the / Linux partition.
+
+This prompt is just for entering extra parameters.  If you don't need to enter
+any parameters, hit ENTER to boot the default kernel "huge.s" and begin the 
+installation of Salix.
+
+If you want to use this as a rescue system, just select to exit the
+installation at the main menu. You will then have access to a linux console.
+If from there you wish to go back to installing Salix, just type "setup" in
+the linux console.
+
+
+

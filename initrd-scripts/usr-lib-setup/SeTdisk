@@ -1,0 +1,35 @@
+#!/bin/sh
+
+dglist=""
+n=0
+for dev in "$( cat /proc/partitions \
+	| grep -v '^$' \
+	| grep -v 'name' \
+	| grep -v 'ram' \
+	| grep -v 'loop' \
+	| sed -e 's/^[ \t]*[0-9]*[ \t]*[0-9]*[ \t]*[0-9]*[ \t]*\(\([a-z]*\)[0-9]*[^0-9]*\|\([a-z\/]*[0-9]*[a-z]*[0-9]*\).*\)$/\2\3 disk \"\"/' | sort -u )" ; do
+
+	dglist="$dglist $dev"
+	n=$(($n+1))
+done
+
+
+DISK=$(dialog \
+--stdout \
+--ok-label "Go" \
+--cancel-label "Exit" \
+--title "PARTITIONS EDITOR" \
+--radiolist "Welcome to the Salix partition editor. Press <SPACE> to \
+select a disk and select Go to start partitioning. If you don't want to \
+alter the partition layout, select Exit. \\n\\n
+You usually need at least 2 partitions: \\n\
+- 1 LINUX bootable partition (5GB minimum recommended)\\n\
+- 1 SWAP partition (1GB minimum recommended) :" \
+$(($n+12)) 75 $(($n+1)) ${dglist} )
+
+if [ ! "${DISK}" ]; then
+	 exit 0
+fi
+clear
+cfdisk /dev/${DISK} 2>/dev/null
+

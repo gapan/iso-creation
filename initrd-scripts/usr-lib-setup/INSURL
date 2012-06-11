@@ -1,0 +1,342 @@
+#!/bin/sh
+TMP=/var/log/setup/tmp
+if [ ! -d $TMP ]; then
+	mkdir -p $TMP
+fi
+
+. /usr/lib/setup/INCISO
+
+if [ -f $TMP/Punattended ]; then
+	eval $(grep "^REMOTE_URL=" $TMP/Punattended)
+	eval $(grep "^REMOTE_ROOT=" $TMP/Punattended)
+fi
+
+REMOTE_SERVER=$REMOTE_URL
+REMOTE_PATH=$REMOTE_ROOT
+
+while [ 0 ]; do
+	rm -f $TMP/SeTDS $TMP/SeTmount $TMP/SeTsource $TMP/SeTremotesvr
+
+	umount -f /var/log/mount 2>/dev/null
+	if [ -n "$(mount | grep /var/log/mount)" -o -d /var/log/mount/lost+found -o -d /var/log/mount/recycled -o -r /var/log/mount/io.sys ]; then
+		cat <<- EOF > $TMP/tempmsg
+		
+		Setup failed to unmount a required directory:
+		
+		/var/log/mount
+		
+		Please reboot the machine an try again.
+		
+		EOF
+		dialog \
+		  --title "ERROR" \
+		  --yes-label "REBOOT" \
+		  --no-label "CANCEL" \
+		  --yesno "$(cat $TMP/tempmsg)" \
+		  11 70
+		RET=$?
+		rm -f $TMP/tempmsg
+		if [ $RET -eq 0 ]; then
+			reboot
+		else
+			exit 1
+		fi
+	fi
+
+	while [ 0 ]; do
+		cat <<- EOF > $TMP/tempmsg
+		
+		Please provide the URL of a server containing the contents
+		(or an ISO image) of a Salix installation disc.
+		
+		Examples: http://mydomain.com
+		          ftp://192.168.1.101
+		 
+		EOF
+		dialog \
+		  --title "HTTP/FTP SERVER" \
+		  --inputbox "$(cat $TMP/tempmsg)" \
+		  14 70 \
+		  $REMOTE_SERVER \
+		  2> $TMP/remote
+		RET=$?
+		REMOTE_SERVER="$(cat $TMP/remote)"
+		rm -f $TMP/tempmsg $TMP/remote
+		if [ $RET -ne 0 ]; then
+			exit 1
+		elif [ ! $(echo $REMOTE_SERVER | grep -iE '^http://|^ftp://') ]; then
+			# subtle hint
+			REMOTE_SERVER="?://$SERVER"
+			continue
+		fi
+		break
+	done
+
+	cat <<- EOF > $TMP/tempmsg
+	
+	Now please provide the path to a directory on the server
+	containing the contents of a Salix installation disc.
+	
+	Example: /mirror/salix-xfce
+	
+	Note: If you are installing from a web (HTTP) server you may also
+	specify an ISO image as the source e.g. /mirror/salix-xfce.iso
+	 
+	EOF
+	dialog \
+	  --title "SELECT SOURCE DIRECTORY" \
+	  --inputbox "$(cat $TMP/tempmsg)" \
+	  16 70 \
+	  $REMOTE_PATH \
+	  2> $TMP/sourcedir
+	RET=$?
+	REMOTE_PATH="$(cat $TMP/sourcedir)"
+	rm -f $TMP/sourcedir $TMP/tempmsg
+	if [ $RET -ne 0 ]; then
+		continue
+	fi
+
+	mkdir -p /var/log/mount 2>/dev/null
+	# attempt to mount an ISO over a HTTP connection.
+	if [ -n "$(echo $REMOTE_SERVER | grep -i '^http://')" -a -n "$(echo $REMOTE_PATH | grep -i '\.iso$')" ]; then
+		cat <<- EOF > $TMP/tempmsg
+		
+		It appears you have chosen to use the following ISO image:
+		
+		$(basename $REMOTE_PATH)
+
+		Setup will now attempt to mount it inside a local directory.
+
+		EOF
+		dialog \
+		  --title "INFORMATION" \
+		  --exit-label "OK" \
+		  --textbox "$TMP/tempmsg" \
+		  11 70
+		rm -f $TMP/tempmsg
+
+		sh /etc/rc.d/rc.fuse start
+		if [ $? -eq 1 ]; then
+			cat <<- EOF > $TMP/tempmsg
+			
+			Setup failed to start the FUSE service.
+
+			Please check and try again.
+			
+			EOF
+			dialog \
+			  --title "SERVICE FAILURE" \
+			  --exit-label "OK" \
+			  --textbox "$TMP/tempmsg" \
+			  9 70
+			rm -f $TMP/tempmsg
+			continue
+		fi
+		
+		# mount the file inside a directory.
+		if [ -x $(type -path httpfs2) ]; then
+			httpfs2 -c /dev/null $REMOTE_SERVER$REMOTE_PATH /var/log/mount
+			if [ $? -ne 0 ]; then
+				cat <<- EOF > $TMP/tempmsg
+				
+				Failed to mount file from HTTP server:
+			
+				$REMOTE_SERVER$REMOTE_PATH
+				
+				Please check and try again.
+				
+				EOF
+				dialog \
+				  --title "MOUNT FAILURE" \
+				  --exit-label "OK" \
+				  --textbox "$TMP/tempmsg" \
+				  11 70
+				rm -f $TMP/tempmsg
+				continue
+			else
+				cat <<- EOF > $TMP/tempmsg
+				
+				Successfully mounted file from HTTP server:
+				
+				$(mount | grep /var/log/mount)
+				 
+				EOF
+				dialog \
+				  --title "MOUNT SUCCESS" \
+				  --exit-label "OK" \
+				  --textbox "$TMP/tempmsg" \
+				9 70
+				rm -f $TMP/tempmsg
+			fi
+		else
+			cat <<- EOF > $TMP/tempmsg
+			
+			Setup failed to execute a required command:
+		
+			httpfs2
+			
+			Please check and try again.
+			
+			EOF
+			dialog \
+			  --title "COMMAND NOT FOUND" \
+			  --exit-label "OK" \
+			  --textbox "$TMP/tempmsg" \
+			  11 70
+			rm -f $TMP/tempmsg
+			continue
+		fi
+
+		# attempt to loop mount the file
+		check_iso_image /var/log/mount /var/log/mntiso
+		if [ $? -eq 0 ]; then
+			if [ -d /var/log/mntiso/salix ]; then
+				echo "/var/log/mntiso/salix" > $TMP/SeTDS
+			else
+				cat <<- EOF > $TMP/tempmsg
+				
+				The ISO image you specified is not valid:
+				
+				$(basename $SOURCEISO)
+					
+				Please check and try again.
+				 
+				EOF
+				dialog \
+				  --title "INVALID ISO IMAGE" \
+				  --exit-label "OK" \
+				  --textbox "$TMP/tempmsg" \
+				  11 70
+				rm -f $TMP/tempmsg
+				umount -f /var/log/mntiso 2>/dev/null
+				continue
+			fi
+		else
+			cat <<- EOF > $TMP/tempmsg
+			
+			The file you specified is not valid:
+			
+			$REMOTE_SERVER$REMOTE_PATH
+			
+			Please check and try again.
+			 
+			EOF
+			dialog \
+			  --title "INVALID SOURCE FILE" \
+			  --exit-label "OK" \
+			  --textbox "$TMP/tempmsg" \
+			  11 70
+			rm -f $TMP/tempmsg
+			continue
+		fi
+	# attempt to fetch individual packages from the server
+	else
+		cat <<- EOF > $TMP/tempmsg
+		
+		We will now attempt to download a repository information file
+		from the server.
+		
+		If this is successful we will use it to create a local cache of
+		the packages we want to install.
+	
+		EOF
+		dialog \
+		  --title "INFORMATION" \
+			  --exit-label "OK" \
+			  --textbox "$TMP/tempmsg" \
+		  11 70
+		rm -f $TMP/tempmsg
+	
+		mkdir -p $TMP/pkgrepo 2>/dev/null
+		chmod 700 $TMP/pkgrepo
+		rm -rf $TMP/pkgrepo/* 2>/dev/null
+		mkdir -p /var/log/mount 2>/dev/null
+		ln -sf $TMP/pkgrepo /var/log/mount/
+		cd /var/log/mount/pkgrepo
+		
+		dialog \
+		  --infobox "\nDownloading file...\n" \
+		  5 23
+
+		wget -q -c $REMOTE_SERVER$REMOTE_PATH/PACKAGES.TXT.gz
+		if [ $? -ne 0 ]; then
+			cat <<- EOF > $TMP/tempmsg
+			
+			Failed to download repository information file:
+			
+			$REMOTE_SERVER$REMOTE_PATH/PACKAGES.TXT.gz
+			
+			Please check and try again.
+			
+			EOF
+			dialog \
+			  --title "DOWNLOAD FAILURE" \
+			  --exit-label "OK" \
+			  --textbox "$TMP/tempmsg" \
+			  11 70
+			rm -f $TMP/tempmsg
+			continue
+		elif [ -z "$(gzip -dc PACKAGES.TXT.gz | grep 'PACKAGE ')" ]; then
+			cat <<- EOF > $TMP/tempmsg
+			
+			The repository information file is not valid:
+			
+			$REMOTE_SERVER$REMOTE_PATH/PACKAGES.TXT.gz
+			
+			Please check and try again.
+			 
+			EOF
+			dialog \
+			  --title "INVALID FILE" \
+			  --exit-label "OK" \
+			  --textbox "$TMP/tempmsg" \
+			  11 70
+			rm -f $TMP/tempmsg
+			continue
+		else
+			# create a local repository with zero-byte package placeholders:
+			TOTALP=$(gzip -dc PACKAGES.TXT.gz | grep "PACKAGE NAME:" | wc -l)
+			(
+				NUMPKG=0
+				GAUGE=0
+				gzip -dc PACKAGES.TXT.gz | grep "PACKAGE " | while read REPLY ; do
+					case "$REPLY" in
+						"PACKAGE NAME:"*)
+							TEMP=$(echo $REPLY | cut -d: -f2)
+							PKGNAME=$(echo $TEMP)
+							PKGBASE=${PKGNAME/.t[glbx]z}
+							let NUMPKG=NUMPKG+1
+							if [ $(( ((100 * $NUMPKG)/$TOTALP)/5 )) -gt $(( $GAUGE/5 )) ]; then
+								GAUGE=$(( (100 * $NUMPKG)/$TOTALP ))
+								echo "$GAUGE"
+							fi
+							;;
+						"PACKAGE LOCATION:"*)
+							TEMP=$(echo $REPLY | cut -d: -f2)
+							PKGDIR=$(echo $TEMP)
+							mkdir -p $PKGDIR
+							touch $PKGDIR/$PKGNAME
+							;;
+						"PACKAGE SIZE (compressed):"*)
+							TEMP=$(echo $REPLY | cut -d: -f2)
+							PKGSIZE=$(echo $TEMP)
+							echo "$PKGSIZE" 1> $PKGDIR/$PKGBASE.size
+							;;
+						*)
+							;;
+					esac
+				done \
+			) |  \
+				dialog \
+				  --title "INITIALISING PACKAGE REPOSITORY" \
+				  --gauge "\nProcessing $TOTALP Salix packages..." \
+				  8 65
+
+			echo "/var/log/mount/pkgrepo/salix" > $TMP/SeTDS
+			echo "$REMOTE_SERVER,$REMOTE_PATH" > $TMP/SeTremotesvr 
+		fi
+	fi
+	echo "-source_mounted" > $TMP/SeTmount
+	echo "/dev/null" > $TMP/SeTsource
+	break
+done

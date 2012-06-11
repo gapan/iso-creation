@@ -3,9 +3,10 @@
 export LANG=C
 
 function gen_packages_txt {
-	echo '' > PACKAGES.TXT
-	find ./salix -type f -name '*.meta' -exec cat {} \; >> PACKAGES.TXT
-	cat PACKAGES.TXT | gzip -9 -c - > PACKAGES.TXT.gz
+	echo '' > iso/PACKAGES.TXT
+	find ./iso/salix -type f -name '*.meta' -exec cat {} \; >> iso/PACKAGES.TXT
+	cat iso/PACKAGES.TXT | gzip -9 -c - > iso/PACKAGES.TXT.gz
+	rn iso/PACKAGES.TXT
 }
 
 function gen_meta {
@@ -66,7 +67,7 @@ function gen_meta {
 	echo "" >> $LOCATION/$METAFILE
 }
 
-for pkg in `find ./salix -type f -name '*.t[glx]z' -print`
+for pkg in `find ./iso/salix -type f -name '*.t[glx]z' -print`
 do
 	gen_meta $pkg
 done

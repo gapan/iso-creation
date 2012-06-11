@@ -1,0 +1,17 @@
+
+                 -+  Kernel Selection Help +-
+
+You'll need one kernel to get Linux started on your system so that you can
+install it.  The default kernel is hugesmp.s, which requires at least a
+Pentium Pro processor.  If this kernel doesn't work for you, you may try
+the regular "huge.s" kernel, which supports i486 and better single CPU
+machines.
+
+***************************************************************************
+* Tip:  If you have no idea which kernel to use, go with hugesmp.s!       *
+***************************************************************************
+
+To boot the chosen kernel put the name of the kernel and press enter.
+
+boot: hugesmp.s  "For example, boot the 'hugesmp.s' kernel!"
+

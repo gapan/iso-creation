@@ -1,0 +1,133 @@
+#!/bin/sh
+TMP=/var/log/setup/tmp
+if [ ! -d $TMP ]; then
+	mkdir -p $TMP
+fi
+
+. /usr/lib/setup/INCISO
+
+while [ 0 ]; do
+	rm -f $TMP/SeTDS $TMP/SeTmount $TMP/SeTsource
+
+	umount -f /var/log/mount 2>/dev/null
+	if [ -n "$(mount | grep /var/log/mount)" -o -d /var/log/mount/lost+found -o -d /var/log/mount/recycled -o -r /var/log/mount/io.sys ]; then
+		cat <<- EOF > $TMP/tempmsg
+		
+		Setup failed to unmount a required directory:
+		
+		/var/log/mount
+		
+		Please reboot the machine an try again.
+		
+		EOF
+		dialog \
+		  --title "ERROR" \
+		  --yes-label "REBOOT" \
+		  --no-label "CANCEL" \
+		  --yesno "$(cat $TMP/tempmsg)" \
+		  11 70
+		RET=$?
+		rm -f $TMP/tempmsg
+		if [ $RET -eq 0 ]; then
+			reboot
+		else
+			exit 1
+		fi
+	fi
+
+	while [ 0 ]; do
+		cat <<- EOF > $TMP/tempmsg
+	
+		Please provide the path to a directory containing the contents (or
+		an ISO image) of a Salix installation disc.
+		
+		Note: You may use any directory within the current filesystem
+		except '/mnt' or '/var/log/mount' as these are required by
+		setup.
+		 
+		EOF
+		dialog \
+		  --title "SELECT A PRE-MOUNTED DIRECTORY" \
+		  --help-button --help-label "Browse" \
+		  --inputbox "$(cat $TMP/tempmsg)" \
+		  15 70 \
+		  $SOURCEDIR \
+		  2> $TMP/sourcedir
+		RET=$?
+		SOURCEDIR="$(cat $TMP/sourcedir)"
+		rm -f $TMP/sourcedir $TMP/tempmsg
+		if [ $RET -eq 2 ]; then
+			if [ -z "$SOURCEDIR" -o ! -d "$SOURCEDIR" ]; then
+				SOURCEDIR=/
+			fi
+			dialog \
+			  --title "SELECT A DIRECTORY" \
+			  --dselect $SOURCEDIR \
+			  12 80 \
+			  2> $TMP/sourcedir
+			SOURCEDIR="$(cat $TMP/sourcedir)"
+			rm -f $TMP/sourcedir $TMP/tempmsg
+			continue
+		elif [ $RET -ne 0 ]; then
+			exit 1
+		fi
+		break
+	done
+
+	SOURCEDIR="$(echo "$SOURCEDIR" | sed 's|/$||')"
+
+	mkdir -p /var/log/mount 2>/dev/null
+	check_iso_image $SOURCEDIR
+	if [ $? -eq 0 ]; then
+		if [ -d /var/log/mount/salix ]; then
+			echo "/var/log/mount/salix" > $TMP/SeTDS
+		else
+			cat <<- EOF > $TMP/tempmsg
+			
+			The ISO image you specified is not valid:
+			
+			$(basename $SOURCEISO)
+			
+			Please check and try again.
+			
+			EOF
+			dialog \
+			  --title "INVALID ISO IMAGE" \
+			  --exit-label "OK" \
+			  --textbox "$TMP/tempmsg" \
+			  11 70
+			rm -f $TMP/tempmsg
+			continue
+		fi
+	elif [ -d $SOURCEDIR/salix -a -f $SOURCEDIR/PACKAGES.TXT.gz ]; then
+		rm -f /var/log/mount 2>/dev/null
+		rmdir /var/log/mount 2>/dev/null
+		ln -sf $SOURCEDIR /var/log/mount
+		echo "/var/log/mount/salix" > $TMP/SeTDS
+	elif [ -d $SOURCEDIR/core -a -d $SOURCEDIR/basic -a -d $SOURCEDIR/full ]; then
+		rm -f /var/log/mount 2>/dev/null
+		rmdir /var/log/mount 2>/dev/null
+		ln -sf $SOURCEDIR /var/log/mount
+		echo "/var/log/mount" > $TMP/SeTDS
+	else
+		cat <<- EOF > $TMP/tempmsg
+		
+		The directory you specified is not valid:
+		
+		$SOURCEDIR
+		
+		Please check and try again.
+		
+		EOF
+		dialog \
+		  --title "INVALID SOURCE DIRECTORY" \
+		  --exit-label "OK" \
+		  --textbox "$TMP/tempmsg" \
+		  11 70
+		rm -f $TMP/tempmsg
+		continue
+	fi
+	echo "-source_mounted" > $TMP/SeTmount
+	echo "/dev/null" > $TMP/SeTsource
+	break
+done

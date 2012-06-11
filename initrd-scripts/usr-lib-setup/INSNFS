@@ -1,0 +1,224 @@
+#!/bin/sh
+TMP=/var/log/setup/tmp
+if [ ! -d $TMP ]; then
+	mkdir -p $TMP
+fi
+
+. /usr/lib/setup/INCISO
+
+if [ -f $TMP/Punattended ]; then
+	eval $(grep "^NFS_SERVER=" $TMP/Punattended)
+	eval $(grep "^NFS_ROOT=" $TMP/Punattended)
+fi
+
+REMOTE_SERVER=$NFS_SERVER
+REMOTE_PATH=$NFS_ROOT
+
+while [ 0 ]; do
+	rm -f $TMP/SeTDS $TMP/SeTmount $TMP/SeTsource
+
+	umount -f /var/log/mount 2>/dev/null
+	if [ -n "$(mount | grep /var/log/mount)" -o -d /var/log/mount/lost+found -o -d /var/log/mount/recycled -o -r /var/log/mount/io.sys ]; then
+		cat <<- EOF > $TMP/tempmsg
+		
+		Setup failed to unmount a required directory:
+		
+		/var/log/mount
+		
+		Please reboot the machine an try again.
+		
+		EOF
+		dialog \
+		  --title "ERROR" \
+		  --yes-label "REBOOT" \
+		  --no-label "CANCEL" \
+		  --yesno "$(cat $TMP/tempmsg)" \
+		  11 70
+		RET=$?
+		rm -f $TMP/tempmsg
+		if [ $RET -eq 0 ]; then
+			reboot
+		else
+			exit 1
+		fi
+	fi
+
+	cat <<- EOF > $TMP/tempmsg
+
+	Please provide the IP address of an NFS server on your network
+	containing the contents (or an ISO image) of a Salix installation
+	disc.
+	
+	Example: 192.168.1.101
+	 
+	EOF
+	dialog \
+	  --title "NFS SERVER IP ADDRESS" \
+	  --inputbox "$(cat $TMP/tempmsg)" \
+	  14 70 \
+	  $REMOTE_SERVER \
+	  2> $TMP/remote
+	RET=$?
+	REMOTE_SERVER="$(cat $TMP/remote)"
+	rm -f $TMP/tempmsg $TMP/remote
+	if [ $RET -ne 0 ]; then
+		exit 1
+	fi
+
+	while [ 0 ]; do
+		cat <<- EOF > $TMP/tempmsg
+		
+		Now please provide the path of an exported directory containing
+		the contents (or an ISO image) of a Salix installation disc.
+		
+		Example: /srv/salix-xfce/iso
+		
+		Note: Use the <Exports> button to request a list of exported
+		directories from the server.
+		 
+		EOF
+		dialog \
+		  --title "SELECT SOURCE DIRECTORY" \
+		  --help-button --help-label "Exports" \
+		  --inputbox "$(cat $TMP/tempmsg)" \
+		  16 70 \
+		  $REMOTE_PATH \
+		  2> $TMP/sourcedir
+		RET=$?
+		REMOTE_PATH="$(cat $TMP/sourcedir)"
+		rm -f $TMP/sourcedir $TMP/tempmsg
+		if [ $RET -eq 2 ]; then
+			dialog \
+			  --infobox "\nPlease wait...\n" \
+			  5 18
+			# this stops showmount hanging forever
+			ping -c 1 -w 10 $REMOTE_SERVER 2>&1 >/dev/null
+			if [ $? -ne 0 ]; then
+				echo "Server unreachable." > $TMP/tempmsg
+			else
+				showmount -e $REMOTE_SERVER 2>&1 > $TMP/tempmsg
+				if [ $? -ne 0 ]; then
+					echo "Server unreachable." > $TMP/tempmsg
+				fi
+			fi
+			dialog \
+			  --title "EXPORT LIST" \
+			  --textbox "$TMP/tempmsg" \
+			  25 80
+			rm -f $TMP/tempmsg
+			continue
+		fi
+		break
+	done
+
+	if [ $RET -ne 0 ]; then
+		continue
+	fi
+
+	if [ -x "$(type -path rpc.portmap)" -a -x "$(type -path rpc.statd)" ]; then
+		for rpc in rpc.portmap rpc.statd ;do
+			if [ -z "$(ps axc | grep -q $rpc)" ]; then
+				$rpc
+			fi
+		done
+	else
+		cat <<- EOF > $TMP/tempmsg
+		
+		Setup failed to start the RPC portmapper service.
+
+		Please check and try again.
+		
+		EOF
+		dialog \
+		  --title "SERVICE FAILURE" \
+		  --exit-label "OK" \
+		  --textbox "$TMP/tempmsg" \
+		  9 70
+		rm -f $TMP/tempmsg
+		exit 1
+	fi
+
+	mkdir -p /var/log/mount 2>/dev/null
+	mount -r -t nfs -o vers=3 $REMOTE_SERVER:$REMOTE_PATH /var/log/mount 2>/dev/null
+	if [ $? -ne 0 ]; then
+		cat <<- EOF > $TMP/tempmsg
+		
+		Failed to mount NFS filesystem:
+		
+		$REMOTE_SERVER:$REMOTE_PATH
+		
+		Please check and try again.
+		
+		EOF
+		dialog \
+		  --title "MOUNT FAILURE" \
+		  --exit-label "OK" \
+		  --textbox "$TMP/tempmsg" \
+		  11 70
+		rm -f $TMP/tempmsg
+		continue
+	else
+		cat <<- EOF > $TMP/tempmsg
+		
+		Successfully mounted NFS filesystem:
+		
+		$(mount | grep $REMOTE_SERVER:$REMOTE_PATH)
+		 
+		EOF
+		dialog \
+		  --title "MOUNT SUCCESS" \
+		  --exit-label "OK" \
+		  --textbox "$TMP/tempmsg" \
+		 9 70
+		rm -f $TMP/tempmsg
+	fi
+
+	check_iso_image /var/log/mount /var/log/mntiso
+	if [ $? -eq 0 ]; then
+		if [ -d /var/log/mntiso/salix ]; then
+			echo "/var/log/mntiso/salix" > $TMP/SeTDS
+		else
+			cat <<- EOF > $TMP/tempmsg
+			
+			The ISO image you specified is not valid:
+			
+			$(basename $SOURCEISO)
+				
+			Please check and try again.
+			 
+			EOF
+			dialog \
+			  --title "INVALID ISO IMAGE" \
+			  --exit-label "OK" \
+			  --textbox "$TMP/tempmsg" \
+			  11 70
+			rm -f $TMP/tempmsg
+			umount -f /var/log/mntiso 2>/dev/null
+			continue
+		fi
+	elif [ -d /var/log/mount/salix -a -f /var/log/mount/PACKAGES.TXT.gz ]; then
+		echo "/var/log/mount/salix" > $TMP/SeTDS
+	elif [ -d /var/log/mount/core -a -d /var/log/mount/basic -a -d /var/log/mount/full ]; then
+		echo "/var/log/mount/" > $TMP/SeTDS
+	else
+		cat <<- EOF > $TMP/tempmsg
+		
+		The directory you specified is not valid:
+		
+		$REMOTE_PATH
+		
+		Please check and try again.
+		 
+		EOF
+		dialog \
+		  --title "INVALID SOURCE DIRECTORY" \
+		  --exit-label "OK" \
+		  --textbox "$TMP/tempmsg" \
+		  11 70
+		rm -f $TMP/tempmsg
+		continue
+	fi
+	echo "-source_mounted" > $TMP/SeTmount
+	echo "/dev/null" > $TMP/SeTsource
+	break
+done

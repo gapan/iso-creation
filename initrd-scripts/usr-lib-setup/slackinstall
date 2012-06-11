@@ -1,0 +1,196 @@
+#!/bin/sh
+# Copyright 2003  Slackware Linux, Inc.,  Concord, CA  USA
+# Copyright 2009  Patrick J. Volkerding, Sebeka, MN, USA
+# Copyright 2009  George Vlahavas, Thessaloniki, Greece
+#    All rights reserved.
+#
+# Redistribution and use of this script, with or without modification, is
+# permitted provided that the following conditions are met:
+#
+# 1. Redistributions of this script must retain the above copyright
+#    notice, this list of conditions and the following disclaimer.
+#
+#  THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+#  WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+#  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO
+#  EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+#  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+#  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+#  OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+#  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+#  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+#  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+
+# globals
+
+TMP=/var/log/setup/tmp
+
+# functions
+
+get_pkg () {
+	# Download a package from a remote server.
+	# $1 == package series
+	# $2 == package base name
+	# $3 == additional options to the downloader (like, '-v')
+	# REMOTESVR points to the root of the slackware tree, and is composed of
+	# comma-separated values (protocol://remote_ipaddr[:portnumber],remote_root)
+	# like this example: 'ftp://192.168.0.22,/pub/slackware-12.1'
+	local REMOTE_SERVER=$(echo $REMOTESVR | cut -d, -f1)
+	local REMOTE_PATH=$(echo $REMOTESVR | cut -d, -f2)
+	local PKGBASE=${2/.t[glbx]z}
+	local PKGSIZE=$(cat $(cat $TMP/SeTDS)/$1/$PKGBASE.size)
+	mkdir -p $(cat $TMP/SeTDS)/$1
+	cat /dev/null > $(cat $TMP/SeTDS)/$1/$2
+	cat /dev/null > $(cat $TMP/SeTDS)/$1/$PKGBASE.desc
+	wget $3 -c -P $(cat $TMP/SeTDS)/$1 $REMOTE_SERVER$REMOTE_PATH/salix/$1/$PKGBASE.desc
+	wget $3 -c -P $(cat $TMP/SeTDS)/$1 $REMOTE_SERVER$REMOTE_PATH/salix/$1/$2
+	# One retry for aborted transfers
+	if [ $? -ne 0 ]; then
+		wget $3 -c -P $(cat $TMP/SeTDS)/$1 $REMOTE_SERVER$REMOTE_PATH/salix/$1/$2
+	fi
+	if [ $? -ne 0 ]; then
+		dialog \
+		  --title "FTP/HTTP DOWNLOAD FAILURE" \
+		  --msgbox "Downloading $2 FAILED." \
+		  5 72
+	fi
+}
+
+zap_pkg () {
+	# Cleanup a download from a remote server.
+	# $1 == package series
+	# $2 == package name
+	local PKGBASE=${2/.t[glbx]z}
+	cat /dev/null > $(cat $TMP/SeTDS)/$1/$2 # zero the local file
+	rm -f $(cat $TMP/SeTDS)/$1/$PKGBASE.desc # remove the description file
+}
+
+errorcode() {
+  if [ $1 = 99 ]; then
+    # User aborted installation
+    exit 1
+  else
+    dialog --timeout 600 --title "installpkg error #$1" --msgbox \
+"There was a fatal error attempting to install `basename $2`.  The package may \
+be corrupt, the installation media may be bad, or something else \
+has caused the package to be unable to be read without error.  You \
+may hit enter to continue if you wish, but if this is an important \
+required package then your installation may not work as-is." 11 70
+  fi
+}
+
+# /* main */
+
+# Process command line:
+if [ $# -gt 0 ]; then # there are arguments to the command
+  while [ $# -gt 0 ]; do
+   case "$1" in
+   "--promptmode")
+     MODE=`echo $2` ; shift 2 ;;
+   "--srcpath")
+     SRCPATH=`echo $2` ; shift 2 ;;
+   "--mountpoint")
+     MOUNTPOINT=`echo $2` ; shift 2 ;;
+   "--target")
+     ROOTDIR=`echo $2` ; shift 2 ;;
+   "--device")
+     DEVICE=`echo $2` ; shift 2 ;;
+   "--series")
+     SERIES=`echo $2` ; shift 2 ;;
+   "--net")
+     REMOTESVR=`echo $2` ; shift 2 ;;
+   *)
+     echo "Unrecognized option $1" ; shift 1 ;; 
+   esac
+  done
+else
+  exit 1;
+fi
+
+dialog --infobox "Installing \"`echo $MODE | sed "s/\(.*\)/\L\1/"`\" package set" 5 45
+sleep 1
+
+# we need this or spkg will fail
+mkdir -p $ROOTDIR/var/log/packages
+
+# Install the core package series:
+for package in $SRCPATH/core/*.t?z ; do
+  [ -n "$REMOTESVR" ] && get_pkg core $(basename $package) '-q'
+  dialog --progressbox "Installing `basename $package`" 17 80 < ${package%t[glbx]z}desc
+  spkg -i --root=$ROOTDIR -qq --no-ldconfig --no-gtk-update-icon-cache $package
+  ERROR=$?
+  if [ ! $ERROR = 0 ]; then
+	errorcode $ERROR $package
+  fi
+  [ -n "$REMOTESVR" ] && zap_pkg core $(basename $package)
+done
+
+# Install basic packages if requested
+if [ ! "$MODE" = "CORE" ]; then
+	# Install the package series:
+	for package in $SRCPATH/basic/*.t?z ; do
+	  [ -n "$REMOTESVR" ] && get_pkg basic $(basename $package) '-q'
+	  dialog --progressbox "Installing `basename $package`" 17 80 < ${package%t[glbx]z}desc
+	  spkg -i --root=$ROOTDIR -qq --no-ldconfig --no-gtk-update-icon-cache $package
+	  ERROR=$?
+	  if [ ! $ERROR = 0 ]; then
+		errorcode $ERROR $package
+	  fi
+	  [ -n "$REMOTESVR" ] && zap_pkg basic $(basename $package)
+	done
+fi
+
+# Install full set of package if requested
+if [ "$MODE" = "FULL" ]; then
+	# Install the package series:
+	for package in $SRCPATH/full/*.t?z ; do
+	  [ -n "$REMOTESVR" ] && get_pkg full $(basename $package) '-q'
+	  dialog --progressbox "Installing `basename $package`" 17 80 < ${package%t[glbx]z}desc
+	  spkg -i --root=$ROOTDIR -qq --no-ldconfig --no-gtk-update-icon-cache $package
+	  ERROR=$?
+	  if [ ! $ERROR = 0 ]; then
+		errorcode $ERROR $package
+	  fi
+	  [ -n "$REMOTESVR" ] && zap_pkg full $(basename $package)
+	done
+fi
+
+# Install the settings package series (some settings files only)
+for package in $SRCPATH/settings/*.t?z ; do
+	[ -n "$REMOTESVR" ] && get_pkg settings $(basename $package) '-q'
+	dialog --progressbox "Installing `basename $package`" 17 80 < ${package%t[glbx]z}desc
+	spkg -i --root=$ROOTDIR -qq --no-ldconfig --no-gtk-update-icon-cache $package
+	ERROR=$?
+	if [ ! $ERROR = 0 ]; then
+		errorcode $ERROR $package
+	fi
+	[ -n "$REMOTESVR" ] && zap_pkg settings $(basename $package)
+done
+
+# Install the kernel:
+if [[ `uname -r | grep "smp$"` ]]; then
+	for package in `ls $SRCPATH/kernels/*.t?z |grep smp`; do
+		[ -n "$REMOTESVR" ] && get_pkg kernels $(basename $package) '-q'
+		dialog --progressbox "Installing `basename $package`" 17 80 < ${package%t[glbx]z}desc
+		spkg -i --root=$ROOTDIR -qq --no-ldconfig --no-gtk-update-icon-cache $package
+		ERROR=$?
+		if [ ! $ERROR = 0 ]; then
+			errorcode $ERROR $package
+		fi
+		[ -n "$REMOTESVR" ] && zap_pkg kernels $(basename $package)
+	done
+else
+	for package in `ls $SRCPATH/kernels/*.t?z |grep -v smp`; do
+		[ -n "$REMOTESVR" ] && get_pkg kernels $(basename $package) '-q'
+		dialog --progressbox "Installing `basename $package`" 17 80 < ${package%t[glbx]z}desc
+		spkg -i --root=$ROOTDIR -qq --no-ldconfig --no-gtk-update-icon-cache $package
+		ERROR=$?
+		if [ ! $ERROR = 0 ]; then
+			errorcode $ERROR $package
+		fi
+		[ -n "$REMOTESVR" ] && zap_pkg kernels $(basename $package)
+	done
+fi
+
+

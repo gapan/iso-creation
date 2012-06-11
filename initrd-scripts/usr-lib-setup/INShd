@@ -1,0 +1,209 @@
+#!/bin/sh
+TMP=/var/log/setup/tmp
+if [ ! -d $TMP ]; then
+	mkdir -p $TMP
+fi
+
+. /usr/lib/setup/INCISO
+
+while [ 0 ]; do
+	rm -f $TMP/SeTDS $TMP/SeTmount $TMP/SeTsource
+
+	umount -f /var/log/mount 2>/dev/null
+	if [ -n "$(mount | grep /var/log/mount)" -o -d /var/log/mount/lost+found -o -d /var/log/mount/recycled -o -r /var/log/mount/io.sys ]; then
+		cat <<- EOF > $TMP/tempmsg
+		
+		Setup failed to unmount a required directory:
+		
+		/var/log/mount
+		
+		Please reboot the machine an try again.
+		
+		EOF
+		dialog \
+		  --title "ERROR" \
+		  --yes-label "REBOOT" \
+		  --no-label "CANCEL" \
+		  --yesno "$(cat $TMP/tempmsg)" \
+		  11 70
+		RET=$?
+		rm -f $TMP/tempmsg
+		if [ $RET -eq 0 ]; then
+			reboot
+		else
+			exit 1
+		fi
+	fi
+
+	while [ 0 ]; do
+		cat <<- EOF > $TMP/tempmsg
+		
+		Please specify which partition on your hard disk or USB stick
+		contains the contents (or an ISO image) of a Salix
+		installation disc.
+
+		Example: /dev/sdb2
+		
+		Note: Use the <Partitions> button to list available partitions.
+		 
+		EOF
+		dialog \
+		  --title "SELECT HARD DISK PARTITION" \
+		  --help-button --help-label "Partitions" \
+		  --inputbox "$(cat $TMP/tempmsg)" \
+		  16 70 \
+		  $SOURCEDEV \
+		  2> $TMP/sourcepart
+		RET=$?
+		SOURCEDEV="$(cat $TMP/sourcepart)"
+		rm -f $TMP/tempmsg $TMP/sourcepart
+		if [ $RET -eq 2 ]; then
+			echo "   Device Boot      Start         End      Blocks   Id  System" > $TMP/tempmsg
+			fdisk -l 2>/dev/null | grep "^/dev" | sort >> $TMP/tempmsg
+			dialog \
+			  --title "PARTITIONS LIST" \
+			  --textbox "$TMP/tempmsg" \
+			  25 80
+			rm -f $TMP/tempmsg
+			continue
+		elif [ $RET -ne 0 ]; then
+			exit 1
+		fi
+		break
+	done
+
+	if [ -n "$(mount | grep $SOURCEDEV)" ]; then
+		rm -f /var/log/mount 2>/dev/null
+		rmdir /var/log/mount 2>/dev/null
+		ln -sf $(mount | grep $SOURCEDEV | cut -f 3 -d ' ') /var/log/mount
+		RET=0
+	else
+		mkdir -p /var/log/mount 2>/dev/null
+		mount -r $SOURCEDEV /var/log/mount 2>/dev/null
+		RET=$?
+	fi
+
+	if [ $RET -ne 0 ]; then
+		cat <<- EOF > $TMP/tempmsg
+		
+		Failed to mount hard disk partition:
+		
+		$SOURCEDEV
+		
+		Please check and try again.
+		
+		EOF
+		dialog \
+		  --title "MOUNT FAILURE" \
+		  --exit-label "OK" \
+		  --textbox "$TMP/tempmsg" \
+		  11 70
+		rm -f $TMP/tempmsg
+		continue
+	else
+		cat <<- EOF > $TMP/tempmsg
+		
+		Successfully mounted hard disk partition:
+		
+		$(mount | grep $SOURCEDEV)
+		
+		EOF
+		dialog \
+		  --title "MOUNT SUCCESS" \
+		  --exit-label "OK" \
+		  --textbox "$TMP/tempmsg" \
+		  9 70
+		rm -f $TMP/tempmsg
+	fi
+
+	while [ 0 ]; do
+		cat <<- EOF > $TMP/tempmsg
+	
+		Now please provide the path to a directory containing the contents
+		(or an ISO image) of a Salix installation disc.
+		
+		Note: The path you enter must be relative to the mount point so
+		'/var/log/mount/salix-xfce' should be entered as '/salix-xfce'.
+		 
+		EOF
+		dialog \
+		  --title "SELECT SOURCE DIRECTORY" \
+		  --help-button --help-label "Browse" \
+		  --inputbox "$(cat $TMP/tempmsg)" \
+		  14 70 \
+		  $SOURCEDIR \
+		  2> $TMP/sourcedir
+		RET=$?
+		SOURCEDIR="$(cat $TMP/sourcedir)"
+		rm -f $TMP/sourcedir $TMP/tempmsg
+		if [ $RET -eq 2 ]; then
+			if [ -z "$SOURCEDIR" -o ! -d "/var/log/mount$SOURCEDIR" ]; then
+				SOURCEDIR="/"
+			fi
+			dialog \
+			  --title "SELECT A DIRECTORY" \
+			  --dselect "/var/log/mount$SOURCEDIR" \
+			  12 80 \
+			  2> $TMP/sourcedir
+			SOURCEDIR="$(cat $TMP/sourcedir | sed 's|^/var/log/mount||')"
+			rm -f $TMP/sourcedir $TMP/tempmsg
+			continue
+		fi
+		break
+	done
+	
+	if [ $RET -ne 0 ]; then
+		continue
+	fi
+
+	SRCDIR="$(echo "/var/log/mount$SOURCEDIR" | sed 's|/$||')"
+	
+	check_iso_image $SRCDIR /var/log/mntiso
+	if [ $? -eq 0 ]; then
+		if [ -d /var/log/mntiso/salix ]; then
+			echo "/var/log/mntiso/salix" > $TMP/SeTDS
+		else
+			cat <<- EOF > $TMP/tempmsg
+			
+			The ISO image you specified is not valid:
+			
+			$(basename $SOURCEISO)
+			
+			Please check and try again.
+			
+			EOF
+			dialog \
+			  --title "INVALID ISO IMAGE" \
+			  --exit-label "OK" \
+			  --textbox "$TMP/tempmsg" \
+			  11 70
+			rm -f $TMP/tempmsg
+			umount -f /var/log/mntiso 2>/dev/null
+			continue
+		fi
+	elif [ -d $SRCDIR/salix -a -f $SRCDIR/PACKAGES.TXT.gz ]; then
+		echo "$SRCDIR/salix" > $TMP/SeTDS
+	elif [ -d $SRCDIR/core -a -d $SRCDIR/basic -a -d $SRCDIR/full ]; then
+		echo "$SRCDIR" > $TMP/SeTDS
+	else
+		cat <<- EOF > $TMP/tempmsg
+		
+		The directory you specified is not valid:
+		
+		$SOURCEDIR
+		
+		Please check and try again.
+		
+		EOF
+		dialog \
+		  --title "INVALID SOURCE DIRECTORY" \
+		  --exit-label "OK" \
+		  --textbox "$TMP/tempmsg" \
+		  11 70
+		rm -f $TMP/tempmsg
+		continue
+	fi
+	echo "-source_mounted" > $TMP/SeTmount
+	echo "/dev/null" > $TMP/SeTsource
+	break
+done

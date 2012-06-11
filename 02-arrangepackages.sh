@@ -1,8 +1,8 @@
 #/bin/sh
 
-rm -rf salix
+rm -rf iso
 rm -rf temp
-mkdir -p salix/{kernels,core,basic,full,settings}
+mkdir -p iso/salix/{kernels,core,basic,full,settings}
 mkdir -p temp
 
 find /var/slapt-get -name *.t[gx]z -exec cp {} temp/ \;
@@ -28,22 +28,22 @@ for i in `cat lists/SETTINGS`; do
 done
 
 for i in `cat temp/KERNELLIST`; do
-	mv $i salix/kernels/
+	mv $i iso/salix/kernels/
 done
 
 for i in `cat temp/CORELIST`; do
-	mv $i salix/core/
+	mv $i iso/salix/core/
 done
 
 for i in `cat temp/BASICLIST`; do
-	mv $i salix/basic/
+	mv $i iso/salix/basic/
 done
 
 for i in `cat temp/FULLLIST`; do
-	mv $i salix/full/
+	mv $i iso/salix/full/
 done
 
 for i in `cat temp/SETTINGSLIST`; do
-	mv $i salix/settings/
+	mv $i iso/salix/settings/
 done
 

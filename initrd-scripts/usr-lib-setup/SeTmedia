@@ -1,0 +1,44 @@
+#!/bin/sh
+TMP=/var/log/setup/tmp
+if [ ! -d $TMP ]; then
+	mkdir -p $TMP
+fi
+
+while [ 0 ]; do
+	dialog \
+	  --backtitle "Select Salix installation source." \
+	  --title "SOURCE MEDIA SELECTION" \
+	  --menu "Please select the media from which to install Salix:" \
+	  13 70 6 \
+	  "1" "Install from a Salix CD or DVD" \
+	  "2" "Install from a hard disk partition" \
+	  "3" "Install from NFS (Network File System)" \
+	  "4" "Install from FTP/HTTP server" \
+	  "5" "Install from Samba share" \
+	  "6" "Install from a pre-mounted directory" \
+	  2> $TMP/media
+	RET=$?
+	SOURCE_MEDIA="$(cat $TMP/media)"
+	rm -f $TMP/media
+	if [ $RET -ne 0 ]; then
+		rm -f $TMP/SeTDS $TMP/SeTmount $TMP/SeTsource
+		exit 1
+	fi
+
+	test_ret() {
+		if [ $? -ne 0 ]; then
+			continue
+		fi
+	}
+
+	case "$SOURCE_MEDIA" in
+		"1") INSCD ; test_ret ;;
+		"2") INShd ; test_ret ;;
+		"3") SeTnet ; test_ret ; INSNFS ; test_ret ;;
+		"4") SeTnet ; test_ret ; INSURL ; test_ret ;;
+		"5") SeTnet ; test_ret ; INSSMB ; test_ret ;;
+		"6") INSdir ; test_ret ;;
+	esac
+
+	break
+done

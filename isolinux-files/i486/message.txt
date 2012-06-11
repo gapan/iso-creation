@@ -1,0 +1,24 @@
+ 
+ Welcome to 09Salix __EDITION__07 version 13.37 (Linux kernel 2.6.37.6)!
+
+ Some PCs may require extra kernel options to function properly.
+ If you need to pass extra parameters, enter them at the prompt below
+ after the name of the kernel to boot (hugesmp.s) - USUALLY NOT NEEDED.
+ EXAMPLE: hugesmp.s noacpi
+
+ NOTE: If your machine is not at least a Pentium-Pro, you *must* boot
+ with the huge.s kernel, not the hugesmp.s kernel! For older machines,
+ use "huge.s" at the boot prompt.
+
+ This prompt is just for entering extra parameters.  If you don't need
+ to enter any parameters, hit ENTER to boot the default kernel "hugesmp.s"
+ and begin the installation of Salix.
+
+ *Following this page the kernel will load and a setup menu will appear*
+
+ If you want to use this as a rescue system, just select to exit the
+ installation at the main menu. You will then have access to a linux
+ console. If from there you wish to go back to installing Salix, just
+ type "setup" in the linux console.
+
+

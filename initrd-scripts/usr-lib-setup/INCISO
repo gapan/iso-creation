@@ -1,0 +1,59 @@
+check_iso_image () {
+	local ISODIR=$1
+	local MNTDIR=$2
+	
+	if [ ! -d "$ISODIR" ]; then
+		return 1
+	fi
+	
+	if [ -z "$MNTDIR" ]; then
+		MNTDIR=/var/log/mount
+	fi
+	
+	SOURCEISO="$(cd "$ISODIR" ; find * -maxdepth 0 -iname '*.iso')"
+
+	if [ -z "$SOURCEISO" ]; then
+		return 1
+	elif [ "$(echo $SOURCEISO | wc -w)" -eq "1" ]; then
+		cat <<- EOF > $TMP/tempmsg
+		
+		Setup has found an ISO image in the source directory:
+		
+		$SOURCEISO
+		
+		Do you want to use this image as an installation source?
+		 
+		EOF
+		dialog \
+			--title "USE ISO IMAGE" \
+			--yesno "$(cat $TMP/tempmsg)" 11 70
+		RET=$?
+		SOURCEISO="$ISODIR/$SOURCEISO"
+		rm -f $TMP/tempmsg
+	else
+		cat <<- EOF > $TMP/tempmsg
+		
+		Setup has found ISO images in the source directory.
+		
+		Select an image if you want to use it as an installation source?
+		 
+		EOF
+		echo -n 'dialog --title "USE ISO IMAGE" --menu "$(cat $TMP/tempmsg)" 16 70 5 ' > $TMP/tempscript
+		echo "$SOURCEISO" | sed 's/$/ "" \\/g' >> $TMP/tempscript
+		. $TMP/tempscript 2>$TMP/SeTISO
+		RET=$?
+		SOURCEISO="$ISODIR/$(cat $TMP/SeTISO)"
+		rm -f $TMP/tempmsg $TMP/tempscript $TMP/SeTISO
+	fi
+	
+	if [ $RET -ne 0 ]; then
+		return 1
+	else
+		umount -f $MNTDIR 2>/dev/null
+		mkdir -p $MNTDIR 2>/dev/null
+		dialog \
+		  --infobox "\nMounting ISO image...\n" \
+		  5 25
+		mount -o loop,ro $SOURCEISO $MNTDIR 2>/dev/null
+	fi
+}

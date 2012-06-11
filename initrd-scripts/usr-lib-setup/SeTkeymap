@@ -1,0 +1,158 @@
+#!/bin/sh
+# Copyright 1993, 1999, 2002 Patrick Volkerding, Moorhead, MN.
+# Copyright 2009  Patrick J. Volkerding, Sebeka, MN, USA
+# Use and redistribution covered by the same terms as the "setup" script.
+TMP=/var/log/setup/tmp
+RDIR=/dev/tty4
+if [ ! -d $TMP ]; then
+  mkdir -p $TMP
+fi
+while [ 0 ]; do
+dialog --title "KEYBOARD MAP SELECTION" \
+--ok-label "Select" \
+--menu "You may select one \
+of the following keyboard maps. If you hit Cancel, \
+'us.map' (the US keyboard map) will be used anyway. Use the UP/DOWN \
+arrow keys and PageUp/PageDown to scroll \
+through the whole list of choices." \
+0 0 12 \
+"qwerty/us.map" "" \
+"azerty/azerty.map" "" \
+"azerty/be-latin1.map" "" \
+"azerty/fr-latin1.map" "" \
+"azerty/fr-latin9.map" "" \
+"azerty/fr-pc.map" "" \
+"azerty/fr.map" "" \
+"azerty/wangbe.map" "" \
+"azerty/wangbe2.map" "" \
+"dvorak/ANSI-dvorak.map" "" \
+"dvorak/dvorak-l.map" "" \
+"dvorak/dvorak-r.map" "" \
+"dvorak/dvorak.map" "" \
+"olpc/es-olpc.map" "" \
+"olpc/pt-olpc.map" "" \
+"qwerty/bg-cp1251.map" "" \
+"qwerty/bg-cp855.map" "" \
+"qwerty/bg_bds-cp1251.map" "" \
+"qwerty/bg_bds-utf8.map" "" \
+"qwerty/bg_pho-cp1251.map" "" \
+"qwerty/bg_pho-utf8.map" "" \
+"qwerty/br-abnt.map" "" \
+"qwerty/br-abnt2.map" "" \
+"qwerty/br-latin1-abnt2.map" "" \
+"qwerty/br-latin1-us.map" "" \
+"qwerty/by-cp1251.map" "" \
+"qwerty/by.map" "" \
+"qwerty/bywin-cp1251.map" "" \
+"qwerty/cf.map" "" \
+"qwerty/cz-cp1250.map" "" \
+"qwerty/cz-lat2-prog.map" "" \
+"qwerty/cz-lat2.map" "" \
+"qwerty/dk-latin1.map" "" \
+"qwerty/dk.map" "" \
+"qwerty/emacs.map" "" \
+"qwerty/emacs2.map" "" \
+"qwerty/es-cp850.map" "" \
+"qwerty/es.map" "" \
+"qwerty/et-nodeadkeys.map" "" \
+"qwerty/et.map" "" \
+"qwerty/fi-latin1.map" "" \
+"qwerty/fi-latin9.map" "" \
+"qwerty/fi.map" "" \
+"qwerty/gr-pc.map" "" \
+"qwerty/gr.map" "" \
+"qwerty/il.map" "" \
+"qwerty/is-latin1-us.map" "" \
+"qwerty/is-latin1.map" "" \
+"qwerty/it-ibm.map" "" \
+"qwerty/it.map" "" \
+"qwerty/it2.map" "" \
+"qwerty/jp106.map" "" \
+"qwerty/lt.baltic.map" "" \
+"qwerty/lt.l4.map" "" \
+"qwerty/lt.map" "" \
+"qwerty/mk-cp1251.map" "" \
+"qwerty/mk-utf.map" "" \
+"qwerty/mk.map" "" \
+"qwerty/mk0.map" "" \
+"qwerty/nl.map" "" \
+"qwerty/nl2.map" "" \
+"qwerty/no-latin1.map" "" \
+"qwerty/no.map" "" \
+"qwerty/pl.map" "" \
+"qwerty/pl2.map" "" \
+"qwerty/pt-latin1.map" "" \
+"qwerty/pt-latin9.map" "" \
+"qwerty/pt.map" "" \
+"qwerty/ro.map" "" \
+"qwerty/ru-cp1251.map" "" \
+"qwerty/ru-ms.map" "" \
+"qwerty/ru-yawerty.map" "" \
+"qwerty/ru.map" "" \
+"qwerty/ru1.map" "" \
+"qwerty/ru2.map" "" \
+"qwerty/ru3.map" "" \
+"qwerty/ru4.map" "" \
+"qwerty/ru_win.map" "" \
+"qwerty/se-fi-ir209.map" "" \
+"qwerty/se-fi-lat6.map" "" \
+"qwerty/se-ir209.map" "" \
+"qwerty/se-lat6.map" "" \
+"qwerty/sk-prog-qwerty.map" "" \
+"qwerty/sk-qwerty.map" "" \
+"qwerty/sr-cy.map" "" \
+"qwerty/sv-latin1.map" "" \
+"qwerty/tr_q-latin5.map" "" \
+"qwerty/tralt.map" "" \
+"qwerty/trq.map" "" \
+"qwerty/ua-utf-ws.map" "" \
+"qwerty/ua-utf.map" "" \
+"qwerty/ua-ws.map" "" \
+"qwerty/ua.map" "" \
+"qwerty/uk.map" "" \
+"qwerty/us-acentos.map" "" \
+"qwerty/us.map" "" \
+"qwertz/croat.map" "" \
+"qwertz/cz-us-qwertz.map" "" \
+"qwertz/cz.map" "" \
+"qwertz/de-latin1-nodeadkeys.map" "" \
+"qwertz/de-latin1.map" "" \
+"qwertz/de.map" "" \
+"qwertz/de_CH-latin1.map" "" \
+"qwertz/fr_CH-latin1.map" "" \
+"qwertz/fr_CH.map" "" \
+"qwertz/hu.map" "" \
+"qwertz/sg-latin1-lk450.map" "" \
+"qwertz/sg-latin1.map" "" \
+"qwertz/sg.map" "" \
+"qwertz/sk-prog-qwertz.map" "" \
+"qwertz/sk-qwertz.map" "" \
+"qwertz/slovene.map" "" \
+ 2> $TMP/SeTkeymap
+ if [ ! $? = 0 ]; then
+  rm -f $TMP/SeTkeymap
+  exit
+ fi
+ MAPNAME="`cat $TMP/SeTkeymap`"
+ MAPNAME="`basename $MAPNAME`"
+ echo $MAPNAME > $TMP/SeTkeymap
+ BMAP="`basename $MAPNAME .map`.bmap"
+ tar xzOf /etc/keymaps.tar.gz $BMAP | loadkmap
+
+ dialog --title "Test keyboard map" \
+ --ok-label "Accept keymap" \
+ --cancel-label "Reject keymap" \
+ --inputbox "You may now test the new keyboard map by typing some text. You can accept the keyboard map or reject it and select another one. The installer only supports ASCII characters, so don't try any special characters here or use them during installation!" \
+ 0 0
+ if [ $? -eq 0 ]; then
+  # Make a persistent (P) copy so starting setup won't erase it:
+  cp $TMP/SeTkeymap $TMP/Pkeymap
+  break;
+ else
+  rm -f $TMP/$MAPNAME
+  rm -f $TMP/SeTkeymap $TMP/Pkeymap
+  # Clear bad selection:
+  tar xzOf /etc/keymaps.tar.gz us.bmap | loadkmap
+  continue;
+ fi
+done
