@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ ! $# -eq 3 ]; then
+if [ ! $# -eq 4 ]; then
 	echo "ERROR. Syntax is: $0 EDITION ARCH VERSION ISO_FILENAME"
 	exit 1
 fi

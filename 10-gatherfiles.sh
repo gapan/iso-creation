@@ -11,5 +11,5 @@ mkdir -p iso/isolinux
 mkdir -p iso/kernels
 
 cp -r isolinux/$arch/* iso/isolinux/
-cp -r kernels/$arch/* iso/kernels/
+cp -r kernel/$arch/* iso/kernels/
 cp README iso/

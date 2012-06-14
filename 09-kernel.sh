@@ -1,17 +1,25 @@
 #!/bin/sh
 #
-# This script gets a slackware kernel.img file from a slackware
-# repository and converts it to a salix kernel.img file.
+# This script gets slackware kernel files from a slackware
+# repository 
 #
 # You will first need to install curlftpfs to use it.
-# You also need to be running a stock slackware kernel.
 
 set -e
+
+if [ ! $# -eq 2 ]; then
+	echo "ERROR. Syntax is: $0 ARCH VERSION"
+	exit 1
+fi
 
 if [ ! -x /usr/bin/curlftpfs ]; then
 	echo "curlftpfs is missing"
 	exit 1
 fi
+
+arch=$1
+ver=$2
+CWD=`pwd`
 
 unset LIBDIRSUFFIX
 if [[ "$arch" == "x86_64" ]]; then
@@ -34,9 +42,9 @@ curlftpfs ftp://ftp.slackware.org.uk ftp
 # get the slack kernel
 echo "Getting the slackware kernel..."
 if [[ "$arch" == "i486" ]]; then
-	cp -f $FTP/slackware/slackware${LIBDIRSUFFIX}-$VER/kernels/{hugesmp.s,huge.s} kernel/$arch/
+	cp -r $FTP/slackware/slackware${LIBDIRSUFFIX}-$ver/kernels/{hugesmp.s,huge.s} kernel/$arch/
 else
-	cp -f $FTP/slackware/slackware${LIBDIRSUFFIX}-$VER/kernels/huge.s kernel/$arch/
+	cp -r $FTP/slackware/slackware${LIBDIRSUFFIX}-$ver/kernels/huge.s kernel/$arch/
 fi
 
 # unmount the ftpfs and remove the mountpoint
