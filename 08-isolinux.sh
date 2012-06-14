@@ -31,7 +31,7 @@ cp initrd/$arch/initrd.img isolinux/$arch/
 cp isolinux-files/$arch/* isolinux/$arch/
 
 # write the edition in the messages.txt file
-sed -i "s/__EDITION__/$edition/" isolinux/$arch/messages.txt
+sed -i "s/__EDITION__/$edition/" isolinux/$arch/message.txt
 echo "DONE!"
 
 set +e

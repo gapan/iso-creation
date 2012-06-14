@@ -17,25 +17,30 @@ if [ "$UID" != "0" ]; then
 	exit 1
 fi
 
-if [ ! $# -eq 2 ]; then
-	echo "ERROR. Syntax is: $0 ARCH VERSION"
+if [ ! $# -eq 1 ]; then
+	echo "ERROR. Syntax is: $0 VERSION"
 	exit 1
 fi
-arch=$1
-VER=$2
+VER=$1
 
 if [ ! -x /usr/bin/curlftpfs ]; then
 	echo "curlftpfs is missing"
 	exit 1
 fi
 
+if [ -z "$arch" ]; then
+	case "$( uname -m )" in
+		i?86) arch=i486 ;;
+		*) arch=$( uname -m ) ;;
+	esac
+fi
+
+echo "You need to run this on a system using the target architecture."
+echo "Architecture detected: $ARCH"
+
 unset LIBDIRSUFFIX
 if [[ "$arch" == "x86_64" ]]; then
 	export LIBDIRSUFFIX="64"
-fi
-
-if [ -z $KERNELVER ]; then
-	echo "Asumming kernel version `uname -r`. Specify KERNELVER to override."
 fi
 
 mkdir -p initrd/$arch
