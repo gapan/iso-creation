@@ -36,7 +36,7 @@ if [ -z "$arch" ]; then
 fi
 
 echo "You need to run this on a system using the target architecture."
-echo "Architecture detected: $ARCH"
+echo "Architecture detected: $arch"
 
 unset LIBDIRSUFFIX
 if [[ "$arch" == "x86_64" ]]; then
