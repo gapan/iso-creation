@@ -15,6 +15,42 @@ unset MULTIPARTITION
 
 export MAINSELECT=""
 
+# multipartition (rootfs_size) - Partition with a varying / partition
+#                                size
+# Parameters : rootfs_size     size of / partition in kB.
+#
+multipartition () {
+	dialog --title "AUTO PARTITION" --infobox "Please wait while ${DISK} is being prepared for Salix" 0 0
+
+cat <<EOF2 >  $TMP/layout.sfdisk
+/dev/${DISK}1 : start=        , size=          $1, Id= 83, bootable
+/dev/${DISK}2 : start=        , size=        1000, Id= 82
+/dev/${DISK}3 : start=        , size=            , Id= 83
+/dev/${DISK}4 : start=       0, size=           0, Id= 0
+EOF2
+
+	sfdisk --no-reread -f -q -D -uM /dev/${DISK} < $TMP/layout.sfdisk | grep -v "Re-read" > $TMP/sfdisk.report 2> /dev/null 
+	/dev/makedevs.sh
+	sfdisk -R /dev/${DISK} 1> /dev/null 2> /dev/null 
+	
+	# formating ##########################################	
+	# root
+	RootFS='ext4'
+	make_ext4 /dev/${DISK}1
+	printf "%-16s %-16s %-11s %-16s %-3s %s\n" "/dev/${DISK}1" "/" "ext4" "defaults,noatime" "1" "1" > $TMP/SeTnative
+
+	# swap
+	if ! grep -w /dev/${DISK}2 /proc/swaps 1> /dev/null 2> /dev/null ; then
+		mkswap -v1 /dev/${DISK}2 1> /dev/null 2> /dev/null
+		swapon /dev/${DISK}2 1> /dev/null 2> /dev/null
+	fi
+	printf "%-16s %-16s %-11s %-16s %-3s %s\n" "/dev/${DISK}2" "swap" "swap" "defaults" "0" "0" > $TMP/SeTswap
+
+	# home
+	make_ext4 /dev/${DISK}3
+	printf "%-16s %-16s %-11s %-16s %-3s %s\n" "/dev/${DISK}3" "/home" "ext4" "defaults,noatime" "1" "2" >> $TMP/SeTnative
+}
+
 # make_ext4( dev, nodes, check ) - Create a new ext4 filesystem on the named
 #                                device.
 # Parameters:  dev     Device node to format.
@@ -197,39 +233,12 @@ EOF1
 	fi
 	printf "%-16s %-16s %-11s %-16s %-3s %s\n" "/dev/${DISK}2" "swap" "swap" "defaults" "0" "0" > $TMP/SeTswap
 		
+elif [ $DisksizeInMB -lt 40000 ] ; then
+	MULTIPARTITION=1
+	multipartition 10000
 else
 	MULTIPARTITION=1
-	dialog --title "AUTO PARTITION" --infobox "Please wait while ${DISK} is being prepared for Salix" 0 0
-
-cat <<EOF2 >  $TMP/layout.sfdisk
-/dev/${DISK}1 : start=        , size=        6000, Id= 83, bootable
-/dev/${DISK}2 : start=        , size=        1000, Id= 82
-/dev/${DISK}3 : start=        , size=            , Id= 83
-/dev/${DISK}4 : start=       0, size=           0, Id= 0
-EOF2
-
-	sfdisk --no-reread -f -q -D -uM /dev/${DISK} < $TMP/layout.sfdisk | grep -v "Re-read" > $TMP/sfdisk.report 2> /dev/null 
-	/dev/makedevs.sh
-	sfdisk -R /dev/${DISK} 1> /dev/null 2> /dev/null 
-	
-	# formating ##########################################	
-	# root
-	RootFS='ext4'
-	make_ext4 /dev/${DISK}1
-	printf "%-16s %-16s %-11s %-16s %-3s %s\n" "/dev/${DISK}1" "/" "ext4" "defaults,noatime" "1" "1" > $TMP/SeTnative
-
-	# swap
-	if ! grep -w /dev/${DISK}2 /proc/swaps 1> /dev/null 2> /dev/null ; then
-		mkswap -v1 /dev/${DISK}2 1> /dev/null 2> /dev/null
-		swapon /dev/${DISK}2 1> /dev/null 2> /dev/null
-	fi
-	printf "%-16s %-16s %-11s %-16s %-3s %s\n" "/dev/${DISK}2" "swap" "swap" "defaults" "0" "0" > $TMP/SeTswap
-
-	# home
-	make_ext4 /dev/${DISK}3
-	printf "%-16s %-16s %-11s %-16s %-3s %s\n" "/dev/${DISK}3" "/home" "ext4" "defaults,noatime" "1" "2" >> $TMP/SeTnative
-	
-
+	multipartition 15000
 fi
 
 echo "/dev/${DISK}1" > $TMP/SeTrootdev
