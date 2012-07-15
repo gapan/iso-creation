@@ -6,7 +6,7 @@ function gen_packages_txt {
 	echo '' > iso/PACKAGES.TXT
 	find ./iso/salix -type f -name '*.meta' -exec cat {} \; >> iso/PACKAGES.TXT
 	cat iso/PACKAGES.TXT | gzip -9 -c - > iso/PACKAGES.TXT.gz
-	rn iso/PACKAGES.TXT
+	rm iso/PACKAGES.TXT
 }
 
 function gen_meta {
