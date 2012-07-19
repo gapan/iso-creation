@@ -3,6 +3,11 @@
 export LANG=C
 export ARCH=${ARCH:-i486}
 
+if [ "$UID" -eq "0" ]; then
+	echo "Don't run this script as root"
+	exit 1
+fi
+
 for pkg in `find ./iso/salix -type f -name '*.t[gx]z' -print`
 do
 	PKGNAME=`basename $pkg | sed "s/\(.*\)-\(.*\)-\(.*\)-\(.*\)\.t[gx]z/\1/"`

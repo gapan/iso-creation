@@ -5,6 +5,11 @@
 #
 # You will first need to install curlftpfs to use it.
 
+if [ "$UID" -eq "0" ]; then
+	echo "Don't run this script as root"
+	exit 1
+fi
+
 set -e
 
 if [ ! $# -eq 2 ]; then
