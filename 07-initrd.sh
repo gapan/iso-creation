@@ -118,6 +118,7 @@ sed "/^127.0.0.1/s|slackware|salix${LIBDIRSUFFIX}|g" -i /boot/initrd-tree/etc/ho
 echo "Removing unnecessary stuff..."
 rm -rf /boot/initrd-tree/usr/{doc,include,man,src}
 rm -rf /boot/initrd-tree/usr/share/locale
+rm -rf /boot/initrd-tree/usr/src
 rm -rf /boot/initrd-tree/var/log/packages
 # remove cyrus-sasl stuff
 rm -f /boot/initrd-tree/usr/sbin/{pluginviewer,saslauthd,sasldblistusers2,saslpasswd2,testsaslauthd}
