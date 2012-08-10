@@ -192,7 +192,6 @@ wqy-zenhei-font-ttf
 x11-skel
 x11perf
 xauth
-xaw3d
 xbacklight
 xbitmaps
 xcb-proto
@@ -238,18 +237,15 @@ xf86-video-nouveau
 xf86-video-nv
 xf86-video-openchrome
 xf86-video-r128
-xf86-video-radeonhd
 xf86-video-rendition
 xf86-video-s3
 xf86-video-s3virge
 xf86-video-savage
 xf86-video-siliconmotion
 xf86-video-sis
-xf86-video-sisusb
 xf86-video-tdfx
 xf86-video-tga
 xf86-video-trident
-xf86-video-tseng
 xf86-video-v4l
 xf86-video-vesa
 xf86-video-vmware
