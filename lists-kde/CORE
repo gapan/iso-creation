@@ -158,7 +158,6 @@ netkit-routed
 network-scripts
 nfs-utils
 ntfs-3g
-ntfsprogs
 ntp
 openldap-client
 openssh
