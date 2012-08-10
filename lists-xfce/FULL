@@ -59,14 +59,6 @@ ipw2100-fw
 ipw2200-fw
 iso-codes
 iw
-iwlwifi-100-ucode
-iwlwifi-1000-ucode
-iwlwifi-3945-ucode
-iwlwifi-4965-ucode
-iwlwifi-5000-ucode
-iwlwifi-5150-ucode
-iwlwifi-6000-ucode
-iwlwifi-6xxx-ucode
 libass
 libcaca
 libcdaudio
@@ -126,10 +118,6 @@ pycups
 pygoocanvas
 pyorbit
 pyxdg
-rt2860-firmware
-rt2870-firmware
-rt61-firmware
-rt71w-firmware
 salix-codecs-installer
 salix-update-notifier
 samba
