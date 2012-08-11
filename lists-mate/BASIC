@@ -62,6 +62,7 @@ gtk-engines
 gucharmap
 guile
 gvfs
+udisks2
 hicolor-icon-theme
 iceauth
 ico
