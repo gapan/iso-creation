@@ -123,6 +123,7 @@ whaawmp
 wicd
 wireless-tools
 wpa_supplicant
+libnl3
 wv
 xdg-user-dirs
 xpad

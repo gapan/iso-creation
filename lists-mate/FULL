@@ -137,6 +137,7 @@ whaaw-thumbnailer-caja
 wicd
 wireless-tools
 wpa_supplicant
+libnl3
 xdg-user-dirs
 xvidcore
 zd1211-firmware

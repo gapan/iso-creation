@@ -140,6 +140,7 @@ wavpack
 wicd
 wireless-tools
 wpa_supplicant
+libnl3
 xdg-user-dirs
 gtk-xfce-engine
 orage

@@ -67,5 +67,6 @@ v4l-utils
 wicd
 wireless-tools
 wpa_supplicant
+libnl3
 xvidcore
 zd1211-firmware

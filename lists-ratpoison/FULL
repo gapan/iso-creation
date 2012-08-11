@@ -100,6 +100,7 @@ whaawmp
 wicd
 wireless-tools
 wpa_supplicant
+libnl3
 xmlrpc-c
 xvidcore
 zd1211-firmware
