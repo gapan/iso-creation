@@ -125,6 +125,7 @@ librsvg
 libsoup
 libtheora
 libtiff
+freeglut
 libunique
 libvisual
 libwnck
