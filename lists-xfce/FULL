@@ -72,6 +72,7 @@ libevent
 libgnome-keyring
 libgphoto2
 libgpod
+sg3_utils
 libhangul
 libid3tag
 libmms

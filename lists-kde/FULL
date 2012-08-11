@@ -40,6 +40,7 @@ libdvdnav
 libdvdread
 libgphoto2
 libgpod
+sg3_utils
 libktorrent
 liblastfm
 libmtp

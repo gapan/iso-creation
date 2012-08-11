@@ -48,6 +48,7 @@ libgnomecanvas
 libgnomeui
 libgphoto2
 libgpod
+sg3_utils
 libid3tag
 libmms
 libreplaygain
