@@ -118,6 +118,8 @@ pyorbit
 pyxdg
 salix-codecs-installer
 salix-update-notifier
+urlgrabber
+pycurl
 sane
 setuptools
 simple-scan

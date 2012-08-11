@@ -104,6 +104,8 @@ pycups
 pyxdg
 salix-codecs-installer
 salix-update-notifier
+urlgrabber
+pycurl
 samba
 sane
 simple-scan

@@ -60,6 +60,8 @@ poppler
 salix-codecs-installer
 shared-desktop-ontologies
 salix-update-notifier
+urlgrabber
+pycurl
 sane
 taglib
 urwid
