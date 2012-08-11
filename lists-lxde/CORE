@@ -221,6 +221,7 @@ time
 traceroute
 tree
 udev
+libusb-compat
 unarj
 unrar
 usbutils
