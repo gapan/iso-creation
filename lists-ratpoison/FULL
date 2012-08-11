@@ -68,6 +68,7 @@ mutt
 ndiswrapper
 notify-python
 obex-data-server
+lcms2
 obexfs
 obexftp
 openobex

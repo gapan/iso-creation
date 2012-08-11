@@ -89,6 +89,7 @@ ndiswrapper
 notify-python
 obconf
 obex-data-server
+lcms2
 obexfs
 obexftp
 openobex
