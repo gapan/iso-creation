@@ -138,7 +138,7 @@ mkcomposecache
 mkfontdir
 mkfontscale
 mozilla-firefox
-notification-daemon
+xfce4-notifyd
 numlockx
 obsidian-cursors
 pango
