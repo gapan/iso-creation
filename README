@@ -1,0 +1,21 @@
+You can use this CD as a repository for slapt-get/gslapt. In order to
+do that, you need to edit your /etc/slapt-get/slapt-getrc file. Edit it
+with your favourite text editor (as user root) and comment every SOURCE
+line in it, by putting a # in front of every line, for example this:
+
+  SOURCE=http://salix.enialis.net/i486/slackware-13.1/:OFFICIAL
+
+should become:
+
+  #SOURCE=http://salix.enialis.net/i486/slackware-13.1/:OFFICIAL
+
+then add a new SOURCE line that points to your mounted optical disc, for
+example:
+
+  SOURCE=file:///media/Salix_13.1/:OFFICIAL
+
+You will need to update your slapt-get package database by running:
+
+  slapt-get -u
+
+and then you can use the CD as if it was a regular repository.
