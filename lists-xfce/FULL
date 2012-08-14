@@ -6,7 +6,9 @@ bc
 bluez
 bluez-firmware
 bluez-hcidump
-brasero
+xfburn
+libburn
+libisofs
 catfish
 claws-mail
 cups
