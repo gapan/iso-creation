@@ -11,15 +11,15 @@ EXCLUDE=^aaa_elflibs,^aaa_base,^devs,^glibc-.*,^kernel-.*,^udev,^rootuser-settin
 # http://www.salixos.org/wiki/index.php/How_to_create_a_local_slackware_repository_with_dependency_support
 # if you want to use another Slackware mirror and keep the dependency
 # information.
-SOURCE=http://salix.enialis.net/i486/slackware-13.37/:OFFICIAL
-SOURCE=http://salix.enialis.net/i486/slackware-13.37/extra/:OFFICIAL
+SOURCE=http://salix.enialis.net/i486/slackware-current/:OFFICIAL
+SOURCE=http://salix.enialis.net/i486/slackware-current/extra/:OFFICIAL
 
 # The Salix repository
-SOURCE=http://salix.enialis.net/i486/13.37/:PREFERRED
+SOURCE=http://salix.enialis.net/i486/current/:PREFERRED
 
 # Sources for the testing and pasture areas - if you use them.
-# SOURCE=ftp://ftp.osuosl.org/pub/slackware/slackware-13.37/testing/
-# SOURCE=ftp://ftp.osuosl.org/pub/slackware/slackware-13.37/pasture/
+# SOURCE=ftp://ftp.osuosl.org/pub/slackware/slackware-current/testing/
+# SOURCE=ftp://ftp.osuosl.org/pub/slackware/slackware-current/pasture/
 
 # Packages on a CD/DVD.
 # SOURCE=file:///mnt/cdrom/:OFFICIAL
