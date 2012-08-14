@@ -51,8 +51,8 @@ giflib
 glew
 glproto
 gmime
-gnome-colors-icon-theme
-gnome-icon-theme
+mate-colors-icon-theme
+mate-icon-theme
 gslapt
 gst-plugins-base
 gstreamer
