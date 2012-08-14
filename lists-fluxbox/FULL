@@ -14,7 +14,10 @@ dirac
 djvulibre
 enchant
 esound
-evince
+mate-document-viewer
+mate-corba
+mate-conf
+libmatekeyring
 exaile
 exiv2
 faac
