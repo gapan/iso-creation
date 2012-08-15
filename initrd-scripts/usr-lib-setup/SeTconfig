@@ -160,7 +160,7 @@ fi
 
 chroot $T_PX /usr/sbin/clocksetup -c -z
 chroot $T_PX /usr/sbin/localesetup
-chroot $T_PX /etc/cron.daily/housekeeping
+chroot $T_PX /usr/sbin/update-all
 
 # Ask for numlock state
 numstate="off"
