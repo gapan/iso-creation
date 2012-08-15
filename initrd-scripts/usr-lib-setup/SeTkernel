@@ -22,7 +22,7 @@ swapdisks() {
     return 1
   fi
   umount $CDDEVICE 1> /dev/null 2> /dev/null
-  eject $CDDEVICE
+  eject -s $CDDEVICE
   dialog --title "REINSERT KERNEL DISC" --msgbox \
 "Please reinsert the Salix disc containing the collection \
 of Linux kernels.  Usually this is disc number one (the disc \

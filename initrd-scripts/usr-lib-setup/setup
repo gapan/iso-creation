@@ -282,7 +282,7 @@ if [ -f /mnt/etc/fstab ]; then
     if mount | grep iso9660 > /dev/null 2> /dev/null ; then
       umount `mount | grep iso9660 | cut -f 1 -d ' '`
     fi
-    eject `cat $TMP/SeTCDdev`
+    eject -s `cat $TMP/SeTCDdev`
        dialog --title "SALIX INSTALLATION IS COMPLETE" \
        --yes-label "Reboot now" \
        --no-label "Exit to command line" \

@@ -119,6 +119,12 @@ cat << EOF >> $TMP/tmpscript
 EOF
 fi
 
+if [ -d $DS/xfce -o "$DS" = "" ]; then
+cat << EOF >> $TMP/tmpscript
+"XFCE" "The Xfce Desktop Environment for X" on "Xfce is a fast and lightweight GTK+ based desktop environment for X." \\
+EOF
+fi
+
 if [ -d $DS/y -o "$DS" = "" ]; then
 cat << EOF >> $TMP/tmpscript
 "Y" "Games" on "The Y series is a collection of classic BSD text-based games." \\

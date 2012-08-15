@@ -32,7 +32,7 @@ Filesystem type: btrfs " 0 0
    if mount | grep "$1 " 1> $NDIR 2> $NDIR ; then
       umount $1 2> $NDIR
    fi
-   mkfs.btrfs $1 1> $REDIR 2> $REDIR
+   mkfs.btrfs -d single -m single $1 1> $REDIR 2> $REDIR
 }
 
 # make_ext2( dev, check ) - Create a new ext2 filesystem on the named

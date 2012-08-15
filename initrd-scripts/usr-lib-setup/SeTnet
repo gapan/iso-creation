@@ -96,6 +96,7 @@ fi
 # We need an interface:
 if [ `cat /proc/net/dev | grep ':' | sed -e "s/^ *//" | cut -f1 -d: | grep -v lo | wc -l` = 0 ]; then
   if [ "x${DRIVER}" != "x" ]; then
+    # This takes silent care of 'DRIVER=auto' as well...
     modprobe ${DRIVER} 1>/dev/null 2>/dev/null
   else
     while [ 0 ]; do
@@ -129,7 +130,15 @@ EOF
 fi
 
 # If we obtained information from a DHCP server, use it:
-if [ "x$INTERFACE" = "x" ]; then # the cmdline did not provide a nic
+if [ "x$INTERFACE" = "x" -o "$INTERFACE" = "auto" ]; then
+ # the cmdline did not provide a nic or it's "auto" to let dhcpcd find out:
+ if [ "$INTERFACE" = "auto" ]; then
+  # hope that 3 seconds is enough for dhcpcd;
+  # if not then you had better specify the INTERFACE in the nic= parameter...
+  dialog --title "INITIALIZING NETWORK" --infobox \
+   "\nWaiting a few seconds for DHCP polling to settle ..." 5 56
+  sleep 3
+ fi
  for I_I in \
   $(cat /proc/net/dev | grep ':' | sed -e "s/^ *//" | cut -f1 -d: | grep -v lo) ;
  do
@@ -139,6 +148,9 @@ if [ "x$INTERFACE" = "x" ]; then # the cmdline did not provide a nic
   fi
  done
  unset I_I
+ if [ "$INTERFACE" = "auto" ]; then  # failed to find a configured interface
+  INTERFACE=""
+ fi
 fi
 
 while [ 0 ]; do
