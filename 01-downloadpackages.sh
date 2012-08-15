@@ -20,6 +20,7 @@ fi
 edition=$1
 arch=$2
 
+unlink lists
 if [ $edition = "xfce" ] || \
 	[ $edition = "openbox" ] || \
 	[ $edition = "ratpoison" ] || \
