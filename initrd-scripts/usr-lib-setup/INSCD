@@ -32,14 +32,6 @@ This will let you type in any device name. (and if necessary, \
 will create the device)" \
  18 70 9 \
  "custom" "Type in the CD or DVD device to use" \
- "/dev/hdb" "CD/DVD slave on first IDE bus" \
- "/dev/hda" "CD/DVD master on first IDE bus (unlikely)" \
- "/dev/hdc" "CD/DVD master on second IDE bus" \
- "/dev/hdd" "CD/DVD slave on second IDE bus" \
- "/dev/hde" "CD/DVD master on third IDE bus" \
- "/dev/hdf" "CD/DVD slave on third IDE bus" \
- "/dev/hdg" "CD/DVD master on fourth IDE bus" \
- "/dev/hdh" "CD/DVD slave on fourth IDE bus" \
  "/dev/sr0" "First SCSI CD/DVD drive" \
  "/dev/sr1" "Second SCSI CD/DVD drive" \
  "/dev/sr2" "Third SCSI CD/DVD drive" \
