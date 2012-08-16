@@ -114,30 +114,10 @@ the source media selection process." 8 60
  fi
 fi
 
-# Search the IDE interfaces:
+# Search for CD/DVD drives (all devices are detected as SCSI devices
+# now):
 if [ "$DRIVE_FOUND" = "" ]; then
-
- dialog --title "SCANNING" --infobox "Scanning for an IDE \
-CD/DVD drive containing a Salix disc..." 4 56
- sleep 3
- for device in \
-  /dev/hdd /dev/hdc /dev/hdb /dev/hda \
-  /dev/hde /dev/hdf /dev/hdg /dev/hdh \
-  /dev/hdi /dev/hdj /dev/hdk /dev/hdl \
-  /dev/hdm /dev/hdn /dev/hdo /dev/hdp \
-  ; do
-  mount -o ro -t iso9660 $device /var/log/mount 1> $RDIR 2> $RDIR
-  if [ $? = 0 ]; then
-   DRIVE_FOUND=$device
-   umount /var/log/mount
-   break
-  fi
- done
-fi
-
-# Search for SCSI CD/DVD drives:
-if [ "$DRIVE_FOUND" = "" ]; then
- dialog --title "SCANNING" --infobox "Scanning for a SCSI \
+ dialog --title "SCANNING" --infobox "Scanning for a \
 CD/DVD drive containing a Salix disc..." 4 50
  sleep 3
  for device in \
