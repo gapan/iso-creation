@@ -159,8 +159,9 @@ if dmesg | grep "ATAPI CD" 1> /dev/null 2> /dev/null ; then
 fi
 
 chroot $T_PX /usr/sbin/clocksetup -c -z
+dialog --infobox "Loading locales..." 0 0
 chroot $T_PX /usr/sbin/localesetup
-dialog --infobox "Applying settings..." 0 0
+dialog --infobox "Updating caches..." 0 0
 chroot $T_PX /usr/sbin/update-all
 
 # Ask for numlock state
