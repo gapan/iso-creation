@@ -160,6 +160,7 @@ fi
 
 chroot $T_PX /usr/sbin/clocksetup -c -z
 chroot $T_PX /usr/sbin/localesetup
+dialog --infobox "Applying settings..." 0 0
 chroot $T_PX /usr/sbin/update-all
 
 # Ask for numlock state
