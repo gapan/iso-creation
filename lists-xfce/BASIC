@@ -311,3 +311,5 @@ mtdev
 xf86-video-modesetting
 leafpad
 libcroco
+libatasmart
+udisks
