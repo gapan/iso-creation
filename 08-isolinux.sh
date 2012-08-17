@@ -26,7 +26,7 @@ rm -rf isolinux/$arch
 mkdir -p isolinux/$arch
 
 # copy the isolinux.bin from the system (it's exactly the same for both
-# archictectures). For some reason slackware uses the
+# architectures). For some reason slackware uses the
 # isolinux-debug.bin, which prevents making a hybrid iso
 cp /usr/share/syslinux/isolinux.bin isolinux/$arch
 
