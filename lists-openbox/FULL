@@ -63,7 +63,6 @@ libdvdnav
 libdvdread
 libetpan
 libevent
-libgnome-keyring
 libgphoto2
 libgpod
 sg3_utils
