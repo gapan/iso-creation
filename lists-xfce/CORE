@@ -29,7 +29,6 @@ cpio
 cryptsetup
 curl
 cvs
-cxxlibs
 cyrus-sasl
 db44
 dbus
