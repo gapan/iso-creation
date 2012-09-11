@@ -125,7 +125,7 @@ urlgrabber
 pycurl
 samba
 sane
-setuptools
+distribute
 simple-scan
 sox
 speex

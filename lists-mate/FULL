@@ -120,7 +120,7 @@ salix-update-notifier
 urlgrabber
 pycurl
 sane
-setuptools
+distribute
 simple-scan
 sox
 speex
