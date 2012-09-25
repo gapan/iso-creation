@@ -1,6 +1,6 @@
 
 
-Welcome to 09Salix64 __EDITION__07 version 14.0 (Linux kernel 3.2.23)!
+Welcome to 09Salix64 __EDITION__07 version 14.0 (Linux kernel 3.2.29)!
 
 If you need to pass extra parameters to the kernel, enter them at the prompt
 below after the name of the kernel to boot (huge.s).
