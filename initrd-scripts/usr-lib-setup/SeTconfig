@@ -40,10 +40,12 @@ if [ ! -d $T_PX/var/spool/mail ]; then
   chmod 1777 $T_PX/var/spool/mail
 fi
 
-# Some of the install scripts need /proc and /sys:
+# Some of the install scripts need /proc and /sys.
+# Some disks will need /dev with module loaded devices.
 if [ ! "$T_PX" = "/" ]; then
   mount --bind /proc $T_PX/proc 1> /dev/null 2> /dev/null
   mount --bind /sys $T_PX/sys 1> /dev/null 2> /dev/null
+  mount --bind /dev $T_PX/dev 1> /dev/null 2> /dev/null
 fi
 # These will be left connected rather than unmounting them to
 # make it easier to set up LVM/LUKS.
