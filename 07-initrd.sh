@@ -44,7 +44,7 @@ if [[ "$arch" == "x86_64" ]]; then
 fi
 
 mkdir -p initrd/$arch
-rm -rf initrd/$arch/*initrd.img
+rm -rf initrd/$arch/*initrd*.img
 
 # create the mountpoint for the ftpfs
 mkdir ftp
@@ -125,10 +125,28 @@ rm -f /boot/initrd-tree/usr/sbin/{pluginviewer,saslauthd,sasldblistusers2,saslpa
 rm -f /boot/initrd-tree/etc/rc.d/rc.saslauthd
 rm -rf /boot/initrd-tree/usr/lib${LIBDIRSUFFIX}/sasl*/
 
-# repack initrd
-echo "Repacking initrd..."
-depmod -b /boot/initrd-tree/
-mkinitrd -o $CWD/initrd/$arch/initrd.img
+# in i486 the initrd is >32MB, so we need to split it in two
+if [ x$arch -eq x"i486"] ; then
+	cp -ar /boot/initrd-tree /boot/initrd-tree-copy
+	# first pack the non-smp initrd
+	echo "Repacking i486 non-smp initrd..."
+	rm -rf /boot/initrd-tree/lib/modules/*-smp
+	depmod -b /boot/initrd-tree/
+	mkinitrd -o $CWD/initrd/$arch/initrd-nonsmp.img
+	# then pack the smp initrd
+	echo "Repacking i486 smp initrd..."
+	rm -rf /boot/initrd-tree
+	mv /boot/initrd-tree-copy /boot/initrd-tree
+	rm -rf $( ls /boot/initrd-tree/lib/modules/ | grep -v smp )
+	depmod -b /boot/initrd-tree/
+	mkinitrd -o $CWD/initrd/$arch/initrd-smp.img
+
+else
+	# repack x86_64 initrd
+	echo "Repacking x86_64 initrd..."
+	depmod -b /boot/initrd-tree/
+	mkinitrd -o $CWD/initrd/$arch/initrd.img
+fi
 
 # unmount the ftpfs and remove the mountpoint
 echo "Unmounting ftp repository..."
