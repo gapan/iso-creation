@@ -126,7 +126,12 @@ rm -f /boot/initrd-tree/etc/rc.d/rc.saslauthd
 rm -rf /boot/initrd-tree/usr/lib${LIBDIRSUFFIX}/sasl*/
 
 # in i486 the initrd is >32MB, so we need to split it in two
-if [ x$arch -eq x"i486"] ; then
+if [ "$arch" == "x86_64" ] ; then
+	# repack x86_64 initrd
+	echo "Repacking x86_64 initrd..."
+	depmod -b /boot/initrd-tree/
+	mkinitrd -o $CWD/initrd/$arch/initrd.img
+else
 	cp -ar /boot/initrd-tree /boot/initrd-tree-copy
 	# first pack the non-smp initrd
 	echo "Repacking i486 non-smp initrd..."
@@ -140,12 +145,6 @@ if [ x$arch -eq x"i486"] ; then
 	rm -rf $( ls /boot/initrd-tree/lib/modules/ | grep -v smp )
 	depmod -b /boot/initrd-tree/
 	mkinitrd -o $CWD/initrd/$arch/initrd-smp.img
-
-else
-	# repack x86_64 initrd
-	echo "Repacking x86_64 initrd..."
-	depmod -b /boot/initrd-tree/
-	mkinitrd -o $CWD/initrd/$arch/initrd.img
 fi
 
 # unmount the ftpfs and remove the mountpoint
