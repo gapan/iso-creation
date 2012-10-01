@@ -3,28 +3,29 @@
 # This script gets a slackware initrd.img file from a slackware
 # repository and converts it to a salix initrd.img file.
 #
-# You will first need to install curlftpfs to use it.
-# You also need to be running a stock slackware kernel.
+# You really shouldn't build an initrd yourself if you're
+# making a custom iso. Use the initrd files found in a
+# Salix iso instead.
+#
+# You need to be running a stock slackware kernel.
 
 set -e
 
 CWD=`pwd`
 SCRIPTSDIR=$CWD/initrd-scripts
 
-
 if [ "$UID" != "0" ]; then
 	echo "You need to be root to run this"
 	exit 1
 fi
 
-if [ ! $# -eq 1 ]; then
+if [ ! $# -eq 2 ]; then
 	echo "ERROR. Syntax is: $0 VERSION"
 	exit 1
 fi
 VER=$1
 
-if [ ! -x /usr/bin/curlftpfs ]; then
-	echo "curlftpfs is missing"
+if [ $2 != "trustmeiknowwhatimdoing" ]; then
 	exit 1
 fi
 
@@ -43,17 +44,18 @@ if [[ "$arch" == "x86_64" ]]; then
 	export LIBDIRSUFFIX="64"
 fi
 
+REPO=http://slackware.org.uk
+SLACKREPO=$REPO/slackware/slackware${LIBDIRSUFFIX}-$VER
+SLACK2REPO=$SLACKREPO/slackware${LIBDIRSUFFIX}
+SALIXREPO=$REPO/salix/$arch/$VER/
+
 mkdir -p initrd/$arch
 rm -rf initrd/$arch/*initrd*.img
-
-# create the mountpoint for the ftpfs
-mkdir ftp
-FTP="$CWD/ftp"
 
 # get the slack initrd
 # use wget instead of ftp, less error prone
 echo "Getting the slackware initrd..."
-wget -q http://www.slackware.org.uk/slackware/slackware${LIBDIRSUFFIX}-$VER/isolinux/initrd.img -O initrd/$arch/slack-initrd.img
+wget -q $SLACKREPO/isolinux/initrd.img -O initrd/$arch/slack-initrd.img
 
 # unpack slack initrd
 echo "Unpacking slackware initrd..."
@@ -71,36 +73,84 @@ echo "Replacing setup scripts..."
 rm /boot/initrd-tree/usr/lib/setup/*
 cp $SCRIPTSDIR/usr-lib-setup/* /boot/initrd-tree/usr/lib/setup/
 
-# mount the slackware.org.uk ftp server with curlftpfs
-# we're using the slackware.org.uk mirror because it includes both
-# slackware and salix repos
-echo "Mounting ftp repository..."
-curlftpfs ftp://ftp.slackware.org.uk $FTP
+# download and install required packages
+rm -f slack.md5 salix.md5
+echo "Downloading slack CHECKSUMS.md5 file"
+wget -q $SLACK2REPO/CHECKSUMS.md5 -O slack.md5
+echo "Downloading salix CHECKSUMS.md5 file"
+wget -q $SALIXREPO/CHECKSUMS.md5 -O salix.md5
 
-# install packages from ftp
+echo "Downloading spkg..."
+rm -f spkg-*.txz
+LOC=`grep "\/spkg-.*-.*-.*\.tgz$" salix.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
+wget -q $SALIXREPO/$LOC
 echo "Installing spkg..."
-spkg --root=/boot/initrd-tree/ -i $FTP/salix/$arch/$VER/salix/a/spkg-*.tgz
+spkg -qq --root=/boot/initrd-tree/ -i spkg-*.tgz
+rm spkg-*.tgz
+
+echo "Downloading xz..."
+rm -f xz-*.tgz
+LOC=`grep "\/xz-.*-.*-.*\.tgz$" slack.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
+wget -q $SLACK2REPO/$LOC
 echo "Installing xz..."
-spkg --root=/boot/initrd-tree/ -i $FTP/slackware/slackware${LIBDIRSUFFIX}-$VER/slackware${LIBDIRSUFFIX}/a/xz-*.tgz
+spkg -qq --root=/boot/initrd-tree/ -i xz-*.tgz
+rm xz-*.tgz
+
+echo "Downloading nfsutils..."
+rm -f nfs-utils-*.txz
+LOC=`grep "\/nfs-utils-.*-.*-.*\.txz$" slack.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
+wget -q $SLACK2REPO/$LOC
 echo "Installing showmount binary from nfsutils..."
-tar xf $FTP/slackware/slackware${LIBDIRSUFFIX}-$VER/slackware${LIBDIRSUFFIX}/n/nfs-utils-*.txz -C /boot/initrd-tree usr/sbin/showmount
+tar xf nfs-utils-*.txz -C /boot/initrd-tree usr/sbin/showmount
+rm nfs-utils-*.txz
+
+echo "Downloading fuse..."
+rm -f fuse-*.txz
+LOC=`grep "\/fuse-.*-.*-.*\.txz$" slack.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
+wget -q $SLACK2REPO/$LOC
 echo "Installing fuse..."
-spkg --root=/boot/initrd-tree/ -i $FTP/slackware/slackware${LIBDIRSUFFIX}-$VER/slackware${LIBDIRSUFFIX}/l/fuse-*.txz
+spkg -qq --root=/boot/initrd-tree/ -i fuse-*.txz
+rm fuse-*.txz
+
+echo "Downloading httpfs2..."
+rm -f httpfs2-*.txz
+LOC=`grep "\/httpfs2-.*-.*-.*\.txz$" salix.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
+wget -q $SALIXREPO/$LOC
 echo "Installing httpfs2..."
-spkg --root=/boot/initrd-tree/ -i $FTP/salix/$arch/$VER/salix/n/httpfs2-*.txz
+spkg -qq --root=/boot/initrd-tree/ -i httpfs2-*.txz
+rm httpfs2-*.txz
+
+echo "Downloading kernel modules"
+MODULES=`grep "\/kernel-modules-.*-.*-.*\.txz$" slack.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
+for LOC in $MODULES; do
+	wget -q $SLACK2REPO/$LOC
+done
 echo "Installing fuse.ko kernel modules..."
-for i in `ls $FTP/slackware/slackware${LIBDIRSUFFIX}-$VER/slackware${LIBDIRSUFFIX}/a/kernel-modules-*.txz`; do
+for i in `ls kernel-modules-*.txz`; do
 	tar xf $i -C /boot/initrd-tree --wildcards "*/fuse.ko"
 done
+rm kernel-modules-*.txz
+
+echo "Downloading cyrus-sasl..."
+rm -f cyrus-sasl-*.txz
+LOC=`grep "\/cyrus-sasl-.*-.*-.*\.txz$" slack.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
+wget -q $SLACK2REPO/$LOC
 echo "Installing cyrus-sasl..."
-spkg --root=/boot/initrd-tree/ -i $FTP/slackware/slackware${LIBDIRSUFFIX}-$VER/slackware${LIBDIRSUFFIX}/n/cyrus-sasl-*.txz
+spkg -qq --root=/boot/initrd-tree/ -i cyrus-sasl-*.txz
+rm cyrus-sasl-*.txz
+
+echo "Downloading samba..."
+rm -f samba-*.txz
+LOC=`grep "\/samba-.*-.*-.*\.txz$" slack.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
+wget -q $SLACK2REPO/$LOC
 echo "Installing smbclient binary from samba..."
-tar xf $FTP/slackware/slackware${LIBDIRSUFFIX}-$VER/slackware${LIBDIRSUFFIX}/n/samba-*.txz -C /boot/initrd-tree --wildcards \
+tar xf samba-*.txz -C /boot/initrd-tree --wildcards \
   usr/bin/smbclient \
   usr/lib${LIBDIRSUFFIX}/*.dat \
   usr/lib${LIBDIRSUFFIX}/charset/*
 install -d /boot/initrd-tree/etc/samba
 touch /boot/initrd-tree/etc/samba/smb.conf
+rm samba-*.txz
 
 echo "Tweaking config files..."
 # network logon message
@@ -149,10 +199,9 @@ else
 	mkinitrd -o $CWD/initrd/$arch/initrd-smp.img
 fi
 
-# unmount the ftpfs and remove the mountpoint
-echo "Unmounting ftp repository..."
-fusermount -u $FTP
-rmdir $FTP
+# clean up
+rm -f slack.md5 salix.md5
+rm -rf /boot/initrd-tree
 
 echo "DONE!"
 set +e
