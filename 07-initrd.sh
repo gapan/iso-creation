@@ -50,15 +50,10 @@ rm -rf initrd/$arch/*initrd*.img
 mkdir ftp
 FTP="$CWD/ftp"
 
-# mount the slackware.org.uk ftp server with curlftpfs
-# we're using the slackware.org.uk mirror because it includes both
-# slackware and salix repos
-echo "Mounting ftp repository..."
-curlftpfs ftp://ftp.slackware.org.uk ftp
-
 # get the slack initrd
+# use wget instead of ftp, less error prone
 echo "Getting the slackware initrd..."
-cp -f $FTP/slackware/slackware${LIBDIRSUFFIX}-$VER/isolinux/initrd.img initrd/$arch/slack-initrd.img
+wget -q http://www.slackware.org.uk/slackware/slackware${LIBDIRSUFFIX}-$VER/isolinux/initrd.img -O initrd/$arch/slack-initrd.img
 
 # unpack slack initrd
 echo "Unpacking slackware initrd..."
@@ -75,6 +70,12 @@ cp $SCRIPTSDIR/etc-rc.d/* /boot/initrd-tree/etc/rc.d/
 echo "Replacing setup scripts..."
 rm /boot/initrd-tree/usr/lib/setup/*
 cp $SCRIPTSDIR/usr-lib-setup/* /boot/initrd-tree/usr/lib/setup/
+
+# mount the slackware.org.uk ftp server with curlftpfs
+# we're using the slackware.org.uk mirror because it includes both
+# slackware and salix repos
+echo "Mounting ftp repository..."
+curlftpfs ftp://ftp.slackware.org.uk $FTP
 
 # install packages from ftp
 echo "Installing spkg..."
@@ -138,11 +139,12 @@ else
 	rm -rf /boot/initrd-tree/lib/modules/*-smp
 	depmod -b /boot/initrd-tree/
 	mkinitrd -o $CWD/initrd/$arch/initrd-nonsmp.img
+	rm -rf $( ls /boot/initrd-tree/lib/modules/ | grep smp )/*
 	# then pack the smp initrd
 	echo "Repacking i486 smp initrd..."
 	rm -rf /boot/initrd-tree
 	mv /boot/initrd-tree-copy /boot/initrd-tree
-	rm -rf $( ls /boot/initrd-tree/lib/modules/ | grep -v smp )
+	rm -rf $( ls /boot/initrd-tree/lib/modules/ | grep -v smp )/*
 	depmod -b /boot/initrd-tree/
 	mkinitrd -o $CWD/initrd/$arch/initrd-smp.img
 fi
