@@ -18,7 +18,7 @@ arch=$1
 edition=$2
 
 unset LIBDIRSUFFIX
-if [[ "$arch" == "x86_64" ]]; then
+if [ x"$arch" == x"x86_64" ]; then
 	export LIBDIRSUFFIX="64"
 fi
 
@@ -31,7 +31,7 @@ mkdir -p isolinux/$arch
 cp /usr/share/syslinux/isolinux.bin isolinux/$arch
 
 # copy the initrd (it should already be there)
-cp initrd/$arch/initrd.img isolinux/$arch/
+cp initrd/$arch/*.img isolinux/$arch/
 
 # copy the rest of the files
 cp isolinux-files/$arch/* isolinux/$arch/
