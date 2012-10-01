@@ -17,11 +17,6 @@ fi
 arch=$1
 edition=$2
 
-unset LIBDIRSUFFIX
-if [ x"$arch" == x"x86_64" ]; then
-	export LIBDIRSUFFIX="64"
-fi
-
 rm -rf isolinux/$arch
 mkdir -p isolinux/$arch
 
