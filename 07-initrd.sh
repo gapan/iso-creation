@@ -192,14 +192,14 @@ else
 	echo "Repacking i486 non-smp initrd..."
 	rm -rf /boot/initrd-tree/lib/modules/*-smp
 	depmod -b /boot/initrd-tree/ $( uname -r | sed "s/-smp//" )
-	mkinitrd -o $CWD/initrd/$arch/initrd-nonsmp.img -k $( uname -r | sed "s/-smp//" )
+	mkinitrd -o $CWD/initrd/$arch/nosmp.img -k $( uname -r | sed "s/-smp//" )
 	# then pack the smp initrd
 	echo "Repacking i486 smp initrd..."
 	rm -rf /boot/initrd-tree
 	mv /boot/initrd-tree-copy /boot/initrd-tree
 	rm -rf $( ls -d /boot/initrd-tree/lib/modules/* | grep -v smp )
 	depmod -b /boot/initrd-tree/
-	mkinitrd -o $CWD/initrd/$arch/initrd-smp.img
+	mkinitrd -o $CWD/initrd/$arch/smp.img
 fi
 
 # clean up
