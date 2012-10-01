@@ -7,6 +7,10 @@
 # making a custom iso. Use the initrd files found in a
 # Salix iso instead.
 #
+# This script assumes that in a 32bit system, you're running the smp
+# kernel and that you at least have the non-smp kernel-modules package
+# installed.
+#
 # You need to be running a stock slackware kernel.
 
 set -e
@@ -187,14 +191,14 @@ else
 	# first pack the non-smp initrd
 	echo "Repacking i486 non-smp initrd..."
 	rm -rf /boot/initrd-tree/lib/modules/*-smp
-	depmod -b /boot/initrd-tree/
-	mkinitrd -o $CWD/initrd/$arch/initrd-nonsmp.img
-	rm -rf $( ls /boot/initrd-tree/lib/modules/ | grep smp )/*
+	depmod -b /boot/initrd-tree/ $( uname -r | sed "s/-smp//" )
+	mkinitrd -o $CWD/initrd/$arch/initrd-nonsmp.img -k $( uname -r | sed "s/-smp//" )
+	rm -rf $( ls -d /boot/initrd-tree/lib/modules/* | grep smp )
 	# then pack the smp initrd
 	echo "Repacking i486 smp initrd..."
 	rm -rf /boot/initrd-tree
 	mv /boot/initrd-tree-copy /boot/initrd-tree
-	rm -rf $( ls /boot/initrd-tree/lib/modules/ | grep -v smp )/*
+	rm -rf $( ls -d /boot/initrd-tree/lib/modules/* | grep -v smp )
 	depmod -b /boot/initrd-tree/
 	mkinitrd -o $CWD/initrd/$arch/initrd-smp.img
 fi
