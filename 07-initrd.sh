@@ -67,6 +67,7 @@ rm -rf /boot/initrd-tree
 mkdir /boot/initrd-tree
 cd /boot/initrd-tree
 gzip -dc < $CWD/initrd/$arch/slack-initrd.img | cpio -i
+cd $CWD
 
 # replace rc.d scripts
 echo "Replacing rc.d scripts..."
