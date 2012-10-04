@@ -128,3 +128,7 @@ libnl3
 xdg-user-dirs
 xvidcore
 zd1211-firmware
+fftw
+ilmbase
+openexr
+imagemagick

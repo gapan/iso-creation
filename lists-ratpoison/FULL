@@ -103,3 +103,7 @@ libnl3
 xmlrpc-c
 xvidcore
 zd1211-firmware
+fftw
+ilmbase
+openexr
+imagemagick

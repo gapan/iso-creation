@@ -71,3 +71,7 @@ wpa_supplicant
 libnl3
 xvidcore
 zd1211-firmware
+fftw
+ilmbase
+openexr
+imagemagick

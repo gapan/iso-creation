@@ -175,3 +175,7 @@ sound-theme-freedesktop
 keybinder
 upower
 libxfcegui4
+fftw
+ilmbase
+openexr
+imagemagick
