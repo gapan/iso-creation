@@ -304,7 +304,7 @@ cat /dev/null >> $TMP/SeTnative
 
 cat << EOF > $TMP/tempscript
 dialog --backtitle "Setting up root Linux partition." \\
---title "Select Linux installation partition:" --ok-label Select --cancel-label Continue --menu \\
+--title "Select Linux installation partition:" --ok-label Select --cancel-label Cancel --menu \\
 "Please select a partition from the following list to use for your \\
 root (/) Linux partition." 13 70 5 \\
 EOF
