@@ -240,3 +240,7 @@ gptfdisk
 libffi
 pcre
 sg3_utils
+nettle
+p11-kit
+libp11
+engine_pkcs11
