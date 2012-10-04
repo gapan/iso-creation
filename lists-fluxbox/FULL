@@ -65,7 +65,6 @@ libetpan
 libevent
 libgphoto2
 libgpod
-sg3_utils
 libhangul
 libid3tag
 libmms
