@@ -149,11 +149,33 @@ mkdir /var/log/mount 2> /dev/null
   fi
   SeTDOS
   if [ -r $TMP/SeTnative ]; then
-   MAINSELECT="SOURCE"
+   MAINSELECT="MODE"
   fi
  fi
 
- if [ "$MAINSELECT" = "SOURCE" ]; then
+ if [ "$MAINSELECT" = "MODE" ]; then
+  dialog --title "SELECT INSTALLATION MODE" \
+  	--no-cancel --menu \
+"Please select the installation mode you prefer \
+from the following:\n\n
+FULL (default) will install everything. That includes \
+one application per task, such as an office \
+suite, a multimedia player, a CD/DVD burner etc.\n\n
+BASIC will only install a minimal graphical environment \
+and a web browser.\n\n
+CORE will install only the minimum essentials for \
+your system to start in console mode (no graphical \
+environment included) and is ideal if you are an \
+experienced user and want to fully customize your \
+installation for any specific purpose.\n " 23 70 3 \
+"FULL" "Install everything" \
+"BASIC" "Install a minimal graphical environment" \
+"CORE" "Install a minimal console system" 2> $TMP/SeTpmode
+  MODE=`cat $TMP/SeTpmode`
+  MAINSELECT="SOURCE"
+  fi
+ 
+  if [ "$MAINSELECT" = "SOURCE" ]; then
 	SeTmedia 
 	if [ ! -r $TMP/SeTsource -a ! -r $TMP/SeTgateway -a ! -r $TMP/SeTmount ]; then
    		dialog --title "No Source Selected" --msgbox "\nInstaller does not know where to find the source packages...\n\n    Press ENTER to return to the main menu." 10 68
@@ -181,25 +203,6 @@ Press ENTER to return to the main menu." 16 68
   SERIES="#CORE##BASIC##FULL##SETTINGS#"
   SOURCE_DEVICE="`cat $TMP/SeTsource`"
   IGNORE_TAGFILES="-ignore_tagfiles"
-  
-  dialog --title "SELECT INSTALLATION MODE" \
-  	--no-cancel --menu \
-"Please select the installation mode you prefer \
-from the following:\n\n
-FULL (default) will install everything. That includes \
-one application per task, such as an office \
-suite, a multimedia player, a CD/DVD burner etc.\n\n
-BASIC will only install a minimal graphical environment \
-and a web browser.\n\n
-CORE will install only the minimum essentials for \
-your system to start in console mode (no graphical \
-environment included) and is ideal if you are an \
-experienced user and want to fully customize your \
-installation for any specific purpose.\n " 23 70 3 \
-"FULL" "Install everything" \
-"BASIC" "Install a minimal graphical environment" \
-"CORE" "Install a minimal console system" 2> $TMP/SeTpmode
-  MODE=`cat $TMP/SeTpmode`
   
   if [ -r $TMP/SeTCDdev ]; then # only try to remount media if it's a CD/DVD
     slackinstall --device `cat $TMP/SeTCDdev` --promptmode $MODE --srcpath `cat $TMP/SeTDS` --mountpoint /var/log/mount --target $T_PX --series $SERIES
