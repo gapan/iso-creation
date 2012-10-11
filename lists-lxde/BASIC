@@ -11,6 +11,7 @@ audiofile
 bdftopcf
 bigreqsproto
 cairo
+clearlooks-phenix
 compositeproto
 damageproto
 dejavu-fonts-ttf
@@ -38,6 +39,7 @@ fontcacheproto
 fontconfig
 fontsproto
 fonttosfnt
+freeglut
 freetype
 fribidi
 fslsfonts
@@ -53,6 +55,7 @@ glproto
 gmime
 gnome-colors-icon-theme
 gnome-icon-theme
+gnome-themes-standard
 gslapt
 gst-plugins-base
 gstreamer
@@ -105,16 +108,19 @@ libXxf86misc
 libXxf86vm
 libart_lgpl
 libcanberra
+libcroco
 libdmx
 libdrm
 liberation-fonts-ttf
 libexif
 libfontenc
 libglade
+libgnome-keyring
 libgnomecanvas
 libgsf
 libidl
 libjpeg
+libmatenotify
 libmng
 libnotify
 liboil
@@ -125,7 +131,6 @@ librsvg
 libsoup
 libtheora
 libtiff
-freeglut
 libunique
 libvisual
 libwnck
@@ -144,12 +149,14 @@ lxpanel
 lxsession
 lxterminal
 makedepend
+mate-dialogs
 menu-cache
 mesa
 midori
 mkcomposecache
 mkfontdir
 mkfontscale
+mtdev
 notification-daemon
 numlockx
 obsidian-cursors
@@ -188,6 +195,7 @@ svgalib
 t1lib
 tibmachuni-font-ttf
 ttf-indic-fonts
+unico
 util-macros
 vanilla-dmz-cursors
 vbetool
@@ -239,6 +247,7 @@ xf86-video-i740
 xf86-video-intel
 xf86-video-mach64
 xf86-video-mga
+xf86-video-modesetting
 xf86-video-neomagic
 xf86-video-nouveau
 xf86-video-nv
@@ -305,12 +314,3 @@ xvinfo
 xwd
 xwininfo
 xwud
-mate-dialogs
-libmatenotify
-mtdev
-xf86-video-modesetting
-libcroco
-unico
-gnome-themes-standard
-clearlooks-phenix
-libgnome-keyring

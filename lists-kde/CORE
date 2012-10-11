@@ -32,6 +32,7 @@ curl
 cvs
 cyrus-sasl
 db44
+db48
 dbus
 dbus-glib
 dbus-python
@@ -48,6 +49,7 @@ dotnew
 dvd+rw-tools
 e2fsprogs
 eject
+engine_pkcs11
 enscript
 etc
 ethtool
@@ -76,6 +78,7 @@ gnutls
 gperf
 gpgme
 gpm
+gptfdisk
 grep
 groff
 gzip
@@ -94,6 +97,7 @@ jfsutils
 kbd
 kernel-firmware
 kernel-headers
+kmod
 less
 lha
 libao
@@ -104,6 +108,7 @@ libcddb
 libcdio
 libcgroup
 libelf
+libffi
 libgcrypt
 libgpg-error
 libidn
@@ -113,12 +118,14 @@ libmcrypt
 libmpc
 libnl
 libogg
+libp11
 libpcap
 libpthread-stubs
 libraw1394
 libtermcap
 libtool
 libusb
+libusb-compat
 libvorbis
 libxml2
 libzip
@@ -140,7 +147,6 @@ mercurial
 mhash
 mkinitrd
 mm
-kmod
 most
 mpfr
 nano
@@ -154,6 +160,7 @@ net-tools
 netkit-ftp
 netkit-ntalk
 netkit-routed
+nettle
 network-scripts
 nfs-utils
 ntfs-3g
@@ -162,10 +169,12 @@ openldap-client
 openssh
 openssl
 oprofile
+p11-kit
 parted
 patch
 pciutils
 pcmciautils
+pcre
 perl
 pidentd
 pkg-config
@@ -190,6 +199,7 @@ salixtools
 screen
 sdparm
 sed
+sg3_utils
 shadow
 sharutils
 sip
@@ -222,7 +232,6 @@ time
 traceroute
 tree
 udev
-libusb-compat
 unarj
 unrar
 usbutils
@@ -238,12 +247,3 @@ xfsprogs
 xz
 zlib
 zoo
-gptfdisk
-libffi
-pcre
-sg3_utils
-nettle
-p11-kit
-libp11
-engine_pkcs11
-db48
