@@ -6,7 +6,6 @@ depfinder
 ebook-tools
 faac
 faad2
-fftw
 flac
 flash-plugin
 foomatic-filters
@@ -23,8 +22,6 @@ ibus-hangul
 ibus-m17n
 ibus-pinyin
 ibus-qt
-ilmbase
-imagemagick
 ipw2100-fw
 ipw2200-fw
 iso-codes
@@ -57,7 +54,6 @@ mutagen
 mysql
 ndisgtk
 ndiswrapper
-openexr
 os-prober
 poppler
 pycurl
