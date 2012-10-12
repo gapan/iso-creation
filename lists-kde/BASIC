@@ -70,7 +70,7 @@ hicolor-icon-theme
 iceauth
 ico
 icon-naming-utils
-icu
+icu4c
 ilmbase
 imagemagick
 imake
