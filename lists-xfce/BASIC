@@ -152,7 +152,6 @@ mesa
 mkcomposecache
 mkfontdir
 mkfontscale
-mozilla-firefox
 mtdev
 numlockx
 obsidian-cursors
@@ -318,3 +317,9 @@ xvinfo
 xwd
 xwininfo
 xwud
+icu4c
+libunique
+gsettings-desktop-schemas
+webkit
+libsoup
+midori
