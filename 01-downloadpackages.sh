@@ -8,7 +8,7 @@ if [ "$UID" != "0" ]; then
 fi
 
 if [ ! $# -eq 2 ]; then
-	echo "ERROR. Syntax is: $0 EDITION ARCH"
+	echo "ERROR. Syntax is: $0 EDITION ARCH [both_smp_nonsmp]"
 	exit 1
 fi
 
@@ -19,6 +19,7 @@ fi
 
 edition=$1
 arch=$2
+smp=$3
 
 unlink lists
 if [ $edition = "xfce" ] || \
@@ -42,7 +43,12 @@ fi
 slapt-get -u -c slapt-getrc.$arch
 slapt-get --clean
 {
-	for i in `cat lists/KERNEL lists/CORE lists/BASIC lists/FULL lists/SETTINGS`; do 
+	if [ $arch == "i486" ] && [ $smp != "both_smp_nonsmp" ]; then
+		KERNELPKG=`cat lists/KERNEL | grep smp`
+	else
+		KERNELPKG=`cat lists/KERNEL`
+	fi
+	for i in $KERNELPKG `cat lists/CORE lists/BASIC lists/FULL lists/SETTINGS`; do 
 	slapt-get -d --no-dep --reinstall -c slapt-getrc.$arch -i $i
 	done
 } 2>&1 | tee download-$arch.log
