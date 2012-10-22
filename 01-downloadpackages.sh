@@ -8,7 +8,7 @@ if [ "$UID" != "0" ]; then
 fi
 
 if [ ! $# -eq 2 ]; then
-	echo "ERROR. Syntax is: $0 EDITION ARCH [both_smp_nonsmp]"
+	echo "ERROR. Syntax is: $0 EDITION ARCH [both_smp_nosmp]"
 	exit 1
 fi
 
@@ -43,7 +43,7 @@ fi
 slapt-get -u -c slapt-getrc.$arch
 slapt-get --clean
 {
-	if [ $arch == "i486" ] && [ x"$smp" != x"both_smp_nonsmp" ]; then
+	if [ $arch == "i486" ] && [ x"$smp" != x"both_smp_nosmp" ]; then
 		KERNELPKG=`cat lists/KERNEL | grep smp`
 	else
 		KERNELPKG=`cat lists/KERNEL`
