@@ -323,3 +323,5 @@ gsettings-desktop-schemas
 webkit
 libsoup
 midori
+glib-networking
+libproxy
