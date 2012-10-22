@@ -6,7 +6,9 @@ if [ "$UID" -eq "0" ]; then
 fi
 
 if [ ! $# -eq 1 ]; then
-	echo "ERROR. Syntax is: $0 ARCH [both_smp_nonsmp]"
+	if [ ! $# -eq 2 ]; then
+		echo "ERROR. Syntax is: $0 ARCH [both_smp_nosmp]"
+	fi
 	exit 1
 fi
 
@@ -22,11 +24,15 @@ cp README iso/
 
 # remove the non-smp initrd and kernel files if building an smp-only iso
 if [ $arch == "i486" ]; then
-	if [ $smp != "both_smp_nonsmp" ]; then
+	if [ x"$smp" != x"both_smp_nosmp" ]; then
 		sed -i "/huge\.s/d" iso/isolinux/isolinux.cfg
+		sed -i "/f2\.txt/d" iso/isolinux/isolinux.cfg
 		sed -i "/huge\.s/d" iso/isolinux/message.txt
-		sed -i "/Pentium-pro/d" iso/isolinux/message.txt
-		rm iso/isolinux/nonsmp.img
+		sed -i "/Pentium-Pro/d" iso/isolinux/message.txt
+		sed -i "s/Welcome/\n\nWelcome/" iso/isolinux/message.txt
+		echo "" >> iso/isolinux/message.txt
+		rm iso/isolinux/nosmp.img
+		rm iso/isolinux/f2.txt
 		rm -r iso/kernels/huge.s
 	fi
 fi
