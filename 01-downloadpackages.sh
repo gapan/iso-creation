@@ -22,20 +22,20 @@ arch=$2
 smp=$3
 
 unlink lists
-if [ $edition = "xfce" ] || \
-	[ $edition = "openbox" ] || \
-	[ $edition = "ratpoison" ] || \
-	[ $edition = "lxde" ] || \
-	[ $edition = "kde" ] || \
-	[ $edition = "mate" ] || \
-	[ $edition = "fluxbox" ];then
+if [ $edition == "xfce" ] || \
+	[ $edition == "openbox" ] || \
+	[ $edition == "ratpoison" ] || \
+	[ $edition == "lxde" ] || \
+	[ $edition == "kde" ] || \
+	[ $edition == "mate" ] || \
+	[ $edition == "fluxbox" ];then
 	ln -sf lists-$edition lists
 else
 	echo "ERROR. Not a valid EDITION"
 	exit 1
 fi
 
-if [ ! $arch = "i486" ] && [ ! $arch = "x86_64" ];then
+if [ $arch != "i486" ] && [ $arch != "x86_64" ];then
 	echo "ERROR. Not a valid ARCH"
 	exit 1
 fi
