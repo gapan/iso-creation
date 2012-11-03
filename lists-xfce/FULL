@@ -181,3 +181,6 @@ seamonkey-solibs
 openjre
 icedtea-web
 libical
+libgnome
+libgnomeui
+libbonobo
