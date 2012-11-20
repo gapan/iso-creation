@@ -35,9 +35,9 @@ EOF2
 	
 	# formating ##########################################	
 	# root
-	RootFS='ext4'
-	make_ext4 /dev/${DISK}1
-	printf "%-16s %-16s %-11s %-16s %-3s %s\n" "/dev/${DISK}1" "/" "ext4" "defaults,noatime" "1" "1" > $TMP/SeTnative
+	RootFS='xfs'
+	make_xfs /dev/${DISK}1
+	printf "%-16s %-16s %-11s %-16s %-3s %s\n" "/dev/${DISK}1" "/" "xfs" "defaults" "1" "1" > $TMP/SeTnative
 
 	# swap
 	if ! grep -w /dev/${DISK}2 /proc/swaps 1> /dev/null 2> /dev/null ; then
@@ -47,33 +47,26 @@ EOF2
 	printf "%-16s %-16s %-11s %-16s %-3s %s\n" "/dev/${DISK}2" "swap" "swap" "defaults" "0" "0" > $TMP/SeTswap
 
 	# home
-	make_ext4 /dev/${DISK}3
-	printf "%-16s %-16s %-11s %-16s %-3s %s\n" "/dev/${DISK}3" "/home" "ext4" "defaults,noatime" "1" "2" >> $TMP/SeTnative
+	make_xfs /dev/${DISK}3
+	printf "%-16s %-16s %-11s %-16s %-3s %s\n" "/dev/${DISK}3" "/home" "xfs" "defaults" "1" "2" >> $TMP/SeTnative
 }
 
-# make_ext4( dev, nodes, check ) - Create a new ext4 filesystem on the named
-#                                device.
+# make_xfs( dev ) - Create a new xfs filesystem on the named dev
 # Parameters:  dev     Device node to format.
-#              nodes   Inode density (1024, 2048, 4096)
-#              check   Perform fs check (y or n)
-make_ext4() {
+make_xfs() {
    # get the size of the named partition
    SIZE=`get_part_size $1`
    # output a nice status message
    dialog --title "FORMATTING" \
-   --backtitle "Formatting $1 with filesystem ext4." \
+   --backtitle "Formatting $1 with filesystem xfs." \
    --infobox "Formatting $1  \n\
 Size in 1K blocks: $SIZE \n\
-Filesystem type: ext4" 0 0
+Filesystem type: xfs " 0 0
    # do the format
    if mount | grep "$1 " 1> $NDIR 2> $NDIR ; then
       umount $1 2> $NDIR
    fi
-   if [ "$3" = "y" ]; then
-      mkfs.ext4 -c $1 1> $REDIR 2> $REDIR
-   else
-      mkfs.ext4 $1 1> $REDIR 2> $REDIR
-   fi
+   mkfs.xfs -f $1 1> $REDIR 2> $REDIR
 }
 
 # get_part_size( dev ) - Return the size in KB of the named partition.
@@ -224,9 +217,9 @@ EOF1
 		
 	# formating ##########################################	
 	# root
-	RootFS='ext4'
-	make_ext4 /dev/${DISK}1
-	printf "%-16s %-16s %-11s %-16s %-3s %s\n" "/dev/${DISK}1" "/" "ext4" "defaults,noatime" "1" "1" > $TMP/SeTnative
+	RootFS='xfs'
+	make_xfs /dev/${DISK}1
+	printf "%-16s %-16s %-11s %-16s %-3s %s\n" "/dev/${DISK}1" "/" "xfs" "defaults" "1" "1" > $TMP/SeTnative
 
 	# swap
 	if ! grep -w /dev/${DISK}2 /proc/swaps 1> /dev/null 2> /dev/null ; then

@@ -221,6 +221,9 @@ to format this partition?" 12 70 3 \
 #                 device.  Answer in $TMP/return
 ask_fs() {
   unset BTRFS EXT2 EXT3 JFS REISERFS XFS
+  if grep -wq btrfs /proc/filesystems 1> $NDIR 2> $NDIR ; then
+    BTRFS="Btrfs is a B-tree copy-on-write filesystem. "
+  fi
   if grep -wq ext2 /proc/filesystems 1> $NDIR 2> $NDIR ; then
     EXT2="Ext2 is the traditional Linux file system and is fast and stable. "
   fi
@@ -232,19 +235,15 @@ ask_fs() {
     EXT4="Ext4 is the successor to the ext3 filesystem. "
     DEFAULT=ext4
   fi
-  if grep -wq reiserfs /proc/filesystems 1> $NDIR 2> $NDIR ; then
-    REISERFS="ReiserFS is a journaling filesystem that stores all files and filenames in a balanced tree structure. "
-  fi
-  if grep -wq btrfs /proc/filesystems 1> $NDIR 2> $NDIR ; then
-    BTRFS="Btrfs is a B-tree copy-on-write filesystem. "
-  fi
-  # These last two will only be present if the user asked for a special kernel.
-  # They should probably be the default in that case.
   if grep -wq jfs /proc/filesystems 1> $NDIR 2> $NDIR ; then
     JFS="JFS is IBM's Journaled Filesystem, currently used in IBM enterprise servers. "
   fi
+  if grep -wq reiserfs /proc/filesystems 1> $NDIR 2> $NDIR ; then
+    REISERFS="ReiserFS is a journaling filesystem that stores all files and filenames in a balanced tree structure. "
+  fi
   if grep -wq xfs /proc/filesystems 1> $NDIR 2> $NDIR ; then
     XFS="XFS is SGI's journaling filesystem that originated on IRIX. "
+	DEFAULT=xfs
   fi
   cat << EOF > $TMP/tempscript
 dialog --title "SELECT FILESYSTEM FOR $1" \\
@@ -254,6 +253,9 @@ dialog --title "SELECT FILESYSTEM FOR $1" \\
 device.  Here are descriptions of the available filesystems:  $EXT2 $EXT3 $EXT4 $JFS $REISERFS $XFS" \\
 0 0 0 \\
 EOF
+  if [ ! "$BTRFS" = "" ]; then
+    echo "\"btrfs\" \"Btrfs Copy-on-Write B-tree Filesystem\" \\" >> $TMP/tempscript
+  fi
   if [ ! "$EXT2" = "" ]; then
     echo "\"ext2\" \"Standard Linux Ext2 Filesystem\" \\" >> $TMP/tempscript
   fi
@@ -268,9 +270,6 @@ EOF
   fi
   if [ ! "$REISERFS" = "" ]; then
     echo "\"reiserfs\" \"ReiserFS Journaling Filesystem\" \\" >> $TMP/tempscript
-  fi
-  if [ ! "$BTRFS" = "" ]; then
-    echo "\"btrfs\" \"Btrfs Copy-on-Write B-tree Filesystem\" \\" >> $TMP/tempscript
   fi
   if [ ! "$XFS" = "" ]; then
     echo "\"xfs\" \"SGI's Journaling Filesystem\" \\" >> $TMP/tempscript
