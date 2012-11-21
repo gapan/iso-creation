@@ -14,7 +14,8 @@ do
 	fi
 	cat ${pkg%t[glx]z}md5 | \
 	sed "s|`basename ${pkg}`|${pkg}|" | \
-	sed "s|/packages/|/salix/|">> iso/CHECKSUMS.md5
+	sed "s|/packages/|/salix/|" | \
+	sed "s|/iso/|/|" >> iso/CHECKSUMS.md5
 	echo "`basename ${pkg}`" >> iso/PACKAGELIST-TEMP
 done
 
