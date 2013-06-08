@@ -61,7 +61,6 @@ gst-plugins-base
 gstreamer
 gtk+2
 gtk-engines
-gucharmap
 guile
 gvfs
 hicolor-icon-theme
