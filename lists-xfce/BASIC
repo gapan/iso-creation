@@ -326,3 +326,6 @@ glib-networking
 libproxy
 enchant
 xfce4-appfinder
+libsamplerate
+flac
+libsndfile

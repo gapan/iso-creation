@@ -17,7 +17,6 @@ exiv2
 faac
 faad2
 fftw
-flac
 flash-plugin
 foomatic-filters
 galculator
@@ -75,7 +74,6 @@ libnl3
 libreoffice
 libreplaygain
 libshout
-libsndfile
 libspectre
 libtasn1
 libvpx
