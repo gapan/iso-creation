@@ -90,7 +90,6 @@ libvncserver
 libvpx
 libwpd
 lilosetup
-mjpegtools
 musepack-tools
 mutagen
 ndisgtk
@@ -130,3 +129,6 @@ marble
 orc
 pil
 
+libcuefile
+libreplaygain
+libmsn
