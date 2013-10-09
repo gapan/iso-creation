@@ -5,7 +5,6 @@ babl
 bc
 bluez-firmware
 bluez-hcidump
-brasero
 cairomm
 claws-mail
 depfinder
@@ -28,7 +27,6 @@ ghostscript-fonts-std
 gimp
 glibmm
 gnome-mime-data
-gnome-python
 gnome-vfs
 gnonlin
 goocanvas
@@ -61,10 +59,8 @@ libdvdnav
 libdvdread
 libetpan
 libevent
-libgpod
 libhangul
 libid3tag
-libmms
 libnl3
 libreoffice
 libreplaygain
@@ -72,7 +68,6 @@ libshout
 libsigc++
 libsndfile
 libspectre
-libtasn1
 libvpx
 lilosetup
 lm_sensors
@@ -88,7 +83,6 @@ mate-sensors-applet
 mate-system-monitor
 mate-utils
 meld
-mjpegtools
 mpg123
 musepack-tools
 mutagen
@@ -146,3 +140,12 @@ zd1211-firmware
 zim
 zope.interface
 pil
+libatasmart
+atkmm
+m17n-lib
+orc
+gnome-python
+libgnome
+libgnomeui
+libbonobo
+libbonoboui

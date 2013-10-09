@@ -86,7 +86,6 @@ libXcomposite
 libXcursor
 libXdamage
 libXdmcp
-libXevie
 libXext
 libXfixes
 libXfont
@@ -134,7 +133,6 @@ libmateui
 libmateweather
 libmng
 libnotify
-liboil
 libpciaccess
 libpng
 libproxy
@@ -337,3 +335,8 @@ xvinfo
 xwd
 xwininfo
 xwud
+libsamplerate
+libmatewnck
+mozilla-nss
+flac
+libsndfile
