@@ -55,8 +55,8 @@ giflib
 glew
 glproto
 gmime
-gnome-colors-icon-theme
-gnome-icon-theme
+mate-colors-icon-theme
+mate-icon-theme
 gnome-themes-standard
 gslapt
 gst-plugins-base
@@ -70,7 +70,6 @@ ico
 icon-naming-utils
 icu4c
 imake
-imlib2
 inputproto
 intltool
 jasper
@@ -88,7 +87,6 @@ libXcomposite
 libXcursor
 libXdamage
 libXdmcp
-libXevie
 libXext
 libXfixes
 libXfont
@@ -124,7 +122,6 @@ libjpeg
 libmatenotify
 libmng
 libnotify
-liboil
 libpciaccess
 libpng
 libproxy
@@ -148,7 +145,6 @@ mkcomposecache
 mkfontdir
 mkfontscale
 mtdev
-notification-daemon
 numlockx
 obsidian-cursors
 pango
@@ -306,3 +302,9 @@ xvinfo
 xwd
 xwininfo
 xwud
+libsamplerate
+imlib2
+libid3tag
+flac
+libsndfile
+libgnome-keyring

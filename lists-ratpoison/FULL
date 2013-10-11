@@ -1,5 +1,4 @@
 apvlv
-bashburn
 bc
 bluez
 bluez-firmware
@@ -12,7 +11,6 @@ exiv2
 faac
 faad2
 fftw
-flac
 foomatic-filters
 ghostscript
 ghostscript-fonts-std
@@ -45,25 +43,20 @@ libdv
 libdvdnav
 libdvdread
 libgnome
-libgnome-keyring
 libgnomecanvas
 libgnomeui
 libgphoto2
 libgpod
-libid3tag
 libmms
 libnl3
 libreplaygain
-libsamplerate
 libshout
 libsigc++
-libsndfile
 libspectre
 libtasn1
 libtorrent
 libvpx
 madplay
-mjpegtools
 moc
 mpg123
 musepack-tools
@@ -108,3 +101,7 @@ xmlrpc-c
 xvidcore
 zd1211-firmware
 pil
+orc
+libplist
+urlgrabber
+pycurl
