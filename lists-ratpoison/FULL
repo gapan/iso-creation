@@ -36,7 +36,6 @@ libass
 libbonobo
 libbonoboui
 libcaca
-libcdaudio
 libcuefile
 libdca
 libdv
@@ -47,20 +46,18 @@ libgnomecanvas
 libgnomeui
 libgphoto2
 libgpod
-libmms
 libnl3
 libreplaygain
 libshout
 libsigc++
 libspectre
-libtasn1
 libtorrent
 libvpx
 madplay
 moc
 mpg123
 musepack-tools
-mutt
+alpine
 ndiswrapper
 notify-python
 obex-data-server
@@ -68,7 +65,6 @@ obexfs
 obexftp
 openexr
 openobex
-pidgin
 poppler
 poppler-data
 pycups
@@ -105,3 +101,6 @@ orc
 libplist
 urlgrabber
 pycurl
+mcabber
+irssi
+loudmouth
