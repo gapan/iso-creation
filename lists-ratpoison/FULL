@@ -103,3 +103,6 @@ pycurl
 mcabber
 irssi
 loudmouth
+lua
+lua-filesystem
+wordgrinder
