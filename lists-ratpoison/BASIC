@@ -307,3 +307,5 @@ libid3tag
 flac
 libsndfile
 libgnome-keyring
+glib-networking
+gsettings-desktop-schemas
