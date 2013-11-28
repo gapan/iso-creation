@@ -58,8 +58,8 @@ glproto
 gmime
 gnome-themes-standard
 gslapt
-gst-plugins-base
-gstreamer
+gst-plugins-base1
+gstreamer1
 gtk+2
 gtk-engines
 gvfs
@@ -108,7 +108,6 @@ libXxf86misc
 libXxf86vm
 libart_lgpl
 libatasmart
-libcanberra
 libdmx
 libdrm
 liberation-fonts-ttf
@@ -315,7 +314,7 @@ xwud
 icu4c
 libunique
 gsettings-desktop-schemas
-webkit
+webkitgtk
 libsoup
 midori
 glib-networking
@@ -326,3 +325,7 @@ libsamplerate
 flac
 libsndfile
 harfbuzz
+libwebp
+hunspell
+libsecret
+glu
