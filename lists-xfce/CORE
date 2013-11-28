@@ -256,3 +256,4 @@ libnetfilter_conntrack
 libnfnetlink
 libnl3
 libcroco
+libtasn1
