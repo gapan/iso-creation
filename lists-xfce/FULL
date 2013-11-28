@@ -181,3 +181,5 @@ orc
 libplist
 libwmf
 libaio
+gstreamer
+gst-plugins-base
