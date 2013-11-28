@@ -258,3 +258,4 @@ libnl3
 libcroco
 libtasn1
 lm_sensors
+spi
