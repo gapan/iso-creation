@@ -250,3 +250,4 @@ libksba
 gamin
 guile
 gc
+libunistring
