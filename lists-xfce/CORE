@@ -251,3 +251,7 @@ gamin
 guile
 gc
 libunistring
+libmnl
+libnetfilter_conntrack
+libnfnetlink
+libnl3
