@@ -170,12 +170,8 @@ mozilla-nss
 openjre
 icedtea-web
 libical
-libgnome
-libgnomeui
-libbonobo
 usb_modeswitch
 sakis3g
-libbonoboui
 m17n-lib
 orc
 libplist
