@@ -180,3 +180,4 @@ m17n-lib
 orc
 libplist
 libwmf
+libaio
