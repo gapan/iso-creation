@@ -51,14 +51,14 @@ unset DRIVE_FOUND INSTALL_PATH
 for DEVICE in $REMOVEABLE_DEVICES ; do
   for PARTITION in 1 2 3 4 ; do
     mount /dev/$DEVICE$PARTITION /usb-stick 1> /dev/null 2> /dev/null
-    if [ -d /usb-stick/slackware/a ]; then
+    if [ -d /usb-stick/salix/core ]; then
       DRIVE_FOUND="/dev/$DEVICE$PARTITION"
-      INSTALL_PATH="/usb-stick/slackware"
+      INSTALL_PATH="/usb-stick/salix"
       break
     fi
-    if [ -d /usb-stick/slackware*-*/slackware/a ]; then
+    if [ -d /usb-stick/salix-*/salix/core ]; then
       DRIVE_FOUND="/dev/$DEVICE$PARTITION"
-      INSTALL_PATH=$(echo /usb-stick/slackware*-*/slackware)
+      INSTALL_PATH=$(echo /usb-stick/salix*-*/salix)
       break
     fi
     umount /usb-stick 1> /dev/null 2> /dev/null
@@ -69,14 +69,14 @@ done
 if [ "$DRIVE_FOUND" = "" ]; then
   for DEVICE in $REMOVEABLE_DEVICES ; do
     mount /dev/$DEVICE /usb-stick 1> /dev/null 2> /dev/null
-    if [ -d /usb-stick/slackware/a ]; then
+    if [ -d /usb-stick/salix/core ]; then
       DRIVE_FOUND="/dev/$DEVICE"
-      INSTALL_PATH="/usb-stick/slackware"
+      INSTALL_PATH="/usb-stick/salix"
       break
     fi
-    if [ -d /usb-stick/slackware*-*/slackware/a ]; then
+    if [ -d /usb-stick/salix*-*/salix/core ]; then
       DRIVE_FOUND="/dev/$DEVICE$PARTITION"
-      INSTALL_PATH=$(echo /usb-stick/slackware*-*/slackware)
+      INSTALL_PATH=$(echo /usb-stick/salix*-*/salix)
       break
     fi
   done
