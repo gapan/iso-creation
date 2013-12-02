@@ -170,22 +170,6 @@ case "$DISK" in
 		MAJOR=8
 		MINOR=144	
       ;; 
-	'hda')  
-		MAJOR=3
-		MINOR=0	
-      ;;
-	'hdb')  
-		MAJOR=3
-		MINOR=64	
-      ;;
-	'hdc')  
-		MAJOR=22
-		MINOR=0	
-      ;;	
-	'hdd')  
-		MAJOR=22
-		MINOR=64	
-      ;;	
 esac
 
 mknod /dev/${DISK}1 b $MAJOR $(( $MINOR + 1 )) 1> /dev/null 2> /dev/null
