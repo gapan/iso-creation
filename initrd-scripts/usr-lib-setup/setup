@@ -89,13 +89,20 @@ select 'Exit installation'" 14 80 3 \
 	  vgchange -ay 1> /dev/null 2> /dev/null
 	  if probe -l 2> /dev/null | grep -E 'Linux$' 1> /dev/null 2> /dev/null ; then
 		probe -l 2> /dev/null | grep -E 'Linux$' | sort 1> $TMP/SeTplist 2> /dev/null
-		
-		
 		MAINSELECT="ADDSWAP"
 	  else
 		dialog --title "NO LINUX PARTITIONS DETECTED" \
 		--msgbox "There don't seem to be any Linux partitions on this machine.\n\nYou'll need to make at least one of these to install Linux. Either select AUTOINSTALL from the menu, or select INSTALL and use the partition editor to create one." 12 60
 		MAINSELECT=""
+	  fi
+	  if [ -d /sys/firmware/efi ]; then
+		  if ! probe -l 2> /dev/null | grep "EFI System Partition" 1> /dev/null 2> /dev/null ; then
+			  dialog --title "NO EFI SYSTEM PARTITION DETECTED" \
+				  --msgbox "This machine appears to be using EFI/UEFI, but no EFI System \
+Partition was found.  You'll need to make an EFI System Partition in order \
+to boot from the hard drive." 10 64
+			  MAINSELECT=""
+          fi
 	  fi
  fi
 
