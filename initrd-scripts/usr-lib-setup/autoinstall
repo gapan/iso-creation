@@ -12,6 +12,7 @@ NDIR=/dev/null
 REDIR=/dev/tty4
 T_PX=/mnt
 unset MULTIPARTITION
+unset PARTITION_TOOL
 
 export MAINSELECT=""
 
@@ -22,16 +23,16 @@ export MAINSELECT=""
 multipartition () {
 	dialog --title "AUTO PARTITION" --infobox "Please wait while ${DISK} is being prepared for Salix" 0 0
 
-cat <<EOF2 >  $TMP/layout.sfdisk
+cat <<EOF2 >  $TMP/layout.${PARTITION_TOOL}
 /dev/${DISK}1 : start=        , size=          $1, Id= 83, bootable
 /dev/${DISK}2 : start=        , size=        1000, Id= 82
 /dev/${DISK}3 : start=        , size=            , Id= 83
 /dev/${DISK}4 : start=       0, size=           0, Id= 0
 EOF2
 
-	sfdisk --no-reread -f -q -D -uM /dev/${DISK} < $TMP/layout.sfdisk | grep -v "Re-read" > $TMP/sfdisk.report 2> /dev/null 
+	${PARTITION_TOOL} --no-reread -f -q -D -uM /dev/${DISK} < $TMP/layout.${PARTITION_TOOL} | grep -v "Re-read" > $TMP/${PARTITION_TOOL}.report 2> /dev/null 
 	/dev/makedevs.sh
-	sfdisk -R /dev/${DISK} 1> /dev/null 2> /dev/null 
+	${PARTITION_TOOL} -R /dev/${DISK} 1> /dev/null 2> /dev/null 
 	
 	# formating ##########################################	
 	# root
@@ -117,6 +118,11 @@ destroy=$(dialog \
 11 75 2 \
 "No" "Go back to the main setup menu" \
 "Yes" "${DISK} is dedicated to Salix"  )
+if fdisk -l /dev/${DISK} 2> /dev/null | grep -wq GPT ; then
+	PARTITION_TOOL="sgdisk"
+else
+	PARTITION_TOOL="sfdisk"
+fi
 
 else
 	dialog --title "AUTO PARTITION" --msgbox "No target disk selected, going back to main menu" 6 75
@@ -177,7 +183,7 @@ mknod /dev/${DISK}2 b $MAJOR $(( $MINOR + 2 )) 1> /dev/null 2> /dev/null
 mknod /dev/${DISK}3 b $MAJOR $(( $MINOR + 3 )) 1> /dev/null 2> /dev/null
 
 
-DisksizeInKB=$(sfdisk --no-reread -s /dev/${DISK} 2> /dev/null)
+DisksizeInKB=$(${PARTITION_TOOL} --no-reread -s /dev/${DISK} 2> /dev/null)
 DisksizeInMB=$(( $DisksizeInKB / 1024 )) 
 clear
 
@@ -188,16 +194,16 @@ elif [ $DisksizeInMB -lt 14000 ] ; then
 	dialog --title "AUTO PARTITION" --infobox "Please wait while ${DISK} is being prepared for Salix" 0 0
 	rootsize=$(($DisksizeInMB - 1000))
 
-cat <<EOF1 >  $TMP/layout.sfdisk
+cat <<EOF1 >  $TMP/layout.${PARTITION_TOOL}
 /dev/${DISK}1 : start=        , size=  $rootsize, Id= 83, bootable
 /dev/${DISK}2 : start=        , size=           , Id= 82
 /dev/${DISK}3 : start=       0, size=         0, Id= 0
 /dev/${DISK}4 : start=       0, size=         0, Id= 0
 EOF1
 
-	sfdisk --no-reread -f -q -uM /dev/${DISK} < $TMP/layout.sfdisk | grep -v "Re-read" > $TMP/sfdisk.report 2> /dev/null  
+	${PARTITION_TOOL} --no-reread -f -q -uM /dev/${DISK} < $TMP/layout.${PARTITION_TOOL} | grep -v "Re-read" > $TMP/${PARTITION_TOOL}.report 2> /dev/null  
 	/dev/makedevs.sh
-	sfdisk -R /dev/${DISK} 1> /dev/null 2> /dev/null 
+	${PARTITION_TOOL} -R /dev/${DISK} 1> /dev/null 2> /dev/null 
 		
 	# formating ##########################################	
 	# root
@@ -229,7 +235,7 @@ fi
 
 # Done, report to the user:
 
-#dialog --title "AUTO PARTITION" --msgbox "$(cat $TMP/sfdisk.report)" 0 0
+#dialog --title "AUTO PARTITION" --msgbox "$(cat $TMP/${PARTITION_TOOL}.report)" 0 0
 
 cat << EOF3 > $TMP/tempmsg
 
@@ -246,7 +252,7 @@ dialog --title "AUTO PARTITION" \
 echo "YES" > $TMP/isAuto
 export MAINSELECT="SOURCE"
 
-# partioning and formating end ######################################	
+# partioning and formating end ######################################
 fi
 
 
