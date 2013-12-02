@@ -87,8 +87,8 @@ select 'Exit installation'" 14 80 3 \
 	  # Before probing, activate any LVM partitions
 	  # that may exist from before the boot:
 	  vgchange -ay 1> /dev/null 2> /dev/null
-	  if probe -l 2> /dev/null | egrep 'Linux$' 1> /dev/null 2> /dev/null ; then
-		probe -l 2> /dev/null | egrep 'Linux$' | sort 1> $TMP/SeTplist 2> /dev/null
+	  if probe -l 2> /dev/null | grep -E 'Linux$' 1> /dev/null 2> /dev/null ; then
+		probe -l 2> /dev/null | grep -E 'Linux$' | sort 1> $TMP/SeTplist 2> /dev/null
 		
 		
 		MAINSELECT="ADDSWAP"
@@ -143,6 +143,7 @@ mkdir /var/log/mount 2> /dev/null
  fi
 
  if [ "$MAINSELECT" = "TARGET" ]; then
+  SeTEFI
   SeTpartitions
   if [ $? -ne 0 ]; then
 	continue
