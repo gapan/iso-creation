@@ -32,5 +32,9 @@ if [ ! "${DISK}" ]; then
 	 exit 0
 fi
 clear
-cfdisk /dev/${DISK} 2>/dev/null
+if fdisk -l /dev/${DISK} 2> /dev/null | grep -wq GPT ; then
+	cgdisk /dev/${DISK} 2> /dev/null
+else
+	cfdisk /dev/${DISK} 2>/dev/null
+fi
 
