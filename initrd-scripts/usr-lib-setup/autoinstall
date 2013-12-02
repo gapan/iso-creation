@@ -124,7 +124,7 @@ fi
 
 [ "$destroy" != "Yes" ] && DISK=""
 
-# partioning and formating ##########################################	
+# partioning and formating start ####################################	
 
 if [ "$destroy" = "Yes" ] ; then
 
@@ -246,6 +246,7 @@ dialog --title "AUTO PARTITION" \
 echo "YES" > $TMP/isAuto
 export MAINSELECT="SOURCE"
 
+# partioning and formating end ######################################	
 fi
 
 
