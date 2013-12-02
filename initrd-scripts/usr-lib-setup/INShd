@@ -12,14 +12,14 @@ while [ 0 ]; do
 	umount -f /var/log/mount 2>/dev/null
 	if [ -n "$(mount | grep /var/log/mount)" -o -d /var/log/mount/lost+found -o -d /var/log/mount/recycled -o -r /var/log/mount/io.sys ]; then
 		cat <<- EOF > $TMP/tempmsg
-		
-		Setup failed to unmount a required directory:
-		
-		/var/log/mount
-		
-		Please reboot the machine an try again.
-		
-		EOF
+
+Setup failed to unmount a required directory:
+
+/var/log/mount
+
+Please reboot the machine an try again.
+
+EOF
 		dialog \
 		  --title "ERROR" \
 		  --yes-label "REBOOT" \
@@ -37,16 +37,16 @@ while [ 0 ]; do
 
 	while [ 0 ]; do
 		cat <<- EOF > $TMP/tempmsg
-		
-		Please specify which partition on your hard disk or USB stick
-		contains the contents (or an ISO image) of a Salix
-		installation disc.
 
-		Example: /dev/sdb2
-		
-		Note: Use the <Partitions> button to list available partitions.
-		 
-		EOF
+Please specify which partition on your hard disk or USB stick
+contains the contents (or an ISO image) of a Salix
+installation disc.
+
+Example: /dev/sdb2
+
+Note: Use the <Partitions> button to list available partitions.
+
+EOF
 		dialog \
 		  --title "SELECT HARD DISK PARTITION" \
 		  --help-button --help-label "Partitions" \
@@ -85,14 +85,14 @@ while [ 0 ]; do
 
 	if [ $RET -ne 0 ]; then
 		cat <<- EOF > $TMP/tempmsg
-		
-		Failed to mount hard disk partition:
-		
-		$SOURCEDEV
-		
-		Please check and try again.
-		
-		EOF
+
+Failed to mount hard disk partition:
+
+$SOURCEDEV
+
+Please check and try again.
+
+EOF
 		dialog \
 		  --title "MOUNT FAILURE" \
 		  --exit-label "OK" \
@@ -102,12 +102,12 @@ while [ 0 ]; do
 		continue
 	else
 		cat <<- EOF > $TMP/tempmsg
-		
-		Successfully mounted hard disk partition:
-		
-		$(mount | grep $SOURCEDEV)
-		
-		EOF
+
+Successfully mounted hard disk partition:
+
+$(mount | grep $SOURCEDEV)
+
+EOF
 		dialog \
 		  --title "MOUNT SUCCESS" \
 		  --exit-label "OK" \
@@ -118,14 +118,14 @@ while [ 0 ]; do
 
 	while [ 0 ]; do
 		cat <<- EOF > $TMP/tempmsg
-	
-		Now please provide the path to a directory containing the contents
-		(or an ISO image) of a Salix installation disc.
-		
-		Note: The path you enter must be relative to the mount point so
-		'/var/log/mount/salix-xfce' should be entered as '/salix-xfce'.
-		 
-		EOF
+
+Now please provide the path to a directory containing the contents
+(or an ISO image) of a Salix installation disc.
+
+Note: The path you enter must be relative to the mount point so
+'/var/log/mount/salix-xfce' should be entered as '/salix-xfce'.
+
+EOF
 		dialog \
 		  --title "SELECT SOURCE DIRECTORY" \
 		  --help-button --help-label "Browse" \
@@ -164,14 +164,14 @@ while [ 0 ]; do
 			echo "/var/log/mntiso/salix" > $TMP/SeTDS
 		else
 			cat <<- EOF > $TMP/tempmsg
-			
-			The ISO image you specified is not valid:
-			
-			$(basename $SOURCEISO)
-			
-			Please check and try again.
-			
-			EOF
+
+The ISO image you specified is not valid:
+
+$(basename $SOURCEISO)
+
+Please check and try again.
+
+EOF
 			dialog \
 			  --title "INVALID ISO IMAGE" \
 			  --exit-label "OK" \
@@ -187,14 +187,14 @@ while [ 0 ]; do
 		echo "$SRCDIR" > $TMP/SeTDS
 	else
 		cat <<- EOF > $TMP/tempmsg
-		
-		The directory you specified is not valid:
-		
-		$SOURCEDIR
-		
-		Please check and try again.
-		
-		EOF
+
+The directory you specified is not valid:
+
+$SOURCEDIR
+
+Please check and try again.
+
+EOF
 		dialog \
 		  --title "INVALID SOURCE DIRECTORY" \
 		  --exit-label "OK" \
