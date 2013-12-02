@@ -27,7 +27,7 @@ like your non-root users to have to partition $NEW_DIR.  The access level can \
 range from no access at all, to read-only for everyone, to read-write access \
 for every user on the machine.  A reasonable default (read-write for root only) \
 is chosen, but you may set this any way that you like." \
-18 77 4 \
+16 77 4 \
 "fmask=177,dmask=077" "Root has read/write access, users have no access (ntfs-3g)" \
 "fmask=333,dmask=222" "Everyone has read only access (built-in kernel ntfs driver)" \
 "fmask=133,dmask=022" "Everyone has read access, but only root can write (ntfs-3g)" \
@@ -62,13 +62,29 @@ is chosen, but you may set this any way that you like." \
   fi
 }
 
+# Since the USB installers (both usbboot.img and the ones created using
+# usbimg2disk.sh) present bogus FAT/NTFS partitions, we need a way to
+# filter these from the partition scan.  To do this, we'll set a variable
+# $BANHAMMER that contains the name of the device the stick was found on.
+# First, we'll set that to contain some random nonsense that will never
+# be an actual device since reverse grepping for "" won't work.
+BANHAMMER="0xFE11C1A"
+# Look for the usbboot.img stick:
+if [ -L /dev/disk/by-label/USBSLACK ]; then
+  BANHAMMER="$(readlink -f /dev/disk/by-label/USBSLACK)"
+fi
+# Look for the usbimg2disk.sh stick:
+if [ -L /dev/disk/by-label/USBSLACKINS ]; then
+  BANHAMMER="$(readlink -f /dev/disk/by-label/USBSLACKINS | cut -b 1-8)"
+fi
+
 DOSLIST="`probe -l 2> /dev/null | grep "DOS
 Win95 F
 Win98 F
 HPFS
 W95 F
 FAT12
-FAT16" | grep -v "Ext'd" | grep -v "Extend" | sort`"
+FAT16" | grep -v "Ext'd" | grep -v "Extend" | grep -v "$BANHAMMER" | sort`"
 if [ "$DOSLIST" = "" ]; then # no FAT or NTFS partitions
  exit
 fi

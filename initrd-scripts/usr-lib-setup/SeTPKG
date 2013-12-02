@@ -23,7 +23,7 @@ rm -rf $TMP/SeTSERIES $TMP/tmpscript $TMP/series
 
 cat << EOF > $TMP/tmpscript
 dialog --backtitle "Selecting software to install." \\
---title "PACKAGE SERIES SELECTION" --item-help --checklist \\
+--title "PACKAGE SERIES SELECTION" --item-help --output-separator "#" --checklist \\
 "Now it's time to select which general categories of software \\
 to install on your system.  \\
 Use the spacebar to select or unselect the software you wish to \\
@@ -142,5 +142,6 @@ fi
 INSTSETS="`cat $TMP/series | tr -d " "`"
 INSTSETS="`echo $INSTSETS | tr "\042" "#" `"
 INSTSETS="`echo $INSTSETS | tr "," "#" `"
+INSTSETS="`echo $INSTSETS | tr -s "#" `"
 rm -rf $TMP/series $TMP/tmpscript
 echo "$INSTSETS" > $TMP/SeTSERIES
