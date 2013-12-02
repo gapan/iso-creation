@@ -12,14 +12,14 @@ while [ 0 ]; do
 	umount -f /var/log/mount 2>/dev/null
 	if [ -n "$(mount | grep /var/log/mount)" -o -d /var/log/mount/lost+found -o -d /var/log/mount/recycled -o -r /var/log/mount/io.sys ]; then
 		cat <<- EOF > $TMP/tempmsg
-		
-		Setup failed to unmount a required directory:
-		
-		/var/log/mount
-		
-		Please reboot the machine an try again.
-		
-		EOF
+
+Setup failed to unmount a required directory:
+
+/var/log/mount
+
+Please reboot the machine and try again.
+
+EOF
 		dialog \
 		  --title "ERROR" \
 		  --yes-label "REBOOT" \
@@ -37,15 +37,15 @@ while [ 0 ]; do
 
 	while [ 0 ]; do
 		cat <<- EOF > $TMP/tempmsg
-	
-		Please provide the path to a directory containing the contents (or
-		an ISO image) of a Salix installation disc.
-		
-		Note: You may use any directory within the current filesystem
-		except '/mnt' or '/var/log/mount' as these are required by
-		setup.
-		 
-		EOF
+
+Please provide the path to a directory containing the contents (or
+an ISO image) of a Salix installation disc.
+
+Note: You may use any directory within the current filesystem
+except '/mnt' or '/var/log/mount' as these are required by
+setup.
+ 
+EOF
 		dialog \
 		  --title "SELECT A PRE-MOUNTED DIRECTORY" \
 		  --help-button --help-label "Browse" \
@@ -83,14 +83,14 @@ while [ 0 ]; do
 			echo "/var/log/mount/salix" > $TMP/SeTDS
 		else
 			cat <<- EOF > $TMP/tempmsg
-			
-			The ISO image you specified is not valid:
-			
-			$(basename $SOURCEISO)
-			
-			Please check and try again.
-			
-			EOF
+
+The ISO image you specified is not valid:
+
+$(basename $SOURCEISO)
+
+Please check and try again.
+
+EOF
 			dialog \
 			  --title "INVALID ISO IMAGE" \
 			  --exit-label "OK" \
@@ -111,14 +111,14 @@ while [ 0 ]; do
 		echo "/var/log/mount" > $TMP/SeTDS
 	else
 		cat <<- EOF > $TMP/tempmsg
-		
-		The directory you specified is not valid:
-		
-		$SOURCEDIR
-		
-		Please check and try again.
-		
-		EOF
+
+The directory you specified is not valid:
+
+$SOURCEDIR
+
+Please check and try again.
+
+EOF
 		dialog \
 		  --title "INVALID SOURCE DIRECTORY" \
 		  --exit-label "OK" \
