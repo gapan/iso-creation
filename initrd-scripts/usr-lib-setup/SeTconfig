@@ -89,9 +89,9 @@ if [ -d $T_PX/var/log/setup ]; then
     if [ ! -r $T_PX/etc/lvmtab -a ! -d $T_PX/etc/lvm/backup ]; then
       #mount --bind /proc $T_PX/proc
       #mount --bind /sys $T_PX/sys
-      chroot $T_PX /sbin/vgscan --mknodes --ignorelockingfailure 2> /dev/null
+      chroot $T_PX /sbin/vgscan --mknodes --ignorelockingfailure 1> /dev/null 2> /dev/null
       # First run does not always catch LVM on a LUKS partition:
-      chroot $T_PX /sbin/vgscan --mknodes --ignorelockingfailure 2> /dev/null
+      chroot $T_PX /sbin/vgscan --mknodes --ignorelockingfailure 1> /dev/null 2> /dev/null
     fi
   fi
   for INSTALL_SCRIPTS in $T_PX/var/log/setup/setup.*; do
