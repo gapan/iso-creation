@@ -1,0 +1,87 @@
+#!/bin/sh
+TMP=/var/log/setup/tmp
+if [ ! -d $TMP ]; then
+  mkdir -p $TMP
+fi
+rm -f $TMP/SeTefipartitions
+touch $TMP/SeTefipartitions
+
+# Scan for EFI partitions:
+for drive in sda sdb sdc sdd sde sdf sdg sdh sdi sdj sdk sdl sdm sdn sdo sdp ; do
+  if fdisk -l /dev/$drive 2> /dev/null | grep -wq GPT ; then
+    gdisk -l /dev/$drive 2> /dev/null | grep -w EF00 | while read efisp ; do
+      echo /dev/$drive$(expr $(echo "$efisp" | cut -b 1-4)) >> $TMP/SeTefipartitions
+    done
+  fi
+done
+
+if [ "$(cat $TMP/SeTefipartitions)" = "" ]; then # No EFI partitions
+  rm -f $TMP/SeTefipartitions
+ exit
+fi
+
+# Initially, we will just take the first EFI partition found, which
+# will probably be on /dev/sda:
+PREFERRED_EFI_PARTITION="$(cat $TMP/SeTefipartitions | head -n 1)"
+
+# But we will also test to see if there is an EFI partition on the same
+# device as the root partition, and if so, prefer that:
+if [ -r $TMP/SeTrootdev ]; then
+  if grep -q "$(cat $TMP/SeTrootdev | cut -b 1-8)" $TMP/SeTefipartitions ; then
+    PREFERRED_EFI_PARTITION="$(grep "$(cat $TMP/SeTrootdev | cut -b 1-8)" $TMP/SeTefipartitions | head -n 1)"
+  fi
+fi
+
+# This file is no longer needed:
+rm -f $TMP/SeTefipartitions
+
+# See if EFI partition is formatted.  If not, offer to format it:
+EFITMPMOUNT=$(mktemp -d)
+if ! mount $PREFERRED_EFI_PARTITION $EFITMPMOUNT 1> /dev/null 2> /dev/null ; then
+  # It didn't mount, so it must not be formatted:
+  dialog --title "FORMAT EFI PARTITION ${PREFERRED_EFI_PARTITION}?" \
+  --yesno "An EFI System Partition was found on ${PREFERRED_EFI_PARTITION}, \
+but it has not yet been formatted.  Would you like to format this partition?" \
+7 56
+  if [ ! $? = 0 ]; then
+    exit
+  fi
+  # Format the partition with FAT32, 2 sectors per cluster (needed for the
+  # minimum supported EFI partition size of 100MB):
+  dialog --title "FORMATTING EFI PARTITION ${PREFERRED_EFI_PARTITION}" --infobox \
+  "Formatting EFI System Partition ${PREFERRED_EFI_PARTITION} as FAT32." 3 60
+  mkfs.vfat -F 32 -s 2 ${PREFERRED_EFI_PARTITION} 1> /dev/null 2> /dev/null
+  sleep 1
+  mount ${PREFERRED_EFI_PARTITION} $EFITMPMOUNT 1> /dev/null 2> /dev/null
+fi
+if [ ! -d $EFITMPMOUNT/EFI -a ! -d $EFITMPMOUNT/efi ]; then
+  mkdir $EFITMPMOUNT/EFI 1> /dev/null 2> /dev/null
+fi
+umount $PREFERRED_EFI_PARTITION 1> /dev/null 2> /dev/null
+rmdir $EFITMPMOUNT
+
+# Mount the partition on /mnt/boot/efi:
+if [ ! -d /mnt/boot/efi ]; then
+  mkdir -p /mnt/boot/efi
+fi
+mount ${PREFERRED_EFI_PARTITION} /mnt/boot/efi 1> /dev/null 2> /dev/null
+
+# Add the EFI System Partition to /etc/fstab:
+printf "%-16s %-16s %-11s %-16s %-3s %s\n" "$PREFERRED_EFI_PARTITION" "/boot/efi" "vfat" "defaults" "1" "0" > $TMP/SeTEFI
+cat << EOF > $TMP/tempmsg
+
+Adding this information to your /etc/fstab:
+
+EOF
+cat $TMP/SeTEFI >> $TMP/tempmsg
+dialog --backtitle "Finished setting up EFI System Partition." \
+--title "EFI SYSTEM PARTITION RECOGNIZED" \
+--exit-label OK \
+--textbox $TMP/tempmsg 10 72
+
+# Piggyback this fstab addition on the other native partitions in SeTnative:
+cat $TMP/SeTEFI >> $TMP/SeTnative
+rm -f $TMP/SeTEFI $TMP/tempmsg
+
+# Done.
+
