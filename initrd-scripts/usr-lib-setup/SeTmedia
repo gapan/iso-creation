@@ -9,13 +9,14 @@ while [ 0 ]; do
 	  --backtitle "Select Salix installation source." \
 	  --title "SOURCE MEDIA SELECTION" \
 	  --menu "Please select the media from which to install Salix:" \
-	  13 70 6 \
+	  13 70 7 \
 	  "1" "Install from a Salix CD or DVD" \
-	  "2" "Install from a hard disk partition" \
-	  "3" "Install from NFS (Network File System)" \
-	  "4" "Install from FTP/HTTP server" \
-	  "5" "Install from Samba share" \
-	  "6" "Install from a pre-mounted directory" \
+	  "2" "Install from a Salix USB stick " \
+	  "3" "Install from a hard disk partition" \
+	  "4" "Install from NFS (Network File System)" \
+	  "5" "Install from FTP/HTTP server" \
+	  "6" "Install from Samba share" \
+	  "7" "Install from a pre-mounted directory" \
 	  2> $TMP/media
 	RET=$?
 	SOURCE_MEDIA="$(cat $TMP/media)"
@@ -33,11 +34,12 @@ while [ 0 ]; do
 
 	case "$SOURCE_MEDIA" in
 		"1") INSCD ; test_ret ;;
-		"2") INShd ; test_ret ;;
-		"3") SeTnet ; test_ret ; INSNFS ; test_ret ;;
-		"4") SeTnet ; test_ret ; INSURL ; test_ret ;;
-		"5") SeTnet ; test_ret ; INSSMB ; test_ret ;;
-		"6") INSdir ; test_ret ;;
+		"2") INSUSB ; test_ret ;;
+		"3") INShd ; test_ret ;;
+		"4") SeTnet ; test_ret ; INSNFS ; test_ret ;;
+		"5") SeTnet ; test_ret ; INSURL ; test_ret ;;
+		"6") SeTnet ; test_ret ; INSSMB ; test_ret ;;
+		"7") INSdir ; test_ret ;;
 	esac
 
 	break
