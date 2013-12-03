@@ -187,11 +187,9 @@ if [ -f $T_PX/etc/profile.d/ibus.sh ]; then
 	if [ $retval -eq 0 ]; then
 		ibusstate="on"
 	fi
-fi
-
 # If scim is installed, ask if it should be running by default
 scimstate="off"
-if [ -f $T_PX/etc/profile.d/scim.sh ]; then
+elif [ -f $T_PX/etc/profile.d/scim.sh ]; then
 	dialog --title "SCIM configuration" \
 	--yes-label "Enabled" --no-label "Disabled" \
 	--defaultno \
