@@ -71,7 +71,7 @@ will not boot correctly.  However, if you are just adding software to an \
 existing system, you can back out to the main menu and skip this step.  \
 However (important exception) if you've installed a new kernel image, it's \
 important to reconfigure your system so that you can install LILO (the Linux \
-loader) or create a bootdisk using the new kernel.  You want to CONFIGURE \
+loader) or GRUB or create a bootdisk using the new kernel.  You want to CONFIGURE \
 your system, right?" 0 0
   if [ ! $? = 0 ]; then
     exit
@@ -80,6 +80,22 @@ else
   dialog --title "DONE INSTALLING PACKAGES" --infobox  \
 "Preparing to configure your new Linux system..." 3 54
   sleep 3
+fi
+
+# Let user choose Grub or Lilo Boot Loader (code added by Dimitris Tzemos)  
+dialog --title " Choose The Boot Loader That Be Installed Later" \
+--menu "\n" 0 0 0 \
+"Lilo" "Install Lilo" \
+"Grub" "Install Grub" \
+"EXIT" "(Do not install boot loader)" \
+2> $TMP/reply
+ OPTION="`cat $TMP/reply`"
+if [ "$OPTION" = "Lilo" ]; then
+  BOOT_LOADER="Lilo"
+elif [ "$OPTION" = "Grub" ]; then
+  BOOT_LOADER="Grub"
+else
+  BOOT_LOADER="None"
 fi
 
 # Post installation and setup scripts added by packages.
@@ -94,6 +110,7 @@ if [ -d $T_PX/var/log/setup ]; then
       chroot $T_PX /sbin/vgscan --mknodes --ignorelockingfailure 1> /dev/null 2> /dev/null
     fi
   fi
+  
   for INSTALL_SCRIPTS in $T_PX/var/log/setup/setup.*; do
     SCRIPT=`basename $INSTALL_SCRIPTS`
     # Here, we call each script in /var/log/setup. Two arguments are provided:
@@ -101,15 +118,22 @@ if [ -d $T_PX/var/log/setup ]; then
     # 2 -- the name of the root device.
     ( cd $T_PX 
       if [ -x var/log/setup/$SCRIPT ]; then
-        if [ -r $TMP/isAuto ] && [ "$SCRIPT" == "setup.liloconfig" ]; then
+        if [ -r $TMP/isAuto ] && [ "$BOOT_LOADER"=="Lilo" ] && [ "$SCRIPT" == "setup.liloconfig" ]; then
 		./var/log/setup/$SCRIPT $T_PX $ROOT_DEVICE "auto"
- 	else
+        elif [ -r $TMP/isAuto ] && [ "$BOOT_LOADER"=="Grub" ] && [ "$SCRIPT" == "setup.grubconfig" ]; then
+		./var/log/setup/$SCRIPT $T_PX $ROOT_DEVICE "auto"
+      	else
 		# Do not run GPM configuration during installation. Most people
 	 	# would probably want this off and if someone wants it he can
 	 	# always run mouseconfig after installation,
+	 	# run Lilo or Grub that one of them selected above (code added by Dimitris Tzemos)
 	 	if [ "$SCRIPT" == "setup.mouse" ] || [ "$SCRIPT" == "setup.setconsolefont" ] || [ "$SCRIPT" == "setup.timeconfig" ]; then
 			sleep 0
 		elif [ "$SCRIPT" == "setup.netconfig" ] && [ "$MODE" == "FULL" ]; then
+			sleep 0
+	        elif [ "$SCRIPT" == "setup.liloconfig" ] && [ "$BOOT_LOADER" != "Lilo" ]; then
+			sleep 0
+		elif [ "$SCRIPT" == "setup.grubconfig" ] && [ "$BOOT_LOADER" != "Grub" ]; then
 			sleep 0
 		else
  	    		./var/log/setup/$SCRIPT $T_PX $ROOT_DEVICE
