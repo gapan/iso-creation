@@ -123,7 +123,7 @@ if [ -d $T_PX/var/log/setup ]; then
         elif [ -r $TMP/isAuto ] && [ "$BOOT_LOADER"=="Grub" ] && [ "$SCRIPT" == "setup.grubconfig" ]; then
 		./var/log/setup/$SCRIPT $T_PX $ROOT_DEVICE "auto"
       	else
-		# Don't run GPM configuration during installation. Most people
+		# Do not run GPM configuration during installation. Most people
 	 	# would probably want this off and if someone wants it he can
 	 	# always run mouseconfig after installation,
 	 	# run Lilo or Grub that one of them selected above (code added by Dimitris Tzemos)
