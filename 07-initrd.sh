@@ -23,16 +23,6 @@ if [ "$UID" != "0" ]; then
 	exit 1
 fi
 
-if [ ! $# -eq 2 ]; then
-	echo "ERROR. Syntax is: $0 VERSION"
-	exit 1
-fi
-VER=$1
-
-if [ $2 != "trustmeiknowwhatimdoing" ]; then
-	exit 1
-fi
-
 if [ -z "$arch" ]; then
 	case "$( uname -m )" in
 		i?86) arch=i486 ;;
@@ -40,8 +30,45 @@ if [ -z "$arch" ]; then
 	esac
 fi
 
-echo "You need to run this on a system using the target architecture."
-echo "Architecture detected: $arch"
+MSG="This script gets a slackware initrd.img file from a slackware\n\
+repository and converts it to a salix initrd.img file.\n\
+\n\
+You really shouldn't build an initrd yourself if you're\n\
+making a custom iso. Use the initrd files found in a\n\
+Salix iso instead.\n\
+\n\
+This script assumes that in a 32bit system, you're running the smp\n\
+kernel and that you at least have the non-smp kernel-modules package\n\
+installed.\n\
+\n\
+You need to be running a stock slackware kernel.\n\
+\n\
+You also need to be running the architecture for which you are\n\
+creating the initrd for. The architecture you are running now\n\
+is ${arch}.\n\
+\n\
+ARE YOU SURE YOU KNOW WHAT YOU'RE DOING?"
+
+dialog --title "Are you sure you want to do this?" \
+	--defaultno \
+	--yesno "$MSG" 0 0
+retval=$?
+if [ $retval -eq 1 ] || [ $retval -eq 255 ]; then
+	exit 0
+fi
+
+answer="$(eval dialog \
+	--title \"Enter Salix version\" \
+	--stdout \
+	--inputbox \
+	\"Enter the salix version you want to create the initrd for:\" \
+	0 0 )"
+retval=$?
+if [ $retval -eq 1 ] || [ $retval -eq 255 ]; then
+	exit 0
+else
+	VER=$answer
+fi
 
 unset LIBDIRSUFFIX
 if [[ "$arch" == "x86_64" ]]; then
