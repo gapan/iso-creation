@@ -10,20 +10,39 @@ if [ "$UID" -eq "0" ]; then
 	exit 1
 fi
 
-set -e
-
-if [ ! $# -eq 2 ]; then
-	echo "ERROR. Syntax is: $0 ARCH VERSION"
-	exit 1
-fi
-
 if [ ! -x /usr/bin/curlftpfs ]; then
 	echo "curlftpfs is missing"
 	exit 1
 fi
 
-arch=$1
-ver=$2
+set -e
+
+answer="$(eval dialog --title \"Select arch\" \
+	--stdout \
+	--menu \"Select the target architecture:\" \
+	0 0 0 \
+	'i486' 'o' \
+	'x86_64' 'o')"
+retval=$?
+if [ $retval -eq 1 ] || [ $retval -eq 255 ]; then
+	exit 0
+else
+	arch=$answer
+fi
+
+answer="$(eval dialog \
+	--title \"Enter Salix version\" \
+	--stdout \
+	--inputbox \
+	\"Enter the salix version you want to create the initrd for:\" \
+	0 0 )"
+retval=$?
+if [ $retval -eq 1 ] || [ $retval -eq 255 ]; then
+	exit 0
+else
+	ver=$answer
+fi
+
 CWD=`pwd`
 
 unset LIBDIRSUFFIX
