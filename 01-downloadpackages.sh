@@ -26,7 +26,7 @@ answer="$(eval dialog \
 	'openbox' 'o' \
 	'lxde' 'o' )"
 retval=$?
-if [ $retval -eq 1 ]; then
+if [ $retval -eq 1 ] || [ $retval -eq 255 ]; then
 	exit 0
 else
 	edition=$answer
@@ -40,7 +40,7 @@ answer="$(eval dialog --title \"Select arch\" \
 	'i486' 'o' \
 	'x86_64' 'o')"
 retval=$?
-if [ $retval -eq 1 ]; then
+if [ $retval -eq 1 ] || [ $retval -eq 255 ]; then
 	exit 0
 else
 	arch=$answer
@@ -55,7 +55,7 @@ if [ $arch == "i486" ]; then
 	'NO' 'o' \
 	'Yes' 'o' )"
 	retval=$?
-	if [ $retval -eq 1 ]; then
+	if [ $retval -eq 1 ] || [ $retval -eq 255 ]; then
 		exit 0
 	else
 		if [ "$answer" == "Yes" ]; then
