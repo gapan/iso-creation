@@ -1,20 +1,61 @@
-#!/bin/sh
+#!/bin/bash
 
 if [ "$UID" -eq "0" ]; then
 	echo "Don't run this script as root"
 	exit 1
 fi
 
-if [ ! $# -eq 4 ]; then
-	echo "ERROR. Syntax is: $0 EDITION ARCH VERSION ISO_FILENAME"
+if [ ! $# -eq 1 ]; then
+	echo "ERROR. Syntax is: $0 ISO_FILENAME"
 	exit 1
 fi
 
 CWD=`pwd`
-edition=$1
-arch=$2
-ver=$3
-iso=$4
+iso=$1
+
+answer="$(eval dialog \
+	--stdout \
+	--title \"Select edition\" \
+	--menu \"Select the edition you want to download packages for:\" \
+	0 0 0 \
+	'xfce' 'o' \
+	'kde' 'o' \
+	'mate' 'o' \
+	'ratpoison' 'o' \
+	'openbox' 'o' \
+	'lxde' 'o' )"
+retval=$?
+if [ $retval -eq 1 ] || [ $retval -eq 255 ]; then
+	exit 0
+else
+	edition=$answer
+fi
+
+answer="$(eval dialog --title \"Select arch\" \
+	--stdout \
+	--menu \"Select the target architecture:\" \
+	0 0 0 \
+	'i486' 'o' \
+	'x86_64' 'o')"
+retval=$?
+if [ $retval -eq 1 ] || [ $retval -eq 255 ]; then
+	exit 0
+else
+	arch=$answer
+fi
+
+answer="$(eval dialog \
+	--title \"Enter Salix version\" \
+	--stdout \
+	--inputbox \
+	\"Enter the salix version you want to create the initrd for:\" \
+	0 0 )"
+retval=$?
+if [ $retval -eq 1 ] || [ $retval -eq 255 ]; then
+	exit 0
+else
+	ver=$answer
+fi
 
 unset LIBDIRSUFFIX
 if [[ "$arch" == "x86_64" ]]; then
