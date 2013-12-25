@@ -7,32 +7,24 @@ if [ "$UID" != "0" ]; then
 	exit 1
 fi
 
-if [ ! $# -eq 2 ]; then
-	echo "ERROR. Syntax is: $0 EDITION ARCH [both_smp_nosmp]"
-	exit 1
-fi
-
 if [ -x /usr/bin/salix-update-notifier ]; then
 	echo "ERROR: salix-update-notifier should not be installed"
 	exit 1
 fi
 
-edition=$1
-arch=$2
-smp=$3
-
 unlink lists
 
-answer="$( eval dialog --title "Select edition" \
-	--menu \
-	"Select the edition you want to download packages for:" \
+answer="$(eval dialog \
+	--stdout \
+	--title \"Select edition\" \
+	--menu \"Select the edition you want to download packages for:\" \
 	0 0 0 \
-	"xfce" "o" \
-	"kde" "o" \
-	"mate" "o" \
-	"ratpoison" "o" \
-	"openbox" "o" \
-	"lxde" "o" )"
+	'xfce' 'o' \
+	'kde' 'o' \
+	'mate' 'o' \
+	'ratpoison' 'o' \
+	'openbox' 'o' \
+	'lxde' 'o' )"
 retval=$?
 if [ $retval -eq 1 ]; then
 	exit 0
@@ -41,12 +33,12 @@ else
 fi
 ln -sf lists-$edition lists
 
-answer="$( eval dialog --title "Select arch" \
-	--menu \
-	"Select the target architecture:" \
-	0 0 0
-	"i486" "o" \
-	"x86_64" "o")"
+answer="$(eval dialog --title \"Select arch\" \
+	--stdout \
+	--menu \"Select the target architecture:\" \
+	0 0 0 \
+	'i486' 'o' \
+	'x86_64' 'o')"
 retval=$?
 if [ $retval -eq 1 ]; then
 	exit 0
@@ -56,18 +48,19 @@ fi
 
 smp=0
 if [ $arch == "i486" ]; then
-	answer="$( eval dialog --title "Include i486 non-SMP kernel?" \
-	--menu \
-	"Do you want to include the i486 non-SMP kernel?"
-	0 0 0
-	"NO" "o" \
-	"Yes" "o" )"
-retval=$?
-if [ $retval -eq 1 ]; then
-	exit 0
-else
-	if [ "$answer" == "Yes" ];then
-		smp=1
+	answer="$(eval dialog --title \"Include i486 non-SMP kernel?\" \
+	--stdout \
+	--menu \"Do you want to include the i486 non-SMP kernel?\" \
+	0 0 0 \
+	'NO' 'o' \
+	'Yes' 'o' )"
+	retval=$?
+	if [ $retval -eq 1 ]; then
+		exit 0
+	else
+		if [ "$answer" == "Yes" ]; then
+			smp=1
+		fi
 	fi
 fi
 
