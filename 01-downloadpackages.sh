@@ -22,28 +22,59 @@ arch=$2
 smp=$3
 
 unlink lists
-if [ $edition == "xfce" ] || \
-	[ $edition == "openbox" ] || \
-	[ $edition == "ratpoison" ] || \
-	[ $edition == "lxde" ] || \
-	[ $edition == "kde" ] || \
-	[ $edition == "mate" ] || \
-	[ $edition == "fluxbox" ];then
-	ln -sf lists-$edition lists
+
+answer="$( eval dialog --title "Select edition" \
+	--menu \
+	"Select the edition you want to download packages for:" \
+	0 0 0 \
+	"xfce" "o" \
+	"kde" "o" \
+	"mate" "o" \
+	"ratpoison" "o" \
+	"openbox" "o" \
+	"lxde" "o" )"
+retval=$?
+if [ $retval -eq 1 ]; then
+	exit 0
 else
-	echo "ERROR. Not a valid EDITION"
-	exit 1
+	edition=$answer
+fi
+ln -sf lists-$edition lists
+
+answer="$( eval dialog --title "Select arch" \
+	--menu \
+	"Select the target architecture:" \
+	0 0 0
+	"i486" "o" \
+	"x86_64" "o")"
+retval=$?
+if [ $retval -eq 1 ]; then
+	exit 0
+else
+	arch=$answer
 fi
 
-if [ $arch != "i486" ] && [ $arch != "x86_64" ];then
-	echo "ERROR. Not a valid ARCH"
-	exit 1
+smp=0
+if [ $arch == "i486" ]; then
+	answer="$( eval dialog --title "Include i486 non-SMP kernel?" \
+	--menu \
+	"Do you want to include the i486 non-SMP kernel?"
+	0 0 0
+	"NO" "o" \
+	"Yes" "o" )"
+retval=$?
+if [ $retval -eq 1 ]; then
+	exit 0
+else
+	if [ "$answer" == "Yes" ];then
+		smp=1
+	fi
 fi
 
 slapt-get -u -c slapt-getrc.$arch
 slapt-get --clean
 {
-	if [ $arch == "i486" ] && [ x"$smp" != x"both_smp_nosmp" ]; then
+	if [ $arch == "i486" ] && [ $smp -eq 1 ]; then
 		KERNELPKG=`cat lists/KERNEL | grep smp`
 	else
 		KERNELPKG=`cat lists/KERNEL`
