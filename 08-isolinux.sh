@@ -10,12 +10,36 @@ fi
 
 set -e
 
-if [ ! $# -eq 2 ]; then
-	echo "ERROR. Syntax is: $0 ARCH EDITION"
-	exit 1
+answer="$(eval dialog \
+	--stdout \
+	--title \"Select edition\" \
+	--menu \"Select the edition you want to download packages for:\" \
+	0 0 0 \
+	'Xfce' 'o' \
+	'KDE' 'o' \
+	'Mate' 'o' \
+	'Ratpoison' 'o' \
+	'Openbox' 'o' \
+	'LXDE' 'o' )"
+retval=$?
+if [ $retval -eq 1 ] || [ $retval -eq 255 ]; then
+	exit 0
+else
+	edition=$answer
 fi
-arch=$1
-edition=$2
+
+answer="$(eval dialog --title \"Select arch\" \
+	--stdout \
+	--menu \"Select the target architecture:\" \
+	0 0 0 \
+	'i486' 'o' \
+	'x86_64' 'o')"
+retval=$?
+if [ $retval -eq 1 ] || [ $retval -eq 255 ]; then
+	exit 0
+else
+	arch=$answer
+fi
 
 rm -rf isolinux/$arch
 mkdir -p isolinux/$arch
