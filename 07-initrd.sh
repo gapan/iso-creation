@@ -130,6 +130,7 @@ echo "Installing xz..."
 spkg -qq --root=/boot/initrd-tree/ -i xz-*.tgz
 rm xz-*.tgz
 
+install_nfsutils() {
 echo "Downloading nfsutils..."
 rm -f nfs-utils-*.txz
 LOC=`grep "\/nfs-utils-.*-.*-.*\.txz$" slack.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
@@ -137,7 +138,10 @@ wget -q $SLACK2REPO/$LOC
 echo "Installing showmount binary from nfsutils..."
 tar xf nfs-utils-*.txz -C /boot/initrd-tree usr/sbin/showmount
 rm nfs-utils-*.txz
+}
+#install_nfsutils
 
+install_fuse() {
 echo "Downloading fuse..."
 rm -f fuse-*.txz
 LOC=`grep "\/fuse-.*-.*-.*\.txz$" slack.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
@@ -145,15 +149,6 @@ wget -q $SLACK2REPO/$LOC
 echo "Installing fuse..."
 spkg -qq --root=/boot/initrd-tree/ -i fuse-*.txz
 rm fuse-*.txz
-
-echo "Downloading httpfs2..."
-rm -f httpfs2-*.txz
-LOC=`grep "\/httpfs2-.*-.*-.*\.txz$" salix.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
-wget -q $SALIXREPO/$LOC
-echo "Installing httpfs2..."
-spkg -qq --root=/boot/initrd-tree/ -i httpfs2-*.txz
-rm httpfs2-*.txz
-
 echo "Downloading kernel modules"
 MODULES=`grep "\/kernel-modules-.*-.*-.*\.txz$" slack.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
 for LOC in $MODULES; do
@@ -164,7 +159,21 @@ for i in `ls kernel-modules-*.txz`; do
 	tar xf $i -C /boot/initrd-tree --wildcards "*/fuse.ko"
 done
 rm kernel-modules-*.txz
+}
+#install_fuse
 
+install_httpfs2() {
+echo "Downloading httpfs2..."
+rm -f httpfs2-*.txz
+LOC=`grep "\/httpfs2-.*-.*-.*\.txz$" salix.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
+wget -q $SALIXREPO/$LOC
+echo "Installing httpfs2..."
+spkg -qq --root=/boot/initrd-tree/ -i httpfs2-*.txz
+rm httpfs2-*.txz
+}
+#install_httpfs2
+
+install_cyrus_sasl() {
 echo "Downloading cyrus-sasl..."
 rm -f cyrus-sasl-*.txz
 LOC=`grep "\/cyrus-sasl-.*-.*-.*\.txz$" slack.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
@@ -172,7 +181,10 @@ wget -q $SLACK2REPO/$LOC
 echo "Installing cyrus-sasl..."
 spkg -qq --root=/boot/initrd-tree/ -i cyrus-sasl-*.txz
 rm cyrus-sasl-*.txz
+}
+#install_cyrus_sasl
 
+install_samba() {
 echo "Downloading samba..."
 rm -f samba-*.txz
 LOC=`grep "\/samba-.*-.*-.*\.txz$" slack.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
@@ -185,6 +197,8 @@ tar xf samba-*.txz -C /boot/initrd-tree --wildcards \
 install -d /boot/initrd-tree/etc/samba
 touch /boot/initrd-tree/etc/samba/smb.conf
 rm samba-*.txz
+}
+#install_samba
 
 echo "Tweaking config files..."
 # network logon message
