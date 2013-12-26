@@ -13,14 +13,15 @@ set -e
 answer="$(eval dialog \
 	--stdout \
 	--title \"Select edition\" \
-	--menu \"Select the edition you want to download packages for:\" \
+	--menu \"Select the edition you want to create isolinux files for:\" \
 	0 0 0 \
 	'Xfce' 'o' \
 	'KDE' 'o' \
 	'Mate' 'o' \
 	'Ratpoison' 'o' \
 	'Openbox' 'o' \
-	'LXDE' 'o' )"
+	'LXDE' 'o' \
+	'Core' 'o' )"
 retval=$?
 if [ $retval -eq 1 ] || [ $retval -eq 255 ]; then
 	exit 0
