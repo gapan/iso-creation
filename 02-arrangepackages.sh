@@ -7,7 +7,13 @@ fi
 
 rm -rf iso
 rm -rf temp
-mkdir -p iso/salix/{kernels,core,basic,full,settings}
+mkdir -p iso/salix/{kernels,core,settings}
+if [ -f lists/BASIC ]; then
+	mkdir -p iso/salix/basic
+fi
+if [ -f lists/FULL ]; then
+	mkdir -p iso/salix/full
+fi
 mkdir -p temp
 
 find /var/slapt-get -name *.t[gx]z -exec cp {} temp/ \;
@@ -20,13 +26,17 @@ for i in `cat lists/CORE`; do
 	find temp/ | grep /$i- | sed "/$i-.*-.*-.*-.*/d" >> temp/CORELIST
 done
 
-for i in `cat lists/BASIC`; do
-	find temp/ | grep /$i- | sed "/$i-.*-.*-.*-.*/d" >> temp/BASICLIST
-done
+if [ -f lists/BASIC ]; then
+	for i in `cat lists/BASIC`; do
+		find temp/ | grep /$i- | sed "/$i-.*-.*-.*-.*/d" >> temp/BASICLIST
+	done
+fi
 
-for i in `cat lists/FULL`; do
-	find temp/ | grep /$i- | sed "/$i-.*-.*-.*-.*/d" >> temp/FULLLIST
-done
+if [ -f lists/FULL ]; then
+	for i in `cat lists/FULL`; do
+		find temp/ | grep /$i- | sed "/$i-.*-.*-.*-.*/d" >> temp/FULLLIST
+	done
+fi
 
 for i in `cat lists/SETTINGS`; do
 	find temp/ | grep /$i- | sed "/$i-.*-.*-.*-.*/d" >> temp/SETTINGSLIST
@@ -40,13 +50,17 @@ for i in `cat temp/CORELIST`; do
 	mv $i iso/salix/core/
 done
 
-for i in `cat temp/BASICLIST`; do
-	mv $i iso/salix/basic/
-done
+if [ -f lists/BASIC ]; then
+	for i in `cat temp/BASICLIST`; do
+		mv $i iso/salix/basic/
+	done
+fi
 
-for i in `cat temp/FULLLIST`; do
-	mv $i iso/salix/full/
-done
+if [ -f lists/FULL ]; then
+	for i in `cat temp/FULLLIST`; do
+		mv $i iso/salix/full/
+	done
+fi
 
 for i in `cat temp/SETTINGSLIST`; do
 	mv $i iso/salix/settings/
