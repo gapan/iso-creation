@@ -24,7 +24,8 @@ answer="$(eval dialog \
 	'mate' 'o' \
 	'ratpoison' 'o' \
 	'openbox' 'o' \
-	'lxde' 'o' )"
+	'lxde' 'o' \
+	'core' 'o' )"
 retval=$?
 if [ $retval -eq 1 ] || [ $retval -eq 255 ]; then
 	exit 0
@@ -72,8 +73,20 @@ slapt-get --clean
 	else
 		KERNELPKG=`cat lists/KERNEL`
 	fi
-	for i in $KERNELPKG `cat lists/CORE lists/BASIC lists/FULL lists/SETTINGS`; do 
-	slapt-get -d --no-dep --reinstall -c slapt-getrc.$arch -i $i
+	COREPKG=`cat lists/CORE`
+	if [ -f lists/BASIC ]; then
+		BASICPKG=`cat lists/BASIC`
+	else
+		BASICPKG=""
+	fi
+	if [ -f lists/FULL ]; then
+		FULLPKG=`cat lists/FULL`
+	else
+		FULLPKG=""
+	fi
+	SETTINGSPKG=`cat lists/SETTINGS`
+	for i in $KERNELPKG $COREPKG $BASICPKG $FULLPKG $SETTINGSPKG; do 
+		slapt-get -d --no-dep --reinstall -c slapt-getrc.$arch -i $i
 	done
 } 2>&1 | tee download-$arch.log
 
