@@ -48,7 +48,6 @@ dotnew
 dvd+rw-tools
 e2fsprogs
 eject
-engine_pkcs11
 enscript
 etc
 ethtool
@@ -117,7 +116,6 @@ libmcrypt
 libmpc
 libnl
 libogg
-libp11
 libpcap
 libpthread-stubs
 libraw1394

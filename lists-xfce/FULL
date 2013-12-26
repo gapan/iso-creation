@@ -1,6 +1,5 @@
 anthy
 asunder
-aumix
 babl
 bc
 bluez
@@ -26,11 +25,6 @@ ghostscript
 ghostscript-fonts-std
 gigolo
 gimp
-gnome-mime-data
-gnome-python
-gnome-vfs
-gnonlin
-goocanvas
 gst-plugins-bad
 gst-plugins-good
 gst-python
@@ -67,7 +61,6 @@ libgpod
 libhangul
 libid3tag
 libisofs
-libmatekeyring
 libmms
 libreoffice
 libreplaygain
@@ -77,8 +70,6 @@ libvpx
 libxfcegui4
 lilosetup
 madplay
-mate-conf
-mate-corba
 mate-document-viewer
 mate-file-archiver
 meld
@@ -105,13 +96,10 @@ perl-glib
 perl-gtk2
 perl-pango
 pidgin
-pitivi
 poppler
 poppler-data
 pycups
 pycurl
-pygoocanvas
-pyorbit
 pyxdg
 salix-codecs-installer
 salix-update-notifier
@@ -179,3 +167,7 @@ gstreamer
 gst-plugins-base
 pysetuptools
 libcanberra
+at-spi2-atk
+at-spi2-core
+gtk+3
+libXevie

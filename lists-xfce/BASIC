@@ -1,6 +1,5 @@
 ConsoleKit
 GConf
-ORBit2
 xfce4-terminal
 Thunar
 aalib
@@ -119,7 +118,6 @@ libgnomecanvas
 libgsf
 libidl
 libjpeg
-libmatenotify
 libmng
 libnotify
 libpciaccess
