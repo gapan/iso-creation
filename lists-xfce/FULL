@@ -10,7 +10,6 @@ catfish
 claws-mail
 cups
 depfinder
-distribute
 djvulibre
 exaile
 exiv2
@@ -178,3 +177,4 @@ libwmf
 libaio
 gstreamer
 gst-plugins-base
+pysetuptools
