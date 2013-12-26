@@ -5,11 +5,6 @@ if [ "$UID" -eq "0" ]; then
 	exit 1
 fi
 
-if [ ! $# -eq 1 ]; then
-	echo "ERROR. Syntax is: $0 ISO_FILENAME"
-	exit 1
-fi
-
 CWD=`pwd`
 iso=$1
 
@@ -48,7 +43,7 @@ answer="$(eval dialog \
 	--title \"Enter Salix version\" \
 	--stdout \
 	--inputbox \
-	\"Enter the salix version you want to create the iso for:\" \
+	\"Enter the salix version you want to create the iso for.\n\You can add suffixes like alpha1, beta1, RC1 etc here.:\" \
 	0 0 )"
 retval=$?
 if [ $retval -eq 1 ] || [ $retval -eq 255 ]; then
@@ -64,7 +59,7 @@ fi
 
 cd iso
 
-mkisofs -o ../$iso \
+mkisofs -o ../salix${LIBDIRSUFFIX}-${edition}-${ver}.iso \
   -R -J -A "Salix${LIBDIRSUFFIX} Install" \
   -hide-rr-moved \
   -v -d -N \
