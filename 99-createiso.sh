@@ -16,7 +16,7 @@ iso=$1
 answer="$(eval dialog \
 	--stdout \
 	--title \"Select edition\" \
-	--menu \"Select the edition you want to download packages for:\" \
+	--menu \"Select the edition you want to create the iso for:\" \
 	0 0 0 \
 	'xfce' 'o' \
 	'kde' 'o' \
@@ -48,7 +48,7 @@ answer="$(eval dialog \
 	--title \"Enter Salix version\" \
 	--stdout \
 	--inputbox \
-	\"Enter the salix version you want to create the initrd for:\" \
+	\"Enter the salix version you want to create the iso for:\" \
 	0 0 )"
 retval=$?
 if [ $retval -eq 1 ] || [ $retval -eq 255 ]; then
