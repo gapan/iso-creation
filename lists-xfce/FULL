@@ -178,3 +178,4 @@ libaio
 gstreamer
 gst-plugins-base
 pysetuptools
+libcanberra
