@@ -208,7 +208,6 @@ smartmontools
 spkg
 sqlite
 strace
-subversion
 sudo
 sysfsutils
 sysklogd
