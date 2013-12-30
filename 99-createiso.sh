@@ -69,5 +69,5 @@ mkisofs -o ../salix${LIBDIRSUFFIX}-${edition}-${ver}.iso \
   -V "Salix${LIBDIRSUFFIX} $edition $ver" .
 
 cd ..
-isohybrid ../salix${LIBDIRSUFFIX}-${edition}-${ver}.iso
+isohybrid salix${LIBDIRSUFFIX}-${edition}-${ver}.iso
 
