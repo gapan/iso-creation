@@ -62,25 +62,10 @@ if [ -r $TMP/SeTkeymap ]; then
   chmod 755 $T_PX/etc/rc.d/rc.keymap
 fi
 
-# Only ask if we want to skip configuring if we suspect the user should
-# skip the step:
-if [ -r $T_PX/etc/fstab ]; then
-  dialog --title "CONFIGURE THE SYSTEM" --yesno "Now we can configure your \
-Linux system.  If this is a new installation, you MUST configure it now or it \
-will not boot correctly.  However, if you are just adding software to an \
-existing system, you can back out to the main menu and skip this step.  \
-However (important exception) if you've installed a new kernel image, it's \
-important to reconfigure your system so that you can install LILO (the Linux \
-loader) or GRUB or create a bootdisk using the new kernel.  You want to CONFIGURE \
-your system, right?" 0 0
-  if [ ! $? = 0 ]; then
-    exit
-  fi
-else
-  dialog --title "DONE INSTALLING PACKAGES" --infobox  \
-"Preparing to configure your new Linux system..." 3 54
-  sleep 3
-fi
+# Inform the user that we're done installing packages
+dialog --title "DONE INSTALLING PACKAGES" --infobox  \
+ "Preparing to configure your new Linux system..." 3 54
+sleep 3
 
 # Let user choose Grub or Lilo Boot Loader only if both are installed 
 if [ -x $T_PX/sbin/liloconfig ] && [ -x $T_PX/sbin/grubconfig ]; then
