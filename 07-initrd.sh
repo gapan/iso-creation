@@ -37,6 +37,10 @@ You really shouldn't build an initrd yourself if you're\n\
 making a custom iso. Use the initrd files found in a\n\
 Salix iso instead.\n\
 \n\
+When you get the initrd files from a salix iso, put them in an\n\
+initrd/i486 or initrd/x86_64 directory, according to your\n\
+architecture.\n\
+\n\
 This script assumes that in a 32bit system, you're running the smp\n\
 kernel and that you at least have the non-smp kernel-modules package\n\
 installed.\n\
