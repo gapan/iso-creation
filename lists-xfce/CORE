@@ -258,3 +258,5 @@ libtasn1
 lm_sensors
 spi
 os-prober
+elilo
+efibootmgr
