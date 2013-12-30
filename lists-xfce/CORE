@@ -16,7 +16,6 @@ bash
 bin
 binutils
 bison
-bridge-utils
 btrfs-progs
 bzip2
 ca-certificates
@@ -139,7 +138,6 @@ man
 man-pages
 mc
 mdadm
-mercurial
 mhash
 mkinitrd
 mm
