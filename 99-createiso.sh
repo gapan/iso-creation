@@ -6,7 +6,6 @@ if [ "$UID" -eq "0" ]; then
 fi
 
 CWD=`pwd`
-iso=$1
 
 answer="$(eval dialog \
 	--stdout \
@@ -70,4 +69,5 @@ mkisofs -o ../salix${LIBDIRSUFFIX}-${edition}-${ver}.iso \
   -V "Salix${LIBDIRSUFFIX} $edition $ver" .
 
 cd ..
-isohybrid $iso
+isohybrid ../salix${LIBDIRSUFFIX}-${edition}-${ver}.iso
+
