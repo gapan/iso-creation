@@ -73,7 +73,11 @@ slapt-get --clean
 	else
 		KERNELPKG=`cat lists/KERNEL`
 	fi
-	COREPKG=`cat lists/CORE`
+	if [ $arch == "x86_64" ]; then
+		COREPKG=`cat lists/CORE lists/EFI`
+	else
+		COREPKG=`cat lists/CORE`
+	fi
 	if [ -f lists/BASIC ]; then
 		BASICPKG=`cat lists/BASIC`
 	else
