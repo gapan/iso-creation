@@ -68,7 +68,7 @@ fi
 slapt-get -u -c slapt-getrc.$arch
 slapt-get --clean
 {
-	if [ $arch == "i486" ] && [ $smp -eq 1 ]; then
+	if [ $arch == "i486" ] && [ $smp -eq 0 ]; then
 		KERNELPKG=`cat lists/KERNEL | grep smp`
 	else
 		KERNELPKG=`cat lists/KERNEL`
