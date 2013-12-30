@@ -82,21 +82,34 @@ else
   sleep 3
 fi
 
-# Let user choose Grub or Lilo Boot Loader (code added by Dimitris Tzemos)  
-dialog --title " Choose The Boot Loader That Be Installed Later" \
---menu "\n" 0 0 0 \
-"Lilo" "Install Lilo" \
-"Grub" "Install Grub" \
-"EXIT" "(Do not install boot loader)" \
-2> $TMP/reply
+# Let user choose Grub or Lilo Boot Loader only if both are installed 
+if [ -x $T_PX/sbin/liloconfig ] && [ -x $T_PX/sbin/grubconfig ]; then
+ dialog --title "Boot Loader" \
+  --menu "Please choose the Boot Loader that you would like to use" \
+  0 0 0 \
+  "Lilo" "Install Lilo" \
+  "Grub" "Install Grub" \
+  "EXIT" "(Do not install boot loader)" \
+  2> $TMP/reply
  OPTION="`cat $TMP/reply`"
-if [ "$OPTION" = "Lilo" ]; then
+ if [ "$OPTION" = "Lilo" ]; then
   BOOT_LOADER="Lilo"
-elif [ "$OPTION" = "Grub" ]; then
+ elif [ "$OPTION" = "Grub" ]; then
   BOOT_LOADER="Grub"
-else
+ else
   BOOT_LOADER="None"
+ fi
+# default to lilo if only lilo is installed
+elif [ -x $T_PX/sbin/liloconfig ]; then
+ BOOT_LOADER="Lilo"
+# default to grub if only grub is installed
+elif [ -x $T_PX/sbin/liloconfig ]; then
+ BOOT_LOADER="Grub"
+# funny thing. No boot loader.
+else
+ BOOT_LOADER="None"
 fi
+
 
 # Post installation and setup scripts added by packages.
 if [ -d $T_PX/var/log/setup ]; then
@@ -119,27 +132,41 @@ if [ -d $T_PX/var/log/setup ]; then
     ( cd $T_PX 
       if [ -x var/log/setup/$SCRIPT ]; then
         if [ -r $TMP/isAuto ] && [ "$BOOT_LOADER"=="Lilo" ] && [ "$SCRIPT" == "setup.liloconfig" ]; then
-		./var/log/setup/$SCRIPT $T_PX $ROOT_DEVICE "auto"
+         ./var/log/setup/$SCRIPT $T_PX $ROOT_DEVICE "auto"
         elif [ -r $TMP/isAuto ] && [ "$BOOT_LOADER"=="Grub" ] && [ "$SCRIPT" == "setup.grubconfig" ]; then
-		./var/log/setup/$SCRIPT $T_PX $ROOT_DEVICE "auto"
+         ./var/log/setup/$SCRIPT $T_PX $ROOT_DEVICE "auto"
       	else
-		# Do not run GPM configuration during installation. Most people
-	 	# would probably want this off and if someone wants it he can
-	 	# always run mouseconfig after installation,
-	 	# run Lilo or Grub that one of them selected above (code added by Dimitris Tzemos)
-	 	if [ "$SCRIPT" == "setup.mouse" ] || [ "$SCRIPT" == "setup.setconsolefont" ] || [ "$SCRIPT" == "setup.timeconfig" ]; then
-			sleep 0
-		elif [ "$SCRIPT" == "setup.netconfig" ] && [ "$MODE" == "FULL" ]; then
-			sleep 0
-	        elif [ "$SCRIPT" == "setup.liloconfig" ] && [ "$BOOT_LOADER" != "Lilo" ]; then
-			sleep 0
-		elif [ "$SCRIPT" == "setup.grubconfig" ] && [ "$BOOT_LOADER" != "Grub" ]; then
-			sleep 0
-		else
- 	    		./var/log/setup/$SCRIPT $T_PX $ROOT_DEVICE
-			sleep 2
- 		fi
-	fi
+         # Do not run GPM configuration during installation. Most people
+         # would probably want this off and if someone wants it he can
+         # always run mouseconfig after installation,
+         # also do not run the consolefont dialog and the time
+         # configuration dialog
+		 if [ "$SCRIPT" == "setup.mouse" ] || [ "$SCRIPT" == "setup.setconsolefont" ] || [ "$SCRIPT" == "setup.timeconfig" ]; then
+          sleep 0
+         # netconfig should not be run in FULL mode
+         elif [ "$SCRIPT" == "setup.netconfig" ] && [ "$MODE" == "FULL" ]; then
+          sleep 0
+         # lilo should only be setup if it was selected as the bootloader
+         elif [ "$SCRIPT" == "setup.liloconfig" ] && [ "$BOOT_LOADER" != "Lilo" ]; then
+          sleep 0
+         # elilo should be setup only if lilo was selected and the
+         # system is actually an efi system
+         elif [ "$SCRIPT" == "setup.ll.eliloconfig" ]; then
+          if [ "$BOOT_LOADER" != "Lilo" ]; then
+           sleep 0
+          elif [ ! -d /sys/firmware/efi ]; then
+           if [ "$T_PX" = "/" ]; then
+            sleep 0
+           fi
+          fi
+         # grub should only be setup if it was selected as the bootloader
+         elif [ "$SCRIPT" == "setup.grubconfig" ] && [ "$BOOT_LOADER" != "Grub" ]; then
+          sleep 0
+         else
+          ./var/log/setup/$SCRIPT $T_PX $ROOT_DEVICE
+          sleep 2
+         fi
+        fi
       fi
     )
     if echo $SCRIPT | grep onlyonce 1> /dev/null 2> /dev/null; then # only run after first install
