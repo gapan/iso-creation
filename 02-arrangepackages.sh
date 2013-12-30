@@ -22,7 +22,7 @@ for i in `cat lists/KERNEL`; do
 	find temp/ | grep /$i- | sed "/$i-.*-.*-.*-.*/d" >> temp/KERNELLIST
 done
 
-for i in `cat lists/CORE`; do
+for i in `cat lists/CORE lists/EFI`; do
 	find temp/ | grep /$i- | sed "/$i-.*-.*-.*-.*/d" >> temp/CORELIST
 done
 
