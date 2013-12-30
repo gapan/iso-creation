@@ -136,13 +136,13 @@ if [ -d $T_PX/var/log/setup ]; then
           sleep 0
          # elilo should be setup only if lilo was selected and the
          # system is actually an efi system
-         elif [ "$SCRIPT" == "setup.ll.eliloconfig" ]; then
-          if [ "$BOOT_LOADER" != "Lilo" ]; then
+         elif [ "$SCRIPT" == "setup.ll.eliloconfig" ] && [ "$BOOT_LOADER" != "Lilo" ]; then
+          sleep 0
+         elif [ "$SCRIPT" == "setup.ll.eliloconfig" ] && [ "$BOOT_LOADER" == "Lilo" ]; then
+          if [ ! -d /sys/firmware/efi ]; then
            sleep 0
-          elif [ ! -d /sys/firmware/efi ]; then
-           if [ "$T_PX" = "/" ]; then
-            sleep 0
-           fi
+          else
+           ./var/log/setup/setup.ll.eliloconfig $T_PX $ROOT_DEVICE
           fi
          # grub should only be setup if it was selected as the bootloader
          elif [ "$SCRIPT" == "setup.grubconfig" ] && [ "$BOOT_LOADER" != "Grub" ]; then
