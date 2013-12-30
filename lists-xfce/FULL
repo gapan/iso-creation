@@ -15,7 +15,6 @@ exiv2
 faac
 faad2
 fftw
-flash-plugin
 foomatic-filters
 galculator
 geany
@@ -25,7 +24,6 @@ ghostscript
 ghostscript-fonts-std
 gigolo
 gimp
-gst-plugins-bad
 gst-plugins-good
 gst-python
 gtk-xfce-engine
