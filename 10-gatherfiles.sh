@@ -54,6 +54,6 @@ if [ $arch == "i486" ]; then
 		echo "" >> iso/isolinux/message.txt
 		rm iso/isolinux/nosmp.img
 		rm iso/isolinux/f2.txt
-		rm -r iso/kernels/huge.s
+		rm -rf iso/kernels/huge.s
 	fi
 fi
