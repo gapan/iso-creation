@@ -231,6 +231,15 @@ if [ "$arch" == "x86_64" ] ; then
 	depmod -b /boot/initrd-tree/
 	mkinitrd -o $CWD/initrd/$arch/initrd.img
 else
+	#
+	# first create a combined initrd
+	#
+	echo "Repacking i486 initrd (combined smp and non-smp)..."
+	depmod -b /boot/initrd-tree/ $( uname -r | sed "s/-smp//" )
+	mkinitrd -o $CWD/initrd/$arch/initrd.img
+	#
+	# then do the split ones
+	#
 	cp -ar /boot/initrd-tree /boot/initrd-tree-copy
 	# first pack the non-smp initrd
 	echo "Repacking i486 non-smp initrd..."
