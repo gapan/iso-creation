@@ -88,7 +88,7 @@ if [ -x $T_PX/sbin/liloconfig ] && [ -x $T_PX/sbin/grubconfig ]; then
 elif [ -x $T_PX/sbin/liloconfig ]; then
  BOOT_LOADER="Lilo"
 # default to grub if only grub is installed
-elif [ -x $T_PX/sbin/liloconfig ]; then
+elif [ -x $T_PX/sbin/grubconfig ]; then
  BOOT_LOADER="Grub"
 # funny thing. No boot loader.
 else
