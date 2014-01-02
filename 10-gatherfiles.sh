@@ -41,7 +41,7 @@ mkdir -p iso/kernels
 
 cp -r isolinux/$arch/* iso/isolinux/
 cp -r kernel/$arch/* iso/kernels/
-cp README iso/
+cp README.iso iso/README
 
 # remove the non-smp initrd and kernel files if building an smp-only iso
 if [ $arch == "i486" ]; then
