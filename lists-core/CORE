@@ -16,7 +16,6 @@ bash
 bin
 binutils
 bison
-bridge-utils
 btrfs-progs
 bzip2
 ca-certificates
@@ -28,7 +27,6 @@ coreutils
 cpio
 cryptsetup
 curl
-cvs
 cyrus-sasl
 db44
 db48
@@ -139,7 +137,6 @@ man
 man-pages
 mc
 mdadm
-mercurial
 mhash
 mkinitrd
 mm
@@ -208,7 +205,6 @@ smartmontools
 spkg
 sqlite
 strace
-subversion
 sudo
 sysfsutils
 sysklogd
@@ -258,5 +254,3 @@ libtasn1
 lm_sensors
 spi
 os-prober
-elilo
-efibootmgr
