@@ -244,8 +244,8 @@ MAPCODE=`echo $MAPNAME|sed "s/.map//"`
 [ "$MAPCODE" = "" ] && MAPCODE="us"
 chroot $T_PX /usr/sbin/keyboardsetup -k $MAPCODE -n $numstate -i $ibusstate  -s $scimstate -z
 
-# Set root password:
-/usr/lib/setup/SeTpasswd
+# Create new users
+/usr/lib/setup/SeTusers
 
 # Choose repo
 chroot $T_PX /usr/sbin/reposetup -l -n

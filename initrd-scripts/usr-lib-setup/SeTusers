@@ -1,0 +1,20 @@
+#!/bin/sh
+
+TMP=/var/log/setup/tmp
+if [ ! -d $TMP ]; then
+  mkdir -p $TMP
+fi
+T_PX="`cat $TMP/SeTT_PX`"
+
+dialog --title "User setup" --msgbox \
+"You will now be presented with some dialogs so that you can create\
+one or more user accounts in your new system.\
+\
+The first user you will create, will be able to run commands as a\
+privileged user through sudo. Any other user will not be able to\
+run commands with sudo unless you add them to the wheel group.\
+\
+The root user is disabled by default.' " 0 0
+
+chroot $T_PX /usr/sbin/usersetup
+
