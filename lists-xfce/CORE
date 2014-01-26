@@ -254,3 +254,4 @@ libtasn1
 lm_sensors
 spi
 os-prober
+wheel-sudo
