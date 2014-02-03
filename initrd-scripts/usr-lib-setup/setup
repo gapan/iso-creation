@@ -59,8 +59,7 @@ dialog --title "Salix Installation" \
 --ok-label "Select" \
 --cancel-label "Exit installation" \
 --menu \
-"You may now proceed with the installation by pressing the\
-ENTER key.\n\n\
+"You may now proceed with the installation by pressing the ENTER key.\n\n\
 If you want to exit the installation and drop to a linux console, \
 select 'Exit installation'" 14 80 3 \
 "INSTALL" "Install Salix using a step-by-step guide" \
