@@ -57,7 +57,7 @@ curlftpfs ftp://ftp.slackware.org.uk ftp
 # get the slack EFI files
 echo "Getting the slackware EFI files..."
 cp -r $FTP/slackware/slackware64-$ver/EFI ./
-cp $FTP/slackware/slackware64/isolinux/efiboot.img isolinux/x86_64/
+cp $FTP/slackware/slackware64-$ver/isolinux/efiboot.img isolinux/x86_64/
 
 # Slackware->Salix
 sed -i "s/Slackware/Salix/g" EFI/BOOT/grub.cfg

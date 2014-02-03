@@ -30,6 +30,8 @@ if [ $arch == "i486" ]; then
 	fi
 fi
 
+rm -rf iso/{isolinux,kernels,README,EFI}
+
 mkdir -p iso/isolinux
 mkdir -p iso/kernels
 
