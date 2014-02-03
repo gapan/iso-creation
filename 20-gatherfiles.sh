@@ -30,14 +30,16 @@ if [ $arch == "i486" ]; then
 	fi
 fi
 
-if [ ! -f EFI/ ]; then
-
 mkdir -p iso/isolinux
 mkdir -p iso/kernels
 
 cp -r isolinux/$arch/* iso/isolinux/
 cp -r kernel/$arch/* iso/kernels/
 cp README.iso iso/README
+
+if [ $arch == "x86_64" ]; then
+	cp -r EFI iso/
+fi
 
 # remove the non-smp initrd and kernel files if building an smp-only iso
 if [ $arch == "i486" ]; then
