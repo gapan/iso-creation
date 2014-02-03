@@ -42,7 +42,7 @@ PATH="$PATH:/usr/lib/setup"
 export PATH;
 export COLOR=on
 
-dialog --title "WELCOME TO SALIX INSTALLATION" \
+dialog --title "WELCOME TO THE SALIX INSTALLATION" \
 --yes-label "Use US keymap" \
 --no-label "Select another keymap" \
 --yesno "Welcome to the installation of Salix, The Bonsai OS!\n\nBefore you proceed \
