@@ -52,6 +52,27 @@ select your keyboard map (keymap). The default keyboard map is the US keyboard m
 
 while [ 0 ]; do
 
+# if-efi
+# if we are on an EFI system, don't show the autopartition option
+if [ -d /sys/firmware/efi ]; then
+dialog --title "Salix Installation" \
+--ok-label "Select" \
+--cancel-label "Exit installation" \
+--menu \
+"You may now proceed with the installation by pressing the\
+ENTER key.\n\n\
+If you want to exit the installation and drop to a linux console, \
+select 'Exit installation'" 14 80 3 \
+"INSTALL" "Install Salix using a step-by-step guide" \
+2> $TMP/hdset
+ if [ ! $? = 0 ]; then
+  rm -f $TMP/hdset $TMP/SeT*
+  exit
+ fi
+ MAINSELECT="`cat $TMP/hdset`"
+ rm $TMP/hdset
+else
+# if there is no EFI
 dialog --title "Salix Installation" \
 --ok-label "Select" \
 --cancel-label "Exit installation" \
@@ -69,6 +90,7 @@ select 'Exit installation'" 14 80 3 \
  fi
  MAINSELECT="`cat $TMP/hdset`"
  rm $TMP/hdset
+fi # end if-efi
 
  # Start checking what to do. Some modules may reset MAINSELECT to run the
  # next item in line.
