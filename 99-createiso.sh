@@ -17,7 +17,8 @@ answer="$(eval dialog \
 	'mate' 'o' \
 	'ratpoison' 'o' \
 	'openbox' 'o' \
-	'lxde' 'o' )"
+	'lxde' 'o' \"
+	'core' 'o' )"
 retval=$?
 if [ $retval -eq 1 ] || [ $retval -eq 255 ]; then
 	exit 0
@@ -54,19 +55,22 @@ fi
 unset LIBDIRSUFFIX
 if [[ "$arch" == "x86_64" ]]; then
 	export LIBDIRSUFFIX="64"
+	MKISOFS_EFI_OPTS="-eltorito-alt-boot -e isolinux/efiboot.img -no-emul-boot"
 fi
 
 cd iso
 
 mkisofs -o ../salix${LIBDIRSUFFIX}-${edition}-${ver}.iso \
   -R -J -A "Salix${LIBDIRSUFFIX} Install" \
+  -V "Salix${LIBDIRSUFFIX} $edition $ver" \
   -hide-rr-moved \
   -v -d -N \
   -no-emul-boot -boot-load-size 4 -boot-info-table \
   -sort isolinux/iso.sort \
   -b isolinux/isolinux.bin \
   -c isolinux/isolinux.boot \
-  -V "Salix${LIBDIRSUFFIX} $edition $ver" .
+  $MKISOFS_EFI_OPTS \
+  .
 
 cd ..
 isohybrid salix${LIBDIRSUFFIX}-${edition}-${ver}.iso
