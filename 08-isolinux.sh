@@ -10,36 +10,18 @@ fi
 
 set -e
 
-answer="$(eval dialog \
-	--stdout \
-	--title \"Select edition\" \
-	--menu \"Select the edition you want to create isolinux files for:\" \
-	0 0 0 \
-	'Xfce' 'o' \
-	'KDE' 'o' \
-	'Mate' 'o' \
-	'Ratpoison' 'o' \
-	'Openbox' 'o' \
-	'LXDE' 'o' \
-	'Core' 'o' )"
-retval=$?
-if [ $retval -eq 1 ] || [ $retval -eq 255 ]; then
-	exit 0
+if [ ! -f EDITION ]; then
+	echo "No edition file."
+	exit 1
 else
-	edition=$answer
+	edition=`cat EDITION`
 fi
 
-answer="$(eval dialog --title \"Select arch\" \
-	--stdout \
-	--menu \"Select the target architecture:\" \
-	0 0 0 \
-	'i486' 'o' \
-	'x86_64' 'o')"
-retval=$?
-if [ $retval -eq 1 ] || [ $retval -eq 255 ]; then
-	exit 0
+if [ ! -f ARCH ]; then
+	echo "No ARCH file."
+	exit 1
 else
-	arch=$answer
+	arch=`cat ARCH`
 fi
 
 rm -rf isolinux/$arch

@@ -13,24 +13,40 @@ if [ -x /usr/bin/salix-update-notifier ]; then
 fi
 
 unlink lists
+rm -f EDITION ARCH VERSION
+
+answer="$(eval dialog \
+	--title \"Enter Salix version\" \
+	--stdout \
+	--inputbox \
+	\"Enter the salix version you want to create the iso for:\" \
+	0 0 )"
+retval=$?
+if [ $retval -eq 1 ] || [ $retval -eq 255 ]; then
+	exit 0
+else
+	echo "$answer" > VERSION
+	VER=$answer
+fi
 
 answer="$(eval dialog \
 	--stdout \
 	--title \"Select edition\" \
 	--menu \"Select the edition you want to download packages for:\" \
 	0 0 0 \
-	'xfce' 'o' \
-	'kde' 'o' \
-	'mate' 'o' \
-	'ratpoison' 'o' \
-	'openbox' 'o' \
-	'lxde' 'o' \
-	'core' 'o' )"
+	'Xfce' 'o' \
+	'KDE' 'o' \
+	'MATE' 'o' \
+	'Ratpoison' 'o' \
+	'Openbox' 'o' \
+	'LXDE' 'o' \
+	'Core' 'o' )"
 retval=$?
 if [ $retval -eq 1 ] || [ $retval -eq 255 ]; then
 	exit 0
 else
-	edition=$answer
+	echo "$answer" > EDITION
+	edition=`echo $answer | tr '[:upper:]' '[:lower:]'`
 fi
 ln -sf lists-$edition lists
 
@@ -44,6 +60,7 @@ retval=$?
 if [ $retval -eq 1 ] || [ $retval -eq 255 ]; then
 	exit 0
 else
+	echo "$answer" > ARCH
 	arch=$answer
 fi
 

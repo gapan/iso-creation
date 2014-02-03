@@ -1,7 +1,12 @@
 #/bin/sh
 
 export LANG=C
-export ARCH=${ARCH:-i486}
+if [ ! -f ARCH ]; then
+	echo "No ARCH file."
+	exit 1
+else
+	export ARCH=`cat ARCH`
+fi
 
 if [ "$UID" -eq "0" ]; then
 	echo "Don't run this script as root"

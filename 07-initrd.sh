@@ -23,6 +23,14 @@ if [ "$UID" != "0" ]; then
 	exit 1
 fi
 
+
+if [ ! -f VERSION ]; then
+	echo "No VERSION file."
+	exit 1
+else
+	VER=`cat VERSION`
+fi
+
 if [ -z "$arch" ]; then
 	case "$( uname -m )" in
 		i?86) arch=i486 ;;
@@ -59,19 +67,6 @@ dialog --title "Are you sure you want to do this?" \
 retval=$?
 if [ $retval -eq 1 ] || [ $retval -eq 255 ]; then
 	exit 0
-fi
-
-answer="$(eval dialog \
-	--title \"Enter Salix version\" \
-	--stdout \
-	--inputbox \
-	\"Enter the salix version you want to create the initrd for:\" \
-	0 0 )"
-retval=$?
-if [ $retval -eq 1 ] || [ $retval -eq 255 ]; then
-	exit 0
-else
-	VER=$answer
 fi
 
 unset LIBDIRSUFFIX

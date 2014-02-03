@@ -17,30 +17,18 @@ fi
 
 set -e
 
-answer="$(eval dialog --title \"Select arch\" \
-	--stdout \
-	--menu \"Select the target architecture:\" \
-	0 0 0 \
-	'i486' 'o' \
-	'x86_64' 'o')"
-retval=$?
-if [ $retval -eq 1 ] || [ $retval -eq 255 ]; then
-	exit 0
+if [ ! -f ARCH ]; then
+	echo "No ARCH file."
+	exit 1
 else
-	arch=$answer
+	arch=`cat ARCH`
 fi
 
-answer="$(eval dialog \
-	--title \"Enter Salix version\" \
-	--stdout \
-	--inputbox \
-	\"Enter the salix version you want to download the kernel for:\" \
-	0 0 )"
-retval=$?
-if [ $retval -eq 1 ] || [ $retval -eq 255 ]; then
-	exit 0
+if [ ! -f VERSION ]; then
+	echo "No VERSION file."
+	exit 1
 else
-	ver=$answer
+	ver=`cat VERSION`
 fi
 
 CWD=`pwd`

@@ -7,36 +7,18 @@ fi
 
 CWD=`pwd`
 
-answer="$(eval dialog \
-	--stdout \
-	--title \"Select edition\" \
-	--menu \"Select the edition you want to create the iso for:\" \
-	0 0 0 \
-	'xfce' 'o' \
-	'kde' 'o' \
-	'mate' 'o' \
-	'ratpoison' 'o' \
-	'openbox' 'o' \
-	'lxde' 'o' \"
-	'core' 'o' )"
-retval=$?
-if [ $retval -eq 1 ] || [ $retval -eq 255 ]; then
-	exit 0
+if [ ! -f EDITION ]; then
+	echo "No EDITION file."
+	exit 1
 else
-	edition=$answer
+	edition=`cat EDITION | tr '[:upper:]' '[:lower:]'`
 fi
 
-answer="$(eval dialog --title \"Select arch\" \
-	--stdout \
-	--menu \"Select the target architecture:\" \
-	0 0 0 \
-	'i486' 'o' \
-	'x86_64' 'o')"
-retval=$?
-if [ $retval -eq 1 ] || [ $retval -eq 255 ]; then
-	exit 0
+if [ ! -f ARCH ]; then
+	echo "No ARCH file."
+	exit 1
 else
-	arch=$answer
+	arch=`cat ARCH`
 fi
 
 answer="$(eval dialog \
@@ -55,7 +37,7 @@ fi
 unset LIBDIRSUFFIX
 if [[ "$arch" == "x86_64" ]]; then
 	export LIBDIRSUFFIX="64"
-	MKISOFS_EFI_OPTS="-eltorito-alt-boot -e isolinux/efiboot.img -no-emul-boot"
+	MKISOFS_EFI_OPTS="-eltorito-alt-boot -b isolinux/efiboot.img -no-emul-boot"
 fi
 
 cd iso
@@ -69,8 +51,7 @@ mkisofs -o ../salix${LIBDIRSUFFIX}-${edition}-${ver}.iso \
   -sort isolinux/iso.sort \
   -b isolinux/isolinux.bin \
   -c isolinux/isolinux.boot \
-  $MKISOFS_EFI_OPTS \
-  .
+  $MKISOFS_EFI_OPTS . 
 
 cd ..
 isohybrid salix${LIBDIRSUFFIX}-${edition}-${ver}.iso

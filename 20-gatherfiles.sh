@@ -5,17 +5,11 @@ if [ "$UID" -eq "0" ]; then
 	exit 1
 fi
 
-answer="$(eval dialog --title \"Select arch\" \
-	--stdout \
-	--menu \"Select the target architecture:\" \
-	0 0 0 \
-	'i486' 'o' \
-	'x86_64' 'o')"
-retval=$?
-if [ $retval -eq 1 ] || [ $retval -eq 255 ]; then
-	exit 0
+if [ ! -f ARCH ]; then
+	echo "No ARCH file."
+	exit 1
 else
-	arch=$answer
+	arch=`cat ARCH`
 fi
 
 smp=0
@@ -35,6 +29,8 @@ if [ $arch == "i486" ]; then
 		fi
 	fi
 fi
+
+if [ ! -f EFI/ ]; then
 
 mkdir -p iso/isolinux
 mkdir -p iso/kernels
