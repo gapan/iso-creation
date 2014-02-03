@@ -208,7 +208,6 @@ strace
 sudo
 sysfsutils
 sysklogd
-syslinux
 sysstat
 sysvinit
 sysvinit-functions
