@@ -176,9 +176,6 @@ mkdir /var/log/mount 2> /dev/null
 	continue
   fi
   SeTEFI
-  if [ $? -ne 0 ]; then
-	continue
-  fi
   SeTDOS
   if [ -r $TMP/SeTnative ]; then
    MAINSELECT="SOURCE"
