@@ -171,8 +171,11 @@ mkdir /var/log/mount 2> /dev/null
  fi
 
  if [ "$MAINSELECT" = "TARGET" ]; then
-  SeTEFI
   SeTpartitions
+  if [ $? -ne 0 ]; then
+	continue
+  fi
+  SeTEFI
   if [ $? -ne 0 ]; then
 	continue
   fi
