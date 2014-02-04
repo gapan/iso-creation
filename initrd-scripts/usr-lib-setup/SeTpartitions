@@ -373,7 +373,8 @@ ROOT_SYS_TYPE=$(blkid -s TYPE $ROOT_DEVICE | cut -f 2 -d = | tr -d \")
 mount $ROOT_DEVICE $T_PX -t $ROOT_SYS_TYPE 1> $REDIR 2> $REDIR
 
 #echo "$ROOT_DEVICE       /        $ROOT_SYS_TYPE        defaults   1   1" > $TMP/SeTnative
-printf "%-16s %-16s %-11s %-16s %-3s %s\n" "$ROOT_DEVICE" "/" "$ROOT_SYS_TYPE" "defaults" "1" "1" > $TMP/SeTnative
+printf "%-16s %-16s %-11s %-16s %-3s %s\n" "$ROOT_DEVICE" "/" \
+  "$ROOT_SYS_TYPE" "defaults" "1" "1" >> $TMP/SeTnative
 echo $ROOT_DEVICE > $TMP/SeTrootdev
 
 # done mounting the target root partition
