@@ -217,6 +217,8 @@ fi
 
 # If ibus is installed, ask if it should be running by default
 ibusstate="off"
+# If scim is installed, ask if it should be running by default
+scimstate="off"
 if [ -f $T_PX/etc/profile.d/ibus.sh ]; then
 	dialog --title "IBus configuration" \
 	--yes-label "Enabled" --no-label "Disabled" \
@@ -226,8 +228,6 @@ if [ -f $T_PX/etc/profile.d/ibus.sh ]; then
 	if [ $retval -eq 0 ]; then
 		ibusstate="on"
 	fi
-# If scim is installed, ask if it should be running by default
-scimstate="off"
 elif [ -f $T_PX/etc/profile.d/scim.sh ]; then
 	dialog --title "SCIM configuration" \
 	--yes-label "Enabled" --no-label "Disabled" \
@@ -242,7 +242,7 @@ fi
 # Set keymap and numlock on installed system
 MAPCODE=`echo $MAPNAME|sed "s/.map//"`
 [ "$MAPCODE" == "" ] && MAPCODE="us"
-chroot $T_PX /usr/sbin/keyboardsetup -k $MAPCODE -n $numstate -i $ibusstate  -s $scimstate -z
+chroot $T_PX /usr/sbin/keyboardsetup -k $MAPCODE -n $numstate -i $ibusstate -s $scimstate -z
 
 # Create new users
 /usr/lib/setup/SeTusers
