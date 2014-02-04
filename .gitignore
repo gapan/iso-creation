@@ -8,3 +8,4 @@ isolinux
 kernel
 temp
 *.iso
+*.log
