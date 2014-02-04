@@ -250,7 +250,7 @@ dialog --title "SELECT FILESYSTEM FOR $1" \\
 --backtitle "Partition $1 will be formatted." \\
 --default-item $DEFAULT --menu \\
 "Please select the type of filesystem to use for the specified \\
-device.  Here are descriptions of the available filesystems:  $EXT2 $EXT3 $EXT4 $JFS $REISERFS $XFS" \\
+device.  Here are descriptions of the available filesystems:  $BTRFS $EXT2 $EXT3 $EXT4 $JFS $REISERFS $XFS" \\
 0 0 0 \\
 EOF
   if [ ! "$BTRFS" = "" ]; then
