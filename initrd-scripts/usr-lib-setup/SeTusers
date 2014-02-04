@@ -12,7 +12,7 @@ one or more user accounts in your new system.\n\n\
 The first user you will create, will be able to run commands as a \
 privileged user through sudo. Any other user will not be able to \
 run commands with sudo unless you add them to the wheel group.\n\n\
-The root user is disabled by default.' " 0 0
+The root user is disabled by default." 0 0
 
 chroot $T_PX /usr/sbin/usersetup
 
