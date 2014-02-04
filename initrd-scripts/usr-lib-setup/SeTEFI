@@ -8,7 +8,7 @@ touch $TMP/SeTefipartitions
 
 # Scan for EFI partitions:
 for drive in sda sdb sdc sdd sde sdf sdg sdh sdi sdj sdk sdl sdm sdn sdo sdp ; do
-  if fdisk -l /dev/$drive | grep -wq GPT 2> /dev/null; then
+  if fdisk -l /dev/$drive 2> /dev/null | grep -wq GPT ; then
     gdisk -l /dev/$drive 2> /dev/null | grep -w EF00 | while read efisp ; do
       echo /dev/$drive$(expr $(echo "$efisp" | cut -b 1-4)) >> $TMP/SeTefipartitions
     done
