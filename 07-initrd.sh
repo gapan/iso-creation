@@ -228,6 +228,7 @@ if [ "$arch" == "x86_64" ] ; then
 	# repack x86_64 initrd
 	echo "Repacking x86_64 initrd..."
 	depmod -b /boot/initrd-tree/
+	rm -f /boot/initrd-tree/{wait-for-root,rootfs,rootdev,initrd-name}
 	mkinitrd -o $CWD/initrd/$arch/initrd.img
 else
 	#
@@ -245,6 +246,7 @@ else
 	echo "Repacking i486 non-smp initrd..."
 	rm -rf /boot/initrd-tree/lib/modules/*-smp
 	depmod -b /boot/initrd-tree/ $( uname -r | sed "s/-smp//" )
+	rm -f /boot/initrd-tree/{wait-for-root,rootfs,rootdev,initrd-name}
 	mkinitrd -o $CWD/initrd/$arch/nosmp.img -k $( uname -r | sed "s/-smp//" )
 	# then pack the smp initrd
 	echo "Repacking i486 smp initrd..."
@@ -252,6 +254,7 @@ else
 	mv /boot/initrd-tree-copy /boot/initrd-tree
 	rm -rf $( ls -d /boot/initrd-tree/lib/modules/* | grep -v smp )
 	depmod -b /boot/initrd-tree/
+	rm -f /boot/initrd-tree/{wait-for-root,rootfs,rootdev,initrd-name}
 	mkinitrd -o $CWD/initrd/$arch/smp.img
 fi
 
