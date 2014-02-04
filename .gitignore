@@ -1,0 +1,10 @@
+ARCH
+EDITION
+EFI
+VERSION
+initrd
+iso
+isolinux
+kernel
+temp
+*.iso
