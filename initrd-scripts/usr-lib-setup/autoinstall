@@ -118,7 +118,7 @@ destroy=$(dialog \
 11 75 2 \
 "No" "Go back to the main setup menu" \
 "Yes" "${DISK} is dedicated to Salix"  )
-if fdisk -l /dev/${DISK} | grep -wq GPT ; then
+if fdisk -l /dev/${DISK} | grep -wq GPT 2> /dev/null ; then
 	PARTITION_TOOL="sgdisk"
 else
 	PARTITION_TOOL="sfdisk"
