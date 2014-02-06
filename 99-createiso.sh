@@ -35,9 +35,12 @@ else
 fi
 
 unset LIBDIRSUFFIX
+unset MKISOFS_EFI_OPTS
+unset ISOHYBRID_EFI_OPTS
 if [[ "$arch" == "x86_64" ]]; then
 	export LIBDIRSUFFIX="64"
-	MKISOFS_EFI_OPTS="-eltorito-alt-boot -b isolinux/efiboot.img -no-emul-boot"
+	MKISOFS_EFI_OPTS="-eltorito-alt-boot -no-emul-boot -eltorito-platform 0xEF -eltorito-boot isolinux/efiboot.img"
+	ISOHYBRID_EFI_OPTS="--uefi"
 fi
 
 cd iso
@@ -54,5 +57,5 @@ mkisofs -o ../salix${LIBDIRSUFFIX}-${edition}-${ver}.iso \
   $MKISOFS_EFI_OPTS . 
 
 cd ..
-isohybrid salix${LIBDIRSUFFIX}-${edition}-${ver}.iso
+isohybrid $ISOHYBRID_EFI_OPTS salix${LIBDIRSUFFIX}-${edition}-${ver}.iso
 
