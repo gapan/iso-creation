@@ -113,4 +113,5 @@ slapt-get --clean
 
 grep "connect to server" download-$arch.log
 grep "No such" download-$arch.log
+grep "Write failed" download-$arch.log
 grep "Failed" download-$arch.log
