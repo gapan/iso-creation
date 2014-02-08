@@ -23,6 +23,11 @@ if [ "$UID" != "0" ]; then
 	exit 1
 fi
 
+if [ ! -f USER ]; then
+	echo "No USER file."
+	exit 1
+fi
+user=`cat USER`
 
 if [ ! -f VERSION ]; then
 	echo "No VERSION file."
@@ -261,6 +266,9 @@ fi
 # clean up
 rm -f slack.md5 salix.md5
 rm -rf /boot/initrd-tree
+
+# chown everything back
+chown -R ${user}:users initrd
 
 echo "DONE!"
 set +e
