@@ -32,9 +32,11 @@ if [ ! "${DISK}" ]; then
 	 exit 0
 fi
 clear
+DISKCMD=cfdisk
 if fdisk -l /dev/${DISK} 2> /dev/null | grep -wq GPT ; then
-	cgdisk /dev/${DISK} 2> /dev/null
+	DISKCMD=cgdisk
 else
-	cfdisk /dev/${DISK} 2>/dev/null
+	modprobe efivars > /dev/null 2>&1 # will do nothing on non-EFI system
+	[ -e /sys/firmware/efi/efivars ] && DISKCMD=cgdisk
 fi
-
+$DISKCMD /dev/${DISK} 2>/dev/null
