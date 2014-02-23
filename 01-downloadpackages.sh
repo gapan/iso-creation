@@ -12,6 +12,12 @@ if [ -x /usr/bin/salix-update-notifier ]; then
 	exit 1
 fi
 
+if [ ! -f USER ]; then
+	echo "No USER file."
+	exit 1
+fi
+user=`cat USER`
+
 unlink lists
 rm -f EDITION ARCH VERSION
 
@@ -110,6 +116,9 @@ slapt-get --clean
 		slapt-get -d --no-dep --reinstall -c slapt-getrc.$arch -i $i
 	done
 } 2>&1 | tee download-$arch.log
+
+# chown everything back
+chown -R ${user}:users ./*
 
 grep "connect to server" download-$arch.log
 grep "No such" download-$arch.log
