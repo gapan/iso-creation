@@ -44,7 +44,8 @@ if [[ "$arch" != "x86_64" ]]; then
 fi
 
 # clean up previous files
-rm -rf EFI
+rm -rf efi
+mkdir efi
 
 # create the mountpoint for the ftpfs
 mkdir ftp
@@ -56,11 +57,11 @@ curlftpfs ftp://ftp.slackware.org.uk ftp
 
 # get the slack EFI files
 echo "Getting the slackware EFI files..."
-cp -r $FTP/slackware/slackware64-$ver/EFI ./
-cp $FTP/slackware/slackware64-$ver/isolinux/efiboot.img isolinux/x86_64/
+cp -r $FTP/slackware/slackware64-$ver/EFI efi/
+cp $FTP/slackware/slackware64-$ver/isolinux/efiboot.img efi/
 
 # Slackware->Salix
-sed -i "s/Slackware/Salix/g" EFI/BOOT/grub.cfg
+sed -i "s/Slackware/Salix/g" efi/EFI/BOOT/grub.cfg
 
 # unmount the ftpfs and remove the mountpoint
 echo "Unmounting ftp repository..."
