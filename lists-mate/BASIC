@@ -22,7 +22,6 @@ dejavu-fonts-ttf
 desktop-file-utils
 dmxproto
 dri2proto
-enchant
 encodings
 esound
 evieext
@@ -50,7 +49,6 @@ freetype
 fribidi
 fslsfonts
 fstobdf
-gamin
 gccmakedep
 gd
 gdk-pixbuf2
@@ -64,14 +62,11 @@ gnome-themes-standard
 gnsu
 gslapt
 gst-plugins-base
-gst-plugins-base1
 gstreamer
-gstreamer1
 gtk+2
 gtk+3
 gtk-engines
 gtksourceview
-guile
 gvfs
 harfbuzz
 hicolor-icon-theme
@@ -123,7 +118,6 @@ libaio
 libart_lgpl
 libatasmart
 libcanberra
-libcroco
 libdmx
 libdrm
 liberation-fonts-ttf
@@ -145,14 +139,12 @@ libpng
 libproxy
 librsvg
 libsamplerate
-libsecret
 libsndfile
 libsoup
 libtheora
 libtiff
 libunique
 libvisual
-libwebp
 libwnck
 libx86
 libxcb
@@ -177,10 +169,10 @@ mate-terminal
 mate-themes
 mate-window-manager
 mesa
-midori
 mkcomposecache
 mkfontdir
 mkfontscale
+mozilla-firefox
 mozilla-nss
 mtdev
 numlockx
@@ -229,7 +221,6 @@ vbetool
 videoproto
 viewres
 vte
-webkitgtk
 wqy-zenhei-font-ttf
 x11-skel
 x11perf

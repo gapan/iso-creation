@@ -12,12 +12,12 @@ clutter-gtk
 cogl
 depfinder
 djvulibre
+enchant
 exaile
 exiv2
 faac
 faad2
 fftw
-flac
 flash-plugin
 foomatic-filters
 galculator
@@ -31,8 +31,10 @@ gnonlin
 gobject-introspection
 grilo
 gst-plugins-bad
+gst-plugins-base1
 gst-plugins-good
 gst-python
+gstreamer1
 gtkman
 gtkmm
 gtkspell
@@ -47,7 +49,6 @@ iw
 json-glib
 lcms2
 libass
-libatasmart
 libcaca
 libcdaudio
 libcuefile
@@ -59,18 +60,17 @@ libetpan
 libevent
 libhangul
 libid3tag
-libnl3
 libpeas
 libreoffice
 libreplaygain
+libsecret
 libshout
 libsigc++
-libsndfile
 libspectre
 libvpx
+libwebp
 libwmf
 lilosetup
-lm_sensors
 madplay
 mate-document-viewer
 mate-file-archiver
@@ -126,6 +126,7 @@ v4l-utils
 viewnior
 vorbis-tools
 wavpack
+webkitgtk
 wicd
 wireless-tools
 wpa_supplicant
@@ -134,3 +135,4 @@ xvidcore
 zd1211-firmware
 zim
 zope.interface
+totem-pl-parser
