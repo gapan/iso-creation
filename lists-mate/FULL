@@ -136,3 +136,5 @@ zd1211-firmware
 zim
 zope.interface
 totem-pl-parser
+openjre
+gsettings-desktop-schemas
