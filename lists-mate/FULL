@@ -63,7 +63,6 @@ libid3tag
 libpeas
 libreoffice
 libreplaygain
-libsecret
 libshout
 libsigc++
 libspectre
@@ -74,7 +73,6 @@ lilosetup
 madplay
 mate-document-viewer
 mate-file-archiver
-mate-media
 mate-netspeed
 mate-power-manager
 mate-sensors-applet

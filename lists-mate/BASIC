@@ -332,3 +332,7 @@ xvinfo
 xwd
 xwininfo
 xwud
+mate-notification-daemon
+caja-extensions
+mate-media
+libsecret
