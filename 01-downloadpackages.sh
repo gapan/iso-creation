@@ -45,6 +45,7 @@ answer="$(eval dialog \
 	'MATE' 'o' \
 	'Ratpoison' 'o' \
 	'Openbox' 'o' \
+	'Fluxbox' 'o' \
 	'LXDE' 'o' \
 	'Core' 'o' )"
 retval=$?
