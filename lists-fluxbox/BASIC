@@ -67,11 +67,8 @@ gnsu
 gsettings-desktop-schemas
 gslapt
 gst-plugins-base
-gst-plugins-base1
 gstreamer
-gstreamer1
 gtk+2
-gtk+3
 gtk-engines
 harfbuzz
 hicolor-icon-theme
@@ -87,7 +84,6 @@ jasper
 kbproto
 keyutils
 lcms
-lcms2
 leafpad
 libFS
 libICE
@@ -121,7 +117,6 @@ libXvMC
 libXxf86dga
 libXxf86misc
 libXxf86vm
-libaio
 libart_lgpl
 libatasmart
 libcanberra
@@ -166,6 +161,7 @@ makedepend
 mate-colors-icon-theme
 mate-dialogs
 mate-icon-theme
+mate-media
 mate-notification-daemon
 menu-cache
 mesa
@@ -175,7 +171,6 @@ mkfontscale
 mozilla-firefox
 mozilla-nss
 mtdev
-notify-python
 numlockx
 obsidian-cursors
 orc
