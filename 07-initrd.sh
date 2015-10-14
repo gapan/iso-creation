@@ -166,6 +166,27 @@ rm kernel-modules-*.txz
 }
 #install_fuse
 
+install_btrfs_progs() {
+echo "Downloading btrfs-progs..."
+rm -f btrfs-progs-*.txz
+LOC=`grep "\/btrfs-progs-.*-.*-.*\.txz$" slack.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
+wget -q $SLACK2REPO/$LOC
+echo "Installing btrfs-progs..."
+spkg -qq --root=/boot/initrd-tree/ -i btrfs-progs-*.txz
+rm btrfs-progs-*.txz
+echo "Downloading kernel modules"
+MODULES=`grep "\/kernel-modules-.*-.*-.*\.txz$" slack.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
+for LOC in $MODULES; do
+	wget -q $SLACK2REPO/$LOC
+done
+echo "Installing btrfs.ko kernel modules..."
+for i in `ls kernel-modules-*.txz`; do
+	tar xf $i -C /boot/initrd-tree --wildcards "*/btrfs.ko"
+done
+rm kernel-modules-*.txz
+}
+install_btrfs_progs
+
 install_httpfs2() {
 echo "Downloading httpfs2..."
 rm -f httpfs2-*.txz
