@@ -53,12 +53,16 @@ FTP="$CWD/ftp"
 
 # mount the slackware.org.uk ftp server with curlftpfs
 echo "Mounting ftp repository..."
-curlftpfs ftp://ftp.slackware.org.uk ftp
+#curlftpfs ftp://ftp.slackware.org.uk ftp
+#curlftpfs ftp://ftp.ntua.gr/pub/linux/ ftp
+curlftpfs ftp://ftp.osuosl.org/pub/slackware/slackware64-$ver ftp
 
 # get the slack EFI files
 echo "Getting the slackware EFI files..."
-cp -r $FTP/slackware/slackware64-$ver/EFI efi/
-cp $FTP/slackware/slackware64-$ver/isolinux/efiboot.img efi/
+#cp -r $FTP/slackware/slackware64-$ver/EFI ./
+#cp $FTP/slackware/slackware64-$ver/isolinux/efiboot.img isolinux/x86_64/
+cp -r $FTP/EFI ./
+cp $FTP/isolinux/efiboot.img isolinux/x86_64/
 
 # Slackware->Salix
 sed -i "s/Slackware/Salix/g" efi/EFI/BOOT/grub.cfg
