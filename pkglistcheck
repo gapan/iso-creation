@@ -1,0 +1,90 @@
+#!/usr/bin/env python
+
+import sys
+import os
+
+if not os.path.exists('CORE'):
+	print 'ERROR: You need to run this inside the directory with the package lists.'
+	sys.exit(1)
+
+
+package_data = '/var/slapt-get/package_data'
+isopkg = []
+pkg = []
+deps = []
+priorities = []
+
+def pkg_not_present_check(pkglist):
+	print '\nChecking lists for packages not in the repos (not necessarily a problem)...'
+	for i in pkglist:
+		if i is not '':
+			if i not in pkg:
+				print i, 'is not in the repos'
+
+def missing_deps_check(filelist):
+	print '\nChecking', filelist, 'for missing dependencies...'
+	f = file(filelist)
+	while True:
+		line = f.readline()
+		if len(line) == 0:
+			break
+		isopkg.append(line.replace('\n', '').strip())
+	f.close()
+	for i in isopkg:
+		if i in pkg:
+			index = pkg.index(i)
+			for dep in deps[index]:
+				if dep is not '':
+					if '|' in dep:
+						found = False
+						for altdep in dep.split('|'):
+							altdep_name = altdep.strip()
+							if altdep_name in isopkg:
+								found = True
+						if not found:
+							print dep, 'is a dependency of', pkg[index], 'but is not in the iso', filelist, 'list'
+					elif dep not in isopkg:
+						print dep, 'is a dependency of', pkg[index], 'but is not in the iso', filelist, 'list'
+
+def not_needed_check(filelist):
+	print '\nChecking', filelist, 'for packages that are not needed (not a problem in most cases)...'
+	for i in isopkg:
+		found = False
+		for dep in deps:
+			if i in dep:
+				found = True
+		if not found:
+			print i, 'is not required by any other packages in', filelist
+
+f = file(package_data)
+while True:
+	line = f.readline()
+	if len(line) == 0:
+		break
+	if line.startswith('PACKAGE NAME:'):
+		pkgname = line.replace('PACKAGE NAME:', '').strip(' ').rpartition('-')[0].rpartition('-')[0].rpartition('-')[0]
+	elif line.startswith('PACKAGE PRIORITY:'):
+		priority = int(line.replace('PACKAGE PRIORITY:', '').strip(' '))
+	elif line.startswith('PACKAGE REQUIRED:'):
+		dep = line.replace('PACKAGE REQUIRED:', '').replace('\n', '').strip().replace(' ', ',').split(',')
+	elif line.startswith('PACKAGE DESCRIPTION:'):
+		if pkgname in pkg:
+			index = pkg.index(pkgname)
+			if priority > priorities[index]:
+				pkg[index] = pkgname
+				priorities[index] = priority
+				deps[index] = dep
+		else:
+			pkg.append(pkgname)
+			priorities.append(priority)
+			deps.append(dep)
+f.close()
+
+
+missing_deps_check('CORE')
+missing_deps_check('BASIC')
+missing_deps_check('FULL')
+
+not_needed_check('ALL')
+
+pkg_not_present_check(isopkg)
