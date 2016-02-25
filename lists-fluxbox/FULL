@@ -109,7 +109,7 @@ simple-scan
 sound-theme-freedesktop
 sox
 speex
-sshfs-fuse
+sshfs
 taglib
 taglib-extras
 transmission

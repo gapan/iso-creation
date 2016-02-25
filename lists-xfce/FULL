@@ -120,7 +120,7 @@ sane
 simple-scan
 sound-theme-freedesktop
 speex
-sshfs-fuse
+sshfs
 taglib
 taglib-extras
 thunar-archive-plugin

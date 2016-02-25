@@ -93,7 +93,7 @@ sane
 simple-scan
 sox
 speex
-sshfs-fuse
+sshfs
 taglib
 taglib-extras
 transmission

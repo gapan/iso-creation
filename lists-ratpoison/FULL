@@ -78,7 +78,7 @@ sc
 scrot
 sox
 speex
-sshfs-fuse
+sshfs
 taglib
 taglib-extras
 udisks2
