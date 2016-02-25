@@ -49,6 +49,7 @@ keybinder
 lcms2
 libaio
 libass
+libbluray
 libburn
 libcaca
 libcdaudio
@@ -61,6 +62,7 @@ libetpan
 libevent
 libgphoto2
 libical
+libmtp
 libreplaygain
 libsecret
 libshout
