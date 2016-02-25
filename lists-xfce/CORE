@@ -49,6 +49,7 @@ eject
 enscript
 etc
 ethtool
+eudev
 expat
 fakeroot
 file
@@ -237,7 +238,6 @@ texinfo
 time
 traceroute
 tree
-udev
 unarj
 unrar
 usbutils
