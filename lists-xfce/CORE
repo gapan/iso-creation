@@ -197,7 +197,7 @@ pmake
 popt
 ppp
 procmail
-procps
+procps-ng
 pth
 python
 rcs
