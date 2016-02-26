@@ -127,6 +127,7 @@ libnl
 libnl3
 libogg
 libpcap
+libproxy
 libpthread-stubs
 libraw1394
 libsigsegv
