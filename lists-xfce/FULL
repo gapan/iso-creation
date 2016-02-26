@@ -1,6 +1,4 @@
 asunder
-at-spi2-atk
-at-spi2-core
 babl
 bc
 bluez
@@ -15,7 +13,6 @@ exaile
 exiv2
 faac
 faad2
-fftw
 flash-plugin
 foomatic-filters
 galculator
@@ -31,7 +28,6 @@ gst-plugins-good
 gst-plugins-good1
 gst-python
 gstreamer
-gtk+3
 gtk-xfce-engine
 gtkman
 gtkspell
@@ -45,7 +41,6 @@ ipw2200-fw
 iso-codes
 iw
 keybinder
-lcms2
 libXevie
 libaio
 libass
@@ -59,14 +54,12 @@ libdv
 libdvdnav
 libdvdread
 libetpan
-libgphoto2
 libgpod
 libhangul
 libical
 libid3tag
 libisofs
 libmms
-libplist
 libreoffice
 libreplaygain
 libshout
@@ -114,7 +107,6 @@ pyxdg
 sakis3g
 salix-codecs-installer
 salix-update-notifier
-samba
 sane
 simple-scan
 sound-theme-freedesktop
@@ -126,7 +118,6 @@ thunar-archive-plugin
 thunar-media-tags-plugin
 transmission
 tumbler
-upower
 urlgrabber
 urwid
 usb_modeswitch
