@@ -135,6 +135,7 @@ libsigsegv
 libssh2
 libtasn1
 libtermcap
+libtirpc
 libtool
 libunistring
 libusb
