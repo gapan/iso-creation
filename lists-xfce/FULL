@@ -101,6 +101,7 @@ pidgin
 pil
 poppler
 poppler-data
+pulseaudio
 pycups
 pycurl
 pysetuptools
@@ -110,9 +111,11 @@ salix-codecs-installer
 salix-update-notifier
 samba
 sane
+sbc
 simple-scan
 sound-theme-freedesktop
 speex
+speexdsp
 sshfs
 taglib
 taglib-extras
