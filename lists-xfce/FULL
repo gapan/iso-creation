@@ -43,6 +43,7 @@ json-c
 keybinder
 libaio
 libass
+libasyncns
 libburn
 libcaca
 libcanberra
