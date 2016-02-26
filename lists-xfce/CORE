@@ -110,7 +110,6 @@ libcddb
 libcdio
 libcgroup
 libcroco
-libelf
 libevent
 libffi
 libgcrypt
