@@ -111,6 +111,7 @@ libcdio
 libcgroup
 libcroco
 libelf
+libevent
 libffi
 libgcrypt
 libgpg-error
