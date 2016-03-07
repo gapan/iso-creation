@@ -59,7 +59,6 @@ gd
 gdk-pixbuf2
 gdm
 giflib
-glamor-egl
 glew
 glib-networking
 glproto
