@@ -153,6 +153,8 @@ libtheora
 libtiff
 libunique
 libusbmuxd
+libva
+libva-intel-driver
 libvisual
 libwebp
 libwnck
