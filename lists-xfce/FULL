@@ -111,6 +111,7 @@ poppler-data
 pulseaudio
 pycups
 pycurl
+pygobject3
 pysetuptools
 python-pillow
 pyxdg
