@@ -241,6 +241,7 @@ xbacklight
 xbitmaps
 xcb-proto
 xcb-util
+xcb-util-errors
 xcb-util-image
 xcb-util-keysyms
 xcb-util-renderutil
