@@ -96,6 +96,7 @@ libX11
 libXScrnSaver
 libXau
 libXaw
+libXaw3dXft
 libXcomposite
 libXcursor
 libXdamage
