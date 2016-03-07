@@ -20,6 +20,7 @@ dejavu-fonts-ttf
 desktop-file-utils
 dmxproto
 dri2proto
+dri3proto
 elfutils
 enchant
 encodings
@@ -58,6 +59,7 @@ gd
 gdk-pixbuf2
 gdm
 giflib
+glamor-egl
 glew
 glib-networking
 glproto
