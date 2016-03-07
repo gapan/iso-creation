@@ -105,13 +105,13 @@ perl-glib
 perl-gtk2
 perl-pango
 pidgin
-pil
 poppler
 poppler-data
 pulseaudio
 pycups
 pycurl
 pysetuptools
+python-pillow
 pyxdg
 qpdf
 sakis3g
