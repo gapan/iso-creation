@@ -259,7 +259,6 @@ xdriinfo
 xev
 xextproto
 xf86-input-acecad
-xf86-input-aiptek
 xf86-input-evdev
 xf86-input-joystick
 xf86-input-keyboard
@@ -283,7 +282,6 @@ xf86-video-i740
 xf86-video-intel
 xf86-video-mach64
 xf86-video-mga
-xf86-video-modesetting
 xf86-video-neomagic
 xf86-video-nouveau
 xf86-video-nv
