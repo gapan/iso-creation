@@ -111,6 +111,7 @@ libXinerama
 libXmu
 libXp
 libXpm
+libXpresent
 libXrandr
 libXrender
 libXres
@@ -188,6 +189,7 @@ orc
 pango
 pixman
 polkit
+presentproto
 printproto
 pycairo
 pygobject
