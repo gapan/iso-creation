@@ -34,6 +34,7 @@ gstreamer
 gtk-xfce-engine
 gtkman
 gtkmm3
+gtksourceview3
 gtkspell
 gutenprint
 hplip
