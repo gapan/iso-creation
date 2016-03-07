@@ -13,6 +13,7 @@ cups-filters
 depfinder
 djvulibre
 exaile
+exiv2
 faac
 faad2
 flash-plugin
@@ -71,6 +72,7 @@ libreplaygain
 libshout
 libsigc++
 libspectre
+libssh
 libvpx
 libwmf
 libxfcegui4
