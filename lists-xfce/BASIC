@@ -13,6 +13,7 @@ audiofile
 bdftopcf
 bigreqsproto
 cairo
+cgmanager
 clearlooks-phenix
 compositeproto
 damageproto
@@ -143,6 +144,7 @@ libimobiledevice
 libjpeg-turbo
 libmng
 libmtp
+libnih
 libnotify
 libpciaccess
 libplist
