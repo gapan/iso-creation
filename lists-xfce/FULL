@@ -1,9 +1,11 @@
 asunder
+atkmm
 babl
 bc
 bluez
 bluez-firmware
 bluez-hcidump
+cairomm
 catfish
 claws-mail
 cups
@@ -23,6 +25,7 @@ ghostscript
 ghostscript-fonts-std
 gigolo
 gimp
+glibmm
 gst-plugins-base
 gst-plugins-good
 gst-plugins-good1
@@ -30,6 +33,7 @@ gst-python
 gstreamer
 gtk-xfce-engine
 gtkman
+gtkmm3
 gtkspell
 gutenprint
 hplip
@@ -64,6 +68,7 @@ libmms
 libreoffice
 libreplaygain
 libshout
+libsigc++
 libspectre
 libvpx
 libwmf
@@ -88,6 +93,7 @@ openjpeg
 openjre
 openobex
 orage
+pangomm
 parole
 pavucontrol
 perl-File-BaseDir
