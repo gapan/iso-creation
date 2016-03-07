@@ -61,6 +61,7 @@ libdvdnav
 libdvdread
 libetpan
 libgpod
+libgusb
 libhangul
 libical
 libid3tag
