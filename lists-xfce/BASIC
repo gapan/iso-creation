@@ -155,6 +155,7 @@ libunique
 libusbmuxd
 libva
 libva-intel-driver
+libvdpau
 libvisual
 libwebp
 libwnck
