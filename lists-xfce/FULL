@@ -115,8 +115,8 @@ pulseaudio
 pycups
 pycurl
 pygobject3
-pysetuptools
 python-pillow
+python-setuptools
 pyxdg
 qpdf
 sakis3g
