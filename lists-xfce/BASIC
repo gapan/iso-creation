@@ -14,7 +14,6 @@ bdftopcf
 bigreqsproto
 cairo
 cgmanager
-clearlooks-phenix
 compositeproto
 damageproto
 dejavu-fonts-ttf
@@ -73,7 +72,6 @@ gst-plugins-base1
 gstreamer1
 gtk+2
 gtk+3
-gtk-engines
 gvfs
 harfbuzz
 hicolor-icon-theme
