@@ -27,6 +27,7 @@ ghostscript-fonts-std
 gigolo
 gimp
 glibmm
+gobject-introspection
 gst-plugins-base
 gst-plugins-good
 gst-plugins-good1
