@@ -1,5 +1,6 @@
 asunder
 atkmm
+atril
 babl
 bc
 bluez
@@ -12,6 +13,7 @@ cups
 cups-filters
 depfinder
 djvulibre
+engrampa
 exaile
 exiv2
 faac
@@ -77,8 +79,6 @@ libvpx
 libwmf
 lilosetup
 madplay
-mate-document-viewer
-mate-file-archiver
 meld
 mpg123
 musepack-tools
