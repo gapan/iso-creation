@@ -70,6 +70,8 @@ getty-ps
 git
 glib2
 glibc
+glibc-i18n
+glibc-zoneinfo
 gmm
 gmp
 gnupg
