@@ -336,3 +336,5 @@ mate-notification-daemon
 caja-extensions
 mate-media
 libsecret
+libbluray
+libmtp 

@@ -33,6 +33,7 @@ grilo
 gst-plugins-bad
 gst-plugins-base1
 gst-plugins-good
+gst-plugins-good1
 gst-python
 gstreamer1
 gtkman
