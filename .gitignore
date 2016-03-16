@@ -1,6 +1,7 @@
 ARCH
 EDITION
 EFI
+USER
 VERSION
 initrd
 iso
