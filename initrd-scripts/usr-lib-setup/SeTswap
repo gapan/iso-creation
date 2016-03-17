@@ -1,5 +1,6 @@
 #!/bin/sh
-
+export TEXTDOMAIN=salix-installer
+. gettext.sh
 TMP=/var/log/setup/tmp
 if [ ! -d $TMP ]; then
   mkdir -p $TMP
@@ -12,10 +13,9 @@ crunch() {
  echo $STRING;
 }
 
-# get_part_size( dev ) - Return the size in KB of the named partition.
+# get_part_size( dev ) - Return the size in K, M, G, T, or P of the named partition.
 get_part_size() {
-   Size=`probe -l 2> /dev/null | grep "$1 " | tr -d "*" | tr -d "+" | crunch | cut -f 4 -d ' '`
-   echo $Size
+  numfmt --to=iec $(blockdev --getsize64 $1)
 }
 
 rm -f $TMP/SeTswap $TMP/SeTswapskip $TMP/SeTuseswap $TMP/tmpscript
@@ -23,12 +23,11 @@ rm -f $TMP/SeTswap $TMP/SeTswapskip $TMP/SeTuseswap $TMP/tmpscript
 SWAPLIST="`probe -l 2> /dev/null | grep "Linux swap" | cut -f 1 -d ' ' | sort 2> $NDIR`" 
 
 if [ "$SWAPLIST" = "" ]; then
- dialog --title "NO SWAP SPACE DETECTED" --yesno "You have not created \
+ dialog --title "`gettext "NO SWAP SPACE DETECTED"`" --yesno "`gettext "You have not created \
 a swap partition with Linux fdisk.  \
-Do you want to continue installing without one? " 6 60
+Do you want to continue installing without one? "`" 7 80
  if [ "$?" = "1" ]; then
-  dialog --title "ABORTING INSTALLATION" --msgbox "Create a swap \
-  partition with a partitioning tool, like cfdisk and then try this again." \
+  dialog --title "`gettext "ABORTING INSTALLATION"`" --msgbox "`gettext "Create a swap partition with Linux fdisk, and then try this again."`" \
 0 0
  else
   touch $TMP/SeTswapskip
@@ -36,28 +35,28 @@ Do you want to continue installing without one? " 6 60
  exit
 else # there is at least one swap partition:
  # Build the swap partition selection menu:
- cat << EOF > $TMP/tmpscript
-dialog --backtitle "Setting up swap partitions." \\
---title "SWAP SPACE DETECTED" --checklist \\
-"Salix Setup has detected one or more swap partitions \\
-on your system.  These partitions have been \\
-preselected to be set up as swap space.  If there are any \\
-swap partitions that you \\
-do not wish to use with this installation, please unselect \\
-them with the up and down arrows and spacebar.  If you wish \\
-to use all of them (this is recommended), simply hit \\
-the ENTER key." \\
-0 0 0 \\
-EOF
+echo -n 'dialog --visit-items --backtitle "' > $TMP/tmpscript
+gettext "Setting up swap partitions." >> $TMP/tmpscript
+echo -n '" --title "' >> $TMP/tmpscript
+gettext "SWAP SPACE DETECTED" >> $TMP/tmpscript
+echo -n '" --checklist "' >> $TMP/tmpscript
+gettext "Salix Setup has detected one or more swap \
+partitions on your system.  These partitions have been \
+preselected to be set up as swap space.  If there are any \
+swap partitions that you \
+do not wish to use with this installation, please unselect \
+them with the up and down arrows and spacebar.  If you wish \
+to use all of them (this is recommended), simply hit \
+the ENTER key." >> $TMP/tmpscript
+echo -n '" 0 0 0 ' >> $TMP/tmpscript
  for swappartition in $SWAPLIST ; do
   PARTSIZE=$(get_part_size $swappartition)
-  cat << EOF >> $TMP/tmpscript
-"$swappartition" "Linux swap partition, ${PARTSIZE}KB" on \\
-EOF
+echo -n "$swappartition" >> $TMP/tmpscript
+echo -n ' "' >> $TMP/tmpscript
+eval_gettext "Linux swap partition, \${PARTSIZE}" >> $TMP/tmpscript
+echo -n '" on ' >> $TMP/tmpscript
  done
- cat << EOF >> $TMP/tmpscript
- 2> $TMP/SeTuseswap
-EOF
+echo -n ' 2> $TMP/SeTuseswap' >> $TMP/tmpscript
  . $TMP/tmpscript
  if [ ! $? = 0 ]; then
   rm -f $TMP/tmpscript $TMP/SeTswap $TMP/SeTuseswap
@@ -77,14 +76,14 @@ EOF
  fi
 
  if [ ! -r $TMP/SeTswapskip ]; then
-  dialog --backtitle "Setting up swap partitions." \
- --title "CHECK SWAP PARTITIONS FOR BAD BLOCKS?" --defaultno --yesno \
-"Salix Setup will now prepare your system's swap space.  \
+  dialog --backtitle "`gettext "Setting up swap partitions."`" \
+ --title "`gettext "CHECK SWAP PARTITIONS FOR BAD BLOCKS?"`" --defaultno --yesno \
+"`gettext "Salix Setup will now prepare your system's swap space.  \
 When formatting swap partitions with mkswap you may also check \
 them for bad blocks.  This is not the default since nearly all \
 modern hard drives check themselves for bad blocks anyway.  \
-Would you like to check for bad blocks while running mkswap?" \
-10 60
+Would you like to check for bad blocks while running mkswap?"`" \
+0 0 
   if [ $? = 0 ]; then
    CHECKBAD=yes
   else
@@ -99,7 +98,8 @@ Would you like to check for bad blocks while running mkswap?" \
     else
      mkswap -c -v1 $swappartition 1> $REDIR 2> $REDIR
     fi
-    echo "Activating swap partition ${swappartition}:"
+    eval_gettext "Activating swap partition \${swappartition}:"
+    echo
     echo "swapon ${swappartition}"
     swapon $swappartition 1> $REDIR 2> $REDIR
    fi
@@ -114,11 +114,12 @@ Would you like to check for bad blocks while running mkswap?" \
    printf "%-16s %-16s %-11s %-16s %-3s %s\n" "$swappartition" "swap" "swap" "defaults" "0" "0" >> $TMP/SeTswap
   done
 
-  echo "Your swapspace has been configured. This information will" > $TMP/swapmsg
-  echo "be added to your /etc/fstab:" >> $TMP/swapmsg
+  gettext "Your swapspace has been configured. This information \
+  will be added to your /etc/fstab:" > $TMP/swapmsg
+  echo >> $TMP/swapmsg
   echo >> $TMP/swapmsg
   cat $TMP/SeTswap >> $TMP/swapmsg
-  dialog --title "SWAP SPACE CONFIGURED" --exit-label OK --textbox $TMP/swapmsg 10 72
+  dialog --title "`gettext "SWAP SPACE CONFIGURED"`" --exit-label OK --no-collapse --msgbox "` cat $TMP/swapmsg`" 11 80
   rm $TMP/swapmsg
  fi  
 fi
