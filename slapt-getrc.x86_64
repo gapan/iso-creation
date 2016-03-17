@@ -6,23 +6,14 @@ WORKINGDIR=/var/slapt-get
 #   [0-9\_\.\-]{1}pre[0-9\-\.\-]{1}
 EXCLUDE=^aaa_elflibs,^aaa_base,^devs,^glibc-.*,^kernel-.*,^udev,^rootuser-settings,^zzz-settings,.*-[0-9]+dl$,-i?86-
 
-# These is a Slackware repository that only holds dependency info. The
-# actual packages are downloaded from a real Slackware mirror. Read
-# http://www.salixos.org/wiki/index.php/How_to_create_a_local_slackware_repository_with_dependency_support
-# if you want to use another Slackware mirror and keep the dependency
-# information.
-SOURCE=http://salix.enialis.net/x86_64/slackware-14.1/:OFFICIAL
-SOURCE=http://salix.enialis.net/x86_64/slackware-14.1/extra/:OFFICIAL
+# Mount the repository somewhere locally so that everything is not
+# downloaded every time from the net and it doesn't take a long time to
+# do it in the process...
+
+# Slackware repository
+SOURCE=file:///media/sf_versions/slackware-14.2/:OFFICIAL
 
 # The Salix repository
-SOURCE=http://salix.enialis.net/x86_64/14.1/:PREFERRED
+SOURCE=file:///media/sf_versions/14.1/:PREFERRED
+SOURCE=file:///media/sf_versions/14.2/:CUSTOM
 
-# Sources for the testing and pasture areas - if you use them.
-# SOURCE=ftp://ftp.osuosl.org/pub/slackware/slackware64-14.1/testing/
-# SOURCE=ftp://ftp.osuosl.org/pub/slackware/slackware64-14.1/pasture/
-
-# Packages on a CD/DVD.
-# SOURCE=file:///mnt/cdrom/:OFFICIAL
-
-# Home made packages.
-# SOURCE=file:///var/www/packages/:CUSTOM
