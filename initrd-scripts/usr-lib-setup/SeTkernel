@@ -1,5 +1,6 @@
 #!/bin/sh
-
+export TEXTDOMAIN=salix-installer
+. gettext.sh
 # First, determine our slackware kernel name:
 for ELEMENT in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 ; do
   if $(cat /proc/cmdline | cut -f $ELEMENT -d ' ' | grep -q SLACK_KERNEL) ; then
@@ -23,13 +24,21 @@ swapdisks() {
   fi
   umount $CDDEVICE 1> /dev/null 2> /dev/null
   eject -s $CDDEVICE
-  dialog --title "REINSERT KERNEL DISC" --msgbox \
-"Please reinsert the Salix disc containing the collection \
+  dialog --title "`gettext "REINSERT KERNEL DISC"`" --msgbox \
+"`gettext "Please reinsert the Salix disc containing the collection \
 of Linux kernels.  Usually this is disc number one (the disc \
 that you boot from).  Once you've inserted the disc, hit ENTER \
-to continue." \
+to continue."`" \
 8 61
   mount $CDDEVICE /var/log/mount 1> /dev/null 2> /dev/null
+  if [ ! $? = 0 ]; then
+    sleep 7
+    mount $CDDEVICE /var/log/mount 1> /dev/null 2> /dev/null
+      if [ ! $? = 0 ]; then
+      sleep 11
+      mount $CDDEVICE /var/log/mount 1> /dev/null 2> /dev/null
+    fi
+  fi
 }
 
 ( cd boot
@@ -68,10 +77,10 @@ to continue." \
       swapdisks
     fi
     if [ ! -d /$PLINK/kernels ]; then
-      dialog --title "ERROR ATTEMPTING TO INSTALL KERNEL" --msgbox "Sorry, but the directory /$PLINK/kernels \
-was not found.  You may need to install the requested kernel $SLACK_KERNEL manually \
+      dialog --title "`gettext "ERROR ATTEMPTING TO INSTALL KERNEL"`" --msgbox "`eval_gettext "Sorry, but the directory \\\$PLINK/kernels \
+was not found.  You may need to install the requested kernel \\\$SLACK_KERNEL manually \
 and then install LILO \
-before your system will be able to boot correctly." \
+before your system will be able to boot correctly."`" \
 0 0
     else
       rm -f $T_PX/boot/vmlinuz $T_PX/boot/config $T_PX/boot/System.map
