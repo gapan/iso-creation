@@ -22,7 +22,7 @@ if ! grep -wq nodhcp /proc/cmdline ; then
    if grep -q $(echo ${EDEV}: | cut -f 1 -d :): /proc/net/wireless ; then
      continue # skip wireless interfaces
    fi
-   /sbin/dhcpcd -t 10 -L -T $EDEV 1>/etc/dhcpc/dhcpcd-${EDEV}.info 2>/dev/null &
+   /sbin/dhcpcd -t 35 -L -T $EDEV 1>/etc/dhcpc/dhcpcd-${EDEV}.info 2>/dev/null &
   done
 fi
 
