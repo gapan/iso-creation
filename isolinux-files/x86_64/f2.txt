@@ -1,0 +1,21 @@
+
+                         09Usage of the installer07
+
+The Linux kernel provided in this installer, necessary to boot then
+install the system, requires at least an Athlon64 processor.
+This kernel includes Speakup support.
+
+To check your system memory with memtest86+, use 'memtest' like this:
+boot: memtest
+
+By default, booting uses "KMS" (acronym of Kernel Mode Setting). With some
+video cards that fails. In that case the screen becomes black a few seconds
+after booting. If that happens, just reboot to restart the installer, then
+append 'n' (for "nomodeset") to the command line (see previous screen).
+
+This installer also allows you to boot an already installed system, in case
+a bootloader wasn't installed or fails. To do that, type a command like:
+  boot: huge.s root=/dev/sda1 rdinit= ro
+In this example, /dev/sda1 is the / Linux partition.
+
+To go back to the previous screen, press [09F107]
