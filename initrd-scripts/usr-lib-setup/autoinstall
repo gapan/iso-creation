@@ -6,7 +6,8 @@
 # you can redistribute it and/or modify it under the terms of the GNU General Public License
 # as published by the Free Software Foundation; either version 3 of the License,
 # or (at your option) any later version. Please take a look at http://www.gnu.org/copyleft/gpl.htm
-
+export TEXTDOMAIN=salix-installer
+. gettext.sh
 TMP=/var/log/setup/tmp
 NDIR=/dev/null
 REDIR=/dev/tty4
@@ -21,7 +22,7 @@ export MAINSELECT=""
 # Parameters : rootfs_size     size of / partition in kB.
 #
 multipartition () {
-	dialog --title "AUTO PARTITION" --infobox "Please wait while ${DISK} is being prepared for Salix" 0 0
+	dialog --title "`gettext "AUTO PARTITION"`" --infobox "`eval_gettext "Please wait while ${DISK} is being prepared for Salix"`" 0 0
 
 cat <<EOF2 >  $TMP/layout.${PARTITION_TOOL}
 /dev/${DISK}1 : start=        , size=          $1, Id= 83, bootable
@@ -58,11 +59,14 @@ make_xfs() {
    # get the size of the named partition
    SIZE=`get_part_size $1`
    # output a nice status message
-   dialog --title "FORMATTING" \
-   --backtitle "Formatting $1 with filesystem xfs." \
-   --infobox "Formatting $1  \n\
-Size in 1K blocks: $SIZE \n\
-Filesystem type: xfs " 0 0
+   dialog --title "`gettext "FORMATTING"`" \
+   --backtitle "`eval_gettext "Formatting $1 with filesystem xfs."`" \
+   --infobox "`eval_gettext "Formatting $1
+   
+Size in 1K blocks: $SIZE
+
+Filesystem type: xfs
+"`" 0 0
    # do the format
    if mount | grep "$1 " 1> $NDIR 2> $NDIR ; then
       umount $1 2> $NDIR
@@ -95,14 +99,19 @@ done
 
 DISK=$(dialog \
 --stdout \
---ok-label "Do It" \
---cancel-label "Cancel" \
---title "AUTO PARTITION" \
---radiolist "This is automatic partition mode. Press <SPACE> to select the target disk \
-where Salix will be installed. \
-All data will be erased from the target disk. Only run this mode if the entire \
-disk will be dedicated to Salix." \
-$(( $n+11 )) 75 $(( $n+1 )) ${dglist} )
+--visit-items \
+--ok-label "`gettext "Do It"`" \
+--cancel-label "`gettext "Cancel"`" \
+--title "`gettext "AUTO PARTITION"`" \
+--radiolist "`gettext "This is automatic partition mode.
+Press <SPACE> to select the target disk \
+where Salix will be installed.
+All data will be erased from the target disk.
+Only run this mode if the entire \
+disk will be dedicated to Salix."`" \
+0 0 0 ${dglist} )
+# Previous line was:
+# $(( $n+11 )) 75 $(( $n+1 )) ${dglist} )
 
 
 destroy=""
@@ -113,11 +122,14 @@ if [ -n "${DISK}" ] ; then
 
 destroy=$(dialog \
 --stdout \
---title "AUTO PARTITION" \
---menu "\nAre you sure you want to globally erase existing data from ${DISK}?\n " \
+--visit-items \
+--title "`gettext "AUTO PARTITION"`" \
+--menu "`eval_gettext "
+Are you sure you want to globally erase existing data from ${DISK}?
+"`" \
 11 75 2 \
-"No" "Go back to the main setup menu" \
-"Yes" "${DISK} is dedicated to Salix"  )
+"No" "`gettext "Go back to the main setup menu"`" \
+"Yes" "`gettext "${DISK} is dedicated to Salix"`"  )
 if fdisk -l /dev/${DISK} 2> /dev/null | grep -wq GPT ; then
 	PARTITION_TOOL="sgdisk"
 else
@@ -125,7 +137,7 @@ else
 fi
 
 else
-	dialog --title "AUTO PARTITION" --msgbox "No target disk selected, going back to main menu" 6 75
+	dialog --title "`gettext "AUTO PARTITION"`" --msgbox "`gettext "No target disk selected, going back to main menu"`" 6 75
 fi
 
 [ "$destroy" != "Yes" ] && DISK=""
@@ -188,10 +200,10 @@ DisksizeInMB=$(( $DisksizeInKB / 1024 ))
 clear
 
 if [ $DisksizeInMB -lt 3000 ] ; then
-	dialog --title "AUTO PARTITION" --msgbox "${DISK} is only $DisksizeInKB KB , you need at least 3000000 KB to install Salix" 4 75
+	dialog --title "`gettext "AUTO PARTITION"`" --msgbox "`eval_gettext "${DISK} is only $DisksizeInKB KB, you need at least 3000000 KB to install Salix"`" 6 75
 
 elif [ $DisksizeInMB -lt 14000 ] ; then
-	dialog --title "AUTO PARTITION" --infobox "Please wait while ${DISK} is being prepared for Salix" 0 0
+	dialog --title "`gettext "AUTO PARTITION"`" --infobox "`eval_gettext "Please wait while ${DISK} is being prepared for Salix"`" 0 0
 	rootsize=$(($DisksizeInMB - 1000))
 
 cat <<EOF1 >  $TMP/layout.${PARTITION_TOOL}
@@ -235,18 +247,16 @@ fi
 
 # Done, report to the user:
 
-#dialog --title "AUTO PARTITION" --msgbox "$(cat $TMP/${PARTITION_TOOL}.report)" 0 0
+#dialog --title "`gettext "AUTO PARTITION" --msgbox "$(cat $TMP/${PARTITION_TOOL}.report)" 0 0
 
-cat << EOF3 > $TMP/tempmsg
-
+gettext "
 Partitioning completed,
 Adding this information to your /etc/fstab:
-
-EOF3
+" > $TMP/tempmsg
 cat $TMP/SeTnative >> $TMP/tempmsg
 cat $TMP/SeTswap >> $TMP/tempmsg
-dialog --title "AUTO PARTITION" \
---exit-label OK \
+dialog --title "`gettext "AUTO PARTITION"`" \
+--exit-label "`gettext "OK"`" \
 --textbox $TMP/tempmsg 15 75
 
 echo "YES" > $TMP/isAuto
