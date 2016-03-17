@@ -1,20 +1,26 @@
 #!/bin/sh
+export TEXTDOMAIN=salix-installer
 TMP=/var/log/setup/tmp
 if [ ! -d $TMP ]; then
 	mkdir -p $TMP
 fi
 
 while [ 0 ]; do
-	dialog \
-	  --backtitle "Select Salix installation source." \
-	  --title "SOURCE MEDIA SELECTION" \
-	  --menu "Please select the media from which to install Salix:" \
-	  13 70 7 \
-	  "1" "Install from a Salix CD or DVD" \
-	  "2" "Install from a Salix USB stick " \
-	  "3" "Install from a hard disk partition" \
-	  "4" "Install from a pre-mounted directory" \
-	  2> $TMP/media
+dialog \
+--visit-items \
+--backtitle "`gettext "Select Salix installation source."`" \
+--title "`gettext "SOURCE MEDIA SELECTION"`" \
+--menu \
+"`gettext "Please select the media from which to install Salix Linux:"`" \
+14 80 7 \
+"1" "`gettext "Install from a Salix USB stick"`" \
+"2" "`gettext "Install from a Salix CD or DVD"`" \
+"3" "`gettext "Install from a hard drive partition"`" \
+"4" "`gettext "Install from a pre-mounted directory"`" \
+"5" "`gettext "Install from FTP/HTTP server"`" \
+"6" "`gettext "Install from NFS (Network File System)"`" \
+"7" "`gettext "Install from a Samba share"`" \
+2> $TMP/media
 	RET=$?
 	SOURCE_MEDIA="$(cat $TMP/media)"
 	rm -f $TMP/media
@@ -30,10 +36,13 @@ while [ 0 ]; do
 	}
 
 	case "$SOURCE_MEDIA" in
-		"1") INSCD ; test_ret ;;
-		"2") INSUSB ; test_ret ;;
+		"1") INSUSB ; test_ret ;;
+		"2") INSCD ; test_ret ;;
 		"3") INShd ; test_ret ;;
 		"4") INSdir ; test_ret ;;
+		"5") INSURL ; test_ret ;;
+		"6") INSNFS ; test_ret ;;
+		"7") INSSMB ; test_ret ;;
 	esac
 
 	break
