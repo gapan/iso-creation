@@ -1,232 +1,124 @@
 #!/bin/sh
+export TEXTDOMAIN=salix_installer
+. gettext.sh
 TMP=/var/log/setup/tmp
 if [ ! -d $TMP ]; then
-	mkdir -p $TMP
+  mkdir -p $TMP
 fi
-
-. /usr/lib/setup/INCISO
-
 if [ -f $TMP/Punattended ]; then
-	eval $(grep "^SMB_SERVER=" $TMP/Punattended)
-	eval $(grep "^SMB_ROOT=" $TMP/Punattended)
+ eval $(grep "^SMB_SERVER=" $TMP/Punattended)
+ eval $(grep "^SMB_ROOT=" $TMP/Punattended)
 fi
 
-REMOTE_SERVER=$SMB_SERVER
-REMOTE_PATH=$SMB_ROOT
+if [ "$REMOTE_SHARE" = "" ]; then REMOTE_SHARE=${SMB_SERVER}; fi
+if [ "$REMOTE_PATH" = "" ]; then REMOTE_PATH=${SMB_ROOT}; fi
+
+# Load the cifs module:
+modprobe cifs 2>/dev/null
 
 while [ 0 ]; do
-	rm -f $TMP/SeTDS $TMP/SeTmount $TMP/SeTsource
+ rm -f $TMP/SeTDS $TMP/SeTmount
+ UPNRUN=`cat $TMP/SeTupnrun`
+gettext "
+Good! We're all set on the local end, but now we need to know \
+where to find the software packages to install. First, we need \
+the share address of the Samba server where the Salix sources \
+are stored.
 
-	umount -f /var/log/mount 2>/dev/null
-	if [ -n "$(mount | grep /var/log/mount)" -o -d /var/log/mount/lost+found -o -d /var/log/mount/recycled -o -r /var/log/mount/io.sys ]; then
-		cat <<- EOF > $TMP/tempmsg
-		
-		Setup failed to unmount a required directory:
-		
-		/var/log/mount
-		
-		Please reboot the machine an try again.
-		
-		EOF
-		dialog \
-		  --title "ERROR" \
-		  --yes-label "REBOOT" \
-		  --no-label "CANCEL" \
-		  --yesno "$(cat $TMP/tempmsg)" \
-		  11 70
-		RET=$?
-		rm -f $TMP/tempmsg
-		if [ $RET -eq 0 ]; then
-			reboot
-		else
-			exit 1
-		fi
-	fi
+Example share address: //192.168.0.1/public
+" > $TMP/tempmsg
+ if [ "$UPNRUN" = "0" ]; then
+echo >> $TMP/tempmsg
+gettext "Since you're already running on the network, you should be able \
+to use the hostname instead of an IP address if you wish.
+" >> $TMP/tempmsg
+ fi
+ gettext "
+What is the share address of your Samba server? " >> $TMP/tempmsg
+ dialog --title "`gettext "ENTER SHARE ADDRESS OF SAMBA SERVER"`" --inputbox \
+ "`cat $TMP/tempmsg`" 0 0 $REMOTE_SHARE 2> $TMP/remote
+ if [ ! $? = 0 ]; then
+  rm -f $TMP/tempmsg $TMP/remote
+  exit
+ fi
+ REMOTE_SHARE="`cat $TMP/remote`"
+ rm $TMP/remote
+ eval_gettext "
+There must be a directory on the server with the Salix \
+packages and files arranged in a tree like the FTP site. \
 
-	while [ 0 ]; do
-		cat <<- EOF > $TMP/tempmsg
-		
-		Please specify which Samba share on your network contains the
-		contents (or an ISO image) of a Salix installation disc.
-		
-		Example: //192.168.0.1/public
-		
-		Note: Use the <Shares> button to request a list of shares and
-		services from the server.
-		 
-		EOF
-		dialog \
-		  --title "SAMBA SHARE ADDRESS" \
-		  --help-button --help-label "Shares" \
-		  --inputbox "$(cat $TMP/tempmsg)" \
-		  16 70 \
-		  $REMOTE_SERVER \
-		  2> $TMP/remote
-		RET=$?
-		REMOTE_SERVER="$(cat $TMP/remote)"
-		rm -f $TMP/tempmsg $TMP/remote
-		if [ $RET -eq 2 ]; then
-			cat <<- EOF > $TMP/tempmsg
-			
-			Please enter the IP address of your Samba server.
-			 
-			EOF
-			dialog \
-			  --title "ENTER IP ADDRESS" \
-			  --inputbox "$(cat $TMP/tempmsg)" \
-			  10 70 \
-			  $IPADD \
-			  2> $TMP/ipadd
-			RET=$?
-			IPADD="$(cat $TMP/ipadd)"
-			rm -f $TMP/tempmsg $TMP/ipadd
-			if [ $RET -ne 0 ]; then
-				continue
-			fi
-			smbclient -NL $IPADD 2>/dev/null | sed '/^Anonymous login successful/d' > /$TMP/tempmsg
-			if [ $? -eq 0 ]; then
-				REMOTE_SERVER="//$IPADD/"
-			fi
-			dialog \
-			  --title "SERVICE LIST" \
-			  --textbox "$TMP/tempmsg" \
-			  25 80
-			rm -f $TMP/tempmsg
-			continue
-		fi
-		break
-	done
+The installation script needs to know the name of the \
+directory below your Samba share that contains the series \
+subdirectories. For example, if your A series is found at \
+/slack/salix/a, then you would respond: /slack/salix \
 
-	if [ $RET -ne 0 ]; then
-		exit 1
-	fi
+What is the Salix source directory?" > $TMP/tempmsg
+ dialog --title "`gettext "SELECT SOURCE DIRECTORY"`" --inputbox "`cat $TMP/tempmsg`" \
+ 0 0 $REMOTE_PATH 2> $TMP/slacksrc
+ if [ ! $? = 0 ]; then
+  rm -f $TMP/tempmsg $TMP/slacksrc
+  exit
+ fi
+ REMOTE_PATH="`cat $TMP/slacksrc`"
+ rm $TMP/slacksrc
 
-	# load the 'cifs' module:
-	modprobe cifs 2>/dev/null
-	
-	mkdir -p /var/log/mount 2>/dev/null
-	mount -t cifs -o ro,guest,sec=none $REMOTE_SERVER /var/log/mount 2>/dev/null
-	if [ $? -ne 0 ]; then
-		cat <<- EOF > $TMP/tempmsg
-		
-		Failed to mount Samba share:
-		
-		$REMOTE_SERVER
-		
-		Please check and try again.
-		
-		EOF
-		dialog \
-		  --title "MOUNT FAILURE" \
-		  --exit-label "OK" \
-		  --textbox "$TMP/tempmsg" \
-		  11 70
-		rm -f $TMP/tempmsg
-		continue
-	else
-		cat <<- EOF > $TMP/tempmsg
-		
-		Successfully mounted Samba share:
-		
-		$(mount | grep $REMOTE_SERVER)
-		
-		EOF
-		dialog \
-		  --title "MOUNT SUCCESS" \
-		  --exit-label "OK" \
-		  --textbox "$TMP/tempmsg" \
-		  9 70
-		  rm -f $TMP/tempmsg
-	fi
+ gettext "You should see no mount errors:" > $TMP/mntout
+ echo >> $TMP/mntout
+ eval_gettext "Mounting \$REMOTE_SHARE ..." >> $TMP/mntout
+ echo >> $TMP/mntout
+ mount -t cifs -o ro,guest,sec=none $REMOTE_SHARE /var/log/mount \
+  >> $TMP/mntout 2>&1
+ RET=$?
+ if [ $RET != 0 ]; then
+  gettext "Mount failed." >> $TMP/mntout
+  echo >> $TMP/mntout
+  umount -f -t cifs /var/log/mount 1>/dev/null 2>&1
+  DEFANSW="yes"
+ else
+  gettext "Mounted Samba share(s):" >> $TMP/mntout
+  echo >> $TMP/mntout
+  mount -t cifs >> $TMP/mntout 2>/dev/null
 
-	while [ 0 ]; do
-		cat <<- EOF > $TMP/tempmsg
-	
-		Now please provide the path to a directory containing the contents
-		(or an ISO image) of a Salix installation disc.
-		
-		Note: The path you enter must be relative to the mount point so
-		'/var/log/mount/salix-xfce' should be entered as '/salix-xfce'.
-		 
-		EOF
-		dialog \
-		  --title "SELECT SOURCE DIRECTORY" \
-		  --help-button --help-label "Browse" \
-		  --inputbox "$(cat $TMP/tempmsg)" \
-		  14 70 \
-		  $REMOTE_PATH \
-		  2> $TMP/sourcedir
-		RET=$?
-		REMOTE_PATH="$(cat $TMP/sourcedir)"
-		rm -f $TMP/sourcedir $TMP/tempmsg
-		if [ $RET -eq 2 ]; then
-			if [ -z "$REMOTE_PATH" -o ! -d "/var/log/mount$REMOTE_PATH" ]; then
-				REMOTE_PATH="/"
-			fi
-			dialog \
-			  --title "SELECT A DIRECTORY" \
-			  --dselect "/var/log/mount$REMOTE_PATH" \
-			  12 80 \
-			  2> $TMP/sourcedir
-			REMOTE_PATH="$(cat $TMP/sourcedir | sed 's|^/var/log/mount||')"
-			rm -f $TMP/sourcedir $TMP/tempmsg
-			continue
-		fi
-		break
-	done
-	
-	if [ $RET -ne 0 ]; then
-		continue
-	fi
-
-	SRCDIR="$(echo "/var/log/mount$REMOTE_PATH" | sed 's|/$||')"
-
-	check_iso_image $SRCDIR /var/log/mntiso
-	if [ $? -eq 0 ]; then
-		if [ -d /var/log/mntiso/salix ]; then
-			echo "/var/log/mntiso/salix" > $TMP/SeTDS
-		else
-			cat <<- EOF > $TMP/tempmsg
-			
-			The ISO image you specified is not valid:
-			
-			$(basename $SOURCEISO)
-			
-			Please check and try again.
-			
-			EOF
-			dialog \
-			  --title "INVALID ISO IMAGE" \
-			  --exit-label "OK" \
-			  --textbox "$TMP/tempmsg" \
-			  11 70
-			rm -f $TMP/tempmsg
-			umount -f /var/log/mntiso 2>/dev/null
-			continue
-		fi
-	elif [ -d $SRCDIR/salix -a -f $SRCDIR/PACKAGES.TXT.gz ]; then
-		echo "$SRCDIR/salix" > $TMP/SeTDS
-	elif [ -d $SRCDIR/core -a -d $SRCDIR/basic -a -d $SRCDIR/full ]; then
-		echo "$SRCDIR" > $TMP/SeTDS
-	else
-		cat <<- EOF > $TMP/tempmsg
-		
-		The directory you specified is not valid:
-		
-		$REMOTE_PATH
-		
-		Please check and try again.
-		
-		EOF
-		dialog \
-		  --title "INVALID SOURCE DIRECTORY" \
-		  --exit-label "OK" \
-		  --textbox "$TMP/tempmsg" \
-		  11 70
-		rm -f $TMP/tempmsg
-		continue
-	fi
-	echo "-source_mounted" > $TMP/SeTmount
-	echo "/dev/null" > $TMP/SeTsource
-	break
+  if [ -f /var/log/mount/$REMOTE_PATH/a/tagfile \
+       -o -f /var/log/mount/$REMOTE_PATH/salix/a/tagfile ];
+  then
+   gettext "A Salix package tree was found! Ready to continue." >> $TMP/mntout
+   echo >> $TMP/mntout
+   DEFANSW="no"
+  else
+   gettext "No Salix package tree found at the indicated path!" >> $TMP/mntout
+   echo >> $TMP/mntout
+   DEFANSW="yes"
+  fi
+ fi
+ echo >> $TMP/mntout
+ gettext "Do you want to try setting up Samba again?" >> $TMP/mntout
+ echo >> $TMP/mntout
+ echo >> $TMP/mntout
+ if [ "$DEFANSW" = "no" ]; then
+  dialog --title "`gettext "MOUNT RESULT"`" \
+   --defaultno --yesno "`cat $TMP/mntout`" 17 80
+  RET=$?
+ else
+  dialog --title "`gettext "MOUNT RESULT"`" \
+   --yesno "`cat $TMP/mntout`" 12 80
+  RET=$?
+ fi
+ if [ $RET = 1 ]; then
+  rm -f $TMP/mntout
+  break
+ fi
+ rm -f $TMP/mntout 
+ #if [ "$UPNRUN" = "1" ]; then
+ # route del $LOCAL_NETWORK
+ # ifconfig $ENET_DEVICE down 
+ #fi
 done
+
+if [ -f /var/log/mount/$REMOTE_PATH/a/tagfile ]; then
+ echo "/var/log/mount/$REMOTE_PATH" > $TMP/SeTDS 
+else
+ echo "/var/log/mount/${REMOTE_PATH}/salix" > $TMP/SeTDS 
+fi
+echo "-source_mounted" > $TMP/SeTmount
+echo "/dev/null" > $TMP/SeTsource
