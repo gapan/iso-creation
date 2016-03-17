@@ -1,4 +1,5 @@
 #!/bin/sh
+export TEXTDOMAIN=salix-installer
 TMP=/var/log/setup/tmp
 if [ ! -d $TMP ]; then
   mkdir -p $TMP
@@ -21,119 +22,152 @@ fi
 # confused.
 rm -rf $TMP/SeTSERIES $TMP/tmpscript $TMP/series 
 
-cat << EOF > $TMP/tmpscript
-dialog --backtitle "Selecting software to install." \\
---title "PACKAGE SERIES SELECTION" --item-help --output-separator "#" --checklist \\
-"Now it's time to select which general categories of software \\
-to install on your system.  \\
-Use the spacebar to select or unselect the software you wish to \\
-install.  \\
-You can use the up and down arrows to see all the possible choices.  \\
-Recommended choices have been preselected.  \\
-Press the ENTER key when you are finished." \\
-20 75 9 \\
-"A" "Base Linux system" on "The A (base) series contains the kernel and main system utilities." \\
-EOF
+echo -n 'dialog --visit-items --backtitle "' > $TMP/tmpscript
+gettext "Selecting software to install." >> $TMP/tmpscript
+echo -n '" --title "' >> $TMP/tmpscript
+gettext "PACKAGE SERIES SELECTION" >> $TMP/tmpscript
+echo -n '" --item-help --output-separator "#" --checklist "' >> $TMP/tmpscript
+gettext "Now it is time to select which general categories of software \
+to install on your system. \
+Use the spacebar to select or unselect the software you wish to install. \
+You can use the up and down arrows to see all the possible choices. \
+Recommended choices have been preselected. \
+Press the ENTER key when you are finished." >> $TMP/tmpscript
+echo -n '" 20 80 9 "A" "' >> $TMP/tmpscript
+gettext "Base Linux system" >> $TMP/tmpscript
+echo -n '" on "' >> $TMP/tmpscript
+gettext "The A (base) series contains the kernel and main system utilities." >> $TMP/tmpscript
+echo -n '"' >> $TMP/tmpscript
 
 if [ -d $DS/ap -o "$DS" = "" ]; then
-cat << EOF >> $TMP/tmpscript
-"AP" "Various Applications that do not need X" on "The AP series is a collection of useful applications." \\
-EOF
+echo -n ' "AP" "' >> $TMP/tmpscript
+gettext "Various Applications that do not need X" >> $TMP/tmpscript
+echo -n '" on "' >> $TMP/tmpscript
+gettext "The AP series is a collection of useful applications." >> $TMP/tmpscript
+echo -n '"' >> $TMP/tmpscript
 fi
 
 if [ -d $DS/d -o "$DS" = "" ]; then
-cat << EOF >> $TMP/tmpscript
-"D" "Program Development (C, C++, Lisp, Perl, etc.)" on "The D series contains compilers, debuggers, and other programming tools." \\
-EOF
+echo -n ' "D" "' >> $TMP/tmpscript
+gettext "Program Development (C, C++, Lisp, Perl, etc.)" >> $TMP/tmpscript
+echo -n '" on "' >> $TMP/tmpscript
+gettext "The D series contains compilers, debuggers, and other programming tools." >> $TMP/tmpscript
+echo -n '"' >> $TMP/tmpscript
 fi
 
 if [ -d $DS/e -o "$DS" = "" ]; then
-cat << EOF >> $TMP/tmpscript
-"E" "GNU Emacs" on "The E series contains the GNU Emacs advanced real-time display editor." \\
-EOF
+echo -n ' "E" "' >> $TMP/tmpscript
+gettext "GNU Emacs" >> $TMP/tmpscript
+echo -n '" on "' >> $TMP/tmpscript
+gettext "The E series contains the GNU Emacs advanced real-time display editor." >> $TMP/tmpscript
+echo -n '"' >> $TMP/tmpscript
 fi
 
 if [ -d $DS/f -o "$DS" = "" ]; then
-cat << EOF >> $TMP/tmpscript
-"F" "FAQ lists, HOWTO documentation" on "The F series contains essential documentation for Linux system administrators." \\
-EOF
+echo -n ' "F" "' >> $TMP/tmpscript
+gettext "FAQ lists, HOWTO documentation" >> $TMP/tmpscript
+echo -n '" on "' >> $TMP/tmpscript
+gettext "The F series contains essential documentation for Linux system administrators." >> $TMP/tmpscript
+echo -n '"' >> $TMP/tmpscript
 fi
 
 if [ -d $DS/gnome -o "$DS" = "" ]; then
-cat << EOF >> $TMP/tmpscript
-"GNOME" "The GNOME desktop for X" on "The GNOME series contains the GNOME desktop environment and related libraries." \\
-EOF
+echo -n ' "GNOME" "' >> $TMP/tmpscript
+gettext "The GNOME desktop for X" >> $TMP/tmpscript
+echo -n '" on "' >> $TMP/tmpscript
+gettext "The GNOME series contains the GNOME desktop environment and related libraries." >> $TMP/tmpscript
+echo -n '"' >> $TMP/tmpscript
 fi
 
 if [ -d $DS/k -o "$DS" = "" ]; then
-cat << EOF >> $TMP/tmpscript
-"K" "Linux kernel source" on "The K series contains the source code for the Linux kernel." \\
-EOF
+echo -n ' "K" "' >> $TMP/tmpscript
+gettext "Linux kernel source" >> $TMP/tmpscript
+echo -n '" on "' >> $TMP/tmpscript
+gettext "The K series contains the source code for the Linux kernel." >> $TMP/tmpscript
+echo -n '"' >> $TMP/tmpscript
 fi
 
 if [ -d $DS/kde -o "$DS" = "" ]; then
-cat << EOF >> $TMP/tmpscript
-"KDE" "Qt and the K Desktop Environment for X" on "The KDE series contains the K Desktop Environment and related libraries." \\
-EOF
+echo -n ' "KDE" "' >> $TMP/tmpscript
+gettext "Qt and the K Desktop Environment for X" >> $TMP/tmpscript
+echo -n '" on "' >> $TMP/tmpscript
+gettext "The KDE series contains the K Desktop Environment and related libraries." >> $TMP/tmpscript
+echo -n '"' >> $TMP/tmpscript
 fi
 
 if [ -d $DS/kdei -o "$DS" = "" ]; then
-cat << EOF >> $TMP/tmpscript
-"KDEI" "International language support for KDE" off "The KDEI series provides support for languages other than US English in KDE." \\
-EOF
+echo -n ' "KDEI" "' >> $TMP/tmpscript
+gettext "International language support for KDE" >> $TMP/tmpscript
+echo -n '" off "' >> $TMP/tmpscript
+gettext "The KDEI series provides support for languages other than US English in KDE." >> $TMP/tmpscript
+echo -n '"' >> $TMP/tmpscript
 fi
 
 if [ -d $DS/l -o "$DS" = "" ]; then
-cat << EOF >> $TMP/tmpscript
-"L" "System Libraries (some needed by both KDE and GNOME)" "on" "The L series contains libraries needed by GNOME, KDE, and other programs." \\
-EOF
+echo -n ' "L" "' >> $TMP/tmpscript
+gettext "System Libraries (some needed by both KDE and GNOME)" >> $TMP/tmpscript
+echo -n '" on "' >> $TMP/tmpscript
+gettext "The L series contains libraries needed by GNOME, KDE, and other programs." >> $TMP/tmpscript
+echo -n '"' >> $TMP/tmpscript
 fi
 
 if [ -d $DS/n -o "$DS" = "" ]; then
-cat << EOF >> $TMP/tmpscript
-"N" "Networking (TCP/IP, UUCP, Mail, News)" on "The N series contains network related clients and servers." \\
-EOF
+echo -n ' "N" "' >> $TMP/tmpscript
+gettext "Networking (TCP/IP, UUCP, Mail, News)" >> $TMP/tmpscript
+echo -n '" on "' >> $TMP/tmpscript
+gettext "The N series contains network related clients and servers." >> $TMP/tmpscript
+echo -n '"' >> $TMP/tmpscript
 fi
 
 if [ -d $DS/t -o "$DS" = "" ]; then
-cat << EOF >> $TMP/tmpscript
-"T" "TeX typesetting software" on "TeX is a typesetting system often used for mathematics and technical papers." \\
-EOF
+echo -n ' "T" "' >> $TMP/tmpscript
+gettext "TeX typesetting software" >> $TMP/tmpscript
+echo -n '" on "' >> $TMP/tmpscript
+gettext "TeX is a typesetting system often used for mathematics and technical papers." >> $TMP/tmpscript
+echo -n '"' >> $TMP/tmpscript
 fi
 
 if [ -d $DS/tcl -o "$DS" = "" ]; then
-cat << EOF >> $TMP/tmpscript
-"TCL" "Tcl/Tk script languages" on "The TCL series contains the Tcl/Tk/TclX languages and programs that use them." \\
-EOF
+echo -n ' "TCL" "' >> $TMP/tmpscript
+gettext "Tcl/Tk script languages" >> $TMP/tmpscript
+echo -n '" on "' >> $TMP/tmpscript
+gettext "The TCL series contains the Tcl/Tk/TclX languages and programs that use them." >> $TMP/tmpscript
+echo -n '"' >> $TMP/tmpscript
 fi
 
 if [ -d $DS/x -o "$DS" = "" ]; then
-cat << EOF >> $TMP/tmpscript
-"X" "X Window System" on "This series contains X, the windowing system used by Linux." \\
-EOF
+echo -n ' "X" "' >> $TMP/tmpscript
+gettext "X Window System" >> $TMP/tmpscript
+echo -n '" on "' >> $TMP/tmpscript
+gettext "This series contains X, the windowing system used by Linux." >> $TMP/tmpscript
+echo -n '"' >> $TMP/tmpscript
 fi
 
 if [ -d $DS/xap -o "$DS" = "" ]; then
-cat << EOF >> $TMP/tmpscript
-"XAP" "X Applications" on "The XAP series is a collection of applications for X." \\
-EOF
+echo -n ' "XAP" "' >> $TMP/tmpscript
+gettext "X Applications" >> $TMP/tmpscript
+echo -n '" on "' >> $TMP/tmpscript
+gettext "The XAP series is a collection of applications for X." >> $TMP/tmpscript
+echo -n '"' >> $TMP/tmpscript
 fi
 
 if [ -d $DS/xfce -o "$DS" = "" ]; then
-cat << EOF >> $TMP/tmpscript
-"XFCE" "The Xfce Desktop Environment for X" on "Xfce is a fast and lightweight GTK+ based desktop environment for X." \\
-EOF
+echo -n ' "XFCE" "' >> $TMP/tmpscript
+gettext "The Xfce Desktop Environment for X" >> $TMP/tmpscript
+echo -n '" on "' >> $TMP/tmpscript
+gettext "Xfce is a fast and lightweight GTK+ based desktop environment for X." >> $TMP/tmpscript
+echo -n '"' >> $TMP/tmpscript
 fi
 
 if [ -d $DS/y -o "$DS" = "" ]; then
-cat << EOF >> $TMP/tmpscript
-"Y" "Games" on "The Y series is a collection of classic BSD text-based games." \\
-EOF
+echo -n ' "Y" "' >> $TMP/tmpscript
+gettext "Games" >> $TMP/tmpscript
+echo -n '" on "' >> $TMP/tmpscript
+gettext "The Y series is a collection of classic BSD text-based games." >> $TMP/tmpscript
+echo -n '"' >> $TMP/tmpscript
 fi
 
-cat << EOF >> $TMP/tmpscript
-  2> $TMP/series
-EOF
+echo -n "  2> $TMP/series" >>$TMP/tmpscript
 . $TMP/tmpscript
 if [ ! $? = 0 ]; then
   rm -rf $TMP/series $TMP/tmpscript
