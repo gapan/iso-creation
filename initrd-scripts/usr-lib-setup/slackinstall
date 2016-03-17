@@ -23,7 +23,8 @@
 #
 
 # globals
-
+export TEXTDOMAIN=salix-installer
+. gettext.sh
 TMP=/var/log/setup/tmp
 
 # functions
@@ -71,12 +72,14 @@ errorcode() {
     # User aborted installation
     exit 1
   else
-    dialog --timeout 600 --title "installpkg error #$1" --msgbox \
-"There was a fatal error attempting to install `basename $2`.  The package may \
+  ArG1=$1
+  Arg2=`basename $2`
+    dialog --timeout 600 --title "` eval_gettext "installpkg error #$ArG1"`" --msgbox \
+"`eval_gettext "There was a fatal error attempting to install $ArG2.  The package may \
 be corrupt, the installation media may be bad, or something else \
 has caused the package to be unable to be read without error.  You \
 may hit enter to continue if you wish, but if this is an important \
-required package then your installation may not work as-is." 11 70
+required package then your installation may not work as-is."`" 11 70
   fi
 }
 
