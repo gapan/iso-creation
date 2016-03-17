@@ -15,30 +15,27 @@ check_iso_image () {
 	if [ -z "$SOURCEISO" ]; then
 		return 1
 	elif [ "$(echo $SOURCEISO | wc -w)" -eq "1" ]; then
-		cat <<- EOF > $TMP/tempmsg
-		
-		Setup has found an ISO image in the source directory:
-		
-		$SOURCEISO
-		
-		Do you want to use this image as an installation source?
-		 
-		EOF
+eval_gettext "
+Setup has found an ISO image in the source directory:
+
+$SOURCEISO
+
+Do you want to use this image as an installation source?
+" > $TMP/tempmsg
 		dialog \
-			--title "USE ISO IMAGE" \
-			--yesno "$(cat $TMP/tempmsg)" 11 70
+			--visit-items
+			--title "`gettext "USE ISO IMAGE"`" \
+			--yesno "$(cat $TMP/tempmsg)" 0 0
 		RET=$?
 		SOURCEISO="$ISODIR/$SOURCEISO"
 		rm -f $TMP/tempmsg
 	else
-		cat <<- EOF > $TMP/tempmsg
-		
-		Setup has found ISO images in the source directory.
-		
-		Select an image if you want to use it as an installation source?
-		 
-		EOF
-		echo -n 'dialog --title "USE ISO IMAGE" --menu "$(cat $TMP/tempmsg)" 16 70 5 ' > $TMP/tempscript
+gettext "
+Setup has found ISO images in the source directory.
+
+Select an image if you want to use it as an installation source?
+"  > $TMP/tempmsg
+		echo -n 'dialog --visit-items --title "`gettext "USE ISO IMAGE"`" --menu "$(cat $TMP/tempmsg)" 0 0 0 ' > $TMP/tempscript
 		echo "$SOURCEISO" | sed 's/$/ "" \\/g' >> $TMP/tempscript
 		. $TMP/tempscript 2>$TMP/SeTISO
 		RET=$?
@@ -52,8 +49,10 @@ check_iso_image () {
 		umount -f $MNTDIR 2>/dev/null
 		mkdir -p $MNTDIR 2>/dev/null
 		dialog \
-		  --infobox "\nMounting ISO image...\n" \
-		  5 25
+		  --infobox "`gettext "
+Mounting ISO image...
+"`" \
+		  5 35
 		mount -o loop,ro $SOURCEISO $MNTDIR 2>/dev/null
 	fi
 }
