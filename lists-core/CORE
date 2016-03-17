@@ -49,6 +49,7 @@ eject
 enscript
 etc
 ethtool
+eudev
 expat
 fakeroot
 file
@@ -69,6 +70,8 @@ getty-ps
 git
 glib2
 glibc
+glibc-i18n
+glibc-zoneinfo
 gmm
 gmp
 gnupg
@@ -85,6 +88,7 @@ gzip
 hdparm
 htop
 icmpinfo
+icu4c
 indent
 inetd
 infozip
@@ -108,7 +112,7 @@ libcddb
 libcdio
 libcgroup
 libcroco
-libelf
+libevent
 libffi
 libgcrypt
 libgpg-error
@@ -125,10 +129,14 @@ libnl
 libnl3
 libogg
 libpcap
+libproxy
 libpthread-stubs
 libraw1394
+libsigsegv
+libssh2
 libtasn1
 libtermcap
+libtirpc
 libtool
 libunistring
 libusb
@@ -189,10 +197,9 @@ pkgtools
 pm-utils
 pmake
 popt
-portmap
 ppp
 procmail
-procps
+procps-ng
 pth
 python
 rcs
@@ -237,7 +244,6 @@ texinfo
 time
 traceroute
 tree
-udev
 unarj
 unrar
 usbutils
