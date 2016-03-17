@@ -29,9 +29,7 @@ fi
 
 # FIXME!
 #
-# This is temporary. When slackware releases 14.2, uncomment the first
-# line and remove ver=current.
-#ver=`cat VERSION`
+# This is temporary. When slackware releases 14.2, remove this line:
 ver=current
 
 unset LIBDIRSUFFIX
