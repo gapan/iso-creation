@@ -1,342 +1,242 @@
 #!/bin/sh
+export TEXTDOMAIN=salix-installer
+. gettext.sh
 TMP=/var/log/setup/tmp
 if [ ! -d $TMP ]; then
-	mkdir -p $TMP
+  mkdir -p $TMP
 fi
-
-. /usr/lib/setup/INCISO
-
 if [ -f $TMP/Punattended ]; then
-	eval $(grep "^REMOTE_URL=" $TMP/Punattended)
-	eval $(grep "^REMOTE_ROOT=" $TMP/Punattended)
+ eval $(grep "^REMOTE_URL=" $TMP/Punattended)
+ eval $(grep "^REMOTE_PATH=" $TMP/Punattended)
 fi
+# Return a package name that has been stripped of the dirname portion
+# and any of the valid extensions (only):
+pkgbase() {
+  PKGEXT=$(echo $1 | rev | cut -f 1 -d . | rev)
+  case $PKGEXT in
+  'tgz' )
+    PKGRETURN=$(basename $1 .tgz)
+    ;;
+  'tbz' )
+    PKGRETURN=$(basename $1 .tbz)
+    ;;
+  'tlz' )
+    PKGRETURN=$(basename $1 .tlz)
+    ;;
+  'txz' )
+    PKGRETURN=$(basename $1 .txz)
+    ;;
+  *)
+    PKGRETURN=$(basename $1)
+    ;;
+  esac
+  echo $PKGRETURN
+}
 
-REMOTE_SERVER=$REMOTE_URL
-REMOTE_PATH=$REMOTE_ROOT
+package_name() {
+  STRING=$(pkgbase $1)
+  # Check for old style package name with one segment:
+  if [ "$(echo $STRING | cut -f 1 -d -)" = "$(echo $STRING | cut -f 2 -d -)" ]; then
+    echo $STRING
+  else # has more than one dash delimited segment
+    # Count number of segments:
+    INDEX=1
+    while [ ! "$(echo $STRING | cut -f $INDEX -d -)" = "" ]; do
+      INDEX=$(expr $INDEX + 1)
+    done
+    INDEX=$(expr $INDEX - 1) # don't include the null value
+    # If we don't have four segments, return the old-style (or out of spec) package name:
+    if [ "$INDEX" = "2" -o "$INDEX" = "3" ]; then
+      echo $STRING
+    else # we have four or more segments, so we'll consider this a new-style name:
+      NAME=$(expr $INDEX - 3)
+      NAME="$(echo $STRING | cut -f 1-$NAME -d -)"
+      echo $NAME
+    fi
+  fi
+}
 
 while [ 0 ]; do
-	rm -f $TMP/SeTDS $TMP/SeTmount $TMP/SeTsource $TMP/SeTremotesvr
+ rm -f $TMP/SeTDS $TMP/SeTmount
+ UPNRUN=$(cat $TMP/SeTupnrun)
+gettext "
+Good! We're all set on the local end, but now we need to know \
+where to find the software packages to install. First, we need \
+the URL of the ftp or http server where the Salix sources \
+are stored.
+URL examples are: 'ftp://192.168.0.1' ; 'http://172.16.10.31'
+" > $TMP/tempmsg
+ if [ "$UPNRUN" = "0" ]; then
+echo >> $TMP/tempmsg
+gettext "Since you're already running on the network, you should be able \
+to use the hostname instead of an IP address if you wish.
+" >> $TMP/tempmsg
+ fi
+ gettext "
+What is the URL of your FTP/HTTP server?
+" >> $TMP/tempmsg
+ dialog --title "`gettext "ENTER URL OF FTP/HTTP SERVER"`" --inputbox \
+ "$(cat $TMP/tempmsg)" 0 0 $REMOTE_URL 2> $TMP/remote
+ if [ ! $? = 0 ]; then
+  rm -f $TMP/tempmsg $TMP/remote
+  exit
+ fi
+ REMOTE_URL="$(cat $TMP/remote)"
+ rm $TMP/remote
+eval_gettext "
+There must be a directory on the server with the Salix \
+packages and files arranged in a tree like the FTP site.
 
-	umount -f /var/log/mount 2>/dev/null
-	if [ -n "$(mount | grep /var/log/mount)" -o -d /var/log/mount/lost+found -o -d /var/log/mount/recycled -o -r /var/log/mount/io.sys ]; then
-		cat <<- EOF > $TMP/tempmsg
-		
-		Setup failed to unmount a required directory:
-		
-		/var/log/mount
-		
-		Please reboot the machine an try again.
-		
-		EOF
-		dialog \
-		  --title "ERROR" \
-		  --yes-label "REBOOT" \
-		  --no-label "CANCEL" \
-		  --yesno "$(cat $TMP/tempmsg)" \
-		  11 70
-		RET=$?
-		rm -f $TMP/tempmsg
-		if [ $RET -eq 0 ]; then
-			reboot
-		else
-			exit 1
-		fi
-	fi
+The installation script needs to know the name of the \
+directory on your server that contains the series \
+subdirectories. For example, if your A series is found at \
+/slack/salix/a, then you would respond: /slack/salix
 
-	while [ 0 ]; do
-		cat <<- EOF > $TMP/tempmsg
-		
-		Please provide the URL of a server containing the contents
-		(or an ISO image) of a Salix installation disc.
-		
-		Examples: http://mydomain.com
-		          ftp://192.168.1.101
-		 
-		EOF
-		dialog \
-		  --title "HTTP/FTP SERVER" \
-		  --inputbox "$(cat $TMP/tempmsg)" \
-		  14 70 \
-		  $REMOTE_SERVER \
-		  2> $TMP/remote
-		RET=$?
-		REMOTE_SERVER="$(cat $TMP/remote)"
-		rm -f $TMP/tempmsg $TMP/remote
-		if [ $RET -ne 0 ]; then
-			exit 1
-		elif [ ! $(echo $REMOTE_SERVER | grep -iE '^http://|^ftp://') ]; then
-			# subtle hint
-			REMOTE_SERVER="?://$SERVER"
-			continue
-		fi
-		break
-	done
+What is the Salix source directory?
+" > $TMP/tempmsg
+ dialog --title "`gettext "SELECT SOURCE DIRECTORY"`" --inputbox "$(cat $TMP/tempmsg)" \
+ 0 0 $REMOTE_PATH 2> $TMP/slacksrc
+ if [ ! $? = 0 ]; then
+  rm -f $TMP/tempmsg $TMP/slacksrc
+  exit
+ fi
+ REMOTE_PATH="$(cat $TMP/slacksrc)"
+ rm $TMP/slacksrc
 
-	cat <<- EOF > $TMP/tempmsg
-	
-	Now please provide the path to a directory on the server
-	containing the contents of a Salix installation disc.
-	
-	Example: /mirror/salix-xfce
-	
-	Note: If you are installing from a web (HTTP) server you may also
-	specify an ISO image as the source e.g. /mirror/salix-xfce.iso
-	 
-	EOF
-	dialog \
-	  --title "SELECT SOURCE DIRECTORY" \
-	  --inputbox "$(cat $TMP/tempmsg)" \
-	  16 70 \
-	  $REMOTE_PATH \
-	  2> $TMP/sourcedir
-	RET=$?
-	REMOTE_PATH="$(cat $TMP/sourcedir)"
-	rm -f $TMP/sourcedir $TMP/tempmsg
-	if [ $RET -ne 0 ]; then
-		continue
-	fi
+gettext "
+In the next screen you should watch for possible errors.
 
-	mkdir -p /var/log/mount 2>/dev/null
-	# attempt to mount an ISO over a HTTP connection.
-	if [ -n "$(echo $REMOTE_SERVER | grep -i '^http://')" -a -n "$(echo $REMOTE_PATH | grep -i '\.iso$')" ]; then
-		cat <<- EOF > $TMP/tempmsg
-		
-		It appears you have chosen to use the following ISO image:
-		
-		$(basename $REMOTE_PATH)
+First, we'll download the PACKAGES.TXT from the parent of the \
+directory that you entered before (which should be the root \
+of the remote Salix tree).  If that succeeds, then we use \
+PACKAGES.TXT to reconstruct a local cache of the package tree \
+(should take a minute or less on an average system).
+After that, we're all set to go!
 
-		Setup will now attempt to mount it inside a local directory.
+Downloading PACKAGES.TXT at the Salix root starts \
+after you press OK.
+That file is several hundreds of KB in size so it may \
+take some time to get here...
+" > $TMP/tempmsg
+ dialog --title "`gettext "DOWNLOAD INFORMATION"`" --msgbox "$(cat $TMP/tempmsg)" 0 00
+ rm -f $TMP/tempmsg
+ REMOTE_ROOT=$(dirname $REMOTE_PATH)
+ mkdir -p $TMP/treecache 2>/dev/null
+ chmod 700 $TMP/treecache
+ rm -rf $TMP/treecache/* 2>/dev/null
+ ln -sf $TMP/treecache /var/log/mount/
+ cd /var/log/mount/treecache
+ # Two next line: > first, then >> - Didier Spaier
+ gettext "Downloading PACKAGES.TXT ..." > $TMP/wgetout
+ echo "URL: $REMOTE_URL$REMOTE_ROOT" >> $TMP/wgetout
+ wget -q $REMOTE_URL$REMOTE_ROOT/PACKAGES.TXT > /dev/null 2>&1
+ RET=$?
+ if [ $RET != 0 ]; then
+  gettext "> Download failed. Going to try one directory lower." >> $TMP/wgetout
+  echo >> $TMP/wgetout
+  REMOTE_ROOT=$REMOTE_PATH
+  echo "URL: $REMOTE_URL$REMOTE_ROOT" >> $TMP/wgetout
+  wget -q $REMOTE_URL$REMOTE_ROOT/PACKAGES.TXT > /dev/null 2>&1
+  RET=$?
+  [ $RET != 0 ] && gettext "> Download failed again." >> $TMP/wgetout
+  echo >> $TMP/wgetout
+ fi
+ echo >> $TMP/wgetout
 
-		EOF
-		dialog \
-		  --title "INFORMATION" \
-		  --exit-label "OK" \
-		  --textbox "$TMP/tempmsg" \
-		  11 70
-		rm -f $TMP/tempmsg
-
-		sh /etc/rc.d/rc.fuse start
-		if [ $? -eq 1 ]; then
-			cat <<- EOF > $TMP/tempmsg
-			
-			Setup failed to start the FUSE service.
-
-			Please check and try again.
-			
-			EOF
-			dialog \
-			  --title "SERVICE FAILURE" \
-			  --exit-label "OK" \
-			  --textbox "$TMP/tempmsg" \
-			  9 70
-			rm -f $TMP/tempmsg
-			continue
-		fi
-		
-		# mount the file inside a directory.
-		if [ -x $(type -path httpfs2) ]; then
-			httpfs2 -c /dev/null $REMOTE_SERVER$REMOTE_PATH /var/log/mount
-			if [ $? -ne 0 ]; then
-				cat <<- EOF > $TMP/tempmsg
-				
-				Failed to mount file from HTTP server:
-			
-				$REMOTE_SERVER$REMOTE_PATH
-				
-				Please check and try again.
-				
-				EOF
-				dialog \
-				  --title "MOUNT FAILURE" \
-				  --exit-label "OK" \
-				  --textbox "$TMP/tempmsg" \
-				  11 70
-				rm -f $TMP/tempmsg
-				continue
-			else
-				cat <<- EOF > $TMP/tempmsg
-				
-				Successfully mounted file from HTTP server:
-				
-				$(mount | grep /var/log/mount)
-				 
-				EOF
-				dialog \
-				  --title "MOUNT SUCCESS" \
-				  --exit-label "OK" \
-				  --textbox "$TMP/tempmsg" \
-				9 70
-				rm -f $TMP/tempmsg
-			fi
-		else
-			cat <<- EOF > $TMP/tempmsg
-			
-			Setup failed to execute a required command:
-		
-			httpfs2
-			
-			Please check and try again.
-			
-			EOF
-			dialog \
-			  --title "COMMAND NOT FOUND" \
-			  --exit-label "OK" \
-			  --textbox "$TMP/tempmsg" \
-			  11 70
-			rm -f $TMP/tempmsg
-			continue
-		fi
-
-		# attempt to loop mount the file
-		check_iso_image /var/log/mount /var/log/mntiso
-		if [ $? -eq 0 ]; then
-			if [ -d /var/log/mntiso/salix ]; then
-				echo "/var/log/mntiso/salix" > $TMP/SeTDS
-			else
-				cat <<- EOF > $TMP/tempmsg
-				
-				The ISO image you specified is not valid:
-				
-				$(basename $SOURCEISO)
-					
-				Please check and try again.
-				 
-				EOF
-				dialog \
-				  --title "INVALID ISO IMAGE" \
-				  --exit-label "OK" \
-				  --textbox "$TMP/tempmsg" \
-				  11 70
-				rm -f $TMP/tempmsg
-				umount -f /var/log/mntiso 2>/dev/null
-				continue
-			fi
-		else
-			cat <<- EOF > $TMP/tempmsg
-			
-			The file you specified is not valid:
-			
-			$REMOTE_SERVER$REMOTE_PATH
-			
-			Please check and try again.
-			 
-			EOF
-			dialog \
-			  --title "INVALID SOURCE FILE" \
-			  --exit-label "OK" \
-			  --textbox "$TMP/tempmsg" \
-			  11 70
-			rm -f $TMP/tempmsg
-			continue
-		fi
-	# attempt to fetch individual packages from the server
-	else
-		cat <<- EOF > $TMP/tempmsg
-		
-		We will now attempt to download a repository information file
-		from the server.
-		
-		If this is successful we will use it to create a local cache of
-		the packages we want to install.
-	
-		EOF
-		dialog \
-		  --title "INFORMATION" \
-			  --exit-label "OK" \
-			  --textbox "$TMP/tempmsg" \
-		  11 70
-		rm -f $TMP/tempmsg
-	
-		mkdir -p $TMP/pkgrepo 2>/dev/null
-		chmod 700 $TMP/pkgrepo
-		rm -rf $TMP/pkgrepo/* 2>/dev/null
-		mkdir -p /var/log/mount 2>/dev/null
-		ln -sf $TMP/pkgrepo /var/log/mount/
-		cd /var/log/mount/pkgrepo
-		
-		dialog \
-		  --infobox "\nDownloading file...\n" \
-		  5 23
-
-		wget -q -c $REMOTE_SERVER$REMOTE_PATH/PACKAGES.TXT.gz
-		if [ $? -ne 0 ]; then
-			cat <<- EOF > $TMP/tempmsg
-			
-			Failed to download repository information file:
-			
-			$REMOTE_SERVER$REMOTE_PATH/PACKAGES.TXT.gz
-			
-			Please check and try again.
-			
-			EOF
-			dialog \
-			  --title "DOWNLOAD FAILURE" \
-			  --exit-label "OK" \
-			  --textbox "$TMP/tempmsg" \
-			  11 70
-			rm -f $TMP/tempmsg
-			continue
-		elif [ -z "$(gzip -dc PACKAGES.TXT.gz | grep 'PACKAGE ')" ]; then
-			cat <<- EOF > $TMP/tempmsg
-			
-			The repository information file is not valid:
-			
-			$REMOTE_SERVER$REMOTE_PATH/PACKAGES.TXT.gz
-			
-			Please check and try again.
-			 
-			EOF
-			dialog \
-			  --title "INVALID FILE" \
-			  --exit-label "OK" \
-			  --textbox "$TMP/tempmsg" \
-			  11 70
-			rm -f $TMP/tempmsg
-			continue
-		else
-			# create a local repository with zero-byte package placeholders:
-			TOTALP=$(gzip -dc PACKAGES.TXT.gz | grep "PACKAGE NAME:" | wc -l)
-			(
-				NUMPKG=0
-				GAUGE=0
-				gzip -dc PACKAGES.TXT.gz | grep "PACKAGE " | while read REPLY ; do
-					case "$REPLY" in
-						"PACKAGE NAME:"*)
-							TEMP=$(echo $REPLY | cut -d: -f2)
-							PKGNAME=$(echo $TEMP)
-							PKGBASE=${PKGNAME/.t[glbx]z}
-							let NUMPKG=NUMPKG+1
-							if [ $(( ((100 * $NUMPKG)/$TOTALP)/5 )) -gt $(( $GAUGE/5 )) ]; then
-								GAUGE=$(( (100 * $NUMPKG)/$TOTALP ))
-								echo "$GAUGE"
-							fi
-							;;
-						"PACKAGE LOCATION:"*)
-							TEMP=$(echo $REPLY | cut -d: -f2)
-							PKGDIR=$(echo $TEMP)
-							mkdir -p $PKGDIR
-							touch $PKGDIR/$PKGNAME
-							;;
-						"PACKAGE SIZE (compressed):"*)
-							TEMP=$(echo $REPLY | cut -d: -f2)
-							PKGSIZE=$(echo $TEMP)
-							echo "$PKGSIZE" 1> $PKGDIR/$PKGBASE.size
-							;;
-						*)
-							;;
-					esac
-				done \
-			) |  \
-				dialog \
-				  --title "INITIALISING PACKAGE REPOSITORY" \
-				  --gauge "\nProcessing $TOTALP Salix packages..." \
-				  8 65
-
-			echo "/var/log/mount/pkgrepo/salix" > $TMP/SeTDS
-			echo "$REMOTE_SERVER,$REMOTE_PATH" > $TMP/SeTremotesvr 
-		fi
-	fi
-	echo "-source_mounted" > $TMP/SeTmount
-	echo "/dev/null" > $TMP/SeTsource
-	break
+ if [ -r /var/log/mount/treecache/PACKAGES.TXT ]; then
+  if head /var/log/mount/treecache/PACKAGES.TXT | grep -q "PACKAGES.TXT" ; then
+   gettext "A Salix 'PACKAGES.TXT' is available. Ready to continue!" >> $TMP/wgetout
+   echo >> $TMP/wgetout
+   DEFANSW="no"
+  fi
+ else
+  gettext "No file 'PACKAGES.TXT' was found. Wrong URL?" >> $TMP/wgetout
+  echo >> $TMP/wgetout
+  DEFANSW="yes"
+ fi
+ echo >> $TMP/wgetout
+ gettext "Do you want to try setting up FTP/HTTP again? " >> $TMP/wgetout
+ echo >> $TMP/wgetout
+ if [ "$DEFANSW" = "no" ]; then
+  dialog --title "`gettext  "DOWNLOAD RESULT"`" \
+    --defaultno --yesno "$(cat $TMP/wgetout)" 0 0
+  RET=$?
+ else
+  dialog --title "`gettext "DOWNLOAD RESULT"`" \
+    --yesno "$(cat $TMP/wgetout)" 0 0
+  RET=$?
+ fi
+ if [ $RET = 1 ]; then
+  rm -f $TMP/wgetout
+  break
+ fi
+ rm -f $TMP/wgetout
+ #if [ "$UPNRUN" = "1" ]; then
+ # route del $LOCAL_NETWORK
+ # ifconfig $ENET_DEVICE down 
+ #fi
 done
+
+if [ -r /var/log/mount/treecache/PACKAGES.TXT ]; then
+ echo "/var/log/mount/treecache/salix" > $TMP/SeTDS 
+ echo "-source_mounted" > $TMP/SeTmount
+ echo "/dev/null" > $TMP/SeTsource
+ echo "${REMOTE_URL},${REMOTE_ROOT}" > $TMP/SeTremotesvr
+
+ dialog --title "`gettext "INITIALIZING PACKAGE TREE"`" --infobox \
+  "`gettext "Setting up local cache for the FTP/HTTP server's package tree ...
+"`" 5 80
+
+ mkdir salix isolinux 2>/dev/null
+ wget -q -P ./isolinux $REMOTE_URL$REMOTE_ROOT/isolinux/setpkg
+
+ # Create a local package tree with zero-byte package placeholders:
+ TOTALP=$(grep "PACKAGE NAME:" PACKAGES.TXT | wc -l)
+ (
+ NUMPKG=0
+ GAUGE=0
+ grep "PACKAGE " PACKAGES.TXT | while read REPLY ; do
+  case "$REPLY" in
+  "PACKAGE NAME:"*)
+    TEMP=$(echo $REPLY | cut -d: -f2)
+    PKGNAME=$(echo $TEMP)
+    PKGBASE=$(pkgbase $PKGNAME)
+    PKGSHRT=$(package_name $PKGNAME)
+    let NUMPKG=NUMPKG+1
+    if [ $(( ((100 * $NUMPKG)/$TOTALP)/5 )) -gt $(( $GAUGE/5 )) ]; then
+      GAUGE=$(( (100 * $NUMPKG)/$TOTALP ))
+      echo "$GAUGE"
+    fi
+    ;;
+  "PACKAGE LOCATION:"*)
+    TEMP=$(echo $REPLY | cut -d: -f2)
+    PKGDIR=$(echo $TEMP)
+    mkdir -p $PKGDIR
+    touch ${PKGDIR}/${PKGNAME}
+    ;;
+  "PACKAGE SIZE (compressed):"*)
+    TEMP=$(echo $REPLY | cut -d: -f2)
+    PKGSIZE=$(echo $TEMP)
+    echo "$PKGSIZE" 1> ${PKGDIR}/${PKGBASE}.size
+    ;;
+  *)
+    ;;
+  esac
+ done \
+ ) |  dialog --title "`gettext "INITIALIZING PACKAGE TREE"`" --gauge \
+       "`eval_gettext "
+processing \\\${TOTALP} Salix packages..."`" 8 80
+ 
+ # Make sure we can select stuff from the package series:
+ dialog --title "`gettext "INITIALIZING PACKAGE TREE"`" --infobox \
+  "`gettext "
+Retrieving tagfile information for the package tree ..."`" 5 80
+ for series in $(ls -1 salix) ; do
+  wget -q -P ./salix/$series $REMOTE_URL$REMOTE_ROOT/salix/$series/tagfile
+  wget -q -P ./salix/$series $REMOTE_URL$REMOTE_ROOT/salix/$series/maketag.ez
+  wget -q -P ./salix/$series $REMOTE_URL$REMOTE_ROOT/salix/$series/maketag
+ done
+else
+ dialog --title "`gettext "REMOTE SERVER CONFIGURATION"`" --msgbox \
+  "`gettext "Failed to configure for installation from remote server."`" 5 80
+fi
