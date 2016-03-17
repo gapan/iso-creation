@@ -1,4 +1,5 @@
 #!/bin/sh
+export TEXTDOMAIN=salix-installer
 if [ "$TMP" = "" ]; then
  TMP=/var/log/setup/tmp
 fi
@@ -11,7 +12,7 @@ dd if=/dev/zero of=$TMP/SeTtestfull bs=1024 count=256 1> /dev/null 2> /dev/null
 FULLERR=$?
 rm -f $TMP/SeTtestfull
 if [ ! "$FULLERR" = "0" ]; then
-  dialog --title "ERROR: TARGET PARTITION FULL" --msgbox "Setup has \
+  dialog --title "`gettext "ERROR: TARGET PARTITION FULL"`" --msgbox "`gettext "Setup has \
 detected that one or more of your target partitions has become full.  \
 I'm sorry, but you will have to try installing again onto a partition \
 or partitions with more free space.  You could also try selecting \
@@ -20,5 +21,5 @@ install.  Since there is no longer any space for setup to make its \
 temporary files, this is an unrecoverable error.  Press control-alt-delete \
 to reboot and try again.  Before doing that, you might want to switch to \
 another console (Alt-F2) and use df (disk free utility) to see if you \
-can get an idea of how to avoid this the next time around."  14 65
+can get an idea of how to avoid this the next time around."`"  0 0
 fi
