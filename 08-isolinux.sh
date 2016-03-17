@@ -2,6 +2,12 @@
 #
 # This scripts creates the isolinux directory for using in salix iso.
 
+# FIXME
+#
+# This is temporary. When slackware releases 14.2, uncomment the first
+# line and remove ver=current.
+#ver=`cat VERSION`
+ver=current
 
 if [ "$UID" -eq "0" ]; then
 	echo "Don't run this script as root"
@@ -30,7 +36,11 @@ mkdir -p isolinux/$arch
 # copy the isolinux.bin from the system (it's exactly the same for both
 # architectures). For some reason slackware uses the
 # isolinux-debug.bin, which prevents making a hybrid iso
-cp /usr/share/syslinux/isolinux.bin isolinux/$arch
+#cp /usr/share/syslinux/isolinux.bin isolinux/$arch
+(
+  cd isolinux/$arch
+  wget ftp://ftp.slackware.uk/slackware/slackware64-$ver/isolinux/isolinux.bin
+)
 
 # copy the initrd (it should already be there)
 cp initrd/$arch/*.img isolinux/$arch/
