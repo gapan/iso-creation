@@ -10,11 +10,6 @@ if [ "$UID" -eq "0" ]; then
 	exit 1
 fi
 
-if [ ! -x /usr/bin/curlftpfs ]; then
-	echo "curlftpfs is missing"
-	exit 1
-fi
-
 set -e
 
 if [ ! -f ARCH ]; then
@@ -30,6 +25,11 @@ if [ ! -f VERSION ]; then
 else
 	ver=`cat VERSION`
 fi
+
+# FIXME
+#
+# This is temporary. When slackware releases 14.2, remove this line
+ver=current
 
 if [ ! -d isolinux/x86_64 ]; then
 	echo "I can't find the isolinux files."
@@ -47,30 +47,20 @@ fi
 rm -rf efi
 mkdir efi
 
-# create the mountpoint for the ftpfs
-mkdir ftp
-FTP="$CWD/ftp"
-
-# mount the slackware.org.uk ftp server with curlftpfs
-echo "Mounting ftp repository..."
-#curlftpfs ftp://ftp.slackware.org.uk ftp
-#curlftpfs ftp://ftp.ntua.gr/pub/linux/ ftp
-curlftpfs ftp://ftp.osuosl.org/pub/slackware/slackware64-$ver ftp
-
 # get the slack EFI files
 echo "Getting the slackware EFI files..."
-#cp -r $FTP/slackware/slackware64-$ver/EFI ./
-#cp $FTP/slackware/slackware64-$ver/isolinux/efiboot.img isolinux/x86_64/
-cp -r $FTP/EFI ./
-cp $FTP/isolinux/efiboot.img isolinux/x86_64/
+(
+  cd efi
+  wget -np -nH --cut-dirs=2 -r -R huge.s,initrd.img ftp://ftp.slackware.uk/slackware/slackware64-$ver/EFI
+)
+(
+  cd isolinux/x86_64
+  wget -np -nH --cut-dirs=3 -r ftp://ftp.slackware.uk/slackware/slackware64-$ver/isolinux/efiboot.img
+)
 
-# Slackware->Salix
-sed -i "s/Slackware/Salix/g" efi/EFI/BOOT/grub.cfg
-
-# unmount the ftpfs and remove the mountpoint
-echo "Unmounting ftp repository..."
-fusermount -u $FTP
-rmdir $FTP
+# copy over the grub.cfg file to be used. This ones includes menu
+# entries for all available languages.
+cp efi-files/grub.cfg efi/EFI/BOOT
 
 echo "DONE!"
 set +e
