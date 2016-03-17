@@ -2,12 +2,6 @@
 #
 # This scripts creates the isolinux directory for using in salix iso.
 
-# FIXME
-#
-# This is temporary. When slackware releases 14.2, uncomment the first
-# line and remove ver=current.
-#ver=`cat VERSION`
-ver=current
 
 if [ "$UID" -eq "0" ]; then
 	echo "Don't run this script as root"
@@ -29,6 +23,18 @@ if [ ! -f ARCH ]; then
 else
 	arch=`cat ARCH`
 fi
+
+if [ ! -f VERSION ]; then
+	echo "No VERSION file."
+	exit 1
+else
+	ver=`cat VERSION`
+fi
+
+# FIXME
+#
+# This is temporary. When slackware releases 14.2, remove this line:
+ver=current
 
 rm -rf isolinux/$arch
 mkdir -p isolinux/$arch
