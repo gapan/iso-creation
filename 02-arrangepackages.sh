@@ -16,7 +16,7 @@ if [ -f lists/FULL ]; then
 fi
 mkdir -p temp
 
-find /var/slapt-get -name *.t[gx]z -exec cp {} temp/ \;
+find /var/slapt-get -name "*.t[gx]z" -exec cp {} temp/ \;
 
 for i in `cat lists/KERNEL`; do
 	find temp/ | grep /$i- | sed "/$i-.*-.*-.*-.*/d" >> temp/KERNELLIST
