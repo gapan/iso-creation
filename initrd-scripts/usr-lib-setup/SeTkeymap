@@ -2,20 +2,22 @@
 # Copyright 1993, 1999, 2002 Patrick Volkerding, Moorhead, MN.
 # Copyright 2009  Patrick J. Volkerding, Sebeka, MN, USA
 # Use and redistribution covered by the same terms as the "setup" script.
+export TEXTDOMAIN=salix-installer
 TMP=/var/log/setup/tmp
 RDIR=/dev/tty4
 if [ ! -d $TMP ]; then
   mkdir -p $TMP
 fi
 while [ 0 ]; do
-dialog --title "KEYBOARD MAP SELECTION" \
---ok-label "Select" \
---menu "You may select one \
+dialog --title "`gettext "KEYBOARD MAP SELECTION"`" \
+--visit-items \
+--ok-label "`gettext "Select"`" \
+--menu "`gettext "You may select one \
 of the following keyboard maps. If you hit Cancel, \
 'us.map' (the US keyboard map) will be used anyway. Use the UP/DOWN \
 arrow keys and PageUp/PageDown to scroll \
-through the whole list of choices." \
-0 0 12 \
+through the whole list of choices."`" \
+0 0 0 \
 "qwerty/us.map" "" \
 "azerty/azerty.map" "" \
 "azerty/be-latin1.map" "" \
@@ -139,10 +141,10 @@ through the whole list of choices." \
  BMAP="`basename $MAPNAME .map`.bmap"
  tar xzOf /etc/keymaps.tar.gz $BMAP | loadkmap
 
- dialog --title "Test keyboard map" \
- --ok-label "Accept keymap" \
- --cancel-label "Reject keymap" \
- --inputbox "You may now test the new keyboard map by typing some text. You can accept the keyboard map or reject it and select another one. The installer only supports ASCII characters, so don't try any special characters here or use them during installation!" \
+ dialog --title "`gettext "Test keyboard map"`" \
+ --ok-label "`gettext "Accept keymap"`" \
+ --cancel-label "`gettext "Reject keymap"`" \
+ --inputbox "`gettext "You may now test the new keyboard map by typing some text. You can accept the keyboard map or reject it and select another one. The installer only supports ASCII characters, so don't try any special characters here or use them during installation!"`" \
  0 0
  if [ $? -eq 0 ]; then
   # Make a persistent (P) copy so starting setup won't erase it:
