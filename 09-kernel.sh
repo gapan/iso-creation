@@ -5,13 +5,9 @@
 #
 # You will first need to install curlftpfs to use it.
 
+
 if [ "$UID" -eq "0" ]; then
 	echo "Don't run this script as root"
-	exit 1
-fi
-
-if [ ! -x /usr/bin/curlftpfs ]; then
-	echo "curlftpfs is missing"
 	exit 1
 fi
 
@@ -31,7 +27,12 @@ else
 	ver=`cat VERSION`
 fi
 
-CWD=`pwd`
+# FIXME!
+#
+# This is temporary. When slackware releases 14.2, uncomment the first
+# line and remove ver=current.
+#ver=`cat VERSION`
+ver=current
 
 unset LIBDIRSUFFIX
 if [[ "$arch" == "x86_64" ]]; then
@@ -41,28 +42,23 @@ fi
 rm -rf kernel/$arch
 mkdir -p kernel/$arch
 
-# create the mountpoint for the ftpfs
-mkdir ftp
-FTP="$CWD/ftp"
-
-# mount the slackware.org.uk ftp server with curlftpfs
-# we're using the slackware.org.uk mirror because it includes both
-# slackware and salix repos
-echo "Mounting ftp repository..."
-curlftpfs ftp://ftp.slackware.org.uk ftp
-
 # get the slack kernel
 echo "Getting the slackware kernel..."
 if [[ "$arch" == "i486" ]]; then
-	cp -r $FTP/slackware/slackware${LIBDIRSUFFIX}-$ver/kernels/{hugesmp.s,huge.s} kernel/$arch/
+	(
+		cd kernel/$arch
+		wget -np -nH --cut-dirs=3 -r \
+			ftp://ftp.slackware.uk/slackware/slackware${LIBDIRSUFFIX}-$ver/kernels/huge.s
+		wget -np -nH --cut-dirs=3 -r \
+			ftp://ftp.slackware.uk/slackware/slackware${LIBDIRSUFFIX}-$ver/kernels/hugesmp.s
+	)
 else
-	cp -r $FTP/slackware/slackware${LIBDIRSUFFIX}-$ver/kernels/huge.s kernel/$arch/
+	(
+		cd kernel/$arch
+		wget -np -nH --cut-dirs=3 -r \
+			ftp://ftp.slackware.uk/slackware/slackware${LIBDIRSUFFIX}-$ver/kernels/huge.s
+	)
 fi
-
-# unmount the ftpfs and remove the mountpoint
-echo "Unmounting ftp repository..."
-fusermount -u $FTP
-rmdir $FTP
 
 echo "DONE!"
 set +e
