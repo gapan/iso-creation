@@ -41,7 +41,6 @@ cp README.iso iso/README
 
 if [ $arch == "x86_64" ]; then
 	cp -r efi/EFI iso/
-	cp efi/efiboot.img iso/isolinux/
 fi
 
 # remove the non-smp initrd and kernel files if building an smp-only iso
