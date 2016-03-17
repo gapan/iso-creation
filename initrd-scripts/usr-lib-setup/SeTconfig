@@ -1,4 +1,5 @@
 #!/bin/sh
+export TEXTDOMAIN=salix-installer
 TMP=/var/log/setup/tmp
 if [ ! -d $TMP ]; then
   mkdir -p $TMP
@@ -63,18 +64,18 @@ if [ -r $TMP/SeTkeymap ]; then
 fi
 
 # Inform the user that we're done installing packages
-dialog --title "DONE INSTALLING PACKAGES" --infobox  \
- "Preparing to configure your new Linux system..." 3 54
+  dialog --title "`gettext "DONE INSTALLING PACKAGES"`" --infobox  \
+"`gettext "Preparing to configure your new Linux system..."`" 3 70 
 sleep 3
 
 # Let user choose Grub or Lilo Boot Loader only if both are installed 
 if [ -x $T_PX/sbin/liloconfig ] && [ -x $T_PX/sbin/grubconfig ]; then
- dialog --title "Boot Loader" \
-  --menu "Please choose the Boot Loader that you would like to use" \
+ dialog --title "`gettext "Boot Loader"`" \
+  --menu "`gettext "Please choose the Boot Loader that you would like to use"`" \
   0 0 0 \
-  "Lilo" "Install Lilo" \
-  "Grub" "Install Grub" \
-  "EXIT" "(Do not install boot loader)" \
+  "Lilo" "`gettext "Install Lilo"`" \
+  "Grub" "`gettext "Install Grub"`" \
+  "EXIT" "`gettext "(Do not install boot loader)"`" \
   2> $TMP/reply
  OPTION="`cat $TMP/reply`"
  if [ "$OPTION" = "Lilo" ]; then
@@ -198,18 +199,23 @@ if dmesg | grep "ATAPI CD" 1> /dev/null 2> /dev/null ; then
     break;
   done
 fi
-
+# LOCALES is set in SeTlocales
+. /usr/lib/setup/SeTlocales
 chroot $T_PX /usr/sbin/clocksetup -c -z
 dialog --infobox "Loading locales..." 0 0
-chroot $T_PX /usr/sbin/localesetup
+if echo $LOCALES|grep -wq $LANG && [ "$LANG" != "en_US.utf8" ]; then
+  chroot $T_PX /usr/sbin/localesetup $LANG 1>/dev/null
+else
+  chroot $T_PX /usr/sbin/localesetup
+fi
 dialog --infobox "Updating caches..." 0 0
 chroot $T_PX /usr/sbin/update-all
 
 # Ask for numlock state
 numstate="off"
-dialog --title "Numlock configuration" \
---yes-label "Enabled" --no-label "Disabled" \
---yesno "Do you want to have numlock enabled or disabled on boot?" 0 0
+dialog --title "`gettext "Numlock configuration"`" \
+--yes-label "`gettext "Enabled"`" --no-label "`gettext "Disabled"`" \
+--yesno "`gettext "Do you want to have numlock enabled or disabled on boot?"`" 0 0
 retval=$?
 if [ $retval -eq 0 ]; then
 	numstate="on"
@@ -220,19 +226,19 @@ ibusstate="off"
 # If scim is installed, ask if it should be running by default
 scimstate="off"
 if [ -f $T_PX/etc/profile.d/ibus.sh ]; then
-	dialog --title "IBus configuration" \
-	--yes-label "Enabled" --no-label "Disabled" \
+	dialog --title "`gettext "IBus configuration"`" \
+	--yes-label "`gettext "Enabled"`" --no-label "`gettext "Disabled"`" \
 	--defaultno \
-	--yesno "IBus is an input platform for Chinese, Japanese, Korean and many other languages. Do you want to have it enabled or disabled on boot?" 0 0
+	--yesno "`gettext "IBus is an input platform for Chinese, Japanese, Korean and many other languages. Do you want to have it enabled or disabled on boot?"`" 0 0
 	retval=$?
 	if [ $retval -eq 0 ]; then
 		ibusstate="on"
 	fi
 elif [ -f $T_PX/etc/profile.d/scim.sh ]; then
-	dialog --title "SCIM configuration" \
-	--yes-label "Enabled" --no-label "Disabled" \
+	dialog --title "`gettext "SCIM configuration"`" \
+	--yes-label "`gettext "Enabled"`" --no-label "`gettext "Disabled"`" \
 	--defaultno \
-	--yesno "SCIM is an input platform for Chinese, Japanese, Korean and many other languages. Do you want to have it enabled or disabled on boot?" 0 0
+	--yesno "`gettext "SCIM is an input platform for Chinese, Japanese, Korean and many other languages. Do you want to have it enabled or disabled on boot?"`" 0 0
 	retval=$?
 	if [ $retval -eq 0 ]; then
 		scimstate="on"
