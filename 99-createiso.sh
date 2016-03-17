@@ -1,7 +1,19 @@
 #!/bin/bash
 
-if [ "$UID" -eq "0" ]; then
-	echo "Don't run this script as root"
+# FIXME!
+#
+# Why does xorriso need root priviliges? It shouldn't have to.
+
+#~ if [ "$UID" -eq "0" ]; then
+	#~ echo "Don't run this script as root"
+	#~ exit 1
+#~ fi
+
+
+ISOHYBRID_MBR=/usr/share/syslinux/isohdpfx.bin
+
+if [ ! -f $ISOHYBRID_MBR ]; then
+	echo "syslinux is not installed"
 	exit 1
 fi
 
@@ -37,25 +49,26 @@ fi
 unset LIBDIRSUFFIX
 unset MKISOFS_EFI_OPTS
 unset ISOHYBRID_EFI_OPTS
-if [[ "$arch" == "x86_64" ]]; then
+if [ "$arch" = "x86_64" ]; then
 	export LIBDIRSUFFIX="64"
-	MKISOFS_EFI_OPTS="-eltorito-alt-boot -no-emul-boot -eltorito-platform 0xEF -eltorito-boot isolinux/efiboot.img"
-	ISOHYBRID_EFI_OPTS="--uefi"
+	EFIOPTIONS="-eltorito-alt-boot -e isolinux/efiboot.img -isohybrid-gpt-basdat -no-emul-boot"
 fi
 
-cd iso
-
-mkisofs -o ../salix${LIBDIRSUFFIX}-${edition}-${ver}.iso \
-  -R -J -A "Salix${LIBDIRSUFFIX} Install" \
-  -V "Salix${LIBDIRSUFFIX} $edition $ver" \
-  -hide-rr-moved \
-  -v -d -N \
-  -no-emul-boot -boot-load-size 4 -boot-info-table \
-  -sort isolinux/iso.sort \
-  -b isolinux/isolinux.bin \
-  -c isolinux/isolinux.boot \
-  $MKISOFS_EFI_OPTS . 
-
-cd ..
-isohybrid $ISOHYBRID_EFI_OPTS salix${LIBDIRSUFFIX}-${edition}-${ver}.iso
+(
+  cd iso
+  xorriso -as mkisofs \
+    -isohybrid-mbr $ISOHYBRID_MBR \
+    -hide-rr-moved \
+    -U \
+    -V "SALIX${LIBDIRSUFFIX}_${edition}_${ver}" \
+    -J \
+    -joliet-long \
+    -r \
+    -v \
+    -o ../salix${LIBDIRSUFFIX}-${edition}-${ver}.iso \
+    -b isolinux/isolinux.bin \
+    -c isolinux/boot.cat \
+    -no-emul-boot \
+    -boot-info-table $EFIOPTIONS . \
+)
 
