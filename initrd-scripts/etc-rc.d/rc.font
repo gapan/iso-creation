@@ -3,6 +3,13 @@
 # or to simply load a better looking font for the installer.
 
 # In case udev has not yet prepared the tty devices, create them:
+# To use legacy locale encoding would need:
+# _to uncomment SETTrans
+# _to switch commented vs uncommented setfont commands
+# _to have PO files converted to legacy encodings when building the
+#  package that builds the MO files, installed in the installer
+. /usr/lib/setup/SeTlocales
+TMP=/var/log/setup/tmp
 create_tty() {
   if [ ! -r /dev/tty1 ]; then
     mknod /dev/tty1 c 4 1
@@ -25,21 +32,20 @@ create_tty() {
     chmod 620 /dev/tty4
   fi
 }
-
-if ! grep -wq nofont /proc/cmdline ; then
-  if [ ! "$(cat /proc/fb)" = "" ] ; then
-    if [ -r /usr/share/kbd/consolefonts/ter-120b.psf.gz ]; then
-      create_tty
-      for tty in /dev/tty{1,2,3,4} ; do
-        setfont -C $tty /usr/share/kbd/consolefonts/ter-120b.psf.gz
-      done
-    fi
-  else
-    if [ -r /usr/share/kbd/consolefonts/ter-c14v.psf.gz ]; then
-      create_tty
-      for tty in /dev/tty{1,2,3,4} ; do
-        setfont -C $tty /usr/share/kbd/consolefonts/ter-c14v.psf.gz
-      done
-    fi
-  fi
+ll_TT=$(echo $LANG|cut -c 1-5)
+SeTFonts
+# SeTTrans
+# SeTKeymap
+if [ "`cat /proc/fb`" = "" ] ; then
+    create_tty
+    for tty in /dev/tty{1,2,3,4} ; do
+#      setfont /usr/share/kbd/consolefonts/$FONT -m /usr/share/kbd/consoletrans/$TransCoding -C $tty
+      setfont /usr/share/kbd/consolefonts/$FONT -C $tty
+    done
+else
+    create_tty
+    for tty in /dev/tty{1,2,3,4} ; do
+#      setfont /usr/share/kbd/consolefonts/$FONTbig -m /usr/share/kbd/consoletrans/$TransCoding -C $tty
+      setfont /usr/share/kbd/consolefonts/$FONTbig -C $tty
+    done
 fi
