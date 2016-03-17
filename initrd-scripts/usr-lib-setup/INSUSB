@@ -1,4 +1,6 @@
 #!/bin/sh
+export TEXTDOMAIN=salix-installer
+. gettext.sh
 RDIR=/dev/tty4
 NDIR=/dev/null
 TMP=/var/log/setup/tmp
@@ -8,10 +10,10 @@ fi
 T_PX="`cat $TMP/SeTT_PX`"
 rm -f $TMP/SeTmount $TMP/SeTDS $TMP/SeTCDdev $TMP/reply
 
-dialog --title "SCANNING FOR USB STICK" --msgbox \
-"Make sure the USB stick containing the Salix package directory \
-is inserted into a USB port, and then press ENTER to begin the scanning process." \
-7 66 \
+dialog --title "`gettext "SCANNING FOR USB STICK"`"  --msgbox \
+"`gettext "Make sure the USB stick containing the Salix package directory \
+is inserted into a USB port, and then press ENTER to begin the scanning process."`" \
+7 80 \
 2> $TMP/reply
 if [ ! -r $TMP/reply ]; then
  # cancel or esc
@@ -31,9 +33,9 @@ for BDEV in $(ls --indicator-style none /sys/block | grep -E -v "loop|ram|^dm-|^
 done
 
 if [ "$REMOVEABLE_DEVICES" = "" ]; then
-  dialog --title "NO REMOVABLE USB DEVICES FOUND" --msgbox \
-"Sorry, but no removable USB devices could be found.  Exiting back to the top menu." \
-6 55
+  dialog --title "`gettext "NO REMOVABLE USB DEVICES FOUND"`" --msgbox \
+"`gettext "Sorry, but no removable USB devices could be found.  Exiting back to the top menu."`" \
+6 80
   rm -f $TMP/SeTDS $TMP/SeTmount $TMP/SeTCDdev $TMP/errordo
   exit
 fi
@@ -83,18 +85,18 @@ if [ "$DRIVE_FOUND" = "" ]; then
 fi
 
 if [ "$DRIVE_FOUND" = "" ]; then
-  dialog --title "NO SALIX DIRECTORY FOUND" --msgbox \
-"Sorry, but a Salix directory could not be found on any USB devices. \
-Exiting back to the top menu." \
-6 55
+  dialog --title "`gettext "NO SLACKWARE DIRECTORY FOUND"`"  --msgbox \
+"`gettext "Sorry, but a Salix directory could not be found on any USB devices. \
+Exiting back to the top menu."`"  \
+6 80
   rm -f $TMP/SeTDS $TMP/SeTmount $TMP/SeTCDdev $TMP/errordo
   exit
 fi
 
 # Success!  Report back to the console:
 
-dialog --title "USB PACKAGE SOURCE FOUND" --sleep 3 --infobox \
-"A Salix package directory was found on device $DRIVE_FOUND." 3 66
+dialog --title "`gettext "USB PACKAGE SOURCE FOUND"`" --sleep 3 --infobox \
+"`eval_gettext "A Salix package directory was found on device \\\$DRIVE_FOUND."`" 3 80
 
 # At this point, the stick has been found and is mounted on /usb-stick.
 # All that remains is to tell the installer about it, and we're done here.
