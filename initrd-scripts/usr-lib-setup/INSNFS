@@ -1,224 +1,122 @@
 #!/bin/sh
+export TEXTDOMAIN=salix-installer
+. gettext.sh
 TMP=/var/log/setup/tmp
 if [ ! -d $TMP ]; then
-	mkdir -p $TMP
+  mkdir -p $TMP
 fi
-
+# Include function to check for Salix ISO images:
 . /usr/lib/setup/INCISO
-
 if [ -f $TMP/Punattended ]; then
-	eval $(grep "^NFS_SERVER=" $TMP/Punattended)
-	eval $(grep "^NFS_ROOT=" $TMP/Punattended)
+ eval $(grep "^NFS_SERVER=" $TMP/Punattended)
+ eval $(grep "^NFS_ROOT=" $TMP/Punattended)
 fi
-
-REMOTE_SERVER=$NFS_SERVER
-REMOTE_PATH=$NFS_ROOT
 
 while [ 0 ]; do
-	rm -f $TMP/SeTDS $TMP/SeTmount $TMP/SeTsource
+ rm -f $TMP/SeTDS $TMP/SeTmount $TMP/SeTsource $TMP/nfsout
+ UPNRUN=`cat $TMP/SeTupnrun 2> /dev/null`
 
-	umount -f /var/log/mount 2>/dev/null
-	if [ -n "$(mount | grep /var/log/mount)" -o -d /var/log/mount/lost+found -o -d /var/log/mount/recycled -o -r /var/log/mount/io.sys ]; then
-		cat <<- EOF > $TMP/tempmsg
-		
-		Setup failed to unmount a required directory:
-		
-		/var/log/mount
-		
-		Please reboot the machine an try again.
-		
-		EOF
-		dialog \
-		  --title "ERROR" \
-		  --yes-label "REBOOT" \
-		  --no-label "CANCEL" \
-		  --yesno "$(cat $TMP/tempmsg)" \
-		  11 70
-		RET=$?
-		rm -f $TMP/tempmsg
-		if [ $RET -eq 0 ]; then
-			reboot
-		else
-			exit 1
-		fi
-	fi
+ if [ "$REMOTE_IPADDR" = "" ]; then REMOTE_IPADDR=${NFS_SERVER}; fi
+ if [ "$REMOTE_PATH" = "" ]; then REMOTE_PATH=${NFS_ROOT}; fi
 
-	cat <<- EOF > $TMP/tempmsg
+echo > $TMP/tempmsg
+gettext "
+Good! We're all set on the local end, but now we need to know \
+where to find the software packages to install.  First, we need \
+the IP address of the machine where the Salix sources are \
+stored." >> $TMP/tempmsg
+echo >> $TMP/tempmsg
+echo >> $TMP/tempmsg
+ if [ "$UPNRUN" = "0" ]; then
+  gettext "Since you're already running on the network, you should be able \
+to use the hostname instead of an IP address if you wish." >> $TMP/tempmsg
+  echo >> $TMP/tempmsg
+  echo >> $TMP/tempmsg
+ fi
+ gettext "What is the IP address of your NFS server?" >> $TMP/tempmsg
+ echo "" >> $TMP/tempmsg
+ dialog --title "`gettext "ENTER IP ADDRESS OF NFS SERVER"`" --inputbox \
+ "`cat $TMP/tempmsg`" 0 0 $REMOTE_IPADDR 2> $TMP/remote
+ if [ ! $? = 0 ]; then
+  rm -f $TMP/tempmsg $TMP/remote
+  exit
+ fi
+ REMOTE_IPADDR="`cat $TMP/remote`"
+ rm $TMP/remote
+eval_gettext "
+There must be a directory on the server with the Salix \
+packages and files arranged in a tree like the FTP site.
 
-	Please provide the IP address of an NFS server on your network
-	containing the contents (or an ISO image) of a Salix installation
-	disc.
-	
-	Example: 192.168.1.101
-	 
-	EOF
-	dialog \
-	  --title "NFS SERVER IP ADDRESS" \
-	  --inputbox "$(cat $TMP/tempmsg)" \
-	  14 70 \
-	  $REMOTE_SERVER \
-	  2> $TMP/remote
-	RET=$?
-	REMOTE_SERVER="$(cat $TMP/remote)"
-	rm -f $TMP/tempmsg $TMP/remote
-	if [ $RET -ne 0 ]; then
-		exit 1
-	fi
+The installation script needs to know the name of the \
+directory on your server that contains the series' \
+subdirectories. For example, if your A series is found at \
+/slack/salix/a, then you would respond: /slack/salix
 
-	while [ 0 ]; do
-		cat <<- EOF > $TMP/tempmsg
-		
-		Now please provide the path of an exported directory containing
-		the contents (or an ISO image) of a Salix installation disc.
-		
-		Example: /srv/salix-xfce/iso
-		
-		Note: Use the <Exports> button to request a list of exported
-		directories from the server.
-		 
-		EOF
-		dialog \
-		  --title "SELECT SOURCE DIRECTORY" \
-		  --help-button --help-label "Exports" \
-		  --inputbox "$(cat $TMP/tempmsg)" \
-		  16 70 \
-		  $REMOTE_PATH \
-		  2> $TMP/sourcedir
-		RET=$?
-		REMOTE_PATH="$(cat $TMP/sourcedir)"
-		rm -f $TMP/sourcedir $TMP/tempmsg
-		if [ $RET -eq 2 ]; then
-			dialog \
-			  --infobox "\nPlease wait...\n" \
-			  5 18
-			# this stops showmount hanging forever
-			ping -c 1 -w 10 $REMOTE_SERVER 2>&1 >/dev/null
-			if [ $? -ne 0 ]; then
-				echo "Server unreachable." > $TMP/tempmsg
-			else
-				showmount -e $REMOTE_SERVER 2>&1 > $TMP/tempmsg
-				if [ $? -ne 0 ]; then
-					echo "Server unreachable." > $TMP/tempmsg
-				fi
-			fi
-			dialog \
-			  --title "EXPORT LIST" \
-			  --textbox "$TMP/tempmsg" \
-			  25 80
-			rm -f $TMP/tempmsg
-			continue
-		fi
-		break
-	done
+What is the Salix source directory?" > $TMP/tempmsg
+ dialog --title "`gettext "SELECT SOURCE DIRECTORY"`" \
+ --inputbox "`cat $TMP/tempmsg`" 0 0 $REMOTE_PATH 2> $TMP/slacksrc
+ if [ ! $? = 0 ]; then
+  rm -f $TMP/tempmsg $TMP/slacksrc
+  exit
+ fi
+ REMOTE_PATH="`cat $TMP/slacksrc`"
+ rm $TMP/slacksrc
+ gettext "
+In the next screen you should watch for NFS mount errors.
 
-	if [ $RET -ne 0 ]; then
-		continue
-	fi
+If you see errors and you don't see your NFS server listed, then try setting up NFS again.
 
-	if [ -x "$(type -path rpc.portmap)" -a -x "$(type -path rpc.statd)" ]; then
-		for rpc in rpc.portmap rpc.statd ;do
-			if [ -z "$(ps axc | grep -q $rpc)" ]; then
-				$rpc
-			fi
-		done
-	else
-		cat <<- EOF > $TMP/tempmsg
-		
-		Setup failed to start the RPC portmapper service.
-
-		Please check and try again.
-		
-		EOF
-		dialog \
-		  --title "SERVICE FAILURE" \
-		  --exit-label "OK" \
-		  --textbox "$TMP/tempmsg" \
-		  9 70
-		rm -f $TMP/tempmsg
-		exit 1
-	fi
-
-	mkdir -p /var/log/mount 2>/dev/null
-	mount -r -t nfs -o vers=3 $REMOTE_SERVER:$REMOTE_PATH /var/log/mount 2>/dev/null
-	if [ $? -ne 0 ]; then
-		cat <<- EOF > $TMP/tempmsg
-		
-		Failed to mount NFS filesystem:
-		
-		$REMOTE_SERVER:$REMOTE_PATH
-		
-		Please check and try again.
-		
-		EOF
-		dialog \
-		  --title "MOUNT FAILURE" \
-		  --exit-label "OK" \
-		  --textbox "$TMP/tempmsg" \
-		  11 70
-		rm -f $TMP/tempmsg
-		continue
-	else
-		cat <<- EOF > $TMP/tempmsg
-		
-		Successfully mounted NFS filesystem:
-		
-		$(mount | grep $REMOTE_SERVER:$REMOTE_PATH)
-		 
-		EOF
-		dialog \
-		  --title "MOUNT SUCCESS" \
-		  --exit-label "OK" \
-		  --textbox "$TMP/tempmsg" \
-		 9 70
-		rm -f $TMP/tempmsg
-	fi
-
-	check_iso_image /var/log/mount /var/log/mntiso
-	if [ $? -eq 0 ]; then
-		if [ -d /var/log/mntiso/salix ]; then
-			echo "/var/log/mntiso/salix" > $TMP/SeTDS
-		else
-			cat <<- EOF > $TMP/tempmsg
-			
-			The ISO image you specified is not valid:
-			
-			$(basename $SOURCEISO)
-				
-			Please check and try again.
-			 
-			EOF
-			dialog \
-			  --title "INVALID ISO IMAGE" \
-			  --exit-label "OK" \
-			  --textbox "$TMP/tempmsg" \
-			  11 70
-			rm -f $TMP/tempmsg
-			umount -f /var/log/mntiso 2>/dev/null
-			continue
-		fi
-	elif [ -d /var/log/mount/salix -a -f /var/log/mount/PACKAGES.TXT.gz ]; then
-		echo "/var/log/mount/salix" > $TMP/SeTDS
-	elif [ -d /var/log/mount/core -a -d /var/log/mount/basic -a -d /var/log/mount/full ]; then
-		echo "/var/log/mount/" > $TMP/SeTDS
-	else
-		cat <<- EOF > $TMP/tempmsg
-		
-		The directory you specified is not valid:
-		
-		$REMOTE_PATH
-		
-		Please check and try again.
-		 
-		EOF
-		dialog \
-		  --title "INVALID SOURCE DIRECTORY" \
-		  --exit-label "OK" \
-		  --textbox "$TMP/tempmsg" \
-		  11 70
-		rm -f $TMP/tempmsg
-		continue
-	fi
-	echo "-source_mounted" > $TMP/SeTmount
-	echo "/dev/null" > $TMP/SeTsource
-	break
+" > $TMP/tempmsg
+ dialog --title "`gettext "NFS MOUNT INFORMATION"`" --msgbox "`cat $TMP/tempmsg`" 0 0
+ rm -f $TMP/tempmsg
+ touch $TMP/nfsout
+ if [ ! "$UPNRUN" = "0" ]; then
+  if [ -x /etc/rc.d/rc.rpc ]; then
+   echo "Starting RPC services..." >> $TMP/nfsout
+   /etc/rc.d/rc.rpc restart >> $TMP/nfsout 2>&1
+  fi
+ fi
+ eval_gettext "Mounting \$REMOTE_PATH:" >> $TMP/nfsout
+ echo "" >> $TMP/nfsout
+ echo "mount -r -t nfs -o vers=3 $REMOTE_IPADDR:$REMOTE_PATH /var/log/mount" >> $TMP/nfsout
+ mount -r -t nfs -o vers=3 $REMOTE_IPADDR:$REMOTE_PATH /var/log/mount
+ if [ ! $? = 0 ]; then
+  gettext "Didn't work." >> $TMP/nfsout
+  echo "" >> $TMP/nfsout
+  gettext "Maybe you should check that the directory name is correct?" >> $TMP/nfsout
+  echo "" >> $TMP/nfsout
+  DEFANSW="yes"
+ else
+  DEFANSW="no"
+ fi
+ echo "" >> $TMP/nfsout
+ gettext "Current NFS mounts:" >> $TMP/nfsout
+ echo "" >> $TMP/nfsout
+ mount -t nfs >> $TMP/nfsout 2>&1
+ echo "" >> $TMP/nfsout
+ gettext "Do you need to try setting up NFS again?" >> $TMP/nfsout
+ echo "" >> $TMP/nfsout
+ if [ "$DEFANSW" = "no" ]; then
+  dialog --title "`gettext "NFS MOUNT RESULT"`" \
+    --defaultno --yesno "`cat $TMP/nfsout`" 0 0
+  RET=$?
+ else
+  dialog --title "`gettext "NFS MOUNT RESULT"`" --yesno "`cat $TMP/nfsout`" 0 0
+  RET=$?
+ fi
+ rm -f $TMP/nfsout
+ if [ $RET = 1 ]; then
+  # OK with the NFS mount.
+  # First, check if a Salix ISO image is present in /var/log/mount
+  if check_iso_image /var/log/mount /var/log/mntiso ; then
+   echo "/var/log/mntiso/salix" > $TMP/SeTDS 
+  elif [ -r /var/log/mount/salix/PACKAGES.TXT ]; then
+   echo "/var/log/mount/salix" > $TMP/SeTDS 
+  else
+   echo "/var/log/mount" > $TMP/SeTDS
+  fi
+  echo "-source_mounted" > $TMP/SeTmount
+  echo "/dev/null" > $TMP/SeTsource
+  break
+ fi
 done
