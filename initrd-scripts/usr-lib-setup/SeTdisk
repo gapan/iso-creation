@@ -36,7 +36,7 @@ if [ ! "${DISK}" ]; then
 fi
 clear
 DISKCMD=cfdisk
-if fdisk -l /dev/${DISK} 2> /dev/null | grep -wq GPT ; then
+if LANG=C fdisk -l /dev/${DISK} 2> /dev/null | grep -q "Disklabel type: gpt" ; then
 	DISKCMD=cgdisk
 else
 	modprobe efivars > /dev/null 2>&1 # will do nothing on non-EFI system

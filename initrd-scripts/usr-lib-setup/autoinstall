@@ -130,7 +130,7 @@ Are you sure you want to globally erase existing data from ${DISK}?
 11 75 2 \
 "No" "`gettext "Go back to the main setup menu"`" \
 "Yes" "`gettext "${DISK} is dedicated to Salix"`"  )
-if fdisk -l /dev/${DISK} 2> /dev/null | grep -wq GPT ; then
+if LANG=C fdisk -l /dev/${DISK} 2> /dev/null | grep -q "Disklabel type: gpt" ; then
 	PARTITION_TOOL="sgdisk"
 else
 	PARTITION_TOOL="sfdisk"
