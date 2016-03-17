@@ -1,51 +1,29 @@
 #!/bin/sh
 # rc.S:  Basic system initialization.
 
-# remove /etc/mtab* so mount creates the /etc/mtab file
-/bin/rm -f /etc/mtab* /etc/nologin 1> /dev/null 2> /dev/null
+# Any /etc/mtab that exists here is old, so we start with a new one:
+/bin/rm -f /etc/mtab{,~,.tmp} && /bin/touch /etc/mtab
 
-# Mounts /proc:
-/bin/mount -av -t nonfs 1> /dev/null 2> /dev/null
+# Add (fake) entry for / to /etc/mtab:
+/sbin/mount -f -w /dev/initramfs / -t tmpfs 1> /dev/null
 
-/sbin/swapon -a 2> /dev/null
+# Mount /proc:
+/sbin/mount -v proc /proc -t proc 1> /dev/null
+
+# Mount sysfs next:
+/sbin/mount -v sysfs /sys -t sysfs 1> /dev/null
+
+# Activate swap:
+/sbin/swapon -a 1> /dev/null
 
 if [ -x /sbin/ldconfig ]; then
-  /sbin/ldconfig 1> /dev/null 2> /dev/null
+  /sbin/ldconfig 1> /dev/null
 fi
-
-# Here's the situation.  Because of the practice of keeping the local
-# time (rather than UTC) in the system's clock, at any given time half
-# of the people doing an install will be creating files that upon
-# reboot will appear to have been created in the future.
-# 
-# There are a lot of things that aren't happy when that happens.  The
-# one that screams the most loudly is e2fsck, and we don't want to
-# anger that!  Sometimes it even proceeds to check the partitions just
-# to be sure the user is fully punished.
-# 
-# But, there's a simple solution.  If we set the (temporary) Linux clock
-# to yesterday (-24h), then there's no way that could occur.  Everything
-# on the system will be in the past (but not too far in the past).
-# Since files will quickly be put into use and given the correct after
-# reboot, this really shouldn't have a negative impact.  Plus, it affects
-# only newly created files during installation -- any file shipped in a
-# package will have an accurate time of creation.  (for its timezone ;-)
-#
-# Update:  We have to use 2 days ago, or chroot()+timezone offset might
-# still be in the future...  <sigh>
-#
-touch /.today
-/bin/sh /sbin/fakedate
 
 ## Detect serial console from kernel command line:
 #if cat /proc/cmdline | grep console=ttyS 1> /dev/null 2> /dev/null ; then
 #  SERIAL_CONSOLE="true"
 #fi
-
-# Try to mount sysfs:
-if cat /proc/filesystems | grep -w sysfs 1> /dev/null 2> /dev/null ; then
-  mount -t sysfs sysfs /sys 2> /dev/null
-fi
 
 # System logger (mostly to eat annoying messages):
 /sbin/syslogd 2> /dev/null
@@ -149,6 +127,30 @@ else
   /dev/devmap_mknod.sh
 
 fi # End Run udev:
+
+# Here's the situation.  Because of the practice of keeping the local
+# time (rather than UTC) in the system's clock, at any given time half
+# of the people doing an install will be creating files that upon
+# reboot will appear to have been created in the future.
+#
+# There are a lot of things that aren't happy when that happens.  The
+# one that screams the most loudly is e2fsck, and we don't want to
+# anger that!  Sometimes it even proceeds to check the partitions just
+# to be sure the user is fully punished.
+#
+# But, there's a simple solution.  If we set the (temporary) Linux clock
+# to yesterday (-24h), then there's no way that could occur.  Everything
+# on the system will be in the past (but not too far in the past).
+# Since files will quickly be put into use and given the correct after
+# reboot, this really shouldn't have a negative impact.  Plus, it affects
+# only newly created files during installation -- any file shipped in a
+# package will have an accurate time of creation.  (for its timezone ;-)
+#
+# Update:  We have to use 2 days ago, or chroot()+timezone offset might
+# still be in the future...  <sigh>
+#
+touch /.today
+/bin/sh /sbin/fakedate
 
 if [ -x /etc/rc.d/rc.inet1 ]; then
   /bin/sh /etc/rc.d/rc.inet1
