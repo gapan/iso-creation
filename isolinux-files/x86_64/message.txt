@@ -1,24 +1,23 @@
 
+Welcome to 09Salix64 __EDITION__07 version 14.2!
+
+Here are the available languages for installation:
+04 Dutch          10 Italian                16 Russian
+05 English (USA)  11 Norwegian              18 Spanish (Latin America)
+06 French         12 Polish                 20 Swedish
+07 German         13 Portuguese (Brazil)    21 Turkish
+08 Greek          14 Portuguese (Portugal)  22 Ukrainian
 
-Welcome to 09Salix64 __EDITION__07 version 14.1!
+Please type the language code at the prompt below, then press [Enter].
+Alternatively, wait 2 minutes or just press [Enter] for English (USA)
 
-If you need to pass extra parameters to the kernel, enter them at the prompt
-below after the name of the kernel to boot (huge.s).
+In case of black screen after booting, restart the installer and append
+the letter 'n' to the command line. Example: 
+   boot: 08n
 
-In a pinch, you can boot your system from here with a command like:
+You can pass extra parameters to the kernel after the language code.
 
-boot: huge.s root=/dev/sda1 rdinit= ro 
+This installer also allows you to boot an already installed system.
 
-In the example above, /dev/sda1 is the / Linux partition.
-
-This prompt is just for entering extra parameters.  If you don't need to enter
-any parameters, hit ENTER to boot the default kernel "huge.s" and begin the 
-installation of Salix.
-
-If you want to use this as a rescue system, just select to exit the
-installation at the main menu. You will then have access to a linux console.
-If from there you wish to go back to installing Salix, just type "setup" in
-the linux console.
-
-
+For more information, press [09F207]
 
