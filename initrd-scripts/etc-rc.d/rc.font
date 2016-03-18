@@ -35,7 +35,7 @@ create_tty() {
 ll_TT=$(echo $LANG|cut -c 1-5)
 SeTFonts
 # SeTTrans
-# SeTKeymap
+SeTKeymap
 if [ "`cat /proc/fb`" = "" ] ; then
     create_tty
     for tty in /dev/tty{1,2,3,4} ; do
