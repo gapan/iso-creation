@@ -3,18 +3,24 @@
 # Copyright 2009  Patrick J. Volkerding, Sebeka, MN, USA
 # Use and redistribution covered by the same terms as the "setup" script.
 export TEXTDOMAIN=salix-installer
+. gettext.sh
 TMP=/var/log/setup/tmp
 RDIR=/dev/tty4
 if [ ! -d $TMP ]; then
   mkdir -p $TMP
 fi
 while [ 0 ]; do
+if [ -f $TMP/Pkeymap ]; then
+  DefaultKeyMap="`cat $TMP/Pkeymap`"
+else
+  DefaultKeyMap="us.map"
+fi
 dialog --title "`gettext "KEYBOARD MAP SELECTION"`" \
 --visit-items \
 --ok-label "`gettext "Select"`" \
---menu "`gettext "You may select one \
-of the following keyboard maps. If you hit Cancel, \
-'us.map' (the US keyboard map) will be used anyway. Use the UP/DOWN \
+--menu "`eval_gettext "You may select one \
+of the following keyboard maps.  If you do not select a keyboard \
+map, $DefaultKeyMap is the current value.  Use the UP/DOWN \
 arrow keys and PageUp/PageDown to scroll \
 through the whole list of choices."`" \
 0 0 0 \
