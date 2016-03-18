@@ -33,7 +33,7 @@ gst-plugins-base
 gst-plugins-good
 gst-plugins-good1
 gst-python
-gstreamer
+gstreamer0
 gtk-xfce-engine
 gtkman
 gtkmm3

@@ -70,7 +70,7 @@ gnsu
 gsettings-desktop-schemas
 gslapt
 gst-plugins-base1
-gstreamer1
+gstreamer
 gtk+2
 gtk+3
 gvfs
