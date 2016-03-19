@@ -29,7 +29,7 @@ gigolo
 gimp
 glibmm
 gobject-introspection
-gst-plugins-base
+gst-plugins-base0
 gst-plugins-good
 gst-plugins-good0
 gst0-python
