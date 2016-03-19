@@ -85,8 +85,6 @@ mutagen
 ndisgtk
 ndiswrapper
 notify-python
-obex-data-server
-obexfs
 obexftp
 openexr
 openjpeg
