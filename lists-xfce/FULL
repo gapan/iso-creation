@@ -31,8 +31,8 @@ glibmm
 gobject-introspection
 gst-plugins-base
 gst-plugins-good
-gst-plugins-good1
-gst-python
+gst-plugins-good0
+gst0-python
 gstreamer0
 gtk-xfce-engine
 gtkman
