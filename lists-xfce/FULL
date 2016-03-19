@@ -1,3 +1,5 @@
+ModemManager
+NetworkManager
 asunder
 atkmm
 atril
@@ -68,7 +70,10 @@ libhangul
 libical
 libid3tag
 libisofs
+libmbim
 libmms
+libndp
+libqmi
 libreoffice
 libreplaygain
 libshout
@@ -80,11 +85,14 @@ libwmf
 lilosetup
 madplay
 meld
+mobile-broadband-provider-info
 mpg123
 musepack-tools
 mutagen
 ndisgtk
 ndiswrapper
+network-manager-applet
+newt
 notify-python
 obexftp
 openexr
@@ -139,7 +147,6 @@ v4l-utils
 viewnior
 vorbis-tools
 wavpack
-wicd
 wireless-tools
 wpa_supplicant
 xdg-user-dirs
