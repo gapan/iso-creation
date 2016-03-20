@@ -1,13 +1,10 @@
 #!/bin/bash
 
-# FIXME!
-#
-# Why does xorriso need root priviliges? It shouldn't have to.
 
-#~ if [ "$UID" -eq "0" ]; then
-	#~ echo "Don't run this script as root"
-	#~ exit 1
-#~ fi
+ if [ "$UID" -eq "0" ]; then
+	echo "Don't run this script as root"
+	exit 1
+fi
 
 
 ISOHYBRID_MBR=/usr/share/syslinux/isohdpfx.bin
@@ -60,7 +57,7 @@ fi
     -isohybrid-mbr $ISOHYBRID_MBR \
     -hide-rr-moved \
     -U \
-    -V "SALIX${LIBDIRSUFFIX}_${edition}_${ver}" \
+    -V "SALIX${LIBDIRSUFFIX}" \
     -J \
     -joliet-long \
     -r \
