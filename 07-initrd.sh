@@ -268,7 +268,7 @@ if [ "$arch" == "x86_64" ] ; then
 else
 	#
 	# first create a combined initrd
-	# (we're disabling this for now)
+	# (we are disabling this for now)
 	#echo "Repacking i486 initrd (combined smp and non-smp)..."
 	#depmod -b /boot/initrd-tree/ $( uname -r | sed "s/-smp//" )
 	#mkinitrd -o $CWD/initrd/$arch/initrd.img
