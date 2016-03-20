@@ -26,8 +26,6 @@
 # As always, bug reports, suggestions, etc: volkerdi@slackware.com
 #
 export TEXTDOMAIN=salix-installer
-# gettext.sh will be needed if George decides to display another keymap
-# than us.map, as that would be a variable's value to be displayed.
 . gettext.sh
 TMP=/var/log/setup/tmp
 if [ ! -d $TMP ]; then
@@ -37,22 +35,27 @@ fi
 /usr/lib/setup/unmigrate.sh
 rm -f $TMP/SeT*
 rm -f $TMP/isAuto
-# If a keymap was set up, restore that data:
+# If a keymap was set up, restore that data.
+# Although unlikely we can't competely rule out that the user quits
+# installation, do a "rm $TMP/Pkeymap" then type 'setup". In tha case we
+# assume the current keymap to be us.map. - Didier
 if [ -r $TMP/Pkeymap ]; then
   cp $TMP/Pkeymap $TMP/SeTkeymap
+else 
+  echo "us.map" > $TMP/SeTkeymap
 fi
 echo "on" > $TMP/SeTcolor # turn on color menus
 PATH="$PATH:/usr/lib/setup"
 export PATH;
 export COLOR=on
-
+KMAP=$(<$TMP/SeTkeymap)
 dialog --title "`gettext "WELCOME TO THE SALIX INSTALLATION"`" \
---yes-label "`gettext "Use US keymap"`" \
+--yes-label "`gettext "Keep the current keymap"`" \
 --no-label "`gettext "Select another keymap"`" \
---yesno "`gettext "Welcome to the installation of Salix, The Bonsai OS!
+--yesno "`eval_gettext "Welcome to the installation of Salix, The Bonsai OS!
 Before you proceed \
 with the rest of the installation, you might want to \
-select your keyboard map (keymap). The default keyboard map is the US keyboard map."`" 0 0
+select your keyboard map (keymap). The current keymap is $KMAP."`" 0 0
 [ $? -eq 1 ] && SeTkeymap
 
 while [ 0 ]; do
