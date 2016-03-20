@@ -1,5 +1,5 @@
  
- Welcome to 09Salix __EDITION__07 version 14.1!
+ Welcome to 09Salix __EDITION__07 version 14.2!
 
  Some PCs may require extra kernel options to function properly.
  If you need to pass extra parameters, enter them at the prompt below
