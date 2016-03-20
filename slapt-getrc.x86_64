@@ -1,19 +1,14 @@
 # Working directory for local storage/cache.
 WORKINGDIR=/var/slapt-get
 
-# Exclude package names and expressions.
-# To exclude pre and beta packages, add this to the exclude: 
-#   [0-9\_\.\-]{1}pre[0-9\-\.\-]{1}
-EXCLUDE=^aaa_elflibs,^aaa_base,^devs,^glibc-.*,^kernel-.*,^udev,^rootuser-settings,^zzz-settings,.*-[0-9]+dl$,-i?86-
+#
+# This assumes that you have a local mirror of the repositories mounted
+# under /mnt/repos
 
-# Mount the repository somewhere locally so that everything is not
-# downloaded every time from the net and it doesn't take a long time to
-# do it in the process...
-
-# Slackware repository
-SOURCE=file:///media/sf_versions/slackware-14.2/:OFFICIAL
+# The Slackware repository
+SOURCE=file:///mnt/repos/x86_64/slackware-14.2/:OFFICIAL
+SOURCE=file:///mnt/repos/x86_64/slackware-14.2/extra/:OFFICIAL
 
 # The Salix repository
-SOURCE=file:///media/sf_versions/14.1/:PREFERRED
-SOURCE=file:///media/sf_versions/14.2/:CUSTOM
+SOURCE=file:///mnt/repos/x86_64/14.2/:PREFERRED
 

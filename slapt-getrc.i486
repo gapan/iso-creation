@@ -1,28 +1,14 @@
 # Working directory for local storage/cache.
 WORKINGDIR=/var/slapt-get
 
-# Exclude package names and expressions.
-# To exclude pre and beta packages, add this to the exclude: 
-#   [0-9\_\.\-]{1}pre[0-9\-\.\-]{1}
-EXCLUDE=^aaa_elflibs,^aaa_base,^devs,^glibc-.*,^kernel-.*,^udev,^rootuser-settings,^zzz-settings,.*-[0-9]+dl$,-x86_64-
+#
+# This assumes that you have a local mirror of the repositories mounted
+# under /mnt/repos
 
-# These is a Slackware repository that only holds dependency info. The
-# actual packages are downloaded from a real Slackware mirror. Read
-# http://www.salixos.org/wiki/index.php/How_to_create_a_local_slackware_repository_with_dependency_support
-# if you want to use another Slackware mirror and keep the dependency
-# information.
-SOURCE=http://salix.enialis.net/i486/slackware-14.1/:OFFICIAL
-SOURCE=http://salix.enialis.net/i486/slackware-14.1/extra/:OFFICIAL
+# The Slackware repository
+SOURCE=file:///mnt/repos/i486/slackware-14.2/:OFFICIAL
+SOURCE=file:///mnt/repos/i486/slackware-14.2/extra/:OFFICIAL
 
 # The Salix repository
-SOURCE=http://salix.enialis.net/i486/14.1/:PREFERRED
+SOURCE=file:///mnt/repos/i486/14.2/:PREFERRED
 
-# Sources for the testing and pasture areas - if you use them.
-# SOURCE=ftp://ftp.osuosl.org/pub/slackware/slackware-14.1/testing/
-# SOURCE=ftp://ftp.osuosl.org/pub/slackware/slackware-14.1/pasture/
-
-# Packages on a CD/DVD.
-# SOURCE=file:///mnt/cdrom/:OFFICIAL
-
-# Home made packages.
-# SOURCE=file:///var/www/packages/:CUSTOM
