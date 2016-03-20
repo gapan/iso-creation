@@ -123,7 +123,6 @@ cp $SCRIPTSDIR/usr-lib-setup/* /boot/initrd-tree/usr/lib/setup/
 rm -f slack.md5 salix.md5
 echo "Downloading slack CHECKSUMS.md5 file"
 wget -q $SLACKREPO/CHECKSUMS.md5 -O slack.md5
-grep " xz-*t?z" slack.md5
 echo "Downloading salix CHECKSUMS.md5 file"
 wget -q $SALIXREPO/CHECKSUMS.md5 -O salix.md5
 
@@ -166,7 +165,7 @@ echo "Installing terminus fonts"
 rm -f terminus-font-*
 LOC=`grep "terminus-font.*t[gx]z$" slack.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
 wget -q $SLACKREPO/$LOC
-FONT_LIST=$(grep -o "FONT[^=]*=[^;]*" SeTlocales|sort|uniq|cut -d= -f2|sed ':a;N;s/\n/ /;ta')
+FONT_LIST=$(grep -o "FONT[^=]*=[^;]*" initrd-scripts/usr-lib-setup/SeTlocales|sort|uniq|cut -d= -f2|sed ':a;N;s/\n/ /;ta')
 for i in $FONT_LIST; do
   tar xf terminus-font-*t?z -C /boot/initrd-tree \
     usr/share/kbd/consolefonts/$i
@@ -179,12 +178,12 @@ install_fonts
 install_messages_catalogs() {
 echo "Installing messages catalogs"
 SLINTREPO="http://slint.fr/testing"
-rm -f salix-installer-messages-*z
+rm -f salix-installer-msg*
 # For now (testing) the catalogs are just the Slint ones, renamed
 # salix-installer.mo instead of slint.mo - Didier
 wget -q $SLINTREPO/salix-installer-msg-noarch-1.txz
 spkg -qq -i --root=/boot/initrd-tree/ salix-installer-msg-noarch-1.txz
-rm -f rm -f salix-installer-msg-noarch-1.txz
+rm -f salix-installer-msg*
 }
 install_messages_catalogs
 
@@ -268,7 +267,7 @@ if [ "$arch" == "x86_64" ] ; then
 else
 	#
 	# first create a combined initrd
-	# (we are disabling this for now)
+	# (we're disabling this for now)
 	#echo "Repacking i486 initrd (combined smp and non-smp)..."
 	#depmod -b /boot/initrd-tree/ $( uname -r | sed "s/-smp//" )
 	#mkinitrd -o $CWD/initrd/$arch/initrd.img
