@@ -107,11 +107,13 @@ pavucontrol
 perl-File-BaseDir
 perl-File-DesktopEntry
 perl-File-MimeInfo
+perl-Module-Build
 perl-cairo
 perl-extutils-depends
 perl-extutils-pkgconfig
 perl-glib
 perl-gtk2
+perl-inc-latest
 perl-pango
 pidgin
 poppler
