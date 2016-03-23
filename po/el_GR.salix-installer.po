@@ -1,0 +1,3221 @@
+# This file is put in the public domain.
+#
+# Translators:
+# Didier Spaier <didier (at) slint (dot) fr>, 2014.
+# Didier Spaier <didier@slint.fr>, 2014.
+# Dimitris Tzemos <dijemos@gmail.com>, 2013,2016.
+# gapan <vlahavas@gmail.com>, 2016.
+# kvisitor <kvisitor@gnugr.org>, 2013.
+# rmoki <rmoki@scita.gr>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: Salix-15.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-03-23 18:24+0100\n"
+"PO-Revision-Date: 2016-03-21 23:23+0100\n"
+"Last-Translator: \n"
+"Language-Team: American English <kde-i18n-doc@kde.org>\n"
+"Language: el_GR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.5\n"
+
+#
+# File: 32-INCISO, line: 14
+# File: 64-INCISO, line: 14
+msgid "USE ISO IMAGE"
+msgstr "ΧΡΗΣΗ ΤΗΣ ΕΙΚΟΝΑΣ ISO"
+
+#
+# File: INCISO, line: 33
+msgid ""
+"\n"
+"Setup has found ISO images in the source directory.\n"
+"\n"
+"Select an image if you want to use it as an installation source?\n"
+msgstr ""
+
+#
+# File: INCISO, line: 52
+msgid ""
+"\n"
+"Mounting ISO image...\n"
+msgstr ""
+
+#
+# File: 32-INSCD, line: 15
+# File: 64-INSCD, line: 15
+msgid "SCANNING FOR CD or DVD DRIVE"
+msgstr "ΣΑΡΩΣΗ ΓΙΑ ΜΟΝΑΔΑ CD/DVD"
+
+#
+# File: 32-INSCD, line: 16
+# File: 64-INSCD, line: 16
+#, fuzzy
+msgid ""
+"Make sure the Salix disc is in your CD/DVD drive, and then press ENTER to "
+"begin the scanning process. Or, if you'd rather specify the device name "
+"manually (experts only), choose that option below."
+msgstr ""
+"Τοποθετήστε το CD του Slint στη μονάδα CD/DVD και πατήστε ENTER για να "
+"ξεκινήσει η ανίχνευση συσκευής. Αν προτιμάτε να καθορίσετε χειρωνακτικά το "
+"όνομα της συσκευής (μόνο για έμπειρους χρήστες), κάντε αυτή την επιλογή "
+"παρακάτω."
+
+#
+# File: 32-INSCD, line: 21
+# File: 64-INSCD, line: 21
+msgid "Scan for the CD or DVD drive (recommended)"
+msgstr "Αυτόματη ανίχνευση της μονάδας CD/DVD (συνιστάται)"
+
+#
+# File: 32-INSCD, line: 22
+# File: 64-INSCD, line: 22
+msgid "Manually specify CD or DVD by device name"
+msgstr ""
+"Χειρωνακτικός καθορισμός της μονάδας CD/DVD: Πληκτρολογήστε το όνομα της "
+"συσκευής."
+
+#
+# File: 32-INSCD, line: 31
+# File: 64-INSCD, line: 31
+msgid "MANUAL CD/DVD DEVICE SELECTION"
+msgstr "ΜΗ ΑΥΤΟΜΑΤΗ ΕΠΙΛΟΓΗ ΤΗΣ ΜΟΝΑΔΑΣ CD/DVD"
+
+#
+# File: 32-INSCD, line: 32
+# File: 64-INSCD, line: 32
+msgid ""
+"Please select your CD/DVD device from the list below.  If you don't see your "
+"device listed, choose 'custom'.  This will let you type in any device name. "
+"(and if necessary, will create the device)"
+msgstr ""
+"Επιλέξτε τη μονάδα CD/DVD σου απ' την παρακάτω λίστα. Εάν η συσκευή σου δεν "
+"υπάρχει, επιλέξτε \"παραμετροποίηση\". Μετά πληκτρολογήστε το όνομα της "
+"συσκευής σας (και αν χρειαστεί, θα δημιουργηθεί στη συνέχεια)"
+
+#
+# File: 32-INSCD, line: 37
+# File: 64-INSCD, line: 37
+msgid "Type in the CD or DVD device to use"
+msgstr ""
+"Πληκτρολογήστε το όνομα της συσκευής που αντιστοιχεί στη μονάδα CD/DVD που "
+"θα χρησιμοποιηθεί"
+
+#
+# File: 32-INSCD, line: 38
+# File: 64-INSCD, line: 38
+msgid "First CD/DVD drive"
+msgstr "Πρώτο CD/DVD"
+
+#
+# File: 32-INSCD, line: 39
+# File: 64-INSCD, line: 39
+msgid "Second CD/DVD drive"
+msgstr "Δεύτερο CD/DVD"
+
+#
+# File: 32-INSCD, line: 40
+# File: 64-INSCD, line: 40
+msgid "Third CD/DVD drive"
+msgstr "Τρίτο CD/DVD"
+
+#
+# File: 32-INSCD, line: 41
+# File: 64-INSCD, line: 41
+msgid "Fourth CD/DVD drive"
+msgstr "Τέταρτο CD/DVD"
+
+#
+# File: 32-INSCD, line: 50
+# File: 64-INSCD, line: 50
+msgid "First parallel port ATAPI CD"
+msgstr "Πρώτο CD ATAPI σε παράλληλη θύρα"
+
+#
+# File: 32-INSCD, line: 51
+# File: 64-INSCD, line: 51
+msgid "Second parallel port ATAPI CD"
+msgstr "Δεύτερο CD ATAPI σε παράλληλη θύρα"
+
+#
+# File: 32-INSCD, line: 52
+# File: 64-INSCD, line: 52
+msgid "Third parallel port ATAPI CD"
+msgstr "Τρίτο CD ATAPI σε παράλληλη θύρα"
+
+#
+# File: 32-INSCD, line: 53
+# File: 64-INSCD, line: 53
+msgid "Fourth parallel port ATAPI CD"
+msgstr "Τέταρτο CD ATAPI σε παράλληλη θύρα"
+
+#
+# File: 32-INSCD, line: 54
+# File: 64-INSCD, line: 54
+msgid "Non-IDE Aztech CD/DVD"
+msgstr "CD/DVD Aztech όχι IDE"
+
+#
+# File: 32-INSCD, line: 55
+# File: 64-INSCD, line: 55
+msgid "Sony CDU-535 CD/DVD"
+msgstr "CD/DVD Sony CDU-535"
+
+#
+# File: 32-INSCD, line: 56
+# File: 64-INSCD, line: 56
+msgid "Non-IDE GoldStar CD/DVD"
+msgstr "CD/DVD GoldStar όχι IDE"
+
+#
+# File: 32-INSCD, line: 57
+# File: 64-INSCD, line: 57
+msgid "Sony CDU-31a CD/DVD"
+msgstr "CD/DVD Sony CDU-31a"
+
+#
+# File: 32-INSCD, line: 58
+# File: 64-INSCD, line: 58
+msgid "Optics Storage CD/DVD"
+msgstr "CD/DVD Optics Storage"
+
+#
+# File: 32-INSCD, line: 59
+# File: 64-INSCD, line: 59
+msgid "Sanyo non-IDE CD/DVD"
+msgstr "CD/DVD Sanyo όχι IDE"
+
+#
+# File: 32-INSCD, line: 60
+# File: 64-INSCD, line: 60
+msgid "Non-IDE Mitsumi drive 1"
+msgstr "Οδηγός Mitsumi 1 όχι IDE"
+
+#
+# File: 32-INSCD, line: 61
+# File: 64-INSCD, line: 61
+msgid "Non-IDE Mitsumi drive 2"
+msgstr "Οδηγός Mitsumi 2 όχι IDE"
+
+#
+# File: 32-INSCD, line: 62
+# File: 64-INSCD, line: 62
+msgid "Old non-IDE SoundBlaster CD/DVD"
+msgstr "Παλαιότερα CD/DVD SoundBlaster όχι IDE"
+
+#
+# File: 32-INSCD, line: 63
+# File: 64-INSCD, line: 63
+msgid "Philips LMS CM-205 CD/DVD"
+msgstr "CD/DVD Philips LMS CM-205"
+
+#
+# File: 32-INSCD, line: 64
+# File: 64-INSCD, line: 64
+msgid "Philips LMS CM-206 CD/DVD"
+msgstr "CD/DVD Philips LMS CM-206"
+
+#
+# File: 32-INSCD, line: 65
+# File: 64-INSCD, line: 65
+msgid "Old non-IDE Mitsumi CD/DVD"
+msgstr "Παλαιότερο CD/DVD Mitsumi όχι IDE"
+
+#
+# File: 32-INSCD, line: 74
+# File: 64-INSCD, line: 74
+msgid "ENTER CD/DVD DEVICE MANUALLY"
+msgstr "ΜΗ ΑΥΤΟΜΑΤΗ ΕΠΙΛΟΓΗ ΜΟΝΑΔΑΣ CD/DVD"
+
+#
+# File: 32-INSCD, line: 75
+# File: 64-INSCD, line: 75
+#, fuzzy
+msgid ""
+"Please enter the name of the CD/DVD device (such as /dev/hdc) that you wish "
+"to use to mount the Salix CD/DVD:"
+msgstr ""
+"Πληκτρολογήστε το όνομα της συσκεύς CD/DVD (πχ, /dev/hdc) στην οποία θα "
+"προσαρτηθεί το CD/DVD Slint:"
+
+#
+# File: 32-INSCD, line: 86
+# File: 64-INSCD, line: 86
+msgid "MKNOD CD/DVD DEVICE"
+msgstr "MKNOD CD/DVD DEVICE"
+
+#
+# File: 32-INSCD, line: 87
+# File: 64-INSCD, line: 87
+#, sh-format
+msgid ""
+"There doesn't seem to be a device by the name of $DRIVE_FOUND in the /dev "
+"directory, so we will have to create it using the major and minor numbers "
+"for the device.  If you're using a bootdisk with a custom CD/DVD driver on "
+"it, you should be able to find these numbers in the documentation.  Also, "
+"see the 'devices.txt' file that comes with the Linux kernel source.  If you "
+"don't know the numbers, you'll have to hit Esc to abort. Enter the major and "
+"minor numbers for the new device, separated by one space:"
+msgstr ""
+"Δεν υπάρχει συσκευή με το όνομα $DRIVE_FOUND στον φάκελο /dev, οπότε θα την "
+"δημιουργήσουμε χρησιμοποιώντας τα μέγιστα και ελάχιστα νούμερα της συσκευής. "
+"Αν χρησιμοποιείς ένα δίσκο εκκίνησης με παραμετροποιημένο driver CD/DVD, "
+"αυτά τα νούμερα θα πρέπει να υπάρχουν στο εγχειρίδιο χρήσης. Επίσης, εξέτασε "
+"το αρχείο \"devices.txt\" που υπάρχει στον κώδικα του Linux kernel. Αν δεν "
+"γνωρίζεις αυτά τα νούμερα, θα πρέπει να πατήσεις ESC για να ακυρωθεί η "
+"εγκατάσταση.Πληκτρολόγησε τα μέγιστα και ελάχιστα νούμερα της καινούριας "
+"συσκευής, αφήνοντας ένα κενό ανάμεσά τους:"
+
+#
+# File: 32-INSCD, line: 102
+# File: 64-INSCD, line: 102
+msgid "MAKING DEVICE IN /dev"
+msgstr "ΔΗΜΙΟΥΡΓΙΑ ΣΥΣΚΕΥΗΣ ΣΤΟ /dev"
+
+#
+# File: 32-INSCD, line: 107
+# File: 64-INSCD, line: 107
+msgid "MKNOD FAILED"
+msgstr "ΤΟ MKNOD ΑΠΕΤΥΧΕ"
+
+#
+# File: 32-INSCD, line: 108
+# File: 64-INSCD, line: 108
+msgid ""
+"Sorry, but the mknod command failed to make the device.  You'll need to go "
+"back and try selecting your source media again.  Press ENTER to abort the "
+"source media selection process."
+msgstr ""
+"Λυπόμαστε, αλλά η εντολή mknod απέτυχε να δημιουργήσει τη συσκευή. Θα πρέπει "
+"να επιστρέψεις στο προηγούμενο μενού και να επιλέξεις ξανά τη μονάδα CD/DVD "
+"σου που περιέχει το CD/DVD του Slint. Πάτα ENTER για να ακυρωθεί η "
+"διαδικασία επιλογής συσκευής."
+
+#
+# File: 32-INSCD, line: 122
+# File: 32-INSCD, line: 139
+# File: 32-INSCD, line: 159
+# File: 32-INSCD, line: 179
+# File: 64-INSCD, line: 122
+# File: 64-INSCD, line: 139
+# File: 64-INSCD, line: 159
+# File: 64-INSCD, line: 179
+msgid "SCANNING"
+msgstr "ΑΝΙΧΝΕΥΣΗ"
+
+#
+# File: 32-INSCD, line: 122
+# File: 64-INSCD, line: 122
+#, fuzzy
+msgid "Scanning for a CD/DVD drive containing a Salix disc..."
+msgstr "Ανίχνευση συσκευής CD/DVD που περιέχει το CD του Slint."
+
+#
+# File: 32-INSCD, line: 159
+# File: 64-INSCD, line: 159
+#, fuzzy
+msgid ""
+"Scanning for a parallel port ATAPI CD/DVD drive containing a Salix disc..."
+msgstr ""
+"Ανίχνευση συσκευής CD/DVD ATAPI σε παράλληλη θύρα που περιέχει το CD του "
+"Slint."
+
+#
+# File: 32-INSCD, line: 179
+# File: 64-INSCD, line: 179
+msgid ""
+"No IDE/SCSI drive, so we will try scanning for CD drives on old proprietary "
+"interfaces, such as SoundBlaster pre-IDE CD drives, Sony CDU-31a, Sony 535, "
+"old Mitsumi pre-IDE, old Optics, etc.  For this scan to work at all, you'll "
+"need to be using a bootdisk that supports your CD drive.\n"
+"\n"
+"Please press ENTER to begin this last-chance scan for old, obsolete hardware."
+msgstr ""
+"Δεν βρέθηκε δίσκος IDE/SCSI. Θα ψάξουμε για παλαιότερες μονάδες CD, τύπου "
+"SoundBlaster pre-IDE CD, Sony CDU-31a, Sony 535, παλαιότερα Mitsumi pre-IDE, "
+"παλαιότερα Optics,  κτλ. Σημείωση: η αναζήτηση δεν θα έχει αποτελέσματα αν ο "
+"δίσκος εκκίνησης που χρησιμοποιείται δεν υποστηρίζει τη μονάδα CD σας..\n"
+"\n"
+"Πιέστε ENTER για να ξεκινήσει η έρευνα για παλαιότερο hardware."
+
+#
+# File: 32-INSCD, line: 200
+# File: 64-INSCD, line: 200
+msgid "CD/DVD DRIVE NOT FOUND"
+msgstr "Η ΜΟΝΑΔΑ CD/DVD ΔΕΝ ΒΡΕΘΗΚΕ"
+
+#
+# File: 32-INSCD, line: 201
+# File: 64-INSCD, line: 201
+#, fuzzy
+msgid ""
+"A CD/DVD drive could not be found on any of the devices that were scanned.  "
+"Possible reasons include using a bootdisk or kernel that doesn't support "
+"your drive, failing to pass parameters needed by some drives to the kernel, "
+"not having the Salix disc in your CD/DVD drive, or using a drive connected "
+"to a Plug and Play soundcard (in this case, connecting the drive directly to "
+"the IDE interface often helps). Please make sure you are using the correct "
+"bootdisk for your hardware, consult the BOOTING file for possible "
+"information on forcing the detection of your drive, and then reattempt "
+"installation.  If all else fails, see FAQ.TXT for information about copying "
+"parts of this CD to your DOS partition and installing it from there.\n"
+"\n"
+"You will now be returned to the main menu.  If you want to try looking for "
+"the CD again, you may skip directly to the SOURCE menu selection."
+msgstr ""
+"Δεν βρέθηκε μονάδα CD/DVD σε καμία από τις συσκευές που ανιχνεύτηκαν. Αυτό "
+"πιθανώς να οφείλεται:Η εκκίνηση πραγματοποιήθηκε από δίσκο εκκίνησης ή "
+"πυρήνα που δεν υποστηρίζει τη συσκευή σας. Ο πυρήνας απαιτεί τη χρήση "
+"συγκεκριμένων παραμέτρων για την χρήση της συσκευής σας. Δεν έχετε "
+"τοποθετήσει το CD του Slint στη μονάδα CD/DVD Η συσκευή σας είναι "
+"συνδεδεμένη σε μία κάρτα ήχου \"Plug and Play\" (σε αυτήν την περίπτωση, το "
+"πρόβλημα ίσως λυθεί αν συνδέσετε τη συσκευή σας κατευθείαν στο κανάλι IDE). "
+"Βεβαιωθείτε ότι χρησιμοποιείτε το σωστό δίσκο εκκίνησης για το hardware του "
+"υπολογιστή σας, διαβάστε το αρχείο BOOTING για πληροφορίες σχετικά με το πώς "
+"να ανιχνεύσετε σωστά τη συσκευή σας και επανεκκινήστε την εγκατάσταση.Στην "
+"χειρότερη περίπτωση, το αρχείο FAQ.TXT έχει πληροφορίες για το πώς να "
+"αντιγράψετε κάποια μέρη αυτού του CD στην κατάτμηση DOS του υπολογιστή σας "
+"και να εγκαταστήστε μέσω DOS.\n"
+"\n"
+"Θα επιστρέψουμε στο κεντρικό μενού. Αν θέλετε να δοκιμάσετε ξανά να "
+"ανιχνεύσετε το CD σας, πηγαίνετε κατευθείαν στην επιλογή SOURCE."
+
+#
+# File: 32-INSCD, line: 223
+# File: 64-INSCD, line: 223
+#. mounted successfully
+msgid "CD/DVD DRIVE FOUND"
+msgstr "ΑΝΙΧΝΕΥΤΗΚΕ ΜΟΝΑΔΑ CD/DVD"
+
+#
+# File: 32-INSCD, line: 224
+# File: 64-INSCD, line: 224
+#, fuzzy, sh-format
+msgid "A Salix disc was found in device $DRIVE_FOUND."
+msgstr "Η ΜΟΝΑΔΑ $DRIVE_FOUND ΠΕΡΙΕΧΕΙ ΕΝΑ CD SLINT"
+
+#
+# File: 32-INSCD, line: 227
+# File: 32-INShd, line: 98
+# File: 32-pkgtool, line: 431
+# File: 64-INSCD, line: 227
+# File: 64-INShd, line: 98
+# File: 64-pkgtool, line: 431
+#. failed to mount
+msgid "MOUNT ERROR"
+msgstr "Η ΑΝΑΡΤΗΣΗ ΑΠΕΤΥΧΕ"
+
+#
+# File: 32-INSCD, line: 227
+# File: 64-INSCD, line: 227
+#, sh-format
+msgid ""
+"There was an error attempting to mount the CD/DVD on $DRIVE_FOUND.  Maybe "
+"the device name is incorrect, the disc is not in the drive, or the kernel "
+"you are using does not support the device. (possibly an incorrect bootdisk) "
+"What would you like to do now?"
+msgstr ""
+"Η ανάρτηση του CD/DVD στο $DRIVE_FOUND απέτυχε. Πιθανώς το όνομα της "
+"συσκευής είναι λανθασμένο, ή το CD δεν είναι στη μονάδα, ή ο πυρήνας που "
+"χρησιμοποιείτε δεν υποστηρίζει τη συσκευή (ίσως λόγω κάποιου σφάλματος στο "
+"δίσκο εκκίνησης). Τι θα θέλατε να γίνει τώρα;"
+
+#
+# File: 32-INSCD, line: 234
+# File: 64-INSCD, line: 234
+msgid "Abort CD installation"
+msgstr "Ακύρωση εγκατάστασης μέσω CD"
+
+#
+# File: 32-INSCD, line: 235
+# File: 64-INSCD, line: 235
+msgid "Attempt to mount the CD/DVD device again"
+msgstr "Επανάληψη ανάρτησης CD"
+
+#
+# File: 32-INSCD, line: 236
+# File: 32-INShd, line: 100
+# File: 64-INSCD, line: 236
+# File: 64-INShd, line: 100
+msgid "Ignore the error and continue"
+msgstr "Συνέχεια της εγκατάστασης, αγνοώντας το σφάλμα"
+
+#
+# File: 32-INSCD, line: 248
+# File: 64-INSCD, line: 248
+#, sh-format
+msgid "ATTEMPTING TO MOUNT CD/DVD on $DRIVE_FOUND"
+msgstr "ΑΠΟΠΕΙΡΑ ΑΝΑΡΤΗΣΗΣ ΤΟΥ CD/DVD ΣΤΟ $DRIVE_FOUND"
+
+#
+# File: 32-INSCD, line: 249
+# File: 64-INSCD, line: 249
+#, sh-format
+msgid ""
+"Attempting to mount your CD/DVD again with the following command:\n"
+"$ArG"
+msgstr ""
+"Απόπειρα ανάρτησης του CD/DVD μέσω της ακόλουθης εντολής:\n"
+"$ArG"
+
+#
+# File: 32-INSNFS, line: 24
+# File: 64-INSNFS, line: 24
+#, fuzzy
+msgid ""
+"\n"
+"Good! We're all set on the local end, but now we need to know where to find "
+"the software packages to install.  First, we need the IP address of the "
+"machine where the Salix sources are stored."
+msgstr ""
+"Ωραία! Τελειώσαμε με τις τοπικές ρυθμίσεις, αλλά τώρα πρέπει να "
+"προσδιορίσουμε\n"
+"πού βρίσκονται τα πακέτα που θα εγκαταστήσουμε. Χρειαζόμαστε τη διεύθυνση "
+"IP\n"
+"του υπολογιστή που περιέχει τον πηγαίο κώδικα των πακέτων Slint."
+
+#
+# File: 32-INSURL, line: 71
+# File: 64-INSURL, line: 71
+#, fuzzy
+msgid ""
+"Since you're already running on the network, you should be able to use the "
+"hostname instead of an IP address if you wish."
+msgstr ""
+"Εφόσον το δίκτυο είναι ήδη σε λειτουργία, μπορείτε αντί για την διεύθυνση IP "
+"να χρησιμοποιήσετε το hostname σας.\n"
+
+#
+# File: 32-INSNFS, line: 36
+# File: 64-INSNFS, line: 36
+msgid "What is the IP address of your NFS server?"
+msgstr "Ποια είναι η διεύθυνση IP του server NFS;"
+
+#
+# File: 32-INSNFS, line: 38
+# File: 64-INSNFS, line: 38
+msgid "ENTER IP ADDRESS OF NFS SERVER"
+msgstr "ΠΛΗΚΤΡΟΛΟΓΗΣΤΕ ΤΗΝ ΔΙΕΥΘΥΝΣΗ IP ΤΟΥ NFS SERVER ΣΑΣ"
+
+#
+# File: 32-INSURL, line: 86
+# File: 64-INSURL, line: 86
+#, fuzzy, sh-format
+msgid ""
+"\n"
+"There must be a directory on the server with the Salix packages and files "
+"arranged in a tree like the FTP site.\n"
+"\n"
+"The installation script needs to know the name of the directory on your "
+"server that contains the series' subdirectories. For example, if your A "
+"series is found at /stuff/salix/a, then you would respond: /stuff/salix\n"
+"\n"
+"What is the Salix source directory?"
+msgstr ""
+"\n"
+"Μέσα στο server πρέπει να υπάρχει ένας φάκελος με τα πακέτα του Slint και να "
+"είναι δομημένος ιεραρχικά, παρόμοια με τον διακομιστή FTP.\n"
+"\n"
+"Το script της εγκατάστασης χρειάζεται το όνομα του φακέλου μέσα στον server "
+"που περιέχει τους υποφακέλους με τις σειρές λογισμικού. Π.χ. αν η σειρά A "
+"βρίσκεται στο\n"
+"/stuff/slint$SFX/a, πληκτρολογήστε: /stuff/slint$SFX\n"
+"\n"
+"Δώστε το όνομα του φακέλου με τις πηγές λογισμικού του Slint:\n"
+
+#
+# File: 32-INSNFS, line: 56
+# File: 32-INSSMB, line: 56
+# File: 32-INSURL, line: 97
+# File: 32-INShd, line: 58
+# File: 32-pkgtool, line: 385
+# File: 64-INSNFS, line: 56
+# File: 64-INSSMB, line: 56
+# File: 64-INSURL, line: 97
+# File: 64-INShd, line: 58
+# File: 64-pkgtool, line: 385
+msgid "SELECT SOURCE DIRECTORY"
+msgstr "ΕΠΙΛΕΞΤΕ ΦΑΚΕΛΟ"
+
+#
+# File: 32-INSNFS, line: 64
+# File: 64-INSNFS, line: 64
+#, fuzzy
+msgid ""
+"\n"
+"In the next screen you should watch for NFS mount errors.\n"
+"\n"
+"If you see errors and you don't see your NFS server listed, then try setting "
+"up NFS again.\n"
+"\n"
+msgstr ""
+"\n"
+"Καθώς προχωράμε, θα πρέπει να έχετε το νου σας για λάθη στην ανάρτηση του "
+"NFS. Αν εμφανιστούν μηνύματα λάθους και ο server NFS δεν εμφανιστεί στη "
+"λίστα, θα πρέπει να ξαναπροσπαθήσετε να τον ρυθμίσετε.\n"
+
+#
+# File: 32-INSNFS, line: 68
+# File: 64-INSNFS, line: 68
+msgid "NFS MOUNT INFORMATION"
+msgstr "ΠΛΗΡΟΦΟΡΙΕΣ ΠΡΟΣΑΡΤΗΣΗΣ ΑΠΟΜΑΚΡΥΣΜΕΝΟΥ ΣΥΣΤΗΜΑΤΟΣ ΑΡΧΕΙΩΝ NFS"
+
+#
+# File: 32-INSNFS, line: 83
+# File: 64-INSNFS, line: 83
+#, sh-format
+msgid "Mounting $REMOTE_PATH:"
+msgstr "Προσάρτηση $REMOTE_PATH:"
+
+#
+# File: 32-INSNFS, line: 88
+# File: 64-INSNFS, line: 88
+msgid "Didn't work."
+msgstr "Αποτυχία"
+
+#
+# File: 32-INSNFS, line: 90
+# File: 64-INSNFS, line: 90
+msgid "Maybe you should check that the directory name is correct?"
+msgstr "Είστε σίγουροι ότι το όνομα φακέλου που πληκτρολογήσατε είναι σωστό;"
+
+#
+# File: 32-INSNFS, line: 97
+# File: 64-INSNFS, line: 97
+msgid "Current NFS mounts:"
+msgstr "Έχουν προσαρτηθεί τα παρακάτω απομακρυσμένα συστήματα αρχείων NFS:"
+
+#
+# File: 32-INSNFS, line: 101
+# File: 64-INSNFS, line: 101
+msgid "Do you need to try setting up NFS again?"
+msgstr "Θέλετε να ξαναδοκιμάσουμε να ρυθμίσουμε το NFS;"
+
+#
+# File: 32-INSNFS, line: 104
+# File: 32-INSNFS, line: 108
+# File: 64-INSNFS, line: 104
+# File: 64-INSNFS, line: 108
+msgid "NFS MOUNT RESULT"
+msgstr "ΑΠΟΤΕΛΕΣΜΑ ΠΡΟΣΑΡΤΗΣΗΣ NFS:"
+
+#
+# File: 32-INSSMB, line: 23
+# File: 64-INSSMB, line: 23
+#, fuzzy
+msgid ""
+"\n"
+"Good! We're all set on the local end, but now we need to know where to find "
+"the software packages to install. First, we need the share address of the "
+"Samba server where the Salix sources are stored.\n"
+"\n"
+"Example share address: //192.168.0.1/public\n"
+msgstr ""
+"\n"
+"Ωραία! Τελειώσαμε με τις τοπικές ρυθμίσεις, αλλά τώρα πρέπει να "
+"προσδιορίσουμε\n"
+"πού βρίσκονται τα πακέτα που θα εγκαταστήσουμε. Χρειαζόμαστε\n"
+"τη διεύθυνση του server διαμοιρασμού αρχείων Samba το οποίο περιέχει\n"
+"τον πηγαίο κώδικα των πακέτων Slint.\n"
+"Π.χ.: //192.168.0.1/public\n"
+
+#
+# File: 32-INSURL, line: 71
+# File: 64-INSURL, line: 71
+msgid ""
+"Since you're already running on the network, you should be able to use the "
+"hostname instead of an IP address if you wish.\n"
+msgstr ""
+"Εφόσον το δίκτυο είναι ήδη σε λειτουργία, μπορείτε αντί για την διεύθυνση IP "
+"να χρησιμοποιήσετε το hostname σας.\n"
+
+#
+# File: 32-INSSMB, line: 36
+# File: 64-INSSMB, line: 36
+msgid ""
+"\n"
+"What is the share address of your Samba server? "
+msgstr ""
+"\n"
+"Πληκτρολογήστε τη διεύθυνση του server διαμοιρασμού αρχείων Samba. "
+
+#
+# File: 32-INSSMB, line: 38
+# File: 64-INSSMB, line: 38
+msgid "ENTER SHARE ADDRESS OF SAMBA SERVER"
+msgstr "ΠΛΗΚΤΡΟΛΟΓΗΣΤΕ ΤΗ ΔΙΕΥΘΥΝΣΗ ΤΟΥ SERVER ΔΙΑΜΟΙΡΑΣΜΟΥ ΑΡΧΕΙΩΝ SAMBA"
+
+#
+# File: 32-INSSMB, line: 46
+# File: 64-INSSMB, line: 46
+#, fuzzy, sh-format
+msgid ""
+"\n"
+"There must be a directory on the server with the Salix packages and files "
+"arranged in a tree like the FTP site. \n"
+"The installation script needs to know the name of the directory below your "
+"Samba share that contains the series subdirectories. For example, if your A "
+"series is found at /stuff/salix/a, then you would respond: /stuff/salix \n"
+"What is the Salix source directory?"
+msgstr ""
+"\n"
+"Μέσα στο server πρέπει να υπάρχει ένας φάκελος με τα πακέτα του Slint\n"
+"και να είναι δομημένος ιεραρχικά, παρόμοια με τον διακομιστή FTP.\n"
+"\n"
+"Το script της εγκατάστασης χρειάζεται το όνομα του φακέλου\n"
+"πού, μέσα στον server διαμοιρασμού αρχείων Samba περιέχει\n"
+"τους υποφακέλους με τις σειρές λογισμικού. Π.χ. αν η σειρά A βρίσκεται στο\n"
+"/stuff/slint$SFX/a, πληκτρολογήστε: /stuff/slint$SFX\n"
+"\n"
+"Δώστε το όνομα του φακέλου με τις πηγές λογισμικού του Slint:"
+
+#
+# File: 32-INSSMB, line: 65
+# File: 64-INSSMB, line: 65
+msgid "You should see no mount errors:"
+msgstr "Εάν δεν εμφανίζονται μηνύματα σφάλματος, είμαστε εντάξει:"
+
+#
+# File: 32-INSSMB, line: 67
+# File: 64-INSSMB, line: 67
+#, sh-format
+msgid "Mounting $REMOTE_SHARE ..."
+msgstr "Προσάρτηση  $REMOTE_SHARE ..."
+
+#
+# File: 32-INSSMB, line: 73
+# File: 64-INSSMB, line: 73
+msgid "Mount failed."
+msgstr "Η προσάρτηση απέτυχε."
+
+#
+# File: 32-INSSMB, line: 78
+# File: 64-INSSMB, line: 78
+msgid "Mounted Samba share(s):"
+msgstr "Προσαρτημένοι server Samba:"
+
+#
+# File: 32-INSSMB, line: 85
+# File: 64-INSSMB, line: 85
+#, fuzzy
+msgid "A Salix package tree was found! Ready to continue."
+msgstr "Βρήκαμε ένα κατάλογο με πακέτα Slint! Μπορούμε να συνεχίσουμε."
+
+#
+# File: 32-INSSMB, line: 89
+# File: 64-INSSMB, line: 89
+#, fuzzy
+msgid "No Salix package tree found at the indicated path!"
+msgstr "Δεν βρέθηκε κατάλογος με πακέτα Slint στο φάκελο που προσδιορίσατε!"
+
+#
+# File: 32-INSSMB, line: 95
+# File: 64-INSSMB, line: 95
+msgid "Do you want to try setting up Samba again?"
+msgstr "Να ξαναπροσπαθήσουμε να ρυθμίσουμε σωστά το Samba;"
+
+#
+# File: 32-INSSMB, line: 99
+# File: 32-INSSMB, line: 103
+# File: 64-INSSMB, line: 99
+# File: 64-INSSMB, line: 103
+msgid "MOUNT RESULT"
+msgstr "ΑΠΟΤΕΛΕΣΜΑ ΠΡΟΣΑΡΤΗΣΗΣ"
+
+#
+# File: 32-INSURL, line: 63
+# File: 64-INSURL, line: 63
+#, fuzzy
+msgid ""
+"\n"
+"Good! We're all set on the local end, but now we need to know where to find "
+"the software packages to install. First, we need the URL of the ftp or http "
+"server where the Salix sources are stored.\n"
+"URL examples are: 'ftp://192.168.0.1' ; 'http://172.16.10.31'\n"
+msgstr ""
+"Ωραία! Τελειώσαμε με τις τοπικές ρυθμίσεις, αλλά τώρα πρέπει να "
+"προσδιορίσουμε πού βρίσκονται τα πακέτα που θα εγκαταστήσουμε. Χρειαζόμαστε "
+"τη διεύθυνση URL του server  ftp ή httpτο οποίο περιέχει τον πηγαίο κώδικα "
+"των πακέτων Slint.\n"
+"Π.χ.: 'ftp://192.168.0.1' ; 'http://172.16.10.31'\n"
+
+#
+# File: 32-INSURL, line: 75
+# File: 64-INSURL, line: 75
+msgid ""
+"\n"
+"What is the URL of your FTP/HTTP server?\n"
+msgstr ""
+"\n"
+"Ποια είναι η διεύθυνση URL του FTP/HTTP server σας;\n"
+
+#
+# File: 32-INSURL, line: 78
+# File: 64-INSURL, line: 78
+msgid "ENTER URL OF FTP/HTTP SERVER"
+msgstr "ΠΛΗΚΤΡΟΛΟΓΗΣΤΕ ΤΗΝ URL ΤΟΥ SERVER FTP/HTTP"
+
+#
+# File: 32-INSURL, line: 86
+# File: 64-INSURL, line: 86
+#, fuzzy, sh-format
+msgid ""
+"\n"
+"There must be a directory on the server with the Salix packages and files "
+"arranged in a tree like the FTP site.\n"
+"\n"
+"The installation script needs to know the name of the directory on your "
+"server that contains the series subdirectories. For example, if your A "
+"series is found at /stuff/salix/a, then you would respond: /stuff/salix\n"
+"\n"
+"What is the Salix source directory?\n"
+msgstr ""
+"\n"
+"Μέσα στο server πρέπει να υπάρχει ένας φάκελος με τα πακέτα του Slint και να "
+"είναι δομημένος ιεραρχικά, παρόμοια με τον διακομιστή FTP.\n"
+"\n"
+"Το script της εγκατάστασης χρειάζεται το όνομα του φακέλου μέσα στον server "
+"που περιέχει τους υποφακέλους με τις σειρές λογισμικού. Π.χ. αν η σειρά A "
+"βρίσκεται στο\n"
+"/stuff/slint$SFX/a, πληκτρολογήστε: /stuff/slint$SFX\n"
+"\n"
+"Δώστε το όνομα του φακέλου με τις πηγές λογισμικού του Slint:\n"
+
+#
+# File: 32-INSURL, line: 106
+# File: 64-INSURL, line: 106
+#, fuzzy
+msgid ""
+"\n"
+"In the next screen you should watch for possible errors.\n"
+"\n"
+"First, we'll download the PACKAGES.TXT from the parent of the directory that "
+"you entered before (which should be the root of the remote Salix tree).  If "
+"that succeeds, then we use PACKAGES.TXT to reconstruct a local cache of the "
+"package tree (should take a minute or less on an average system).\n"
+"After that, we're all set to go!\n"
+"\n"
+"Downloading PACKAGES.TXT at the Salix root starts after you press OK.\n"
+"That file is several hundreds of KB in size so it may take some time to get "
+"here...\n"
+msgstr ""
+"\n"
+"Καθώς προχωράμε, έχετε το νου σας για πιθανά λάθη.\n"
+"\n"
+"Θα κατεβάσουμε το αρχείο PACKAGES.TXT από τον φάκελο που βρίσκεται ένα "
+"επίπεδο πάνω από αυτόν που πληκτρολογήσατε (ο οποίος, υπενθυμίζουμε, πρέπει "
+"να περιέχει το ανώτερο επίπεδο του καταλόγου πακέτων του Slint).  Στη "
+"συνέχεια θα χρησιμοποιήσουμε το PACKAGES.TXT για να δημιουργήσουμε τοπικά "
+"μία εικόνα του καταλόγου των πακέτων (δεν θα πάρει πάνω από ένα λεπτό αν το "
+"Στη συνέχεια, θα προχωρήσουμε με την εγκατάσταση\n"
+"\n"
+"Πιέστε \"OK\" για να ξεκινήσουμε να κατεβάζουμε το αρχείο PACKAGES.TXT .\n"
+"Αυτό το αρχείο είναι μερικές εκατοντάδες KB, οπότε ίσως χρειαστεί να "
+"περιμένετε...\n"
+
+#
+# File: 32-INSURL, line: 121
+# File: 64-INSURL, line: 121
+msgid "DOWNLOAD INFORMATION"
+msgstr "ΠΛΗΡΟΦΟΡΙΕΣ DOWNLOAD"
+
+#
+# File: 32-slackinstall, line: 60
+# File: 64-slackinstall, line: 60
+#. Two next line: > first, then >> - Didier Spaier
+#, fuzzy
+msgid "Downloading PACKAGES.TXT ..."
+msgstr "ΑΠΕΤΥΧΕ η μεταφόρτωση του $ArG2 ."
+
+#
+# File: 32-INSURL, line: 135
+# File: 64-INSURL, line: 135
+msgid "> Download failed. Going to try one directory lower."
+msgstr "> Το Download απέτυχε. Θα προσπαθήσουμε ξανά στον από επάνω φάκελο"
+
+#
+# File: 32-INSURL, line: 141
+# File: 64-INSURL, line: 141
+msgid "> Download failed again."
+msgstr "> Το Download απέτυχε ξανά"
+
+#
+# File: 32-INSURL, line: 148
+# File: 64-INSURL, line: 148
+#, fuzzy
+msgid "A Salix 'PACKAGES.TXT' is available. Ready to continue!"
+msgstr "Εντοπίσαμε το αρχείο 'PACKAGES.TXT'. Συνεχίζουμε!"
+
+#
+# File: 32-INSURL, line: 153
+# File: 64-INSURL, line: 153
+msgid "No file 'PACKAGES.TXT' was found. Wrong URL?"
+msgstr "Δεν βρήκαμε το αρχείο 'PACKAGES.TXT'. Λάθος διεύθυνση URL;"
+
+#
+# File: 32-INSURL, line: 158
+# File: 64-INSURL, line: 158
+msgid "Do you want to try setting up FTP/HTTP again? "
+msgstr "Θέλετε να προσπαθήσουμε ξανά να ρυθμίσουμε το FTP/HTTP;"
+
+#
+# File: 32-INSURL, line: 161
+# File: 32-INSURL, line: 165
+# File: 64-INSURL, line: 161
+# File: 64-INSURL, line: 165
+msgid "DOWNLOAD RESULT"
+msgstr "ΑΠΟΤΕΛΕΣΜΑ DOWNLOAD"
+
+#
+# File: 32-INSURL, line: 186
+# File: 32-INSURL, line: 226
+# File: 32-INSURL, line: 231
+# File: 64-INSURL, line: 186
+# File: 64-INSURL, line: 226
+# File: 64-INSURL, line: 231
+#. Make sure we can select stuff from the package series:
+msgid "INITIALIZING PACKAGE TREE"
+msgstr "ΕΤΟΙΜΑΣΙΑ ΤΟΥ ΚΑΤΑΛΟΓΟΥ ΠΑΚΕΤΩΝ"
+
+#
+# File: 32-INSURL, line: 187
+# File: 64-INSURL, line: 187
+msgid "Setting up local cache for the FTP/HTTP server's package tree ...\n"
+msgstr ""
+"Ρύθμιση της τοπικής κρυφής μνήμης (cache) για τον κατάλογο αρχείων από τον "
+"server FTP/HTTP ...\n"
+
+#
+# File: 32-INSURL, line: 227
+# File: 64-INSURL, line: 227
+#, fuzzy, sh-format
+msgid ""
+"\n"
+"processing ${TOTALP} Salix packages..."
+msgstr ""
+"\n"
+"επεξεργασία των πακέτων Slint ${TOTALP}..."
+
+#
+# File: 32-INSURL, line: 232
+# File: 64-INSURL, line: 232
+msgid ""
+"\n"
+"Retrieving tagfile information for the package tree ..."
+msgstr ""
+"\n"
+"Επεξεργασία των πληροφοριών που περιέχει το tagfile για τον κατάλογο "
+"πακέτων ..."
+
+#
+# File: 32-INSURL, line: 240
+# File: 64-INSURL, line: 240
+msgid "REMOTE SERVER CONFIGURATION"
+msgstr "ΠΡΟΕΤΟΙΜΑΣΙΑ ΤΟΥ ΑΠΟΜΑΚΡΥΣΜΕΝΟΥ SERVER"
+
+#
+# File: 32-INSURL, line: 241
+# File: 64-INSURL, line: 241
+msgid "Failed to configure for installation from remote server."
+msgstr ""
+"Η προετοιμασία του απομακρυσμένου server ως πηγή για εγκατάσταση απέτυχε."
+
+#
+# File: 32-INSUSB, line: 14
+# File: 64-INSUSB, line: 14
+msgid "SCANNING FOR USB STICK"
+msgstr "ΓΙΝΕΤΑΙ ΑΝΙΧΝΕΥΣΗ ΓΙΑ USB STICK"
+
+#
+# File: 32-INSUSB, line: 15
+# File: 64-INSUSB, line: 15
+#, fuzzy
+msgid ""
+"Make sure the USB stick containing the Salix package directory is inserted "
+"into a USB port, and then press ENTER to begin the scanning process."
+msgstr ""
+"Βεβαιωθείτε ότι το στικάκι USB που περιέχει τον κατάλογο πακέτων του Slint "
+"έχει εισαχθεί σε μία θύρα USB, και μετά πατήστε ENTER για να αρχίσει η "
+"διαδικασία σάρωσης."
+
+#
+# File: 32-INSUSB, line: 37
+# File: 64-INSUSB, line: 37
+msgid "NO REMOVABLE USB DEVICES FOUND"
+msgstr "ΔΕΝ ΒΡΕΘΗΚΑΝ ΑΦΑΙΡΕΣΙΜΕΣ ΣΥΣΚΕΥΕΣ USB"
+
+#
+# File: 32-INSUSB, line: 38
+# File: 64-INSUSB, line: 38
+msgid ""
+"Sorry, but no removable USB devices could be found.  Exiting back to the top "
+"menu."
+msgstr ""
+"Συγγνώμη, δεν ήταν δυνατόν να βρεθούν αφαιρέσιμες συσκευές USB. Γίνεται "
+"έξοδος στο αρχικό μενού."
+
+#
+# File: 32-INSUSB, line: 89
+# File: 64-INSUSB, line: 89
+#, fuzzy
+msgid "NO SALIX DIRECTORY FOUND"
+msgstr "ΔΕΝ ΒΡΕΘΗΚΕ ΚΑΤΑΛΟΓΟΣ SLINT"
+
+#
+# File: 32-INSUSB, line: 90
+# File: 64-INSUSB, line: 90
+#, fuzzy
+msgid ""
+"Sorry, but a Salix directory could not be found on any USB devices. Exiting "
+"back to the top menu."
+msgstr ""
+"Συγγνώμη, αλλά δεν ήταν δυνατόν να βρεθεί ένας κατάλογος Slint σε καμία "
+"συσκευή USB. Γίνεται έξοδος στο αρχικό μενού."
+
+#
+# File: 32-INSUSB, line: 99
+# File: 64-INSUSB, line: 99
+#. Success!  Report back to the console:
+msgid "USB PACKAGE SOURCE FOUND"
+msgstr "ΒΡΕΘΗΚΕ ΠΗΓΑΙΟ ΑΡΧΕΙΟ ΣΕ USB"
+
+#
+# File: 32-INSUSB, line: 100
+# File: 64-INSUSB, line: 100
+#, fuzzy, sh-format
+msgid "A Salix package directory was found on device $DRIVE_FOUND."
+msgstr "Βρέθηκε ένας κατάλογος με πακέτα Slint στη συσκευή $DRIVE_FOUND."
+
+#
+# File: 32-INSdir, line: 18
+# File: 32-INShd, line: 18
+# File: 32-setup, line: 84
+# File: 64-INSdir, line: 18
+# File: 64-INShd, line: 18
+# File: 64-setup, line: 84
+#, fuzzy
+msgid ""
+"\n"
+"Setup failed to unmount a required directory:\n"
+"\n"
+"/var/log/mount\n"
+"\n"
+"Please reboot the machine and try again.\n"
+msgstr ""
+"Δεν μπορούμε να αφαιρέσουμε τις προσαρτήσεις στο /var/log/mount.  "
+"Επανεκκινήστε τον υπολογιστή και ξαναρχίστε την εγκατάσταση."
+
+#
+# File: 32-SeTmaketag, line: 111
+# File: 64-SeTmaketag, line: 111
+#, fuzzy
+msgid "ERROR"
+msgstr "ΣΦΑΛΜΑ ΑΝΤΙΓΡΑΦΗΣ"
+
+#
+# File: INSdir, line: 26
+# File: INShd, line: 26
+msgid "REBOOT"
+msgstr ""
+
+#
+# File: INSdir, line: 27
+# File: INShd, line: 27
+msgid "CANCEL"
+msgstr ""
+
+#
+# File: INSdir, line: 40
+msgid ""
+"\n"
+"Please provide the path to a directory containing the contents (or an ISO "
+"image) of a Salix installation disc.\n"
+"\n"
+"Note: You may use any directory within the current filesystem except '/mnt' "
+"or '/var/log/mount' as these are required by setup.\n"
+msgstr ""
+
+#
+# File: 32-INSNFS, line: 56
+# File: 32-INSSMB, line: 56
+# File: 32-INSURL, line: 97
+# File: 32-INShd, line: 58
+# File: 32-pkgtool, line: 385
+# File: 64-INSNFS, line: 56
+# File: 64-INSSMB, line: 56
+# File: 64-INSURL, line: 97
+# File: 64-INShd, line: 58
+# File: 64-pkgtool, line: 385
+#, fuzzy
+msgid "SELECT A PRE-MOUNTED DIRECTORY"
+msgstr "ΕΠΙΛΕΞΤΕ ΦΑΚΕΛΟ"
+
+#
+# File: INSdir, line: 50
+# File: INShd, line: 125
+msgid "Browse"
+msgstr ""
+
+#
+# File: 32-INSNFS, line: 56
+# File: 32-INSSMB, line: 56
+# File: 32-INSURL, line: 97
+# File: 32-INShd, line: 58
+# File: 32-pkgtool, line: 385
+# File: 64-INSNFS, line: 56
+# File: 64-INSSMB, line: 56
+# File: 64-INSURL, line: 97
+# File: 64-INShd, line: 58
+# File: 64-pkgtool, line: 385
+#, fuzzy
+msgid "SELECT A DIRECTORY"
+msgstr "ΕΠΙΛΕΞΤΕ ΦΑΚΕΛΟ"
+
+#
+# File: 32-INCISO, line: 14
+# File: 64-INCISO, line: 14
+#, fuzzy
+msgid "INVALID ISO IMAGE"
+msgstr "ΧΡΗΣΗ ΤΗΣ ΕΙΚΟΝΑΣ ISO"
+
+#
+# File: 32-SeTpartitions, line: 540
+# File: 64-SeTpartitions, line: 540
+msgid "OK"
+msgstr "ΟΚ"
+
+#
+# File: 32-INSNFS, line: 56
+# File: 32-INSSMB, line: 56
+# File: 32-INSURL, line: 97
+# File: 32-INShd, line: 58
+# File: 32-pkgtool, line: 385
+# File: 64-INSNFS, line: 56
+# File: 64-INSSMB, line: 56
+# File: 64-INSURL, line: 97
+# File: 64-INShd, line: 58
+# File: 64-pkgtool, line: 385
+#, fuzzy
+msgid "INVALID SOURCE DIRECTORY"
+msgstr "ΕΠΙΛΕΞΤΕ ΦΑΚΕΛΟ"
+
+#
+# File: INShd, line: 16
+msgid ""
+"\n"
+"Setup failed to unmount a required directory:\n"
+"\n"
+"/var/log/mount\n"
+"\n"
+"Please reboot the machine an try again.\n"
+"\n"
+msgstr ""
+
+#
+# File: INShd, line: 40
+msgid ""
+"\n"
+"Please specify which partition on your hard disk or USB stick\n"
+"contains the contents (or an ISO image) of a Salix\n"
+"installation disc.\n"
+"\n"
+"Example: /dev/sdb2\n"
+"\n"
+"Note: Use the <Partitions> button to list available partitions.\n"
+msgstr ""
+
+#
+# File: 32-liloconfig, line: 1095
+# File: 64-liloconfig, line: 1095
+#, fuzzy
+msgid "SELECT HARD DISK PARTITION"
+msgstr "ΕΠΙΛΕΞΤΕ ΜΙΑ ΚΑΤΑΤΜΗΣΗ OS/2"
+
+#
+# File: INShd, line: 51
+msgid "Partitions"
+msgstr ""
+
+#
+# File: 32-INShd, line: 53
+# File: 64-INShd, line: 53
+#, fuzzy
+msgid "PARTITIONS LIST"
+msgstr "ΛΙΣΤΑ ΚΑΤΑΤΜΗΣΕΩΝ"
+
+#
+# File: 32-SeTmaketag, line: 80
+# File: 64-SeTmaketag, line: 80
+msgid "MOUNT FAILURE"
+msgstr "Η ΠΡΟΣΑΡΤΗΣΗ ΑΠΕΤΥΧΕ"
+
+#
+# File: 32-INSSMB, line: 99
+# File: 32-INSSMB, line: 103
+# File: 64-INSSMB, line: 99
+# File: 64-INSSMB, line: 103
+#, fuzzy
+msgid "MOUNT SUCCESS"
+msgstr "ΑΠΟΤΕΛΕΣΜΑ ΠΡΟΣΑΡΤΗΣΗΣ"
+
+#
+# File: INShd, line: 116
+msgid ""
+"\n"
+"Now please provide the path to a directory containing the contents\n"
+"(or an ISO image) of a Salix installation disc.\n"
+"\n"
+"Note: The path you enter must be relative to the mount point so\n"
+"'/var/log/mount/salix-xfce' should be entered as '/salix-xfce'.\n"
+msgstr ""
+
+#
+# File: 32-SeTDOS, line: 29
+# File: 64-SeTDOS, line: 29
+#, sh-format
+msgid "Setting permissions on NTFS partition $DOS_PART"
+msgstr ""
+"Θα ρυθμίσουμε τις άδειες αρχείων για την κατάτμηση τύπου NTFS $DOS_PART"
+
+#
+# File: 32-SeTDOS, line: 30
+# File: 64-SeTDOS, line: 30
+#, sh-format
+msgid "SET SECURITY FOR NTFS PARTITION $DOS_PART"
+msgstr "ΡΥΘΜΙΣΕΙΣ ΑΣΦΑΛΕΙΑΣ ΓΙΑ ΤΗΝ ΚΑΤΑΤΜΗΣΗ ΤΥΠΟΥ NTFS $DOS_PART"
+
+#
+# File: 32-SeTDOS, line: 32
+# File: 32-SeTDOS, line: 55
+# File: 64-SeTDOS, line: 32
+# File: 64-SeTDOS, line: 55
+#, sh-format
+msgid ""
+"Because users could go snooping through (or destroy, depending on the "
+"settings) your Windows partition, you should choose how much access would "
+"you like your non-root users to have to partition $DOS_PART.  The access "
+"level can range from no access at all, to read-only for everyone, to read-"
+"write access for every user on the machine.  A reasonable default (read-"
+"write for root only) is chosen, but you may set this any way that you like."
+msgstr ""
+"Κάποιες ρυθμίσεις θα μπορούσαν να επιτρέπουν στους χρήστες του συστήματός "
+"σας να δούνε ό,τι υπάρχει (ή ακόμα και να καταστρέψουν εντελώς) την "
+"κατάτμηση Windows σας. Θα πρέπει να καθορίσετε τώρα σε τι βαθμό θέλετε να "
+"έχουν πρόσβαση οι χρήστες του συστήματος (εκτός του root) στην κατάτμηση "
+"$DOS_PART.  Ο βαθμός πρόσβασης μπορεί να κυμαίνεται από καθόλου πρόσβαση, σε "
+"πρόσβαση μόνο για ανάγνωση, μέχρι και σε πλήρη πρόσβαση για όλους τους "
+"χρήστες του συστήματος.  Έχουμε προεπιλέξει πλήρη πρόσβαση μόνο για τον "
+"χρήστη root, αλλά μπορείτε να το αλλάξετε σύμφωνα με τις παρακάτω επιλογές:"
+
+#
+# File: 32-SeTDOS, line: 39
+# File: 64-SeTDOS, line: 39
+msgid "Root has read/write access, users have no access (ntfs-3g)"
+msgstr "Ο Root έχει πλήρη πρόσβαση, οι υπόλοιποι χρήστες καθόλου (ntfs-3g)"
+
+#
+# File: 32-SeTDOS, line: 40
+# File: 64-SeTDOS, line: 40
+msgid "Everyone has read only access (built-in kernel ntfs driver)"
+msgstr ""
+"Όλοι έχουν πρόσβαση αλλά μόνο για ανάγνωση (χρήση του οδηγού ntfs του πυρήνα)"
+
+#
+# File: 32-SeTDOS, line: 41
+# File: 64-SeTDOS, line: 41
+msgid "Everyone has read access, but only root can write (ntfs-3g)"
+msgstr ""
+"Όλοι έχουν πρόσβαση για ανάγνωση αλλά μόνο ο root έχει πρόσβαση εγγραφής "
+"(ntfs-3g)"
+
+#
+# File: 32-SeTDOS, line: 42
+# File: 64-SeTDOS, line: 42
+msgid "All users can read/write to any file (ntfs-3g)"
+msgstr ""
+"Όλοι οι χρήστες μπορούν να διαβάσουν και να γράψουν σε οποιοδήποτε αρχείο "
+"(ntfs-3g)"
+
+#
+# File: 32-SeTDOS, line: 52
+# File: 64-SeTDOS, line: 52
+#, sh-format
+msgid "Setting permissions on FAT partition $DOS_PART"
+msgstr ""
+"Θα ρυθμίσουμε τις άδειες για το FAT σύστημα αρχείων για την κατάτμηση "
+"$DOS_PART"
+
+#
+# File: 32-SeTDOS, line: 53
+# File: 64-SeTDOS, line: 53
+#, sh-format
+msgid "SET SECURITY FOR FAT PARTITION $DOS_PART"
+msgstr "ΕΠΙΛΕΞΤΕ ΕΠΙΛΟΓΕΣ ΑΣΦΑΛΕΙΑΣ ΓΙΑ ΤΗΝ ΚΑΤΑΤΜΗΣΗ ΤΥΠΟΥ FAT: $DOS_PART"
+
+#
+# File: 32-SeTDOS, line: 62
+# File: 64-SeTDOS, line: 62
+msgid "Root has read/write access, users have no access"
+msgstr ""
+"Ο χρήστης root έχει πρόσβαση ανάγνωσης/εγγραφής, οι υπόλοιποι χρήστες δεν "
+"έχουν πρόσβαση"
+
+#
+# File: 32-SeTDOS, line: 63
+# File: 64-SeTDOS, line: 63
+msgid "Everyone has read only access"
+msgstr "Όλοι οι χρήστες έχουν πρόσβαση μόνο ανάγνωσης"
+
+#
+# File: 32-SeTDOS, line: 64
+# File: 64-SeTDOS, line: 64
+msgid "Everyone has read access, but only root can write"
+msgstr ""
+"Όλοι οι χρήστες έχουν πρόσβαση ανάγνωσης, ενώ ο χρήστης root έχει και "
+"πρόσβαση εγγραφής"
+
+#
+# File: 32-SeTDOS, line: 65
+# File: 64-SeTDOS, line: 65
+msgid "All users can read/write to any file"
+msgstr "Όλοι οι χρήστες έχουν πρόσβαση ανάγνωσης/εγγραφής"
+
+#
+# File: 32-SeTDOS, line: 100
+# File: 64-SeTDOS, line: 100
+msgid "Setting up non-Linux partitions."
+msgstr "Ρύθμιση partition που δεν ανήκουν στα Linux"
+
+#
+# File: 32-SeTDOS, line: 101
+# File: 64-SeTDOS, line: 101
+msgid "FAT or NTFS PARTITIONS DETECTED"
+msgstr "ΒΡΕΘΗΚΑΝ ΚΑΤΑΤΜΗΣΕΙΣ FAT ή NTFS"
+
+#
+# File: 32-SeTDOS, line: 102
+# File: 64-SeTDOS, line: 102
+msgid ""
+"Partitions of type FAT or NTFS (commonly used by DOS and Windows) have been "
+"found on your system.  Would you like to add these partitions to your /etc/"
+"fstab so that these partitions are visible from Linux?"
+msgstr ""
+"Το σύστημά σας περιέχει κατατμήσεις τύπου FAT ή NTFS (τις οποίες συνήθως "
+"χρησιμοποιούν τα DOS ή τα Windows). Να προστεθούν αυτές τις partition στο "
+"αρχείο /etc/fstab έτσι ώστε να μπορούν να τις εντοπίζουν τα Linux;"
+
+#
+# File: 32-SeTDOS, line: 114
+# File: 64-SeTDOS, line: 114
+msgid "Selecting non-Linux partitions."
+msgstr "Επιλογή partitions που δεν ανήκουν στο Linux."
+
+#
+# File: 32-SeTDOS, line: 116
+# File: 64-SeTDOS, line: 116
+msgid "SELECT PARTITION TO ADD TO /etc/fstab"
+msgstr "ΠΡΟΣΘΗΚΗ ΤΗΣ ΠΑΡΑΚΑΤΩ ΚΑΤΑΤΜΗΣΗΣ ΣΤΟ /etc/fstab:"
+
+#
+# File: 32-SeTDOS, line: 118
+# File: 32-SeTpartitions, line: 323
+# File: 32-SeTpartitions, line: 412
+# File: 64-SeTDOS, line: 118
+# File: 64-SeTpartitions, line: 323
+# File: 64-SeTpartitions, line: 412
+msgid "Select"
+msgstr "Επιλογή"
+
+#
+# File: 32-SeTDOS, line: 120
+# File: 32-SeTpartitions, line: 325
+# File: 32-SeTpartitions, line: 414
+# File: 32-setup.80.make-bootdisk, line: 216
+# File: 64-SeTDOS, line: 120
+# File: 64-SeTpartitions, line: 325
+# File: 64-SeTpartitions, line: 414
+# File: 64-setup.80.make-bootdisk, line: 216
+msgid "Continue"
+msgstr "Συνέχεια"
+
+#
+# File: 32-SeTDOS, line: 122
+# File: 64-SeTDOS, line: 122
+msgid ""
+"In order to make these partitions visible from Linux, we  need to add them "
+"to your /etc/fstab.  Please pick a partition to  add to /etc/fstab, or "
+"select '---' to continue with the installation  process."
+msgstr ""
+"Πρέπει να προσθέσουμε αυτές τις κατατμήσεις στο αρχείο /etc/fstab, έτσι ώστε "
+"να μπορούν να τις εντοπίζει το Linux. Επιλέξτε μία κατάτμηση για να την "
+"προσθέσουμε στο /etc/fstab, ή αλλιώς επιλέξτε '---' για να συνεχίσουμε με "
+"την διαδικασία εγκατάστασης."
+
+#
+# File: 32-SeTDOS, line: 141
+# File: 32-SeTpartitions, line: 200
+# File: 64-SeTDOS, line: 141
+# File: 64-SeTpartitions, line: 200
+msgid "IN USE"
+msgstr "ΣΕ ΧΡΗΣΗ"
+
+#
+# File: 32-SeTDOS, line: 141
+# File: 32-SeTpartitions, line: 193
+# File: 64-SeTDOS, line: 141
+# File: 64-SeTpartitions, line: 193
+msgid "on"
+msgstr "Σε"
+
+#
+# File: 32-SeTDOS, line: 147
+# File: 32-SeTDOS, line: 148
+# File: 32-SeTDOS, line: 149
+# File: 32-SeTDOS, line: 150
+# File: 32-SeTDOS, line: 151
+# File: 64-SeTDOS, line: 147
+# File: 64-SeTDOS, line: 148
+# File: 64-SeTDOS, line: 149
+# File: 64-SeTDOS, line: 150
+# File: 64-SeTDOS, line: 151
+msgid "done, continue with setup"
+msgstr "Ολοκληρώθηκε, συνεχίζουμε με την εγκατάσταση"
+
+#
+# File: 32-SeTDOS, line: 186
+# File: 64-SeTDOS, line: 186
+#, sh-format
+msgid "Selecting a location to mount $DOS_PART."
+msgstr "Αντιστοίχηση σημείου προσάρτησης για την κατάτμηση $DOS_PART"
+
+#
+# File: 32-SeTDOS, line: 187
+# File: 64-SeTDOS, line: 187
+#, sh-format
+msgid "PICK MOUNT POINT FOR $DOS_PART"
+msgstr "ΕΠΙΛΕΞΤΕ ΣΗΜΕΙΟ ΠΡΟΣΑΡΤΗΣΗΣ ΓΙΑ ΤΟ $DOS_PART"
+
+#
+# File: 32-SeTDOS, line: 188
+# File: 64-SeTDOS, line: 188
+#, sh-format
+msgid ""
+"Now this partition must be mounted somewhere in your  directory tree.  "
+"Please enter the directory under which  you would like to put it.  For "
+"instance, you might want to  enter /fat-c or /fat-d or something similar.   "
+"NOTE: This partition will not actually be mounted until you reboot.   Where "
+"would you like to mount $DOS_PART?"
+msgstr ""
+"Τώρα αυτή η κατάτμηση πρέπει να προσαρτηθεί κάπου στο δέντρο καταλόγου σας. "
+"Παρακαλώ εισάγετε τον κατάλογο κάτω από τον οποίο θέλετε να τη προσαρτήσω. "
+"Για παράδειγμα, ίσως να θέλετε να εισάγετε /fat-c ή /fat-d ή κάτι παρόμοιο. "
+"ΣΗΜΕΙΩΣΗ: Αυτή η κατάτμηση δεν θα προσαρτηθεί στη πραγματικότητα μέχρι να "
+"κάνετε επανεκκίνηση. Πού θα θέλατε να προσαρτήσω το $DOS_PART;"
+
+#
+# File: 32-SeTDOS, line: 217
+# File: 32-SeTEFI, line: 73
+# File: 32-SeTpartitions, line: 533
+# File: 64-SeTDOS, line: 217
+# File: 64-SeTEFI, line: 73
+# File: 64-SeTpartitions, line: 533
+#. next partition loop
+#. more than one Linux partition
+#. Done, report to the user:
+#, sh-format
+msgid ""
+"\n"
+"Adding this information to your /etc/fstab:\n"
+"\n"
+msgstr ""
+"\n"
+"Προσθέτοντας αυτές τις πληροφορίες στο /etc/fstab:\n"
+"\n"
+
+#
+# File: 32-SeTDOS, line: 222
+# File: 64-SeTDOS, line: 222
+msgid "Finished setting up non-Linux partitions."
+msgstr "Ολοκλήρωση ρύθμισης κατατμήσεων που δεν ανήκουν στο Linux."
+
+#
+# File: 32-SeTDOS, line: 223
+# File: 64-SeTDOS, line: 223
+msgid "DONE ADDING FAT or NTFS PARTITIONS"
+msgstr "ΟΙ FAT ή NTFS ΚΑΤΑΤΜΗΣΕΙΣ ΕΧΟΥΝ ΠΡΟΣΤΕΘΕΙ ΣΤΟ ΣΥΣΤΗΜΑ ΣΑΣ"
+
+#
+# File: 32-SeTEFI, line: 44
+# File: 64-SeTEFI, line: 44
+#. It didn't mount, so it must not be formatted:
+#, sh-format
+msgid "FORMAT EFI PARTITION ${PREFERRED_EFI_PARTITION}?"
+msgstr "ΝΑ ΓΙΝΕΙ ΔΙΑΜΟΡΦΩΣΗ ΤΗΣ ΚΑΤΑΤΜΗΣΗΣ EFI ${PREFERRED_EFI_PARTITION};"
+
+#
+# File: 32-SeTEFI, line: 45
+# File: 64-SeTEFI, line: 45
+#, sh-format
+msgid ""
+"An EFI System Partition was found on ${PREFERRED_EFI_PARTITION}, but it has "
+"not yet been formatted.  Would you like to format this partition?"
+msgstr ""
+"Βρέθηκε μια κατάτμηση συστήματος με EFI στο ${PREFERRED_EFI_PARTITION}, αλλά "
+"δεν έχει ακόμη διαμορφωθεί. Θέλετε να διαμορφώσετε αυτή την κατάτμηση;"
+
+#
+# File: 32-SeTEFI, line: 53
+# File: 64-SeTEFI, line: 53
+#. Format the partition with FAT32, 2 sectors per cluster (needed for the
+#. minimum supported EFI partition size of 100MB):
+#, sh-format
+msgid "FORMATTING EFI PARTITION ${PREFERRED_EFI_PARTITION}"
+msgstr "ΓΙΝΕΤΑΙ ΔΙΑΜΟΡΦΩΣΗ ΤΗΣ ΚΑΤΑΤΜΗΣΗΣ EFI ${PREFERRED_EFI_PARTITION}"
+
+#
+# File: 32-SeTEFI, line: 54
+# File: 64-SeTEFI, line: 54
+#, sh-format
+msgid "Formatting EFI System Partition ${PREFERRED_EFI_PARTITION} as FAT32."
+msgstr ""
+"Γίνεται διαμόρφωση της Κατάτμησης Συστήματος με EFI "
+"${PREFERRED_EFI_PARTITION} σε μορφή FAT32."
+
+#
+# File: 32-SeTEFI, line: 78
+# File: 64-SeTEFI, line: 78
+msgid "Finished setting up EFI System Partition."
+msgstr "Ολοκληρώθηκε η δημιουργία Κατάτμησης Συστήματος με EFI."
+
+#
+# File: 32-SeTEFI, line: 79
+# File: 64-SeTEFI, line: 79
+msgid "EFI SYSTEM PARTITION RECOGNIZED"
+msgstr "ΑΝΑΓΝΩΡΙΣΘΗΚΕ ΚΑΤΑΤΜΗΣΗ ΣΥΣΤΗΜΑΤΟΣ ΜΕ EFI"
+
+#
+# File: 32-SeTPKG, line: 27
+# File: 64-SeTPKG, line: 27
+msgid "Selecting software to install."
+msgstr "Επιλογή των προγραμμάτων που θα εγκατασταθούν"
+
+#
+# File: 32-SeTPKG, line: 29
+# File: 64-SeTPKG, line: 29
+msgid "PACKAGE SERIES SELECTION"
+msgstr "ΕΠΙΛΟΓΗ ΣΕΙΡΑΣ ΛΟΓΙΣΜΙΚΟΥ ΓΙΑ ΕΓΚΑΤΑΣΤΑΣΗ"
+
+#
+# File: 32-SeTPKG, line: 31
+# File: 64-SeTPKG, line: 31
+msgid ""
+"Now it is time to select which general categories of software to install on "
+"your system. Use the spacebar to select or unselect the software you wish to "
+"install. You can use the up and down arrows to see all the possible choices. "
+"Recommended choices have been preselected. Press the ENTER key when you are "
+"finished."
+msgstr ""
+"Τώρα ήρθε η ώρα να επιλέξετε ποιες γενικές κατηγορίες λογισμικού θα "
+"εγκαταστήσετε στο σύστημά σας. Χρησιμοποιήστε το spacebar για να επιλέξετε ή "
+"να αποεπιλέξετε το λογισμικό που θέλετε να εγκαταστήσετε. Μπορείτε να "
+"χρησιμοποιήσετε τα βέλη πάνω και κάτω για να δείτε όλες τις πιθανές "
+"επιλογές. Οι προτεινόμενες επιλογές έχουν προεπιλεγεί. Πιέστε το πλήκτρο "
+"ENTER όταν τελειώσετε."
+
+#
+# File: 32-SeTPKG, line: 38
+# File: 64-SeTPKG, line: 38
+msgid "Base Linux system"
+msgstr "Βασικό σύστημα Linux"
+
+#
+# File: 32-SeTPKG, line: 40
+# File: 64-SeTPKG, line: 40
+msgid "The A (base) series contains the kernel and main system utilities."
+msgstr ""
+"Η σειρά Α (βασικά προγράμματα) περιέχει τον πυρήνα και τα βασικά προγράμματα "
+"λειτουργίας του συστήματος"
+
+#
+# File: 32-SeTPKG, line: 45
+# File: 64-SeTPKG, line: 45
+msgid "Various Applications that do not need X"
+msgstr "Διάφορες εφαρμογές που δεν χρειάζονται το βασικό περιβάλλον X"
+
+#
+# File: 32-SeTPKG, line: 47
+# File: 64-SeTPKG, line: 47
+msgid "The AP series is a collection of useful applications."
+msgstr "Η σειρά προγραμμάτων AP περιέχει μία συλλογή χρήσιμων εφαρμογών"
+
+#
+# File: 32-SeTPKG, line: 53
+# File: 64-SeTPKG, line: 53
+msgid "Program Development (C, C++, Lisp, Perl, etc.)"
+msgstr "Εφαρμογές προγραμματισμού (C, C++, Lisp, Perl, κ.τ.λ.)"
+
+#
+# File: 32-SeTPKG, line: 55
+# File: 64-SeTPKG, line: 55
+msgid ""
+"The D series contains compilers, debuggers, and other programming tools."
+msgstr ""
+"Η σειρά προγραμμάτων D περιέχει μεταγλωττιστές (compiler), αποσφαλματωτές "
+"(debugger) και άλλα εργαλεία προγραμματισμού"
+
+#
+# File: 32-SeTPKG, line: 61
+# File: 64-SeTPKG, line: 61
+msgid "GNU Emacs"
+msgstr "GNU Emacs"
+
+#
+# File: 32-SeTPKG, line: 63
+# File: 64-SeTPKG, line: 63
+msgid "The E series contains the GNU Emacs advanced real-time display editor."
+msgstr "Η σειρά προγραμμάτων E περιέχει τον διορθωτή κειμένου GNU Emacs"
+
+#
+# File: 32-SeTPKG, line: 69
+# File: 64-SeTPKG, line: 69
+msgid "FAQ lists, HOWTO documentation"
+msgstr "Λίστες FAQ (συχνές ερωτήσεις) και κείμενα τεκμηρίωσης τύπου \"HOWTO\""
+
+#
+# File: 32-SeTPKG, line: 71
+# File: 64-SeTPKG, line: 71
+msgid ""
+"The F series contains essential documentation for Linux system "
+"administrators."
+msgstr "Η σειρά F περιέχει βασική τεκμηρίωση για διαχειριστές συστημάτων Linux"
+
+#
+# File: 32-SeTPKG, line: 77
+# File: 64-SeTPKG, line: 77
+msgid "The GNOME desktop for X"
+msgstr "Το γραφικό περιβάλλον Gnome για τα X"
+
+#
+# File: 32-SeTPKG, line: 79
+# File: 64-SeTPKG, line: 79
+msgid ""
+"The GNOME series contains the GNOME desktop environment and related "
+"libraries."
+msgstr ""
+"Η σειρά GNOME περιλαμβάνει το γραφικό περιβάλλον GNOME και τις απαραίτητες "
+"βιβλιοθήκες κώδικα"
+
+#
+# File: 32-SeTPKG, line: 85
+# File: 64-SeTPKG, line: 85
+msgid "Linux kernel source"
+msgstr "Πηγαίος κώδικας του πυρήνα Linux"
+
+#
+# File: 32-SeTPKG, line: 87
+# File: 64-SeTPKG, line: 87
+msgid "The K series contains the source code for the Linux kernel."
+msgstr "Η σειρά K περιέχει τον πηγαίο κώδικα για τον πυρήνα του Linux"
+
+#
+# File: 32-SeTPKG, line: 93
+# File: 64-SeTPKG, line: 93
+msgid "Qt and the K Desktop Environment for X"
+msgstr "Το πλαίσιο λογισμικού Qt και το γραφικό περιβάλλον KDE για τα X"
+
+#
+# File: 32-SeTPKG, line: 95
+# File: 64-SeTPKG, line: 95
+msgid ""
+"The KDE series contains the K Desktop Environment and related libraries."
+msgstr ""
+"Η σειρά KDE περιλαμβάνει το γραφικό περιβάλλον KDE και τις απαραίτητες "
+"βιβλιοθήκες κώδικα"
+
+#
+# File: 32-SeTPKG, line: 101
+# File: 64-SeTPKG, line: 101
+msgid "International language support for KDE"
+msgstr "Υποστήριξη γλωσσικών ρυθμίσεων για το KDE"
+
+#
+# File: 32-SeTPKG, line: 103
+# File: 64-SeTPKG, line: 103
+msgid ""
+"The KDEI series provides support for languages other than US English in KDE."
+msgstr ""
+"Η σειρά KDEI παρέχει υποστήριξη για ρύθμιση του γραφικού περιβάλλοντος KDE "
+"σε άλλες γλώσσες εκτός των Αγγλικών"
+
+#
+# File: 32-SeTPKG, line: 109
+# File: 64-SeTPKG, line: 109
+msgid "System Libraries (some needed by both KDE and GNOME)"
+msgstr ""
+"Βιβλιοθήκες συστήματος (κάποιες είναι απαραίτητες για τη λειτουργία του KDE "
+"ή του GNOME)"
+
+#
+# File: 32-SeTPKG, line: 111
+# File: 64-SeTPKG, line: 111
+msgid ""
+"The L series contains libraries needed by GNOME, KDE, and other programs."
+msgstr ""
+"Η σειρά L περιέχει διάφορες βιβλιοθήκες απαραίτητες για τη χρήση του GNOME, "
+"του KDE και άλλων εφαρμογών"
+
+#
+# File: 32-SeTPKG, line: 117
+# File: 64-SeTPKG, line: 117
+msgid "Networking (TCP/IP, UUCP, Mail, News)"
+msgstr "Εφαρμογές δικτύου (TCP/IP, UUCP, Ηλεκτρονικό ταχυδρομείο, Ειδήσεις)"
+
+#
+# File: 32-SeTPKG, line: 119
+# File: 64-SeTPKG, line: 119
+msgid "The N series contains network related clients and servers."
+msgstr "Η σειρά N περιλαμβάνει εφαρμογές και εξυπηρετητές δικτύου"
+
+#
+# File: 32-SeTPKG, line: 125
+# File: 64-SeTPKG, line: 125
+msgid "TeX typesetting software"
+msgstr "Λογισμικό στοιχειοθεσίας TeX "
+
+#
+# File: 32-SeTPKG, line: 127
+# File: 64-SeTPKG, line: 127
+msgid ""
+"TeX is a typesetting system often used for mathematics and technical papers."
+msgstr ""
+"Το TeX είναι ένα σύστημα στοιχειοθεσίας που χρησιμοποιείται συχνά για τα "
+"μαθηματικά και τεχνικά έγγραφα."
+
+#
+# File: 32-SeTPKG, line: 133
+# File: 64-SeTPKG, line: 133
+msgid "Tcl/Tk script languages"
+msgstr "Tcl/Tk γλώσσες σεναρίων"
+
+#
+# File: 32-SeTPKG, line: 135
+# File: 64-SeTPKG, line: 135
+msgid ""
+"The TCL series contains the Tcl/Tk/TclX languages and programs that use them."
+msgstr ""
+"Η σειρά TCL περιέχει τις γλώσσες Tcl/Tk/TclX  και τα προγράμματα που τις "
+"χρησιμοποιούν."
+
+#
+# File: 32-SeTPKG, line: 141
+# File: 64-SeTPKG, line: 141
+msgid "X Window System"
+msgstr "X Window System"
+
+#
+# File: 32-SeTPKG, line: 143
+# File: 64-SeTPKG, line: 143
+msgid "This series contains X, the windowing system used by Linux."
+msgstr ""
+"Αυτή η σειρά περιέχει τα X, τον \"διαχειριστή παραθύρων\" (γραφικό σύστημα) "
+"των Linux"
+
+#
+# File: 32-SeTPKG, line: 149
+# File: 64-SeTPKG, line: 149
+msgid "X Applications"
+msgstr "Εφαρμογές για τα X"
+
+#
+# File: 32-SeTPKG, line: 151
+# File: 64-SeTPKG, line: 151
+msgid "The XAP series is a collection of applications for X."
+msgstr "Η σειρά XAP περιλαμβάνει διάφορες εφαρμογές για τα X"
+
+#
+# File: 32-SeTPKG, line: 157
+# File: 64-SeTPKG, line: 157
+msgid "The Xfce Desktop Environment for X"
+msgstr "Το γραφικό περιβάλλον Xfce"
+
+#
+# File: 32-SeTPKG, line: 159
+# File: 64-SeTPKG, line: 159
+msgid "Xfce is a fast and lightweight GTK+ based desktop environment for X."
+msgstr ""
+"Το Xfce είναι ένα γρήγορο και με χαμηλές απαιτήσεις σε πόρους συστήματος "
+"γραφικό περιβάλλον για τα X, βασισμένο στη GTK+."
+
+#
+# File: 32-SeTPKG, line: 165
+# File: 64-SeTPKG, line: 165
+msgid "Games"
+msgstr "Παιχνίδια"
+
+#
+# File: 32-SeTPKG, line: 167
+# File: 64-SeTPKG, line: 167
+msgid "The Y series is a collection of classic BSD text-based games."
+msgstr ""
+"Η σειρά Y περιλαμβάνει μια συλλογή παιχνιδιών κλασσικών σε BSD συστήματα"
+
+#
+# File: 32-SeTconfig, line: 80
+# File: 64-SeTconfig, line: 80
+#. Inform the user that we're done installing packages
+msgid "DONE INSTALLING PACKAGES"
+msgstr "Η ΕΓΚΑΤΑΣΤΑΣΗ ΠΡΟΓΡΑΜΜΑΤΩΝ ΟΛΟΚΛΗΡΩΘΗΚΕ"
+
+#
+# File: 32-SeTconfig, line: 81
+# File: 64-SeTconfig, line: 81
+msgid "Preparing to configure your new Linux system..."
+msgstr ""
+"Προετοιμασία για να προχωρήσουμε στη ρύθμιση του καινούριου σας συστήματος "
+"Linux"
+
+#
+# File: SeTconfig, line: 73
+msgid "Boot Loader"
+msgstr ""
+
+#
+# File: SeTconfig, line: 74
+msgid "Please choose the Boot Loader that you would like to use"
+msgstr ""
+
+#
+# File: 32-liloconfig, line: 826
+# File: 64-liloconfig, line: 826
+#, fuzzy
+msgid "Install Lilo"
+msgstr "Εγκαταστήστε το LILO"
+
+#
+# File: 32-liloconfig, line: 826
+# File: 64-liloconfig, line: 826
+#, fuzzy
+msgid "Install Grub"
+msgstr "Εγκαταστήστε το LILO"
+
+#
+# File: 32-eliloconfig, line: 164
+# File: 64-eliloconfig, line: 164
+#, fuzzy
+msgid "(Do not install boot loader)"
+msgstr "Να μην προστεθεί μια καταχώρηση στο μενού εκκίνησης"
+
+#
+# File: SeTconfig, line: 216
+msgid "Numlock configuration"
+msgstr ""
+
+#
+# File: SeTconfig, line: 217
+# File: SeTconfig, line: 230
+# File: SeTconfig, line: 239
+msgid "Enabled"
+msgstr ""
+
+#
+# File: SeTconfig, line: 217
+# File: SeTconfig, line: 230
+# File: SeTconfig, line: 239
+msgid "Disabled"
+msgstr ""
+
+#
+# File: SeTconfig, line: 218
+msgid "Do you want to have numlock enabled or disabled on boot?"
+msgstr ""
+
+#
+# File: SeTconfig, line: 229
+msgid "IBus configuration"
+msgstr ""
+
+#
+# File: SeTconfig, line: 232
+msgid ""
+"IBus is an input platform for Chinese, Japanese, Korean and many other "
+"languages. Do you want to have it enabled or disabled on boot?"
+msgstr ""
+
+#
+# File: SeTconfig, line: 238
+msgid "SCIM configuration"
+msgstr ""
+
+#
+# File: SeTconfig, line: 241
+msgid ""
+"SCIM is an input platform for Chinese, Japanese, Korean and many other "
+"languages. Do you want to have it enabled or disabled on boot?"
+msgstr ""
+
+#
+# File: SeTdisk, line: 21
+msgid "Go"
+msgstr ""
+
+#
+# File: SeTdisk, line: 22
+msgid "Exit"
+msgstr ""
+
+#
+# File: 32-INShd, line: 53
+# File: 64-INShd, line: 53
+#, fuzzy
+msgid "PARTITIONS EDITOR"
+msgstr "ΛΙΣΤΑ ΚΑΤΑΤΜΗΣΕΩΝ"
+
+#
+# File: SeTdisk, line: 24
+msgid ""
+"Welcome to the Salix partition editor. Press <SPACE> to select a disk and "
+"select Go to start partitioning. If you don't want to alter the partition "
+"layout, select Exit.\n"
+"\n"
+"You usually need at least 2 partitions:\n"
+"- 1 SWAP partition (1GB minimum recommended) :"
+msgstr ""
+
+#
+# File: 32-SeTfull, line: 15
+# File: 64-SeTfull, line: 15
+msgid "ERROR: TARGET PARTITION FULL"
+msgstr "ΣΦΑΛΜΑ: Η ΚΑΤΑΤΜΗΣΗ ΕΓΚΑΤΑΣΤΑΣΗΣ ΔΕΝ ΕΧΕΙ ΑΛΛΟ ΧΩΡΟ"
+
+#
+# File: 32-SeTfull, line: 15
+# File: 64-SeTfull, line: 15
+msgid ""
+"Setup has detected that one or more of your target partitions has become "
+"full.  I'm sorry, but you will have to try installing again onto a partition "
+"or partitions with more free space.  You could also try selecting fewer "
+"packages to install.  Since there is no longer any space for setup to make "
+"its temporary files, this is an unrecoverable error.  Press control-alt-"
+"delete to reboot and try again.  Before doing that, you might want to switch "
+"to another console (Alt-F2) and use df (disk free utility) to see if you can "
+"get an idea of how to avoid this the next time around."
+msgstr ""
+"Κατά τη διαδικασία ρυθμίσεων βρέθηκε ότι μία ή και περισσότερες από τις "
+"κατατμήσεις-στόχος που έχετε, είναι πλήρης. Λυπάμαι, αλλά θα πρέπει να "
+"ξαναδοκιμάσετε την εγκατάσταση σε μία άλλη κατάτμηση ή κατατμήσεις, με "
+"περισσότερο ελεύθερο χώρο. Θα μπορούσατε, επίσης, να επιλέξετε λιγότερα "
+"πακέτα προς εγκατάσταση. Επειδή δεν υπάρχει άλλος χώρος για τη δημιουργία "
+"των προσωρινών αρχείων, αυτό είναι ένα μη ανακτήσιμο σφάλμα. Πατήστε το ctrl-"
+"alt-del για να κάνετε επανεκκίνηση και ξαναπροσπαθήστε. Πριν το κάνετε, "
+"μπορεί να επιθυμείτε να αλλάξετε σε μια άλλη κονσόλα (Alt+F2) και "
+"χρησιμοποιείστε το df (δωρεάν βοήθημα για δίσκους) για να πάρετε μια ιδέα "
+"σχετικά με το πως μπορείτε να αποφύγετε κάτι τέτοιο την επόμενη φορά."
+
+#
+# File: 32-SeTkernel, line: 27
+# File: 64-SeTkernel, line: 27
+msgid "REINSERT KERNEL DISC"
+msgstr "ΞΑΝΑΤΟΠΟΘΕΤΗΣΤΕ ΤΟ CD ΤΟΥ ΠΥΡΗΝΑ"
+
+#
+# File: 32-SeTkernel, line: 28
+# File: 64-SeTkernel, line: 28
+#, fuzzy
+msgid ""
+"Please reinsert the Salix disc containing the collection of Linux kernels.  "
+"Usually this is disc number one (the disc that you boot from).  Once you've "
+"inserted the disc, hit ENTER to continue."
+msgstr ""
+"Επανατοποθετήστε το cd του Slint το οποίο περιέχει πυρήνες Linux. Κανονικά "
+"θα πρέπει να είναι το πρώτο cd (αυτό από το οποίο ξεκινήσατε την "
+"εγκατάσταση). Αφού τοποθετήσετε το cd πιέστε ENTER για συνέχεια"
+
+#
+# File: 32-SeTkernel, line: 80
+# File: 64-SeTkernel, line: 80
+msgid "ERROR ATTEMPTING TO INSTALL KERNEL"
+msgstr "ΣΦΑΛΜΑ ΣΤΗΝ ΕΓΚΑΤΑΣΤΑΣΗ ΤΟΥ ΠΥΡΗΝΑ"
+
+#
+# File: 32-SeTkernel, line: 80
+# File: 64-SeTkernel, line: 80
+#, sh-format
+msgid ""
+"Sorry, but the directory $PLINK/kernels was not found.  You may need to "
+"install the requested kernel $SLACK_KERNEL manually and then install LILO "
+"before your system will be able to boot correctly."
+msgstr ""
+"Δεν μπορέσαμε να βρούμε το φάκελο αρχείων $PLINK/kernels.  Ίσως να μην "
+"μπορέσετε να μπείτε στο σύστημά σας, εκτός εάν προσπαθήσετε να εγκαταστήσετε "
+"τον πυρήνα $SLACK_KERNEL μόνοι σας και στην συνέχεια να εγκαταστήσετε και να "
+"ρυθμίσετε το LILO"
+
+#
+# File: 32-SeTkeymap, line: 19
+# File: 64-SeTkeymap, line: 19
+msgid "KEYBOARD MAP SELECTION"
+msgstr "ΕΠΙΛΟΓΗ ΔΙΑΤΑΞΗΣ ΠΛΗΚΤΡΟΛΟΓΙΟΥ"
+
+#
+# File: 32-rc.S, line: 232
+# File: 64-rc.S, line: 232
+#, fuzzy
+msgid "Test keyboard map"
+msgstr "Εισάγετε το 1 για να επιλέξετε μια διάταξη πληκτρολογίου:"
+
+#
+# File: SeTkeymap, line: 199
+msgid "Accept keymap"
+msgstr ""
+
+#
+# File: SeTkeymap, line: 200
+msgid "Reject keymap"
+msgstr ""
+
+#
+# File: SeTkeymap, line: 201
+msgid ""
+"You may now test the new keyboard map by typing some text. You can accept "
+"the keyboard map or reject it and select another one. The installer only "
+"supports ASCII characters, so don't try any special characters here or use "
+"them during installation!"
+msgstr ""
+
+#
+# File: 32-SeTmedia, line: 8
+# File: 32-SeTpxemedia, line: 32
+# File: 64-SeTmedia, line: 8
+# File: 64-SeTpxemedia, line: 32
+#, fuzzy
+msgid "Select Salix installation source."
+msgstr "Επιλέξτε την πηγή για την εγκατάσταση του Slint"
+
+#
+# File: 32-SeTmedia, line: 9
+# File: 32-SeTpxemedia, line: 33
+# File: 64-SeTmedia, line: 9
+# File: 64-SeTpxemedia, line: 33
+msgid "SOURCE MEDIA SELECTION"
+msgstr "ΕΠΙΛΟΓΗ ΜΕΣΟΥ ΠΡΟΕΛΕΥΣΗΣ"
+
+#
+# File: 32-SeTmedia, line: 10
+# File: 64-SeTmedia, line: 10
+#, fuzzy
+msgid "Please select the media from which to install Salix Linux:"
+msgstr ""
+"Παρακαλώ επιλέξτε το μέσο από το οποίο θα κάνετε την εγκατάσταση του Slint "
+"Linux:"
+
+#
+# File: 32-SeTmedia, line: 13
+# File: 64-SeTmedia, line: 13
+#, fuzzy
+msgid "Install from a Salix USB stick"
+msgstr "Εγκατάσταση από ένα στικάκι USB Slint"
+
+#
+# File: 32-SeTmedia, line: 12
+# File: 64-SeTmedia, line: 12
+#, fuzzy
+msgid "Install from a Salix CD or DVD"
+msgstr "Εγκατάσταση από CD ή DVD Slint"
+
+#
+# File: 32-SeTmedia, line: 14
+# File: 64-SeTmedia, line: 14
+msgid "Install from a hard drive partition"
+msgstr "Εγκατάσταση από τον σκληρό δίσκο"
+
+#
+# File: 32-SeTmedia, line: 18
+# File: 64-SeTmedia, line: 18
+msgid "Install from a pre-mounted directory"
+msgstr "Εγκατάσταση από φάκελο που έχει ήδη αναρτηθεί στο σύστημα"
+
+#
+# File: 32-SeTmedia, line: 16
+# File: 64-SeTmedia, line: 16
+msgid "Install from FTP/HTTP server"
+msgstr "Εγκατάσταση από server FTP/HTTP"
+
+#
+# File: 32-SeTmedia, line: 15
+# File: 64-SeTmedia, line: 15
+msgid "Install from NFS (Network File System)"
+msgstr "Εγκατάσταση από NFS (Network File System)"
+
+#
+# File: 32-SeTmedia, line: 17
+# File: 64-SeTmedia, line: 17
+#, fuzzy
+msgid "Install from a Samba share"
+msgstr "Εγκατάσταση από τοπικό δίκτυο Samba"
+
+#
+# File: 32-SeTnet, line: 103
+# File: 64-SeTnet, line: 103
+msgid ""
+"\n"
+"You will now get a chance to probe your network interfaces.\n"
+msgstr ""
+"\n"
+"Τώρα θα έχετε μια ευκαιρία να δοκιμάσετε τις διεπαφές του δικτύου σας.\n"
+
+#
+# File: 32-SeTnet, line: 106
+# File: 32-SeTnet, line: 119
+# File: 64-SeTnet, line: 106
+# File: 64-SeTnet, line: 119
+msgid "PROBING NETWORK DEVICES"
+msgstr "ΓΙΝΕΤΑΙ ΔΟΚΙΜΗ ΣΥΣΚΕΥΩΝ ΔΙΚΤΥΟΥ"
+
+#
+# File: 32-SeTnet, line: 113
+# File: 64-SeTnet, line: 113
+msgid ""
+"\n"
+"Are you OK with the network interface which was detected? If not, select "
+"'No' to get back to the network probe program. You can try to load another "
+"driver explicitly, by using 'P <driver_name>'.\n"
+"\n"
+"If you are satisfied, select 'Yes' to continue with network configuration."
+msgstr ""
+"\n"
+"Είστε εντάξει με την διεπαφή δικτύου που εντοπίσθηκε; Αν όχι, επιλέξτε 'No' "
+"για να λάβετε πίσω το πρόγραμμα διερεύνησης δικτύου/network probe. Μπορείτε "
+"σαφώς να προσπαθήσετε να φορτώσετε έναν άλλον οδηγό/ driver, με τη χρήση του "
+"'P <driver_name>'.\n"
+"\n"
+"Αν είστε ικανοποιημένος/η, επιλέξτε το 'Yes' και συνεχίστε με τις ρυθμίσεις "
+"δικτύου."
+
+#
+# File: 32-SeTnet, line: 135
+# File: 32-SeTnet, line: 291
+# File: 64-SeTnet, line: 135
+# File: 64-SeTnet, line: 291
+#. hope that 3 seconds is enough for dhcpcd;
+#. if not then you had better specify the INTERFACE in the nic= parameter...
+#. end ask approval for ip config
+#. echo "Configuring ethernet card..."
+msgid "INITIALIZING NETWORK"
+msgstr "ΑΡΧΙΚΟΠΟΙΗΣΗ ΔΙΚΤΥΟΥ"
+
+#
+# File: 32-SeTnet, line: 136
+# File: 64-SeTnet, line: 136
+msgid ""
+"\n"
+"Waiting a few seconds for DHCP polling to settle ..."
+msgstr ""
+"\n"
+"Περιμένετε μερικά δευτερόλεπτα για την ολοκλήρωση της αναζήτησης DHCP..."
+
+#
+# File: 32-SeTnet, line: 159
+# File: 64-SeTnet, line: 159
+msgid ""
+"You're running off the hard drive filesystem. Is this machine currently "
+"running on the network you plan to install from? If so, we won't try to "
+"reconfigure your ethernet card.\n"
+"\n"
+"Are you up-and-running on the network?"
+msgstr ""
+"Τρέχετε από το σύστημα αρχείων του σκληρού δίσκου. Είναι αυτό το μηχάνημα "
+"που τρέχει στο δίκτυο από το οποίο σχεδιάζετε να κάνετε την εγκατάσταση; Αν "
+"ναι, δεν θα προσπαθήσουμε να ξανά διαμορφώσουμε την κάρτα δικτύου σας.\n"
+"\n"
+"Είστε συνδεδεμένοι και τρέχετε στο δίκτυο?"
+
+#
+# File: 32-SeTnet, line: 164
+# File: 32-SeTnet, line: 284
+# File: 64-SeTnet, line: 164
+# File: 64-SeTnet, line: 284
+msgid "NETWORK CONFIGURATION"
+msgstr "ΡΥΘΜΙΣΕΙΣ ΔΙΚΤΥΟΥ"
+
+#
+# File: 32-SeTnet, line: 173
+# File: 64-SeTnet, line: 173
+#. Offer to install using DHCP:
+#, sh-format
+msgid ""
+"\n"
+"I can configure your network interface $ENET_DEVICE fully automatically "
+"using DHCP. If you want this, please select 'yes'.\n"
+"\n"
+"If you select 'no' instead, then you will be able to assign the IP address, "
+"netmask and gateway manually.\n"
+msgstr ""
+"\n"
+"Μπορούμε να ρυθμίσουμε αυτόματα την κάρτα δικτύου σας $ENET_DEVICE εάν "
+"χρησιμοποιείτε DHCP. Για να συνεχίσουμε με την αυτόματη ρύθμιση, επιλέξτε "
+"'yes'.\n"
+"\n"
+"Εάν επιλέξετε 'no', στο επόμενο μενου θα πρέπει να δώσετε τη διεύθυνση IP, "
+"πύλη δικτύου και θύρα δικτύου που θέλετε να χρησιμοποιήσετε.\n"
+
+#
+# File: 32-SeTnet, line: 180
+# File: 64-SeTnet, line: 180
+msgid "DHCP CONFIGURATION"
+msgstr "ΡΥΘΜΙΣΕΙΣ DHCP"
+
+#
+# File: 32-SeTnet, line: 205
+# File: 64-SeTnet, line: 205
+msgid ""
+"\n"
+"You will need to enter the IP address you wish to assign to this machine. "
+"Example: 111.112.113.114\n"
+"\n"
+"What is your IP address?"
+msgstr ""
+"\n"
+"Εδώ μπορείτε να εισάγετε τη διεύθυνση IP του συστήματός σας, π.χ.: "
+"111.112.113.114\n"
+"\n"
+"Πληκτρολογήστε τη διεύθυνση IP σας:"
+
+#
+# File: 32-SeTnet, line: 213
+# File: 64-SeTnet, line: 213
+msgid "ASSIGN IP ADDRESS"
+msgstr "ΡΥΘΜΙΣΗ ΔΙΕΥΘΥΝΣΗΣ IP"
+
+#
+# File: 32-SeTnet, line: 222
+# File: 64-SeTnet, line: 222
+msgid ""
+"\n"
+"Now we need to know your netmask. Typically this will be 255.255.255.0 but "
+"this can be different depending on your local setup.\n"
+"\n"
+"What is your netmask?"
+msgstr ""
+"\n"
+"Τώρα πρέπει να ρυθμίσουμε τη μάσκα δικτύου (netmask). Στις περισσότερες "
+"περιπτώσεις, αυτή θα είναι 255.255.255.0, αλλά μπορεί να και διαφέρει, "
+"ανάλογα με τις ρυθμίσεις του δικτύου σας.\n"
+"\n"
+"Πληκτρολογείστε τη μάσκα δικτύου:"
+
+#
+# File: 32-SeTnet, line: 231
+# File: 64-SeTnet, line: 231
+msgid "ASSIGN NETMASK"
+msgstr "ΡΥΘΜΙΣΗ ΜΑΣΚΑΣ ΔΙΚΤΥΟΥ"
+
+#
+# File: 32-SeTnet, line: 240
+# File: 64-SeTnet, line: 240
+msgid "Do you have a gateway?"
+msgstr "Χρησιμοποιείτε πύλη δικτύου (gateway);"
+
+#
+# File: 32-SeTnet, line: 251
+# File: 64-SeTnet, line: 251
+msgid "ASSIGN GATEWAY ADDRESS"
+msgstr "ΡΥΘΜΙΣΗ ΠΥΛΗΣ ΔΙΚΤΥΟΥ"
+
+#
+# File: 32-SeTnet, line: 252
+# File: 64-SeTnet, line: 252
+msgid ""
+"\n"
+"What is the IP address for your gateway?"
+msgstr ""
+"\n"
+"Πληκτρολογείστε την διεύθυνση IP της πύλης δικτύου σας:"
+
+#
+# File: 32-SeTnet, line: 272
+# File: 64-SeTnet, line: 272
+#, sh-format
+msgid ""
+"\n"
+"This is the proposed network configuration for $ENET_DEVICE - If this is OK, "
+"then select 'Yes'.\n"
+"If this is not OK and you want to configure again, select 'No'.\n"
+"\n"
+"* IP Address: $LOCAL_IPADDR\n"
+"* Netmask:    $LOCAL_NETMASK"
+msgstr ""
+"\n"
+"Προτείνουμε τις παρακάτω ρυθμίσεις δικτύου για την $ENET_DEVICE - Εάν είναι "
+"σωστές, επιλέξτε 'Yes'.\n"
+"Εάν θέλετε ωα διορθώσετε τις προτεινόμενες ρυθμίσεις, επιλέξτε 'No'.\n"
+"\n"
+"* Διεύθυνση IP $LOCAL_IPADDR\n"
+"* Μάσκα δικτύου:    $LOCAL_NETMASK"
+
+#
+# File: 32-SeTnet, line: 292
+# File: 64-SeTnet, line: 292
+#, sh-format
+msgid ""
+"\n"
+"Configuring your network interface $ENET_DEVICE ..."
+msgstr ""
+"\n"
+"Γίνονται οι ρυθμίσεις της διεπαφής του δικτύου σας $ENET_DEVICE ..."
+
+#
+# File: 32-SeTnet, line: 329
+# File: 64-SeTnet, line: 329
+msgid "FETCHING CONFIGURATION"
+msgstr "ΓΙΝΕΤΑΙ ΛΗΨΗ ΡΥΘΜΙΣΕΩΝ"
+
+#
+# File: 32-SeTnet, line: 330
+# File: 64-SeTnet, line: 330
+#, sh-format
+msgid ""
+"\n"
+"Attempting to fetch a remote configuration file using $PROTO ..."
+msgstr ""
+"\n"
+"Γίνεται προσπάθεια λήψης μιας απομεμακρυσμένης ρύθμισης χρησιμοποιώντας το "
+"$PROTO ..."
+
+#
+# File: 32-SeTpartitions, line: 27
+# File: 32-SeTpartitions, line: 48
+# File: 32-SeTpartitions, line: 73
+# File: 32-SeTpartitions, line: 98
+# File: 32-SeTpartitions, line: 123
+# File: 32-SeTpartitions, line: 146
+# File: 32-SeTpartitions, line: 165
+# File: 64-SeTpartitions, line: 27
+# File: 64-SeTpartitions, line: 48
+# File: 64-SeTpartitions, line: 73
+# File: 64-SeTpartitions, line: 98
+# File: 64-SeTpartitions, line: 123
+# File: 64-SeTpartitions, line: 146
+# File: 64-SeTpartitions, line: 165
+#. output a nice status message
+msgid "FORMATTING"
+msgstr "ΔΙΑΜΟΡΦΩΣΗ (FORMAT)"
+
+#
+# File: 32-SeTpartitions, line: 28
+# File: 64-SeTpartitions, line: 28
+#, sh-format
+msgid "Formatting $ArG1 with filesystem btrfs."
+msgstr "Διαμόρφωση $ArG1 με σύστημα αρχείων btrfs."
+
+#
+# File: 32-SeTpartitions, line: 29
+# File: 64-SeTpartitions, line: 29
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE \n"
+"Filesystem type: btrfs"
+msgstr ""
+"Διαμόρφωση $ArG1\n"
+"Μέγεθος σε τμήματα 1K: $SIZE \n"
+"Σύστημα αρχείων: btrfs"
+
+#
+# File: 32-SeTpartitions, line: 49
+# File: 64-SeTpartitions, line: 49
+#, sh-format
+msgid "Formatting $ArG1 with filesystem ext2."
+msgstr "Διαμόρφωση $ArG1 με σύστημα αρχείων ext2."
+
+#
+# File: 32-SeTpartitions, line: 50
+# File: 64-SeTpartitions, line: 50
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE\n"
+"Filesystem type: ext2"
+msgstr ""
+"Διαμόρφωση $ArG1\n"
+"Μέγεθος σε τμήματα 1K: $SIZE\n"
+"Σύστημα αρχείων: ext2"
+
+#
+# File: 32-SeTpartitions, line: 74
+# File: 64-SeTpartitions, line: 74
+#, sh-format
+msgid "Formatting $ArG1 with filesystem ext3."
+msgstr "Διαμόρφωση $ArG1 με σύστημα αρχείων ext3."
+
+#
+# File: 32-SeTpartitions, line: 75
+# File: 64-SeTpartitions, line: 75
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE\n"
+"Filesystem type: ext3"
+msgstr ""
+"Διαμόρφωση $ArG1\n"
+"Μέγεθος σε τμήματα 1K: $SIZE\n"
+"Σύστημα αρχείων: ext3"
+
+#
+# File: 32-SeTpartitions, line: 99
+# File: 64-SeTpartitions, line: 99
+#, sh-format
+msgid "Formatting $ArG1 with filesystem ext4."
+msgstr "Διαμόρφωση $ArG1 με σύστημα αρχείων ext4."
+
+#
+# File: 32-SeTpartitions, line: 100
+# File: 64-SeTpartitions, line: 100
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE\n"
+"Filesystem type: ext4"
+msgstr ""
+"Διαμόρφωση $ArG1\n"
+"Μέγεθος σε τμήματα 1K: $SIZE\n"
+"Σύστημα αρχείων: ext4"
+
+#
+# File: 32-SeTpartitions, line: 124
+# File: 64-SeTpartitions, line: 124
+#, sh-format
+msgid "Formatting $ArG1 with filesystem jfs."
+msgstr "Διαμόρφωση $ArG1 με σύστημα αρχείων jfs."
+
+#
+# File: 32-SeTpartitions, line: 125
+# File: 64-SeTpartitions, line: 125
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE\n"
+"Filesystem type: jfs"
+msgstr ""
+"Διαμόρφωση $ArG1\n"
+"Μέγεθος σε τμήματα 1K: $SIZE\n"
+"Σύστημα αρχείων: jfs"
+
+#
+# File: 32-SeTpartitions, line: 147
+# File: 64-SeTpartitions, line: 147
+#, sh-format
+msgid "Formatting $ArG1 with filesystem reiserfs."
+msgstr "Διαμόρφωση $ArG1 με σύστημα αρχείων reiserfs."
+
+#
+# File: 32-SeTpartitions, line: 148
+# File: 64-SeTpartitions, line: 148
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE\n"
+"Filesystem type: reiserfs"
+msgstr ""
+"Διαμόρφωση $ArG1\n"
+"Μέγεθος σε τμήματα 1K: $SIZE\n"
+"Σύστημα αρχείων: reiserfs"
+
+#
+# File: 32-SeTpartitions, line: 166
+# File: 64-SeTpartitions, line: 166
+#, sh-format
+msgid "Formatting $ArG1 with filesystem xfs."
+msgstr "Διαμόρφωση $ArG1 με σύστημα αρχείων xfs."
+
+#
+# File: 32-SeTpartitions, line: 167
+# File: 64-SeTpartitions, line: 167
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE\n"
+"Filesystem type: xfs"
+msgstr ""
+"Διαμόρφωση $ArG1\n"
+"Μέγεθος σε τμήματα 1K: $SIZE\n"
+"Σύστημα αρχείων: xfs"
+
+#
+# File: 32-SeTpartitions, line: 203
+# File: 32-SeTpartitions, line: 204
+# File: 32-SeTpartitions, line: 205
+# File: 32-SeTpartitions, line: 206
+# File: 32-SeTpartitions, line: 207
+# File: 64-SeTpartitions, line: 203
+# File: 64-SeTpartitions, line: 204
+# File: 64-SeTpartitions, line: 205
+# File: 64-SeTpartitions, line: 206
+# File: 64-SeTpartitions, line: 207
+msgid "done adding partitions, continue with setup"
+msgstr "Ολοκλήρωση προσάρτησης κατατμήσεων, συνεχίζουμε με την εγκατάσταση"
+
+#
+# File: 32-SeTpartitions, line: 214
+# File: 64-SeTpartitions, line: 214
+#, sh-format
+msgid "Do you want to format Linux partition ${ArG1}?"
+msgstr "Θέλετε να διαμορφωθεί η κατάτμηση ${ArG1};"
+
+#
+# File: 32-SeTpartitions, line: 215
+# File: 64-SeTpartitions, line: 215
+#, sh-format
+msgid "FORMAT PARTITION $ArG1"
+msgstr "ΔΙΑΜΟΡΦΩΣΗ ΚΑΤΑΤΜΗΣΗΣ (PARTITION) $ArG1"
+
+#
+# File: 32-SeTpartitions, line: 215
+# File: 64-SeTpartitions, line: 215
+#, sh-format
+msgid ""
+"If this partition has not been formatted, you should format it.  NOTE: This "
+"will erase all data on it.  Would you like to format this partition?"
+msgstr ""
+"Εάν αυτή η κατάτμηση δεν είναι ήδη διαμορφωμένη, πρέπει να διαμορφωθεί. "
+"ΠΡΟΣΟΧΗ: αυτή η διαδικασία θα σβήσει ό,τι δεδομένα περιέχει η κατάτμηση. "
+"Θέλετε να διαμορφώσουμε αυτήν την κατάτμηση;"
+
+#
+# File: 32-SeTpartitions, line: 219
+# File: 64-SeTpartitions, line: 219
+#, sh-format
+msgid "Quick format with no bad block checking"
+msgstr "Γρήγορη διαμόρφωση χωρίς έλεγχο για ελαττωματικούς τομείς (bad block)"
+
+#
+# File: 32-SeTpartitions, line: 220
+# File: 64-SeTpartitions, line: 220
+#, sh-format
+msgid "Slow format that checks for bad blocks"
+msgstr "Διαμόρφωση με έλεγχο για ελαττωματικούς τομείς"
+
+#
+# File: 32-SeTpartitions, line: 221
+# File: 64-SeTpartitions, line: 221
+#, sh-format
+msgid "No, do not format this partition"
+msgstr "Να μη γίνει διαμόρφωση αυτής της κατάτμησης"
+
+#
+# File: 32-SeTpartitions, line: 234
+# File: 64-SeTpartitions, line: 234
+msgid "Ext2 is the traditional Linux file system and is fast and stable."
+msgstr ""
+"Το σύστημα αρχείων ext2 είναι το παραδοσιακό σύστημα αρχείων για τα Linux, "
+"και είναι γρήγορο και σταθερό"
+
+#
+# File: 32-SeTpartitions, line: 237
+# File: 64-SeTpartitions, line: 237
+msgid "Ext3 is the journaling version of the Ext2 filesystem."
+msgstr ""
+"Το σύστημα αρχείων ext3 είναι βασισμένο στο ext2 αλλά με ικανότητες "
+"journaling"
+
+#
+# File: 32-SeTpartitions, line: 241
+# File: 64-SeTpartitions, line: 241
+msgid "Ext4 is the successor to the ext3 filesystem. "
+msgstr "Το σύστημα αρχείων ext4 είναι η πιο πρόσφατη έκδοση του ext3"
+
+#
+# File: 32-SeTpartitions, line: 245
+# File: 64-SeTpartitions, line: 245
+msgid ""
+"ReiserFS is a journaling filesystem that stores all files and filenames in a "
+"balanced tree structure."
+msgstr ""
+"Το σύστημα αρχείων ReiserFS είναι ένα σύστημα αρχείων με αρχείο journal, το "
+"οποίο αποθηκεύει όλα τα αρχεία με τα ονόματά τους σε  ιεραρχική δομή "
+"καταλόγου"
+
+#
+# File: 32-SeTpartitions, line: 248
+# File: 64-SeTpartitions, line: 248
+msgid "Btrfs is a B-tree copy-on-write filesystem."
+msgstr "Το Btrfs είναι ένα σύστημα αρχείων B-tree copy-on-write."
+
+#
+# File: 32-SeTpartitions, line: 253
+# File: 64-SeTpartitions, line: 253
+msgid ""
+"JFS is IBM's Journaled Filesystem, currently used in IBM enterprise servers."
+msgstr ""
+"Το σύστημα αρχείων JFS είναι το journaling σύστημα της IBM, που "
+"χρησιμοποιείται κυρίως σε επαγγελματικούς server της IBM"
+
+#
+# File: 32-SeTpartitions, line: 256
+# File: 64-SeTpartitions, line: 256
+msgid "XFS is SGI's journaling filesystem that originated on IRIX."
+msgstr ""
+"Το σύστημα αρχείων XFS είναι το journaling σύστημα της SGI, βασισμένο στο "
+"IRIX."
+
+#
+# File: 32-SeTpartitions, line: 259
+# File: 64-SeTpartitions, line: 259
+#, sh-format
+msgid "SELECT FILESYSTEM FOR $ArG1 "
+msgstr "ΕΠΙΛΟΓΗ ΣΥΣΤΗΜΑΤΟΣ ΑΡΧΕΙΩΝ ΓΙΑ ΤΗΝ ΚΑΤΑΤΜΗΣΗ $ArG1 "
+
+#
+# File: 32-SeTpartitions, line: 261
+# File: 64-SeTpartitions, line: 261
+#, sh-format
+msgid "Partition $ArG1 will be formatted."
+msgstr "Η κατάτμηση $ArG1 είναι έτοιμη για διαμόρφωση"
+
+#
+# File: 32-SeTpartitions, line: 265
+# File: 64-SeTpartitions, line: 265
+msgid ""
+"Please select the type of filesystem to use for the specified device.  Here "
+"are descriptions of the available filesystems:"
+msgstr ""
+"Επιλέξτε το είδος συστήματος αρχείων που θέλετε να χρησιμοποιηθεί. Σύντομες "
+"περιγραφές των χαρακτηριστικών των διαθέσιμων συστήματος αρχείων:"
+
+#
+# File: 32-SeTpartitions, line: 270
+# File: 64-SeTpartitions, line: 270
+msgid "Standard Linux Ext2 Filesystem"
+msgstr "Κλασσικό σύστημα αρχείων Linux Ext2"
+
+#
+# File: 32-SeTpartitions, line: 273
+# File: 64-SeTpartitions, line: 273
+msgid "Ext3 Journaling Filesystem"
+msgstr "Journaling σύστημα αρχείων Ext3"
+
+#
+# File: 32-SeTpartitions, line: 276
+# File: 64-SeTpartitions, line: 276
+msgid "Ext4 Journaling Filesystem"
+msgstr "Journaling σύστημα αρχείων Ext4"
+
+#
+# File: 32-SeTpartitions, line: 279
+# File: 64-SeTpartitions, line: 279
+msgid "IBM's Journaled Filesystem"
+msgstr "Journaling σύστημα αρχείων της IBM"
+
+#
+# File: 32-SeTpartitions, line: 282
+# File: 64-SeTpartitions, line: 282
+msgid "ReiserFS Journaling Filesystem"
+msgstr "Journaling σύστημα αρχείων ReiserFS"
+
+#
+# File: 32-SeTpartitions, line: 285
+# File: 64-SeTpartitions, line: 285
+msgid "Btrfs Copy-on-Write B-tree Filesystem"
+msgstr "Σύστημα αρχείων Btrfs τύπου Copy-on-Write B-tree"
+
+#
+# File: 32-SeTpartitions, line: 288
+# File: 64-SeTpartitions, line: 288
+msgid "SGI's Journaling Filesystem"
+msgstr "Journaling σύστημα αρχείων της SGI"
+
+#
+# File: 32-SeTpartitions, line: 319
+# File: 64-SeTpartitions, line: 319
+msgid "Setting up root Linux partition."
+msgstr "Στήσιμο της κατάτμησης root (/)"
+
+#
+# File: 32-SeTpartitions, line: 321
+# File: 64-SeTpartitions, line: 321
+msgid "Select Linux installation partition:"
+msgstr "Επιλογή μιας κατάτμησης για την εγκατάσταση:"
+
+#
+# File: 32-SeTpartitions, line: 327
+# File: 64-SeTpartitions, line: 327
+msgid ""
+"Please select a partition from the following list to use for your root (/) "
+"Linux partition."
+msgstr ""
+"Επιλέξτε μία κατάτμηση από την παρακάτω λίστα για να χρησιμοποιήσετε ως "
+"κατάτμηση root (/)"
+
+#
+# File: 32-SeTpartitions, line: 408
+# File: 64-SeTpartitions, line: 408
+msgid "Setting up other Linux partitions."
+msgstr "Στήσιμο των υπόλοιπων κατατμήσεων"
+
+#
+# File: 32-SeTpartitions, line: 410
+# File: 64-SeTpartitions, line: 410
+msgid "Select other Linux partitions for /etc/fstab"
+msgstr "Επιλογή κατατμήσεων για καταχώρηση στο αρχείο /etc/fstab"
+
+#
+# File: 32-SeTpartitions, line: 416
+# File: 64-SeTpartitions, line: 416
+#, sh-format
+msgid ""
+"You seem to have more than one partition tagged as type Linux.  You may use "
+"these to distribute your Linux system across more than one partition.  "
+"Currently, you have $ROOT_DEVICE mounted as your / partition.  You might "
+"want to mount directories such as /home or /usr/local on separate "
+"partitions.  You should not try to mount /etc, /sbin, or /bin on their own "
+"partitions since they contain utilities needed to bring the system up and "
+"mount partitions.  Also, do not reuse a partition that you've already "
+"entered before.  Please select one of the Linux partitions listed below, or "
+"if you're done, hit <Continue>."
+msgstr ""
+"Έχετε περισσότερες από μία κατατμήσεις τύπου Linux. Αν θέλετε, μπορείτε να "
+"τις χρησιμοποιήσετε ώστε το λειτουργικό να εγκατασταθεί κατά μήκος "
+"περισσότερων κατατμήσεων. Η κατάτμηση / έχει ήδη προσαρτηθεί στο "
+"$ROOT_DEVICE. Αν θέλετε, μπορείτε να προσαρτήσετε κάποιους φακέλους του "
+"συστήματος (όπως π.χ. τον φάκελο /home ή τον /usr/local) σε ξεχωριστές "
+"κατατμήσεις. Οι μόνοι φάκελοι που είναι εντελώς απαραίτητο να μην "
+"προσαρτούνται σε ξεχωριστές κατατμήσεις απ' το / είναι οι /etc, /sbin, και /"
+"bin, καθώς περιέχουν εργαλεία για την εκκίνηση του συστήματος και την "
+"προσάρτηση κατατμήσεων. Προσοχή, μην ξαναεπιλέξετε μία κατάτμηση πού έχετε "
+"ήδη αντιστοιχήσει. Επιλέξτε μία από τις παρακάτω κατατμήσεις, ή, αν είστε "
+"έτοιμοι να συνεχίσουμε, πιέστε <Continue>."
+
+#
+# File: 32-SeTpartitions, line: 451
+# File: 64-SeTpartitions, line: 451
+#, sh-format
+msgid "Partition $NEXT_PARTITION will not be reformatted."
+msgstr "Δεν θα διαμορφώσουμε ξανά την κατάτμηση $NEXT_PARTITION"
+
+#
+# File: 32-SeTpartitions, line: 456
+# File: 64-SeTpartitions, line: 456
+#, sh-format
+msgid "Partition $NEXT_PARTITION will be formatted with $NEXT_SYS_TYPE."
+msgstr ""
+"Η κατάτμηση $NEXT_PARTITION θα διαμορφωθεί με το σύστημα αρχείων "
+"$NEXT_SYS_TYPE."
+
+#
+# File: 32-SeTpartitions, line: 493
+# File: 64-SeTpartitions, line: 493
+#. DOFORMAT?
+#. Now ask the user where to mount this new filesystem:
+#, sh-format
+msgid "SELECT MOUNT POINT FOR $NEXT_PARTITION"
+msgstr "Επιλέξτε σημείο προσάρτησης για την $NEXT_PARTITION"
+
+#
+# File: 32-SeTpartitions, line: 494
+# File: 64-SeTpartitions, line: 494
+#, sh-format
+msgid ""
+"OK, now you need to specify where you want the new partition mounted.  For "
+"example, if you want to put it under /usr/local, then respond:  /usr/local\n"
+"Where would you like to mount $NEXT_PARTITION?"
+msgstr ""
+"Ωραία, τώρα πρέπει να επιλέξετε το σημείο προσάρτησης της καινούριας "
+"κατάτμησης. Για παράδειγμα, για να προσαρτηθεί στο /usr/local, "
+"πληκτρολογήστε: /usr/local\n"
+"Πού θέλετε να προσαρτηθεί η κατάτμηση $NEXT_PARTITION?"
+
+#
+# File: 32-SeTpartitions, line: 538
+# File: 64-SeTpartitions, line: 538
+msgid "Finished setting up Linux partitions."
+msgstr "Οι κατατμήσεις του συστήματος έχουν ρυθμιστεί"
+
+#
+# File: 32-SeTpartitions, line: 539
+# File: 64-SeTpartitions, line: 539
+msgid "DONE ADDING LINUX PARTITIONS TO /etc/fstab"
+msgstr "ΟΛΟΚΛΗΡΩΣΗ ΚΑΤΑΧΩΡΗΣΗΣ ΚΑΤΑΤΜΗΣΕΩΝ ΣΤΟ ΑΡΧΕΙΟ /etc/fstab"
+
+#
+# File: 32-SeTswap, line: 26
+# File: 64-SeTswap, line: 26
+msgid "NO SWAP SPACE DETECTED"
+msgstr "ΔΕΝ ΒΡΕΘΗΚΕ ΚΑΤΑΤΜΗΣΗ ΓΙΑ ΕΙΚΟΝΙΚΗ ΜΝΗΜΗ SWAP"
+
+#
+# File: 32-SeTswap, line: 26
+# File: 64-SeTswap, line: 26
+msgid ""
+"You have not created a swap partition with Linux fdisk.  Do you want to "
+"continue installing without one? "
+msgstr ""
+"Δεν έχει καθοριστεί κατάτμηση για την εικονική μνήμη swap με το εργαλείο "
+"fdisk. Να συνεχιστεί η εγκατάσταση χωρίς swap;"
+
+#
+# File: 32-SeTswap, line: 30
+# File: 64-SeTswap, line: 30
+msgid "ABORTING INSTALLATION"
+msgstr "ΑΚΥΡΩΣΗ ΕΓΚΑΤΑΣΤΑΣΗΣ"
+
+#
+# File: 32-SeTswap, line: 30
+# File: 64-SeTswap, line: 30
+msgid "Create a swap partition with Linux fdisk, and then try this again."
+msgstr ""
+"Δημιουργήστε μία κατάτμηση για την εικονική μνήμη swap με την εντολή \"fdisk"
+"\" και αρχίσε ξανά την εγκατάσταση."
+
+#
+# File: 32-SeTswap, line: 39
+# File: 32-SeTswap, line: 79
+# File: 64-SeTswap, line: 39
+# File: 64-SeTswap, line: 79
+msgid "Setting up swap partitions."
+msgstr "Ρύθμιση κατατμήσεων εικονικής μνήμης SWAP"
+
+#
+# File: 32-SeTswap, line: 41
+# File: 64-SeTswap, line: 41
+msgid "SWAP SPACE DETECTED"
+msgstr "ΒΡΕΘΗΚΕ ΚΑΤΑΤΜΗΣΗ ΔΙΑΜΟΡΦΩΜΕΝΗ ΓΙΑ SWAP"
+
+#
+# File: 32-SeTswap, line: 43
+# File: 64-SeTswap, line: 43
+#, fuzzy
+msgid ""
+"Salix Setup has detected one or more swap partitions on your system.  These "
+"partitions have been preselected to be set up as swap space.  If there are "
+"any swap partitions that you do not wish to use with this installation, "
+"please unselect them with the up and down arrows and spacebar.  If you wish "
+"to use all of them (this is recommended), simply hit the ENTER key."
+msgstr ""
+"Το πρόγραμμα εγκατάστασης του Slint εντόπισε μία ή περισσότερες κατατμήσεις "
+"εικονικής μνήμης swap. Έχουμε ήδη προεπιλέξει αυτές τις κατατμήσεις και θα "
+"τις χρησιμοποιήσουμε όλες. Στην περίπτωση που προτιμάτε να παραλείψουμε "
+"κάποια, μετακινηθείτε στη λίστα με τα πάνω και κάτω βελάκια και αφαιρέστε "
+"την από τη λίστα επιλογής πατώντας SPACE. Αλλιώς, πιέστε ENTER για να "
+"χρησιμοποιηθούν όλες (συνίσταται)."
+
+#
+# File: 32-SeTswap, line: 56
+# File: 64-SeTswap, line: 56
+#, sh-format
+msgid "Linux swap partition, ${PARTSIZE}"
+msgstr "Κατάτμηση εικονικής μνήμης swap, ${PARTSIZE}"
+
+#
+# File: 32-SeTswap, line: 80
+# File: 64-SeTswap, line: 80
+msgid "CHECK SWAP PARTITIONS FOR BAD BLOCKS?"
+msgstr ""
+"ΝΑ ΓΙΝΕΙ ΕΛΕΓΧΟΣ ΓΙΑ ΕΛΑΤΤΩΜΑΤΙΚΟΥΣ ΤΟΜΕΙΣ ΣΤΙΣ ΚΑΤΑΤΜΗΣΕΙΣ ΕΙΚΟΝΙΚΗΣ ΜΝΗΜΗΣ "
+"SWAP;"
+
+#
+# File: 32-SeTswap, line: 81
+# File: 64-SeTswap, line: 81
+#, fuzzy
+msgid ""
+"Salix Setup will now prepare your system's swap space.  When formatting swap "
+"partitions with mkswap you may also check them for bad blocks.  This is not "
+"the default since nearly all modern hard drives check themselves for bad "
+"blocks anyway.  Would you like to check for bad blocks while running mkswap?"
+msgstr ""
+"Το πρόγραμμα εγκατάστασης του Slint θα προετοιμάσει την εικονική μνήμη swap "
+"του συστήματός σας. Η κατάτμηση θα διαμορφωθεί με το πρόγραμμα mkswap και "
+"υπάρχει η επιλογή να γίνει έλεγχος για ελαττωματικούς τομείς. Δεν έχουμε "
+"προεπιλέξει τον έλεγχο, καθώς όλοι οι σύγχρονοι σκληροί δίσκοι κάνουν "
+"αυτόματο έλεγχο από μόνοι τους. Θέλετε, παρ' όλα αυτά, να γίνει έλεγχος για "
+"ελαττωματικούς τομείς με το mkswap;"
+
+#
+# File: 32-SeTswap, line: 101
+# File: 64-SeTswap, line: 101
+#, sh-format
+msgid "Activating swap partition ${swappartition}:"
+msgstr "Ενεργοποίηση κατάτμησης εικονικής μνήμης swap ${swappartition}:"
+
+#
+# File: 32-SeTswap, line: 117
+# File: 64-SeTswap, line: 117
+msgid ""
+"Your swapspace has been configured. This information   will be added to "
+"your /etc/fstab:"
+msgstr ""
+"Η μνήμη swap του συστήματός σας είναι έτοιμη για χρήση. Θα προσθέσουμε στο "
+"αρχείο /etc/fstab τα εξής στοιχεία:"
+
+#
+# File: 32-SeTswap, line: 122
+# File: 64-SeTswap, line: 122
+msgid "SWAP SPACE CONFIGURED"
+msgstr "Η ΜΝΗΜΗ SWAP ΕΙΝΑΙ ΕΤΟΙΜΗ"
+
+#
+# File: SeTusers, line: 9
+msgid "User setup"
+msgstr ""
+
+#
+# File: SeTusers, line: 10
+msgid ""
+"You will now be presented with some dialogs so that you can create one or "
+"more user accounts in your new system.\n"
+"\n"
+"The first user you will create, will be able to run commands as a privileged "
+"user through sudo. Any other user will not be able to run commands with sudo "
+"unless you add them to the wheel group.\n"
+"\n"
+"The root user is disabled by default."
+msgstr ""
+
+#
+# File: 32-liloconfig, line: 1095
+# File: 64-liloconfig, line: 1095
+#. destroy ? ##########################################
+#, fuzzy
+msgid "AUTO PARTITION"
+msgstr "ΕΠΙΛΕΞΤΕ ΜΙΑ ΚΑΤΑΤΜΗΣΗ OS/2"
+
+#
+# File: autoinstall, line: 103
+msgid "Do It"
+msgstr ""
+
+#
+# File: 32-xwmconfig, line: 207
+# File: 64-xwmconfig, line: 207
+#, fuzzy
+msgid "Cancel"
+msgstr "Ακύρωση"
+
+#
+# File: autoinstall, line: 106
+msgid ""
+"This is automatic partition mode.\n"
+"Press <SPACE> to select the target disk where Salix will be installed.\n"
+"All data will be erased from the target disk.\n"
+"Only run this mode if the entire disk will be dedicated to Salix."
+msgstr ""
+
+#
+# File: autoinstall, line: 131
+msgid "Go back to the main setup menu"
+msgstr ""
+
+#
+# File: autoinstall, line: 140
+msgid "No target disk selected, going back to main menu"
+msgstr ""
+
+#
+# File: 32-SeTDOS, line: 217
+# File: 32-SeTEFI, line: 73
+# File: 32-SeTpartitions, line: 533
+# File: 64-SeTDOS, line: 217
+# File: 64-SeTEFI, line: 73
+# File: 64-SeTpartitions, line: 533
+#. Done, report to the user:
+#. dialog --title "`gettext "AUTO PARTITION" --msgbox "$(cat $TMP/${PARTITION_TOOL}.report)" 0 0
+#, fuzzy
+msgid ""
+"\n"
+"Partitioning completed,\n"
+"Adding this information to your /etc/fstab:\n"
+msgstr ""
+"\n"
+"Προσθέτοντας αυτές τις πληροφορίες στο /etc/fstab:\n"
+"\n"
+
+#
+# File: 32-liloconfig, line: 815
+# File: 64-liloconfig, line: 815
+#, fuzzy
+msgid "WELCOME TO THE SALIX INSTALLATION"
+msgstr "ΕΓΚΑΤΑΣΤΑΣΗ ΤΟΥ LILO ΓΙΑ ΕΜΠΕΙΡΟΥΣ"
+
+#
+# File: 32-pkgtool, line: 442
+# File: 64-pkgtool, line: 442
+#, fuzzy
+msgid "Keep the current keymap"
+msgstr "Παραλείψτε την παρούσα σειρά δίσκων"
+
+#
+# File: global-blurbs, line: 17
+#, fuzzy
+msgid "Select another keymap"
+msgstr "Επιλέξτε γραμματοσειρά για την γραμμή εντολών"
+
+#
+# File: 32-INSCD, line: 234
+# File: 64-INSCD, line: 234
+#. if there is no EFI
+#, fuzzy
+msgid "Salix Installation"
+msgstr "Ακύρωση εγκατάστασης μέσω CD"
+
+#
+# File: 32-INSCD, line: 234
+# File: 64-INSCD, line: 234
+#, fuzzy
+msgid "Exit installation"
+msgstr "Ακύρωση εγκατάστασης μέσω CD"
+
+#
+# File: setup, line: 70
+msgid ""
+"You may now proceed with the installation by pressing the ENTER key.\n"
+"\n"
+"If you want to exit the installation and drop to a linux console, select "
+"'Exit installation'"
+msgstr ""
+
+#
+# File: setup, line: 74
+# File: setup, line: 94
+msgid "Install Salix using a step-by-step guide"
+msgstr ""
+
+#
+# File: 32-pxesetup, line: 52
+# File: 64-pxesetup, line: 52
+#, fuzzy
+msgid ""
+"You may select an option below using the UP/DOWN keys and SPACE or ENTER. "
+"Alternate keys may also be used: '+', '-', and TAB.\n"
+"\n"
+"If you want to exit the installation and drop to a linux console, select "
+"'Exit installation'"
+msgstr ""
+"Καλωσήλθατε στις ρυθμίσεις του Slint PXE.\n"
+"Κάντε μια από τις παρακάτω επιλογές χρησιμοποιώντας τα πλήκτρα UP/DOWN και "
+"το SPACE ή το ENTER.\n"
+"\n"
+"Μπορούν, επίσης, να χρησιμοποιηθούν και τα εναλλακτικά πλήκτρα: '+', '-', "
+"και το TAB."
+
+#
+# File: setup, line: 95
+msgid "Autopartition and install with few options (wipes your HD)"
+msgstr ""
+
+#
+# File: 32-setup, line: 57
+# File: 64-setup, line: 57
+msgid "NO LINUX PARTITIONS DETECTED"
+msgstr "ΔΕΝ ΒΡΕΘΗΚΑΝ ΚΑΤΑΤΜΗΣΕΙΣ LINUX"
+
+#
+# File: 32-setup, line: 58
+# File: 64-setup, line: 58
+#, fuzzy
+msgid ""
+"There don't seem to be any Linux partitions on this machine.\n"
+"\t\tYou'll need to make at least one of these to install Linux. Either "
+"select AUTOINSTALL from the menu, or select INSTALL and use the partition "
+"editor to create one."
+msgstr ""
+"Δεν φαίνεται να υπάρχουν καθόλου κατατμήσεις τύπου Linux σε αυτό το "
+"μηχάνημα. Πρέπει να φτιάξετε τουλάχιστον μία από αυτές για να εγκαταστήσετε "
+"το Linux. Για να το πετύχετε, πρέπει να αφήσετε το 'setup' και δημιουργήστε "
+"τις κατατμήσεις χρησιμοποιώντας το 'cfdisk' (κατατμήσεις MBR) ή το "
+"'cgfdisk' (κατατμήσεις GPT). Για περισσότερες πληροφορίες, διαβάστε το "
+"αρχείο βοήθειας του 'setup' από το επόμενο μενού."
+
+#
+# File: 32-setup, line: 67
+# File: 64-setup, line: 67
+msgid "NO EFI SYSTEM PARTITION DETECTED"
+msgstr "ΔΕΝ ΕΝΤΟΠΙΣΘΗΚΕ ΚΑΜΙΑ ΚΑΤΑΤΜΗΣΗ ΣΥΣΤΗΜΑΤΟΣ ΜΕ EFI"
+
+#
+# File: 32-setup, line: 68
+# File: 64-setup, line: 68
+#, fuzzy
+msgid ""
+"This machine appears to be using EFI/UEFI, but no EFI System Partition was "
+"found.\n"
+"\n"
+"You'll need to make an EFI System Partition in order to boot from the hard "
+"drive."
+msgstr ""
+"Αυτό το μηχάνημα φαίνεται πως χρησιμοποιεί EFI/UEFI, αλλά δεν βρέθηκε καμία "
+"κατάτμηση συστήματος EFI.  Θα πρέπει να δημιουργήσετε μια Κατάτμηση "
+"Συστήματος EFI για να μπορέσετε να κάνετε εκκίνηση από τον σκληρό.  Για να "
+"το καταφέρετε, αφήστε το 'setup', και χρησιμοποιήστε το 'cgdisk' για να "
+"δημιουργήσετε μια κατάτμηση 100MB του είδους EF00.  Για περισσότερες "
+"πληροφορίες, διαβάστε το αρχείο βοήθειας 'setup' από το επόμενο μενού."
+
+#
+# File: setup, line: 162
+# File: setup, line: 169
+msgid "-s"
+msgstr ""
+
+#
+# File: setup, line: 202
+msgid "No Source Selected"
+msgstr ""
+
+#
+# File: setup, line: 203
+msgid ""
+"\n"
+"The installer does not know where to find the source packages...\n"
+"Press ENTER to return to the main menu."
+msgstr ""
+
+#
+# File: 32-setup, line: 179
+# File: 64-setup, line: 179
+msgid "CANNOT INSTALL SOFTWARE YET"
+msgstr "ΔΕΝ ΜΠΟΡΕΙ ΑΚΟΜΗ ΝΑ ΓΙΝΕΙ ΕΓΚΑΤΑΣΤΑΣΗ ΛΟΓΙΣΜΙΚΟΥ"
+
+#
+# File: 32-setup, line: 179
+# File: 64-setup, line: 179
+#, fuzzy
+msgid ""
+"Before you can install software, complete the following tasks:\n"
+"   \n"
+"1. Select your source media.\n"
+"2. Set up your target Linux partition(s).\n"
+"\n"
+"You may also optionally remap your keyboard and set up your swap "
+"partition(s).\n"
+"\n"
+"Press ENTER to return to the main menu."
+msgstr ""
+"\n"
+"Πριν μπορέσετε να εγκαταστήσετε λογισμικό, διεκπεραιώστε τις ακόλουθες "
+"εργασίες:\n"
+"\n"
+"1. Επιλέξτε το μέσον προέλευσης.\n"
+"2. Ρυθμίστε την κατάτμησή σας (κατατμήσεις) για Linux partition.\n"
+"3. Επιλέξτε ποιων κατηγοριών λογισμικό θα εγκαταστήσετε.\n"
+"\n"
+"Μπορείτε, επίσης, προαιρετικά, να αλλάξετε την διάταξη του πληκτρολογίου σας "
+"και να ρυθμίσετε την κατάτμησή σας (κατατμήσεις) για εικονική μνήμη/swap.\n"
+"\n"
+"Πατήστε ENTER για να επιστρέψετε στο βασικό μενού."
+
+#
+# File: 32-display.lilohelp, line: 106
+# File: 64-display.lilohelp, line: 106
+#, fuzzy
+msgid "SELECT INSTALLATION MODE"
+msgstr "ΒΟΗΘΕΙΑ ΕΓΚΑΤΑΣΤΑΣΗΣ ΤΟΥ LILO"
+
+#
+# File: setup, line: 238
+msgid ""
+"Please select the installation mode you prefer from the following:\n"
+"BASIC will only install a minimal graphical environment and a web browser.\n"
+"CORE will install only the minimum essentials for your system to start in "
+"console mode (no graphical environment included) and is ideal if you are an "
+"experienced user and want to fully customize your installation for any "
+"specific purpose.\n"
+msgstr ""
+
+#
+# File: setup, line: 248
+# File: setup, line: 270
+msgid "Install a minimal graphical environment"
+msgstr ""
+
+#
+# File: setup, line: 249
+# File: setup, line: 271
+msgid "Install a minimal console system"
+msgstr ""
+
+#
+# File: setup, line: 256
+msgid ""
+"Please select the installation mode you prefer from the following:\n"
+"FULL (default) will install everything. That includes one application per "
+"task, such as an office suite, a multimedia player, a CD/DVD burner etc. "
+"BASIC will only install a minimal graphical environment and a web browser.\n"
+"CORE will install only the minimum essentials for your system to start in "
+"console mode (no graphical environment included) and is ideal if you are an "
+"experienced user and want to fully customize your installation for any "
+"specific purpose.\n"
+msgstr ""
+
+#
+# File: setup, line: 269
+msgid "Install everything"
+msgstr ""
+
+#
+# File: 32-setup, line: 346
+# File: 64-setup, line: 346
+msgid "REPLACE /etc/fstab?"
+msgstr "ΝΑ ΑΝΤΙΚΑΤΑΣΤΑΘΕΙ το  /etc/fstab ;"
+
+#
+# File: 32-setup, line: 346
+# File: 64-setup, line: 346
+#, fuzzy
+msgid ""
+"You already have an /etc/fstab on your install partition.\n"
+"\n"
+"If you were just adding software, you should probably keep your old /etc/"
+"fstab.\n"
+"\n"
+"If you've changed your partitioning scheme, you should use the new /etc/"
+"fstab.\n"
+"\n"
+"Do you want to replace your old /etc/fstab with the new one?"
+msgstr ""
+"Έχετε ήδη ένα /etc/fstab στην κατάτμησή σας με την εγκατάσταση.  Αν απλώς "
+"προσθέτετε λογισμικό, θα πρέπει πιθανώς να διατηρήσετε το παλιό σας /etc/"
+"fstab.  Αν αλλάξετε το σχήμα/ scheme κατάτμησή σας, τότε θα πρέπει να "
+"χρησιμοποιήσετε το καινούργιο σας /etc/fstab.  Θέλετε να αντικαταστήσετε το "
+"παλιό σας /etc/fstab με το νέο;"
+
+#
+# File: 32-display.lilohelp, line: 106
+# File: 64-display.lilohelp, line: 106
+#, fuzzy
+msgid "SALIX INSTALLATION IS COMPLETE"
+msgstr "ΒΟΗΘΕΙΑ ΕΓΚΑΤΑΣΤΑΣΗΣ ΤΟΥ LILO"
+
+#
+# File: setup, line: 372
+# File: setup, line: 379
+msgid "Reboot now"
+msgstr ""
+
+#
+# File: setup, line: 373
+# File: setup, line: 380
+msgid "Exit to command line"
+msgstr ""
+
+#
+# File: setup, line: 374
+msgid ""
+"System configuration and installation is complete. Please remove the "
+"installation disc. You can either select to reboot your system now or choose "
+"to exit the installation to the command line if you would like to do any "
+"manual tweaking."
+msgstr ""
+
+#
+# File: 32-setup, line: 472
+# File: 64-setup, line: 472
+#, fuzzy
+msgid ""
+"System configuration and installation is complete. You can either select to "
+"reboot your system now or choose to exit the installation to the command "
+"line if you would like to do any manual tweaking."
+msgstr ""
+"Η διαμόρφωση και η ρύθμιση του συστήματος ολοκληρώθηκαν. Μπορείτε να κάνετε "
+"ΕΞΟΔΟ από τις ρυθμίσεις και να επανεκκινήσετε τον υπολογιστή σας, πατώντας "
+"ctrl-alt-del"

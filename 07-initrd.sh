@@ -177,13 +177,16 @@ install_fonts
 # We need messages catalogs for available locales - Didier
 install_messages_catalogs() {
 echo "Installing messages catalogs"
-SLINTREPO="http://slint.fr/testing"
-rm -f salix-installer-msg*
-# For now (testing) the catalogs are just the Slint ones, renamed
-# salix-installer.mo instead of slint.mo - Didier
-wget -q $SLINTREPO/salix-installer-msg-noarch-1.txz
-spkg -qq -i --root=/boot/initrd-tree/ salix-installer-msg-noarch-1.txz
-rm -f salix-installer-msg*
+for j in $(find po -name "*.po"); do
+  i=$(basename $j)
+  ll_TT=${i%%.*}
+  SeTLocaleDir
+  MO_DIR=/boot/initrd-tree/usr/share/locale/$LocaleDir/LC_MESSAGES
+  mkdir -p $MO_DIR
+  msgfmt --strict -c -v --statistics -o $MO_DIR/salix-installer.mo $j
+  chown root:root $MO_DIR/salix-installer.mo
+  chmod 644 $MO_DIR/salix-installer.mo
+done
 }
 install_messages_catalogs
 

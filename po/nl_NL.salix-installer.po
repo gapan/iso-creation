@@ -1,0 +1,3142 @@
+# This file is put in the public domain.
+#
+# Translators:
+# Didier Spaier <didier@slint.fr>, 2014.
+# Eric Hameleers <alien@slackware.com>, 2013.
+# Eric Hameleers <eric.hameleers@gmail.com>, 2014,2016.
+msgid ""
+msgstr ""
+"Project-Id-Version: Salix-15.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-03-23 18:24+0100\n"
+"PO-Revision-Date: 2016-03-21 23:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: American English <kde-i18n-doc@kde.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.5\n"
+
+#
+# File: 32-INCISO, line: 14
+# File: 64-INCISO, line: 14
+msgid "USE ISO IMAGE"
+msgstr "GEBRUIK ISO IMAGE"
+
+#
+# File: INCISO, line: 33
+msgid ""
+"\n"
+"Setup has found ISO images in the source directory.\n"
+"\n"
+"Select an image if you want to use it as an installation source?\n"
+msgstr ""
+
+#
+# File: INCISO, line: 52
+msgid ""
+"\n"
+"Mounting ISO image...\n"
+msgstr ""
+
+#
+# File: 32-INSCD, line: 15
+# File: 64-INSCD, line: 15
+msgid "SCANNING FOR CD or DVD DRIVE"
+msgstr "ZOEKEN NAAR CD OF DVD DRIVE"
+
+#
+# File: 32-INSCD, line: 16
+# File: 64-INSCD, line: 16
+#, fuzzy
+msgid ""
+"Make sure the Salix disc is in your CD/DVD drive, and then press ENTER to "
+"begin the scanning process. Or, if you'd rather specify the device name "
+"manually (experts only), choose that option below."
+msgstr ""
+"Controleer of de Slint disk in je CD/DVD drive zit, en druk op ENTER om het "
+"scanproces te starten. Als je liever de device-naam opgeeft (alleen voor "
+"experts) kies dan die optie hieronder.."
+
+#
+# File: 32-INSCD, line: 21
+# File: 64-INSCD, line: 21
+msgid "Scan for the CD or DVD drive (recommended)"
+msgstr "Zoek naar een CD of DVD drive (aanbevolen)"
+
+#
+# File: 32-INSCD, line: 22
+# File: 64-INSCD, line: 22
+msgid "Manually specify CD or DVD by device name"
+msgstr "Handmatig de device-naam ingeven van CD of DVD "
+
+#
+# File: 32-INSCD, line: 31
+# File: 64-INSCD, line: 31
+msgid "MANUAL CD/DVD DEVICE SELECTION"
+msgstr "HANDMATIGE SELECTIE CD/DVD DEVICE"
+
+#
+# File: 32-INSCD, line: 32
+# File: 64-INSCD, line: 32
+msgid ""
+"Please select your CD/DVD device from the list below.  If you don't see your "
+"device listed, choose 'custom'.  This will let you type in any device name. "
+"(and if necessary, will create the device)"
+msgstr ""
+"Selecteer je CD/DVD in de lijst hieronder. Als je hier je apparaat niet bij "
+"ziet staan, kies \"handmatig\". Daarmee kun je een willekeurige device-naam "
+"invoeren (die ook wordt aangemaakt indien nodig)"
+
+#
+# File: 32-INSCD, line: 37
+# File: 64-INSCD, line: 37
+msgid "Type in the CD or DVD device to use"
+msgstr "Typ de naam van het te gebruiken CD of DVD device"
+
+#
+# File: 32-INSCD, line: 38
+# File: 64-INSCD, line: 38
+msgid "First CD/DVD drive"
+msgstr "Eerste CD/DVD drive"
+
+#
+# File: 32-INSCD, line: 39
+# File: 64-INSCD, line: 39
+msgid "Second CD/DVD drive"
+msgstr "Tweede CD/DVD drive"
+
+#
+# File: 32-INSCD, line: 40
+# File: 64-INSCD, line: 40
+msgid "Third CD/DVD drive"
+msgstr "Derde CD/DVD drive"
+
+#
+# File: 32-INSCD, line: 41
+# File: 64-INSCD, line: 41
+msgid "Fourth CD/DVD drive"
+msgstr "Vierde CD/DVD drive"
+
+#
+# File: 32-INSCD, line: 50
+# File: 64-INSCD, line: 50
+msgid "First parallel port ATAPI CD"
+msgstr "Eerste parallelle ATAPI CD"
+
+#
+# File: 32-INSCD, line: 51
+# File: 64-INSCD, line: 51
+msgid "Second parallel port ATAPI CD"
+msgstr "Tweede parallelle ATAPI CD"
+
+#
+# File: 32-INSCD, line: 52
+# File: 64-INSCD, line: 52
+msgid "Third parallel port ATAPI CD"
+msgstr "Derde parallelle ATAPI CD"
+
+#
+# File: 32-INSCD, line: 53
+# File: 64-INSCD, line: 53
+msgid "Fourth parallel port ATAPI CD"
+msgstr "Vierde parallelle ATAPI CD"
+
+#
+# File: 32-INSCD, line: 54
+# File: 64-INSCD, line: 54
+msgid "Non-IDE Aztech CD/DVD"
+msgstr "Non-IDE Aztech CD/DVD"
+
+#
+# File: 32-INSCD, line: 55
+# File: 64-INSCD, line: 55
+msgid "Sony CDU-535 CD/DVD"
+msgstr "Sony CDU-535 CD/DVD"
+
+#
+# File: 32-INSCD, line: 56
+# File: 64-INSCD, line: 56
+msgid "Non-IDE GoldStar CD/DVD"
+msgstr "Non-IDE GoldStar CD/DVD"
+
+#
+# File: 32-INSCD, line: 57
+# File: 64-INSCD, line: 57
+msgid "Sony CDU-31a CD/DVD"
+msgstr "Sony CDU-31a CD/DVD"
+
+#
+# File: 32-INSCD, line: 58
+# File: 64-INSCD, line: 58
+msgid "Optics Storage CD/DVD"
+msgstr "Optics Storage CD/DVD"
+
+#
+# File: 32-INSCD, line: 59
+# File: 64-INSCD, line: 59
+msgid "Sanyo non-IDE CD/DVD"
+msgstr "Sanyo non-IDE CD/DVD"
+
+#
+# File: 32-INSCD, line: 60
+# File: 64-INSCD, line: 60
+msgid "Non-IDE Mitsumi drive 1"
+msgstr "Non-IDE Mitsumi drive 1"
+
+#
+# File: 32-INSCD, line: 61
+# File: 64-INSCD, line: 61
+msgid "Non-IDE Mitsumi drive 2"
+msgstr "Non-IDE Mitsumi drive 2"
+
+#
+# File: 32-INSCD, line: 62
+# File: 64-INSCD, line: 62
+msgid "Old non-IDE SoundBlaster CD/DVD"
+msgstr "Oude non-IDE SoundBlaster CD/DVD"
+
+#
+# File: 32-INSCD, line: 63
+# File: 64-INSCD, line: 63
+msgid "Philips LMS CM-205 CD/DVD"
+msgstr "Philips LMS CM-205 CD/DVD"
+
+#
+# File: 32-INSCD, line: 64
+# File: 64-INSCD, line: 64
+msgid "Philips LMS CM-206 CD/DVD"
+msgstr "Philips LMS CM-206 CD/DVD"
+
+#
+# File: 32-INSCD, line: 65
+# File: 64-INSCD, line: 65
+msgid "Old non-IDE Mitsumi CD/DVD"
+msgstr "Oude non-IDE Mitsumi CD/DVD"
+
+#
+# File: 32-INSCD, line: 74
+# File: 64-INSCD, line: 74
+msgid "ENTER CD/DVD DEVICE MANUALLY"
+msgstr "HANDMATIGE INVOER CD/DVD DEVICE"
+
+#
+# File: 32-INSCD, line: 75
+# File: 64-INSCD, line: 75
+#, fuzzy
+msgid ""
+"Please enter the name of the CD/DVD device (such as /dev/hdc) that you wish "
+"to use to mount the Salix CD/DVD:"
+msgstr ""
+"Vul de naam in van het CD/DVD device (zoals /dev/hdc) die de Slint CD/DVD "
+"bevat:"
+
+#
+# File: 32-INSCD, line: 86
+# File: 64-INSCD, line: 86
+msgid "MKNOD CD/DVD DEVICE"
+msgstr "MKNOD CD/DVD DEVICE"
+
+#
+# File: 32-INSCD, line: 87
+# File: 64-INSCD, line: 87
+#, sh-format
+msgid ""
+"There doesn't seem to be a device by the name of $DRIVE_FOUND in the /dev "
+"directory, so we will have to create it using the major and minor numbers "
+"for the device.  If you're using a bootdisk with a custom CD/DVD driver on "
+"it, you should be able to find these numbers in the documentation.  Also, "
+"see the 'devices.txt' file that comes with the Linux kernel source.  If you "
+"don't know the numbers, you'll have to hit Esc to abort. Enter the major and "
+"minor numbers for the new device, separated by one space:"
+msgstr ""
+"Een device met de naam $DRIVE_FOUND is niet aanwezig in de /dev directory, "
+"deze zal moeten worden gemaakt aan de hand van de major en minor getallen "
+"voor het apparaat. Als je een bootdisk gebruikt met een custom CD/DVD driver "
+"dan moet je die getallen in de documentatie kunnen vinden. Kijk ook in het "
+"bestand 'devices.txt' in de Linux kernel broncode. Als je deze getallen niet "
+"weet, zul je ESC moeten drukken om af te breken. Voer de major en minor "
+"getallen in voor het nieuwe apparaat, gescheiden door een spatie:"
+
+#
+# File: 32-INSCD, line: 102
+# File: 64-INSCD, line: 102
+msgid "MAKING DEVICE IN /dev"
+msgstr "DEVICE IN /dev MAKEN"
+
+#
+# File: 32-INSCD, line: 107
+# File: 64-INSCD, line: 107
+msgid "MKNOD FAILED"
+msgstr "MKNOD FAALDE"
+
+#
+# File: 32-INSCD, line: 108
+# File: 64-INSCD, line: 108
+msgid ""
+"Sorry, but the mknod command failed to make the device.  You'll need to go "
+"back and try selecting your source media again.  Press ENTER to abort the "
+"source media selection process."
+msgstr ""
+"Sorry, het mknod commando faalde bij het maken van het device bestand. Je "
+"zult moeten teruggaan en je installatie medium opnieuw kiezen. Druk ENTER om "
+"het bron medium selectie proces af te breken."
+
+#
+# File: 32-INSCD, line: 122
+# File: 32-INSCD, line: 139
+# File: 32-INSCD, line: 159
+# File: 32-INSCD, line: 179
+# File: 64-INSCD, line: 122
+# File: 64-INSCD, line: 139
+# File: 64-INSCD, line: 159
+# File: 64-INSCD, line: 179
+msgid "SCANNING"
+msgstr "ZOEKEN"
+
+#
+# File: 32-INSCD, line: 122
+# File: 64-INSCD, line: 122
+#, fuzzy
+msgid "Scanning for a CD/DVD drive containing a Salix disc..."
+msgstr "Zoeken naar een CD/DVD drive die een Slint disk bevat..."
+
+#
+# File: 32-INSCD, line: 159
+# File: 64-INSCD, line: 159
+#, fuzzy
+msgid ""
+"Scanning for a parallel port ATAPI CD/DVD drive containing a Salix disc..."
+msgstr ""
+"Zoeken naar een parallelle-poort CD/DVD drive die een Slint disk bevat..."
+
+#
+# File: 32-INSCD, line: 179
+# File: 64-INSCD, line: 179
+msgid ""
+"No IDE/SCSI drive, so we will try scanning for CD drives on old proprietary "
+"interfaces, such as SoundBlaster pre-IDE CD drives, Sony CDU-31a, Sony 535, "
+"old Mitsumi pre-IDE, old Optics, etc.  For this scan to work at all, you'll "
+"need to be using a bootdisk that supports your CD drive.\n"
+"\n"
+"Please press ENTER to begin this last-chance scan for old, obsolete hardware."
+msgstr ""
+"Geen IDE/SCSI drive, dus we zullen proberen te zoeken naar een CD drive op "
+"ouderwetse interfaces, zoals SoundBlaster pre-IDE CD drives, Sony CDU-31a en "
+"535, oude Mitsumi pre-IDE, oude Optics, etc. Om dit te laten werken, moet je "
+"een bootdisk gebruiken die je CD drive ondersteunt.\n"
+"\n"
+"Druk ENTER om deze laatste-kans scan op ouderwetse hardware te starten,"
+
+#
+# File: 32-INSCD, line: 200
+# File: 64-INSCD, line: 200
+msgid "CD/DVD DRIVE NOT FOUND"
+msgstr "GEEN CD/DVD DRIVE GEVONDEN"
+
+#
+# File: 32-INSCD, line: 201
+# File: 64-INSCD, line: 201
+#, fuzzy
+msgid ""
+"A CD/DVD drive could not be found on any of the devices that were scanned.  "
+"Possible reasons include using a bootdisk or kernel that doesn't support "
+"your drive, failing to pass parameters needed by some drives to the kernel, "
+"not having the Salix disc in your CD/DVD drive, or using a drive connected "
+"to a Plug and Play soundcard (in this case, connecting the drive directly to "
+"the IDE interface often helps). Please make sure you are using the correct "
+"bootdisk for your hardware, consult the BOOTING file for possible "
+"information on forcing the detection of your drive, and then reattempt "
+"installation.  If all else fails, see FAQ.TXT for information about copying "
+"parts of this CD to your DOS partition and installing it from there.\n"
+"\n"
+"You will now be returned to the main menu.  If you want to try looking for "
+"the CD again, you may skip directly to the SOURCE menu selection."
+msgstr ""
+"Een CD/DVD drive kon niet worden gevonden tijdens een hardware scan. "
+"Mogelijke oorzaken zijn: het gebruik van een bootdisk of kernel die je drive "
+"niet ondersteunt; extra kernel parameters zijn nodig voor je drive; de Slint "
+"disc zit niet in de CD/DVD drive; de drive is aangesloten aan een Plug en "
+"Play geluildskaart (in dit geval helpt het vaak om de drive direct aan een "
+"IDE connector aan te sluiten). Controleer dat je de juiste bootdisk voor je "
+"hardware gebruikt. Consulteer het BOOTING bestand voor eventuele informatie "
+"omtrent het forceren van drive detectie. Probeer daarna de installatie "
+"opnieuw te starten. Indien niets werkt, heeft de FAQ.TXT aanwijzingen over "
+"het kopieren van delen van deze CD naar je DOS partitie om de installatie "
+"van daar uit te starten.\n"
+"\n"
+"Je keert nu terug naar het hoofdmenu. Indien je opnieuw een scan wil starten "
+"voor de CD/DVD, ga dan gelijk door naar het SOURCE menu."
+
+#
+# File: 32-INSCD, line: 223
+# File: 64-INSCD, line: 223
+#. mounted successfully
+msgid "CD/DVD DRIVE FOUND"
+msgstr "CD/DVD DRIVE GEVONDEN"
+
+#
+# File: 32-INSCD, line: 224
+# File: 64-INSCD, line: 224
+#, fuzzy, sh-format
+msgid "A Salix disc was found in device $DRIVE_FOUND."
+msgstr "Een Slint disk is gevonden in device $DRIVE_FOUND ."
+
+#
+# File: 32-INSCD, line: 227
+# File: 32-INShd, line: 98
+# File: 32-pkgtool, line: 431
+# File: 64-INSCD, line: 227
+# File: 64-INShd, line: 98
+# File: 64-pkgtool, line: 431
+#. failed to mount
+msgid "MOUNT ERROR"
+msgstr "AANKOPPELFOUT"
+
+#
+# File: 32-INSCD, line: 227
+# File: 64-INSCD, line: 227
+#, sh-format
+msgid ""
+"There was an error attempting to mount the CD/DVD on $DRIVE_FOUND.  Maybe "
+"the device name is incorrect, the disc is not in the drive, or the kernel "
+"you are using does not support the device. (possibly an incorrect bootdisk) "
+"What would you like to do now?"
+msgstr ""
+"Een fout is opgetreden bij een poging om de CD/DVD te mounten op "
+"$DRIVE_FOUND . Misschien is de naam van het device incorrect, of anders is "
+"de disk is niet in de drive , of de kernel die je gebruikt ondersteunt het "
+"apparaat niet. (mogelijk de verkeerde bootdisk gebruikt). Hoe wil je nu "
+"verder?"
+
+#
+# File: 32-INSCD, line: 234
+# File: 64-INSCD, line: 234
+msgid "Abort CD installation"
+msgstr "CD installatie afbreken"
+
+#
+# File: 32-INSCD, line: 235
+# File: 64-INSCD, line: 235
+msgid "Attempt to mount the CD/DVD device again"
+msgstr "Probeer de CD/DVD opnieuw aan te koppelen"
+
+#
+# File: 32-INSCD, line: 236
+# File: 32-INShd, line: 100
+# File: 64-INSCD, line: 236
+# File: 64-INShd, line: 100
+msgid "Ignore the error and continue"
+msgstr "Let niet op de foutmelding en ga door"
+
+#
+# File: 32-INSCD, line: 248
+# File: 64-INSCD, line: 248
+#, sh-format
+msgid "ATTEMPTING TO MOUNT CD/DVD on $DRIVE_FOUND"
+msgstr "PROBEER DE CD/DVD AAN TE KOPPELEN op $DRIVE_FOUND"
+
+#
+# File: 32-INSCD, line: 249
+# File: 64-INSCD, line: 249
+#, sh-format
+msgid ""
+"Attempting to mount your CD/DVD again with the following command:\n"
+"$ArG"
+msgstr ""
+"Probeer opnieuw je CD/DVD aan te koppelen met het volgende commando:\n"
+"$ArG"
+
+#
+# File: 32-INSNFS, line: 24
+# File: 64-INSNFS, line: 24
+#, fuzzy
+msgid ""
+"\n"
+"Good! We're all set on the local end, but now we need to know where to find "
+"the software packages to install.  First, we need the IP address of the "
+"machine where the Salix sources are stored."
+msgstr ""
+"Goed! We zijn zover aan onze kant, maar nu moeten we weten\n"
+"waar de software pakketten te vinden zijn die we gaan installeren.\n"
+"Eerst moeten we het IP adres weten van de machine waar de\n"
+"Slint pakketten zijn opgeslagen."
+
+#
+# File: 32-INSURL, line: 71
+# File: 64-INSURL, line: 71
+#, fuzzy
+msgid ""
+"Since you're already running on the network, you should be able to use the "
+"hostname instead of an IP address if you wish."
+msgstr ""
+"Omdat je al actief bent op het netwerk, kun je de hostnaam gebruiken in "
+"plaats van het IP adres als je dat wilt.\n"
+
+#
+# File: 32-INSNFS, line: 36
+# File: 64-INSNFS, line: 36
+msgid "What is the IP address of your NFS server?"
+msgstr "Wat is het IP adres van je NFS server?"
+
+#
+# File: 32-INSNFS, line: 38
+# File: 64-INSNFS, line: 38
+msgid "ENTER IP ADDRESS OF NFS SERVER"
+msgstr "VOER IP ADRES IN VAN NFS SERVER"
+
+#
+# File: 32-INSURL, line: 86
+# File: 64-INSURL, line: 86
+#, fuzzy, sh-format
+msgid ""
+"\n"
+"There must be a directory on the server with the Salix packages and files "
+"arranged in a tree like the FTP site.\n"
+"\n"
+"The installation script needs to know the name of the directory on your "
+"server that contains the series' subdirectories. For example, if your A "
+"series is found at /stuff/salix/a, then you would respond: /stuff/salix\n"
+"\n"
+"What is the Salix source directory?"
+msgstr ""
+"\n"
+"Er moet een directory op de server bestaan met de Slint pakketten, geordend "
+"in een boomstructuur als op de FTP site.\n"
+"\n"
+"Het installatie script moet de naam weten van de directory op je server waar "
+"de subdirectories met de series te vinden zijn. Bijvoorbeeld, als de A serie "
+"te vinden is in /stuff/slint$SFX/a, dan moet je antwoorden: /stuff/slint"
+"$SFX\n"
+"\n"
+"Welke directory is de bron van Slint pakketten?\n"
+
+#
+# File: 32-INSNFS, line: 56
+# File: 32-INSSMB, line: 56
+# File: 32-INSURL, line: 97
+# File: 32-INShd, line: 58
+# File: 32-pkgtool, line: 385
+# File: 64-INSNFS, line: 56
+# File: 64-INSSMB, line: 56
+# File: 64-INSURL, line: 97
+# File: 64-INShd, line: 58
+# File: 64-pkgtool, line: 385
+msgid "SELECT SOURCE DIRECTORY"
+msgstr "SELECTEER BRONDIRECTORY"
+
+#
+# File: 32-INSNFS, line: 64
+# File: 64-INSNFS, line: 64
+#, fuzzy
+msgid ""
+"\n"
+"In the next screen you should watch for NFS mount errors.\n"
+"\n"
+"If you see errors and you don't see your NFS server listed, then try setting "
+"up NFS again.\n"
+"\n"
+msgstr ""
+"\n"
+"In het volgende scherm moet je uitkijken voor NFS foutmeldingen. Als je "
+"fouten ziet en je NFS server wordt niet getoond, probeer dan NFS opnieuw te "
+"configureren.\n"
+
+#
+# File: 32-INSNFS, line: 68
+# File: 64-INSNFS, line: 68
+msgid "NFS MOUNT INFORMATION"
+msgstr "NFS AANKOPPELINFORMATIE"
+
+#
+# File: 32-INSNFS, line: 83
+# File: 64-INSNFS, line: 83
+#, sh-format
+msgid "Mounting $REMOTE_PATH:"
+msgstr "Aankoppelen van $REMOTE_PATH"
+
+#
+# File: 32-INSNFS, line: 88
+# File: 64-INSNFS, line: 88
+msgid "Didn't work."
+msgstr "Is niet gelukt."
+
+#
+# File: 32-INSNFS, line: 90
+# File: 64-INSNFS, line: 90
+msgid "Maybe you should check that the directory name is correct?"
+msgstr "Misschien kun je controleren of de opgegeven directory correct is?"
+
+#
+# File: 32-INSNFS, line: 97
+# File: 64-INSNFS, line: 97
+msgid "Current NFS mounts:"
+msgstr "Huidige NFS aankoppelpunten:"
+
+#
+# File: 32-INSNFS, line: 101
+# File: 64-INSNFS, line: 101
+msgid "Do you need to try setting up NFS again?"
+msgstr "Wil je proberen NFS opnieuw te configureren?"
+
+#
+# File: 32-INSNFS, line: 104
+# File: 32-INSNFS, line: 108
+# File: 64-INSNFS, line: 104
+# File: 64-INSNFS, line: 108
+msgid "NFS MOUNT RESULT"
+msgstr "NFS AANKOPPELRESULTAAT"
+
+#
+# File: 32-INSSMB, line: 23
+# File: 64-INSSMB, line: 23
+#, fuzzy
+msgid ""
+"\n"
+"Good! We're all set on the local end, but now we need to know where to find "
+"the software packages to install. First, we need the share address of the "
+"Samba server where the Salix sources are stored.\n"
+"\n"
+"Example share address: //192.168.0.1/public\n"
+msgstr ""
+"\n"
+"\n"
+"Goed! We zijn zover aan onze kant, maar nu moeten we weten\n"
+"waar de software pakketten te vinden zijn die we gaan installeren.\n"
+"Eerst moeten we het share adres weten van de Samba server\n"
+"waar de Slint pakketten zijn opgeslagen.\n"
+"Voorbeeld van een share adres: //192.168.0.1/public\n"
+
+#
+# File: 32-INSURL, line: 71
+# File: 64-INSURL, line: 71
+msgid ""
+"Since you're already running on the network, you should be able to use the "
+"hostname instead of an IP address if you wish.\n"
+msgstr ""
+"Omdat je al actief bent op het netwerk, kun je de hostnaam gebruiken in "
+"plaats van het IP adres als je dat wilt.\n"
+
+#
+# File: 32-INSSMB, line: 36
+# File: 64-INSSMB, line: 36
+msgid ""
+"\n"
+"What is the share address of your Samba server? "
+msgstr ""
+"\n"
+"Wat is het share adres van je Samba server? "
+
+#
+# File: 32-INSSMB, line: 38
+# File: 64-INSSMB, line: 38
+msgid "ENTER SHARE ADDRESS OF SAMBA SERVER"
+msgstr "VOER SHARE ADRES IN VAN SAMBA SERVER"
+
+#
+# File: 32-INSSMB, line: 46
+# File: 64-INSSMB, line: 46
+#, fuzzy, sh-format
+msgid ""
+"\n"
+"There must be a directory on the server with the Salix packages and files "
+"arranged in a tree like the FTP site. \n"
+"The installation script needs to know the name of the directory below your "
+"Samba share that contains the series subdirectories. For example, if your A "
+"series is found at /stuff/salix/a, then you would respond: /stuff/salix \n"
+"What is the Salix source directory?"
+msgstr ""
+"\n"
+"Er moet een directory op de server bestaan met de Slint\n"
+"pakketten, geordend in een boomstructuur als op de FTP site.\n"
+"\n"
+"Het installatie script moet de naam weten van de directory\n"
+"onder je Samba share waar de subdirectories met de series \n"
+"te vinden zijn. Bijvoorbeeld, als de A serie te vinden is in\n"
+"/stuff/slint$SFX/a, dan moet je antwoorden: /stuff/slint$SFX\n"
+"\n"
+"Welke directory is de bron van Slint pakketten?"
+
+#
+# File: 32-INSSMB, line: 65
+# File: 64-INSSMB, line: 65
+msgid "You should see no mount errors:"
+msgstr "Je zou geen aankoppelfouten mogen zien:"
+
+#
+# File: 32-INSSMB, line: 67
+# File: 64-INSSMB, line: 67
+#, sh-format
+msgid "Mounting $REMOTE_SHARE ..."
+msgstr "Aankoppelen van $REMOTE_SHARE ..."
+
+#
+# File: 32-INSSMB, line: 73
+# File: 64-INSSMB, line: 73
+msgid "Mount failed."
+msgstr "Aankoppelen is mislukt."
+
+#
+# File: 32-INSSMB, line: 78
+# File: 64-INSSMB, line: 78
+msgid "Mounted Samba share(s):"
+msgstr "Aangekoppelde Samba share(s):"
+
+#
+# File: 32-INSSMB, line: 85
+# File: 64-INSSMB, line: 85
+#, fuzzy
+msgid "A Salix package tree was found! Ready to continue."
+msgstr "Een Slint pakket-directory is gevonden! Klaar om verder te gaan."
+
+#
+# File: 32-INSSMB, line: 89
+# File: 64-INSSMB, line: 89
+#, fuzzy
+msgid "No Salix package tree found at the indicated path!"
+msgstr "Geen Slint pakket-directory gevonden onder het aangegeven pad!"
+
+#
+# File: 32-INSSMB, line: 95
+# File: 64-INSSMB, line: 95
+msgid "Do you want to try setting up Samba again?"
+msgstr "Wil je proberen Samba opnieuw te configureren?"
+
+#
+# File: 32-INSSMB, line: 99
+# File: 32-INSSMB, line: 103
+# File: 64-INSSMB, line: 99
+# File: 64-INSSMB, line: 103
+msgid "MOUNT RESULT"
+msgstr "AANKOPPELRESULTAAT"
+
+#
+# File: 32-INSURL, line: 63
+# File: 64-INSURL, line: 63
+#, fuzzy
+msgid ""
+"\n"
+"Good! We're all set on the local end, but now we need to know where to find "
+"the software packages to install. First, we need the URL of the ftp or http "
+"server where the Salix sources are stored.\n"
+"URL examples are: 'ftp://192.168.0.1' ; 'http://172.16.10.31'\n"
+msgstr ""
+"Goed! We zijn zover aan onze kant, maar nu moeten we weten waar de software "
+"pakketten te vinden zijn die we gaan installeren. Eerst moeten we de URL "
+"weten van de ftp or http server waar de Slint pakketten zijn opgeslagen.\n"
+"Voorbeeld URLs: 'ftp://192.168.0.1' ; 'http://172.16.10.31'\n"
+
+#
+# File: 32-INSURL, line: 75
+# File: 64-INSURL, line: 75
+msgid ""
+"\n"
+"What is the URL of your FTP/HTTP server?\n"
+msgstr ""
+"\n"
+"Wat is de URL van je FTP/HTTP server?\n"
+
+#
+# File: 32-INSURL, line: 78
+# File: 64-INSURL, line: 78
+msgid "ENTER URL OF FTP/HTTP SERVER"
+msgstr "VOER URL IN VAN FTP/HTTP SERVER"
+
+#
+# File: 32-INSURL, line: 86
+# File: 64-INSURL, line: 86
+#, fuzzy, sh-format
+msgid ""
+"\n"
+"There must be a directory on the server with the Salix packages and files "
+"arranged in a tree like the FTP site.\n"
+"\n"
+"The installation script needs to know the name of the directory on your "
+"server that contains the series subdirectories. For example, if your A "
+"series is found at /stuff/salix/a, then you would respond: /stuff/salix\n"
+"\n"
+"What is the Salix source directory?\n"
+msgstr ""
+"\n"
+"Er moet een directory op de server bestaan met de Slint pakketten, geordend "
+"in een boomstructuur als op de FTP site.\n"
+"\n"
+"Het installatie script moet de naam weten van de directory op je server waar "
+"de subdirectories met de series te vinden zijn. Bijvoorbeeld, als de A serie "
+"te vinden is in /stuff/slint$SFX/a, dan moet je antwoorden: /stuff/slint"
+"$SFX\n"
+"\n"
+"Welke directory is de bron van Slint pakketten?\n"
+
+#
+# File: 32-INSURL, line: 106
+# File: 64-INSURL, line: 106
+#, fuzzy
+msgid ""
+"\n"
+"In the next screen you should watch for possible errors.\n"
+"\n"
+"First, we'll download the PACKAGES.TXT from the parent of the directory that "
+"you entered before (which should be the root of the remote Salix tree).  If "
+"that succeeds, then we use PACKAGES.TXT to reconstruct a local cache of the "
+"package tree (should take a minute or less on an average system).\n"
+"After that, we're all set to go!\n"
+"\n"
+"Downloading PACKAGES.TXT at the Salix root starts after you press OK.\n"
+"That file is several hundreds of KB in size so it may take some time to get "
+"here...\n"
+msgstr ""
+"\n"
+"In het volgende scherm moet je uitkijken naar mogelijke foutmeldingen.\n"
+"\n"
+"Eerst zullen we PACKAGES.TXT downloaden, een directory hoger dan degene die "
+"je eerder opgaf (dat zou het hoofdniveau van de server's Slint directory "
+"moeten zijn). Als dat gelukt is, bouwen we vervolgens uit PACKAGES.TXT een "
+"lokale versie van de pakketten-structuur.op (duurt een minuut of minder op "
+"een gemiddeld systeem).\n"
+"Daarna zijn we klaar voor actie!\n"
+"\n"
+"Downloaden van PACKAGES.TXT start wanneer je op OK drukt.\n"
+"Dat bestand is meerdere honderden KB groot, dus het kan even duren...\n"
+
+#
+# File: 32-INSURL, line: 121
+# File: 64-INSURL, line: 121
+msgid "DOWNLOAD INFORMATION"
+msgstr "DOWNLOADEN VAN INFORMATIE"
+
+#
+# File: 32-slackinstall, line: 60
+# File: 64-slackinstall, line: 60
+#. Two next line: > first, then >> - Didier Spaier
+#, fuzzy
+msgid "Downloading PACKAGES.TXT ..."
+msgstr "Downloaden $ArG2 MISLUKT."
+
+#
+# File: 32-INSURL, line: 135
+# File: 64-INSURL, line: 135
+msgid "> Download failed. Going to try one directory lower."
+msgstr "> Download mislukt. We gaan het een directory lager proberen."
+
+#
+# File: 32-INSURL, line: 141
+# File: 64-INSURL, line: 141
+msgid "> Download failed again."
+msgstr "> Download weer mislukt."
+
+#
+# File: 32-INSURL, line: 148
+# File: 64-INSURL, line: 148
+#, fuzzy
+msgid "A Salix 'PACKAGES.TXT' is available. Ready to continue!"
+msgstr "Een Slint 'PACKAGES.TXT' is beschikbaar. We kunnen verder!"
+
+#
+# File: 32-INSURL, line: 153
+# File: 64-INSURL, line: 153
+msgid "No file 'PACKAGES.TXT' was found. Wrong URL?"
+msgstr "Geen bestand 'PACKAGES.TXT' gevonden. Verkeerde URL?"
+
+#
+# File: 32-INSURL, line: 158
+# File: 64-INSURL, line: 158
+msgid "Do you want to try setting up FTP/HTTP again? "
+msgstr "Wil je FTP/HTTP opnieuw configureren? "
+
+#
+# File: 32-INSURL, line: 161
+# File: 32-INSURL, line: 165
+# File: 64-INSURL, line: 161
+# File: 64-INSURL, line: 165
+msgid "DOWNLOAD RESULT"
+msgstr "DOWNLOADRESULTAAT"
+
+#
+# File: 32-INSURL, line: 186
+# File: 32-INSURL, line: 226
+# File: 32-INSURL, line: 231
+# File: 64-INSURL, line: 186
+# File: 64-INSURL, line: 226
+# File: 64-INSURL, line: 231
+#. Make sure we can select stuff from the package series:
+msgid "INITIALIZING PACKAGE TREE"
+msgstr "INITIALISEREN VAN PAKKET-DIRECTORIES"
+
+#
+# File: 32-INSURL, line: 187
+# File: 64-INSURL, line: 187
+msgid "Setting up local cache for the FTP/HTTP server's package tree ...\n"
+msgstr ""
+"Lokale versie van de pakket-directories op de FTP/HTTP server wordt "
+"opgebouwd...\n"
+
+#
+# File: 32-INSURL, line: 227
+# File: 64-INSURL, line: 227
+#, fuzzy, sh-format
+msgid ""
+"\n"
+"processing ${TOTALP} Salix packages..."
+msgstr ""
+"\n"
+"verwerken van ${TOTALP} Slint pakketten..."
+
+#
+# File: 32-INSURL, line: 232
+# File: 64-INSURL, line: 232
+msgid ""
+"\n"
+"Retrieving tagfile information for the package tree ..."
+msgstr ""
+"\n"
+"Ophalen van tagfile informatie over de pakket-directories..."
+
+#
+# File: 32-INSURL, line: 240
+# File: 64-INSURL, line: 240
+msgid "REMOTE SERVER CONFIGURATION"
+msgstr "REMOTE SERVER CONFIGURATIE"
+
+#
+# File: 32-INSURL, line: 241
+# File: 64-INSURL, line: 241
+msgid "Failed to configure for installation from remote server."
+msgstr "Configuratie mislukt voor installatie vanaf remote server."
+
+#
+# File: 32-INSUSB, line: 14
+# File: 64-INSUSB, line: 14
+msgid "SCANNING FOR USB STICK"
+msgstr "ZOEKEN NAAR USB-STICK"
+
+#
+# File: 32-INSUSB, line: 15
+# File: 64-INSUSB, line: 15
+#, fuzzy
+msgid ""
+"Make sure the USB stick containing the Salix package directory is inserted "
+"into a USB port, and then press ENTER to begin the scanning process."
+msgstr ""
+"Steek een USB-stick met daarop de Slint pakketten directory in een USB-poort "
+"en druk ENTER om met het zoekproces te beginnen."
+
+#
+# File: 32-INSUSB, line: 37
+# File: 64-INSUSB, line: 37
+msgid "NO REMOVABLE USB DEVICES FOUND"
+msgstr "GEEN VERWIJDERBARE USB-APPARATEN GEVONDEN"
+
+#
+# File: 32-INSUSB, line: 38
+# File: 64-INSUSB, line: 38
+msgid ""
+"Sorry, but no removable USB devices could be found.  Exiting back to the top "
+"menu."
+msgstr ""
+"Sorry, geen verwijderbare USB-apparaten gevonden. Terug naar het hoofdmenu."
+
+#
+# File: 32-INSUSB, line: 89
+# File: 64-INSUSB, line: 89
+#, fuzzy
+msgid "NO SALIX DIRECTORY FOUND"
+msgstr "GEEN SLINT DIRECTORY GEVONDEN"
+
+#
+# File: 32-INSUSB, line: 90
+# File: 64-INSUSB, line: 90
+#, fuzzy
+msgid ""
+"Sorry, but a Salix directory could not be found on any USB devices. Exiting "
+"back to the top menu."
+msgstr ""
+"Sorry, geen Slint directory gevonden op enig USB-apparaat. Terug naar het "
+"hoofdmenu."
+
+#
+# File: 32-INSUSB, line: 99
+# File: 64-INSUSB, line: 99
+#. Success!  Report back to the console:
+msgid "USB PACKAGE SOURCE FOUND"
+msgstr "USB PAKKETTENBRON GEVONDEN"
+
+#
+# File: 32-INSUSB, line: 100
+# File: 64-INSUSB, line: 100
+#, fuzzy, sh-format
+msgid "A Salix package directory was found on device $DRIVE_FOUND."
+msgstr "Directory met Slint pakketten gevonden op device $DRIVE_FOUND."
+
+#
+# File: 32-INSdir, line: 18
+# File: 32-INShd, line: 18
+# File: 32-setup, line: 84
+# File: 64-INSdir, line: 18
+# File: 64-INShd, line: 18
+# File: 64-setup, line: 84
+#, fuzzy
+msgid ""
+"\n"
+"Setup failed to unmount a required directory:\n"
+"\n"
+"/var/log/mount\n"
+"\n"
+"Please reboot the machine and try again.\n"
+msgstr ""
+"Kan /var/log/mount niet afkoppelen. Herstart de machine en start 'setup' "
+"opnieuw."
+
+#
+# File: 32-SeTmaketag, line: 111
+# File: 64-SeTmaketag, line: 111
+#, fuzzy
+msgid "ERROR"
+msgstr "KOPIEER-FOUT"
+
+#
+# File: INSdir, line: 26
+# File: INShd, line: 26
+msgid "REBOOT"
+msgstr ""
+
+#
+# File: INSdir, line: 27
+# File: INShd, line: 27
+msgid "CANCEL"
+msgstr ""
+
+#
+# File: INSdir, line: 40
+msgid ""
+"\n"
+"Please provide the path to a directory containing the contents (or an ISO "
+"image) of a Salix installation disc.\n"
+"\n"
+"Note: You may use any directory within the current filesystem except '/mnt' "
+"or '/var/log/mount' as these are required by setup.\n"
+msgstr ""
+
+#
+# File: 32-INSNFS, line: 56
+# File: 32-INSSMB, line: 56
+# File: 32-INSURL, line: 97
+# File: 32-INShd, line: 58
+# File: 32-pkgtool, line: 385
+# File: 64-INSNFS, line: 56
+# File: 64-INSSMB, line: 56
+# File: 64-INSURL, line: 97
+# File: 64-INShd, line: 58
+# File: 64-pkgtool, line: 385
+#, fuzzy
+msgid "SELECT A PRE-MOUNTED DIRECTORY"
+msgstr "SELECTEER BRONDIRECTORY"
+
+#
+# File: INSdir, line: 50
+# File: INShd, line: 125
+msgid "Browse"
+msgstr ""
+
+#
+# File: 32-INSNFS, line: 56
+# File: 32-INSSMB, line: 56
+# File: 32-INSURL, line: 97
+# File: 32-INShd, line: 58
+# File: 32-pkgtool, line: 385
+# File: 64-INSNFS, line: 56
+# File: 64-INSSMB, line: 56
+# File: 64-INSURL, line: 97
+# File: 64-INShd, line: 58
+# File: 64-pkgtool, line: 385
+#, fuzzy
+msgid "SELECT A DIRECTORY"
+msgstr "SELECTEER BRONDIRECTORY"
+
+#
+# File: 32-INCISO, line: 14
+# File: 64-INCISO, line: 14
+#, fuzzy
+msgid "INVALID ISO IMAGE"
+msgstr "GEBRUIK ISO IMAGE"
+
+#
+# File: 32-SeTpartitions, line: 540
+# File: 64-SeTpartitions, line: 540
+msgid "OK"
+msgstr "OK"
+
+#
+# File: 32-INSNFS, line: 56
+# File: 32-INSSMB, line: 56
+# File: 32-INSURL, line: 97
+# File: 32-INShd, line: 58
+# File: 32-pkgtool, line: 385
+# File: 64-INSNFS, line: 56
+# File: 64-INSSMB, line: 56
+# File: 64-INSURL, line: 97
+# File: 64-INShd, line: 58
+# File: 64-pkgtool, line: 385
+#, fuzzy
+msgid "INVALID SOURCE DIRECTORY"
+msgstr "SELECTEER BRONDIRECTORY"
+
+#
+# File: INShd, line: 16
+msgid ""
+"\n"
+"Setup failed to unmount a required directory:\n"
+"\n"
+"/var/log/mount\n"
+"\n"
+"Please reboot the machine an try again.\n"
+"\n"
+msgstr ""
+
+#
+# File: INShd, line: 40
+msgid ""
+"\n"
+"Please specify which partition on your hard disk or USB stick\n"
+"contains the contents (or an ISO image) of a Salix\n"
+"installation disc.\n"
+"\n"
+"Example: /dev/sdb2\n"
+"\n"
+"Note: Use the <Partitions> button to list available partitions.\n"
+msgstr ""
+
+#
+# File: 32-liloconfig, line: 1095
+# File: 64-liloconfig, line: 1095
+#, fuzzy
+msgid "SELECT HARD DISK PARTITION"
+msgstr "KIES OS/2-PARTITIE"
+
+#
+# File: INShd, line: 51
+msgid "Partitions"
+msgstr ""
+
+#
+# File: 32-INShd, line: 53
+# File: 64-INShd, line: 53
+#, fuzzy
+msgid "PARTITIONS LIST"
+msgstr "PARTITIE OVERZICHT"
+
+#
+# File: 32-SeTmaketag, line: 80
+# File: 64-SeTmaketag, line: 80
+msgid "MOUNT FAILURE"
+msgstr "AANKOPPEL-FOUT"
+
+#
+# File: 32-INSSMB, line: 99
+# File: 32-INSSMB, line: 103
+# File: 64-INSSMB, line: 99
+# File: 64-INSSMB, line: 103
+#, fuzzy
+msgid "MOUNT SUCCESS"
+msgstr "AANKOPPELRESULTAAT"
+
+#
+# File: INShd, line: 116
+msgid ""
+"\n"
+"Now please provide the path to a directory containing the contents\n"
+"(or an ISO image) of a Salix installation disc.\n"
+"\n"
+"Note: The path you enter must be relative to the mount point so\n"
+"'/var/log/mount/salix-xfce' should be entered as '/salix-xfce'.\n"
+msgstr ""
+
+#
+# File: 32-SeTDOS, line: 29
+# File: 64-SeTDOS, line: 29
+#, sh-format
+msgid "Setting permissions on NTFS partition $DOS_PART"
+msgstr "Instellen van permissies op NTFS partitie $DOS_PART"
+
+#
+# File: 32-SeTDOS, line: 30
+# File: 64-SeTDOS, line: 30
+#, sh-format
+msgid "SET SECURITY FOR NTFS PARTITION $DOS_PART"
+msgstr "BEVEILIGING INSTELLEN VOOR NTFS PARTITIE $DOS_PART"
+
+#
+# File: 32-SeTDOS, line: 32
+# File: 32-SeTDOS, line: 55
+# File: 64-SeTDOS, line: 32
+# File: 64-SeTDOS, line: 55
+#, sh-format
+msgid ""
+"Because users could go snooping through (or destroy, depending on the "
+"settings) your Windows partition, you should choose how much access would "
+"you like your non-root users to have to partition $DOS_PART.  The access "
+"level can range from no access at all, to read-only for everyone, to read-"
+"write access for every user on the machine.  A reasonable default (read-"
+"write for root only) is chosen, but you may set this any way that you like."
+msgstr ""
+"Omdat gebruikers zouden kunnen snuffelen in je Windows partitie (of die "
+"vernielen, afhankelijk van je instellingen) moet je een keuze maken over de "
+"mate van toegang die je je niet-root gebruikers wilt geven tot partitie "
+"$DOS_PART. Het toegangsniveau kan varieren van totaal geen toegang, tot "
+"leesrechten voor iedereen, tot schrijfrechten voor iedere gebruiker op deze "
+"machine. Een zinnige standaard (schrijftoegang alleen voor root) is alvast "
+"geselecteerd, maar je mag hier kiezen wat je het beste uitkomt."
+
+#
+# File: 32-SeTDOS, line: 39
+# File: 64-SeTDOS, line: 39
+msgid "Root has read/write access, users have no access (ntfs-3g)"
+msgstr "Root heeft schrijftoegang, gebruikers hebben geen toegang (ntfs-3g)"
+
+#
+# File: 32-SeTDOS, line: 40
+# File: 64-SeTDOS, line: 40
+msgid "Everyone has read only access (built-in kernel ntfs driver)"
+msgstr "Iedereen kan alleen lezen (ingebouwde kernel nfts driver)"
+
+#
+# File: 32-SeTDOS, line: 41
+# File: 64-SeTDOS, line: 41
+msgid "Everyone has read access, but only root can write (ntfs-3g)"
+msgstr "Iedereen heeft leesrechten, en alleen root kan schrijven (ntfs-3g)"
+
+#
+# File: 32-SeTDOS, line: 42
+# File: 64-SeTDOS, line: 42
+msgid "All users can read/write to any file (ntfs-3g)"
+msgstr "Alle gebruikers kunnen elk bestand lezen en schrijven (ntfs-3g)"
+
+#
+# File: 32-SeTDOS, line: 52
+# File: 64-SeTDOS, line: 52
+#, sh-format
+msgid "Setting permissions on FAT partition $DOS_PART"
+msgstr "Instellen van permissies op FAT partitie $DOS_PART"
+
+#
+# File: 32-SeTDOS, line: 53
+# File: 64-SeTDOS, line: 53
+#, sh-format
+msgid "SET SECURITY FOR FAT PARTITION $DOS_PART"
+msgstr "BEVEILIGING INSTELLEN VOOR FAT PARTITIE $DOS_PART"
+
+#
+# File: 32-SeTDOS, line: 62
+# File: 64-SeTDOS, line: 62
+msgid "Root has read/write access, users have no access"
+msgstr "Root heeft schrijftoegang, gebruikers hebben geen toegang "
+
+#
+# File: 32-SeTDOS, line: 63
+# File: 64-SeTDOS, line: 63
+msgid "Everyone has read only access"
+msgstr "Iedereen heeft leesrechten"
+
+#
+# File: 32-SeTDOS, line: 64
+# File: 64-SeTDOS, line: 64
+msgid "Everyone has read access, but only root can write"
+msgstr "Iedereen heeft leesrechten, en enkel root kan schrijven"
+
+#
+# File: 32-SeTDOS, line: 65
+# File: 64-SeTDOS, line: 65
+msgid "All users can read/write to any file"
+msgstr "Alle gebruikers kunnen elk  bestand lezen en schrijven"
+
+#
+# File: 32-SeTDOS, line: 100
+# File: 64-SeTDOS, line: 100
+msgid "Setting up non-Linux partitions."
+msgstr "Configureren van niet-Linux partities."
+
+#
+# File: 32-SeTDOS, line: 101
+# File: 64-SeTDOS, line: 101
+msgid "FAT or NTFS PARTITIONS DETECTED"
+msgstr "FAT OF NTFS PARTITIES GEDETECTEERD"
+
+#
+# File: 32-SeTDOS, line: 102
+# File: 64-SeTDOS, line: 102
+msgid ""
+"Partitions of type FAT or NTFS (commonly used by DOS and Windows) have been "
+"found on your system.  Would you like to add these partitions to your /etc/"
+"fstab so that these partitions are visible from Linux?"
+msgstr ""
+"Partities van het type FAT of NTFS (gebruikt door DOS en Windows) zijn "
+"gevonden op je systeem. Wil je deze partities toevoegen aan je /etc/fstab "
+"zodat deze partities zichtbaar zijn vanuit Linux?"
+
+#
+# File: 32-SeTDOS, line: 114
+# File: 64-SeTDOS, line: 114
+msgid "Selecting non-Linux partitions."
+msgstr "Selecteren van niet-Linux partities."
+
+#
+# File: 32-SeTDOS, line: 116
+# File: 64-SeTDOS, line: 116
+msgid "SELECT PARTITION TO ADD TO /etc/fstab"
+msgstr "SELECTEER PARTITIE VOOR TOEVOEGING AAN /etc/fstab"
+
+#
+# File: 32-SeTDOS, line: 118
+# File: 32-SeTpartitions, line: 323
+# File: 32-SeTpartitions, line: 412
+# File: 64-SeTDOS, line: 118
+# File: 64-SeTpartitions, line: 323
+# File: 64-SeTpartitions, line: 412
+msgid "Select"
+msgstr "Selecteer"
+
+#
+# File: 32-SeTDOS, line: 120
+# File: 32-SeTpartitions, line: 325
+# File: 32-SeTpartitions, line: 414
+# File: 32-setup.80.make-bootdisk, line: 216
+# File: 64-SeTDOS, line: 120
+# File: 64-SeTpartitions, line: 325
+# File: 64-SeTpartitions, line: 414
+# File: 64-setup.80.make-bootdisk, line: 216
+msgid "Continue"
+msgstr "Verder"
+
+#
+# File: 32-SeTDOS, line: 122
+# File: 64-SeTDOS, line: 122
+msgid ""
+"In order to make these partitions visible from Linux, we  need to add them "
+"to your /etc/fstab.  Please pick a partition to  add to /etc/fstab, or "
+"select '---' to continue with the installation  process."
+msgstr ""
+"Om deze partities zichtbaar te maken in Linux moeten we ze toevoegen aan je /"
+"etc/fstab. Selecteer een partitie om aan /etc/fstab toe te voegen, of '---' "
+"om verder te gaan met het installatie proces."
+
+#
+# File: 32-SeTDOS, line: 141
+# File: 32-SeTpartitions, line: 200
+# File: 64-SeTDOS, line: 141
+# File: 64-SeTpartitions, line: 200
+msgid "IN USE"
+msgstr "IN GEBRUIK"
+
+#
+# File: 32-SeTDOS, line: 141
+# File: 32-SeTpartitions, line: 193
+# File: 64-SeTDOS, line: 141
+# File: 64-SeTpartitions, line: 193
+msgid "on"
+msgstr "aan"
+
+#
+# File: 32-SeTDOS, line: 147
+# File: 32-SeTDOS, line: 148
+# File: 32-SeTDOS, line: 149
+# File: 32-SeTDOS, line: 150
+# File: 32-SeTDOS, line: 151
+# File: 64-SeTDOS, line: 147
+# File: 64-SeTDOS, line: 148
+# File: 64-SeTDOS, line: 149
+# File: 64-SeTDOS, line: 150
+# File: 64-SeTDOS, line: 151
+msgid "done, continue with setup"
+msgstr "klaar, ga verder met setup"
+
+#
+# File: 32-SeTDOS, line: 186
+# File: 64-SeTDOS, line: 186
+#, sh-format
+msgid "Selecting a location to mount $DOS_PART."
+msgstr "Selectie van een locatie om $DOS_PART aan te koppelen"
+
+#
+# File: 32-SeTDOS, line: 187
+# File: 64-SeTDOS, line: 187
+#, sh-format
+msgid "PICK MOUNT POINT FOR $DOS_PART"
+msgstr "KIES AANKOPPELPUNT VOOR $DOS_PART"
+
+#
+# File: 32-SeTDOS, line: 188
+# File: 64-SeTDOS, line: 188
+#, sh-format
+msgid ""
+"Now this partition must be mounted somewhere in your  directory tree.  "
+"Please enter the directory under which  you would like to put it.  For "
+"instance, you might want to  enter /fat-c or /fat-d or something similar.   "
+"NOTE: This partition will not actually be mounted until you reboot.   Where "
+"would you like to mount $DOS_PART?"
+msgstr ""
+"Vervolgens moet deze partitie ergens in je directorystructuur worden "
+"aangekoppeld. Geef de directory waaronder dat moet gebeuren.Je kunt "
+"bijvoorbeeld iets als /win-c of /win-d gebruiken. LET OP: Deze partitie "
+"wordt niet aangekoppeld tot na een herstart. Waar wil je $DOS_PART "
+"aankoppelen?"
+
+#
+# File: 32-SeTDOS, line: 217
+# File: 32-SeTEFI, line: 73
+# File: 32-SeTpartitions, line: 533
+# File: 64-SeTDOS, line: 217
+# File: 64-SeTEFI, line: 73
+# File: 64-SeTpartitions, line: 533
+#. next partition loop
+#. more than one Linux partition
+#. Done, report to the user:
+#, sh-format
+msgid ""
+"\n"
+"Adding this information to your /etc/fstab:\n"
+"\n"
+msgstr ""
+"\n"
+"Deze informatie wordt aan je /etc/fstab toegevoegd:\n"
+"\n"
+
+#
+# File: 32-SeTDOS, line: 222
+# File: 64-SeTDOS, line: 222
+msgid "Finished setting up non-Linux partitions."
+msgstr "Klaar met confgureren van niet-Linux partities."
+
+#
+# File: 32-SeTDOS, line: 223
+# File: 64-SeTDOS, line: 223
+msgid "DONE ADDING FAT or NTFS PARTITIONS"
+msgstr "KLAAR MET TOEVOEGEN FAT of NTFS PARTITIES"
+
+#
+# File: 32-SeTEFI, line: 44
+# File: 64-SeTEFI, line: 44
+#. It didn't mount, so it must not be formatted:
+#, sh-format
+msgid "FORMAT EFI PARTITION ${PREFERRED_EFI_PARTITION}?"
+msgstr "EFI PARTITIE ${PREFERRED_EFI_PARTITION} FORMATTEREN?"
+
+#
+# File: 32-SeTEFI, line: 45
+# File: 64-SeTEFI, line: 45
+#, sh-format
+msgid ""
+"An EFI System Partition was found on ${PREFERRED_EFI_PARTITION}, but it has "
+"not yet been formatted.  Would you like to format this partition?"
+msgstr ""
+"EFI systeempartitie gevonden op ${PREFERRED_EFI_PARTITION}, maar nog niet "
+"geformatteerd. Wil je deze partitie nu formatteren?"
+
+#
+# File: 32-SeTEFI, line: 53
+# File: 64-SeTEFI, line: 53
+#. Format the partition with FAT32, 2 sectors per cluster (needed for the
+#. minimum supported EFI partition size of 100MB):
+#, sh-format
+msgid "FORMATTING EFI PARTITION ${PREFERRED_EFI_PARTITION}"
+msgstr "FORMATTEREN EFI PARTITIE ${PREFERRED_EFI_PARTITION}"
+
+#
+# File: 32-SeTEFI, line: 54
+# File: 64-SeTEFI, line: 54
+#, sh-format
+msgid "Formatting EFI System Partition ${PREFERRED_EFI_PARTITION} as FAT32."
+msgstr "EFI systeempartitie ${PREFERRED_EFI_PARTITION} formatteren als FAT32."
+
+#
+# File: 32-SeTEFI, line: 78
+# File: 64-SeTEFI, line: 78
+msgid "Finished setting up EFI System Partition."
+msgstr "Klaar met instellen van EFI systeempartitie."
+
+#
+# File: 32-SeTEFI, line: 79
+# File: 64-SeTEFI, line: 79
+msgid "EFI SYSTEM PARTITION RECOGNIZED"
+msgstr "EFI SYSTEEMPARTITIE HERKEND"
+
+#
+# File: 32-SeTPKG, line: 27
+# File: 64-SeTPKG, line: 27
+msgid "Selecting software to install."
+msgstr "Selectie van te installeren software."
+
+#
+# File: 32-SeTPKG, line: 29
+# File: 64-SeTPKG, line: 29
+msgid "PACKAGE SERIES SELECTION"
+msgstr "PAKKET-SERIE SELECTIE"
+
+#
+# File: 32-SeTPKG, line: 31
+# File: 64-SeTPKG, line: 31
+msgid ""
+"Now it is time to select which general categories of software to install on "
+"your system. Use the spacebar to select or unselect the software you wish to "
+"install. You can use the up and down arrows to see all the possible choices. "
+"Recommended choices have been preselected. Press the ENTER key when you are "
+"finished."
+msgstr ""
+"Nu is het tijd om te bepalen welke software categorieën op je systeem "
+"geïnstalleerd gaan worden. Gebruik de spatiebalk om software te selecteren "
+"of de-selecteren. Gebruik de pijltjes toetsen (omhoog/omlaag) om alle "
+"mogelijke keuzen te zien. Aanbevolen software is al voorgeselecteerd. Druk "
+"de ENTER toets wanneer je klaar bent."
+
+#
+# File: 32-SeTPKG, line: 38
+# File: 64-SeTPKG, line: 38
+msgid "Base Linux system"
+msgstr "Basis Linux systeem"
+
+#
+# File: 32-SeTPKG, line: 40
+# File: 64-SeTPKG, line: 40
+msgid "The A (base) series contains the kernel and main system utilities."
+msgstr ""
+"De A (basis) serie bevat de kernel en de belangrijkste systeem "
+"gereedschappen."
+
+#
+# File: 32-SeTPKG, line: 45
+# File: 64-SeTPKG, line: 45
+msgid "Various Applications that do not need X"
+msgstr "Diverse applicaties die geen X nodig hebben"
+
+#
+# File: 32-SeTPKG, line: 47
+# File: 64-SeTPKG, line: 47
+msgid "The AP series is a collection of useful applications."
+msgstr "De AP serie is een verzameling van nuttige applicaties."
+
+#
+# File: 32-SeTPKG, line: 53
+# File: 64-SeTPKG, line: 53
+msgid "Program Development (C, C++, Lisp, Perl, etc.)"
+msgstr "Software ontwikkeling (C, C++, Lisp, Perl, etc.)"
+
+#
+# File: 32-SeTPKG, line: 55
+# File: 64-SeTPKG, line: 55
+msgid ""
+"The D series contains compilers, debuggers, and other programming tools."
+msgstr ""
+"De D serie bevat compilers, debuggers, en andere programmeer hulpmiddelen."
+
+#
+# File: 32-SeTPKG, line: 61
+# File: 64-SeTPKG, line: 61
+msgid "GNU Emacs"
+msgstr "GNU Emacs"
+
+#
+# File: 32-SeTPKG, line: 63
+# File: 64-SeTPKG, line: 63
+msgid "The E series contains the GNU Emacs advanced real-time display editor."
+msgstr "De E serie bevat de GNU Emacs geavanceerde real-time display editor."
+
+#
+# File: 32-SeTPKG, line: 69
+# File: 64-SeTPKG, line: 69
+msgid "FAQ lists, HOWTO documentation"
+msgstr "FAQ overzichten, HOWTO documentatie"
+
+#
+# File: 32-SeTPKG, line: 71
+# File: 64-SeTPKG, line: 71
+msgid ""
+"The F series contains essential documentation for Linux system "
+"administrators."
+msgstr ""
+"De F serie bevat essentiële documentatie voor Linux systeem beheerders."
+
+#
+# File: 32-SeTPKG, line: 77
+# File: 64-SeTPKG, line: 77
+msgid "The GNOME desktop for X"
+msgstr "Het GNOME bureaublad voor X"
+
+#
+# File: 32-SeTPKG, line: 79
+# File: 64-SeTPKG, line: 79
+msgid ""
+"The GNOME series contains the GNOME desktop environment and related "
+"libraries."
+msgstr ""
+"De GNOME serie bevat de GNOME bureaublad omgeving en verwante bibliotheken."
+
+#
+# File: 32-SeTPKG, line: 85
+# File: 64-SeTPKG, line: 85
+msgid "Linux kernel source"
+msgstr "Linux kernel broncode"
+
+#
+# File: 32-SeTPKG, line: 87
+# File: 64-SeTPKG, line: 87
+msgid "The K series contains the source code for the Linux kernel."
+msgstr "De K serie  bevat de broncode voor de Linux kernel."
+
+#
+# File: 32-SeTPKG, line: 93
+# File: 64-SeTPKG, line: 93
+msgid "Qt and the K Desktop Environment for X"
+msgstr "Qt en de KDE Desktop Environment voor X"
+
+#
+# File: 32-SeTPKG, line: 95
+# File: 64-SeTPKG, line: 95
+msgid ""
+"The KDE series contains the K Desktop Environment and related libraries."
+msgstr ""
+"De KDE serie bevat de KDE Desktop Environment en verwante bibliotheken."
+
+#
+# File: 32-SeTPKG, line: 101
+# File: 64-SeTPKG, line: 101
+msgid "International language support for KDE"
+msgstr "Internationale taal ondersteuning voor KDE"
+
+#
+# File: 32-SeTPKG, line: 103
+# File: 64-SeTPKG, line: 103
+msgid ""
+"The KDEI series provides support for languages other than US English in KDE."
+msgstr ""
+"De KDEI serie biedt ondersteuning in KDE voor andere talen dan Amerikaans "
+"engels."
+
+#
+# File: 32-SeTPKG, line: 109
+# File: 64-SeTPKG, line: 109
+msgid "System Libraries (some needed by both KDE and GNOME)"
+msgstr "Systeembibliotheken (sommige ook noodzakelijk voor KDE en GNOME)"
+
+#
+# File: 32-SeTPKG, line: 111
+# File: 64-SeTPKG, line: 111
+msgid ""
+"The L series contains libraries needed by GNOME, KDE, and other programs."
+msgstr ""
+"De L serie bevat bibliotheken die door GNOME, KDE en andere programma's "
+"gebruikt worden."
+
+#
+# File: 32-SeTPKG, line: 117
+# File: 64-SeTPKG, line: 117
+msgid "Networking (TCP/IP, UUCP, Mail, News)"
+msgstr "Netwerk (TCP/IP, UUCP, Mail, News)"
+
+#
+# File: 32-SeTPKG, line: 119
+# File: 64-SeTPKG, line: 119
+msgid "The N series contains network related clients and servers."
+msgstr "De N serie bevat netwerkgerelateerde clients en servers."
+
+#
+# File: 32-SeTPKG, line: 125
+# File: 64-SeTPKG, line: 125
+msgid "TeX typesetting software"
+msgstr "TeX tekstopmaaksoftware"
+
+#
+# File: 32-SeTPKG, line: 127
+# File: 64-SeTPKG, line: 127
+msgid ""
+"TeX is a typesetting system often used for mathematics and technical papers."
+msgstr ""
+"TeX is een opmaaktaal veelal gebruikt voor mathematica en technische "
+"artikelen."
+
+#
+# File: 32-SeTPKG, line: 133
+# File: 64-SeTPKG, line: 133
+msgid "Tcl/Tk script languages"
+msgstr "Tcl/Tk script talen"
+
+#
+# File: 32-SeTPKG, line: 135
+# File: 64-SeTPKG, line: 135
+msgid ""
+"The TCL series contains the Tcl/Tk/TclX languages and programs that use them."
+msgstr ""
+"De TCL serie bevat de Tcl/Tk/TclX talen en programma's die deze gebruiken."
+
+#
+# File: 32-SeTPKG, line: 141
+# File: 64-SeTPKG, line: 141
+msgid "X Window System"
+msgstr "X Window systeem"
+
+#
+# File: 32-SeTPKG, line: 143
+# File: 64-SeTPKG, line: 143
+msgid "This series contains X, the windowing system used by Linux."
+msgstr "Deze serie bevat X, het venstersysteem dat door Linux gebruikt wordt."
+
+#
+# File: 32-SeTPKG, line: 149
+# File: 64-SeTPKG, line: 149
+msgid "X Applications"
+msgstr "X Applicaties"
+
+#
+# File: 32-SeTPKG, line: 151
+# File: 64-SeTPKG, line: 151
+msgid "The XAP series is a collection of applications for X."
+msgstr "De XAP serie is een collectie van applicaties voor X."
+
+#
+# File: 32-SeTPKG, line: 157
+# File: 64-SeTPKG, line: 157
+msgid "The Xfce Desktop Environment for X"
+msgstr "De Xfce Desktop Environment voor X"
+
+#
+# File: 32-SeTPKG, line: 159
+# File: 64-SeTPKG, line: 159
+msgid "Xfce is a fast and lightweight GTK+ based desktop environment for X."
+msgstr ""
+"Xfce is een snelle en lichte op GTK+ gebaseerde desktop omgeving voor X."
+
+#
+# File: 32-SeTPKG, line: 165
+# File: 64-SeTPKG, line: 165
+msgid "Games"
+msgstr "Spellen"
+
+#
+# File: 32-SeTPKG, line: 167
+# File: 64-SeTPKG, line: 167
+msgid "The Y series is a collection of classic BSD text-based games."
+msgstr "De Y serie is een collectie van klassieke BSD tekstgebaseerde spellen."
+
+#
+# File: 32-SeTconfig, line: 80
+# File: 64-SeTconfig, line: 80
+#. Inform the user that we're done installing packages
+msgid "DONE INSTALLING PACKAGES"
+msgstr "KLAAR MET PAKKET INSTALLATIE"
+
+#
+# File: 32-SeTconfig, line: 81
+# File: 64-SeTconfig, line: 81
+msgid "Preparing to configure your new Linux system..."
+msgstr "Voorbereiding op het configureren van je nieuwe Linux systeem..."
+
+#
+# File: SeTconfig, line: 73
+msgid "Boot Loader"
+msgstr ""
+
+#
+# File: SeTconfig, line: 74
+msgid "Please choose the Boot Loader that you would like to use"
+msgstr ""
+
+#
+# File: 32-liloconfig, line: 826
+# File: 64-liloconfig, line: 826
+#, fuzzy
+msgid "Install Lilo"
+msgstr "Installeer LILO"
+
+#
+# File: 32-liloconfig, line: 826
+# File: 64-liloconfig, line: 826
+#, fuzzy
+msgid "Install Grub"
+msgstr "Installeer LILO"
+
+#
+# File: 32-eliloconfig, line: 164
+# File: 64-eliloconfig, line: 164
+#, fuzzy
+msgid "(Do not install boot loader)"
+msgstr "Voeg geen optie toe aan het opstartmenu"
+
+#
+# File: SeTconfig, line: 216
+msgid "Numlock configuration"
+msgstr ""
+
+#
+# File: SeTconfig, line: 217
+# File: SeTconfig, line: 230
+# File: SeTconfig, line: 239
+msgid "Enabled"
+msgstr ""
+
+#
+# File: SeTconfig, line: 217
+# File: SeTconfig, line: 230
+# File: SeTconfig, line: 239
+msgid "Disabled"
+msgstr ""
+
+#
+# File: SeTconfig, line: 218
+msgid "Do you want to have numlock enabled or disabled on boot?"
+msgstr ""
+
+#
+# File: SeTconfig, line: 229
+msgid "IBus configuration"
+msgstr ""
+
+#
+# File: SeTconfig, line: 232
+msgid ""
+"IBus is an input platform for Chinese, Japanese, Korean and many other "
+"languages. Do you want to have it enabled or disabled on boot?"
+msgstr ""
+
+#
+# File: SeTconfig, line: 238
+msgid "SCIM configuration"
+msgstr ""
+
+#
+# File: SeTconfig, line: 241
+msgid ""
+"SCIM is an input platform for Chinese, Japanese, Korean and many other "
+"languages. Do you want to have it enabled or disabled on boot?"
+msgstr ""
+
+#
+# File: SeTdisk, line: 21
+msgid "Go"
+msgstr ""
+
+#
+# File: SeTdisk, line: 22
+msgid "Exit"
+msgstr ""
+
+#
+# File: 32-INShd, line: 53
+# File: 64-INShd, line: 53
+#, fuzzy
+msgid "PARTITIONS EDITOR"
+msgstr "PARTITIE OVERZICHT"
+
+#
+# File: SeTdisk, line: 24
+msgid ""
+"Welcome to the Salix partition editor. Press <SPACE> to select a disk and "
+"select Go to start partitioning. If you don't want to alter the partition "
+"layout, select Exit.\n"
+"\n"
+"You usually need at least 2 partitions:\n"
+"- 1 SWAP partition (1GB minimum recommended) :"
+msgstr ""
+
+#
+# File: 32-SeTfull, line: 15
+# File: 64-SeTfull, line: 15
+msgid "ERROR: TARGET PARTITION FULL"
+msgstr "FOUT: DOEL PARTITIE VOL"
+
+#
+# File: 32-SeTfull, line: 15
+# File: 64-SeTfull, line: 15
+msgid ""
+"Setup has detected that one or more of your target partitions has become "
+"full.  I'm sorry, but you will have to try installing again onto a partition "
+"or partitions with more free space.  You could also try selecting fewer "
+"packages to install.  Since there is no longer any space for setup to make "
+"its temporary files, this is an unrecoverable error.  Press control-alt-"
+"delete to reboot and try again.  Before doing that, you might want to switch "
+"to another console (Alt-F2) and use df (disk free utility) to see if you can "
+"get an idea of how to avoid this the next time around."
+msgstr ""
+"Setup heeft gedetecteerd dat een of meer van je doel-partities volgelopen "
+"is. Het spijt ons, maar je zult de installatie moeten overdoen op een "
+"partitie of partities met meer vrije ruimte. Je zou ook minder pakketten "
+"kunnen selecteren voor installatie. Omdat er geen ruimte meer is voor setup "
+"om zijn tijdelijke bestanden kwijt te kunnen, is dit een onherstelbare fout. "
+"Druk Control-Alt-Delete om te herstarten en probeer het opnieuw. Voordat je "
+"dat doet, is het verstandig om over te schakelen naar een andere console "
+"(Alt-F2) om middels 'df' (disk-free programma) na te gaan hoe je deze "
+"situatie de volgende keer kunt vermijden."
+
+#
+# File: 32-SeTkernel, line: 27
+# File: 64-SeTkernel, line: 27
+msgid "REINSERT KERNEL DISC"
+msgstr "HER-INVOER KERNEL DISK"
+
+#
+# File: 32-SeTkernel, line: 28
+# File: 64-SeTkernel, line: 28
+#, fuzzy
+msgid ""
+"Please reinsert the Salix disc containing the collection of Linux kernels.  "
+"Usually this is disc number one (the disc that you boot from).  Once you've "
+"inserted the disc, hit ENTER to continue."
+msgstr ""
+"Voer de Slint disk die de kernel(s) bevat opnieuw in. Normaliter is dat disk "
+"nummer één (de disk van waaraf je opgestart bent). Nadat de disk is "
+"ingevoerd druk je ENTER om verder te gaan."
+
+#
+# File: 32-SeTkernel, line: 80
+# File: 64-SeTkernel, line: 80
+msgid "ERROR ATTEMPTING TO INSTALL KERNEL"
+msgstr "FOUT BIJ POGING KERNEL TE INSTALLEREN"
+
+#
+# File: 32-SeTkernel, line: 80
+# File: 64-SeTkernel, line: 80
+#, sh-format
+msgid ""
+"Sorry, but the directory $PLINK/kernels was not found.  You may need to "
+"install the requested kernel $SLACK_KERNEL manually and then install LILO "
+"before your system will be able to boot correctly."
+msgstr ""
+"Sorry, maar de directory $PLINK/kernels werd niet gevonden. Je zult "
+"waarschijnlijk de gevraagde kernel $SLACK_KERNEL handmatig moeten "
+"installeren en daarna LILO, voordat je systeem correct zal kunnen opstarten."
+
+#
+# File: 32-SeTkeymap, line: 19
+# File: 64-SeTkeymap, line: 19
+msgid "KEYBOARD MAP SELECTION"
+msgstr "TOETSENBORD INDELING SELECTEREN"
+
+#
+# File: 32-rc.S, line: 232
+# File: 64-rc.S, line: 232
+#, fuzzy
+msgid "Test keyboard map"
+msgstr "Voer 1 in om een andere toetsenbordindeling te kiezen: "
+
+#
+# File: SeTkeymap, line: 199
+msgid "Accept keymap"
+msgstr ""
+
+#
+# File: SeTkeymap, line: 200
+msgid "Reject keymap"
+msgstr ""
+
+#
+# File: SeTkeymap, line: 201
+msgid ""
+"You may now test the new keyboard map by typing some text. You can accept "
+"the keyboard map or reject it and select another one. The installer only "
+"supports ASCII characters, so don't try any special characters here or use "
+"them during installation!"
+msgstr ""
+
+#
+# File: 32-SeTmedia, line: 8
+# File: 32-SeTpxemedia, line: 32
+# File: 64-SeTmedia, line: 8
+# File: 64-SeTpxemedia, line: 32
+#, fuzzy
+msgid "Select Salix installation source."
+msgstr "Selecteer Slint installatie bron"
+
+#
+# File: 32-SeTmedia, line: 9
+# File: 32-SeTpxemedia, line: 33
+# File: 64-SeTmedia, line: 9
+# File: 64-SeTpxemedia, line: 33
+msgid "SOURCE MEDIA SELECTION"
+msgstr "SOURCE MEDIUM SELECTIE"
+
+#
+# File: 32-SeTmedia, line: 10
+# File: 64-SeTmedia, line: 10
+#, fuzzy
+msgid "Please select the media from which to install Salix Linux:"
+msgstr "Selecteer het medium van waaraf je Slint wilt installeren:"
+
+#
+# File: 32-SeTmedia, line: 13
+# File: 64-SeTmedia, line: 13
+#, fuzzy
+msgid "Install from a Salix USB stick"
+msgstr "Installeren vanaf een Slint USB-stick"
+
+#
+# File: 32-SeTmedia, line: 12
+# File: 64-SeTmedia, line: 12
+#, fuzzy
+msgid "Install from a Salix CD or DVD"
+msgstr "Installeer vanaf een Slint CD of DVD"
+
+#
+# File: 32-SeTmedia, line: 14
+# File: 64-SeTmedia, line: 14
+msgid "Install from a hard drive partition"
+msgstr "Installeer vanaf een harde schijf partitie"
+
+#
+# File: 32-SeTmedia, line: 18
+# File: 64-SeTmedia, line: 18
+msgid "Install from a pre-mounted directory"
+msgstr "Installeer vanaf een vooraf aangekoppelde directory"
+
+#
+# File: 32-SeTmedia, line: 16
+# File: 64-SeTmedia, line: 16
+msgid "Install from FTP/HTTP server"
+msgstr "Installeer vanaf een FTP/HTTP server"
+
+#
+# File: 32-SeTmedia, line: 15
+# File: 64-SeTmedia, line: 15
+msgid "Install from NFS (Network File System)"
+msgstr "Installeer vanaf NFS (Network File System)"
+
+#
+# File: 32-SeTmedia, line: 17
+# File: 64-SeTmedia, line: 17
+#, fuzzy
+msgid "Install from a Samba share"
+msgstr "Installeer vanaf een Samba share"
+
+#
+# File: 32-SeTnet, line: 103
+# File: 64-SeTnet, line: 103
+msgid ""
+"\n"
+"You will now get a chance to probe your network interfaces.\n"
+msgstr ""
+"\n"
+"Je krijgt nu de kans om je netwerk interfaces te identificeren.\n"
+
+#
+# File: 32-SeTnet, line: 106
+# File: 32-SeTnet, line: 119
+# File: 64-SeTnet, line: 106
+# File: 64-SeTnet, line: 119
+msgid "PROBING NETWORK DEVICES"
+msgstr "IDENTIFICEREN NETWERK APPARATEN"
+
+#
+# File: 32-SeTnet, line: 113
+# File: 64-SeTnet, line: 113
+msgid ""
+"\n"
+"Are you OK with the network interface which was detected? If not, select "
+"'No' to get back to the network probe program. You can try to load another "
+"driver explicitly, by using 'P <driver_name>'.\n"
+"\n"
+"If you are satisfied, select 'Yes' to continue with network configuration."
+msgstr ""
+"\n"
+"Is de goede netwerkinterface gedetecteerd? Indien niet selecteer 'Nee' om "
+"terug te gaan naar het netwerkdetectieprogramma. Je kunt proberen expliciet "
+"een andere driver op te geven met 'P <driver_name>'.\n"
+"\n"
+"Kies 'Ja' als je tevreden bent om door te gaan met de netwerkconfiguratie."
+
+#
+# File: 32-SeTnet, line: 135
+# File: 32-SeTnet, line: 291
+# File: 64-SeTnet, line: 135
+# File: 64-SeTnet, line: 291
+#. hope that 3 seconds is enough for dhcpcd;
+#. if not then you had better specify the INTERFACE in the nic= parameter...
+#. end ask approval for ip config
+#. echo "Configuring ethernet card..."
+msgid "INITIALIZING NETWORK"
+msgstr "NETWERK STARTEN"
+
+#
+# File: 32-SeTnet, line: 136
+# File: 64-SeTnet, line: 136
+msgid ""
+"\n"
+"Waiting a few seconds for DHCP polling to settle ..."
+msgstr ""
+"\n"
+"Even geduld... DHCP instellingen worden toegepast ..."
+
+#
+# File: 32-SeTnet, line: 159
+# File: 64-SeTnet, line: 159
+msgid ""
+"You're running off the hard drive filesystem. Is this machine currently "
+"running on the network you plan to install from? If so, we won't try to "
+"reconfigure your ethernet card.\n"
+"\n"
+"Are you up-and-running on the network?"
+msgstr ""
+"Je draait vanaf het harddisk bestandssysteem. Hangt deze machine nu in het "
+"netwerk waarvan je het wilt installeren? Als dat zo is proberen we je "
+"ethernetkaart niet te herconfigureren.\n"
+"\n"
+"Hang je in het netwerk?"
+
+#
+# File: 32-SeTnet, line: 164
+# File: 32-SeTnet, line: 284
+# File: 64-SeTnet, line: 164
+# File: 64-SeTnet, line: 284
+msgid "NETWORK CONFIGURATION"
+msgstr "NETWERK CONFIGURATIE"
+
+#
+# File: 32-SeTnet, line: 173
+# File: 64-SeTnet, line: 173
+#. Offer to install using DHCP:
+#, sh-format
+msgid ""
+"\n"
+"I can configure your network interface $ENET_DEVICE fully automatically "
+"using DHCP. If you want this, please select 'yes'.\n"
+"\n"
+"If you select 'no' instead, then you will be able to assign the IP address, "
+"netmask and gateway manually.\n"
+msgstr ""
+"\n"
+"Ik kan je netwerkinterface $ENET_DEVICE volledig automatisch configureren "
+"met DHCP. Wil je dit, selecteer dan 'ja'.\n"
+"\n"
+"Als je 'nee' kiest kun je het IP-adres, netwerk-masker en gateway hierna "
+"handmatig instellen.\n"
+
+#
+# File: 32-SeTnet, line: 180
+# File: 64-SeTnet, line: 180
+msgid "DHCP CONFIGURATION"
+msgstr "DHCP CONFIGURATIE"
+
+#
+# File: 32-SeTnet, line: 205
+# File: 64-SeTnet, line: 205
+msgid ""
+"\n"
+"You will need to enter the IP address you wish to assign to this machine. "
+"Example: 111.112.113.114\n"
+"\n"
+"What is your IP address?"
+msgstr ""
+"\n"
+"Je moet nu het IP-adres opgeven welke je aan deze machine wilt toekennen.\n"
+"Bijvoorbeeld: 111.112.113.114\n"
+"\n"
+"Wat is je IP-adres?"
+
+#
+# File: 32-SeTnet, line: 213
+# File: 64-SeTnet, line: 213
+msgid "ASSIGN IP ADDRESS"
+msgstr "WIJS IP ADRES TOE"
+
+#
+# File: 32-SeTnet, line: 222
+# File: 64-SeTnet, line: 222
+msgid ""
+"\n"
+"Now we need to know your netmask. Typically this will be 255.255.255.0 but "
+"this can be different depending on your local setup.\n"
+"\n"
+"What is your netmask?"
+msgstr ""
+"\n"
+"Nu moeten we je netwerk-masker weten. Typisch is dit 255.255.255.0 maar dat "
+"kan anders zijn afhankelijk van je lokale opzet.\n"
+"\n"
+"Wat is je netwerk-masker?"
+
+#
+# File: 32-SeTnet, line: 231
+# File: 64-SeTnet, line: 231
+msgid "ASSIGN NETMASK"
+msgstr "WIJS NETWERK MASKER TOE"
+
+#
+# File: 32-SeTnet, line: 240
+# File: 64-SeTnet, line: 240
+msgid "Do you have a gateway?"
+msgstr "Gebruik je een gateway?"
+
+#
+# File: 32-SeTnet, line: 251
+# File: 64-SeTnet, line: 251
+msgid "ASSIGN GATEWAY ADDRESS"
+msgstr "WIJS GATEWAY ADRES TOE"
+
+#
+# File: 32-SeTnet, line: 252
+# File: 64-SeTnet, line: 252
+msgid ""
+"\n"
+"What is the IP address for your gateway?"
+msgstr ""
+"\n"
+"Wat is het IP adres van je gateway?"
+
+#
+# File: 32-SeTnet, line: 272
+# File: 64-SeTnet, line: 272
+#, sh-format
+msgid ""
+"\n"
+"This is the proposed network configuration for $ENET_DEVICE - If this is OK, "
+"then select 'Yes'.\n"
+"If this is not OK and you want to configure again, select 'No'.\n"
+"\n"
+"* IP Address: $LOCAL_IPADDR\n"
+"* Netmask:    $LOCAL_NETMASK"
+msgstr ""
+"\n"
+"Dit is de voorgestelde netwerkconfiguratie voor $ENET_DEVICE - Is dat OK, "
+"kies dan 'Ja'.\n"
+"Is dat niet OK en je wilt opnieuw configureren, kies dan 'Nee'.\n"
+"\n"
+"* IP-adres:      $LOCAL_IPADDR\n"
+"* Netmasker:  $LOCAL_NETMASK"
+
+#
+# File: 32-SeTnet, line: 292
+# File: 64-SeTnet, line: 292
+#, sh-format
+msgid ""
+"\n"
+"Configuring your network interface $ENET_DEVICE ..."
+msgstr ""
+"\n"
+"Netwerkinterface $ENET_DEVICE configureren ..."
+
+#
+# File: 32-SeTnet, line: 329
+# File: 64-SeTnet, line: 329
+msgid "FETCHING CONFIGURATION"
+msgstr "CONFIGURATIE OPHALEN"
+
+#
+# File: 32-SeTnet, line: 330
+# File: 64-SeTnet, line: 330
+#, sh-format
+msgid ""
+"\n"
+"Attempting to fetch a remote configuration file using $PROTO ..."
+msgstr ""
+"\n"
+"Proberen een configuratiebestand op te halen middels $PROTO ..."
+
+#
+# File: 32-SeTpartitions, line: 27
+# File: 32-SeTpartitions, line: 48
+# File: 32-SeTpartitions, line: 73
+# File: 32-SeTpartitions, line: 98
+# File: 32-SeTpartitions, line: 123
+# File: 32-SeTpartitions, line: 146
+# File: 32-SeTpartitions, line: 165
+# File: 64-SeTpartitions, line: 27
+# File: 64-SeTpartitions, line: 48
+# File: 64-SeTpartitions, line: 73
+# File: 64-SeTpartitions, line: 98
+# File: 64-SeTpartitions, line: 123
+# File: 64-SeTpartitions, line: 146
+# File: 64-SeTpartitions, line: 165
+#. output a nice status message
+msgid "FORMATTING"
+msgstr "FORMATTEREN"
+
+#
+# File: 32-SeTpartitions, line: 28
+# File: 64-SeTpartitions, line: 28
+#, sh-format
+msgid "Formatting $ArG1 with filesystem btrfs."
+msgstr "Formatteren $ArG1 met bestandssysteem btrfs."
+
+#
+# File: 32-SeTpartitions, line: 29
+# File: 64-SeTpartitions, line: 29
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE \n"
+"Filesystem type: btrfs"
+msgstr ""
+"Formatteren $ArG1\n"
+"Omvang in 1K blokken: $SIZE \n"
+"Type bestandssysteem: btrfs"
+
+#
+# File: 32-SeTpartitions, line: 49
+# File: 64-SeTpartitions, line: 49
+#, sh-format
+msgid "Formatting $ArG1 with filesystem ext2."
+msgstr "Formatteren $ArG1 met bestandssysteem ext2"
+
+#
+# File: 32-SeTpartitions, line: 50
+# File: 64-SeTpartitions, line: 50
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE\n"
+"Filesystem type: ext2"
+msgstr ""
+"Formatteren $ArG1\n"
+"Omvang in 1K blokken: $SIZE\n"
+"Type bestandssysteem: ext2"
+
+#
+# File: 32-SeTpartitions, line: 74
+# File: 64-SeTpartitions, line: 74
+#, sh-format
+msgid "Formatting $ArG1 with filesystem ext3."
+msgstr "Formatteren $ArG1 met bestandssysteem ext3"
+
+#
+# File: 32-SeTpartitions, line: 75
+# File: 64-SeTpartitions, line: 75
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE\n"
+"Filesystem type: ext3"
+msgstr ""
+"Formatteren $ArG1\n"
+"Omvang in 1K blokken: $SIZE\n"
+"Type bestandssysteem: ext3"
+
+#
+# File: 32-SeTpartitions, line: 99
+# File: 64-SeTpartitions, line: 99
+#, sh-format
+msgid "Formatting $ArG1 with filesystem ext4."
+msgstr "Formatteren $ArG1 met bestandssysteem ext4."
+
+#
+# File: 32-SeTpartitions, line: 100
+# File: 64-SeTpartitions, line: 100
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE\n"
+"Filesystem type: ext4"
+msgstr ""
+"Formatteren $ArG1\n"
+"Omvang in 1K blokken: $SIZE\n"
+"Type bestandssysteem: ext4"
+
+#
+# File: 32-SeTpartitions, line: 124
+# File: 64-SeTpartitions, line: 124
+#, sh-format
+msgid "Formatting $ArG1 with filesystem jfs."
+msgstr "Formatteren $ArG1 met bestandssysteem jfs."
+
+#
+# File: 32-SeTpartitions, line: 125
+# File: 64-SeTpartitions, line: 125
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE\n"
+"Filesystem type: jfs"
+msgstr ""
+"Formatteren $ArG1\n"
+"Omvang in 1K blokken: $SIZE\n"
+"Type bestandssysteem: jfs"
+
+#
+# File: 32-SeTpartitions, line: 147
+# File: 64-SeTpartitions, line: 147
+#, sh-format
+msgid "Formatting $ArG1 with filesystem reiserfs."
+msgstr "Formatteren $ArG1 met bestandssysteem reiserfs."
+
+#
+# File: 32-SeTpartitions, line: 148
+# File: 64-SeTpartitions, line: 148
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE\n"
+"Filesystem type: reiserfs"
+msgstr ""
+"Formatteren $ArG1\n"
+"Omvang in 1K blokken: $SIZE\n"
+"Type bestandssysteem: reiserfs"
+
+#
+# File: 32-SeTpartitions, line: 166
+# File: 64-SeTpartitions, line: 166
+#, sh-format
+msgid "Formatting $ArG1 with filesystem xfs."
+msgstr "Formatteren $ArG1 met bestandssysteem xfs."
+
+#
+# File: 32-SeTpartitions, line: 167
+# File: 64-SeTpartitions, line: 167
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE\n"
+"Filesystem type: xfs"
+msgstr ""
+"Formatteren $ArG1\n"
+"Omvang in 1K blokken: $SIZE\n"
+"Type bestandssysteem: xfs"
+
+#
+# File: 32-SeTpartitions, line: 203
+# File: 32-SeTpartitions, line: 204
+# File: 32-SeTpartitions, line: 205
+# File: 32-SeTpartitions, line: 206
+# File: 32-SeTpartitions, line: 207
+# File: 64-SeTpartitions, line: 203
+# File: 64-SeTpartitions, line: 204
+# File: 64-SeTpartitions, line: 205
+# File: 64-SeTpartitions, line: 206
+# File: 64-SeTpartitions, line: 207
+msgid "done adding partitions, continue with setup"
+msgstr "klaar met toevoegen partities, doorgaan met setup"
+
+#
+# File: 32-SeTpartitions, line: 214
+# File: 64-SeTpartitions, line: 214
+#, sh-format
+msgid "Do you want to format Linux partition ${ArG1}?"
+msgstr "Wil je Linux-partitie ${ArG1} formatteren?"
+
+#
+# File: 32-SeTpartitions, line: 215
+# File: 64-SeTpartitions, line: 215
+#, sh-format
+msgid "FORMAT PARTITION $ArG1"
+msgstr "FORMATTEREN PARTITIE $ArG1"
+
+#
+# File: 32-SeTpartitions, line: 215
+# File: 64-SeTpartitions, line: 215
+#, sh-format
+msgid ""
+"If this partition has not been formatted, you should format it.  NOTE: This "
+"will erase all data on it.  Would you like to format this partition?"
+msgstr ""
+"Als deze partitie niet is geformatteerd, doe dat dan nu. NOOT: Dit zal alle "
+"gegevens hierop wissen. Wil je deze partitie formatteren?"
+
+#
+# File: 32-SeTpartitions, line: 219
+# File: 64-SeTpartitions, line: 219
+#, sh-format
+msgid "Quick format with no bad block checking"
+msgstr "Snel formatteren zonder slechte-blokken controle"
+
+#
+# File: 32-SeTpartitions, line: 220
+# File: 64-SeTpartitions, line: 220
+#, sh-format
+msgid "Slow format that checks for bad blocks"
+msgstr "Langzaam formatteren met slechte-blokken controle"
+
+#
+# File: 32-SeTpartitions, line: 221
+# File: 64-SeTpartitions, line: 221
+#, sh-format
+msgid "No, do not format this partition"
+msgstr "Nee, formatteer deze partitie niet."
+
+#
+# File: 32-SeTpartitions, line: 234
+# File: 64-SeTpartitions, line: 234
+msgid "Ext2 is the traditional Linux file system and is fast and stable."
+msgstr "Ext2 is het traditionele Linux bestandssysteem en is snel en stabiel."
+
+#
+# File: 32-SeTpartitions, line: 237
+# File: 64-SeTpartitions, line: 237
+msgid "Ext3 is the journaling version of the Ext2 filesystem."
+msgstr ""
+"Ext3 is de met een journaal aangevulde versie van het Ext2 bestandssysteem."
+
+#
+# File: 32-SeTpartitions, line: 241
+# File: 64-SeTpartitions, line: 241
+msgid "Ext4 is the successor to the ext3 filesystem. "
+msgstr "Ext4 is de opvolger van het ext3 bestandssysteem."
+
+#
+# File: 32-SeTpartitions, line: 245
+# File: 64-SeTpartitions, line: 245
+msgid ""
+"ReiserFS is a journaling filesystem that stores all files and filenames in a "
+"balanced tree structure."
+msgstr ""
+"ReiserFS is een bestandssysteem met een journaal dat alle bestanden en "
+"bestandsnamen in een boomstructuur opslaat."
+
+#
+# File: 32-SeTpartitions, line: 248
+# File: 64-SeTpartitions, line: 248
+msgid "Btrfs is a B-tree copy-on-write filesystem."
+msgstr "Btrfs is een B-tree copy-on-write bestandssysteem."
+
+#
+# File: 32-SeTpartitions, line: 253
+# File: 64-SeTpartitions, line: 253
+msgid ""
+"JFS is IBM's Journaled Filesystem, currently used in IBM enterprise servers."
+msgstr ""
+"JFS is IBM's bestandssysteem met journaal, momenteel gebruikt op IBM "
+"enterprise servers."
+
+#
+# File: 32-SeTpartitions, line: 256
+# File: 64-SeTpartitions, line: 256
+msgid "XFS is SGI's journaling filesystem that originated on IRIX."
+msgstr "XFS is SGI's bestandssysteem met een journaal, ontstaan op IRIX."
+
+#
+# File: 32-SeTpartitions, line: 259
+# File: 64-SeTpartitions, line: 259
+#, sh-format
+msgid "SELECT FILESYSTEM FOR $ArG1 "
+msgstr "KIES BESTANDSSYSTEEM VOOR $ArG1 "
+
+#
+# File: 32-SeTpartitions, line: 261
+# File: 64-SeTpartitions, line: 261
+#, sh-format
+msgid "Partition $ArG1 will be formatted."
+msgstr "Partitie $ArG1 zal worden geformatteerd."
+
+#
+# File: 32-SeTpartitions, line: 265
+# File: 64-SeTpartitions, line: 265
+msgid ""
+"Please select the type of filesystem to use for the specified device.  Here "
+"are descriptions of the available filesystems:"
+msgstr ""
+"Kies het type bestandssysteem voor het aangegeven apparaat. Hier volgen de "
+"beschrijvingen van de beschikbare bestandssystemen:"
+
+#
+# File: 32-SeTpartitions, line: 270
+# File: 64-SeTpartitions, line: 270
+msgid "Standard Linux Ext2 Filesystem"
+msgstr "Standaard Linux Ext2 bestandssysteem"
+
+#
+# File: 32-SeTpartitions, line: 273
+# File: 64-SeTpartitions, line: 273
+msgid "Ext3 Journaling Filesystem"
+msgstr "Ext3 bestandssysteem met journaal"
+
+#
+# File: 32-SeTpartitions, line: 276
+# File: 64-SeTpartitions, line: 276
+msgid "Ext4 Journaling Filesystem"
+msgstr "Ext4 bestandssysteem met journaal"
+
+#
+# File: 32-SeTpartitions, line: 279
+# File: 64-SeTpartitions, line: 279
+msgid "IBM's Journaled Filesystem"
+msgstr "IBM's bestandssysteem met journaal"
+
+#
+# File: 32-SeTpartitions, line: 282
+# File: 64-SeTpartitions, line: 282
+msgid "ReiserFS Journaling Filesystem"
+msgstr "ReiserFS bestandssysteem met journaal"
+
+#
+# File: 32-SeTpartitions, line: 285
+# File: 64-SeTpartitions, line: 285
+msgid "Btrfs Copy-on-Write B-tree Filesystem"
+msgstr "Btrfs Copy-on-Write B-tree bestandssysteem"
+
+#
+# File: 32-SeTpartitions, line: 288
+# File: 64-SeTpartitions, line: 288
+msgid "SGI's Journaling Filesystem"
+msgstr "SGI's bestandssysteem met journaal"
+
+#
+# File: 32-SeTpartitions, line: 319
+# File: 64-SeTpartitions, line: 319
+msgid "Setting up root Linux partition."
+msgstr "Instellen Linux root partitie."
+
+#
+# File: 32-SeTpartitions, line: 321
+# File: 64-SeTpartitions, line: 321
+msgid "Select Linux installation partition:"
+msgstr "Selecteer de Linux installatie partitie:"
+
+#
+# File: 32-SeTpartitions, line: 327
+# File: 64-SeTpartitions, line: 327
+msgid ""
+"Please select a partition from the following list to use for your root (/) "
+"Linux partition."
+msgstr ""
+"Selecteer een partitie van de volgende lijst om als Linux root (/) partitie "
+"te gebruiken."
+
+#
+# File: 32-SeTpartitions, line: 408
+# File: 64-SeTpartitions, line: 408
+msgid "Setting up other Linux partitions."
+msgstr "Instellen overige Linux partities."
+
+#
+# File: 32-SeTpartitions, line: 410
+# File: 64-SeTpartitions, line: 410
+msgid "Select other Linux partitions for /etc/fstab"
+msgstr "Selecteer andere Linux partities voor /etc/fstab"
+
+#
+# File: 32-SeTpartitions, line: 416
+# File: 64-SeTpartitions, line: 416
+#, sh-format
+msgid ""
+"You seem to have more than one partition tagged as type Linux.  You may use "
+"these to distribute your Linux system across more than one partition.  "
+"Currently, you have $ROOT_DEVICE mounted as your / partition.  You might "
+"want to mount directories such as /home or /usr/local on separate "
+"partitions.  You should not try to mount /etc, /sbin, or /bin on their own "
+"partitions since they contain utilities needed to bring the system up and "
+"mount partitions.  Also, do not reuse a partition that you've already "
+"entered before.  Please select one of the Linux partitions listed below, or "
+"if you're done, hit <Continue>."
+msgstr ""
+"Je hebt meerdere partities gelabeld als Linux type. Je zou deze kunnen "
+"gebruiken om je Linux systeem over meerdere partities te verdelen. Momenteel "
+"is $ROOT_DEVICE als / partitie aangekoppeld. Je zou directories als /home "
+"of /usr/local aan aparte partities kunnen koppelen. Probeer niet /etc, /sbin "
+"of /bin aan een eigen partitie te koppelen omdat deze directories "
+"hulpprogramma's bevatten benodigd om het systeem te starten en partities aan "
+"te koppelen. Gebruik ook geen partitie die al eerder is ingevoerd. Selecteer "
+"een van de Linux partities van de lijst hieronder of <Continue> als je klaar "
+"bent."
+
+#
+# File: 32-SeTpartitions, line: 451
+# File: 64-SeTpartitions, line: 451
+#, sh-format
+msgid "Partition $NEXT_PARTITION will not be reformatted."
+msgstr "Partitie $NEXT_PARTITION zal niet opnieuw worden geformatteerd."
+
+#
+# File: 32-SeTpartitions, line: 456
+# File: 64-SeTpartitions, line: 456
+#, sh-format
+msgid "Partition $NEXT_PARTITION will be formatted with $NEXT_SYS_TYPE."
+msgstr "Partitie $NEXT_PARTITION zal worden geformatteerd als $NEXT_SYS_TYPE."
+
+#
+# File: 32-SeTpartitions, line: 493
+# File: 64-SeTpartitions, line: 493
+#. DOFORMAT?
+#. Now ask the user where to mount this new filesystem:
+#, sh-format
+msgid "SELECT MOUNT POINT FOR $NEXT_PARTITION"
+msgstr "KIES AANKOPPELPUNT VOOR $NEXT_PARTITION"
+
+#
+# File: 32-SeTpartitions, line: 494
+# File: 64-SeTpartitions, line: 494
+#, sh-format
+msgid ""
+"OK, now you need to specify where you want the new partition mounted.  For "
+"example, if you want to put it under /usr/local, then respond:  /usr/local\n"
+"Where would you like to mount $NEXT_PARTITION?"
+msgstr ""
+"OK, nu moet je aangeven waar je de nieuwe partitie wilt aankoppelen. Als je "
+"hem zou willen plaatsen onder /usr/local, antwoord dan: /usr/local\n"
+"Waar zou je $NEXT_PARTITION willen aankoppelen?"
+
+#
+# File: 32-SeTpartitions, line: 538
+# File: 64-SeTpartitions, line: 538
+msgid "Finished setting up Linux partitions."
+msgstr "Instellen van Linux partities gereed."
+
+#
+# File: 32-SeTpartitions, line: 539
+# File: 64-SeTpartitions, line: 539
+msgid "DONE ADDING LINUX PARTITIONS TO /etc/fstab"
+msgstr "KLAAR MET TOEVOEGEN LINUX PARTITIES AAN /etc/fstab"
+
+#
+# File: 32-SeTswap, line: 26
+# File: 64-SeTswap, line: 26
+msgid "NO SWAP SPACE DETECTED"
+msgstr "GEEN WISSELGEHEUGEN GEDETECTEERD"
+
+#
+# File: 32-SeTswap, line: 26
+# File: 64-SeTswap, line: 26
+msgid ""
+"You have not created a swap partition with Linux fdisk.  Do you want to "
+"continue installing without one? "
+msgstr ""
+"Je hebt geen wisselgeheugenpartitie aangemaakt met Linux fdisk. Wil je "
+"doorgaan met installatie zonder wisselgeheugen?"
+
+#
+# File: 32-SeTswap, line: 30
+# File: 64-SeTswap, line: 30
+msgid "ABORTING INSTALLATION"
+msgstr "INSTALLATIE AFGEBROKEN"
+
+#
+# File: 32-SeTswap, line: 30
+# File: 64-SeTswap, line: 30
+msgid "Create a swap partition with Linux fdisk, and then try this again."
+msgstr ""
+"Maak een wisselgeheugenpartitie met Linux fdisk, probeer het dan nog eens."
+
+#
+# File: 32-SeTswap, line: 39
+# File: 32-SeTswap, line: 79
+# File: 64-SeTswap, line: 39
+# File: 64-SeTswap, line: 79
+msgid "Setting up swap partitions."
+msgstr "Instellen wisselgeheugenpartities."
+
+#
+# File: 32-SeTswap, line: 41
+# File: 64-SeTswap, line: 41
+msgid "SWAP SPACE DETECTED"
+msgstr "WISSELGEHEUGEN GEDETECTEERD"
+
+#
+# File: 32-SeTswap, line: 43
+# File: 64-SeTswap, line: 43
+#, fuzzy
+msgid ""
+"Salix Setup has detected one or more swap partitions on your system.  These "
+"partitions have been preselected to be set up as swap space.  If there are "
+"any swap partitions that you do not wish to use with this installation, "
+"please unselect them with the up and down arrows and spacebar.  If you wish "
+"to use all of them (this is recommended), simply hit the ENTER key."
+msgstr ""
+"Slint Setup heeft een of meer wisselgeheugenpartities op je systeem "
+"gedetecteerd. Deze partities zijn voorgeselecteerd om ingesteld te worden "
+"als wisselgeheugen. Als je een wisselgeheugenpartitie niet voor deze "
+"installatie wilt gebruiken, deselecteer die dan met behulp van de op- en "
+"neer-pijltjestoetsen en de spatiebalk. Als je ze allemaal wilt gebruiken "
+"(aanbevolen), druk dan de ENTER-toets."
+
+#
+# File: 32-SeTswap, line: 56
+# File: 64-SeTswap, line: 56
+#, sh-format
+msgid "Linux swap partition, ${PARTSIZE}"
+msgstr "Linux wisselgeheugenpartitie, ${PARTSIZE}"
+
+#
+# File: 32-SeTswap, line: 80
+# File: 64-SeTswap, line: 80
+msgid "CHECK SWAP PARTITIONS FOR BAD BLOCKS?"
+msgstr "WISSELGEHEUGENPARTITIES OP SLECHTE BLOKKEN CONTROLEREN?"
+
+#
+# File: 32-SeTswap, line: 81
+# File: 64-SeTswap, line: 81
+#, fuzzy
+msgid ""
+"Salix Setup will now prepare your system's swap space.  When formatting swap "
+"partitions with mkswap you may also check them for bad blocks.  This is not "
+"the default since nearly all modern hard drives check themselves for bad "
+"blocks anyway.  Would you like to check for bad blocks while running mkswap?"
+msgstr ""
+"Slint setup zal nu het wisselgeheugen van je systeem voorbereiden. Tijdens "
+"het formatteren van wisselgeheugenpartities met mkswap kun je ook checken op "
+"slechte blokken. Dit is niet de standaard instelling omdat bijna alle "
+"moderne harddisks zichzelf hierop al checken. Wil je controleren op slechte "
+"blokken tijdens het uitvoeren van mkswap?"
+
+#
+# File: 32-SeTswap, line: 101
+# File: 64-SeTswap, line: 101
+#, sh-format
+msgid "Activating swap partition ${swappartition}:"
+msgstr "Activeren van wisselgeheugenpartitie ${swappartition}:"
+
+#
+# File: 32-SeTswap, line: 117
+# File: 64-SeTswap, line: 117
+msgid ""
+"Your swapspace has been configured. This information   will be added to "
+"your /etc/fstab:"
+msgstr ""
+"Je wisselgeheugen is geconfigureerd. Deze informatie zal worden toegevoegd "
+"aan /etc/fstab:"
+
+#
+# File: 32-SeTswap, line: 122
+# File: 64-SeTswap, line: 122
+msgid "SWAP SPACE CONFIGURED"
+msgstr "WISSELGEHEUGEN GECONFIGUREERD"
+
+#
+# File: SeTusers, line: 9
+msgid "User setup"
+msgstr ""
+
+#
+# File: SeTusers, line: 10
+msgid ""
+"You will now be presented with some dialogs so that you can create one or "
+"more user accounts in your new system.\n"
+"\n"
+"The first user you will create, will be able to run commands as a privileged "
+"user through sudo. Any other user will not be able to run commands with sudo "
+"unless you add them to the wheel group.\n"
+"\n"
+"The root user is disabled by default."
+msgstr ""
+
+#
+# File: 32-liloconfig, line: 1095
+# File: 64-liloconfig, line: 1095
+#. destroy ? ##########################################
+#, fuzzy
+msgid "AUTO PARTITION"
+msgstr "KIES OS/2-PARTITIE"
+
+#
+# File: autoinstall, line: 103
+msgid "Do It"
+msgstr ""
+
+#
+# File: 32-xwmconfig, line: 207
+# File: 64-xwmconfig, line: 207
+#, fuzzy
+msgid "Cancel"
+msgstr "Afgebroken."
+
+#
+# File: autoinstall, line: 106
+msgid ""
+"This is automatic partition mode.\n"
+"Press <SPACE> to select the target disk where Salix will be installed.\n"
+"All data will be erased from the target disk.\n"
+"Only run this mode if the entire disk will be dedicated to Salix."
+msgstr ""
+
+#
+# File: autoinstall, line: 131
+msgid "Go back to the main setup menu"
+msgstr ""
+
+#
+# File: autoinstall, line: 140
+msgid "No target disk selected, going back to main menu"
+msgstr ""
+
+#
+# File: 32-SeTDOS, line: 217
+# File: 32-SeTEFI, line: 73
+# File: 32-SeTpartitions, line: 533
+# File: 64-SeTDOS, line: 217
+# File: 64-SeTEFI, line: 73
+# File: 64-SeTpartitions, line: 533
+#. Done, report to the user:
+#. dialog --title "`gettext "AUTO PARTITION" --msgbox "$(cat $TMP/${PARTITION_TOOL}.report)" 0 0
+#, fuzzy
+msgid ""
+"\n"
+"Partitioning completed,\n"
+"Adding this information to your /etc/fstab:\n"
+msgstr ""
+"\n"
+"Deze informatie wordt aan je /etc/fstab toegevoegd:\n"
+"\n"
+
+#
+# File: 32-liloconfig, line: 815
+# File: 64-liloconfig, line: 815
+#, fuzzy
+msgid "WELCOME TO THE SALIX INSTALLATION"
+msgstr "LILO-INSTALLATIE VOOR EXPERTS"
+
+#
+# File: 32-pkgtool, line: 442
+# File: 64-pkgtool, line: 442
+#, fuzzy
+msgid "Keep the current keymap"
+msgstr "Sla de huidige disk-serie over"
+
+#
+# File: global-blurbs, line: 17
+#, fuzzy
+msgid "Select another keymap"
+msgstr "Selecteer een console-font."
+
+#
+# File: 32-INSCD, line: 234
+# File: 64-INSCD, line: 234
+#. if there is no EFI
+#, fuzzy
+msgid "Salix Installation"
+msgstr "CD installatie afbreken"
+
+#
+# File: 32-INSCD, line: 234
+# File: 64-INSCD, line: 234
+#, fuzzy
+msgid "Exit installation"
+msgstr "CD installatie afbreken"
+
+#
+# File: setup, line: 70
+msgid ""
+"You may now proceed with the installation by pressing the ENTER key.\n"
+"\n"
+"If you want to exit the installation and drop to a linux console, select "
+"'Exit installation'"
+msgstr ""
+
+#
+# File: setup, line: 74
+# File: setup, line: 94
+msgid "Install Salix using a step-by-step guide"
+msgstr ""
+
+#
+# File: 32-pxesetup, line: 52
+# File: 64-pxesetup, line: 52
+#, fuzzy
+msgid ""
+"You may select an option below using the UP/DOWN keys and SPACE or ENTER. "
+"Alternate keys may also be used: '+', '-', and TAB.\n"
+"\n"
+"If you want to exit the installation and drop to a linux console, select "
+"'Exit installation'"
+msgstr ""
+"Welkom bij Slint PXE Setup.\n"
+"Kies een optie beneden met de OP/NEER toetsen, spatiebalk of ENTER.\n"
+"\n"
+"Alternatieve toetsen kunnen ook worden gebruikt: '+', '-' en TAB."
+
+#
+# File: setup, line: 95
+msgid "Autopartition and install with few options (wipes your HD)"
+msgstr ""
+
+#
+# File: 32-setup, line: 57
+# File: 64-setup, line: 57
+msgid "NO LINUX PARTITIONS DETECTED"
+msgstr "GEEN LINUX-PARTITIES GEDETECTEERD"
+
+#
+# File: 32-setup, line: 58
+# File: 64-setup, line: 58
+#, fuzzy
+msgid ""
+"There don't seem to be any Linux partitions on this machine.\n"
+"\t\tYou'll need to make at least one of these to install Linux. Either "
+"select AUTOINSTALL from the menu, or select INSTALL and use the partition "
+"editor to create one."
+msgstr ""
+"Er lijken geen Linux-partities op deze machine aanwezig te zijn. Je moet er "
+"minstens één maken om Linux te kunnen installeren. Hiervoor moet je 'setup' "
+"verlaten en de partities maken met 'cfdisk' (MBR-partities) of 'cgdisk' (GPT-"
+"partities). Lees voor meer informatie het 'setup' help-bestand uit het "
+"volgende menu."
+
+#
+# File: 32-setup, line: 67
+# File: 64-setup, line: 67
+msgid "NO EFI SYSTEM PARTITION DETECTED"
+msgstr "GEEN EFI SYSTEEMPARTITIE GEDETECTEERD"
+
+#
+# File: 32-setup, line: 68
+# File: 64-setup, line: 68
+#, fuzzy
+msgid ""
+"This machine appears to be using EFI/UEFI, but no EFI System Partition was "
+"found.\n"
+"\n"
+"You'll need to make an EFI System Partition in order to boot from the hard "
+"drive."
+msgstr ""
+"Deze machine lijkt EFI/UEFI te gebruiken maar er werd geen EFI "
+"systeempartitie gevonden. Je moet een EFI systeempartitie maken om van de "
+"harddisk te kunnen opstarten. Verlaat hiervoor 'setup' en maak met 'cgdisk' "
+"een 100MB partitie van type EF00.\n"
+"Lees voor meer informatie het 'setup' help-bestand uit het volgende menu."
+
+#
+# File: setup, line: 162
+# File: setup, line: 169
+msgid "-s"
+msgstr ""
+
+#
+# File: setup, line: 202
+msgid "No Source Selected"
+msgstr ""
+
+#
+# File: setup, line: 203
+msgid ""
+"\n"
+"The installer does not know where to find the source packages...\n"
+"Press ENTER to return to the main menu."
+msgstr ""
+
+#
+# File: 32-setup, line: 179
+# File: 64-setup, line: 179
+msgid "CANNOT INSTALL SOFTWARE YET"
+msgstr "KAN SOFTWARE NOG NIET INSTALLEREN"
+
+#
+# File: 32-setup, line: 179
+# File: 64-setup, line: 179
+#, fuzzy
+msgid ""
+"Before you can install software, complete the following tasks:\n"
+"   \n"
+"1. Select your source media.\n"
+"2. Set up your target Linux partition(s).\n"
+"\n"
+"You may also optionally remap your keyboard and set up your swap "
+"partition(s).\n"
+"\n"
+"Press ENTER to return to the main menu."
+msgstr ""
+"\n"
+"Voer te volgende taken uit voor je software kunt installeren:\n"
+"\n"
+"1. Kies je bronmedium.\n"
+"2. Stel je Linux doelpartitie(s) in.\n"
+"3. Kies welke softwarecategorieën je wilt installeren.\n"
+"\n"
+"Je kunt ook optioneel je toetsenbordindeling wijzigen en je "
+"wisselgeheugenpartitie(s) instellen.\n"
+"\n"
+"Druk ENTER om terug te keren naar het hoofdmenu."
+
+#
+# File: 32-display.lilohelp, line: 106
+# File: 64-display.lilohelp, line: 106
+#, fuzzy
+msgid "SELECT INSTALLATION MODE"
+msgstr "LILO INSTALLATIEHULP"
+
+#
+# File: setup, line: 238
+msgid ""
+"Please select the installation mode you prefer from the following:\n"
+"BASIC will only install a minimal graphical environment and a web browser.\n"
+"CORE will install only the minimum essentials for your system to start in "
+"console mode (no graphical environment included) and is ideal if you are an "
+"experienced user and want to fully customize your installation for any "
+"specific purpose.\n"
+msgstr ""
+
+#
+# File: setup, line: 248
+# File: setup, line: 270
+msgid "Install a minimal graphical environment"
+msgstr ""
+
+#
+# File: setup, line: 249
+# File: setup, line: 271
+msgid "Install a minimal console system"
+msgstr ""
+
+#
+# File: setup, line: 256
+msgid ""
+"Please select the installation mode you prefer from the following:\n"
+"FULL (default) will install everything. That includes one application per "
+"task, such as an office suite, a multimedia player, a CD/DVD burner etc. "
+"BASIC will only install a minimal graphical environment and a web browser.\n"
+"CORE will install only the minimum essentials for your system to start in "
+"console mode (no graphical environment included) and is ideal if you are an "
+"experienced user and want to fully customize your installation for any "
+"specific purpose.\n"
+msgstr ""
+
+#
+# File: setup, line: 269
+msgid "Install everything"
+msgstr ""
+
+#
+# File: 32-setup, line: 346
+# File: 64-setup, line: 346
+msgid "REPLACE /etc/fstab?"
+msgstr "/etc/fstab VERVANGEN?"
+
+#
+# File: 32-setup, line: 346
+# File: 64-setup, line: 346
+#, fuzzy
+msgid ""
+"You already have an /etc/fstab on your install partition.\n"
+"\n"
+"If you were just adding software, you should probably keep your old /etc/"
+"fstab.\n"
+"\n"
+"If you've changed your partitioning scheme, you should use the new /etc/"
+"fstab.\n"
+"\n"
+"Do you want to replace your old /etc/fstab with the new one?"
+msgstr ""
+"Je hebt al een /etc/fstab op je installatiepartitie. Als je alleen software "
+"toevoegde wil je waarschijnlijk je oude /etc/fstab behouden. Als je je "
+"partitie-indeling hebt veranderd, gebruik dan de nieuwe /etc/fstab. Wil je "
+"je oude /etc/fstab vervangen door de nieuwe?"
+
+#
+# File: 32-display.lilohelp, line: 106
+# File: 64-display.lilohelp, line: 106
+#, fuzzy
+msgid "SALIX INSTALLATION IS COMPLETE"
+msgstr "LILO INSTALLATIEHULP"
+
+#
+# File: setup, line: 372
+# File: setup, line: 379
+msgid "Reboot now"
+msgstr ""
+
+#
+# File: setup, line: 373
+# File: setup, line: 380
+msgid "Exit to command line"
+msgstr ""
+
+#
+# File: setup, line: 374
+msgid ""
+"System configuration and installation is complete. Please remove the "
+"installation disc. You can either select to reboot your system now or choose "
+"to exit the installation to the command line if you would like to do any "
+"manual tweaking."
+msgstr ""
+
+#
+# File: 32-setup, line: 472
+# File: 64-setup, line: 472
+#, fuzzy
+msgid ""
+"System configuration and installation is complete. You can either select to "
+"reboot your system now or choose to exit the installation to the command "
+"line if you would like to do any manual tweaking."
+msgstr ""
+"Systeemconfiguratie en installatie is voltooid. Je kunt setup AFSLUITEN en "
+"je machine herstarten met Ctrl-Alt-Del."
