@@ -85,7 +85,7 @@ if [ "$DRIVE_FOUND" = "" ]; then
 fi
 
 if [ "$DRIVE_FOUND" = "" ]; then
-  dialog --title "`gettext "NO SLACKWARE DIRECTORY FOUND"`"  --msgbox \
+  dialog --title "`gettext "NO SALIX DIRECTORY FOUND"`"  --msgbox \
 "`gettext "Sorry, but a Salix directory could not be found on any USB devices. \
 Exiting back to the top menu."`"  \
 6 80

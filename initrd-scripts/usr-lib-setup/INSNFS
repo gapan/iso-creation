@@ -50,7 +50,7 @@ packages and files arranged in a tree like the FTP site.
 The installation script needs to know the name of the \
 directory on your server that contains the series' \
 subdirectories. For example, if your A series is found at \
-/slack/salix/a, then you would respond: /slack/salix
+/stuff/salix/a, then you would respond: /stuff/salix
 
 What is the Salix source directory?" > $TMP/tempmsg
  dialog --title "`gettext "SELECT SOURCE DIRECTORY"`" \
