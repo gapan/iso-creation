@@ -104,15 +104,6 @@ orage
 pangomm
 parole
 pavucontrol
-perl-File-BaseDir
-perl-File-DesktopEntry
-perl-File-MimeInfo
-perl-cairo
-perl-extutils-depends
-perl-extutils-pkgconfig
-perl-glib
-perl-gtk2
-perl-pango
 pidgin
 poppler
 poppler-data
@@ -172,4 +163,3 @@ xfce4-xkb-plugin
 xvidcore
 zd1211-firmware
 zim
-zope.interface
