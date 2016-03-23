@@ -55,7 +55,7 @@ msgid ""
 "begin the scanning process. Or, if you'd rather specify the device name "
 "manually (experts only), choose that option below."
 msgstr ""
-"Sjekk at Slint CD/DVD-en er i stasjonen, trykk så ENTER for å begynne et "
+"Sjekk at Salix CD/DVD-en er i stasjonen, trykk så ENTER for å begynne et "
 "nytt søk. Alternativt kan du også spesifisere enhets navnet manuelt (for "
 "eksperter)?  "
 
@@ -230,7 +230,7 @@ msgid ""
 "to use to mount the Salix CD/DVD:"
 msgstr ""
 "Vennligst skriv inn navnet på CD/DVD enheten (f.eks /dev/hdc) som skal "
-"brukes for å montere Slint CD/DVD-en:"
+"brukes for å montere Salix CD/DVD-en:"
 
 #
 # File: 32-INSCD, line: 86
@@ -300,7 +300,7 @@ msgstr "LETER"
 # File: 64-INSCD, line: 122
 #, fuzzy
 msgid "Scanning for a CD/DVD drive containing a Salix disc..."
-msgstr "Leter etter CD/DVD stasjon med en Slint disk..."
+msgstr "Leter etter CD/DVD stasjon med en Salix disk..."
 
 #
 # File: 32-INSCD, line: 159
@@ -308,7 +308,7 @@ msgstr "Leter etter CD/DVD stasjon med en Slint disk..."
 #, fuzzy
 msgid ""
 "Scanning for a parallel port ATAPI CD/DVD drive containing a Salix disc..."
-msgstr "Leter etter parallel ATAPI CD/DVD port med en Slint disk..."
+msgstr "Leter etter parallel ATAPI CD/DVD port med en Salix disk..."
 
 #
 # File: 32-INSCD, line: 179
@@ -358,7 +358,7 @@ msgstr ""
 "Det ble ikke funnet noen CD/DVD stasjon i alle de enhetene vi søkte etter. "
 "Mulige årsaker kan være at du bruker en oppstarts-disk eller kjerne som ikke "
 "støtter denne stasjonen, at du ikke oppgav nødvendige driver parametre til "
-"kjernen, at du ikke har en Slint CD/DVD i stasjonen, eller at du bruker en "
+"kjernen, at du ikke har en Salix CD/DVD i stasjonen, eller at du bruker en "
 "stasjon koblet til et \"Plug and Play\" lydkort (i et slikt tilfelle hjelper "
 "det ofte å koble stasjonen direkte i en IDE kontakt). Vennligst sjekk at du "
 "bruker en riktig oppstarts-disk for maskinvaren, se etter informasjon om "
@@ -382,7 +382,7 @@ msgstr "FANT IKKE CD/DVD STASJON"
 # File: 64-INSCD, line: 224
 #, fuzzy, sh-format
 msgid "A Salix disc was found in device $DRIVE_FOUND."
-msgstr "En Slint CD/DVD ble funnet i enheten $DRIVE_FOUND."
+msgstr "En Salix CD/DVD ble funnet i enheten $DRIVE_FOUND."
 
 #
 # File: 32-INSCD, line: 227
@@ -459,7 +459,7 @@ msgid ""
 msgstr ""
 "Fint! Da er maskinen konfigurert, det vi trenger nå er å vite\n"
 "hvor vi skal finne installasjons pakkene. Først trenger vi\n"
-"IP adressen til maskinen hvor Slint kildene ligger."
+"IP adressen til maskinen hvor Salix kildene ligger."
 
 #
 # File: 32-INSURL, line: 71
@@ -500,14 +500,14 @@ msgid ""
 "What is the Salix source directory?"
 msgstr ""
 "\n"
-"Det må finnes en filkatalog på serveren med Slint pakkene, ordnet på samme "
+"Det må finnes en filkatalog på serveren med Salix pakkene, ordnet på samme "
 "måte som på FTP siden.\n"
 "\n"
 "Installasjons skriptet trenger å hvor filkatalogen på serveren som "
-"inneholder pakkeseriene er. For eksempel, hvis A serien ligger i /stuff/slint"
-"$SFX/a, skriv da: /stuff/slint$SFX\n"
+"inneholder pakkeseriene er. For eksempel, hvis A serien ligger i /stuff/salix"
+"/a, skriv da: /stuff/salix\n"
 "\n"
-"Hvor ligger filkatalogen med Slint kildene?\n"
+"Hvor ligger filkatalogen med Salix kildene?\n"
 
 #
 # File: 32-INSNFS, line: 56
@@ -600,7 +600,7 @@ msgstr ""
 "\n"
 "Fint! Da er maskinen konfigurert, det vi trenger nå er å vite\n"
 "hvor vi kan finne installasjons pakkene. Først trenger vi\n"
-"adressen til Samba serveren hvor Slint kildene\n"
+"adressen til Samba serveren hvor Salix kildene\n"
 "ligger.\n"
 "Eksempel på adresse: //192.168.0.1/public\n"
 
@@ -644,15 +644,15 @@ msgid ""
 "What is the Salix source directory?"
 msgstr ""
 "\n"
-"Det må finnes en filkatalog på serveren med Slint\n"
+"Det må finnes en filkatalog på serveren med Salix\n"
 "pakkene, ordnet på samme måte som på FTP siden.\n"
 "\n"
 "Installasjons skriptet trenger å vite hvor \n"
 "filkatalogen på Samba serveren som inneholder\n"
 "pakke seriene er. For eksempel, hvis serie A finnes i\n"
-"/stuff/slint$SFX/a, skriv da: /stuff/slint$SFX\n"
+"/stuff/salix/a, skriv da: /stuff/salix\n"
 "\n"
-"Hvor ligger filkatalogen med Slint kildene?"
+"Hvor ligger filkatalogen med Salix kildene?"
 
 #
 # File: 32-INSSMB, line: 65
@@ -684,14 +684,14 @@ msgstr "Monterte Samba filkatalog(er):"
 # File: 64-INSSMB, line: 85
 #, fuzzy
 msgid "A Salix package tree was found! Ready to continue."
-msgstr "Slint pakkene ble funnet! Klar til å fortsette."
+msgstr "Salix pakkene ble funnet! Klar til å fortsette."
 
 #
 # File: 32-INSSMB, line: 89
 # File: 64-INSSMB, line: 89
 #, fuzzy
 msgid "No Salix package tree found at the indicated path!"
-msgstr "Det er ingen Slint pakker i den oppgitte filbanen!"
+msgstr "Det er ingen Salix pakker i den oppgitte filbanen!"
 
 #
 # File: 32-INSSMB, line: 95
@@ -720,7 +720,7 @@ msgid ""
 msgstr ""
 "Fint! Da er maskinen konfigurert, det vi trenger å vite nå er hvor "
 "installasjons pakkene ligger. Først trenger vi URL-en til ftp eller http "
-"serveren hvor Slint kildene ligger.\n"
+"serveren hvor Salix kildene ligger.\n"
 "URL eksempler: 'ftp://192.168.0.1' ; 'http://172.16.10.31'\n"
 
 #
@@ -755,14 +755,14 @@ msgid ""
 "What is the Salix source directory?\n"
 msgstr ""
 "\n"
-"Det må finnes en filkatalog på serveren med Slint pakkene, ordnet på samme "
+"Det må finnes en filkatalog på serveren med Salix pakkene, ordnet på samme "
 "måte som på FTP siden.\n"
 "\n"
 "Installasjons skriptet trenger å hvor filkatalogen på serveren som "
-"inneholder pakkeseriene er. For eksempel, hvis A serien ligger i /stuff/slint"
-"$SFX/a, skriv da: /stuff/slint$SFX\n"
+"inneholder pakkeseriene er. For eksempel, hvis A serien ligger i /stuff/salix"
+"/a, skriv da: /stuff/salix\n"
 "\n"
-"Hvor ligger filkatalogen med Slint kildene?\n"
+"Hvor ligger filkatalogen med Salix kildene?\n"
 
 #
 # File: 32-INSURL, line: 106
@@ -786,12 +786,12 @@ msgstr ""
 "Se etter mulige feilmeldinger i neste vindu.\n"
 "\n"
 "Vi begynner med å laste ned PACKAGES.TXT fra nivået over filkatalogen du "
-"nettopp skrev inn (burde være toppnivået på det eksterne Slint fil treet). "
+"nettopp skrev inn (burde være toppnivået på det eksterne Salix fil treet). "
 "Hvis det lykkes bruker vi PACKAGES.TXT for å lage en lokal cache av fil "
 "treet (bør ta et minutt eller mindre).\n"
 "Etter dette er vi klare for å fortsette!\n"
 "\n"
-"Nedlasting av PACKAGES.TXT fra Slint toppnivå starter etter at du trykker "
+"Nedlasting av PACKAGES.TXT fra Salix toppnivå starter etter at du trykker "
 "OK.\n"
 "Tekstfilen tar mange hundre KB så det kan ta litt tid før den er "
 "nedlastet...\n"
@@ -828,7 +828,7 @@ msgstr "> Nedlasting mislyktes igjen."
 # File: 64-INSURL, line: 148
 #, fuzzy
 msgid "A Salix 'PACKAGES.TXT' is available. Ready to continue!"
-msgstr "En Slint 'PACKAGES.TXT' er klar til bruk. Vi kan fortsette!"
+msgstr "En Salix 'PACKAGES.TXT' er klar til bruk. Vi kan fortsette!"
 
 #
 # File: 32-INSURL, line: 153
@@ -877,7 +877,7 @@ msgid ""
 "processing ${TOTALP} Salix packages..."
 msgstr ""
 "\n"
-"installerer ${TOTALP} Slint pakker..."
+"installerer ${TOTALP} Salix pakker..."
 
 #
 # File: 32-INSURL, line: 232
@@ -915,7 +915,7 @@ msgid ""
 "Make sure the USB stick containing the Salix package directory is inserted "
 "into a USB port, and then press ENTER to begin the scanning process."
 msgstr ""
-"Sjekk at USB minnepinnen som inneholder filkatalogen med Slint pakkene er "
+"Sjekk at USB minnepinnen som inneholder filkatalogen med Salix pakkene er "
 "satt inn i USB porten, trykk så ENTER for å begynne søket."
 
 #
@@ -937,7 +937,7 @@ msgstr "Ingen flyttbare USB enheter ble funnet. Går tilbake til hovedmenyen."
 # File: 64-INSUSB, line: 89
 #, fuzzy
 msgid "NO SALIX DIRECTORY FOUND"
-msgstr "FANT IKKE FILKATALOGEN FOR SLINT"
+msgstr "FANT IKKE FILKATALOGEN FOR SALIX"
 
 #
 # File: 32-INSUSB, line: 90
@@ -947,7 +947,7 @@ msgid ""
 "Sorry, but a Salix directory could not be found on any USB devices. Exiting "
 "back to the top menu."
 msgstr ""
-"En filkatalog for Slint ble ikke funnet på noen USB enheter. Går tilbake til "
+"En filkatalog for Salix ble ikke funnet på noen USB enheter. Går tilbake til "
 "hovedmenyen."
 
 #
@@ -962,7 +962,7 @@ msgstr "FANT USB PAKKE KILDE"
 # File: 64-INSUSB, line: 100
 #, fuzzy, sh-format
 msgid "A Salix package directory was found on device $DRIVE_FOUND."
-msgstr "En filkatalog med Slint pakker ble funnet på enheten $DRIVE_FOUND."
+msgstr "En filkatalog med Salix pakker ble funnet på enheten $DRIVE_FOUND."
 
 #
 # File: 32-INSdir, line: 18
@@ -1871,7 +1871,7 @@ msgid ""
 "Usually this is disc number one (the disc that you boot from).  Once you've "
 "inserted the disc, hit ENTER to continue."
 msgstr ""
-"Vennligst sett Slint disketten som inneholder Linux kjernene inn igjen. "
+"Vennligst sett Salix disketten som inneholder Linux kjernene inn igjen. "
 "Vanligvis er dette disk nummer en (det vil si oppstartsdisken). Trykk ENTER "
 "for å fortsette etter at du har satt i disketten."
 
@@ -1933,7 +1933,7 @@ msgstr ""
 # File: 64-SeTpxemedia, line: 32
 #, fuzzy
 msgid "Select Salix installation source."
-msgstr "Velg Slint installasjons kilde."
+msgstr "Velg Salix installasjons kilde."
 
 #
 # File: 32-SeTmedia, line: 9
@@ -1948,21 +1948,21 @@ msgstr "VELG MEDIA KILDE"
 # File: 64-SeTmedia, line: 10
 #, fuzzy
 msgid "Please select the media from which to install Salix Linux:"
-msgstr "Vennligst velg hvor Slint Linux skal installeres fra:"
+msgstr "Vennligst velg hvor Salix Linux skal installeres fra:"
 
 #
 # File: 32-SeTmedia, line: 13
 # File: 64-SeTmedia, line: 13
 #, fuzzy
 msgid "Install from a Salix USB stick"
-msgstr "Installer fra en Slint USB minnepinne"
+msgstr "Installer fra en Salix USB minnepinne"
 
 #
 # File: 32-SeTmedia, line: 12
 # File: 64-SeTmedia, line: 12
 #, fuzzy
 msgid "Install from a Salix CD or DVD"
-msgstr "Installer fra Slint CD/DVD"
+msgstr "Installer fra Salix CD/DVD"
 
 #
 # File: 32-SeTmedia, line: 14
@@ -2714,7 +2714,7 @@ msgid ""
 "please unselect them with the up and down arrows and spacebar.  If you wish "
 "to use all of them (this is recommended), simply hit the ENTER key."
 msgstr ""
-"Slint Setup har funnet en eller flere swap partisjoner på systemet. Disse "
+"Salix Setup har funnet en eller flere swap partisjoner på systemet. Disse "
 "partisjonene er forhåndsvalgt som swap områder. Hvis du ikke vil bruke noen "
 "av disse swap partisjonene i denne installasjonen så merk dem med up og ned "
 "pilene og mellomromstasten. Hvis du vil bruke alle (anbefalt) så bare trykk "
@@ -2743,7 +2743,7 @@ msgid ""
 "the default since nearly all modern hard drives check themselves for bad "
 "blocks anyway.  Would you like to check for bad blocks while running mkswap?"
 msgstr ""
-"Slint Setup vil nå forberede swap området for systemet. Når du formaterer en "
+"Salix Setup vil nå forberede swap området for systemet. Når du formaterer en "
 "swap partisjon med mkswap kan du også se etter harddisk feil. Dette er ikke "
 "standardvalget siden nær sagt alle moderne harddisker sjekker dette selv "
 "uansett. Har du lyst å se etter harddisk feil mens mkswap kjører?"
@@ -2908,7 +2908,7 @@ msgid ""
 "If you want to exit the installation and drop to a linux console, select "
 "'Exit installation'"
 msgstr ""
-"Velkommen til Slint PXE Setup.\n"
+"Velkommen til Salix PXE Setup.\n"
 "Velg et alternativ nedenfor med OPP/NED pilene og MELLOMROM eller ENTER.\n"
 "\n"
 "Alternative taster kan også brukes: '+','-', og TAB."

@@ -61,7 +61,7 @@ msgid ""
 "begin the scanning process. Or, if you'd rather specify the device name "
 "manually (experts only), choose that option below."
 msgstr ""
-"Stellen Sie sicher, dass die Slint-Disk im CD/DVD-Laufwerk ist und drücken "
+"Stellen Sie sicher, dass die Salix-Disk im CD/DVD-Laufwerk ist und drücken "
 "Sie danach ENTER um den Suchvorgang zu starten. Falls Sie das Laufwerk "
 "selber angeben möchten (nur für Experten), wählen Sie die untere Option."
 
@@ -236,7 +236,7 @@ msgid ""
 "to use to mount the Salix CD/DVD:"
 msgstr ""
 "Bitte geben Sie den Namen des CD/DVD Laufwerks (z.B. /dev/hdc) an, den Sie "
-"zum Einbinden der Slint-CD/DVD verwenden möchten:"
+"zum Einbinden der Salix-CD/DVD verwenden möchten:"
 
 #
 # File: 32-INSCD, line: 86
@@ -306,7 +306,7 @@ msgstr "SUCHE"
 # File: 64-INSCD, line: 122
 #, fuzzy
 msgid "Scanning for a CD/DVD drive containing a Salix disc..."
-msgstr "Suche nach einem CD/DVD Laufwerk mit der Slint-Disk..."
+msgstr "Suche nach einem CD/DVD Laufwerk mit der Salix-Disk..."
 
 #
 # File: 32-INSCD, line: 159
@@ -315,7 +315,7 @@ msgstr "Suche nach einem CD/DVD Laufwerk mit der Slint-Disk..."
 msgid ""
 "Scanning for a parallel port ATAPI CD/DVD drive containing a Salix disc..."
 msgstr ""
-"Suche nach einem Parallelport ATAPI CD/DVD Laufwerk mit der Slint-Disk..."
+"Suche nach einem Parallelport ATAPI CD/DVD Laufwerk mit der Salix-Disk..."
 
 #
 # File: 32-INSCD, line: 179
@@ -364,7 +364,7 @@ msgstr ""
 "Unter den überprüften Geräten wurde kein CD/DVD Laufwerk gefunden. Mögliche "
 "Gründe dafür sind: Sie verwenden eine Bootdisk oder ein Kernel, der Ihr "
 "Laufwerk nicht unterstützt, vom Laufwerk benötigte Parameter wurden nicht an "
-"den Kernel weitergegeben, die Slint-Disk ist nicht im CD/DVD Laufwerk, oder "
+"den Kernel weitergegeben, die Salix-Disk ist nicht im CD/DVD Laufwerk, oder "
 "Sie verwenden ein Laufwerk, das an einer Plug and Play Soundkarte "
 "angeschlossen ist (in diesem Fall reicht es meistens, dass das Laufwerk "
 "direkt an einer IDE Schnittstelle anzuschließen). Bitte vergewissern Sie "
@@ -390,7 +390,7 @@ msgstr "CD/DVD LAUFWERK GEFUNDEN"
 # File: 64-INSCD, line: 224
 #, fuzzy, sh-format
 msgid "A Salix disc was found in device $DRIVE_FOUND."
-msgstr "Eine Slint-Disk wurde im Laufwerk $DRIVE_FOUND gefunden."
+msgstr "Eine Salix-Disk wurde im Laufwerk $DRIVE_FOUND gefunden."
 
 #
 # File: 32-INSCD, line: 227
@@ -469,7 +469,7 @@ msgstr ""
 "Gut, soweit ist alles bereit! Nun müssen wir wissen wo die\n"
 "Softwarepakete für die Installation gefunden werden können.\n"
 "Zuerst brauchen wir die IP Adresse des Computers, auf dem\n"
-"die Slint Quellen gespeichert sind."
+"die Salix Quellen gespeichert sind."
 
 #
 # File: 32-INSURL, line: 71
@@ -510,17 +510,17 @@ msgid ""
 "What is the Salix source directory?"
 msgstr ""
 "\n"
-"Auf dem Server muss ein Verzeichnis mit den Slint-\n"
+"Auf dem Server muss ein Verzeichnis mit den Salix-\n"
 "Paketen und -Dateien, angeordnet in einer Baumstruktur\n"
 "wie auf der FTP-Seite, vorhanden sein.\n"
 "\n"
 "Das Installationsskript muss den Namen des Ordners mit\n"
 "den Serien-Unterverzeichnissen auf Ihrem Server kennen.\n"
 "Zum Beispiel: falls sich Ihre A-Serie im Ordner\n"
-"/stuff/slint$SFX/a befindet, antworten Sie mit: \n"
-"/stuff/slint$SFX\n"
+"/stuff/salix/a befindet, antworten Sie mit: \n"
+"/stuff/salix\n"
 "\n"
-"Welches ist das Slint-Quellverzeichnis?\n"
+"Welches ist das Salix-Quellverzeichnis?\n"
 
 #
 # File: 32-INSNFS, line: 56
@@ -614,7 +614,7 @@ msgstr ""
 "Gut, soweit ist alles bereit! Nun müssen wir wissen wo die\n"
 "Softwarepakete für die Installation gefunden werden können.\n"
 "Zuerst brauchen wir die Freigabeadresse des Samba Servers,\n"
-"auf dem die Slint-Quellen gespeichert sind.\n"
+"auf dem die Salix-Quellen gespeichert sind.\n"
 "Beispiel Freigabeadresse: //192.168.0.1/public\n"
 
 #
@@ -657,17 +657,17 @@ msgid ""
 "What is the Salix source directory?"
 msgstr ""
 "\n"
-"Auf dem Server muss ein Verzeichnis mit den Slint-\n"
+"Auf dem Server muss ein Verzeichnis mit den Salix-\n"
 "Paketen und -Dateien, angeordnet in einer Baumstruktur\n"
 "wie auf der FTP-Seite, vorhanden sein.\n"
 "\n"
 "Das Installationsskript muss den Namen des Ordners mit\n"
 "den Serien-Unterverzeichnissen auf Ihrem Server kennen.\n"
 "Zum Beispiel: falls sich Ihre A-Serie im Ordner\n"
-"/stuff/slint$SFX/a befindet, antworten Sie mit: \n"
-"/stuff/slint$SFX\n"
+"/stuff/salix/a befindet, antworten Sie mit: \n"
+"/stuff/salix\n"
 "\n"
-"Welches ist das Slint-Quellverzeichnis?"
+"Welches ist das Salix-Quellverzeichnis?"
 
 #
 # File: 32-INSSMB, line: 65
@@ -699,14 +699,14 @@ msgstr "Binde Samba-Freigabe(n) ein:"
 # File: 64-INSSMB, line: 85
 #, fuzzy
 msgid "A Salix package tree was found! Ready to continue."
-msgstr "Ein Slint-Paketbaum wurde gefunden! Bereit zum Fortfahren."
+msgstr "Ein Salix-Paketbaum wurde gefunden! Bereit zum Fortfahren."
 
 #
 # File: 32-INSSMB, line: 89
 # File: 64-INSSMB, line: 89
 #, fuzzy
 msgid "No Salix package tree found at the indicated path!"
-msgstr "Kein Slint-Paketbaum im angegebenen Pfad gefunden!"
+msgstr "Kein Salix-Paketbaum im angegebenen Pfad gefunden!"
 
 #
 # File: 32-INSSMB, line: 95
@@ -735,7 +735,7 @@ msgid ""
 msgstr ""
 "Gut, soweit ist alles bereit! Nun müssen wir wissen wo die Softwarepakete "
 "für die Installation gefunden werden können. Zuerst brauchen wir die URL des "
-"FTP oder HTTP Servers, auf dem die Slint Quellen gespeichert sind.\n"
+"FTP oder HTTP Servers, auf dem die Salix Quellen gespeichert sind.\n"
 "URL Beispiel: 'ftp://192.168.0.1'; 'http://172.16.10.31'\n"
 
 #
@@ -770,17 +770,17 @@ msgid ""
 "What is the Salix source directory?\n"
 msgstr ""
 "\n"
-"Auf dem Server muss ein Verzeichnis mit den Slint-\n"
+"Auf dem Server muss ein Verzeichnis mit den Salix-\n"
 "Paketen und -Dateien, angeordnet in einer Baumstruktur\n"
 "wie auf der FTP-Seite, vorhanden sein.\n"
 "\n"
 "Das Installationsskript muss den Namen des Ordners mit\n"
 "den Serien-Unterverzeichnissen auf Ihrem Server kennen.\n"
 "Zum Beispiel: falls sich Ihre A-Serie im Ordner\n"
-"/stuff/slint$SFX/a befindet, antworten Sie mit: \n"
-"/stuff/slint$SFX\n"
+"/stuff/salix/a befindet, antworten Sie mit: \n"
+"/stuff/salix\n"
 "\n"
-"Welches ist das Slint-Quellverzeichnis?\n"
+"Welches ist das Salix-Quellverzeichnis?\n"
 
 #
 # File: 32-INSURL, line: 106
@@ -804,13 +804,13 @@ msgstr ""
 "Im nächsten Bildschirm sollten Sie nach Fehlern Ausschau halten.\n"
 "\n"
 "Zuerst wird die Datei PACKAGES.TXT aus dem vorher angegebenen "
-"Stammverzeichnis (dies sollte das Stammverzeichnis des entfernten Slintbaums "
+"Stammverzeichnis (dies sollte das Stammverzeichnis des entfernten Salixbaums "
 "sein) heruntergeladen. Danach wird mit der Hilfe von PACKAGES.TXT ein "
 "lokaler Cache des Paketbaums erstellt (dies dauert eine Minute oder weniger "
 "auf einem durchschnittlichen System).\n"
 "Nun sind wird bereit für den nächsten Schritt!\n"
 "\n"
-"PACKAGES.TXT wird aus dem Slint-Stammverzeichnis heruntergeladen nachdem Sie "
+"PACKAGES.TXT wird aus dem Salix-Stammverzeichnis heruntergeladen nachdem Sie "
 "OK gedrückt haben.\n"
 "Die Datei ist einige hundert KB groß. Es könnte eine Weile dauern bis der "
 "Vorgang abgeschlossen ist...\n"
@@ -847,7 +847,7 @@ msgstr "> Herunterladen ist erneut fehlgeschlagen"
 # File: 64-INSURL, line: 148
 #, fuzzy
 msgid "A Salix 'PACKAGES.TXT' is available. Ready to continue!"
-msgstr "Ein Slint 'PACKAGES.TXT' ist verfügbar. Bereit um fortzusetzen!"
+msgstr "Ein Salix 'PACKAGES.TXT' ist verfügbar. Bereit um fortzusetzen!"
 
 #
 # File: 32-INSURL, line: 153
@@ -896,7 +896,7 @@ msgid ""
 "processing ${TOTALP} Salix packages..."
 msgstr ""
 "\n"
-"verarbeite ${TOTALP} Slint-Pakete..."
+"verarbeite ${TOTALP} Salix-Pakete..."
 
 #
 # File: 32-INSURL, line: 232
@@ -935,7 +935,7 @@ msgid ""
 "Make sure the USB stick containing the Salix package directory is inserted "
 "into a USB port, and then press ENTER to begin the scanning process."
 msgstr ""
-"Stellen Sie sicher, dass der USB-Stick mit dem Slint-Paketverzeichnis in "
+"Stellen Sie sicher, dass der USB-Stick mit dem Salix-Paketverzeichnis in "
 "einen USB-Anschluss gesteckt ist und drücken Sie ENTER, um den Suchvorgang "
 "zu beginnen."
 
@@ -960,7 +960,7 @@ msgstr ""
 # File: 64-INSUSB, line: 89
 #, fuzzy
 msgid "NO SALIX DIRECTORY FOUND"
-msgstr "KEIN SLINT VERZEICHNIS GEFUNDEN"
+msgstr "KEIN SALIX VERZEICHNIS GEFUNDEN"
 
 #
 # File: 32-INSUSB, line: 90
@@ -970,7 +970,7 @@ msgid ""
 "Sorry, but a Salix directory could not be found on any USB devices. Exiting "
 "back to the top menu."
 msgstr ""
-"Entschuldigung, aber ein Slint-Verzeichnis konnte auf keinem USB-Gerät "
+"Entschuldigung, aber ein Salix-Verzeichnis konnte auf keinem USB-Gerät "
 "gefunden werden. Kehre zum obersten Menü zurück."
 
 #
@@ -985,7 +985,7 @@ msgstr "USB PAKETQUELLE ENTDECKT"
 # File: 64-INSUSB, line: 100
 #, fuzzy, sh-format
 msgid "A Salix package directory was found on device $DRIVE_FOUND."
-msgstr "Ein Slint Paketverzeichnis wurde auf Gerät $DRIVE_FOUND gefunden."
+msgstr "Ein Salix Paketverzeichnis wurde auf Gerät $DRIVE_FOUND gefunden."
 
 #
 # File: 32-INSdir, line: 18
@@ -1904,7 +1904,7 @@ msgid ""
 "Usually this is disc number one (the disc that you boot from).  Once you've "
 "inserted the disc, hit ENTER to continue."
 msgstr ""
-"Bitte legen Sie die Slint-Disk mit den unterschiedlichen Linuxkerneln erneut "
+"Bitte legen Sie die Salix-Disk mit den unterschiedlichen Linuxkerneln erneut "
 "in Ihr Laufwerk. Normalerweise ist dies Disk-Nummer Eins (die Disk, von der "
 "Sie die Installation gestartet haben). Sobald Sie die Disk eingelegt haben, "
 "drücken Sie ENTER um fortzufahren."
@@ -1967,7 +1967,7 @@ msgstr ""
 # File: 64-SeTpxemedia, line: 32
 #, fuzzy
 msgid "Select Salix installation source."
-msgstr "Quelle für die Slint-Installation auswählen."
+msgstr "Quelle für die Salix-Installation auswählen."
 
 #
 # File: 32-SeTmedia, line: 9
@@ -1983,21 +1983,21 @@ msgstr "AUSWAHL DES QUELLMEDIUMS"
 #, fuzzy
 msgid "Please select the media from which to install Salix Linux:"
 msgstr ""
-"Bitte wählen Sie das Medium, von welchem Slint installiert werden soll:"
+"Bitte wählen Sie das Medium, von welchem Salix installiert werden soll:"
 
 #
 # File: 32-SeTmedia, line: 13
 # File: 64-SeTmedia, line: 13
 #, fuzzy
 msgid "Install from a Salix USB stick"
-msgstr "Installieren von einem Slint USB-Stick"
+msgstr "Installieren von einem Salix USB-Stick"
 
 #
 # File: 32-SeTmedia, line: 12
 # File: 64-SeTmedia, line: 12
 #, fuzzy
 msgid "Install from a Salix CD or DVD"
-msgstr "Von einer Slint-CD oder -DVD installieren"
+msgstr "Von einer Salix-CD oder -DVD installieren"
 
 #
 # File: 32-SeTmedia, line: 14
@@ -2754,7 +2754,7 @@ msgid ""
 "please unselect them with the up and down arrows and spacebar.  If you wish "
 "to use all of them (this is recommended), simply hit the ENTER key."
 msgstr ""
-"Slint-Setup hat eine oder mehrere Swap-Partitionen in Ihrem System gefunden. "
+"Salix-Setup hat eine oder mehrere Swap-Partitionen in Ihrem System gefunden. "
 "Diese Partitionen wurden vorausgewählt, um als Swap-Bereich zu dienen. Wenn "
 "es andere Swap-Partitionen gibt, die Sie nicht mit dieser Installation "
 "nutzen möchten, wählen Sie diese mit den Pfeiltasten (hoch und runter) und "
@@ -2784,7 +2784,7 @@ msgid ""
 "the default since nearly all modern hard drives check themselves for bad "
 "blocks anyway.  Would you like to check for bad blocks while running mkswap?"
 msgstr ""
-"Slint Setup wird nun den swap-Bereich Ihres Systems vorbereiten. Wenn swap-"
+"Salix Setup wird nun den swap-Bereich Ihres Systems vorbereiten. Wenn swap-"
 "Partitionen mit mkswap formatiert werden, kann gleichzeitig nach "
 "fehlerhaften Blöcken gesucht werden. Dies ist standardmäßig nicht "
 "eingestellt, da sich ziemlich alle modernen Festplatten selbst nach "
@@ -2951,7 +2951,7 @@ msgid ""
 "If you want to exit the installation and drop to a linux console, select "
 "'Exit installation'"
 msgstr ""
-"Willkommen beim Slint-PXE-Setup\n"
+"Willkommen beim Salix-PXE-Setup\n"
 "\n"
 "Wählen Sie eine Option mit den AUF-/AB-Tasten und LEERTASTE oder ENTER.\n"
 "\n"

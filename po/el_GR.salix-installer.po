@@ -59,7 +59,7 @@ msgid ""
 "begin the scanning process. Or, if you'd rather specify the device name "
 "manually (experts only), choose that option below."
 msgstr ""
-"Τοποθετήστε το CD του Slint στη μονάδα CD/DVD και πατήστε ENTER για να "
+"Τοποθετήστε το CD του Salix στη μονάδα CD/DVD και πατήστε ENTER για να "
 "ξεκινήσει η ανίχνευση συσκευής. Αν προτιμάτε να καθορίσετε χειρωνακτικά το "
 "όνομα της συσκευής (μόνο για έμπειρους χρήστες), κάντε αυτή την επιλογή "
 "παρακάτω."
@@ -239,7 +239,7 @@ msgid ""
 "to use to mount the Salix CD/DVD:"
 msgstr ""
 "Πληκτρολογήστε το όνομα της συσκεύς CD/DVD (πχ, /dev/hdc) στην οποία θα "
-"προσαρτηθεί το CD/DVD Slint:"
+"προσαρτηθεί το CD/DVD Salix:"
 
 #
 # File: 32-INSCD, line: 86
@@ -291,7 +291,7 @@ msgid ""
 msgstr ""
 "Λυπόμαστε, αλλά η εντολή mknod απέτυχε να δημιουργήσει τη συσκευή. Θα πρέπει "
 "να επιστρέψεις στο προηγούμενο μενού και να επιλέξεις ξανά τη μονάδα CD/DVD "
-"σου που περιέχει το CD/DVD του Slint. Πάτα ENTER για να ακυρωθεί η "
+"σου που περιέχει το CD/DVD του Salix. Πάτα ENTER για να ακυρωθεί η "
 "διαδικασία επιλογής συσκευής."
 
 #
@@ -311,7 +311,7 @@ msgstr "ΑΝΙΧΝΕΥΣΗ"
 # File: 64-INSCD, line: 122
 #, fuzzy
 msgid "Scanning for a CD/DVD drive containing a Salix disc..."
-msgstr "Ανίχνευση συσκευής CD/DVD που περιέχει το CD του Slint."
+msgstr "Ανίχνευση συσκευής CD/DVD που περιέχει το CD του Salix."
 
 #
 # File: 32-INSCD, line: 159
@@ -321,7 +321,7 @@ msgid ""
 "Scanning for a parallel port ATAPI CD/DVD drive containing a Salix disc..."
 msgstr ""
 "Ανίχνευση συσκευής CD/DVD ATAPI σε παράλληλη θύρα που περιέχει το CD του "
-"Slint."
+"Salix."
 
 #
 # File: 32-INSCD, line: 179
@@ -370,7 +370,7 @@ msgstr ""
 "πιθανώς να οφείλεται:Η εκκίνηση πραγματοποιήθηκε από δίσκο εκκίνησης ή "
 "πυρήνα που δεν υποστηρίζει τη συσκευή σας. Ο πυρήνας απαιτεί τη χρήση "
 "συγκεκριμένων παραμέτρων για την χρήση της συσκευής σας. Δεν έχετε "
-"τοποθετήσει το CD του Slint στη μονάδα CD/DVD Η συσκευή σας είναι "
+"τοποθετήσει το CD του Salix στη μονάδα CD/DVD Η συσκευή σας είναι "
 "συνδεδεμένη σε μία κάρτα ήχου \"Plug and Play\" (σε αυτήν την περίπτωση, το "
 "πρόβλημα ίσως λυθεί αν συνδέσετε τη συσκευή σας κατευθείαν στο κανάλι IDE). "
 "Βεβαιωθείτε ότι χρησιμοποιείτε το σωστό δίσκο εκκίνησης για το hardware του "
@@ -395,7 +395,7 @@ msgstr "ΑΝΙΧΝΕΥΤΗΚΕ ΜΟΝΑΔΑ CD/DVD"
 # File: 64-INSCD, line: 224
 #, fuzzy, sh-format
 msgid "A Salix disc was found in device $DRIVE_FOUND."
-msgstr "Η ΜΟΝΑΔΑ $DRIVE_FOUND ΠΕΡΙΕΧΕΙ ΕΝΑ CD SLINT"
+msgstr "Η ΜΟΝΑΔΑ $DRIVE_FOUND ΠΕΡΙΕΧΕΙ ΕΝΑ CD SALIX"
 
 #
 # File: 32-INSCD, line: 227
@@ -475,7 +475,7 @@ msgstr ""
 "προσδιορίσουμε\n"
 "πού βρίσκονται τα πακέτα που θα εγκαταστήσουμε. Χρειαζόμαστε τη διεύθυνση "
 "IP\n"
-"του υπολογιστή που περιέχει τον πηγαίο κώδικα των πακέτων Slint."
+"του υπολογιστή που περιέχει τον πηγαίο κώδικα των πακέτων Salix."
 
 #
 # File: 32-INSURL, line: 71
@@ -516,15 +516,15 @@ msgid ""
 "What is the Salix source directory?"
 msgstr ""
 "\n"
-"Μέσα στο server πρέπει να υπάρχει ένας φάκελος με τα πακέτα του Slint και να "
+"Μέσα στο server πρέπει να υπάρχει ένας φάκελος με τα πακέτα του Salix και να "
 "είναι δομημένος ιεραρχικά, παρόμοια με τον διακομιστή FTP.\n"
 "\n"
 "Το script της εγκατάστασης χρειάζεται το όνομα του φακέλου μέσα στον server "
 "που περιέχει τους υποφακέλους με τις σειρές λογισμικού. Π.χ. αν η σειρά A "
 "βρίσκεται στο\n"
-"/stuff/slint$SFX/a, πληκτρολογήστε: /stuff/slint$SFX\n"
+"/stuff/salix/a, πληκτρολογήστε: /stuff/salix\n"
 "\n"
-"Δώστε το όνομα του φακέλου με τις πηγές λογισμικού του Slint:\n"
+"Δώστε το όνομα του φακέλου με τις πηγές λογισμικού του Salix:\n"
 
 #
 # File: 32-INSNFS, line: 56
@@ -619,7 +619,7 @@ msgstr ""
 "προσδιορίσουμε\n"
 "πού βρίσκονται τα πακέτα που θα εγκαταστήσουμε. Χρειαζόμαστε\n"
 "τη διεύθυνση του server διαμοιρασμού αρχείων Samba το οποίο περιέχει\n"
-"τον πηγαίο κώδικα των πακέτων Slint.\n"
+"τον πηγαίο κώδικα των πακέτων Salix.\n"
 "Π.χ.: //192.168.0.1/public\n"
 
 #
@@ -662,15 +662,15 @@ msgid ""
 "What is the Salix source directory?"
 msgstr ""
 "\n"
-"Μέσα στο server πρέπει να υπάρχει ένας φάκελος με τα πακέτα του Slint\n"
+"Μέσα στο server πρέπει να υπάρχει ένας φάκελος με τα πακέτα του Salix\n"
 "και να είναι δομημένος ιεραρχικά, παρόμοια με τον διακομιστή FTP.\n"
 "\n"
 "Το script της εγκατάστασης χρειάζεται το όνομα του φακέλου\n"
 "πού, μέσα στον server διαμοιρασμού αρχείων Samba περιέχει\n"
 "τους υποφακέλους με τις σειρές λογισμικού. Π.χ. αν η σειρά A βρίσκεται στο\n"
-"/stuff/slint$SFX/a, πληκτρολογήστε: /stuff/slint$SFX\n"
+"/stuff/salix/a, πληκτρολογήστε: /stuff/salix\n"
 "\n"
-"Δώστε το όνομα του φακέλου με τις πηγές λογισμικού του Slint:"
+"Δώστε το όνομα του φακέλου με τις πηγές λογισμικού του Salix:"
 
 #
 # File: 32-INSSMB, line: 65
@@ -702,14 +702,14 @@ msgstr "Προσαρτημένοι server Samba:"
 # File: 64-INSSMB, line: 85
 #, fuzzy
 msgid "A Salix package tree was found! Ready to continue."
-msgstr "Βρήκαμε ένα κατάλογο με πακέτα Slint! Μπορούμε να συνεχίσουμε."
+msgstr "Βρήκαμε ένα κατάλογο με πακέτα Salix! Μπορούμε να συνεχίσουμε."
 
 #
 # File: 32-INSSMB, line: 89
 # File: 64-INSSMB, line: 89
 #, fuzzy
 msgid "No Salix package tree found at the indicated path!"
-msgstr "Δεν βρέθηκε κατάλογος με πακέτα Slint στο φάκελο που προσδιορίσατε!"
+msgstr "Δεν βρέθηκε κατάλογος με πακέτα Salix στο φάκελο που προσδιορίσατε!"
 
 #
 # File: 32-INSSMB, line: 95
@@ -739,7 +739,7 @@ msgstr ""
 "Ωραία! Τελειώσαμε με τις τοπικές ρυθμίσεις, αλλά τώρα πρέπει να "
 "προσδιορίσουμε πού βρίσκονται τα πακέτα που θα εγκαταστήσουμε. Χρειαζόμαστε "
 "τη διεύθυνση URL του server  ftp ή httpτο οποίο περιέχει τον πηγαίο κώδικα "
-"των πακέτων Slint.\n"
+"των πακέτων Salix.\n"
 "Π.χ.: 'ftp://192.168.0.1' ; 'http://172.16.10.31'\n"
 
 #
@@ -774,15 +774,15 @@ msgid ""
 "What is the Salix source directory?\n"
 msgstr ""
 "\n"
-"Μέσα στο server πρέπει να υπάρχει ένας φάκελος με τα πακέτα του Slint και να "
+"Μέσα στο server πρέπει να υπάρχει ένας φάκελος με τα πακέτα του Salix και να "
 "είναι δομημένος ιεραρχικά, παρόμοια με τον διακομιστή FTP.\n"
 "\n"
 "Το script της εγκατάστασης χρειάζεται το όνομα του φακέλου μέσα στον server "
 "που περιέχει τους υποφακέλους με τις σειρές λογισμικού. Π.χ. αν η σειρά A "
 "βρίσκεται στο\n"
-"/stuff/slint$SFX/a, πληκτρολογήστε: /stuff/slint$SFX\n"
+"/stuff/salix/a, πληκτρολογήστε: /stuff/salix\n"
 "\n"
-"Δώστε το όνομα του φακέλου με τις πηγές λογισμικού του Slint:\n"
+"Δώστε το όνομα του φακέλου με τις πηγές λογισμικού του Salix:\n"
 
 #
 # File: 32-INSURL, line: 106
@@ -807,7 +807,7 @@ msgstr ""
 "\n"
 "Θα κατεβάσουμε το αρχείο PACKAGES.TXT από τον φάκελο που βρίσκεται ένα "
 "επίπεδο πάνω από αυτόν που πληκτρολογήσατε (ο οποίος, υπενθυμίζουμε, πρέπει "
-"να περιέχει το ανώτερο επίπεδο του καταλόγου πακέτων του Slint).  Στη "
+"να περιέχει το ανώτερο επίπεδο του καταλόγου πακέτων του Salix).  Στη "
 "συνέχεια θα χρησιμοποιήσουμε το PACKAGES.TXT για να δημιουργήσουμε τοπικά "
 "μία εικόνα του καταλόγου των πακέτων (δεν θα πάρει πάνω από ένα λεπτό αν το "
 "Στη συνέχεια, θα προχωρήσουμε με την εγκατάσταση\n"
@@ -897,7 +897,7 @@ msgid ""
 "processing ${TOTALP} Salix packages..."
 msgstr ""
 "\n"
-"επεξεργασία των πακέτων Slint ${TOTALP}..."
+"επεξεργασία των πακέτων Salix ${TOTALP}..."
 
 #
 # File: 32-INSURL, line: 232
@@ -937,7 +937,7 @@ msgid ""
 "Make sure the USB stick containing the Salix package directory is inserted "
 "into a USB port, and then press ENTER to begin the scanning process."
 msgstr ""
-"Βεβαιωθείτε ότι το στικάκι USB που περιέχει τον κατάλογο πακέτων του Slint "
+"Βεβαιωθείτε ότι το στικάκι USB που περιέχει τον κατάλογο πακέτων του Salix "
 "έχει εισαχθεί σε μία θύρα USB, και μετά πατήστε ENTER για να αρχίσει η "
 "διαδικασία σάρωσης."
 
@@ -962,7 +962,7 @@ msgstr ""
 # File: 64-INSUSB, line: 89
 #, fuzzy
 msgid "NO SALIX DIRECTORY FOUND"
-msgstr "ΔΕΝ ΒΡΕΘΗΚΕ ΚΑΤΑΛΟΓΟΣ SLINT"
+msgstr "ΔΕΝ ΒΡΕΘΗΚΕ ΚΑΤΑΛΟΓΟΣ SALIX"
 
 #
 # File: 32-INSUSB, line: 90
@@ -972,7 +972,7 @@ msgid ""
 "Sorry, but a Salix directory could not be found on any USB devices. Exiting "
 "back to the top menu."
 msgstr ""
-"Συγγνώμη, αλλά δεν ήταν δυνατόν να βρεθεί ένας κατάλογος Slint σε καμία "
+"Συγγνώμη, αλλά δεν ήταν δυνατόν να βρεθεί ένας κατάλογος Salix σε καμία "
 "συσκευή USB. Γίνεται έξοδος στο αρχικό μενού."
 
 #
@@ -987,7 +987,7 @@ msgstr "ΒΡΕΘΗΚΕ ΠΗΓΑΙΟ ΑΡΧΕΙΟ ΣΕ USB"
 # File: 64-INSUSB, line: 100
 #, fuzzy, sh-format
 msgid "A Salix package directory was found on device $DRIVE_FOUND."
-msgstr "Βρέθηκε ένας κατάλογος με πακέτα Slint στη συσκευή $DRIVE_FOUND."
+msgstr "Βρέθηκε ένας κατάλογος με πακέτα Salix στη συσκευή $DRIVE_FOUND."
 
 #
 # File: 32-INSdir, line: 18
@@ -1929,7 +1929,7 @@ msgid ""
 "Usually this is disc number one (the disc that you boot from).  Once you've "
 "inserted the disc, hit ENTER to continue."
 msgstr ""
-"Επανατοποθετήστε το cd του Slint το οποίο περιέχει πυρήνες Linux. Κανονικά "
+"Επανατοποθετήστε το cd του Salix το οποίο περιέχει πυρήνες Linux. Κανονικά "
 "θα πρέπει να είναι το πρώτο cd (αυτό από το οποίο ξεκινήσατε την "
 "εγκατάσταση). Αφού τοποθετήσετε το cd πιέστε ENTER για συνέχεια"
 
@@ -1992,7 +1992,7 @@ msgstr ""
 # File: 64-SeTpxemedia, line: 32
 #, fuzzy
 msgid "Select Salix installation source."
-msgstr "Επιλέξτε την πηγή για την εγκατάσταση του Slint"
+msgstr "Επιλέξτε την πηγή για την εγκατάσταση του Salix"
 
 #
 # File: 32-SeTmedia, line: 9
@@ -2008,7 +2008,7 @@ msgstr "ΕΠΙΛΟΓΗ ΜΕΣΟΥ ΠΡΟΕΛΕΥΣΗΣ"
 #, fuzzy
 msgid "Please select the media from which to install Salix Linux:"
 msgstr ""
-"Παρακαλώ επιλέξτε το μέσο από το οποίο θα κάνετε την εγκατάσταση του Slint "
+"Παρακαλώ επιλέξτε το μέσο από το οποίο θα κάνετε την εγκατάσταση του Salix "
 "Linux:"
 
 #
@@ -2016,14 +2016,14 @@ msgstr ""
 # File: 64-SeTmedia, line: 13
 #, fuzzy
 msgid "Install from a Salix USB stick"
-msgstr "Εγκατάσταση από ένα στικάκι USB Slint"
+msgstr "Εγκατάσταση από ένα στικάκι USB Salix"
 
 #
 # File: 32-SeTmedia, line: 12
 # File: 64-SeTmedia, line: 12
 #, fuzzy
 msgid "Install from a Salix CD or DVD"
-msgstr "Εγκατάσταση από CD ή DVD Slint"
+msgstr "Εγκατάσταση από CD ή DVD Salix"
 
 #
 # File: 32-SeTmedia, line: 14
@@ -2793,7 +2793,7 @@ msgid ""
 "please unselect them with the up and down arrows and spacebar.  If you wish "
 "to use all of them (this is recommended), simply hit the ENTER key."
 msgstr ""
-"Το πρόγραμμα εγκατάστασης του Slint εντόπισε μία ή περισσότερες κατατμήσεις "
+"Το πρόγραμμα εγκατάστασης του Salix εντόπισε μία ή περισσότερες κατατμήσεις "
 "εικονικής μνήμης swap. Έχουμε ήδη προεπιλέξει αυτές τις κατατμήσεις και θα "
 "τις χρησιμοποιήσουμε όλες. Στην περίπτωση που προτιμάτε να παραλείψουμε "
 "κάποια, μετακινηθείτε στη λίστα με τα πάνω και κάτω βελάκια και αφαιρέστε "
@@ -2825,7 +2825,7 @@ msgid ""
 "the default since nearly all modern hard drives check themselves for bad "
 "blocks anyway.  Would you like to check for bad blocks while running mkswap?"
 msgstr ""
-"Το πρόγραμμα εγκατάστασης του Slint θα προετοιμάσει την εικονική μνήμη swap "
+"Το πρόγραμμα εγκατάστασης του Salix θα προετοιμάσει την εικονική μνήμη swap "
 "του συστήματός σας. Η κατάτμηση θα διαμορφωθεί με το πρόγραμμα mkswap και "
 "υπάρχει η επιλογή να γίνει έλεγχος για ελαττωματικούς τομείς. Δεν έχουμε "
 "προεπιλέξει τον έλεγχο, καθώς όλοι οι σύγχρονοι σκληροί δίσκοι κάνουν "
@@ -2992,7 +2992,7 @@ msgid ""
 "If you want to exit the installation and drop to a linux console, select "
 "'Exit installation'"
 msgstr ""
-"Καλωσήλθατε στις ρυθμίσεις του Slint PXE.\n"
+"Καλωσήλθατε στις ρυθμίσεις του Salix PXE.\n"
 "Κάντε μια από τις παρακάτω επιλογές χρησιμοποιώντας τα πλήκτρα UP/DOWN και "
 "το SPACE ή το ENTER.\n"
 "\n"

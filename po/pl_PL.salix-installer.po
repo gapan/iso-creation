@@ -72,7 +72,7 @@ msgid ""
 "begin the scanning process. Or, if you'd rather specify the device name "
 "manually (experts only), choose that option below."
 msgstr ""
-"Upewnij się, że płyta z systemem Slint znajduje się w napędzie CD/DVD, a "
+"Upewnij się, że płyta z systemem Salix znajduje się w napędzie CD/DVD, a "
 "następnie naciśnij ENTER w celu rozpoczęcia procesu przeszukiwania. Jeżeli "
 "chcesz ręcznie podać nazwę urządzenia (tylko dla zaawansowanych), wybierz "
 "opcję poniżej."
@@ -356,7 +356,7 @@ msgid ""
 "to use to mount the Salix CD/DVD:"
 msgstr ""
 "Proszę wpisać nazwę urządzenia CD/DVD (np. /dev/hdc), którego chciałbyś "
-"użyć, aby zamontować Slint CD/DVD:"
+"użyć, aby zamontować Salix CD/DVD:"
 
 #
 # File: 32-13.37-INSCD, line: 85
@@ -466,7 +466,7 @@ msgstr "SZUKANIE"
 # File: 64-14.1-INSCD, line: 121
 #, fuzzy
 msgid "Scanning for a CD/DVD drive containing a Salix disc..."
-msgstr "Szukanie napędu CD/DVD zawierającego płytę z systemem Slint..."
+msgstr "Szukanie napędu CD/DVD zawierającego płytę z systemem Salix..."
 
 #
 # File: 32-13.37-INSCD, line: 158
@@ -480,7 +480,7 @@ msgid ""
 "Scanning for a parallel port ATAPI CD/DVD drive containing a Salix disc..."
 msgstr ""
 "Wyszukiwanie napędu CD/DVD (port równoległy ATAPI) zawierającego płytę z "
-"systemem Slint."
+"systemem Salix."
 
 #
 # File: 32-13.37-INSCD, line: 178
@@ -542,7 +542,7 @@ msgstr ""
 "Nie znaleziono napędu CD/DVD w żadnym z przeskanowanych urządzeń. Do "
 "możliwych powodów możemy zaliczyć dysk rozruchowy lub jądro systemu, które "
 "nie wspiera twojego napędu, niepodanie parametrów wymaganych przez niektóre "
-"napędy do jądra systemu, brak płyty Slint w napędzie CD/DVD, bądź też "
+"napędy do jądra systemu, brak płyty Salix w napędzie CD/DVD, bądź też "
 "używanie karty dźwiękowej typu Plug and Play (w tym przypadku podłączenie "
 "napędu bezpośrednio do szyny IDE zwykle pomaga). Upewnij się, że używasz "
 "właściwego dla twojego sprzętu dysku rozruchowego. Sprawdź plik BOOTING w "
@@ -574,7 +574,7 @@ msgstr "ZNALEZIONO NAPĘD CD/DVD"
 # File: 64-14.1-INSCD, line: 223
 #, fuzzy, sh-format
 msgid "A Salix disc was found in device $DRIVE_FOUND."
-msgstr "Płyta z systemem Slint została znaleziona w napędzie $DRIVE_FOUND"
+msgstr "Płyta z systemem Salix została znaleziona w napędzie $DRIVE_FOUND"
 
 #
 # File: 32-13.37-INSCD, line: 226
@@ -696,7 +696,7 @@ msgid ""
 msgstr ""
 "Dobrze! Lokalna konfiguracja została zakończona. Teraz proszę podać\n"
 "źródło paczek do instalacji. Najpierw potrzebujemy adres IP komputera,\n"
-"gdzie znajdują się źródła Slint."
+"gdzie znajdują się źródła Salix."
 
 #
 # File: 32-13.37-INSURL, line: 71
@@ -751,13 +751,13 @@ msgid ""
 "What is the Salix source directory?"
 msgstr ""
 "\n"
-"Katalog z paczkami systemu Slint musi znajdować się na serwerze, a pliki "
+"Katalog z paczkami systemu Salix musi znajdować się na serwerze, a pliki "
 "zorganizowane w strukturze drzewiastej tak, jak strona FTP.\n"
 "Skrypt instalacyjny musi znać nazwę katalogu na serwerze, gdzie znajdują się "
 "podkatalogi serii. Na przykład, jeśli seria A znajduje się w\n"
-"/stuff/slint$SFX/a powinieneś wtedy wpisać: /stuff/slint$SFX\n"
+"/stuff/salix/a powinieneś wtedy wpisać: /stuff/salix\n"
 "\n"
-"Podaj ścieżkę dostępu do katalogu źródłowego systemu Slint.\n"
+"Podaj ścieżkę dostępu do katalogu źródłowego systemu Salix.\n"
 
 #
 # File: 32-13.37-INSNFS, line: 56
@@ -910,7 +910,7 @@ msgstr ""
 "\n"
 "Dobrze! Lokalna konfiguracja została zakończona. Teraz musimy podać\n"
 "źródło paczek do instalacji. Najpierw potrzebujemy adres IP komputera,\n"
-"gdzie znajdują się źródła systemu Slint.\n"
+"gdzie znajdują się źródła systemu Salix.\n"
 "Przykładowy adres zasobu: //192.168.0.1/public\n"
 
 #
@@ -969,13 +969,13 @@ msgid ""
 "What is the Salix source directory?"
 msgstr ""
 "\n"
-"Katalog z paczkami systemu Slint musi znajdować się na serwerze, a pliki "
+"Katalog z paczkami systemu Salix musi znajdować się na serwerze, a pliki "
 "zorganizowane strukturze drzewiastej tak, jak strona FTP.\n"
 "Skrypt instalacyjny musi znać nazwę katalogu na serwerze, gdzie znajdują się "
 "podkatalogi serii. Na przykład, jeśli seria A znajduje się w\n"
-"/stuff/slint$SFX/a powinieneś wtedy wpisać: /stuff/slint$SFX\n"
+"/stuff/salix/a powinieneś wtedy wpisać: /stuff/salix\n"
 "\n"
-"Podaj ścieżkę dostępu do katalogu źródłowego systemu Slint."
+"Podaj ścieżkę dostępu do katalogu źródłowego systemu Salix."
 
 #
 # File: 32-13.37-INSSMB, line: 65
@@ -1027,7 +1027,7 @@ msgstr "Zamontowano następujący zasób lub zasoby Samby:"
 # File: 64-14.1-INSSMB, line: 83
 #, fuzzy
 msgid "A Salix package tree was found! Ready to continue."
-msgstr "Drzewo paczek systemu Slint zostało znalezione! Gotów przejść dalej."
+msgstr "Drzewo paczek systemu Salix zostało znalezione! Gotów przejść dalej."
 
 #
 # File: 32-13.37-INSSMB, line: 89
@@ -1038,7 +1038,7 @@ msgstr "Drzewo paczek systemu Slint zostało znalezione! Gotów przejść dalej.
 # File: 64-14.1-INSSMB, line: 87
 #, fuzzy
 msgid "No Salix package tree found at the indicated path!"
-msgstr "Drzewo paczek systemu Slint nie zostało znalezione pod podaną ścieżką!"
+msgstr "Drzewo paczek systemu Salix nie zostało znalezione pod podaną ścieżką!"
 
 #
 # File: 32-13.37-INSSMB, line: 95
@@ -1080,7 +1080,7 @@ msgstr ""
 "Dobrze! Lokalna konfiguracja została zakończona. Teraz musimy podać\n"
 "źródło paczek do instalacji. Najpierw potrzebujemy URL serwera FTP lub "
 "HTTP,\n"
-"gdzie znajdują się źródła systemu Slint.\n"
+"gdzie znajdują się źródła systemu Salix.\n"
 "Przykłady URL: 'ftp://192.168.0.1' ; 'http://172.16.10.31'\n"
 
 #
@@ -1125,13 +1125,13 @@ msgid ""
 "What is the Salix source directory?\n"
 msgstr ""
 "\n"
-"Katalog z paczkami systemu Slint musi znajdować się na serwerze, a pliki "
+"Katalog z paczkami systemu Salix musi znajdować się na serwerze, a pliki "
 "zorganizowane w strukturze drzewiastej tak, jak strona FTP.\n"
 "Skrypt instalacyjny musi znać nazwę katalogu na serwerze, gdzie znajdują się "
 "podkatalogi serii. Na przykład, jeśli seria A znajduje się w\n"
-"/stuff/slint$SFX/a powinieneś wtedy wpisać: /stuff/slint$SFX\n"
+"/stuff/salix/a powinieneś wtedy wpisać: /stuff/salix\n"
 "\n"
-"Podaj ścieżkę dostępu do katalogu źródłowego systemu Slint.\n"
+"Podaj ścieżkę dostępu do katalogu źródłowego systemu Salix.\n"
 
 #
 # File: 32-13.37-INSURL, line: 107
@@ -1160,12 +1160,12 @@ msgstr ""
 "\n"
 "Najpierw spróbujemy pobrać plik PACKAGES.TXT z katalogu nadrzędnego do tego, "
 "który wprowadziłeś wcześniej (katalog głowny odległego drzewa systemu "
-"Slint). Jeśli to się powiedzie, użyjemy PACKAGES.TXT by zrekonstruować "
+"Salix). Jeśli to się powiedzie, użyjemy PACKAGES.TXT by zrekonstruować "
 "lokalną pamięć podręczną drzewa pakietów (na przeciętnym komputerze nie "
 "powinno to zająć dłużej niż minutę).\n"
 "\n"
 "Po naciśnięciu OK rozpocznie się pobieranie PACKAGES.TXT z głównego katalogu "
-"systemu Slint.\n"
+"systemu Salix.\n"
 "Plik ten ma rozmiar kilkuset KB, więc może to zająć jakiś czas...\n"
 
 #
@@ -1305,7 +1305,7 @@ msgid ""
 "processing ${TOTALP} Salix packages..."
 msgstr ""
 "\n"
-"Liczba pakietów systemu Slint do przetworzenia: ${TOTALP}"
+"Liczba pakietów systemu Salix do przetworzenia: ${TOTALP}"
 
 #
 # File: 32-13.37-INSURL, line: 233
@@ -1355,7 +1355,7 @@ msgid ""
 "Make sure the USB stick containing the Salix package directory is inserted "
 "into a USB port, and then press ENTER to begin the scanning process."
 msgstr ""
-"Upewnij się, że dysk USB zawierający katalog pakietów systemu Slint znajduje "
+"Upewnij się, że dysk USB zawierający katalog pakietów systemu Salix znajduje "
 "w porcie USB, a następnie wciśnij ENTER by rozpocząć proces wyszukiwania."
 
 #
@@ -1378,7 +1378,7 @@ msgstr ""
 # File: 64-14.1-INSUSB, line: 86
 #, fuzzy
 msgid "NO SALIX DIRECTORY FOUND"
-msgstr "NIE ZNALEZIONO KATALOGU SLINT"
+msgstr "NIE ZNALEZIONO KATALOGU SALIX"
 
 #
 # File: 32-14.1-INSUSB, line: 90
@@ -1388,7 +1388,7 @@ msgid ""
 "Sorry, but a Salix directory could not be found on any USB devices. Exiting "
 "back to the top menu."
 msgstr ""
-"Niestety nie znaleziono katalogu Slint na żadnym z urządzeń USB. Wychodzę do "
+"Niestety nie znaleziono katalogu Salix na żadnym z urządzeń USB. Wychodzę do "
 "głównego menu."
 
 #
@@ -1403,7 +1403,7 @@ msgstr "ZNALEZIONO ŹRÓDŁO PAKIETU USB"
 # File: 64-14.1-INSUSB, line: 97
 #, fuzzy, sh-format
 msgid "A Salix package directory was found on device $DRIVE_FOUND."
-msgstr "Katalog pakietów Slint został odnaleziony w urządzeniu $DRIVE_FOUND"
+msgstr "Katalog pakietów Salix został odnaleziony w urządzeniu $DRIVE_FOUND"
 
 #
 # File: 32-13.37-INSdir, line: 17
@@ -2983,7 +2983,7 @@ msgid ""
 "Usually this is disc number one (the disc that you boot from).  Once you've "
 "inserted the disc, hit ENTER to continue."
 msgstr ""
-"Ponownie włóż dysk z systemem Slint zawierający jądra Linuksa. Zwykle jest "
+"Ponownie włóż dysk z systemem Salix zawierający jądra Linuksa. Zwykle jest "
 "to dysk numer 1 (dysk, z którego rozpoczynałeś instalację). Po włożeniu "
 "dysku, naciśnij ENTER."
 
@@ -3071,7 +3071,7 @@ msgstr ""
 # File: 64-14.1-SeTpxemedia, line: 32
 #, fuzzy
 msgid "Select Salix installation source."
-msgstr "Wybierz źródło instalacji systemu Slint."
+msgstr "Wybierz źródło instalacji systemu Salix."
 
 #
 # File: 32-13.37-SeTmedia, line: 9
@@ -3098,14 +3098,14 @@ msgstr "WYBÓR NOŚNIKA ŹRÓDŁOWEGO"
 # File: 64-14.1-SeTmedia, line: 10
 #, fuzzy
 msgid "Please select the media from which to install Salix Linux:"
-msgstr "Wybierz nośnik, z którego chciałbyś zainstalować system Slint Linux:"
+msgstr "Wybierz nośnik, z którego chciałbyś zainstalować system Salix Linux:"
 
 #
 # File: 32-14.1-SeTmedia, line: 13
 # File: 64-14.1-SeTmedia, line: 13
 #, fuzzy
 msgid "Install from a Salix USB stick"
-msgstr "Instaluj z dysku USB systemu Slint"
+msgstr "Instaluj z dysku USB systemu Salix"
 
 #
 # File: 32-13.37-SeTmedia, line: 12
@@ -3116,7 +3116,7 @@ msgstr "Instaluj z dysku USB systemu Slint"
 # File: 64-14.1-SeTmedia, line: 12
 #, fuzzy
 msgid "Install from a Salix CD or DVD"
-msgstr "Zainstaluj z płyty CD lub DVD systemu Slint"
+msgstr "Zainstaluj z płyty CD lub DVD systemu Salix"
 
 #
 # File: 32-13.37-SeTmedia, line: 13
@@ -4299,7 +4299,7 @@ msgid ""
 "the default since nearly all modern hard drives check themselves for bad "
 "blocks anyway.  Would you like to check for bad blocks while running mkswap?"
 msgstr ""
-"Konfigurator systemu Slint przygotuje teraz partycję wymiany (swap) \n"
+"Konfigurator systemu Salix przygotuje teraz partycję wymiany (swap) \n"
 "dla twojego systemu. Podczas formatowania tej partycji przy użyciu "
 "narzędzia\n"
 "mkswap, możesz również sprawdzić jej poprawność. Nie jest to zachowanie \n"
@@ -4520,7 +4520,7 @@ msgid ""
 "If you want to exit the installation and drop to a linux console, select "
 "'Exit installation'"
 msgstr ""
-"Witamy w konfiguracji PXE Slint.\n"
+"Witamy w konfiguracji PXE Salix.\n"
 "Wybierz jedną z poniższych opcji używając strzałek UP/DOWN oraz klawiszy "
 "spacji oraz ENTER.\n"
 "\n"
