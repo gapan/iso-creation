@@ -1,0 +1,3130 @@
+# This file is put in the public domain.
+#
+# Translators:
+# Dan-Simon Myrland <slack2thefuture@gmail.com>, 2015-2016.
+# Didier Spaier <didier@slint.fr>, 2015-2016.
+msgid ""
+msgstr ""
+"Project-Id-Version: Salix-15.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-03-23 18:24+0100\n"
+"PO-Revision-Date: 2016-03-21 23:57+0100\n"
+"Last-Translator: \n"
+"Language-Team: American English <kde-i18n-doc@kde.org>\n"
+"Language: no\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.5\n"
+
+#
+# File: 32-INCISO, line: 14
+# File: 64-INCISO, line: 14
+msgid "USE ISO IMAGE"
+msgstr "BRUK ISO FIL"
+
+#
+# File: INCISO, line: 33
+msgid ""
+"\n"
+"Setup has found ISO images in the source directory.\n"
+"\n"
+"Select an image if you want to use it as an installation source?\n"
+msgstr ""
+
+#
+# File: INCISO, line: 52
+msgid ""
+"\n"
+"Mounting ISO image...\n"
+msgstr ""
+
+#
+# File: 32-INSCD, line: 15
+# File: 64-INSCD, line: 15
+msgid "SCANNING FOR CD or DVD DRIVE"
+msgstr "LETER ETTER CD eller DVD STASJON"
+
+#
+# File: 32-INSCD, line: 16
+# File: 64-INSCD, line: 16
+#, fuzzy
+msgid ""
+"Make sure the Salix disc is in your CD/DVD drive, and then press ENTER to "
+"begin the scanning process. Or, if you'd rather specify the device name "
+"manually (experts only), choose that option below."
+msgstr ""
+"Sjekk at Slint CD/DVD-en er i stasjonen, trykk så ENTER for å begynne et "
+"nytt søk. Alternativt kan du også spesifisere enhets navnet manuelt (for "
+"eksperter)?  "
+
+#
+# File: 32-INSCD, line: 21
+# File: 64-INSCD, line: 21
+msgid "Scan for the CD or DVD drive (recommended)"
+msgstr "Søk etter CD eller DVD stasjon (anbefalt)"
+
+#
+# File: 32-INSCD, line: 22
+# File: 64-INSCD, line: 22
+msgid "Manually specify CD or DVD by device name"
+msgstr "Spesifiser navnet på CD eller DVD enheten manuelt"
+
+#
+# File: 32-INSCD, line: 31
+# File: 64-INSCD, line: 31
+msgid "MANUAL CD/DVD DEVICE SELECTION"
+msgstr "MANUELT VALG AV CD/DVD ENHET"
+
+#
+# File: 32-INSCD, line: 32
+# File: 64-INSCD, line: 32
+msgid ""
+"Please select your CD/DVD device from the list below.  If you don't see your "
+"device listed, choose 'custom'.  This will let you type in any device name. "
+"(and if necessary, will create the device)"
+msgstr ""
+"Vennligst velg CD/DVD enheten fra listen nedenfor. Eller velg 'egendefiner' "
+"hvis du ikke finner din enhet. Du vil kunne skrive inn et hvilket som helst "
+"navn. (denne enheten vil bli opprettet om nødvendig)"
+
+#
+# File: 32-INSCD, line: 37
+# File: 64-INSCD, line: 37
+msgid "Type in the CD or DVD device to use"
+msgstr "Skriv inn CD eller DVD enheten som skal brukes"
+
+#
+# File: 32-INSCD, line: 38
+# File: 64-INSCD, line: 38
+msgid "First CD/DVD drive"
+msgstr "Første CD/DVD stasjon"
+
+#
+# File: 32-INSCD, line: 39
+# File: 64-INSCD, line: 39
+msgid "Second CD/DVD drive"
+msgstr "Andre CD/DVD stasjon"
+
+#
+# File: 32-INSCD, line: 40
+# File: 64-INSCD, line: 40
+msgid "Third CD/DVD drive"
+msgstr "Tredje CD/DVD stasjon"
+
+#
+# File: 32-INSCD, line: 41
+# File: 64-INSCD, line: 41
+msgid "Fourth CD/DVD drive"
+msgstr "Fjerde CD/DVD stasjon"
+
+#
+# File: 32-INSCD, line: 50
+# File: 64-INSCD, line: 50
+msgid "First parallel port ATAPI CD"
+msgstr "Første parallelle ATAPI CD port"
+
+#
+# File: 32-INSCD, line: 51
+# File: 64-INSCD, line: 51
+msgid "Second parallel port ATAPI CD"
+msgstr "Andre parallelle ATAPI CD port"
+
+#
+# File: 32-INSCD, line: 52
+# File: 64-INSCD, line: 52
+msgid "Third parallel port ATAPI CD"
+msgstr "Tredje parallelle ATAPI CD port"
+
+#
+# File: 32-INSCD, line: 53
+# File: 64-INSCD, line: 53
+msgid "Fourth parallel port ATAPI CD"
+msgstr "Fjerde parallelle ATAPI CD port"
+
+#
+# File: 32-INSCD, line: 54
+# File: 64-INSCD, line: 54
+msgid "Non-IDE Aztech CD/DVD"
+msgstr "Ikke-IDE Aztech CD/DVD"
+
+#
+# File: 32-INSCD, line: 55
+# File: 64-INSCD, line: 55
+msgid "Sony CDU-535 CD/DVD"
+msgstr "Sony CDU-535 CD/DVD"
+
+#
+# File: 32-INSCD, line: 56
+# File: 64-INSCD, line: 56
+msgid "Non-IDE GoldStar CD/DVD"
+msgstr "Ikke-IDE GoldStar CD/DVD"
+
+#
+# File: 32-INSCD, line: 57
+# File: 64-INSCD, line: 57
+msgid "Sony CDU-31a CD/DVD"
+msgstr "Sony CDU-31a CD/DVD"
+
+#
+# File: 32-INSCD, line: 58
+# File: 64-INSCD, line: 58
+msgid "Optics Storage CD/DVD"
+msgstr "Optics Storage CD/DVD"
+
+#
+# File: 32-INSCD, line: 59
+# File: 64-INSCD, line: 59
+msgid "Sanyo non-IDE CD/DVD"
+msgstr "Sanyo ikke-IDE CD/DVD"
+
+#
+# File: 32-INSCD, line: 60
+# File: 64-INSCD, line: 60
+msgid "Non-IDE Mitsumi drive 1"
+msgstr "Ikke-IDE Mitsumi stasjon 1"
+
+#
+# File: 32-INSCD, line: 61
+# File: 64-INSCD, line: 61
+msgid "Non-IDE Mitsumi drive 2"
+msgstr "Ikke-IDE Mitsumi stasjon 2"
+
+#
+# File: 32-INSCD, line: 62
+# File: 64-INSCD, line: 62
+msgid "Old non-IDE SoundBlaster CD/DVD"
+msgstr "Eldre ikke-IDE SoundBlaster CD/DVD"
+
+#
+# File: 32-INSCD, line: 63
+# File: 64-INSCD, line: 63
+msgid "Philips LMS CM-205 CD/DVD"
+msgstr "Philips LMS CM-205 CD/DVD"
+
+#
+# File: 32-INSCD, line: 64
+# File: 64-INSCD, line: 64
+msgid "Philips LMS CM-206 CD/DVD"
+msgstr "Philips LMS CM-206 CD/DVD"
+
+#
+# File: 32-INSCD, line: 65
+# File: 64-INSCD, line: 65
+msgid "Old non-IDE Mitsumi CD/DVD"
+msgstr "Eldre ikke-IDE Mitsumi CD/DVD"
+
+#
+# File: 32-INSCD, line: 74
+# File: 64-INSCD, line: 74
+msgid "ENTER CD/DVD DEVICE MANUALLY"
+msgstr "SKRIV INN CD/DVD ENHET MANUELT"
+
+#
+# File: 32-INSCD, line: 75
+# File: 64-INSCD, line: 75
+#, fuzzy
+msgid ""
+"Please enter the name of the CD/DVD device (such as /dev/hdc) that you wish "
+"to use to mount the Salix CD/DVD:"
+msgstr ""
+"Vennligst skriv inn navnet på CD/DVD enheten (f.eks /dev/hdc) som skal "
+"brukes for å montere Slint CD/DVD-en:"
+
+#
+# File: 32-INSCD, line: 86
+# File: 64-INSCD, line: 86
+msgid "MKNOD CD/DVD DEVICE"
+msgstr "MKNOD CD/DVD ENHET"
+
+#
+# File: 32-INSCD, line: 87
+# File: 64-INSCD, line: 87
+#, sh-format
+msgid ""
+"There doesn't seem to be a device by the name of $DRIVE_FOUND in the /dev "
+"directory, so we will have to create it using the major and minor numbers "
+"for the device.  If you're using a bootdisk with a custom CD/DVD driver on "
+"it, you should be able to find these numbers in the documentation.  Also, "
+"see the 'devices.txt' file that comes with the Linux kernel source.  If you "
+"don't know the numbers, you'll have to hit Esc to abort. Enter the major and "
+"minor numbers for the new device, separated by one space:"
+msgstr ""
+"Det ser ikke ut til å eksistere en enhet ved navn $DRIVE_FOUND i /dev, vi må "
+"derfor lage den med største og minste nummer til enheten (f.eks for /dev/fd "
+"kan 0 og 7 være riktig, sjekk dokumentasjonen). Hvis du bruker en oppstarts "
+"medium med en egendefinert CD/DVD-driver så let etter disse numrene i den "
+"tilhørende dokumentasjonen. Se også 'devices.txt' filen i kildekoden til "
+"Linux kjernen (i /usr/src/linux/Documentation). Hvis du ikke vet hva disse "
+"numrene er, så trykk Esc for å avbryte. Skriv inn største og minste nummer "
+"til den nye enheten, med ett mellomroms avstand:"
+
+#
+# File: 32-INSCD, line: 102
+# File: 64-INSCD, line: 102
+msgid "MAKING DEVICE IN /dev"
+msgstr "LAGER ENHETEN I /dev"
+
+#
+# File: 32-INSCD, line: 107
+# File: 64-INSCD, line: 107
+msgid "MKNOD FAILED"
+msgstr "MKNOD MISLYKTES"
+
+#
+# File: 32-INSCD, line: 108
+# File: 64-INSCD, line: 108
+msgid ""
+"Sorry, but the mknod command failed to make the device.  You'll need to go "
+"back and try selecting your source media again.  Press ENTER to abort the "
+"source media selection process."
+msgstr ""
+" Kommandoen for å lage enheten, mknod mislyktes. Du må gå tilbake og forsøke "
+"å velge installasjons mediet på nytt. Trykk ENTER for a avbryte."
+
+#
+# File: 32-INSCD, line: 122
+# File: 32-INSCD, line: 139
+# File: 32-INSCD, line: 159
+# File: 32-INSCD, line: 179
+# File: 64-INSCD, line: 122
+# File: 64-INSCD, line: 139
+# File: 64-INSCD, line: 159
+# File: 64-INSCD, line: 179
+msgid "SCANNING"
+msgstr "LETER"
+
+#
+# File: 32-INSCD, line: 122
+# File: 64-INSCD, line: 122
+#, fuzzy
+msgid "Scanning for a CD/DVD drive containing a Salix disc..."
+msgstr "Leter etter CD/DVD stasjon med en Slint disk..."
+
+#
+# File: 32-INSCD, line: 159
+# File: 64-INSCD, line: 159
+#, fuzzy
+msgid ""
+"Scanning for a parallel port ATAPI CD/DVD drive containing a Salix disc..."
+msgstr "Leter etter parallel ATAPI CD/DVD port med en Slint disk..."
+
+#
+# File: 32-INSCD, line: 179
+# File: 64-INSCD, line: 179
+msgid ""
+"No IDE/SCSI drive, so we will try scanning for CD drives on old proprietary "
+"interfaces, such as SoundBlaster pre-IDE CD drives, Sony CDU-31a, Sony 535, "
+"old Mitsumi pre-IDE, old Optics, etc.  For this scan to work at all, you'll "
+"need to be using a bootdisk that supports your CD drive.\n"
+"\n"
+"Please press ENTER to begin this last-chance scan for old, obsolete hardware."
+msgstr ""
+"Ingen IDE/SCSI stasjoner funnet,  vi fortsetter søket etter CD stasjoner med "
+"å lete etter eldre proprietære tilkoblinger, f.eks SoundBlaster CD stasjoner "
+"(før IDE), Sony CDU-31a, Sony 535, eldre Mitsumi (før IDE), eldre Optics, "
+"osv. For at dette i det hele tatt skal virke må du bruke en oppstarts-disk "
+"som støtter en slik CD stasjon.\n"
+"\n"
+"Vennligst trykk ENTER for å starte dette siste forsøket med å lete etter "
+"utdatert maskinvare."
+
+#
+# File: 32-INSCD, line: 200
+# File: 64-INSCD, line: 200
+msgid "CD/DVD DRIVE NOT FOUND"
+msgstr "FANT IKKE CD/DVD STASJON"
+
+#
+# File: 32-INSCD, line: 201
+# File: 64-INSCD, line: 201
+#, fuzzy
+msgid ""
+"A CD/DVD drive could not be found on any of the devices that were scanned.  "
+"Possible reasons include using a bootdisk or kernel that doesn't support "
+"your drive, failing to pass parameters needed by some drives to the kernel, "
+"not having the Salix disc in your CD/DVD drive, or using a drive connected "
+"to a Plug and Play soundcard (in this case, connecting the drive directly to "
+"the IDE interface often helps). Please make sure you are using the correct "
+"bootdisk for your hardware, consult the BOOTING file for possible "
+"information on forcing the detection of your drive, and then reattempt "
+"installation.  If all else fails, see FAQ.TXT for information about copying "
+"parts of this CD to your DOS partition and installing it from there.\n"
+"\n"
+"You will now be returned to the main menu.  If you want to try looking for "
+"the CD again, you may skip directly to the SOURCE menu selection."
+msgstr ""
+"Det ble ikke funnet noen CD/DVD stasjon i alle de enhetene vi søkte etter. "
+"Mulige årsaker kan være at du bruker en oppstarts-disk eller kjerne som ikke "
+"støtter denne stasjonen, at du ikke oppgav nødvendige driver parametre til "
+"kjernen, at du ikke har en Slint CD/DVD i stasjonen, eller at du bruker en "
+"stasjon koblet til et \"Plug and Play\" lydkort (i et slikt tilfelle hjelper "
+"det ofte å koble stasjonen direkte i en IDE kontakt). Vennligst sjekk at du "
+"bruker en riktig oppstarts-disk for maskinvaren, se etter informasjon om "
+"hvordan man kan tvinge gjenkjenning av stasjonen i BOOTING.TXT (på DVD-en), "
+"forsøk så å installere på nytt. Som en siste utvei, se etter informasjon om "
+"å kopiere deler av CD-en til en DOS partisjon og installere videre derifra i "
+"FAQ.TXT (på DVD-en).\n"
+"\n"
+"Du vil nå gå tilbake til hoved menyen. Hvis du ønsker å søke etter CD-en "
+"igjen kan du gå direkte til kategorien KILDE i meny valget."
+
+#
+# File: 32-INSCD, line: 223
+# File: 64-INSCD, line: 223
+#. mounted successfully
+msgid "CD/DVD DRIVE FOUND"
+msgstr "FANT IKKE CD/DVD STASJON"
+
+#
+# File: 32-INSCD, line: 224
+# File: 64-INSCD, line: 224
+#, fuzzy, sh-format
+msgid "A Salix disc was found in device $DRIVE_FOUND."
+msgstr "En Slint CD/DVD ble funnet i enheten $DRIVE_FOUND."
+
+#
+# File: 32-INSCD, line: 227
+# File: 32-INShd, line: 98
+# File: 32-pkgtool, line: 431
+# File: 64-INSCD, line: 227
+# File: 64-INShd, line: 98
+# File: 64-pkgtool, line: 431
+#. failed to mount
+msgid "MOUNT ERROR"
+msgstr "MONTERINGS FEIL"
+
+#
+# File: 32-INSCD, line: 227
+# File: 64-INSCD, line: 227
+#, sh-format
+msgid ""
+"There was an error attempting to mount the CD/DVD on $DRIVE_FOUND.  Maybe "
+"the device name is incorrect, the disc is not in the drive, or the kernel "
+"you are using does not support the device. (possibly an incorrect bootdisk) "
+"What would you like to do now?"
+msgstr ""
+"Forsøket på å montere CD/DVD-en til $DRIVE_FOUND mislyktes. Kanskje er "
+"navnet på enheten feil, CD/DVD-en er ikke i stasjonen eller så støtter ikke "
+"kjernen denne enheten. (muligens en feil oppstarts-disk) Hva vil du gjøre?"
+
+#
+# File: 32-INSCD, line: 234
+# File: 64-INSCD, line: 234
+msgid "Abort CD installation"
+msgstr "Avbryt CD installasjon"
+
+#
+# File: 32-INSCD, line: 235
+# File: 64-INSCD, line: 235
+msgid "Attempt to mount the CD/DVD device again"
+msgstr "Forsøk å montere CD/DVD-en på nytt"
+
+#
+# File: 32-INSCD, line: 236
+# File: 32-INShd, line: 100
+# File: 64-INSCD, line: 236
+# File: 64-INShd, line: 100
+msgid "Ignore the error and continue"
+msgstr "Ignorer feilen og fortsett"
+
+#
+# File: 32-INSCD, line: 248
+# File: 64-INSCD, line: 248
+#, sh-format
+msgid "ATTEMPTING TO MOUNT CD/DVD on $DRIVE_FOUND"
+msgstr "FORSØKER Å MONTERE CD/DVD I $DRIVE_FOUND"
+
+#
+# File: 32-INSCD, line: 249
+# File: 64-INSCD, line: 249
+#, sh-format
+msgid ""
+"Attempting to mount your CD/DVD again with the following command:\n"
+"$ArG"
+msgstr ""
+"Forsøker å montere CD/DVD-en på nytt med følgende kommando:\n"
+"$ArG "
+
+#
+# File: 32-INSNFS, line: 24
+# File: 64-INSNFS, line: 24
+#, fuzzy
+msgid ""
+"\n"
+"Good! We're all set on the local end, but now we need to know where to find "
+"the software packages to install.  First, we need the IP address of the "
+"machine where the Salix sources are stored."
+msgstr ""
+"Fint! Da er maskinen konfigurert, det vi trenger nå er å vite\n"
+"hvor vi skal finne installasjons pakkene. Først trenger vi\n"
+"IP adressen til maskinen hvor Slint kildene ligger."
+
+#
+# File: 32-INSURL, line: 71
+# File: 64-INSURL, line: 71
+#, fuzzy
+msgid ""
+"Since you're already running on the network, you should be able to use the "
+"hostname instead of an IP address if you wish."
+msgstr ""
+"Du er alerede koblet til det lokale nettverket, så du skal kunne bruke "
+"vertsnavnet istedet for en IP adresse hvis du vil. \n"
+
+#
+# File: 32-INSNFS, line: 36
+# File: 64-INSNFS, line: 36
+msgid "What is the IP address of your NFS server?"
+msgstr "Hva er IP adressen til NFS serveren?"
+
+#
+# File: 32-INSNFS, line: 38
+# File: 64-INSNFS, line: 38
+msgid "ENTER IP ADDRESS OF NFS SERVER"
+msgstr "SKRIV INN IP ADRESSEN TIL NFS SERVEREN"
+
+#
+# File: 32-INSURL, line: 86
+# File: 64-INSURL, line: 86
+#, fuzzy, sh-format
+msgid ""
+"\n"
+"There must be a directory on the server with the Salix packages and files "
+"arranged in a tree like the FTP site.\n"
+"\n"
+"The installation script needs to know the name of the directory on your "
+"server that contains the series' subdirectories. For example, if your A "
+"series is found at /stuff/salix/a, then you would respond: /stuff/salix\n"
+"\n"
+"What is the Salix source directory?"
+msgstr ""
+"\n"
+"Det må finnes en filkatalog på serveren med Slint pakkene, ordnet på samme "
+"måte som på FTP siden.\n"
+"\n"
+"Installasjons skriptet trenger å hvor filkatalogen på serveren som "
+"inneholder pakkeseriene er. For eksempel, hvis A serien ligger i /stuff/slint"
+"$SFX/a, skriv da: /stuff/slint$SFX\n"
+"\n"
+"Hvor ligger filkatalogen med Slint kildene?\n"
+
+#
+# File: 32-INSNFS, line: 56
+# File: 32-INSSMB, line: 56
+# File: 32-INSURL, line: 97
+# File: 32-INShd, line: 58
+# File: 32-pkgtool, line: 385
+# File: 64-INSNFS, line: 56
+# File: 64-INSSMB, line: 56
+# File: 64-INSURL, line: 97
+# File: 64-INShd, line: 58
+# File: 64-pkgtool, line: 385
+msgid "SELECT SOURCE DIRECTORY"
+msgstr "VELG FILKATALOG TIL KILDENE"
+
+#
+# File: 32-INSNFS, line: 64
+# File: 64-INSNFS, line: 64
+#, fuzzy
+msgid ""
+"\n"
+"In the next screen you should watch for NFS mount errors.\n"
+"\n"
+"If you see errors and you don't see your NFS server listed, then try setting "
+"up NFS again.\n"
+"\n"
+msgstr ""
+"\n"
+"Se etter potensielle feilmeldinger i NFS monteringen på neste side. Forsøk å "
+"sette opp NFS på nytt hvis du får feilmeldinger og NFS serveren ikke blir "
+"listet opp.\n"
+
+#
+# File: 32-INSNFS, line: 68
+# File: 64-INSNFS, line: 68
+msgid "NFS MOUNT INFORMATION"
+msgstr "NFS MONTERING INFORMASJON"
+
+#
+# File: 32-INSNFS, line: 83
+# File: 64-INSNFS, line: 83
+#, sh-format
+msgid "Mounting $REMOTE_PATH:"
+msgstr "Monterer $REMOTE_PATH:"
+
+#
+# File: 32-INSNFS, line: 88
+# File: 64-INSNFS, line: 88
+msgid "Didn't work."
+msgstr "Virket ikke."
+
+#
+# File: 32-INSNFS, line: 90
+# File: 64-INSNFS, line: 90
+msgid "Maybe you should check that the directory name is correct?"
+msgstr "Kanskje du burde sjekke at filkatalogen er skrevet riktig?"
+
+#
+# File: 32-INSNFS, line: 97
+# File: 64-INSNFS, line: 97
+msgid "Current NFS mounts:"
+msgstr "Nåværende NFS monteringer:"
+
+#
+# File: 32-INSNFS, line: 101
+# File: 64-INSNFS, line: 101
+msgid "Do you need to try setting up NFS again?"
+msgstr "Trenger du å sette opp NFS på nytt?"
+
+#
+# File: 32-INSNFS, line: 104
+# File: 32-INSNFS, line: 108
+# File: 64-INSNFS, line: 104
+# File: 64-INSNFS, line: 108
+msgid "NFS MOUNT RESULT"
+msgstr "NFS MONTERING RESULTATER"
+
+#
+# File: 32-INSSMB, line: 23
+# File: 64-INSSMB, line: 23
+#, fuzzy
+msgid ""
+"\n"
+"Good! We're all set on the local end, but now we need to know where to find "
+"the software packages to install. First, we need the share address of the "
+"Samba server where the Salix sources are stored.\n"
+"\n"
+"Example share address: //192.168.0.1/public\n"
+msgstr ""
+"\n"
+"Fint! Da er maskinen konfigurert, det vi trenger nå er å vite\n"
+"hvor vi kan finne installasjons pakkene. Først trenger vi\n"
+"adressen til Samba serveren hvor Slint kildene\n"
+"ligger.\n"
+"Eksempel på adresse: //192.168.0.1/public\n"
+
+#
+# File: 32-INSURL, line: 71
+# File: 64-INSURL, line: 71
+msgid ""
+"Since you're already running on the network, you should be able to use the "
+"hostname instead of an IP address if you wish.\n"
+msgstr ""
+"Du er alerede koblet til det lokale nettverket, så du skal kunne bruke "
+"vertsnavnet istedet for en IP adresse hvis du vil. \n"
+
+#
+# File: 32-INSSMB, line: 36
+# File: 64-INSSMB, line: 36
+msgid ""
+"\n"
+"What is the share address of your Samba server? "
+msgstr ""
+"\n"
+"Hva er adressen til Samba serveren?"
+
+#
+# File: 32-INSSMB, line: 38
+# File: 64-INSSMB, line: 38
+msgid "ENTER SHARE ADDRESS OF SAMBA SERVER"
+msgstr "SKRIV INN ADRESSEN PÅ SAMBA SERVEREN"
+
+#
+# File: 32-INSSMB, line: 46
+# File: 64-INSSMB, line: 46
+#, fuzzy, sh-format
+msgid ""
+"\n"
+"There must be a directory on the server with the Salix packages and files "
+"arranged in a tree like the FTP site. \n"
+"The installation script needs to know the name of the directory below your "
+"Samba share that contains the series subdirectories. For example, if your A "
+"series is found at /stuff/salix/a, then you would respond: /stuff/salix \n"
+"What is the Salix source directory?"
+msgstr ""
+"\n"
+"Det må finnes en filkatalog på serveren med Slint\n"
+"pakkene, ordnet på samme måte som på FTP siden.\n"
+"\n"
+"Installasjons skriptet trenger å vite hvor \n"
+"filkatalogen på Samba serveren som inneholder\n"
+"pakke seriene er. For eksempel, hvis serie A finnes i\n"
+"/stuff/slint$SFX/a, skriv da: /stuff/slint$SFX\n"
+"\n"
+"Hvor ligger filkatalogen med Slint kildene?"
+
+#
+# File: 32-INSSMB, line: 65
+# File: 64-INSSMB, line: 65
+msgid "You should see no mount errors:"
+msgstr "Det bør ikke være noen feilmeldinger nå:"
+
+#
+# File: 32-INSSMB, line: 67
+# File: 64-INSSMB, line: 67
+#, sh-format
+msgid "Mounting $REMOTE_SHARE ..."
+msgstr "Monterer $REMOTE_SHARE ..."
+
+#
+# File: 32-INSSMB, line: 73
+# File: 64-INSSMB, line: 73
+msgid "Mount failed."
+msgstr "Montering mislyktes."
+
+#
+# File: 32-INSSMB, line: 78
+# File: 64-INSSMB, line: 78
+msgid "Mounted Samba share(s):"
+msgstr "Monterte Samba filkatalog(er):"
+
+#
+# File: 32-INSSMB, line: 85
+# File: 64-INSSMB, line: 85
+#, fuzzy
+msgid "A Salix package tree was found! Ready to continue."
+msgstr "Slint pakkene ble funnet! Klar til å fortsette."
+
+#
+# File: 32-INSSMB, line: 89
+# File: 64-INSSMB, line: 89
+#, fuzzy
+msgid "No Salix package tree found at the indicated path!"
+msgstr "Det er ingen Slint pakker i den oppgitte filbanen!"
+
+#
+# File: 32-INSSMB, line: 95
+# File: 64-INSSMB, line: 95
+msgid "Do you want to try setting up Samba again?"
+msgstr "Vil du forsøke å sette opp Samba på nytt?"
+
+#
+# File: 32-INSSMB, line: 99
+# File: 32-INSSMB, line: 103
+# File: 64-INSSMB, line: 99
+# File: 64-INSSMB, line: 103
+msgid "MOUNT RESULT"
+msgstr "MONTERING RESULTAT"
+
+#
+# File: 32-INSURL, line: 63
+# File: 64-INSURL, line: 63
+#, fuzzy
+msgid ""
+"\n"
+"Good! We're all set on the local end, but now we need to know where to find "
+"the software packages to install. First, we need the URL of the ftp or http "
+"server where the Salix sources are stored.\n"
+"URL examples are: 'ftp://192.168.0.1' ; 'http://172.16.10.31'\n"
+msgstr ""
+"Fint! Da er maskinen konfigurert, det vi trenger å vite nå er hvor "
+"installasjons pakkene ligger. Først trenger vi URL-en til ftp eller http "
+"serveren hvor Slint kildene ligger.\n"
+"URL eksempler: 'ftp://192.168.0.1' ; 'http://172.16.10.31'\n"
+
+#
+# File: 32-INSURL, line: 75
+# File: 64-INSURL, line: 75
+msgid ""
+"\n"
+"What is the URL of your FTP/HTTP server?\n"
+msgstr ""
+"\n"
+"Hva er URL-en til FTP/HTTP serveren?\n"
+
+#
+# File: 32-INSURL, line: 78
+# File: 64-INSURL, line: 78
+msgid "ENTER URL OF FTP/HTTP SERVER"
+msgstr "SKRIV INN URL-EN TIL FTP/HTTP SERVEREN"
+
+#
+# File: 32-INSURL, line: 86
+# File: 64-INSURL, line: 86
+#, fuzzy, sh-format
+msgid ""
+"\n"
+"There must be a directory on the server with the Salix packages and files "
+"arranged in a tree like the FTP site.\n"
+"\n"
+"The installation script needs to know the name of the directory on your "
+"server that contains the series subdirectories. For example, if your A "
+"series is found at /stuff/salix/a, then you would respond: /stuff/salix\n"
+"\n"
+"What is the Salix source directory?\n"
+msgstr ""
+"\n"
+"Det må finnes en filkatalog på serveren med Slint pakkene, ordnet på samme "
+"måte som på FTP siden.\n"
+"\n"
+"Installasjons skriptet trenger å hvor filkatalogen på serveren som "
+"inneholder pakkeseriene er. For eksempel, hvis A serien ligger i /stuff/slint"
+"$SFX/a, skriv da: /stuff/slint$SFX\n"
+"\n"
+"Hvor ligger filkatalogen med Slint kildene?\n"
+
+#
+# File: 32-INSURL, line: 106
+# File: 64-INSURL, line: 106
+#, fuzzy
+msgid ""
+"\n"
+"In the next screen you should watch for possible errors.\n"
+"\n"
+"First, we'll download the PACKAGES.TXT from the parent of the directory that "
+"you entered before (which should be the root of the remote Salix tree).  If "
+"that succeeds, then we use PACKAGES.TXT to reconstruct a local cache of the "
+"package tree (should take a minute or less on an average system).\n"
+"After that, we're all set to go!\n"
+"\n"
+"Downloading PACKAGES.TXT at the Salix root starts after you press OK.\n"
+"That file is several hundreds of KB in size so it may take some time to get "
+"here...\n"
+msgstr ""
+"\n"
+"Se etter mulige feilmeldinger i neste vindu.\n"
+"\n"
+"Vi begynner med å laste ned PACKAGES.TXT fra nivået over filkatalogen du "
+"nettopp skrev inn (burde være toppnivået på det eksterne Slint fil treet). "
+"Hvis det lykkes bruker vi PACKAGES.TXT for å lage en lokal cache av fil "
+"treet (bør ta et minutt eller mindre).\n"
+"Etter dette er vi klare for å fortsette!\n"
+"\n"
+"Nedlasting av PACKAGES.TXT fra Slint toppnivå starter etter at du trykker "
+"OK.\n"
+"Tekstfilen tar mange hundre KB så det kan ta litt tid før den er "
+"nedlastet...\n"
+
+#
+# File: 32-INSURL, line: 121
+# File: 64-INSURL, line: 121
+msgid "DOWNLOAD INFORMATION"
+msgstr "NEDLASTINGS INFORMASJON"
+
+#
+# File: 32-slackinstall, line: 60
+# File: 64-slackinstall, line: 60
+#. Two next line: > first, then >> - Didier Spaier
+#, fuzzy
+msgid "Downloading PACKAGES.TXT ..."
+msgstr "Nedlasting av $ArG2 BLE IKKE FULLFØRT."
+
+#
+# File: 32-INSURL, line: 135
+# File: 64-INSURL, line: 135
+msgid "> Download failed. Going to try one directory lower."
+msgstr ""
+"> Nedlasting kunne ikke fullføres. Prøver en filkatalog et nivå lengre ned."
+
+#
+# File: 32-INSURL, line: 141
+# File: 64-INSURL, line: 141
+msgid "> Download failed again."
+msgstr "> Nedlasting mislyktes igjen."
+
+#
+# File: 32-INSURL, line: 148
+# File: 64-INSURL, line: 148
+#, fuzzy
+msgid "A Salix 'PACKAGES.TXT' is available. Ready to continue!"
+msgstr "En Slint 'PACKAGES.TXT' er klar til bruk. Vi kan fortsette!"
+
+#
+# File: 32-INSURL, line: 153
+# File: 64-INSURL, line: 153
+msgid "No file 'PACKAGES.TXT' was found. Wrong URL?"
+msgstr "Ingen 'PACKAGES.TXT' fil funnet. Feil URL kanskje?"
+
+#
+# File: 32-INSURL, line: 158
+# File: 64-INSURL, line: 158
+msgid "Do you want to try setting up FTP/HTTP again? "
+msgstr "Vil du forsøke å sette opp FTP/HTTP på nytt?"
+
+#
+# File: 32-INSURL, line: 161
+# File: 32-INSURL, line: 165
+# File: 64-INSURL, line: 161
+# File: 64-INSURL, line: 165
+msgid "DOWNLOAD RESULT"
+msgstr "NEDLASTINGS RESULTAT"
+
+#
+# File: 32-INSURL, line: 186
+# File: 32-INSURL, line: 226
+# File: 32-INSURL, line: 231
+# File: 64-INSURL, line: 186
+# File: 64-INSURL, line: 226
+# File: 64-INSURL, line: 231
+#. Make sure we can select stuff from the package series:
+msgid "INITIALIZING PACKAGE TREE"
+msgstr "FORBEREDER FILTREET TIL PAKKENE"
+
+#
+# File: 32-INSURL, line: 187
+# File: 64-INSURL, line: 187
+msgid "Setting up local cache for the FTP/HTTP server's package tree ...\n"
+msgstr ""
+"Lager en lokal cache av filtreet til pakkene fra FTP/HTTP serveren ...\n"
+
+#
+# File: 32-INSURL, line: 227
+# File: 64-INSURL, line: 227
+#, fuzzy, sh-format
+msgid ""
+"\n"
+"processing ${TOTALP} Salix packages..."
+msgstr ""
+"\n"
+"installerer ${TOTALP} Slint pakker..."
+
+#
+# File: 32-INSURL, line: 232
+# File: 64-INSURL, line: 232
+msgid ""
+"\n"
+"Retrieving tagfile information for the package tree ..."
+msgstr ""
+"\n"
+"Henter tagfil informasjon til pakke filtreet ..."
+
+#
+# File: 32-INSURL, line: 240
+# File: 64-INSURL, line: 240
+msgid "REMOTE SERVER CONFIGURATION"
+msgstr "KONFIGURERING AV EKSTERN SERVER"
+
+#
+# File: 32-INSURL, line: 241
+# File: 64-INSURL, line: 241
+msgid "Failed to configure for installation from remote server."
+msgstr "Konfigureringen av installasjon fra ekstern server mislyktes."
+
+#
+# File: 32-INSUSB, line: 14
+# File: 64-INSUSB, line: 14
+msgid "SCANNING FOR USB STICK"
+msgstr "SØKER ETTER USB MINNEPINNE"
+
+#
+# File: 32-INSUSB, line: 15
+# File: 64-INSUSB, line: 15
+#, fuzzy
+msgid ""
+"Make sure the USB stick containing the Salix package directory is inserted "
+"into a USB port, and then press ENTER to begin the scanning process."
+msgstr ""
+"Sjekk at USB minnepinnen som inneholder filkatalogen med Slint pakkene er "
+"satt inn i USB porten, trykk så ENTER for å begynne søket."
+
+#
+# File: 32-INSUSB, line: 37
+# File: 64-INSUSB, line: 37
+msgid "NO REMOVABLE USB DEVICES FOUND"
+msgstr "FANT INGEN FLYTTBARE USB ENHETER"
+
+#
+# File: 32-INSUSB, line: 38
+# File: 64-INSUSB, line: 38
+msgid ""
+"Sorry, but no removable USB devices could be found.  Exiting back to the top "
+"menu."
+msgstr "Ingen flyttbare USB enheter ble funnet. Går tilbake til hovedmenyen."
+
+#
+# File: 32-INSUSB, line: 89
+# File: 64-INSUSB, line: 89
+#, fuzzy
+msgid "NO SALIX DIRECTORY FOUND"
+msgstr "FANT IKKE FILKATALOGEN FOR SLINT"
+
+#
+# File: 32-INSUSB, line: 90
+# File: 64-INSUSB, line: 90
+#, fuzzy
+msgid ""
+"Sorry, but a Salix directory could not be found on any USB devices. Exiting "
+"back to the top menu."
+msgstr ""
+"En filkatalog for Slint ble ikke funnet på noen USB enheter. Går tilbake til "
+"hovedmenyen."
+
+#
+# File: 32-INSUSB, line: 99
+# File: 64-INSUSB, line: 99
+#. Success!  Report back to the console:
+msgid "USB PACKAGE SOURCE FOUND"
+msgstr "FANT USB PAKKE KILDE"
+
+#
+# File: 32-INSUSB, line: 100
+# File: 64-INSUSB, line: 100
+#, fuzzy, sh-format
+msgid "A Salix package directory was found on device $DRIVE_FOUND."
+msgstr "En filkatalog med Slint pakker ble funnet på enheten $DRIVE_FOUND."
+
+#
+# File: 32-INSdir, line: 18
+# File: 32-INShd, line: 18
+# File: 32-setup, line: 84
+# File: 64-INSdir, line: 18
+# File: 64-INShd, line: 18
+# File: 64-setup, line: 84
+#, fuzzy
+msgid ""
+"\n"
+"Setup failed to unmount a required directory:\n"
+"\n"
+"/var/log/mount\n"
+"\n"
+"Please reboot the machine and try again.\n"
+msgstr ""
+"Kan ikke avmontere /var/log/mount. Restart maskinen og kjør setup på nytt."
+
+#
+# File: 32-SeTmaketag, line: 111
+# File: 64-SeTmaketag, line: 111
+#, fuzzy
+msgid "ERROR"
+msgstr "KOPIERINGS FEIL"
+
+#
+# File: INSdir, line: 26
+# File: INShd, line: 26
+msgid "REBOOT"
+msgstr ""
+
+#
+# File: INSdir, line: 27
+# File: INShd, line: 27
+msgid "CANCEL"
+msgstr ""
+
+#
+# File: INSdir, line: 40
+msgid ""
+"\n"
+"Please provide the path to a directory containing the contents (or an ISO "
+"image) of a Salix installation disc.\n"
+"\n"
+"Note: You may use any directory within the current filesystem except '/mnt' "
+"or '/var/log/mount' as these are required by setup.\n"
+msgstr ""
+
+#
+# File: 32-INSNFS, line: 56
+# File: 32-INSSMB, line: 56
+# File: 32-INSURL, line: 97
+# File: 32-INShd, line: 58
+# File: 32-pkgtool, line: 385
+# File: 64-INSNFS, line: 56
+# File: 64-INSSMB, line: 56
+# File: 64-INSURL, line: 97
+# File: 64-INShd, line: 58
+# File: 64-pkgtool, line: 385
+#, fuzzy
+msgid "SELECT A PRE-MOUNTED DIRECTORY"
+msgstr "VELG FILKATALOG TIL KILDENE"
+
+#
+# File: INSdir, line: 50
+# File: INShd, line: 125
+msgid "Browse"
+msgstr ""
+
+#
+# File: 32-INSNFS, line: 56
+# File: 32-INSSMB, line: 56
+# File: 32-INSURL, line: 97
+# File: 32-INShd, line: 58
+# File: 32-pkgtool, line: 385
+# File: 64-INSNFS, line: 56
+# File: 64-INSSMB, line: 56
+# File: 64-INSURL, line: 97
+# File: 64-INShd, line: 58
+# File: 64-pkgtool, line: 385
+#, fuzzy
+msgid "SELECT A DIRECTORY"
+msgstr "VELG FILKATALOG TIL KILDENE"
+
+#
+# File: 32-INCISO, line: 14
+# File: 64-INCISO, line: 14
+#, fuzzy
+msgid "INVALID ISO IMAGE"
+msgstr "BRUK ISO FIL"
+
+#
+# File: 32-SeTpartitions, line: 540
+# File: 64-SeTpartitions, line: 540
+msgid "OK"
+msgstr "OK"
+
+#
+# File: 32-INSNFS, line: 56
+# File: 32-INSSMB, line: 56
+# File: 32-INSURL, line: 97
+# File: 32-INShd, line: 58
+# File: 32-pkgtool, line: 385
+# File: 64-INSNFS, line: 56
+# File: 64-INSSMB, line: 56
+# File: 64-INSURL, line: 97
+# File: 64-INShd, line: 58
+# File: 64-pkgtool, line: 385
+#, fuzzy
+msgid "INVALID SOURCE DIRECTORY"
+msgstr "VELG FILKATALOG TIL KILDENE"
+
+#
+# File: INShd, line: 16
+msgid ""
+"\n"
+"Setup failed to unmount a required directory:\n"
+"\n"
+"/var/log/mount\n"
+"\n"
+"Please reboot the machine an try again.\n"
+"\n"
+msgstr ""
+
+#
+# File: INShd, line: 40
+msgid ""
+"\n"
+"Please specify which partition on your hard disk or USB stick\n"
+"contains the contents (or an ISO image) of a Salix\n"
+"installation disc.\n"
+"\n"
+"Example: /dev/sdb2\n"
+"\n"
+"Note: Use the <Partitions> button to list available partitions.\n"
+msgstr ""
+
+#
+# File: 32-liloconfig, line: 1095
+# File: 64-liloconfig, line: 1095
+#, fuzzy
+msgid "SELECT HARD DISK PARTITION"
+msgstr "VELG OS/2 PARTISJON"
+
+#
+# File: INShd, line: 51
+msgid "Partitions"
+msgstr ""
+
+#
+# File: 32-INShd, line: 53
+# File: 64-INShd, line: 53
+#, fuzzy
+msgid "PARTITIONS LIST"
+msgstr "LISTE OVER PARTISJONER"
+
+#
+# File: 32-SeTmaketag, line: 80
+# File: 64-SeTmaketag, line: 80
+msgid "MOUNT FAILURE"
+msgstr "MONTERINGS FEIL"
+
+#
+# File: 32-INSSMB, line: 99
+# File: 32-INSSMB, line: 103
+# File: 64-INSSMB, line: 99
+# File: 64-INSSMB, line: 103
+#, fuzzy
+msgid "MOUNT SUCCESS"
+msgstr "MONTERING RESULTAT"
+
+#
+# File: INShd, line: 116
+msgid ""
+"\n"
+"Now please provide the path to a directory containing the contents\n"
+"(or an ISO image) of a Salix installation disc.\n"
+"\n"
+"Note: The path you enter must be relative to the mount point so\n"
+"'/var/log/mount/salix-xfce' should be entered as '/salix-xfce'.\n"
+msgstr ""
+
+#
+# File: 32-SeTDOS, line: 29
+# File: 64-SeTDOS, line: 29
+#, sh-format
+msgid "Setting permissions on NTFS partition $DOS_PART"
+msgstr "Setter skrive/lese tillatelser på NTFS partisjonen $DOS_PART"
+
+#
+# File: 32-SeTDOS, line: 30
+# File: 64-SeTDOS, line: 30
+#, sh-format
+msgid "SET SECURITY FOR NTFS PARTITION $DOS_PART"
+msgstr "KONFIGURER SIKKERHET FOR NTFS PARTISJONEN $DOS_PART"
+
+#
+# File: 32-SeTDOS, line: 32
+# File: 32-SeTDOS, line: 55
+# File: 64-SeTDOS, line: 32
+# File: 64-SeTDOS, line: 55
+#, sh-format
+msgid ""
+"Because users could go snooping through (or destroy, depending on the "
+"settings) your Windows partition, you should choose how much access would "
+"you like your non-root users to have to partition $DOS_PART.  The access "
+"level can range from no access at all, to read-only for everyone, to read-"
+"write access for every user on the machine.  A reasonable default (read-"
+"write for root only) is chosen, but you may set this any way that you like."
+msgstr ""
+"Siden brukere kan gå å snuse rundt (eller ødelegge, avhengig av dine "
+"innstillinger) i din Windows partisjon bør du velge hvor stor tilgang "
+"vanlige brukere skal ha til partisjonen $DOS_PART. Tilgangen kan variere fra "
+"ingen tilgang i det hele tatt, til kun lesetilgang for alle, til lese og "
+"skrivetilgang for alle brukere på maskinen. Standard valget er å gi lese og "
+"skrive tilgang bare til root, men du kan justere dette etter eget behov."
+
+#
+# File: 32-SeTDOS, line: 39
+# File: 64-SeTDOS, line: 39
+msgid "Root has read/write access, users have no access (ntfs-3g)"
+msgstr "Root har lese og skrive tilgang, brukere har ingen tilgang (ntfs-3g)"
+
+#
+# File: 32-SeTDOS, line: 40
+# File: 64-SeTDOS, line: 40
+msgid "Everyone has read only access (built-in kernel ntfs driver)"
+msgstr "Alle har kun lesetilgang (innebygd ntfs kjerne driver)"
+
+#
+# File: 32-SeTDOS, line: 41
+# File: 64-SeTDOS, line: 41
+msgid "Everyone has read access, but only root can write (ntfs-3g)"
+msgstr "Alle har lesetilgang, bare root har skrive tilgang (ntfs-3g)"
+
+#
+# File: 32-SeTDOS, line: 42
+# File: 64-SeTDOS, line: 42
+msgid "All users can read/write to any file (ntfs-3g)"
+msgstr "Alle brukere kan lese/skrive til alle filer (ntfs-3g)"
+
+#
+# File: 32-SeTDOS, line: 52
+# File: 64-SeTDOS, line: 52
+#, sh-format
+msgid "Setting permissions on FAT partition $DOS_PART"
+msgstr "Setter skrive/lese tillatelser til FAT partisjonen $DOS_PART"
+
+#
+# File: 32-SeTDOS, line: 53
+# File: 64-SeTDOS, line: 53
+#, sh-format
+msgid "SET SECURITY FOR FAT PARTITION $DOS_PART"
+msgstr "KONFIGURERER SIKKERHET FOR FAT PARTISJONEN $DOS_PART"
+
+#
+# File: 32-SeTDOS, line: 62
+# File: 64-SeTDOS, line: 62
+msgid "Root has read/write access, users have no access"
+msgstr "Root har lese og skrivetilgang, brukere har ingen tilgang"
+
+#
+# File: 32-SeTDOS, line: 63
+# File: 64-SeTDOS, line: 63
+msgid "Everyone has read only access"
+msgstr "Alle har kun lesetilgang"
+
+#
+# File: 32-SeTDOS, line: 64
+# File: 64-SeTDOS, line: 64
+msgid "Everyone has read access, but only root can write"
+msgstr "Alle har lesetilgang, men bare root kan skrive"
+
+#
+# File: 32-SeTDOS, line: 65
+# File: 64-SeTDOS, line: 65
+msgid "All users can read/write to any file"
+msgstr "Alle brukere kan lese/skrive til alle filer"
+
+#
+# File: 32-SeTDOS, line: 100
+# File: 64-SeTDOS, line: 100
+msgid "Setting up non-Linux partitions."
+msgstr "Setter opp ikke-Linux partisjoner"
+
+#
+# File: 32-SeTDOS, line: 101
+# File: 64-SeTDOS, line: 101
+msgid "FAT or NTFS PARTITIONS DETECTED"
+msgstr "FANT FAT eller NTFS PARTISJONER"
+
+#
+# File: 32-SeTDOS, line: 102
+# File: 64-SeTDOS, line: 102
+msgid ""
+"Partitions of type FAT or NTFS (commonly used by DOS and Windows) have been "
+"found on your system.  Would you like to add these partitions to your /etc/"
+"fstab so that these partitions are visible from Linux?"
+msgstr ""
+"FAT eller NTFS partisjoner (brukt av DOS og Windows) ble funnet på ditt "
+"system. Vil du legge til disse partisjonene i /etc/fstab slik at de blir "
+"tilgjengelige fra Linux?"
+
+#
+# File: 32-SeTDOS, line: 114
+# File: 64-SeTDOS, line: 114
+msgid "Selecting non-Linux partitions."
+msgstr "Velger ikke-Linux partisjoner."
+
+#
+# File: 32-SeTDOS, line: 116
+# File: 64-SeTDOS, line: 116
+msgid "SELECT PARTITION TO ADD TO /etc/fstab"
+msgstr "VELG PARTISJON Å LEGGE TIL I /etc/fstab"
+
+#
+# File: 32-SeTDOS, line: 118
+# File: 32-SeTpartitions, line: 323
+# File: 32-SeTpartitions, line: 412
+# File: 64-SeTDOS, line: 118
+# File: 64-SeTpartitions, line: 323
+# File: 64-SeTpartitions, line: 412
+msgid "Select"
+msgstr "Velg"
+
+#
+# File: 32-SeTDOS, line: 120
+# File: 32-SeTpartitions, line: 325
+# File: 32-SeTpartitions, line: 414
+# File: 32-setup.80.make-bootdisk, line: 216
+# File: 64-SeTDOS, line: 120
+# File: 64-SeTpartitions, line: 325
+# File: 64-SeTpartitions, line: 414
+# File: 64-setup.80.make-bootdisk, line: 216
+msgid "Continue"
+msgstr "Fortsett"
+
+#
+# File: 32-SeTDOS, line: 122
+# File: 64-SeTDOS, line: 122
+msgid ""
+"In order to make these partitions visible from Linux, we  need to add them "
+"to your /etc/fstab.  Please pick a partition to  add to /etc/fstab, or "
+"select '---' to continue with the installation  process."
+msgstr ""
+"For at disse partisjonene skal være tilgjengelige fra Linux, må vi legge dem "
+"til i /etc/fstab. Vennligst velg en partisjon som skal legges til i /etc/"
+"fstab, eller velg '---' for å fortsette med installasjonen."
+
+#
+# File: 32-SeTDOS, line: 141
+# File: 32-SeTpartitions, line: 200
+# File: 64-SeTDOS, line: 141
+# File: 64-SeTpartitions, line: 200
+msgid "IN USE"
+msgstr "I BRUK"
+
+#
+# File: 32-SeTDOS, line: 141
+# File: 32-SeTpartitions, line: 193
+# File: 64-SeTDOS, line: 141
+# File: 64-SeTpartitions, line: 193
+msgid "on"
+msgstr "på"
+
+#
+# File: 32-SeTDOS, line: 147
+# File: 32-SeTDOS, line: 148
+# File: 32-SeTDOS, line: 149
+# File: 32-SeTDOS, line: 150
+# File: 32-SeTDOS, line: 151
+# File: 64-SeTDOS, line: 147
+# File: 64-SeTDOS, line: 148
+# File: 64-SeTDOS, line: 149
+# File: 64-SeTDOS, line: 150
+# File: 64-SeTDOS, line: 151
+msgid "done, continue with setup"
+msgstr "ferdig, fortsetter installasjonen"
+
+#
+# File: 32-SeTDOS, line: 186
+# File: 64-SeTDOS, line: 186
+#, sh-format
+msgid "Selecting a location to mount $DOS_PART."
+msgstr "Velg hvor du vil montere $DOS_PART."
+
+#
+# File: 32-SeTDOS, line: 187
+# File: 64-SeTDOS, line: 187
+#, sh-format
+msgid "PICK MOUNT POINT FOR $DOS_PART"
+msgstr "VELG MONTERINGS PUNKT FOR $DOS_PART"
+
+#
+# File: 32-SeTDOS, line: 188
+# File: 64-SeTDOS, line: 188
+#, sh-format
+msgid ""
+"Now this partition must be mounted somewhere in your  directory tree.  "
+"Please enter the directory under which  you would like to put it.  For "
+"instance, you might want to  enter /fat-c or /fat-d or something similar.   "
+"NOTE: This partition will not actually be mounted until you reboot.   Where "
+"would you like to mount $DOS_PART?"
+msgstr ""
+"Denne partisjonen må monteres i ditt filsystem. Vennligst skriv inn "
+"filkatalogen hvor du vil montere partisjonen. For eksempel, kan du skrive "
+"inn /fat-c eller /fat-d eller noe lignende. PS: Denne partisjonen vil bli "
+"montert først etter at du har restartet maskinen. Hvor vil du montere "
+"$DOS_PART?"
+
+#
+# File: 32-SeTDOS, line: 217
+# File: 32-SeTEFI, line: 73
+# File: 32-SeTpartitions, line: 533
+# File: 64-SeTDOS, line: 217
+# File: 64-SeTEFI, line: 73
+# File: 64-SeTpartitions, line: 533
+#. next partition loop
+#. more than one Linux partition
+#. Done, report to the user:
+#, sh-format
+msgid ""
+"\n"
+"Adding this information to your /etc/fstab:\n"
+"\n"
+msgstr ""
+"\n"
+"Lagrer informasjonen i /etc/fstab:\n"
+"\n"
+
+#
+# File: 32-SeTDOS, line: 222
+# File: 64-SeTDOS, line: 222
+msgid "Finished setting up non-Linux partitions."
+msgstr "Ferdig med å konfigurere ikke-Linux partisjoner."
+
+#
+# File: 32-SeTDOS, line: 223
+# File: 64-SeTDOS, line: 223
+msgid "DONE ADDING FAT or NTFS PARTITIONS"
+msgstr "FERDIG MED Å LEGGE TIL FAT eller NTFS PARTISJONER"
+
+#
+# File: 32-SeTEFI, line: 44
+# File: 64-SeTEFI, line: 44
+#. It didn't mount, so it must not be formatted:
+#, sh-format
+msgid "FORMAT EFI PARTITION ${PREFERRED_EFI_PARTITION}?"
+msgstr "FORMATER EFI PARTISJON ${PREFERRED_EFI_PARTITION}?"
+
+#
+# File: 32-SeTEFI, line: 45
+# File: 64-SeTEFI, line: 45
+#, sh-format
+msgid ""
+"An EFI System Partition was found on ${PREFERRED_EFI_PARTITION}, but it has "
+"not yet been formatted.  Would you like to format this partition?"
+msgstr ""
+"En EFI Systempartisjon ble funnet i ${PREFERRED_EFI_PARTITION} men den har "
+"ikke blitt formatert ennå. Vil du formatere denne partisjonen nå?"
+
+#
+# File: 32-SeTEFI, line: 53
+# File: 64-SeTEFI, line: 53
+#. Format the partition with FAT32, 2 sectors per cluster (needed for the
+#. minimum supported EFI partition size of 100MB):
+#, sh-format
+msgid "FORMATTING EFI PARTITION ${PREFERRED_EFI_PARTITION}"
+msgstr "FORMATERER EFI PARTISJON ${PREFERRED_EFI_PARTITION}?"
+
+#
+# File: 32-SeTEFI, line: 54
+# File: 64-SeTEFI, line: 54
+#, sh-format
+msgid "Formatting EFI System Partition ${PREFERRED_EFI_PARTITION} as FAT32."
+msgstr "Formaterer EFI Systempartisjon ${PREFERRED_EFI_PARTITION} som FAT32."
+
+#
+# File: 32-SeTEFI, line: 78
+# File: 64-SeTEFI, line: 78
+msgid "Finished setting up EFI System Partition."
+msgstr "Ferdig med å sette opp EFI Systempartisjon."
+
+#
+# File: 32-SeTEFI, line: 79
+# File: 64-SeTEFI, line: 79
+msgid "EFI SYSTEM PARTITION RECOGNIZED"
+msgstr "EFI SYSTEMPARTISJON AKSEPTERT"
+
+#
+# File: 32-SeTPKG, line: 27
+# File: 64-SeTPKG, line: 27
+msgid "Selecting software to install."
+msgstr "Velg programvare å installere."
+
+#
+# File: 32-SeTPKG, line: 29
+# File: 64-SeTPKG, line: 29
+msgid "PACKAGE SERIES SELECTION"
+msgstr "VELG PAKKE SERIER"
+
+#
+# File: 32-SeTPKG, line: 31
+# File: 64-SeTPKG, line: 31
+msgid ""
+"Now it is time to select which general categories of software to install on "
+"your system. Use the spacebar to select or unselect the software you wish to "
+"install. You can use the up and down arrows to see all the possible choices. "
+"Recommended choices have been preselected. Press the ENTER key when you are "
+"finished."
+msgstr ""
+"Du må nå velge hvilke generelle kategorier av programvarer som skal "
+"installeres på ditt system. Bruk mellomromstasten for å velge eller velge "
+"bort programvarene du vil installere. Du kan bruke opp og ned pilene for å "
+"se de tilgjengelige valg alternativene. Anbefalte programvarer er allerede "
+"forhåndsvalgt. Trykk ENTER når du er ferdig."
+
+#
+# File: 32-SeTPKG, line: 38
+# File: 64-SeTPKG, line: 38
+msgid "Base Linux system"
+msgstr "Grunn system"
+
+#
+# File: 32-SeTPKG, line: 40
+# File: 64-SeTPKG, line: 40
+msgid "The A (base) series contains the kernel and main system utilities."
+msgstr ""
+"Serie A (grunn system) inneholder kjernen og andre viktige system verktøy."
+
+#
+# File: 32-SeTPKG, line: 45
+# File: 64-SeTPKG, line: 45
+msgid "Various Applications that do not need X"
+msgstr "Forskjellige progammer som ikke trenger X"
+
+#
+# File: 32-SeTPKG, line: 47
+# File: 64-SeTPKG, line: 47
+msgid "The AP series is a collection of useful applications."
+msgstr "AP serien er en samling med nyttige programmer for Linux terminalen."
+
+#
+# File: 32-SeTPKG, line: 53
+# File: 64-SeTPKG, line: 53
+msgid "Program Development (C, C++, Lisp, Perl, etc.)"
+msgstr "Programutvikling (C, C++, Lisp, Perl, osv.)"
+
+#
+# File: 32-SeTPKG, line: 55
+# File: 64-SeTPKG, line: 55
+msgid ""
+"The D series contains compilers, debuggers, and other programming tools."
+msgstr ""
+"D serien inneholder kompilatorer, debuggere og andre programmerings verktøy."
+
+#
+# File: 32-SeTPKG, line: 61
+# File: 64-SeTPKG, line: 61
+msgid "GNU Emacs"
+msgstr "GNU Emacs"
+
+#
+# File: 32-SeTPKG, line: 63
+# File: 64-SeTPKG, line: 63
+msgid "The E series contains the GNU Emacs advanced real-time display editor."
+msgstr "E serien inneholder tekst editoren GNU Emacs."
+
+#
+# File: 32-SeTPKG, line: 69
+# File: 64-SeTPKG, line: 69
+msgid "FAQ lists, HOWTO documentation"
+msgstr "FAQ lister, HOWTO dokumentasjon"
+
+#
+# File: 32-SeTPKG, line: 71
+# File: 64-SeTPKG, line: 71
+msgid ""
+"The F series contains essential documentation for Linux system "
+"administrators."
+msgstr ""
+"F serien inneholder essensiell dokumentasjon for system administratorer."
+
+#
+# File: 32-SeTPKG, line: 77
+# File: 64-SeTPKG, line: 77
+msgid "The GNOME desktop for X"
+msgstr "GNOME skrivebordet for X"
+
+#
+# File: 32-SeTPKG, line: 79
+# File: 64-SeTPKG, line: 79
+msgid ""
+"The GNOME series contains the GNOME desktop environment and related "
+"libraries."
+msgstr ""
+"GNOME serien inneholder GNOME skrivebords-miljøet og relaterte "
+"programmerings biblioteker."
+
+#
+# File: 32-SeTPKG, line: 85
+# File: 64-SeTPKG, line: 85
+msgid "Linux kernel source"
+msgstr "Kildekoden til Linux kjernen"
+
+#
+# File: 32-SeTPKG, line: 87
+# File: 64-SeTPKG, line: 87
+msgid "The K series contains the source code for the Linux kernel."
+msgstr "K serien inneholder kildekoden til Linux kjernen"
+
+#
+# File: 32-SeTPKG, line: 93
+# File: 64-SeTPKG, line: 93
+msgid "Qt and the K Desktop Environment for X"
+msgstr "Qt og KDE skrivebords-miljøet for X"
+
+#
+# File: 32-SeTPKG, line: 95
+# File: 64-SeTPKG, line: 95
+msgid ""
+"The KDE series contains the K Desktop Environment and related libraries."
+msgstr ""
+"KDE serien inneholder KDE skrivebords-miljøet og relaterte programmerings "
+"biblioteker."
+
+#
+# File: 32-SeTPKG, line: 101
+# File: 64-SeTPKG, line: 101
+msgid "International language support for KDE"
+msgstr "Internasjonal språk støtte for KDE"
+
+#
+# File: 32-SeTPKG, line: 103
+# File: 64-SeTPKG, line: 103
+msgid ""
+"The KDEI series provides support for languages other than US English in KDE."
+msgstr "KDEI serien gir støtte for andre språk en Amerikansk Engelsk i KDE."
+
+#
+# File: 32-SeTPKG, line: 109
+# File: 64-SeTPKG, line: 109
+msgid "System Libraries (some needed by both KDE and GNOME)"
+msgstr "System biblioteker (KDE og GNOME trenger noen av disse)"
+
+#
+# File: 32-SeTPKG, line: 111
+# File: 64-SeTPKG, line: 111
+msgid ""
+"The L series contains libraries needed by GNOME, KDE, and other programs."
+msgstr ""
+"L serien inneholder programmerings biblioteker som GNOME, KDE og andre "
+"programmer trenger."
+
+#
+# File: 32-SeTPKG, line: 117
+# File: 64-SeTPKG, line: 117
+msgid "Networking (TCP/IP, UUCP, Mail, News)"
+msgstr "Nettverk (TCP/IP, UUCP, Epost, Nyheter)"
+
+#
+# File: 32-SeTPKG, line: 119
+# File: 64-SeTPKG, line: 119
+msgid "The N series contains network related clients and servers."
+msgstr "N serien inneholder nettverks relaterte klienter og servere."
+
+#
+# File: 32-SeTPKG, line: 125
+# File: 64-SeTPKG, line: 125
+msgid "TeX typesetting software"
+msgstr "TeX tekstformaterings programvare"
+
+#
+# File: 32-SeTPKG, line: 127
+# File: 64-SeTPKG, line: 127
+msgid ""
+"TeX is a typesetting system often used for mathematics and technical papers."
+msgstr ""
+"TeX er et tekstformaterings system som ofte brukes for mattematiske eller "
+"vitenskapelige publikasjoner."
+
+#
+# File: 32-SeTPKG, line: 133
+# File: 64-SeTPKG, line: 133
+msgid "Tcl/Tk script languages"
+msgstr "Tcl/Tk skript språk"
+
+#
+# File: 32-SeTPKG, line: 135
+# File: 64-SeTPKG, line: 135
+msgid ""
+"The TCL series contains the Tcl/Tk/TclX languages and programs that use them."
+msgstr ""
+"TCL serien inneholder Tcl/Tk/TclX språkene og program som bruker disse."
+
+#
+# File: 32-SeTPKG, line: 141
+# File: 64-SeTPKG, line: 141
+msgid "X Window System"
+msgstr "X vindussystemet"
+
+#
+# File: 32-SeTPKG, line: 143
+# File: 64-SeTPKG, line: 143
+msgid "This series contains X, the windowing system used by Linux."
+msgstr "Denne serien inneholder X, vindussystemet for Linux."
+
+#
+# File: 32-SeTPKG, line: 149
+# File: 64-SeTPKG, line: 149
+msgid "X Applications"
+msgstr "X Programmer"
+
+#
+# File: 32-SeTPKG, line: 151
+# File: 64-SeTPKG, line: 151
+msgid "The XAP series is a collection of applications for X."
+msgstr "XAP serien inneholder en samling med grafiske programmer."
+
+#
+# File: 32-SeTPKG, line: 157
+# File: 64-SeTPKG, line: 157
+msgid "The Xfce Desktop Environment for X"
+msgstr "Xfce Skrivebords-miljøet for X"
+
+#
+# File: 32-SeTPKG, line: 159
+# File: 64-SeTPKG, line: 159
+msgid "Xfce is a fast and lightweight GTK+ based desktop environment for X."
+msgstr "Xfce er en kjapp og lettvektig GTK+ basert skrivebords-miljø for X."
+
+#
+# File: 32-SeTPKG, line: 165
+# File: 64-SeTPKG, line: 165
+msgid "Games"
+msgstr "Spill"
+
+#
+# File: 32-SeTPKG, line: 167
+# File: 64-SeTPKG, line: 167
+msgid "The Y series is a collection of classic BSD text-based games."
+msgstr ""
+"Y serien inneholder en samling med klassiske tekstbaserte spill fra BSD."
+
+#
+# File: 32-SeTconfig, line: 80
+# File: 64-SeTconfig, line: 80
+#. Inform the user that we're done installing packages
+msgid "DONE INSTALLING PACKAGES"
+msgstr "INSTALLASJON AV PAKKER FERDIG"
+
+#
+# File: 32-SeTconfig, line: 81
+# File: 64-SeTconfig, line: 81
+msgid "Preparing to configure your new Linux system..."
+msgstr "Forbereder konfigurasjon av Linux systemet..."
+
+#
+# File: SeTconfig, line: 73
+msgid "Boot Loader"
+msgstr ""
+
+#
+# File: SeTconfig, line: 74
+msgid "Please choose the Boot Loader that you would like to use"
+msgstr ""
+
+#
+# File: 32-liloconfig, line: 826
+# File: 64-liloconfig, line: 826
+#, fuzzy
+msgid "Install Lilo"
+msgstr "Installer LILO"
+
+#
+# File: 32-liloconfig, line: 826
+# File: 64-liloconfig, line: 826
+#, fuzzy
+msgid "Install Grub"
+msgstr "Installer LILO"
+
+#
+# File: 32-eliloconfig, line: 164
+# File: 64-eliloconfig, line: 164
+#, fuzzy
+msgid "(Do not install boot loader)"
+msgstr "Ikke legg til oppføring i oppstarts menyen"
+
+#
+# File: SeTconfig, line: 216
+msgid "Numlock configuration"
+msgstr ""
+
+#
+# File: SeTconfig, line: 217
+# File: SeTconfig, line: 230
+# File: SeTconfig, line: 239
+msgid "Enabled"
+msgstr ""
+
+#
+# File: SeTconfig, line: 217
+# File: SeTconfig, line: 230
+# File: SeTconfig, line: 239
+msgid "Disabled"
+msgstr ""
+
+#
+# File: SeTconfig, line: 218
+msgid "Do you want to have numlock enabled or disabled on boot?"
+msgstr ""
+
+#
+# File: SeTconfig, line: 229
+msgid "IBus configuration"
+msgstr ""
+
+#
+# File: SeTconfig, line: 232
+msgid ""
+"IBus is an input platform for Chinese, Japanese, Korean and many other "
+"languages. Do you want to have it enabled or disabled on boot?"
+msgstr ""
+
+#
+# File: SeTconfig, line: 238
+msgid "SCIM configuration"
+msgstr ""
+
+#
+# File: SeTconfig, line: 241
+msgid ""
+"SCIM is an input platform for Chinese, Japanese, Korean and many other "
+"languages. Do you want to have it enabled or disabled on boot?"
+msgstr ""
+
+#
+# File: SeTdisk, line: 21
+msgid "Go"
+msgstr ""
+
+#
+# File: SeTdisk, line: 22
+msgid "Exit"
+msgstr ""
+
+#
+# File: 32-INShd, line: 53
+# File: 64-INShd, line: 53
+#, fuzzy
+msgid "PARTITIONS EDITOR"
+msgstr "LISTE OVER PARTISJONER"
+
+#
+# File: SeTdisk, line: 24
+msgid ""
+"Welcome to the Salix partition editor. Press <SPACE> to select a disk and "
+"select Go to start partitioning. If you don't want to alter the partition "
+"layout, select Exit.\n"
+"\n"
+"You usually need at least 2 partitions:\n"
+"- 1 SWAP partition (1GB minimum recommended) :"
+msgstr ""
+
+#
+# File: 32-SeTfull, line: 15
+# File: 64-SeTfull, line: 15
+msgid "ERROR: TARGET PARTITION FULL"
+msgstr "FEIL: MÅL PARTISJONEN ER FULL"
+
+#
+# File: 32-SeTfull, line: 15
+# File: 64-SeTfull, line: 15
+msgid ""
+"Setup has detected that one or more of your target partitions has become "
+"full.  I'm sorry, but you will have to try installing again onto a partition "
+"or partitions with more free space.  You could also try selecting fewer "
+"packages to install.  Since there is no longer any space for setup to make "
+"its temporary files, this is an unrecoverable error.  Press control-alt-"
+"delete to reboot and try again.  Before doing that, you might want to switch "
+"to another console (Alt-F2) and use df (disk free utility) to see if you can "
+"get an idea of how to avoid this the next time around."
+msgstr ""
+"Setup ser at en eller flere av mål partisjonene dine er full. Du må nok "
+"forsøke å installere på nytt med en partisjon som har mer ledig "
+"lagringsplass. Du kan også forsøke å installere med færre valgte "
+"programvarer. Fordi setup ikke har mer plass til å lagre midlertidige filer "
+"er dette en uopprettelig feilmelding. Trykk control-alt-delete for å "
+"restarte maskinen og forsøk igjen. Men før du gjør det kan du bytte til en "
+"annen konsoll (Alt-F2) og bruke df (\"disk free\" verktøy), se om du kan "
+"finne ut hvordan du kan unngå denne feilen neste gang."
+
+#
+# File: 32-SeTkernel, line: 27
+# File: 64-SeTkernel, line: 27
+msgid "REINSERT KERNEL DISC"
+msgstr "SETT INN DISKETTEN MED KJERNEN PÅ NYTT"
+
+#
+# File: 32-SeTkernel, line: 28
+# File: 64-SeTkernel, line: 28
+#, fuzzy
+msgid ""
+"Please reinsert the Salix disc containing the collection of Linux kernels.  "
+"Usually this is disc number one (the disc that you boot from).  Once you've "
+"inserted the disc, hit ENTER to continue."
+msgstr ""
+"Vennligst sett Slint disketten som inneholder Linux kjernene inn igjen. "
+"Vanligvis er dette disk nummer en (det vil si oppstartsdisken). Trykk ENTER "
+"for å fortsette etter at du har satt i disketten."
+
+#
+# File: 32-SeTkernel, line: 80
+# File: 64-SeTkernel, line: 80
+msgid "ERROR ATTEMPTING TO INSTALL KERNEL"
+msgstr "INSTALLASJON AV KJERNEN MISLYKTES"
+
+#
+# File: 32-SeTkernel, line: 80
+# File: 64-SeTkernel, line: 80
+#, sh-format
+msgid ""
+"Sorry, but the directory $PLINK/kernels was not found.  You may need to "
+"install the requested kernel $SLACK_KERNEL manually and then install LILO "
+"before your system will be able to boot correctly."
+msgstr ""
+"Filkatalogen $PLINK/kernels ble ikke funnet. Du må kanskje installere "
+"kjernen $SLACK_KERNEL manuelt, og så installere LILO for at systemet kan "
+"starte opp riktig."
+
+#
+# File: 32-SeTkeymap, line: 19
+# File: 64-SeTkeymap, line: 19
+msgid "KEYBOARD MAP SELECTION"
+msgstr "VALG AV TASTATUR OPPSETT"
+
+#
+# File: 32-rc.S, line: 232
+# File: 64-rc.S, line: 232
+#, fuzzy
+msgid "Test keyboard map"
+msgstr "Skriv 1 for å velge et tastatur oppsett:"
+
+#
+# File: SeTkeymap, line: 199
+msgid "Accept keymap"
+msgstr ""
+
+#
+# File: SeTkeymap, line: 200
+msgid "Reject keymap"
+msgstr ""
+
+#
+# File: SeTkeymap, line: 201
+msgid ""
+"You may now test the new keyboard map by typing some text. You can accept "
+"the keyboard map or reject it and select another one. The installer only "
+"supports ASCII characters, so don't try any special characters here or use "
+"them during installation!"
+msgstr ""
+
+#
+# File: 32-SeTmedia, line: 8
+# File: 32-SeTpxemedia, line: 32
+# File: 64-SeTmedia, line: 8
+# File: 64-SeTpxemedia, line: 32
+#, fuzzy
+msgid "Select Salix installation source."
+msgstr "Velg Slint installasjons kilde."
+
+#
+# File: 32-SeTmedia, line: 9
+# File: 32-SeTpxemedia, line: 33
+# File: 64-SeTmedia, line: 9
+# File: 64-SeTpxemedia, line: 33
+msgid "SOURCE MEDIA SELECTION"
+msgstr "VELG MEDIA KILDE"
+
+#
+# File: 32-SeTmedia, line: 10
+# File: 64-SeTmedia, line: 10
+#, fuzzy
+msgid "Please select the media from which to install Salix Linux:"
+msgstr "Vennligst velg hvor Slint Linux skal installeres fra:"
+
+#
+# File: 32-SeTmedia, line: 13
+# File: 64-SeTmedia, line: 13
+#, fuzzy
+msgid "Install from a Salix USB stick"
+msgstr "Installer fra en Slint USB minnepinne"
+
+#
+# File: 32-SeTmedia, line: 12
+# File: 64-SeTmedia, line: 12
+#, fuzzy
+msgid "Install from a Salix CD or DVD"
+msgstr "Installer fra Slint CD/DVD"
+
+#
+# File: 32-SeTmedia, line: 14
+# File: 64-SeTmedia, line: 14
+msgid "Install from a hard drive partition"
+msgstr "Installer fra harddisk partisjon"
+
+#
+# File: 32-SeTmedia, line: 18
+# File: 64-SeTmedia, line: 18
+msgid "Install from a pre-mounted directory"
+msgstr "Installer fra filkatalog (må være montert)"
+
+#
+# File: 32-SeTmedia, line: 16
+# File: 64-SeTmedia, line: 16
+msgid "Install from FTP/HTTP server"
+msgstr "Installer fra FTP/HTTP server"
+
+#
+# File: 32-SeTmedia, line: 15
+# File: 64-SeTmedia, line: 15
+msgid "Install from NFS (Network File System)"
+msgstr "Installer fra NFS (Network File System)"
+
+#
+# File: 32-SeTmedia, line: 17
+# File: 64-SeTmedia, line: 17
+#, fuzzy
+msgid "Install from a Samba share"
+msgstr "Installer fra Samba nettverk"
+
+#
+# File: 32-SeTnet, line: 103
+# File: 64-SeTnet, line: 103
+msgid ""
+"\n"
+"You will now get a chance to probe your network interfaces.\n"
+msgstr ""
+"\n"
+"Du kan nå gjøre et søk i dine nettverks enheter.\n"
+
+#
+# File: 32-SeTnet, line: 106
+# File: 32-SeTnet, line: 119
+# File: 64-SeTnet, line: 106
+# File: 64-SeTnet, line: 119
+msgid "PROBING NETWORK DEVICES"
+msgstr "SØK I NETTVERKS ENHETENE"
+
+#
+# File: 32-SeTnet, line: 113
+# File: 64-SeTnet, line: 113
+msgid ""
+"\n"
+"Are you OK with the network interface which was detected? If not, select "
+"'No' to get back to the network probe program. You can try to load another "
+"driver explicitly, by using 'P <driver_name>'.\n"
+"\n"
+"If you are satisfied, select 'Yes' to continue with network configuration."
+msgstr ""
+"\n"
+"Ser listen over nettverks enhetene som ble funnet grei ut? Hvis ikke velg "
+"'Nei' for å gå tilbake og foreta et nytt søk. Du kan forsøke å spesifisere "
+"en alternativ driver ved å skrive 'P <driver_navn>'.\n"
+"\n"
+"Hvis listen ser bra ut så trykk 'Ja' for å fortsette med nettverks "
+"konfigurasjonen. "
+
+#
+# File: 32-SeTnet, line: 135
+# File: 32-SeTnet, line: 291
+# File: 64-SeTnet, line: 135
+# File: 64-SeTnet, line: 291
+#. hope that 3 seconds is enough for dhcpcd;
+#. if not then you had better specify the INTERFACE in the nic= parameter...
+#. end ask approval for ip config
+#. echo "Configuring ethernet card..."
+msgid "INITIALIZING NETWORK"
+msgstr "STARTER OPP NETTVERKET"
+
+#
+# File: 32-SeTnet, line: 136
+# File: 64-SeTnet, line: 136
+msgid ""
+"\n"
+"Waiting a few seconds for DHCP polling to settle ..."
+msgstr ""
+"\n"
+"Venter noen sekunder for at DHCP skal gjøre seg ferdig ..."
+
+#
+# File: 32-SeTnet, line: 159
+# File: 64-SeTnet, line: 159
+msgid ""
+"You're running off the hard drive filesystem. Is this machine currently "
+"running on the network you plan to install from? If so, we won't try to "
+"reconfigure your ethernet card.\n"
+"\n"
+"Are you up-and-running on the network?"
+msgstr ""
+"Du kjører nå fra filsystemet på harddisken. Kjører denne maskinen på "
+"nettverket som du har tenkt å installere fra? Hvis det er tilfellet trenger "
+"vi ikke å rekonfigurere ethernet kortet.\n"
+"\n"
+"Er nettverket ditt oppe og går?"
+
+#
+# File: 32-SeTnet, line: 164
+# File: 32-SeTnet, line: 284
+# File: 64-SeTnet, line: 164
+# File: 64-SeTnet, line: 284
+msgid "NETWORK CONFIGURATION"
+msgstr "NETTVERKS KONFIGURASJON"
+
+#
+# File: 32-SeTnet, line: 173
+# File: 64-SeTnet, line: 173
+#. Offer to install using DHCP:
+#, sh-format
+msgid ""
+"\n"
+"I can configure your network interface $ENET_DEVICE fully automatically "
+"using DHCP. If you want this, please select 'yes'.\n"
+"\n"
+"If you select 'no' instead, then you will be able to assign the IP address, "
+"netmask and gateway manually.\n"
+msgstr ""
+"\n"
+"Nettverksenheten $ENET_DEVICE kan konfigureres automatisk via DHCP. Hvis du "
+"vil dette så trykk 'Ja'.\n"
+"\n"
+"Hvis du velger 'Nei' i stedet kan du spesifisere IP adresse, nettmaske og "
+"nettverksportal manuelt.\n"
+
+#
+# File: 32-SeTnet, line: 180
+# File: 64-SeTnet, line: 180
+msgid "DHCP CONFIGURATION"
+msgstr "DHCP KONFIGURASJON"
+
+#
+# File: 32-SeTnet, line: 205
+# File: 64-SeTnet, line: 205
+msgid ""
+"\n"
+"You will need to enter the IP address you wish to assign to this machine. "
+"Example: 111.112.113.114\n"
+"\n"
+"What is your IP address?"
+msgstr ""
+"\n"
+"Du må skrive inn en IP adresse til denne maskinen. For eksempel: "
+"111.112.113.114\n"
+"\n"
+"Hva er din IP adresse?"
+
+#
+# File: 32-SeTnet, line: 213
+# File: 64-SeTnet, line: 213
+msgid "ASSIGN IP ADDRESS"
+msgstr "SETT IP ADRESSE"
+
+#
+# File: 32-SeTnet, line: 222
+# File: 64-SeTnet, line: 222
+msgid ""
+"\n"
+"Now we need to know your netmask. Typically this will be 255.255.255.0 but "
+"this can be different depending on your local setup.\n"
+"\n"
+"What is your netmask?"
+msgstr ""
+"\n"
+"Vi trenger nå en nettmaske. Vanligvis er dette 255.255.255.0, men dette kan "
+"variere avhengig av hvordan ditt lokale nettverk er satt opp.\n"
+"\n"
+"Hva er din nettmaske?"
+
+#
+# File: 32-SeTnet, line: 231
+# File: 64-SeTnet, line: 231
+msgid "ASSIGN NETMASK"
+msgstr "SETT NETTMASKE"
+
+#
+# File: 32-SeTnet, line: 240
+# File: 64-SeTnet, line: 240
+msgid "Do you have a gateway?"
+msgstr "Har du en nettverksportal (gateway)?"
+
+#
+# File: 32-SeTnet, line: 251
+# File: 64-SeTnet, line: 251
+msgid "ASSIGN GATEWAY ADDRESS"
+msgstr "SETT NETTVERKSPORTAL"
+
+#
+# File: 32-SeTnet, line: 252
+# File: 64-SeTnet, line: 252
+msgid ""
+"\n"
+"What is the IP address for your gateway?"
+msgstr ""
+"\n"
+"Hva er IP adressen til din nettverksportal (gateway)?"
+
+#
+# File: 32-SeTnet, line: 272
+# File: 64-SeTnet, line: 272
+#, sh-format
+msgid ""
+"\n"
+"This is the proposed network configuration for $ENET_DEVICE - If this is OK, "
+"then select 'Yes'.\n"
+"If this is not OK and you want to configure again, select 'No'.\n"
+"\n"
+"* IP Address: $LOCAL_IPADDR\n"
+"* Netmask:    $LOCAL_NETMASK"
+msgstr ""
+"\n"
+"Dette er den foreslåtte nettverkskonfigurasjonen for $ENET_DEVICE - Hvis det "
+"ser greit ut så velg 'Ja'.\n"
+"Hvis ikke og du ønsker å konfigurere nettverket på nytt, velg 'Nei'.\n"
+"\n"
+"* IP Adresse: $LOCAL_IPADDR\n"
+"* Netmaske: $LOCAL_NETMASK"
+
+#
+# File: 32-SeTnet, line: 292
+# File: 64-SeTnet, line: 292
+#, sh-format
+msgid ""
+"\n"
+"Configuring your network interface $ENET_DEVICE ..."
+msgstr ""
+"\n"
+"Konfigurerer nettverksenheten $ENET_DEVICE ..."
+
+#
+# File: 32-SeTnet, line: 329
+# File: 64-SeTnet, line: 329
+msgid "FETCHING CONFIGURATION"
+msgstr "HENTER KONFIGURASJON"
+
+#
+# File: 32-SeTnet, line: 330
+# File: 64-SeTnet, line: 330
+#, sh-format
+msgid ""
+"\n"
+"Attempting to fetch a remote configuration file using $PROTO ..."
+msgstr ""
+"\n"
+"Forsøker å laste inn konfigurasjons fil via $PROTO ..."
+
+#
+# File: 32-SeTpartitions, line: 27
+# File: 32-SeTpartitions, line: 48
+# File: 32-SeTpartitions, line: 73
+# File: 32-SeTpartitions, line: 98
+# File: 32-SeTpartitions, line: 123
+# File: 32-SeTpartitions, line: 146
+# File: 32-SeTpartitions, line: 165
+# File: 64-SeTpartitions, line: 27
+# File: 64-SeTpartitions, line: 48
+# File: 64-SeTpartitions, line: 73
+# File: 64-SeTpartitions, line: 98
+# File: 64-SeTpartitions, line: 123
+# File: 64-SeTpartitions, line: 146
+# File: 64-SeTpartitions, line: 165
+#. output a nice status message
+msgid "FORMATTING"
+msgstr "FORMATERING"
+
+#
+# File: 32-SeTpartitions, line: 28
+# File: 64-SeTpartitions, line: 28
+#, sh-format
+msgid "Formatting $ArG1 with filesystem btrfs."
+msgstr "Formater $ArG1 med btrfs filsystemet."
+
+#
+# File: 32-SeTpartitions, line: 29
+# File: 64-SeTpartitions, line: 29
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE \n"
+"Filesystem type: btrfs"
+msgstr ""
+"Formaterer $ArG1\n"
+"Størrelse i 1K blokker: $SIZE\n"
+"Filsystem type: btrfs"
+
+#
+# File: 32-SeTpartitions, line: 49
+# File: 64-SeTpartitions, line: 49
+#, sh-format
+msgid "Formatting $ArG1 with filesystem ext2."
+msgstr "Formater $ArG1 med ext2 filsystemet."
+
+#
+# File: 32-SeTpartitions, line: 50
+# File: 64-SeTpartitions, line: 50
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE\n"
+"Filesystem type: ext2"
+msgstr ""
+"Formaterer $ArG1\n"
+"Størrelse i 1K blokker: $SIZE\n"
+"Filsystem type: ext2"
+
+#
+# File: 32-SeTpartitions, line: 74
+# File: 64-SeTpartitions, line: 74
+#, sh-format
+msgid "Formatting $ArG1 with filesystem ext3."
+msgstr "Formater $ArG1 med ext3 filsystemet."
+
+#
+# File: 32-SeTpartitions, line: 75
+# File: 64-SeTpartitions, line: 75
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE\n"
+"Filesystem type: ext3"
+msgstr ""
+"Formaterer $ArG1\n"
+"Størrelse i 1K blokker: $SIZE\n"
+"Filsystem type: ext3"
+
+#
+# File: 32-SeTpartitions, line: 99
+# File: 64-SeTpartitions, line: 99
+#, sh-format
+msgid "Formatting $ArG1 with filesystem ext4."
+msgstr "Formater $ArG1 med ext4 filsystemet."
+
+#
+# File: 32-SeTpartitions, line: 100
+# File: 64-SeTpartitions, line: 100
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE\n"
+"Filesystem type: ext4"
+msgstr ""
+"Formaterer $ArG1\n"
+"Størrelse i 1K blokker: $SIZE\n"
+"Filsystem type: ext4"
+
+#
+# File: 32-SeTpartitions, line: 124
+# File: 64-SeTpartitions, line: 124
+#, sh-format
+msgid "Formatting $ArG1 with filesystem jfs."
+msgstr "Formater $ArG1 med jfs filsystemet."
+
+#
+# File: 32-SeTpartitions, line: 125
+# File: 64-SeTpartitions, line: 125
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE\n"
+"Filesystem type: jfs"
+msgstr ""
+"Formaterer $ArG1\n"
+"Størrelse i 1K blokker: $SIZE\n"
+"Filsystem type: jfs"
+
+#
+# File: 32-SeTpartitions, line: 147
+# File: 64-SeTpartitions, line: 147
+#, sh-format
+msgid "Formatting $ArG1 with filesystem reiserfs."
+msgstr "Formater $ArG1 med reiserfs filsystemet."
+
+#
+# File: 32-SeTpartitions, line: 148
+# File: 64-SeTpartitions, line: 148
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE\n"
+"Filesystem type: reiserfs"
+msgstr ""
+"Formaterer $ArG1\n"
+"Størrelse i 1K blokker: $SIZE\n"
+"Filsystem type: reiserfs"
+
+#
+# File: 32-SeTpartitions, line: 166
+# File: 64-SeTpartitions, line: 166
+#, sh-format
+msgid "Formatting $ArG1 with filesystem xfs."
+msgstr "Formater $ArG1 med xfs filsystemet."
+
+#
+# File: 32-SeTpartitions, line: 167
+# File: 64-SeTpartitions, line: 167
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE\n"
+"Filesystem type: xfs"
+msgstr ""
+"Formaterer $ArG1\n"
+"Størrelse i 1K blokker: $SIZE\n"
+"Filsystem type: xfs"
+
+#
+# File: 32-SeTpartitions, line: 203
+# File: 32-SeTpartitions, line: 204
+# File: 32-SeTpartitions, line: 205
+# File: 32-SeTpartitions, line: 206
+# File: 32-SeTpartitions, line: 207
+# File: 64-SeTpartitions, line: 203
+# File: 64-SeTpartitions, line: 204
+# File: 64-SeTpartitions, line: 205
+# File: 64-SeTpartitions, line: 206
+# File: 64-SeTpartitions, line: 207
+msgid "done adding partitions, continue with setup"
+msgstr "partisjonene er lagt til, fortsetter med setup"
+
+#
+# File: 32-SeTpartitions, line: 214
+# File: 64-SeTpartitions, line: 214
+#, sh-format
+msgid "Do you want to format Linux partition ${ArG1}?"
+msgstr "Vil du formatere Linux partisjon med ${ArG1}?"
+
+#
+# File: 32-SeTpartitions, line: 215
+# File: 64-SeTpartitions, line: 215
+#, sh-format
+msgid "FORMAT PARTITION $ArG1"
+msgstr "FORMATER PARTISJON $ArG1"
+
+#
+# File: 32-SeTpartitions, line: 215
+# File: 64-SeTpartitions, line: 215
+#, sh-format
+msgid ""
+"If this partition has not been formatted, you should format it.  NOTE: This "
+"will erase all data on it.  Would you like to format this partition?"
+msgstr ""
+"Hvis denne partisjonen ikke har blitt formatert bør dette gjøres nå. PS: "
+"Dette vil slette all data som ligger på den. Vil du formatere partisjonen nå?"
+
+#
+# File: 32-SeTpartitions, line: 219
+# File: 64-SeTpartitions, line: 219
+#, sh-format
+msgid "Quick format with no bad block checking"
+msgstr "Rask formatering uten å se etter harddisk feil"
+
+#
+# File: 32-SeTpartitions, line: 220
+# File: 64-SeTpartitions, line: 220
+#, sh-format
+msgid "Slow format that checks for bad blocks"
+msgstr "Sakte formatering som ser etter harddisk feil"
+
+#
+# File: 32-SeTpartitions, line: 221
+# File: 64-SeTpartitions, line: 221
+#, sh-format
+msgid "No, do not format this partition"
+msgstr "Nei, ikke formater denne partisjonen"
+
+#
+# File: 32-SeTpartitions, line: 234
+# File: 64-SeTpartitions, line: 234
+msgid "Ext2 is the traditional Linux file system and is fast and stable."
+msgstr "Ext2 er det klassiske filsystemet til Linux, det er raskt og stabilt."
+
+#
+# File: 32-SeTpartitions, line: 237
+# File: 64-SeTpartitions, line: 237
+msgid "Ext3 is the journaling version of the Ext2 filesystem."
+msgstr "Ext3 er den journalførende versjonen av Ext2 filsystemet."
+
+#
+# File: 32-SeTpartitions, line: 241
+# File: 64-SeTpartitions, line: 241
+msgid "Ext4 is the successor to the ext3 filesystem. "
+msgstr "Ext4 er etterfølgeren til ext3 filsystemet."
+
+#
+# File: 32-SeTpartitions, line: 245
+# File: 64-SeTpartitions, line: 245
+msgid ""
+"ReiserFS is a journaling filesystem that stores all files and filenames in a "
+"balanced tree structure."
+msgstr ""
+"ReiserFS er et journalførende filsystem som lagrer alle filer og filnavn på "
+"en strukturelt balansert måte."
+
+#
+# File: 32-SeTpartitions, line: 248
+# File: 64-SeTpartitions, line: 248
+msgid "Btrfs is a B-tree copy-on-write filesystem."
+msgstr "Btrfs er en B-tree copy-on-write filsystem."
+
+#
+# File: 32-SeTpartitions, line: 253
+# File: 64-SeTpartitions, line: 253
+msgid ""
+"JFS is IBM's Journaled Filesystem, currently used in IBM enterprise servers."
+msgstr ""
+"JFS eller 'IBM's Journaled Filesystem', brukes foreløbig av IBM bedrift "
+"servere."
+
+#
+# File: 32-SeTpartitions, line: 256
+# File: 64-SeTpartitions, line: 256
+msgid "XFS is SGI's journaling filesystem that originated on IRIX."
+msgstr "XFS er SGI's journalførende filsystem som hadde sitt opphav på IRIX. "
+
+#
+# File: 32-SeTpartitions, line: 259
+# File: 64-SeTpartitions, line: 259
+#, sh-format
+msgid "SELECT FILESYSTEM FOR $ArG1 "
+msgstr "VELG FILSYSTEM FOR $ArG1"
+
+#
+# File: 32-SeTpartitions, line: 261
+# File: 64-SeTpartitions, line: 261
+#, sh-format
+msgid "Partition $ArG1 will be formatted."
+msgstr "Partisjon $ArG1 vil bli formatert."
+
+#
+# File: 32-SeTpartitions, line: 265
+# File: 64-SeTpartitions, line: 265
+msgid ""
+"Please select the type of filesystem to use for the specified device.  Here "
+"are descriptions of the available filesystems:"
+msgstr ""
+"Vennligst velg et filsystem for partisjonen. Her har du beskrivelser av de "
+"tilgjengelige filsystemene:"
+
+#
+# File: 32-SeTpartitions, line: 270
+# File: 64-SeTpartitions, line: 270
+msgid "Standard Linux Ext2 Filesystem"
+msgstr "Standard Linux Filsystem (Ext2)"
+
+#
+# File: 32-SeTpartitions, line: 273
+# File: 64-SeTpartitions, line: 273
+msgid "Ext3 Journaling Filesystem"
+msgstr "Ext3 Journalførende Filsystem"
+
+#
+# File: 32-SeTpartitions, line: 276
+# File: 64-SeTpartitions, line: 276
+msgid "Ext4 Journaling Filesystem"
+msgstr "Ext4 Journalførende Filsystem"
+
+#
+# File: 32-SeTpartitions, line: 279
+# File: 64-SeTpartitions, line: 279
+msgid "IBM's Journaled Filesystem"
+msgstr "IBM's Journalførende Filsystem"
+
+#
+# File: 32-SeTpartitions, line: 282
+# File: 64-SeTpartitions, line: 282
+msgid "ReiserFS Journaling Filesystem"
+msgstr "ReiserFS Journalførende Filsystem"
+
+#
+# File: 32-SeTpartitions, line: 285
+# File: 64-SeTpartitions, line: 285
+msgid "Btrfs Copy-on-Write B-tree Filesystem"
+msgstr "Btrfs Copy-on-Write B-tree Filsystem"
+
+#
+# File: 32-SeTpartitions, line: 288
+# File: 64-SeTpartitions, line: 288
+msgid "SGI's Journaling Filesystem"
+msgstr "SGI's Journalførende Filsystem"
+
+#
+# File: 32-SeTpartitions, line: 319
+# File: 64-SeTpartitions, line: 319
+msgid "Setting up root Linux partition."
+msgstr "Setter opp Linux rotpartisjon (/)."
+
+#
+# File: 32-SeTpartitions, line: 321
+# File: 64-SeTpartitions, line: 321
+msgid "Select Linux installation partition:"
+msgstr "Velg installasjons partisjonen til Linux:"
+
+#
+# File: 32-SeTpartitions, line: 327
+# File: 64-SeTpartitions, line: 327
+msgid ""
+"Please select a partition from the following list to use for your root (/) "
+"Linux partition."
+msgstr ""
+"Vennligst velg en partisjon fra den følgende listen som din Linux "
+"rotpartisjon (/)."
+
+#
+# File: 32-SeTpartitions, line: 408
+# File: 64-SeTpartitions, line: 408
+msgid "Setting up other Linux partitions."
+msgstr "Setter opp andre Linux partisjoner."
+
+#
+# File: 32-SeTpartitions, line: 410
+# File: 64-SeTpartitions, line: 410
+msgid "Select other Linux partitions for /etc/fstab"
+msgstr "Velg andre Linux partisjoner til /etc/fstab"
+
+#
+# File: 32-SeTpartitions, line: 416
+# File: 64-SeTpartitions, line: 416
+#, sh-format
+msgid ""
+"You seem to have more than one partition tagged as type Linux.  You may use "
+"these to distribute your Linux system across more than one partition.  "
+"Currently, you have $ROOT_DEVICE mounted as your / partition.  You might "
+"want to mount directories such as /home or /usr/local on separate "
+"partitions.  You should not try to mount /etc, /sbin, or /bin on their own "
+"partitions since they contain utilities needed to bring the system up and "
+"mount partitions.  Also, do not reuse a partition that you've already "
+"entered before.  Please select one of the Linux partitions listed below, or "
+"if you're done, hit <Continue>."
+msgstr ""
+"Det ser ut til at du har mer enn en Linux partisjon. Du kan bruke disse for "
+"å distribuere Linux systemet over flere partisjoner. Foreløbig er "
+"$ROOT_DEVICE montert som / partisjon. Du vil kanskje montere slike "
+"filkataloger som /home eller /usr/local på separate partisjoner. Du bør ikke "
+"forsøke å montere /etc, /sbin eller /bin på egne partisjoner siden disse "
+"inneholder nødvendige verktøy for å starte systemet og montere partisjoner. "
+"I tillegg må du ikke gjenbruke en partisjon som du har skrevet inn fra før. "
+"Vennligst velg en av Linux partisjonene som er listet opp nedenfor, eller "
+"hvis du er ferdig, trykk <Fortsett>.  "
+
+#
+# File: 32-SeTpartitions, line: 451
+# File: 64-SeTpartitions, line: 451
+#, sh-format
+msgid "Partition $NEXT_PARTITION will not be reformatted."
+msgstr "Partisjon $NEXT_PARTITION vil ikke bli reformatert."
+
+#
+# File: 32-SeTpartitions, line: 456
+# File: 64-SeTpartitions, line: 456
+#, sh-format
+msgid "Partition $NEXT_PARTITION will be formatted with $NEXT_SYS_TYPE."
+msgstr "Partisjon $NEXT_PARTITION vil bli formatert med $NEXT_SYS_TYPE."
+
+#
+# File: 32-SeTpartitions, line: 493
+# File: 64-SeTpartitions, line: 493
+#. DOFORMAT?
+#. Now ask the user where to mount this new filesystem:
+#, sh-format
+msgid "SELECT MOUNT POINT FOR $NEXT_PARTITION"
+msgstr "VELG MONTERINGS PUNKT FOR $NEXT_PARTITION"
+
+#
+# File: 32-SeTpartitions, line: 494
+# File: 64-SeTpartitions, line: 494
+#, sh-format
+msgid ""
+"OK, now you need to specify where you want the new partition mounted.  For "
+"example, if you want to put it under /usr/local, then respond:  /usr/local\n"
+"Where would you like to mount $NEXT_PARTITION?"
+msgstr ""
+"OK, nå må vi spesifisere hvor den nye partisjonen skal monteres. For "
+"eksempel, hvis du ønsker å putte denne under /usr/local, så skriv inn: /usr/"
+"local\n"
+"Hvor vil du montere $NEXT_PARTITION?"
+
+#
+# File: 32-SeTpartitions, line: 538
+# File: 64-SeTpartitions, line: 538
+msgid "Finished setting up Linux partitions."
+msgstr "Ferdig med å sette opp Linux partisjoner."
+
+#
+# File: 32-SeTpartitions, line: 539
+# File: 64-SeTpartitions, line: 539
+msgid "DONE ADDING LINUX PARTITIONS TO /etc/fstab"
+msgstr "FERDIG MED Å LEGGE TIL LINUX PARTISJONER I /etc/fstab"
+
+#
+# File: 32-SeTswap, line: 26
+# File: 64-SeTswap, line: 26
+msgid "NO SWAP SPACE DETECTED"
+msgstr "INGEN SWAP OMRÅDET FUNNET"
+
+#
+# File: 32-SeTswap, line: 26
+# File: 64-SeTswap, line: 26
+msgid ""
+"You have not created a swap partition with Linux fdisk.  Do you want to "
+"continue installing without one? "
+msgstr ""
+"Du har ikke opprettet en swap partisjon med Linux fdisk. Vil du fortsette "
+"installasjonen uten?"
+
+#
+# File: 32-SeTswap, line: 30
+# File: 64-SeTswap, line: 30
+msgid "ABORTING INSTALLATION"
+msgstr "AVBRYTER INSTALLASJON"
+
+#
+# File: 32-SeTswap, line: 30
+# File: 64-SeTswap, line: 30
+msgid "Create a swap partition with Linux fdisk, and then try this again."
+msgstr "Opprett en swap partisjon med Linux fdisk, forsøk så på nytt."
+
+#
+# File: 32-SeTswap, line: 39
+# File: 32-SeTswap, line: 79
+# File: 64-SeTswap, line: 39
+# File: 64-SeTswap, line: 79
+msgid "Setting up swap partitions."
+msgstr "Setter opp swap partisjoner."
+
+#
+# File: 32-SeTswap, line: 41
+# File: 64-SeTswap, line: 41
+msgid "SWAP SPACE DETECTED"
+msgstr "SWAP OMRÅDET FUNNET"
+
+#
+# File: 32-SeTswap, line: 43
+# File: 64-SeTswap, line: 43
+#, fuzzy
+msgid ""
+"Salix Setup has detected one or more swap partitions on your system.  These "
+"partitions have been preselected to be set up as swap space.  If there are "
+"any swap partitions that you do not wish to use with this installation, "
+"please unselect them with the up and down arrows and spacebar.  If you wish "
+"to use all of them (this is recommended), simply hit the ENTER key."
+msgstr ""
+"Slint Setup har funnet en eller flere swap partisjoner på systemet. Disse "
+"partisjonene er forhåndsvalgt som swap områder. Hvis du ikke vil bruke noen "
+"av disse swap partisjonene i denne installasjonen så merk dem med up og ned "
+"pilene og mellomromstasten. Hvis du vil bruke alle (anbefalt) så bare trykk "
+"ENTER."
+
+#
+# File: 32-SeTswap, line: 56
+# File: 64-SeTswap, line: 56
+#, sh-format
+msgid "Linux swap partition, ${PARTSIZE}"
+msgstr "Linux swap partisjon ${PARTSIZE}"
+
+#
+# File: 32-SeTswap, line: 80
+# File: 64-SeTswap, line: 80
+msgid "CHECK SWAP PARTITIONS FOR BAD BLOCKS?"
+msgstr "SJEKK SWAP PARTISJONEN FOR HARDDISK FEIL?"
+
+#
+# File: 32-SeTswap, line: 81
+# File: 64-SeTswap, line: 81
+#, fuzzy
+msgid ""
+"Salix Setup will now prepare your system's swap space.  When formatting swap "
+"partitions with mkswap you may also check them for bad blocks.  This is not "
+"the default since nearly all modern hard drives check themselves for bad "
+"blocks anyway.  Would you like to check for bad blocks while running mkswap?"
+msgstr ""
+"Slint Setup vil nå forberede swap området for systemet. Når du formaterer en "
+"swap partisjon med mkswap kan du også se etter harddisk feil. Dette er ikke "
+"standardvalget siden nær sagt alle moderne harddisker sjekker dette selv "
+"uansett. Har du lyst å se etter harddisk feil mens mkswap kjører?"
+
+#
+# File: 32-SeTswap, line: 101
+# File: 64-SeTswap, line: 101
+#, sh-format
+msgid "Activating swap partition ${swappartition}:"
+msgstr "Aktiverer swap partisjon ${swappartition}:"
+
+#
+# File: 32-SeTswap, line: 117
+# File: 64-SeTswap, line: 117
+msgid ""
+"Your swapspace has been configured. This information   will be added to "
+"your /etc/fstab:"
+msgstr ""
+"Swap-området har blitt konfigurert. Følgende informasjonen vil bli lagt til "
+"i /etc/fstab:"
+
+#
+# File: 32-SeTswap, line: 122
+# File: 64-SeTswap, line: 122
+msgid "SWAP SPACE CONFIGURED"
+msgstr "SWAP OMRÅDET KONFIGURERT"
+
+#
+# File: SeTusers, line: 9
+msgid "User setup"
+msgstr ""
+
+#
+# File: SeTusers, line: 10
+msgid ""
+"You will now be presented with some dialogs so that you can create one or "
+"more user accounts in your new system.\n"
+"\n"
+"The first user you will create, will be able to run commands as a privileged "
+"user through sudo. Any other user will not be able to run commands with sudo "
+"unless you add them to the wheel group.\n"
+"\n"
+"The root user is disabled by default."
+msgstr ""
+
+#
+# File: 32-liloconfig, line: 1095
+# File: 64-liloconfig, line: 1095
+#. destroy ? ##########################################
+#, fuzzy
+msgid "AUTO PARTITION"
+msgstr "VELG OS/2 PARTISJON"
+
+#
+# File: autoinstall, line: 103
+msgid "Do It"
+msgstr ""
+
+#
+# File: 32-xwmconfig, line: 207
+# File: 64-xwmconfig, line: 207
+#, fuzzy
+msgid "Cancel"
+msgstr "Avbrutt."
+
+#
+# File: autoinstall, line: 106
+msgid ""
+"This is automatic partition mode.\n"
+"Press <SPACE> to select the target disk where Salix will be installed.\n"
+"All data will be erased from the target disk.\n"
+"Only run this mode if the entire disk will be dedicated to Salix."
+msgstr ""
+
+#
+# File: autoinstall, line: 131
+msgid "Go back to the main setup menu"
+msgstr ""
+
+#
+# File: autoinstall, line: 140
+msgid "No target disk selected, going back to main menu"
+msgstr ""
+
+#
+# File: 32-SeTDOS, line: 217
+# File: 32-SeTEFI, line: 73
+# File: 32-SeTpartitions, line: 533
+# File: 64-SeTDOS, line: 217
+# File: 64-SeTEFI, line: 73
+# File: 64-SeTpartitions, line: 533
+#. Done, report to the user:
+#. dialog --title "`gettext "AUTO PARTITION" --msgbox "$(cat $TMP/${PARTITION_TOOL}.report)" 0 0
+#, fuzzy
+msgid ""
+"\n"
+"Partitioning completed,\n"
+"Adding this information to your /etc/fstab:\n"
+msgstr ""
+"\n"
+"Lagrer informasjonen i /etc/fstab:\n"
+"\n"
+
+#
+# File: 32-liloconfig, line: 815
+# File: 64-liloconfig, line: 815
+#, fuzzy
+msgid "WELCOME TO THE SALIX INSTALLATION"
+msgstr "EKSPERT INSTALLASJON TIL LILO"
+
+#
+# File: 32-pkgtool, line: 442
+# File: 64-pkgtool, line: 442
+#, fuzzy
+msgid "Keep the current keymap"
+msgstr "Hopp over den nåværende diskett serien"
+
+#
+# File: global-blurbs, line: 17
+#, fuzzy
+msgid "Select another keymap"
+msgstr "Velg en konsollfont"
+
+#
+# File: 32-INSCD, line: 234
+# File: 64-INSCD, line: 234
+#. if there is no EFI
+#, fuzzy
+msgid "Salix Installation"
+msgstr "Avbryt CD installasjon"
+
+#
+# File: 32-INSCD, line: 234
+# File: 64-INSCD, line: 234
+#, fuzzy
+msgid "Exit installation"
+msgstr "Avbryt CD installasjon"
+
+#
+# File: setup, line: 70
+msgid ""
+"You may now proceed with the installation by pressing the ENTER key.\n"
+"\n"
+"If you want to exit the installation and drop to a linux console, select "
+"'Exit installation'"
+msgstr ""
+
+#
+# File: setup, line: 74
+# File: setup, line: 94
+msgid "Install Salix using a step-by-step guide"
+msgstr ""
+
+#
+# File: 32-pxesetup, line: 52
+# File: 64-pxesetup, line: 52
+#, fuzzy
+msgid ""
+"You may select an option below using the UP/DOWN keys and SPACE or ENTER. "
+"Alternate keys may also be used: '+', '-', and TAB.\n"
+"\n"
+"If you want to exit the installation and drop to a linux console, select "
+"'Exit installation'"
+msgstr ""
+"Velkommen til Slint PXE Setup.\n"
+"Velg et alternativ nedenfor med OPP/NED pilene og MELLOMROM eller ENTER.\n"
+"\n"
+"Alternative taster kan også brukes: '+','-', og TAB."
+
+#
+# File: setup, line: 95
+msgid "Autopartition and install with few options (wipes your HD)"
+msgstr ""
+
+#
+# File: 32-setup, line: 57
+# File: 64-setup, line: 57
+msgid "NO LINUX PARTITIONS DETECTED"
+msgstr "FANT INGEN LINUX PARTISJON"
+
+#
+# File: 32-setup, line: 58
+# File: 64-setup, line: 58
+#, fuzzy
+msgid ""
+"There don't seem to be any Linux partitions on this machine.\n"
+"\t\tYou'll need to make at least one of these to install Linux. Either "
+"select AUTOINSTALL from the menu, or select INSTALL and use the partition "
+"editor to create one."
+msgstr ""
+"Det ser ikke ut til at det er noen Linux partisjoner på denne maskinen. Du "
+"trenger å lage minst en slik partisjon for å installere Linux. For å gjøre "
+"dette må du avslutte 'setup' og lage partisjonene med 'cfdisk' (MBR "
+"partisjoner) eller 'cgdisk' (GPT partisjoner). Les 'setup' hjelpe dokumentet "
+"i neste meny for mer informasjon."
+
+#
+# File: 32-setup, line: 67
+# File: 64-setup, line: 67
+msgid "NO EFI SYSTEM PARTITION DETECTED"
+msgstr "FANT INGEN EFI SYSTEMPARTISJON"
+
+#
+# File: 32-setup, line: 68
+# File: 64-setup, line: 68
+#, fuzzy
+msgid ""
+"This machine appears to be using EFI/UEFI, but no EFI System Partition was "
+"found.\n"
+"\n"
+"You'll need to make an EFI System Partition in order to boot from the hard "
+"drive."
+msgstr ""
+"Det ser ut til at maskinen bruker EFI/UEFI men ingen EFI Systempartisjon ble "
+"funnet. Du trenger å lage en EFI Systempartisjon for å kunne starte opp fra "
+"harddisken. For å gjøre dette må du avslutte 'setup' og lage en 100MB EF00 "
+"partisjon med 'cgdisk'. Les 'setup' hjelpe dokumentet i neste meny for mer "
+"informasjon."
+
+#
+# File: setup, line: 162
+# File: setup, line: 169
+msgid "-s"
+msgstr ""
+
+#
+# File: setup, line: 202
+msgid "No Source Selected"
+msgstr ""
+
+#
+# File: setup, line: 203
+msgid ""
+"\n"
+"The installer does not know where to find the source packages...\n"
+"Press ENTER to return to the main menu."
+msgstr ""
+
+#
+# File: 32-setup, line: 179
+# File: 64-setup, line: 179
+msgid "CANNOT INSTALL SOFTWARE YET"
+msgstr "KAN IKKE INSTALLERE PROGRAMVARER ENNÅ"
+
+#
+# File: 32-setup, line: 179
+# File: 64-setup, line: 179
+#, fuzzy
+msgid ""
+"Before you can install software, complete the following tasks:\n"
+"   \n"
+"1. Select your source media.\n"
+"2. Set up your target Linux partition(s).\n"
+"\n"
+"You may also optionally remap your keyboard and set up your swap "
+"partition(s).\n"
+"\n"
+"Press ENTER to return to the main menu."
+msgstr ""
+"\n"
+"Før du kan installere programvarene må du gjøre følgende:\n"
+"\n"
+"1. Velg din media kilde.\n"
+"2. Sett opp Linux mål partisjonen(e).\n"
+"3. Velg programvare kategorier å installere.\n"
+"\n"
+"Du kan rekonfigurere tastaturet eller sette opp swap partisjonen(e) først "
+"hvis du vil.\n"
+"\n"
+"Trykk ENTER for å gå tilbake til hoved menyen."
+
+#
+# File: 32-display.lilohelp, line: 106
+# File: 64-display.lilohelp, line: 106
+#, fuzzy
+msgid "SELECT INSTALLATION MODE"
+msgstr "LILO INSTALLASJONS HJELP"
+
+#
+# File: setup, line: 238
+msgid ""
+"Please select the installation mode you prefer from the following:\n"
+"BASIC will only install a minimal graphical environment and a web browser.\n"
+"CORE will install only the minimum essentials for your system to start in "
+"console mode (no graphical environment included) and is ideal if you are an "
+"experienced user and want to fully customize your installation for any "
+"specific purpose.\n"
+msgstr ""
+
+#
+# File: setup, line: 248
+# File: setup, line: 270
+msgid "Install a minimal graphical environment"
+msgstr ""
+
+#
+# File: setup, line: 249
+# File: setup, line: 271
+msgid "Install a minimal console system"
+msgstr ""
+
+#
+# File: setup, line: 256
+msgid ""
+"Please select the installation mode you prefer from the following:\n"
+"FULL (default) will install everything. That includes one application per "
+"task, such as an office suite, a multimedia player, a CD/DVD burner etc. "
+"BASIC will only install a minimal graphical environment and a web browser.\n"
+"CORE will install only the minimum essentials for your system to start in "
+"console mode (no graphical environment included) and is ideal if you are an "
+"experienced user and want to fully customize your installation for any "
+"specific purpose.\n"
+msgstr ""
+
+#
+# File: setup, line: 269
+msgid "Install everything"
+msgstr ""
+
+#
+# File: 32-setup, line: 346
+# File: 64-setup, line: 346
+msgid "REPLACE /etc/fstab?"
+msgstr "ERSTATT /etc/fstab?"
+
+#
+# File: 32-setup, line: 346
+# File: 64-setup, line: 346
+#, fuzzy
+msgid ""
+"You already have an /etc/fstab on your install partition.\n"
+"\n"
+"If you were just adding software, you should probably keep your old /etc/"
+"fstab.\n"
+"\n"
+"If you've changed your partitioning scheme, you should use the new /etc/"
+"fstab.\n"
+"\n"
+"Do you want to replace your old /etc/fstab with the new one?"
+msgstr ""
+"Du har allerede en /etc/fstab på installasjons partisjonen. Hvis du bare "
+"legger til programvarer bør du beholde den gamle /etc/fstab. Hvis du har "
+"endret partisjonsoppsettet bør du bruke den nye /etc/fstab. Vil du erstatte "
+"den gamle /etc/fstab med den nye?"
+
+#
+# File: 32-display.lilohelp, line: 106
+# File: 64-display.lilohelp, line: 106
+#, fuzzy
+msgid "SALIX INSTALLATION IS COMPLETE"
+msgstr "LILO INSTALLASJONS HJELP"
+
+#
+# File: setup, line: 372
+# File: setup, line: 379
+msgid "Reboot now"
+msgstr ""
+
+#
+# File: setup, line: 373
+# File: setup, line: 380
+msgid "Exit to command line"
+msgstr ""
+
+#
+# File: setup, line: 374
+msgid ""
+"System configuration and installation is complete. Please remove the "
+"installation disc. You can either select to reboot your system now or choose "
+"to exit the installation to the command line if you would like to do any "
+"manual tweaking."
+msgstr ""
+
+#
+# File: 32-setup, line: 472
+# File: 64-setup, line: 472
+#, fuzzy
+msgid ""
+"System configuration and installation is complete. You can either select to "
+"reboot your system now or choose to exit the installation to the command "
+"line if you would like to do any manual tweaking."
+msgstr ""
+"System konfigurasjon og installasjon er ferdig. Du kan AVSLUTTE setup og "
+"restarte maskinen med ctrl-alt-delete."
