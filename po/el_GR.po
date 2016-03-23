@@ -9,7 +9,7 @@
 # rmoki <rmoki@scita.gr>, 2013.
 msgid ""
 msgstr ""
-"Project-Id-Version: Salix-15.2\n"
+"Project-Id-Version: Salix-14.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-23 18:24+0100\n"
 "PO-Revision-Date: 2016-03-21 23:23+0100\n"

@@ -5,7 +5,7 @@
 # Ingemar Karlsson <ingemar@ingk.se>, 2014,2016.
 msgid ""
 msgstr ""
-"Project-Id-Version: Salix-15.2\n"
+"Project-Id-Version: Salix-14.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-23 18:24+0100\n"
 "PO-Revision-Date: 2016-03-22 00:42+0100\n"

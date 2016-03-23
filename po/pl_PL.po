@@ -9,7 +9,7 @@
 # Piotr Maksymiec <parkette.pjm@gmail.com>, 2013, 2016.
 msgid ""
 msgstr ""
-"Project-Id-Version: Salix-15.2\n"
+"Project-Id-Version: Salix-14.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-23 18:24+0100\n"
 "PO-Revision-Date: 2016-03-22 00:04+0100\n"
