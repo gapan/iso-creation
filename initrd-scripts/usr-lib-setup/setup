@@ -379,7 +379,7 @@ if [ -f /mnt/etc/fstab ]; then
        --yes-label "`gettext "Reboot now"`" \
        --no-label "`gettext "Exit to command line"`" \
        --yesno "`gettext "System configuration and installation is complete. You can either select to reboot your system now or choose to exit the installation to the command line if you would like to do any manual tweaking."`" \
-       0 O
+       0 0
        retval=$?
   fi
   echo
