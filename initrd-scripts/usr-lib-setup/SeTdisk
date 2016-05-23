@@ -30,9 +30,9 @@ filesystem, LILO the default boot loader will not be able to boot it. \
 In that case, you will need a separate /boot partition with another \
 filesystem."`
 
-`gettext "You usually need at least 2 partitions:
-- 1 LINUX bootable partition (10GB minimum recommended)
-- 1 SWAP partition (1GB minimum recommended) :"`" \
+`gettext "You usually need at least 2 partitions:"`
+- `gettext "1 LINUX bootable partition (10GB minimum recommended)"`
+- `gettext "1 SWAP partition (1GB minimum recommended)"`:" \
 0 0 0 ${dglist} )
 # $(($n+12)) 75 $(($n+1)) ${dglist} )
 
