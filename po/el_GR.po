@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Salix-14.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-23 18:24+0100\n"
+"POT-Creation-Date: 2016-05-23 21:21+0300\n"
 "PO-Revision-Date: 2016-03-21 23:23+0100\n"
 "Last-Translator: \n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
@@ -23,13 +23,360 @@ msgstr ""
 "X-Generator: Lokalize 1.5\n"
 
 #
+# File: 32-liloconfig, line: 815
+# File: 64-liloconfig, line: 815
+#: ../initrd-scripts/usr-lib-setup/setup:52
+#, fuzzy
+msgid "WELCOME TO THE SALIX INSTALLATION"
+msgstr "ΕΓΚΑΤΑΣΤΑΣΗ ΤΟΥ LILO ΓΙΑ ΕΜΠΕΙΡΟΥΣ"
+
+#
+# File: 32-pkgtool, line: 442
+# File: 64-pkgtool, line: 442
+#: ../initrd-scripts/usr-lib-setup/setup:53
+#, fuzzy
+msgid "Keep the current keymap"
+msgstr "Παραλείψτε την παρούσα σειρά δίσκων"
+
+#
+# File: global-blurbs, line: 17
+#: ../initrd-scripts/usr-lib-setup/setup:54
+#, fuzzy
+msgid "Select another keymap"
+msgstr "Επιλέξτε γραμματοσειρά για την γραμμή εντολών"
+
+#
+# File: 32-INSCD, line: 234
+# File: 64-INSCD, line: 234
+#: ../initrd-scripts/usr-lib-setup/setup:66
+#: ../initrd-scripts/usr-lib-setup/setup:84
+#, fuzzy
+msgid "Salix Installation"
+msgstr "Ακύρωση εγκατάστασης μέσω CD"
+
+#
+# File: 32-SeTDOS, line: 118
+# File: 32-SeTpartitions, line: 323
+# File: 32-SeTpartitions, line: 412
+# File: 64-SeTDOS, line: 118
+# File: 64-SeTpartitions, line: 323
+# File: 64-SeTpartitions, line: 412
+#: ../initrd-scripts/usr-lib-setup/setup:67
+#: ../initrd-scripts/usr-lib-setup/setup:86
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:117
+#: ../initrd-scripts/usr-lib-setup/SeTkeymap:20
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:324
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:413
+msgid "Select"
+msgstr "Επιλογή"
+
+#
+# File: 32-INSCD, line: 234
+# File: 64-INSCD, line: 234
+#: ../initrd-scripts/usr-lib-setup/setup:68
+#: ../initrd-scripts/usr-lib-setup/setup:87
+#, fuzzy
+msgid "Exit installation"
+msgstr "Ακύρωση εγκατάστασης μέσω CD"
+
+#
+# File: setup, line: 70
+#: ../initrd-scripts/usr-lib-setup/setup:70
+msgid ""
+"You may now proceed with the installation by pressing the ENTER key.\n"
+"\n"
+"If you want to exit the installation and drop to a linux console, select "
+"'Exit installation'"
+msgstr ""
+
+#
+# File: setup, line: 74
+# File: setup, line: 94
+#: ../initrd-scripts/usr-lib-setup/setup:74
+#: ../initrd-scripts/usr-lib-setup/setup:94
+msgid "Install Salix using a step-by-step guide"
+msgstr ""
+
+#
+# File: 32-pxesetup, line: 52
+# File: 64-pxesetup, line: 52
+#: ../initrd-scripts/usr-lib-setup/setup:89
+#, fuzzy
+msgid ""
+"You may select an option below using the UP/DOWN keys and SPACE or ENTER. "
+"Alternate keys may also be used: '+', '-', and TAB.\n"
+"\n"
+"If you want to exit the installation and drop to a linux console, select "
+"'Exit installation'"
+msgstr ""
+"Καλωσήλθατε στις ρυθμίσεις του Salix PXE.\n"
+"Κάντε μια από τις παρακάτω επιλογές χρησιμοποιώντας τα πλήκτρα UP/DOWN και "
+"το SPACE ή το ENTER.\n"
+"\n"
+"Μπορούν, επίσης, να χρησιμοποιηθούν και τα εναλλακτικά πλήκτρα: '+', '-', "
+"και το TAB."
+
+#
+# File: setup, line: 95
+#: ../initrd-scripts/usr-lib-setup/setup:95
+msgid "Autopartition and install with few options (wipes your HD)"
+msgstr ""
+
+#
+# File: 32-setup, line: 57
+# File: 64-setup, line: 57
+#: ../initrd-scripts/usr-lib-setup/setup:126
+msgid "NO LINUX PARTITIONS DETECTED"
+msgstr "ΔΕΝ ΒΡΕΘΗΚΑΝ ΚΑΤΑΤΜΗΣΕΙΣ LINUX"
+
+#
+# File: 32-setup, line: 58
+# File: 64-setup, line: 58
+#: ../initrd-scripts/usr-lib-setup/setup:127
+#, fuzzy
+msgid ""
+"There don't seem to be any Linux partitions on this machine.\n"
+"\t\tYou'll need to make at least one of these to install Linux. Either "
+"select AUTOINSTALL from the menu, or select INSTALL and use the partition "
+"editor to create one."
+msgstr ""
+"Δεν φαίνεται να υπάρχουν καθόλου κατατμήσεις τύπου Linux σε αυτό το "
+"μηχάνημα. Πρέπει να φτιάξετε τουλάχιστον μία από αυτές για να εγκαταστήσετε "
+"το Linux. Για να το πετύχετε, πρέπει να αφήσετε το 'setup' και δημιουργήστε "
+"τις κατατμήσεις χρησιμοποιώντας το 'cfdisk' (κατατμήσεις MBR) ή το "
+"'cgfdisk' (κατατμήσεις GPT). Για περισσότερες πληροφορίες, διαβάστε το "
+"αρχείο βοήθειας του 'setup' από το επόμενο μενού."
+
+#
+# File: 32-setup, line: 67
+# File: 64-setup, line: 67
+#: ../initrd-scripts/usr-lib-setup/setup:133
+msgid "NO EFI SYSTEM PARTITION DETECTED"
+msgstr "ΔΕΝ ΕΝΤΟΠΙΣΘΗΚΕ ΚΑΜΙΑ ΚΑΤΑΤΜΗΣΗ ΣΥΣΤΗΜΑΤΟΣ ΜΕ EFI"
+
+#
+# File: 32-setup, line: 68
+# File: 64-setup, line: 68
+#: ../initrd-scripts/usr-lib-setup/setup:134
+#, fuzzy
+msgid ""
+"This machine appears to be using EFI/UEFI, but no EFI System Partition was "
+"found.\n"
+"\n"
+"You'll need to make an EFI System Partition in order to boot from the hard "
+"drive."
+msgstr ""
+"Αυτό το μηχάνημα φαίνεται πως χρησιμοποιεί EFI/UEFI, αλλά δεν βρέθηκε καμία "
+"κατάτμηση συστήματος EFI.  Θα πρέπει να δημιουργήσετε μια Κατάτμηση "
+"Συστήματος EFI για να μπορέσετε να κάνετε εκκίνηση από τον σκληρό.  Για να "
+"το καταφέρετε, αφήστε το 'setup', και χρησιμοποιήστε το 'cgdisk' για να "
+"δημιουργήσετε μια κατάτμηση 100MB του είδους EF00.  Για περισσότερες "
+"πληροφορίες, διαβάστε το αρχείο βοήθειας 'setup' από το επόμενο μενού."
+
+#
+# File: setup, line: 162
+# File: setup, line: 169
+#: ../initrd-scripts/usr-lib-setup/setup:162
+#: ../initrd-scripts/usr-lib-setup/setup:169
+msgid "-s"
+msgstr ""
+
+#
+# File: setup, line: 202
+#: ../initrd-scripts/usr-lib-setup/setup:202
+msgid "No Source Selected"
+msgstr ""
+
+#
+# File: setup, line: 203
+#: ../initrd-scripts/usr-lib-setup/setup:203
+msgid ""
+"\n"
+"The installer does not know where to find the source packages...\n"
+"Press ENTER to return to the main menu."
+msgstr ""
+
+#
+# File: 32-setup, line: 179
+# File: 64-setup, line: 179
+#: ../initrd-scripts/usr-lib-setup/setup:214
+msgid "CANNOT INSTALL SOFTWARE YET"
+msgstr "ΔΕΝ ΜΠΟΡΕΙ ΑΚΟΜΗ ΝΑ ΓΙΝΕΙ ΕΓΚΑΤΑΣΤΑΣΗ ΛΟΓΙΣΜΙΚΟΥ"
+
+#
+# File: 32-setup, line: 179
+# File: 64-setup, line: 179
+#: ../initrd-scripts/usr-lib-setup/setup:215
+#, fuzzy
+msgid ""
+"Before you can install software, complete the following tasks:\n"
+"   \n"
+"1. Select your source media.\n"
+"2. Set up your target Linux partition(s).\n"
+"\n"
+"You may also optionally remap your keyboard and set up your swap "
+"partition(s).\n"
+"\n"
+"Press ENTER to return to the main menu."
+msgstr ""
+"\n"
+"Πριν μπορέσετε να εγκαταστήσετε λογισμικό, διεκπεραιώστε τις ακόλουθες "
+"εργασίες:\n"
+"\n"
+"1. Επιλέξτε το μέσον προέλευσης.\n"
+"2. Ρυθμίστε την κατάτμησή σας (κατατμήσεις) για Linux partition.\n"
+"3. Επιλέξτε ποιων κατηγοριών λογισμικό θα εγκαταστήσετε.\n"
+"\n"
+"Μπορείτε, επίσης, προαιρετικά, να αλλάξετε την διάταξη του πληκτρολογίου σας "
+"και να ρυθμίσετε την κατάτμησή σας (κατατμήσεις) για εικονική μνήμη/swap.\n"
+"\n"
+"Πατήστε ENTER για να επιστρέψετε στο βασικό μενού."
+
+#
+# File: 32-display.lilohelp, line: 106
+# File: 64-display.lilohelp, line: 106
+#: ../initrd-scripts/usr-lib-setup/setup:236
+#: ../initrd-scripts/usr-lib-setup/setup:253
+#, fuzzy
+msgid "SELECT INSTALLATION MODE"
+msgstr "ΒΟΗΘΕΙΑ ΕΓΚΑΤΑΣΤΑΣΗΣ ΤΟΥ LILO"
+
+#
+# File: setup, line: 238
+#: ../initrd-scripts/usr-lib-setup/setup:238
+msgid ""
+"Please select the installation mode you prefer from the following:\n"
+"BASIC will only install a minimal graphical environment and a web browser.\n"
+"CORE will install only the minimum essentials for your system to start in "
+"console mode (no graphical environment included) and is ideal if you are an "
+"experienced user and want to fully customize your installation for any "
+"specific purpose.\n"
+msgstr ""
+
+#
+# File: setup, line: 248
+# File: setup, line: 270
+#: ../initrd-scripts/usr-lib-setup/setup:248
+#: ../initrd-scripts/usr-lib-setup/setup:270
+msgid "Install a minimal graphical environment"
+msgstr ""
+
+#
+# File: setup, line: 249
+# File: setup, line: 271
+#: ../initrd-scripts/usr-lib-setup/setup:249
+#: ../initrd-scripts/usr-lib-setup/setup:271
+msgid "Install a minimal console system"
+msgstr ""
+
+#
+# File: setup, line: 256
+#: ../initrd-scripts/usr-lib-setup/setup:256
+msgid ""
+"Please select the installation mode you prefer from the following:\n"
+"FULL (default) will install everything. That includes one application per "
+"task, such as an office suite, a multimedia player, a CD/DVD burner etc. "
+"BASIC will only install a minimal graphical environment and a web browser.\n"
+"CORE will install only the minimum essentials for your system to start in "
+"console mode (no graphical environment included) and is ideal if you are an "
+"experienced user and want to fully customize your installation for any "
+"specific purpose.\n"
+msgstr ""
+
+#
+# File: setup, line: 269
+#: ../initrd-scripts/usr-lib-setup/setup:269
+msgid "Install everything"
+msgstr ""
+
+#
+# File: 32-setup, line: 346
+# File: 64-setup, line: 346
+#: ../initrd-scripts/usr-lib-setup/setup:297
+msgid "REPLACE /etc/fstab?"
+msgstr "ΝΑ ΑΝΤΙΚΑΤΑΣΤΑΘΕΙ το  /etc/fstab ;"
+
+#
+# File: 32-setup, line: 346
+# File: 64-setup, line: 346
+#: ../initrd-scripts/usr-lib-setup/setup:298
+#, fuzzy
+msgid ""
+"You already have an /etc/fstab on your install partition.\n"
+"\n"
+"If you were just adding software, you should probably keep your old /etc/"
+"fstab.\n"
+"\n"
+"If you've changed your partitioning scheme, you should use the new /etc/"
+"fstab.\n"
+"\n"
+"Do you want to replace your old /etc/fstab with the new one?"
+msgstr ""
+"Έχετε ήδη ένα /etc/fstab στην κατάτμησή σας με την εγκατάσταση.  Αν απλώς "
+"προσθέτετε λογισμικό, θα πρέπει πιθανώς να διατηρήσετε το παλιό σας /etc/"
+"fstab.  Αν αλλάξετε το σχήμα/ scheme κατάτμησή σας, τότε θα πρέπει να "
+"χρησιμοποιήσετε το καινούργιο σας /etc/fstab.  Θέλετε να αντικαταστήσετε το "
+"παλιό σας /etc/fstab με το νέο;"
+
+#
+# File: 32-display.lilohelp, line: 106
+# File: 64-display.lilohelp, line: 106
+#: ../initrd-scripts/usr-lib-setup/setup:371
+#: ../initrd-scripts/usr-lib-setup/setup:378
+#, fuzzy
+msgid "SALIX INSTALLATION IS COMPLETE"
+msgstr "ΒΟΗΘΕΙΑ ΕΓΚΑΤΑΣΤΑΣΗΣ ΤΟΥ LILO"
+
+#
+# File: setup, line: 372
+# File: setup, line: 379
+#: ../initrd-scripts/usr-lib-setup/setup:372
+#: ../initrd-scripts/usr-lib-setup/setup:379
+msgid "Reboot now"
+msgstr ""
+
+#
+# File: setup, line: 373
+# File: setup, line: 380
+#: ../initrd-scripts/usr-lib-setup/setup:373
+#: ../initrd-scripts/usr-lib-setup/setup:380
+msgid "Exit to command line"
+msgstr ""
+
+#
+# File: setup, line: 374
+#: ../initrd-scripts/usr-lib-setup/setup:374
+msgid ""
+"System configuration and installation is complete. Please remove the "
+"installation disc. You can either select to reboot your system now or choose "
+"to exit the installation to the command line if you would like to do any "
+"manual tweaking."
+msgstr ""
+
+#
+# File: 32-setup, line: 472
+# File: 64-setup, line: 472
+#: ../initrd-scripts/usr-lib-setup/setup:381
+#, fuzzy
+msgid ""
+"System configuration and installation is complete. You can either select to "
+"reboot your system now or choose to exit the installation to the command "
+"line if you would like to do any manual tweaking."
+msgstr ""
+"Η διαμόρφωση και η ρύθμιση του συστήματος ολοκληρώθηκαν. Μπορείτε να κάνετε "
+"ΕΞΟΔΟ από τις ρυθμίσεις και να επανεκκινήσετε τον υπολογιστή σας, πατώντας "
+"ctrl-alt-del"
+
+#
 # File: 32-INCISO, line: 14
 # File: 64-INCISO, line: 14
+#: ../initrd-scripts/usr-lib-setup/INCISO:27
 msgid "USE ISO IMAGE"
 msgstr "ΧΡΗΣΗ ΤΗΣ ΕΙΚΟΝΑΣ ISO"
 
 #
 # File: INCISO, line: 33
+#: ../initrd-scripts/usr-lib-setup/INCISO:33
 msgid ""
 "\n"
 "Setup has found ISO images in the source directory.\n"
@@ -39,6 +386,7 @@ msgstr ""
 
 #
 # File: INCISO, line: 52
+#: ../initrd-scripts/usr-lib-setup/INCISO:52
 msgid ""
 "\n"
 "Mounting ISO image...\n"
@@ -47,12 +395,14 @@ msgstr ""
 #
 # File: 32-INSCD, line: 15
 # File: 64-INSCD, line: 15
+#: ../initrd-scripts/usr-lib-setup/INSCD:14
 msgid "SCANNING FOR CD or DVD DRIVE"
 msgstr "ΣΑΡΩΣΗ ΓΙΑ ΜΟΝΑΔΑ CD/DVD"
 
 #
 # File: 32-INSCD, line: 16
 # File: 64-INSCD, line: 16
+#: ../initrd-scripts/usr-lib-setup/INSCD:15
 #, fuzzy
 msgid ""
 "Make sure the Salix disc is in your CD/DVD drive, and then press ENTER to "
@@ -67,12 +417,14 @@ msgstr ""
 #
 # File: 32-INSCD, line: 21
 # File: 64-INSCD, line: 21
+#: ../initrd-scripts/usr-lib-setup/INSCD:20
 msgid "Scan for the CD or DVD drive (recommended)"
 msgstr "Αυτόματη ανίχνευση της μονάδας CD/DVD (συνιστάται)"
 
 #
 # File: 32-INSCD, line: 22
 # File: 64-INSCD, line: 22
+#: ../initrd-scripts/usr-lib-setup/INSCD:21
 msgid "Manually specify CD or DVD by device name"
 msgstr ""
 "Χειρωνακτικός καθορισμός της μονάδας CD/DVD: Πληκτρολογήστε το όνομα της "
@@ -81,12 +433,14 @@ msgstr ""
 #
 # File: 32-INSCD, line: 31
 # File: 64-INSCD, line: 31
+#: ../initrd-scripts/usr-lib-setup/INSCD:30
 msgid "MANUAL CD/DVD DEVICE SELECTION"
 msgstr "ΜΗ ΑΥΤΟΜΑΤΗ ΕΠΙΛΟΓΗ ΤΗΣ ΜΟΝΑΔΑΣ CD/DVD"
 
 #
 # File: 32-INSCD, line: 32
 # File: 64-INSCD, line: 32
+#: ../initrd-scripts/usr-lib-setup/INSCD:31
 msgid ""
 "Please select your CD/DVD device from the list below.  If you don't see your "
 "device listed, choose 'custom'.  This will let you type in any device name. "
@@ -99,6 +453,7 @@ msgstr ""
 #
 # File: 32-INSCD, line: 37
 # File: 64-INSCD, line: 37
+#: ../initrd-scripts/usr-lib-setup/INSCD:36
 msgid "Type in the CD or DVD device to use"
 msgstr ""
 "Πληκτρολογήστε το όνομα της συσκευής που αντιστοιχεί στη μονάδα CD/DVD που "
@@ -107,132 +462,154 @@ msgstr ""
 #
 # File: 32-INSCD, line: 38
 # File: 64-INSCD, line: 38
+#: ../initrd-scripts/usr-lib-setup/INSCD:37
 msgid "First CD/DVD drive"
 msgstr "Πρώτο CD/DVD"
 
 #
 # File: 32-INSCD, line: 39
 # File: 64-INSCD, line: 39
+#: ../initrd-scripts/usr-lib-setup/INSCD:38
 msgid "Second CD/DVD drive"
 msgstr "Δεύτερο CD/DVD"
 
 #
 # File: 32-INSCD, line: 40
 # File: 64-INSCD, line: 40
+#: ../initrd-scripts/usr-lib-setup/INSCD:39
 msgid "Third CD/DVD drive"
 msgstr "Τρίτο CD/DVD"
 
 #
 # File: 32-INSCD, line: 41
 # File: 64-INSCD, line: 41
+#: ../initrd-scripts/usr-lib-setup/INSCD:40
 msgid "Fourth CD/DVD drive"
 msgstr "Τέταρτο CD/DVD"
 
 #
 # File: 32-INSCD, line: 50
 # File: 64-INSCD, line: 50
+#: ../initrd-scripts/usr-lib-setup/INSCD:41
 msgid "First parallel port ATAPI CD"
 msgstr "Πρώτο CD ATAPI σε παράλληλη θύρα"
 
 #
 # File: 32-INSCD, line: 51
 # File: 64-INSCD, line: 51
+#: ../initrd-scripts/usr-lib-setup/INSCD:42
 msgid "Second parallel port ATAPI CD"
 msgstr "Δεύτερο CD ATAPI σε παράλληλη θύρα"
 
 #
 # File: 32-INSCD, line: 52
 # File: 64-INSCD, line: 52
+#: ../initrd-scripts/usr-lib-setup/INSCD:43
 msgid "Third parallel port ATAPI CD"
 msgstr "Τρίτο CD ATAPI σε παράλληλη θύρα"
 
 #
 # File: 32-INSCD, line: 53
 # File: 64-INSCD, line: 53
+#: ../initrd-scripts/usr-lib-setup/INSCD:44
 msgid "Fourth parallel port ATAPI CD"
 msgstr "Τέταρτο CD ATAPI σε παράλληλη θύρα"
 
 #
 # File: 32-INSCD, line: 54
 # File: 64-INSCD, line: 54
+#: ../initrd-scripts/usr-lib-setup/INSCD:45
 msgid "Non-IDE Aztech CD/DVD"
 msgstr "CD/DVD Aztech όχι IDE"
 
 #
 # File: 32-INSCD, line: 55
 # File: 64-INSCD, line: 55
+#: ../initrd-scripts/usr-lib-setup/INSCD:46
 msgid "Sony CDU-535 CD/DVD"
 msgstr "CD/DVD Sony CDU-535"
 
 #
 # File: 32-INSCD, line: 56
 # File: 64-INSCD, line: 56
+#: ../initrd-scripts/usr-lib-setup/INSCD:47
 msgid "Non-IDE GoldStar CD/DVD"
 msgstr "CD/DVD GoldStar όχι IDE"
 
 #
 # File: 32-INSCD, line: 57
 # File: 64-INSCD, line: 57
+#: ../initrd-scripts/usr-lib-setup/INSCD:48
 msgid "Sony CDU-31a CD/DVD"
 msgstr "CD/DVD Sony CDU-31a"
 
 #
 # File: 32-INSCD, line: 58
 # File: 64-INSCD, line: 58
+#: ../initrd-scripts/usr-lib-setup/INSCD:49
 msgid "Optics Storage CD/DVD"
 msgstr "CD/DVD Optics Storage"
 
 #
 # File: 32-INSCD, line: 59
 # File: 64-INSCD, line: 59
+#: ../initrd-scripts/usr-lib-setup/INSCD:50
 msgid "Sanyo non-IDE CD/DVD"
 msgstr "CD/DVD Sanyo όχι IDE"
 
 #
 # File: 32-INSCD, line: 60
 # File: 64-INSCD, line: 60
+#: ../initrd-scripts/usr-lib-setup/INSCD:51
 msgid "Non-IDE Mitsumi drive 1"
 msgstr "Οδηγός Mitsumi 1 όχι IDE"
 
 #
 # File: 32-INSCD, line: 61
 # File: 64-INSCD, line: 61
+#: ../initrd-scripts/usr-lib-setup/INSCD:52
 msgid "Non-IDE Mitsumi drive 2"
 msgstr "Οδηγός Mitsumi 2 όχι IDE"
 
 #
 # File: 32-INSCD, line: 62
 # File: 64-INSCD, line: 62
+#: ../initrd-scripts/usr-lib-setup/INSCD:53
 msgid "Old non-IDE SoundBlaster CD/DVD"
 msgstr "Παλαιότερα CD/DVD SoundBlaster όχι IDE"
 
 #
 # File: 32-INSCD, line: 63
 # File: 64-INSCD, line: 63
+#: ../initrd-scripts/usr-lib-setup/INSCD:54
 msgid "Philips LMS CM-205 CD/DVD"
 msgstr "CD/DVD Philips LMS CM-205"
 
 #
 # File: 32-INSCD, line: 64
 # File: 64-INSCD, line: 64
+#: ../initrd-scripts/usr-lib-setup/INSCD:55
 msgid "Philips LMS CM-206 CD/DVD"
 msgstr "CD/DVD Philips LMS CM-206"
 
 #
 # File: 32-INSCD, line: 65
 # File: 64-INSCD, line: 65
+#: ../initrd-scripts/usr-lib-setup/INSCD:56
 msgid "Old non-IDE Mitsumi CD/DVD"
 msgstr "Παλαιότερο CD/DVD Mitsumi όχι IDE"
 
 #
 # File: 32-INSCD, line: 74
 # File: 64-INSCD, line: 74
+#: ../initrd-scripts/usr-lib-setup/INSCD:65
 msgid "ENTER CD/DVD DEVICE MANUALLY"
 msgstr "ΜΗ ΑΥΤΟΜΑΤΗ ΕΠΙΛΟΓΗ ΜΟΝΑΔΑΣ CD/DVD"
 
 #
 # File: 32-INSCD, line: 75
 # File: 64-INSCD, line: 75
+#: ../initrd-scripts/usr-lib-setup/INSCD:66
 #, fuzzy
 msgid ""
 "Please enter the name of the CD/DVD device (such as /dev/hdc) that you wish "
@@ -244,12 +621,14 @@ msgstr ""
 #
 # File: 32-INSCD, line: 86
 # File: 64-INSCD, line: 86
+#: ../initrd-scripts/usr-lib-setup/INSCD:77
 msgid "MKNOD CD/DVD DEVICE"
 msgstr "MKNOD CD/DVD DEVICE"
 
 #
 # File: 32-INSCD, line: 87
 # File: 64-INSCD, line: 87
+#: ../initrd-scripts/usr-lib-setup/INSCD:78
 #, sh-format
 msgid ""
 "There doesn't seem to be a device by the name of $DRIVE_FOUND in the /dev "
@@ -272,18 +651,21 @@ msgstr ""
 #
 # File: 32-INSCD, line: 102
 # File: 64-INSCD, line: 102
+#: ../initrd-scripts/usr-lib-setup/INSCD:93
 msgid "MAKING DEVICE IN /dev"
 msgstr "ΔΗΜΙΟΥΡΓΙΑ ΣΥΣΚΕΥΗΣ ΣΤΟ /dev"
 
 #
 # File: 32-INSCD, line: 107
 # File: 64-INSCD, line: 107
+#: ../initrd-scripts/usr-lib-setup/INSCD:98
 msgid "MKNOD FAILED"
 msgstr "ΤΟ MKNOD ΑΠΕΤΥΧΕ"
 
 #
 # File: 32-INSCD, line: 108
 # File: 64-INSCD, line: 108
+#: ../initrd-scripts/usr-lib-setup/INSCD:99
 msgid ""
 "Sorry, but the mknod command failed to make the device.  You'll need to go "
 "back and try selecting your source media again.  Press ENTER to abort the "
@@ -303,12 +685,16 @@ msgstr ""
 # File: 64-INSCD, line: 139
 # File: 64-INSCD, line: 159
 # File: 64-INSCD, line: 179
+#: ../initrd-scripts/usr-lib-setup/INSCD:114
+#: ../initrd-scripts/usr-lib-setup/INSCD:131
+#: ../initrd-scripts/usr-lib-setup/INSCD:151
 msgid "SCANNING"
 msgstr "ΑΝΙΧΝΕΥΣΗ"
 
 #
 # File: 32-INSCD, line: 122
 # File: 64-INSCD, line: 122
+#: ../initrd-scripts/usr-lib-setup/INSCD:114
 #, fuzzy
 msgid "Scanning for a CD/DVD drive containing a Salix disc..."
 msgstr "Ανίχνευση συσκευής CD/DVD που περιέχει το CD του Salix."
@@ -316,6 +702,7 @@ msgstr "Ανίχνευση συσκευής CD/DVD που περιέχει το 
 #
 # File: 32-INSCD, line: 159
 # File: 64-INSCD, line: 159
+#: ../initrd-scripts/usr-lib-setup/INSCD:131
 #, fuzzy
 msgid ""
 "Scanning for a parallel port ATAPI CD/DVD drive containing a Salix disc..."
@@ -326,6 +713,7 @@ msgstr ""
 #
 # File: 32-INSCD, line: 179
 # File: 64-INSCD, line: 179
+#: ../initrd-scripts/usr-lib-setup/INSCD:151
 msgid ""
 "No IDE/SCSI drive, so we will try scanning for CD drives on old proprietary "
 "interfaces, such as SoundBlaster pre-IDE CD drives, Sony CDU-31a, Sony 535, "
@@ -344,12 +732,14 @@ msgstr ""
 #
 # File: 32-INSCD, line: 200
 # File: 64-INSCD, line: 200
+#: ../initrd-scripts/usr-lib-setup/INSCD:174
 msgid "CD/DVD DRIVE NOT FOUND"
 msgstr "Η ΜΟΝΑΔΑ CD/DVD ΔΕΝ ΒΡΕΘΗΚΕ"
 
 #
 # File: 32-INSCD, line: 201
 # File: 64-INSCD, line: 201
+#: ../initrd-scripts/usr-lib-setup/INSCD:175
 #, fuzzy
 msgid ""
 "A CD/DVD drive could not be found on any of the devices that were scanned.  "
@@ -386,13 +776,14 @@ msgstr ""
 #
 # File: 32-INSCD, line: 223
 # File: 64-INSCD, line: 223
-#. mounted successfully
+#: ../initrd-scripts/usr-lib-setup/INSCD:197
 msgid "CD/DVD DRIVE FOUND"
 msgstr "ΑΝΙΧΝΕΥΤΗΚΕ ΜΟΝΑΔΑ CD/DVD"
 
 #
 # File: 32-INSCD, line: 224
 # File: 64-INSCD, line: 224
+#: ../initrd-scripts/usr-lib-setup/INSCD:198
 #, fuzzy, sh-format
 msgid "A Salix disc was found in device $DRIVE_FOUND."
 msgstr "Η ΜΟΝΑΔΑ $DRIVE_FOUND ΠΕΡΙΕΧΕΙ ΕΝΑ CD SALIX"
@@ -404,13 +795,14 @@ msgstr "Η ΜΟΝΑΔΑ $DRIVE_FOUND ΠΕΡΙΕΧΕΙ ΕΝΑ CD SALIX"
 # File: 64-INSCD, line: 227
 # File: 64-INShd, line: 98
 # File: 64-pkgtool, line: 431
-#. failed to mount
+#: ../initrd-scripts/usr-lib-setup/INSCD:201
 msgid "MOUNT ERROR"
 msgstr "Η ΑΝΑΡΤΗΣΗ ΑΠΕΤΥΧΕ"
 
 #
 # File: 32-INSCD, line: 227
 # File: 64-INSCD, line: 227
+#: ../initrd-scripts/usr-lib-setup/INSCD:201
 #, sh-format
 msgid ""
 "There was an error attempting to mount the CD/DVD on $DRIVE_FOUND.  Maybe "
@@ -426,12 +818,14 @@ msgstr ""
 #
 # File: 32-INSCD, line: 234
 # File: 64-INSCD, line: 234
+#: ../initrd-scripts/usr-lib-setup/INSCD:208
 msgid "Abort CD installation"
 msgstr "Ακύρωση εγκατάστασης μέσω CD"
 
 #
 # File: 32-INSCD, line: 235
 # File: 64-INSCD, line: 235
+#: ../initrd-scripts/usr-lib-setup/INSCD:209
 msgid "Attempt to mount the CD/DVD device again"
 msgstr "Επανάληψη ανάρτησης CD"
 
@@ -440,12 +834,14 @@ msgstr "Επανάληψη ανάρτησης CD"
 # File: 32-INShd, line: 100
 # File: 64-INSCD, line: 236
 # File: 64-INShd, line: 100
+#: ../initrd-scripts/usr-lib-setup/INSCD:210
 msgid "Ignore the error and continue"
 msgstr "Συνέχεια της εγκατάστασης, αγνοώντας το σφάλμα"
 
 #
 # File: 32-INSCD, line: 248
 # File: 64-INSCD, line: 248
+#: ../initrd-scripts/usr-lib-setup/INSCD:222
 #, sh-format
 msgid "ATTEMPTING TO MOUNT CD/DVD on $DRIVE_FOUND"
 msgstr "ΑΠΟΠΕΙΡΑ ΑΝΑΡΤΗΣΗΣ ΤΟΥ CD/DVD ΣΤΟ $DRIVE_FOUND"
@@ -453,6 +849,7 @@ msgstr "ΑΠΟΠΕΙΡΑ ΑΝΑΡΤΗΣΗΣ ΤΟΥ CD/DVD ΣΤΟ $DRIVE_FOUND"
 #
 # File: 32-INSCD, line: 249
 # File: 64-INSCD, line: 249
+#: ../initrd-scripts/usr-lib-setup/INSCD:223
 #, sh-format
 msgid ""
 "Attempting to mount your CD/DVD again with the following command:\n"
@@ -464,6 +861,7 @@ msgstr ""
 #
 # File: 32-INSNFS, line: 24
 # File: 64-INSNFS, line: 24
+#: ../initrd-scripts/usr-lib-setup/INSNFS:23
 #, fuzzy
 msgid ""
 "\n"
@@ -480,6 +878,7 @@ msgstr ""
 #
 # File: 32-INSURL, line: 71
 # File: 64-INSURL, line: 71
+#: ../initrd-scripts/usr-lib-setup/INSNFS:31
 #, fuzzy
 msgid ""
 "Since you're already running on the network, you should be able to use the "
@@ -491,18 +890,21 @@ msgstr ""
 #
 # File: 32-INSNFS, line: 36
 # File: 64-INSNFS, line: 36
+#: ../initrd-scripts/usr-lib-setup/INSNFS:36
 msgid "What is the IP address of your NFS server?"
 msgstr "Ποια είναι η διεύθυνση IP του server NFS;"
 
 #
 # File: 32-INSNFS, line: 38
 # File: 64-INSNFS, line: 38
+#: ../initrd-scripts/usr-lib-setup/INSNFS:38
 msgid "ENTER IP ADDRESS OF NFS SERVER"
 msgstr "ΠΛΗΚΤΡΟΛΟΓΗΣΤΕ ΤΗΝ ΔΙΕΥΘΥΝΣΗ IP ΤΟΥ NFS SERVER ΣΑΣ"
 
 #
 # File: 32-INSURL, line: 86
 # File: 64-INSURL, line: 86
+#: ../initrd-scripts/usr-lib-setup/INSNFS:46
 #, fuzzy, sh-format
 msgid ""
 "\n"
@@ -537,12 +939,17 @@ msgstr ""
 # File: 64-INSURL, line: 97
 # File: 64-INShd, line: 58
 # File: 64-pkgtool, line: 385
+#: ../initrd-scripts/usr-lib-setup/INSNFS:56
+#: ../initrd-scripts/usr-lib-setup/INSSMB:56
+#: ../initrd-scripts/usr-lib-setup/INSURL:97
+#: ../initrd-scripts/usr-lib-setup/INShd:124
 msgid "SELECT SOURCE DIRECTORY"
 msgstr "ΕΠΙΛΕΞΤΕ ΦΑΚΕΛΟ"
 
 #
 # File: 32-INSNFS, line: 64
 # File: 64-INSNFS, line: 64
+#: ../initrd-scripts/usr-lib-setup/INSNFS:64
 #, fuzzy
 msgid ""
 "\n"
@@ -560,12 +967,14 @@ msgstr ""
 #
 # File: 32-INSNFS, line: 68
 # File: 64-INSNFS, line: 68
+#: ../initrd-scripts/usr-lib-setup/INSNFS:70
 msgid "NFS MOUNT INFORMATION"
 msgstr "ΠΛΗΡΟΦΟΡΙΕΣ ΠΡΟΣΑΡΤΗΣΗΣ ΑΠΟΜΑΚΡΥΣΜΕΝΟΥ ΣΥΣΤΗΜΑΤΟΣ ΑΡΧΕΙΩΝ NFS"
 
 #
 # File: 32-INSNFS, line: 83
 # File: 64-INSNFS, line: 83
+#: ../initrd-scripts/usr-lib-setup/INSNFS:79
 #, sh-format
 msgid "Mounting $REMOTE_PATH:"
 msgstr "Προσάρτηση $REMOTE_PATH:"
@@ -573,24 +982,28 @@ msgstr "Προσάρτηση $REMOTE_PATH:"
 #
 # File: 32-INSNFS, line: 88
 # File: 64-INSNFS, line: 88
+#: ../initrd-scripts/usr-lib-setup/INSNFS:84
 msgid "Didn't work."
 msgstr "Αποτυχία"
 
 #
 # File: 32-INSNFS, line: 90
 # File: 64-INSNFS, line: 90
+#: ../initrd-scripts/usr-lib-setup/INSNFS:86
 msgid "Maybe you should check that the directory name is correct?"
 msgstr "Είστε σίγουροι ότι το όνομα φακέλου που πληκτρολογήσατε είναι σωστό;"
 
 #
 # File: 32-INSNFS, line: 97
 # File: 64-INSNFS, line: 97
+#: ../initrd-scripts/usr-lib-setup/INSNFS:93
 msgid "Current NFS mounts:"
 msgstr "Έχουν προσαρτηθεί τα παρακάτω απομακρυσμένα συστήματα αρχείων NFS:"
 
 #
 # File: 32-INSNFS, line: 101
 # File: 64-INSNFS, line: 101
+#: ../initrd-scripts/usr-lib-setup/INSNFS:97
 msgid "Do you need to try setting up NFS again?"
 msgstr "Θέλετε να ξαναδοκιμάσουμε να ρυθμίσουμε το NFS;"
 
@@ -599,12 +1012,15 @@ msgstr "Θέλετε να ξαναδοκιμάσουμε να ρυθμίσουμ
 # File: 32-INSNFS, line: 108
 # File: 64-INSNFS, line: 104
 # File: 64-INSNFS, line: 108
+#: ../initrd-scripts/usr-lib-setup/INSNFS:100
+#: ../initrd-scripts/usr-lib-setup/INSNFS:104
 msgid "NFS MOUNT RESULT"
 msgstr "ΑΠΟΤΕΛΕΣΜΑ ΠΡΟΣΑΡΤΗΣΗΣ NFS:"
 
 #
 # File: 32-INSSMB, line: 23
 # File: 64-INSSMB, line: 23
+#: ../initrd-scripts/usr-lib-setup/INSSMB:22
 #, fuzzy
 msgid ""
 "\n"
@@ -625,6 +1041,8 @@ msgstr ""
 #
 # File: 32-INSURL, line: 71
 # File: 64-INSURL, line: 71
+#: ../initrd-scripts/usr-lib-setup/INSSMB:32
+#: ../initrd-scripts/usr-lib-setup/INSURL:71
 msgid ""
 "Since you're already running on the network, you should be able to use the "
 "hostname instead of an IP address if you wish.\n"
@@ -635,6 +1053,7 @@ msgstr ""
 #
 # File: 32-INSSMB, line: 36
 # File: 64-INSSMB, line: 36
+#: ../initrd-scripts/usr-lib-setup/INSSMB:36
 msgid ""
 "\n"
 "What is the share address of your Samba server? "
@@ -645,12 +1064,14 @@ msgstr ""
 #
 # File: 32-INSSMB, line: 38
 # File: 64-INSSMB, line: 38
+#: ../initrd-scripts/usr-lib-setup/INSSMB:38
 msgid "ENTER SHARE ADDRESS OF SAMBA SERVER"
 msgstr "ΠΛΗΚΤΡΟΛΟΓΗΣΤΕ ΤΗ ΔΙΕΥΘΥΝΣΗ ΤΟΥ SERVER ΔΙΑΜΟΙΡΑΣΜΟΥ ΑΡΧΕΙΩΝ SAMBA"
 
 #
 # File: 32-INSSMB, line: 46
 # File: 64-INSSMB, line: 46
+#: ../initrd-scripts/usr-lib-setup/INSSMB:46
 #, fuzzy, sh-format
 msgid ""
 "\n"
@@ -675,12 +1096,14 @@ msgstr ""
 #
 # File: 32-INSSMB, line: 65
 # File: 64-INSSMB, line: 65
+#: ../initrd-scripts/usr-lib-setup/INSSMB:65
 msgid "You should see no mount errors:"
 msgstr "Εάν δεν εμφανίζονται μηνύματα σφάλματος, είμαστε εντάξει:"
 
 #
 # File: 32-INSSMB, line: 67
 # File: 64-INSSMB, line: 67
+#: ../initrd-scripts/usr-lib-setup/INSSMB:67
 #, sh-format
 msgid "Mounting $REMOTE_SHARE ..."
 msgstr "Προσάρτηση  $REMOTE_SHARE ..."
@@ -688,18 +1111,21 @@ msgstr "Προσάρτηση  $REMOTE_SHARE ..."
 #
 # File: 32-INSSMB, line: 73
 # File: 64-INSSMB, line: 73
+#: ../initrd-scripts/usr-lib-setup/INSSMB:73
 msgid "Mount failed."
 msgstr "Η προσάρτηση απέτυχε."
 
 #
 # File: 32-INSSMB, line: 78
 # File: 64-INSSMB, line: 78
+#: ../initrd-scripts/usr-lib-setup/INSSMB:78
 msgid "Mounted Samba share(s):"
 msgstr "Προσαρτημένοι server Samba:"
 
 #
 # File: 32-INSSMB, line: 85
 # File: 64-INSSMB, line: 85
+#: ../initrd-scripts/usr-lib-setup/INSSMB:85
 #, fuzzy
 msgid "A Salix package tree was found! Ready to continue."
 msgstr "Βρήκαμε ένα κατάλογο με πακέτα Salix! Μπορούμε να συνεχίσουμε."
@@ -707,6 +1133,7 @@ msgstr "Βρήκαμε ένα κατάλογο με πακέτα Salix! Μπορ
 #
 # File: 32-INSSMB, line: 89
 # File: 64-INSSMB, line: 89
+#: ../initrd-scripts/usr-lib-setup/INSSMB:89
 #, fuzzy
 msgid "No Salix package tree found at the indicated path!"
 msgstr "Δεν βρέθηκε κατάλογος με πακέτα Salix στο φάκελο που προσδιορίσατε!"
@@ -714,6 +1141,7 @@ msgstr "Δεν βρέθηκε κατάλογος με πακέτα Salix στο 
 #
 # File: 32-INSSMB, line: 95
 # File: 64-INSSMB, line: 95
+#: ../initrd-scripts/usr-lib-setup/INSSMB:95
 msgid "Do you want to try setting up Samba again?"
 msgstr "Να ξαναπροσπαθήσουμε να ρυθμίσουμε σωστά το Samba;"
 
@@ -722,12 +1150,15 @@ msgstr "Να ξαναπροσπαθήσουμε να ρυθμίσουμε σωσ
 # File: 32-INSSMB, line: 103
 # File: 64-INSSMB, line: 99
 # File: 64-INSSMB, line: 103
+#: ../initrd-scripts/usr-lib-setup/INSSMB:99
+#: ../initrd-scripts/usr-lib-setup/INSSMB:103
 msgid "MOUNT RESULT"
 msgstr "ΑΠΟΤΕΛΕΣΜΑ ΠΡΟΣΑΡΤΗΣΗΣ"
 
 #
 # File: 32-INSURL, line: 63
 # File: 64-INSURL, line: 63
+#: ../initrd-scripts/usr-lib-setup/INSURL:62
 #, fuzzy
 msgid ""
 "\n"
@@ -745,6 +1176,7 @@ msgstr ""
 #
 # File: 32-INSURL, line: 75
 # File: 64-INSURL, line: 75
+#: ../initrd-scripts/usr-lib-setup/INSURL:75
 msgid ""
 "\n"
 "What is the URL of your FTP/HTTP server?\n"
@@ -755,12 +1187,14 @@ msgstr ""
 #
 # File: 32-INSURL, line: 78
 # File: 64-INSURL, line: 78
+#: ../initrd-scripts/usr-lib-setup/INSURL:78
 msgid "ENTER URL OF FTP/HTTP SERVER"
 msgstr "ΠΛΗΚΤΡΟΛΟΓΗΣΤΕ ΤΗΝ URL ΤΟΥ SERVER FTP/HTTP"
 
 #
 # File: 32-INSURL, line: 86
 # File: 64-INSURL, line: 86
+#: ../initrd-scripts/usr-lib-setup/INSURL:86
 #, fuzzy, sh-format
 msgid ""
 "\n"
@@ -787,6 +1221,7 @@ msgstr ""
 #
 # File: 32-INSURL, line: 106
 # File: 64-INSURL, line: 106
+#: ../initrd-scripts/usr-lib-setup/INSURL:106
 #, fuzzy
 msgid ""
 "\n"
@@ -819,13 +1254,14 @@ msgstr ""
 #
 # File: 32-INSURL, line: 121
 # File: 64-INSURL, line: 121
+#: ../initrd-scripts/usr-lib-setup/INSURL:121
 msgid "DOWNLOAD INFORMATION"
 msgstr "ΠΛΗΡΟΦΟΡΙΕΣ DOWNLOAD"
 
 #
 # File: 32-slackinstall, line: 60
 # File: 64-slackinstall, line: 60
-#. Two next line: > first, then >> - Didier Spaier
+#: ../initrd-scripts/usr-lib-setup/INSURL:130
 #, fuzzy
 msgid "Downloading PACKAGES.TXT ..."
 msgstr "ΑΠΕΤΥΧΕ η μεταφόρτωση του $ArG2 ."
@@ -833,18 +1269,21 @@ msgstr "ΑΠΕΤΥΧΕ η μεταφόρτωση του $ArG2 ."
 #
 # File: 32-INSURL, line: 135
 # File: 64-INSURL, line: 135
+#: ../initrd-scripts/usr-lib-setup/INSURL:135
 msgid "> Download failed. Going to try one directory lower."
 msgstr "> Το Download απέτυχε. Θα προσπαθήσουμε ξανά στον από επάνω φάκελο"
 
 #
 # File: 32-INSURL, line: 141
 # File: 64-INSURL, line: 141
+#: ../initrd-scripts/usr-lib-setup/INSURL:141
 msgid "> Download failed again."
 msgstr "> Το Download απέτυχε ξανά"
 
 #
 # File: 32-INSURL, line: 148
 # File: 64-INSURL, line: 148
+#: ../initrd-scripts/usr-lib-setup/INSURL:148
 #, fuzzy
 msgid "A Salix 'PACKAGES.TXT' is available. Ready to continue!"
 msgstr "Εντοπίσαμε το αρχείο 'PACKAGES.TXT'. Συνεχίζουμε!"
@@ -852,12 +1291,14 @@ msgstr "Εντοπίσαμε το αρχείο 'PACKAGES.TXT'. Συνεχίζο�
 #
 # File: 32-INSURL, line: 153
 # File: 64-INSURL, line: 153
+#: ../initrd-scripts/usr-lib-setup/INSURL:153
 msgid "No file 'PACKAGES.TXT' was found. Wrong URL?"
 msgstr "Δεν βρήκαμε το αρχείο 'PACKAGES.TXT'. Λάθος διεύθυνση URL;"
 
 #
 # File: 32-INSURL, line: 158
 # File: 64-INSURL, line: 158
+#: ../initrd-scripts/usr-lib-setup/INSURL:158
 msgid "Do you want to try setting up FTP/HTTP again? "
 msgstr "Θέλετε να προσπαθήσουμε ξανά να ρυθμίσουμε το FTP/HTTP;"
 
@@ -866,6 +1307,8 @@ msgstr "Θέλετε να προσπαθήσουμε ξανά να ρυθμίσ�
 # File: 32-INSURL, line: 165
 # File: 64-INSURL, line: 161
 # File: 64-INSURL, line: 165
+#: ../initrd-scripts/usr-lib-setup/INSURL:161
+#: ../initrd-scripts/usr-lib-setup/INSURL:165
 msgid "DOWNLOAD RESULT"
 msgstr "ΑΠΟΤΕΛΕΣΜΑ DOWNLOAD"
 
@@ -876,13 +1319,16 @@ msgstr "ΑΠΟΤΕΛΕΣΜΑ DOWNLOAD"
 # File: 64-INSURL, line: 186
 # File: 64-INSURL, line: 226
 # File: 64-INSURL, line: 231
-#. Make sure we can select stuff from the package series:
+#: ../initrd-scripts/usr-lib-setup/INSURL:186
+#: ../initrd-scripts/usr-lib-setup/INSURL:226
+#: ../initrd-scripts/usr-lib-setup/INSURL:231
 msgid "INITIALIZING PACKAGE TREE"
 msgstr "ΕΤΟΙΜΑΣΙΑ ΤΟΥ ΚΑΤΑΛΟΓΟΥ ΠΑΚΕΤΩΝ"
 
 #
 # File: 32-INSURL, line: 187
 # File: 64-INSURL, line: 187
+#: ../initrd-scripts/usr-lib-setup/INSURL:187
 msgid "Setting up local cache for the FTP/HTTP server's package tree ...\n"
 msgstr ""
 "Ρύθμιση της τοπικής κρυφής μνήμης (cache) για τον κατάλογο αρχείων από τον "
@@ -891,6 +1337,7 @@ msgstr ""
 #
 # File: 32-INSURL, line: 227
 # File: 64-INSURL, line: 227
+#: ../initrd-scripts/usr-lib-setup/INSURL:227
 #, fuzzy, sh-format
 msgid ""
 "\n"
@@ -902,6 +1349,7 @@ msgstr ""
 #
 # File: 32-INSURL, line: 232
 # File: 64-INSURL, line: 232
+#: ../initrd-scripts/usr-lib-setup/INSURL:232
 msgid ""
 "\n"
 "Retrieving tagfile information for the package tree ..."
@@ -913,12 +1361,14 @@ msgstr ""
 #
 # File: 32-INSURL, line: 240
 # File: 64-INSURL, line: 240
+#: ../initrd-scripts/usr-lib-setup/INSURL:240
 msgid "REMOTE SERVER CONFIGURATION"
 msgstr "ΠΡΟΕΤΟΙΜΑΣΙΑ ΤΟΥ ΑΠΟΜΑΚΡΥΣΜΕΝΟΥ SERVER"
 
 #
 # File: 32-INSURL, line: 241
 # File: 64-INSURL, line: 241
+#: ../initrd-scripts/usr-lib-setup/INSURL:241
 msgid "Failed to configure for installation from remote server."
 msgstr ""
 "Η προετοιμασία του απομακρυσμένου server ως πηγή για εγκατάσταση απέτυχε."
@@ -926,12 +1376,14 @@ msgstr ""
 #
 # File: 32-INSUSB, line: 14
 # File: 64-INSUSB, line: 14
+#: ../initrd-scripts/usr-lib-setup/INSUSB:13
 msgid "SCANNING FOR USB STICK"
 msgstr "ΓΙΝΕΤΑΙ ΑΝΙΧΝΕΥΣΗ ΓΙΑ USB STICK"
 
 #
 # File: 32-INSUSB, line: 15
 # File: 64-INSUSB, line: 15
+#: ../initrd-scripts/usr-lib-setup/INSUSB:14
 #, fuzzy
 msgid ""
 "Make sure the USB stick containing the Salix package directory is inserted "
@@ -944,12 +1396,14 @@ msgstr ""
 #
 # File: 32-INSUSB, line: 37
 # File: 64-INSUSB, line: 37
+#: ../initrd-scripts/usr-lib-setup/INSUSB:36
 msgid "NO REMOVABLE USB DEVICES FOUND"
 msgstr "ΔΕΝ ΒΡΕΘΗΚΑΝ ΑΦΑΙΡΕΣΙΜΕΣ ΣΥΣΚΕΥΕΣ USB"
 
 #
 # File: 32-INSUSB, line: 38
 # File: 64-INSUSB, line: 38
+#: ../initrd-scripts/usr-lib-setup/INSUSB:37
 msgid ""
 "Sorry, but no removable USB devices could be found.  Exiting back to the top "
 "menu."
@@ -960,6 +1414,7 @@ msgstr ""
 #
 # File: 32-INSUSB, line: 89
 # File: 64-INSUSB, line: 89
+#: ../initrd-scripts/usr-lib-setup/INSUSB:88
 #, fuzzy
 msgid "NO SALIX DIRECTORY FOUND"
 msgstr "ΔΕΝ ΒΡΕΘΗΚΕ ΚΑΤΑΛΟΓΟΣ SALIX"
@@ -967,6 +1422,7 @@ msgstr "ΔΕΝ ΒΡΕΘΗΚΕ ΚΑΤΑΛΟΓΟΣ SALIX"
 #
 # File: 32-INSUSB, line: 90
 # File: 64-INSUSB, line: 90
+#: ../initrd-scripts/usr-lib-setup/INSUSB:89
 #, fuzzy
 msgid ""
 "Sorry, but a Salix directory could not be found on any USB devices. Exiting "
@@ -978,13 +1434,14 @@ msgstr ""
 #
 # File: 32-INSUSB, line: 99
 # File: 64-INSUSB, line: 99
-#. Success!  Report back to the console:
+#: ../initrd-scripts/usr-lib-setup/INSUSB:98
 msgid "USB PACKAGE SOURCE FOUND"
 msgstr "ΒΡΕΘΗΚΕ ΠΗΓΑΙΟ ΑΡΧΕΙΟ ΣΕ USB"
 
 #
 # File: 32-INSUSB, line: 100
 # File: 64-INSUSB, line: 100
+#: ../initrd-scripts/usr-lib-setup/INSUSB:99
 #, fuzzy, sh-format
 msgid "A Salix package directory was found on device $DRIVE_FOUND."
 msgstr "Βρέθηκε ένας κατάλογος με πακέτα Salix στη συσκευή $DRIVE_FOUND."
@@ -996,6 +1453,7 @@ msgstr "Βρέθηκε ένας κατάλογος με πακέτα Salix στ�
 # File: 64-INSdir, line: 18
 # File: 64-INShd, line: 18
 # File: 64-setup, line: 84
+#: ../initrd-scripts/usr-lib-setup/INSdir:17
 #, fuzzy
 msgid ""
 "\n"
@@ -1011,6 +1469,8 @@ msgstr ""
 #
 # File: 32-SeTmaketag, line: 111
 # File: 64-SeTmaketag, line: 111
+#: ../initrd-scripts/usr-lib-setup/INSdir:25
+#: ../initrd-scripts/usr-lib-setup/INShd:25
 #, fuzzy
 msgid "ERROR"
 msgstr "ΣΦΑΛΜΑ ΑΝΤΙΓΡΑΦΗΣ"
@@ -1018,17 +1478,22 @@ msgstr "ΣΦΑΛΜΑ ΑΝΤΙΓΡΑΦΗΣ"
 #
 # File: INSdir, line: 26
 # File: INShd, line: 26
+#: ../initrd-scripts/usr-lib-setup/INSdir:26
+#: ../initrd-scripts/usr-lib-setup/INShd:26
 msgid "REBOOT"
 msgstr ""
 
 #
 # File: INSdir, line: 27
 # File: INShd, line: 27
+#: ../initrd-scripts/usr-lib-setup/INSdir:27
+#: ../initrd-scripts/usr-lib-setup/INShd:27
 msgid "CANCEL"
 msgstr ""
 
 #
 # File: INSdir, line: 40
+#: ../initrd-scripts/usr-lib-setup/INSdir:40
 msgid ""
 "\n"
 "Please provide the path to a directory containing the contents (or an ISO "
@@ -1049,6 +1514,7 @@ msgstr ""
 # File: 64-INSURL, line: 97
 # File: 64-INShd, line: 58
 # File: 64-pkgtool, line: 385
+#: ../initrd-scripts/usr-lib-setup/INSdir:49
 #, fuzzy
 msgid "SELECT A PRE-MOUNTED DIRECTORY"
 msgstr "ΕΠΙΛΕΞΤΕ ΦΑΚΕΛΟ"
@@ -1056,6 +1522,8 @@ msgstr "ΕΠΙΛΕΞΤΕ ΦΑΚΕΛΟ"
 #
 # File: INSdir, line: 50
 # File: INShd, line: 125
+#: ../initrd-scripts/usr-lib-setup/INSdir:50
+#: ../initrd-scripts/usr-lib-setup/INShd:125
 msgid "Browse"
 msgstr ""
 
@@ -1070,6 +1538,8 @@ msgstr ""
 # File: 64-INSURL, line: 97
 # File: 64-INShd, line: 58
 # File: 64-pkgtool, line: 385
+#: ../initrd-scripts/usr-lib-setup/INSdir:63
+#: ../initrd-scripts/usr-lib-setup/INShd:138
 #, fuzzy
 msgid "SELECT A DIRECTORY"
 msgstr "ΕΠΙΛΕΞΤΕ ΦΑΚΕΛΟ"
@@ -1077,6 +1547,8 @@ msgstr "ΕΠΙΛΕΞΤΕ ΦΑΚΕΛΟ"
 #
 # File: 32-INCISO, line: 14
 # File: 64-INCISO, line: 14
+#: ../initrd-scripts/usr-lib-setup/INSdir:93
+#: ../initrd-scripts/usr-lib-setup/INShd:169
 #, fuzzy
 msgid "INVALID ISO IMAGE"
 msgstr "ΧΡΗΣΗ ΤΗΣ ΕΙΚΟΝΑΣ ISO"
@@ -1084,6 +1556,14 @@ msgstr "ΧΡΗΣΗ ΤΗΣ ΕΙΚΟΝΑΣ ISO"
 #
 # File: 32-SeTpartitions, line: 540
 # File: 64-SeTpartitions, line: 540
+#: ../initrd-scripts/usr-lib-setup/INSdir:94
+#: ../initrd-scripts/usr-lib-setup/INSdir:122
+#: ../initrd-scripts/usr-lib-setup/INShd:95
+#: ../initrd-scripts/usr-lib-setup/INShd:109
+#: ../initrd-scripts/usr-lib-setup/INShd:170
+#: ../initrd-scripts/usr-lib-setup/INShd:191
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:541
+#: ../initrd-scripts/usr-lib-setup/autoinstall:259
 msgid "OK"
 msgstr "ΟΚ"
 
@@ -1098,12 +1578,15 @@ msgstr "ΟΚ"
 # File: 64-INSURL, line: 97
 # File: 64-INShd, line: 58
 # File: 64-pkgtool, line: 385
+#: ../initrd-scripts/usr-lib-setup/INSdir:121
+#: ../initrd-scripts/usr-lib-setup/INShd:190
 #, fuzzy
 msgid "INVALID SOURCE DIRECTORY"
 msgstr "ΕΠΙΛΕΞΤΕ ΦΑΚΕΛΟ"
 
 #
 # File: INShd, line: 16
+#: ../initrd-scripts/usr-lib-setup/INShd:16
 msgid ""
 "\n"
 "Setup failed to unmount a required directory:\n"
@@ -1116,6 +1599,7 @@ msgstr ""
 
 #
 # File: INShd, line: 40
+#: ../initrd-scripts/usr-lib-setup/INShd:40
 msgid ""
 "\n"
 "Please specify which partition on your hard disk or USB stick\n"
@@ -1130,18 +1614,21 @@ msgstr ""
 #
 # File: 32-liloconfig, line: 1095
 # File: 64-liloconfig, line: 1095
+#: ../initrd-scripts/usr-lib-setup/INShd:50
 #, fuzzy
 msgid "SELECT HARD DISK PARTITION"
 msgstr "ΕΠΙΛΕΞΤΕ ΜΙΑ ΚΑΤΑΤΜΗΣΗ OS/2"
 
 #
 # File: INShd, line: 51
+#: ../initrd-scripts/usr-lib-setup/INShd:51
 msgid "Partitions"
 msgstr ""
 
 #
 # File: 32-INShd, line: 53
 # File: 64-INShd, line: 53
+#: ../initrd-scripts/usr-lib-setup/INShd:63
 #, fuzzy
 msgid "PARTITIONS LIST"
 msgstr "ΛΙΣΤΑ ΚΑΤΑΤΜΗΣΕΩΝ"
@@ -1149,6 +1636,7 @@ msgstr "ΛΙΣΤΑ ΚΑΤΑΤΜΗΣΕΩΝ"
 #
 # File: 32-SeTmaketag, line: 80
 # File: 64-SeTmaketag, line: 80
+#: ../initrd-scripts/usr-lib-setup/INShd:94
 msgid "MOUNT FAILURE"
 msgstr "Η ΠΡΟΣΑΡΤΗΣΗ ΑΠΕΤΥΧΕ"
 
@@ -1157,12 +1645,14 @@ msgstr "Η ΠΡΟΣΑΡΤΗΣΗ ΑΠΕΤΥΧΕ"
 # File: 32-INSSMB, line: 103
 # File: 64-INSSMB, line: 99
 # File: 64-INSSMB, line: 103
+#: ../initrd-scripts/usr-lib-setup/INShd:108
 #, fuzzy
 msgid "MOUNT SUCCESS"
 msgstr "ΑΠΟΤΕΛΕΣΜΑ ΠΡΟΣΑΡΤΗΣΗΣ"
 
 #
 # File: INShd, line: 116
+#: ../initrd-scripts/usr-lib-setup/INShd:116
 msgid ""
 "\n"
 "Now please provide the path to a directory containing the contents\n"
@@ -1175,6 +1665,7 @@ msgstr ""
 #
 # File: 32-SeTDOS, line: 29
 # File: 64-SeTDOS, line: 29
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:28
 #, sh-format
 msgid "Setting permissions on NTFS partition $DOS_PART"
 msgstr ""
@@ -1183,6 +1674,7 @@ msgstr ""
 #
 # File: 32-SeTDOS, line: 30
 # File: 64-SeTDOS, line: 30
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:29
 #, sh-format
 msgid "SET SECURITY FOR NTFS PARTITION $DOS_PART"
 msgstr "ΡΥΘΜΙΣΕΙΣ ΑΣΦΑΛΕΙΑΣ ΓΙΑ ΤΗΝ ΚΑΤΑΤΜΗΣΗ ΤΥΠΟΥ NTFS $DOS_PART"
@@ -1192,6 +1684,8 @@ msgstr "ΡΥΘΜΙΣΕΙΣ ΑΣΦΑΛΕΙΑΣ ΓΙΑ ΤΗΝ ΚΑΤΑΤΜΗΣΗ �
 # File: 32-SeTDOS, line: 55
 # File: 64-SeTDOS, line: 32
 # File: 64-SeTDOS, line: 55
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:31
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:54
 #, sh-format
 msgid ""
 "Because users could go snooping through (or destroy, depending on the "
@@ -1213,12 +1707,14 @@ msgstr ""
 #
 # File: 32-SeTDOS, line: 39
 # File: 64-SeTDOS, line: 39
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:38
 msgid "Root has read/write access, users have no access (ntfs-3g)"
 msgstr "Ο Root έχει πλήρη πρόσβαση, οι υπόλοιποι χρήστες καθόλου (ntfs-3g)"
 
 #
 # File: 32-SeTDOS, line: 40
 # File: 64-SeTDOS, line: 40
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:39
 msgid "Everyone has read only access (built-in kernel ntfs driver)"
 msgstr ""
 "Όλοι έχουν πρόσβαση αλλά μόνο για ανάγνωση (χρήση του οδηγού ntfs του πυρήνα)"
@@ -1226,6 +1722,7 @@ msgstr ""
 #
 # File: 32-SeTDOS, line: 41
 # File: 64-SeTDOS, line: 41
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:40
 msgid "Everyone has read access, but only root can write (ntfs-3g)"
 msgstr ""
 "Όλοι έχουν πρόσβαση για ανάγνωση αλλά μόνο ο root έχει πρόσβαση εγγραφής "
@@ -1234,6 +1731,7 @@ msgstr ""
 #
 # File: 32-SeTDOS, line: 42
 # File: 64-SeTDOS, line: 42
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:41
 msgid "All users can read/write to any file (ntfs-3g)"
 msgstr ""
 "Όλοι οι χρήστες μπορούν να διαβάσουν και να γράψουν σε οποιοδήποτε αρχείο "
@@ -1242,6 +1740,7 @@ msgstr ""
 #
 # File: 32-SeTDOS, line: 52
 # File: 64-SeTDOS, line: 52
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:51
 #, sh-format
 msgid "Setting permissions on FAT partition $DOS_PART"
 msgstr ""
@@ -1251,6 +1750,7 @@ msgstr ""
 #
 # File: 32-SeTDOS, line: 53
 # File: 64-SeTDOS, line: 53
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:52
 #, sh-format
 msgid "SET SECURITY FOR FAT PARTITION $DOS_PART"
 msgstr "ΕΠΙΛΕΞΤΕ ΕΠΙΛΟΓΕΣ ΑΣΦΑΛΕΙΑΣ ΓΙΑ ΤΗΝ ΚΑΤΑΤΜΗΣΗ ΤΥΠΟΥ FAT: $DOS_PART"
@@ -1258,6 +1758,7 @@ msgstr "ΕΠΙΛΕΞΤΕ ΕΠΙΛΟΓΕΣ ΑΣΦΑΛΕΙΑΣ ΓΙΑ ΤΗΝ ΚΑ�
 #
 # File: 32-SeTDOS, line: 62
 # File: 64-SeTDOS, line: 62
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:61
 msgid "Root has read/write access, users have no access"
 msgstr ""
 "Ο χρήστης root έχει πρόσβαση ανάγνωσης/εγγραφής, οι υπόλοιποι χρήστες δεν "
@@ -1266,12 +1767,14 @@ msgstr ""
 #
 # File: 32-SeTDOS, line: 63
 # File: 64-SeTDOS, line: 63
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:62
 msgid "Everyone has read only access"
 msgstr "Όλοι οι χρήστες έχουν πρόσβαση μόνο ανάγνωσης"
 
 #
 # File: 32-SeTDOS, line: 64
 # File: 64-SeTDOS, line: 64
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:63
 msgid "Everyone has read access, but only root can write"
 msgstr ""
 "Όλοι οι χρήστες έχουν πρόσβαση ανάγνωσης, ενώ ο χρήστης root έχει και "
@@ -1280,24 +1783,28 @@ msgstr ""
 #
 # File: 32-SeTDOS, line: 65
 # File: 64-SeTDOS, line: 65
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:64
 msgid "All users can read/write to any file"
 msgstr "Όλοι οι χρήστες έχουν πρόσβαση ανάγνωσης/εγγραφής"
 
 #
 # File: 32-SeTDOS, line: 100
 # File: 64-SeTDOS, line: 100
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:99
 msgid "Setting up non-Linux partitions."
 msgstr "Ρύθμιση partition που δεν ανήκουν στα Linux"
 
 #
 # File: 32-SeTDOS, line: 101
 # File: 64-SeTDOS, line: 101
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:100
 msgid "FAT or NTFS PARTITIONS DETECTED"
 msgstr "ΒΡΕΘΗΚΑΝ ΚΑΤΑΤΜΗΣΕΙΣ FAT ή NTFS"
 
 #
 # File: 32-SeTDOS, line: 102
 # File: 64-SeTDOS, line: 102
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:101
 msgid ""
 "Partitions of type FAT or NTFS (commonly used by DOS and Windows) have been "
 "found on your system.  Would you like to add these partitions to your /etc/"
@@ -1310,24 +1817,16 @@ msgstr ""
 #
 # File: 32-SeTDOS, line: 114
 # File: 64-SeTDOS, line: 114
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:113
 msgid "Selecting non-Linux partitions."
 msgstr "Επιλογή partitions που δεν ανήκουν στο Linux."
 
 #
 # File: 32-SeTDOS, line: 116
 # File: 64-SeTDOS, line: 116
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:115
 msgid "SELECT PARTITION TO ADD TO /etc/fstab"
 msgstr "ΠΡΟΣΘΗΚΗ ΤΗΣ ΠΑΡΑΚΑΤΩ ΚΑΤΑΤΜΗΣΗΣ ΣΤΟ /etc/fstab:"
-
-#
-# File: 32-SeTDOS, line: 118
-# File: 32-SeTpartitions, line: 323
-# File: 32-SeTpartitions, line: 412
-# File: 64-SeTDOS, line: 118
-# File: 64-SeTpartitions, line: 323
-# File: 64-SeTpartitions, line: 412
-msgid "Select"
-msgstr "Επιλογή"
 
 #
 # File: 32-SeTDOS, line: 120
@@ -1338,12 +1837,16 @@ msgstr "Επιλογή"
 # File: 64-SeTpartitions, line: 325
 # File: 64-SeTpartitions, line: 414
 # File: 64-setup.80.make-bootdisk, line: 216
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:119
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:326
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:415
 msgid "Continue"
 msgstr "Συνέχεια"
 
 #
 # File: 32-SeTDOS, line: 122
 # File: 64-SeTDOS, line: 122
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:121
 msgid ""
 "In order to make these partitions visible from Linux, we  need to add them "
 "to your /etc/fstab.  Please pick a partition to  add to /etc/fstab, or "
@@ -1359,6 +1862,8 @@ msgstr ""
 # File: 32-SeTpartitions, line: 200
 # File: 64-SeTDOS, line: 141
 # File: 64-SeTpartitions, line: 200
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:140
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:200
 msgid "IN USE"
 msgstr "ΣΕ ΧΡΗΣΗ"
 
@@ -1367,6 +1872,8 @@ msgstr "ΣΕ ΧΡΗΣΗ"
 # File: 32-SeTpartitions, line: 193
 # File: 64-SeTDOS, line: 141
 # File: 64-SeTpartitions, line: 193
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:140
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:193
 msgid "on"
 msgstr "Σε"
 
@@ -1381,12 +1888,18 @@ msgstr "Σε"
 # File: 64-SeTDOS, line: 149
 # File: 64-SeTDOS, line: 150
 # File: 64-SeTDOS, line: 151
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:146
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:147
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:148
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:149
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:150
 msgid "done, continue with setup"
 msgstr "Ολοκληρώθηκε, συνεχίζουμε με την εγκατάσταση"
 
 #
 # File: 32-SeTDOS, line: 186
 # File: 64-SeTDOS, line: 186
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:185
 #, sh-format
 msgid "Selecting a location to mount $DOS_PART."
 msgstr "Αντιστοίχηση σημείου προσάρτησης για την κατάτμηση $DOS_PART"
@@ -1394,6 +1907,7 @@ msgstr "Αντιστοίχηση σημείου προσάρτησης για τ
 #
 # File: 32-SeTDOS, line: 187
 # File: 64-SeTDOS, line: 187
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:186
 #, sh-format
 msgid "PICK MOUNT POINT FOR $DOS_PART"
 msgstr "ΕΠΙΛΕΞΤΕ ΣΗΜΕΙΟ ΠΡΟΣΑΡΤΗΣΗΣ ΓΙΑ ΤΟ $DOS_PART"
@@ -1401,6 +1915,7 @@ msgstr "ΕΠΙΛΕΞΤΕ ΣΗΜΕΙΟ ΠΡΟΣΑΡΤΗΣΗΣ ΓΙΑ ΤΟ $DOS_PA
 #
 # File: 32-SeTDOS, line: 188
 # File: 64-SeTDOS, line: 188
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:187
 #, sh-format
 msgid ""
 "Now this partition must be mounted somewhere in your  directory tree.  "
@@ -1422,9 +1937,9 @@ msgstr ""
 # File: 64-SeTDOS, line: 217
 # File: 64-SeTEFI, line: 73
 # File: 64-SeTpartitions, line: 533
-#. next partition loop
-#. more than one Linux partition
-#. Done, report to the user:
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:216
+#: ../initrd-scripts/usr-lib-setup/SeTEFI:73
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:534
 #, sh-format
 msgid ""
 "\n"
@@ -1438,19 +1953,21 @@ msgstr ""
 #
 # File: 32-SeTDOS, line: 222
 # File: 64-SeTDOS, line: 222
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:221
 msgid "Finished setting up non-Linux partitions."
 msgstr "Ολοκλήρωση ρύθμισης κατατμήσεων που δεν ανήκουν στο Linux."
 
 #
 # File: 32-SeTDOS, line: 223
 # File: 64-SeTDOS, line: 223
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:222
 msgid "DONE ADDING FAT or NTFS PARTITIONS"
 msgstr "ΟΙ FAT ή NTFS ΚΑΤΑΤΜΗΣΕΙΣ ΕΧΟΥΝ ΠΡΟΣΤΕΘΕΙ ΣΤΟ ΣΥΣΤΗΜΑ ΣΑΣ"
 
 #
 # File: 32-SeTEFI, line: 44
 # File: 64-SeTEFI, line: 44
-#. It didn't mount, so it must not be formatted:
+#: ../initrd-scripts/usr-lib-setup/SeTEFI:44
 #, sh-format
 msgid "FORMAT EFI PARTITION ${PREFERRED_EFI_PARTITION}?"
 msgstr "ΝΑ ΓΙΝΕΙ ΔΙΑΜΟΡΦΩΣΗ ΤΗΣ ΚΑΤΑΤΜΗΣΗΣ EFI ${PREFERRED_EFI_PARTITION};"
@@ -1458,6 +1975,7 @@ msgstr "ΝΑ ΓΙΝΕΙ ΔΙΑΜΟΡΦΩΣΗ ΤΗΣ ΚΑΤΑΤΜΗΣΗΣ EFI ${P
 #
 # File: 32-SeTEFI, line: 45
 # File: 64-SeTEFI, line: 45
+#: ../initrd-scripts/usr-lib-setup/SeTEFI:45
 #, sh-format
 msgid ""
 "An EFI System Partition was found on ${PREFERRED_EFI_PARTITION}, but it has "
@@ -1469,8 +1987,7 @@ msgstr ""
 #
 # File: 32-SeTEFI, line: 53
 # File: 64-SeTEFI, line: 53
-#. Format the partition with FAT32, 2 sectors per cluster (needed for the
-#. minimum supported EFI partition size of 100MB):
+#: ../initrd-scripts/usr-lib-setup/SeTEFI:53
 #, sh-format
 msgid "FORMATTING EFI PARTITION ${PREFERRED_EFI_PARTITION}"
 msgstr "ΓΙΝΕΤΑΙ ΔΙΑΜΟΡΦΩΣΗ ΤΗΣ ΚΑΤΑΤΜΗΣΗΣ EFI ${PREFERRED_EFI_PARTITION}"
@@ -1478,6 +1995,7 @@ msgstr "ΓΙΝΕΤΑΙ ΔΙΑΜΟΡΦΩΣΗ ΤΗΣ ΚΑΤΑΤΜΗΣΗΣ EFI ${PR
 #
 # File: 32-SeTEFI, line: 54
 # File: 64-SeTEFI, line: 54
+#: ../initrd-scripts/usr-lib-setup/SeTEFI:54
 #, sh-format
 msgid "Formatting EFI System Partition ${PREFERRED_EFI_PARTITION} as FAT32."
 msgstr ""
@@ -1487,30 +2005,35 @@ msgstr ""
 #
 # File: 32-SeTEFI, line: 78
 # File: 64-SeTEFI, line: 78
+#: ../initrd-scripts/usr-lib-setup/SeTEFI:78
 msgid "Finished setting up EFI System Partition."
 msgstr "Ολοκληρώθηκε η δημιουργία Κατάτμησης Συστήματος με EFI."
 
 #
 # File: 32-SeTEFI, line: 79
 # File: 64-SeTEFI, line: 79
+#: ../initrd-scripts/usr-lib-setup/SeTEFI:79
 msgid "EFI SYSTEM PARTITION RECOGNIZED"
 msgstr "ΑΝΑΓΝΩΡΙΣΘΗΚΕ ΚΑΤΑΤΜΗΣΗ ΣΥΣΤΗΜΑΤΟΣ ΜΕ EFI"
 
 #
 # File: 32-SeTPKG, line: 27
 # File: 64-SeTPKG, line: 27
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:26
 msgid "Selecting software to install."
 msgstr "Επιλογή των προγραμμάτων που θα εγκατασταθούν"
 
 #
 # File: 32-SeTPKG, line: 29
 # File: 64-SeTPKG, line: 29
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:28
 msgid "PACKAGE SERIES SELECTION"
 msgstr "ΕΠΙΛΟΓΗ ΣΕΙΡΑΣ ΛΟΓΙΣΜΙΚΟΥ ΓΙΑ ΕΓΚΑΤΑΣΤΑΣΗ"
 
 #
 # File: 32-SeTPKG, line: 31
 # File: 64-SeTPKG, line: 31
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:30
 msgid ""
 "Now it is time to select which general categories of software to install on "
 "your system. Use the spacebar to select or unselect the software you wish to "
@@ -1528,12 +2051,14 @@ msgstr ""
 #
 # File: 32-SeTPKG, line: 38
 # File: 64-SeTPKG, line: 38
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:37
 msgid "Base Linux system"
 msgstr "Βασικό σύστημα Linux"
 
 #
 # File: 32-SeTPKG, line: 40
 # File: 64-SeTPKG, line: 40
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:39
 msgid "The A (base) series contains the kernel and main system utilities."
 msgstr ""
 "Η σειρά Α (βασικά προγράμματα) περιέχει τον πυρήνα και τα βασικά προγράμματα "
@@ -1542,24 +2067,28 @@ msgstr ""
 #
 # File: 32-SeTPKG, line: 45
 # File: 64-SeTPKG, line: 45
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:44
 msgid "Various Applications that do not need X"
 msgstr "Διάφορες εφαρμογές που δεν χρειάζονται το βασικό περιβάλλον X"
 
 #
 # File: 32-SeTPKG, line: 47
 # File: 64-SeTPKG, line: 47
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:46
 msgid "The AP series is a collection of useful applications."
 msgstr "Η σειρά προγραμμάτων AP περιέχει μία συλλογή χρήσιμων εφαρμογών"
 
 #
 # File: 32-SeTPKG, line: 53
 # File: 64-SeTPKG, line: 53
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:52
 msgid "Program Development (C, C++, Lisp, Perl, etc.)"
 msgstr "Εφαρμογές προγραμματισμού (C, C++, Lisp, Perl, κ.τ.λ.)"
 
 #
 # File: 32-SeTPKG, line: 55
 # File: 64-SeTPKG, line: 55
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:54
 msgid ""
 "The D series contains compilers, debuggers, and other programming tools."
 msgstr ""
@@ -1569,24 +2098,28 @@ msgstr ""
 #
 # File: 32-SeTPKG, line: 61
 # File: 64-SeTPKG, line: 61
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:60
 msgid "GNU Emacs"
 msgstr "GNU Emacs"
 
 #
 # File: 32-SeTPKG, line: 63
 # File: 64-SeTPKG, line: 63
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:62
 msgid "The E series contains the GNU Emacs advanced real-time display editor."
 msgstr "Η σειρά προγραμμάτων E περιέχει τον διορθωτή κειμένου GNU Emacs"
 
 #
 # File: 32-SeTPKG, line: 69
 # File: 64-SeTPKG, line: 69
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:68
 msgid "FAQ lists, HOWTO documentation"
 msgstr "Λίστες FAQ (συχνές ερωτήσεις) και κείμενα τεκμηρίωσης τύπου \"HOWTO\""
 
 #
 # File: 32-SeTPKG, line: 71
 # File: 64-SeTPKG, line: 71
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:70
 msgid ""
 "The F series contains essential documentation for Linux system "
 "administrators."
@@ -1595,12 +2128,14 @@ msgstr "Η σειρά F περιέχει βασική τεκμηρίωση γι�
 #
 # File: 32-SeTPKG, line: 77
 # File: 64-SeTPKG, line: 77
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:76
 msgid "The GNOME desktop for X"
 msgstr "Το γραφικό περιβάλλον Gnome για τα X"
 
 #
 # File: 32-SeTPKG, line: 79
 # File: 64-SeTPKG, line: 79
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:78
 msgid ""
 "The GNOME series contains the GNOME desktop environment and related "
 "libraries."
@@ -1611,24 +2146,28 @@ msgstr ""
 #
 # File: 32-SeTPKG, line: 85
 # File: 64-SeTPKG, line: 85
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:84
 msgid "Linux kernel source"
 msgstr "Πηγαίος κώδικας του πυρήνα Linux"
 
 #
 # File: 32-SeTPKG, line: 87
 # File: 64-SeTPKG, line: 87
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:86
 msgid "The K series contains the source code for the Linux kernel."
 msgstr "Η σειρά K περιέχει τον πηγαίο κώδικα για τον πυρήνα του Linux"
 
 #
 # File: 32-SeTPKG, line: 93
 # File: 64-SeTPKG, line: 93
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:92
 msgid "Qt and the K Desktop Environment for X"
 msgstr "Το πλαίσιο λογισμικού Qt και το γραφικό περιβάλλον KDE για τα X"
 
 #
 # File: 32-SeTPKG, line: 95
 # File: 64-SeTPKG, line: 95
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:94
 msgid ""
 "The KDE series contains the K Desktop Environment and related libraries."
 msgstr ""
@@ -1638,12 +2177,14 @@ msgstr ""
 #
 # File: 32-SeTPKG, line: 101
 # File: 64-SeTPKG, line: 101
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:100
 msgid "International language support for KDE"
 msgstr "Υποστήριξη γλωσσικών ρυθμίσεων για το KDE"
 
 #
 # File: 32-SeTPKG, line: 103
 # File: 64-SeTPKG, line: 103
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:102
 msgid ""
 "The KDEI series provides support for languages other than US English in KDE."
 msgstr ""
@@ -1653,6 +2194,7 @@ msgstr ""
 #
 # File: 32-SeTPKG, line: 109
 # File: 64-SeTPKG, line: 109
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:108
 msgid "System Libraries (some needed by both KDE and GNOME)"
 msgstr ""
 "Βιβλιοθήκες συστήματος (κάποιες είναι απαραίτητες για τη λειτουργία του KDE "
@@ -1661,6 +2203,7 @@ msgstr ""
 #
 # File: 32-SeTPKG, line: 111
 # File: 64-SeTPKG, line: 111
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:110
 msgid ""
 "The L series contains libraries needed by GNOME, KDE, and other programs."
 msgstr ""
@@ -1670,24 +2213,28 @@ msgstr ""
 #
 # File: 32-SeTPKG, line: 117
 # File: 64-SeTPKG, line: 117
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:116
 msgid "Networking (TCP/IP, UUCP, Mail, News)"
 msgstr "Εφαρμογές δικτύου (TCP/IP, UUCP, Ηλεκτρονικό ταχυδρομείο, Ειδήσεις)"
 
 #
 # File: 32-SeTPKG, line: 119
 # File: 64-SeTPKG, line: 119
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:118
 msgid "The N series contains network related clients and servers."
 msgstr "Η σειρά N περιλαμβάνει εφαρμογές και εξυπηρετητές δικτύου"
 
 #
 # File: 32-SeTPKG, line: 125
 # File: 64-SeTPKG, line: 125
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:124
 msgid "TeX typesetting software"
 msgstr "Λογισμικό στοιχειοθεσίας TeX "
 
 #
 # File: 32-SeTPKG, line: 127
 # File: 64-SeTPKG, line: 127
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:126
 msgid ""
 "TeX is a typesetting system often used for mathematics and technical papers."
 msgstr ""
@@ -1697,12 +2244,14 @@ msgstr ""
 #
 # File: 32-SeTPKG, line: 133
 # File: 64-SeTPKG, line: 133
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:132
 msgid "Tcl/Tk script languages"
 msgstr "Tcl/Tk γλώσσες σεναρίων"
 
 #
 # File: 32-SeTPKG, line: 135
 # File: 64-SeTPKG, line: 135
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:134
 msgid ""
 "The TCL series contains the Tcl/Tk/TclX languages and programs that use them."
 msgstr ""
@@ -1712,12 +2261,14 @@ msgstr ""
 #
 # File: 32-SeTPKG, line: 141
 # File: 64-SeTPKG, line: 141
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:140
 msgid "X Window System"
 msgstr "X Window System"
 
 #
 # File: 32-SeTPKG, line: 143
 # File: 64-SeTPKG, line: 143
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:142
 msgid "This series contains X, the windowing system used by Linux."
 msgstr ""
 "Αυτή η σειρά περιέχει τα X, τον \"διαχειριστή παραθύρων\" (γραφικό σύστημα) "
@@ -1726,24 +2277,28 @@ msgstr ""
 #
 # File: 32-SeTPKG, line: 149
 # File: 64-SeTPKG, line: 149
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:148
 msgid "X Applications"
 msgstr "Εφαρμογές για τα X"
 
 #
 # File: 32-SeTPKG, line: 151
 # File: 64-SeTPKG, line: 151
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:150
 msgid "The XAP series is a collection of applications for X."
 msgstr "Η σειρά XAP περιλαμβάνει διάφορες εφαρμογές για τα X"
 
 #
 # File: 32-SeTPKG, line: 157
 # File: 64-SeTPKG, line: 157
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:156
 msgid "The Xfce Desktop Environment for X"
 msgstr "Το γραφικό περιβάλλον Xfce"
 
 #
 # File: 32-SeTPKG, line: 159
 # File: 64-SeTPKG, line: 159
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:158
 msgid "Xfce is a fast and lightweight GTK+ based desktop environment for X."
 msgstr ""
 "Το Xfce είναι ένα γρήγορο και με χαμηλές απαιτήσεις σε πόρους συστήματος "
@@ -1752,12 +2307,14 @@ msgstr ""
 #
 # File: 32-SeTPKG, line: 165
 # File: 64-SeTPKG, line: 165
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:164
 msgid "Games"
 msgstr "Παιχνίδια"
 
 #
 # File: 32-SeTPKG, line: 167
 # File: 64-SeTPKG, line: 167
+#: ../initrd-scripts/usr-lib-setup/SeTPKG:166
 msgid "The Y series is a collection of classic BSD text-based games."
 msgstr ""
 "Η σειρά Y περιλαμβάνει μια συλλογή παιχνιδιών κλασσικών σε BSD συστήματα"
@@ -1765,13 +2322,14 @@ msgstr ""
 #
 # File: 32-SeTconfig, line: 80
 # File: 64-SeTconfig, line: 80
-#. Inform the user that we're done installing packages
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:67
 msgid "DONE INSTALLING PACKAGES"
 msgstr "Η ΕΓΚΑΤΑΣΤΑΣΗ ΠΡΟΓΡΑΜΜΑΤΩΝ ΟΛΟΚΛΗΡΩΘΗΚΕ"
 
 #
 # File: 32-SeTconfig, line: 81
 # File: 64-SeTconfig, line: 81
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:68
 msgid "Preparing to configure your new Linux system..."
 msgstr ""
 "Προετοιμασία για να προχωρήσουμε στη ρύθμιση του καινούριου σας συστήματος "
@@ -1779,17 +2337,20 @@ msgstr ""
 
 #
 # File: SeTconfig, line: 73
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:73
 msgid "Boot Loader"
 msgstr ""
 
 #
 # File: SeTconfig, line: 74
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:74
 msgid "Please choose the Boot Loader that you would like to use"
 msgstr ""
 
 #
 # File: 32-liloconfig, line: 826
 # File: 64-liloconfig, line: 826
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:76
 #, fuzzy
 msgid "Install Lilo"
 msgstr "Εγκαταστήστε το LILO"
@@ -1797,6 +2358,7 @@ msgstr "Εγκαταστήστε το LILO"
 #
 # File: 32-liloconfig, line: 826
 # File: 64-liloconfig, line: 826
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:77
 #, fuzzy
 msgid "Install Grub"
 msgstr "Εγκαταστήστε το LILO"
@@ -1804,12 +2366,14 @@ msgstr "Εγκαταστήστε το LILO"
 #
 # File: 32-eliloconfig, line: 164
 # File: 64-eliloconfig, line: 164
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:78
 #, fuzzy
 msgid "(Do not install boot loader)"
 msgstr "Να μην προστεθεί μια καταχώρηση στο μενού εκκίνησης"
 
 #
 # File: SeTconfig, line: 216
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:216
 msgid "Numlock configuration"
 msgstr ""
 
@@ -1817,6 +2381,9 @@ msgstr ""
 # File: SeTconfig, line: 217
 # File: SeTconfig, line: 230
 # File: SeTconfig, line: 239
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:217
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:230
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:239
 msgid "Enabled"
 msgstr ""
 
@@ -1824,21 +2391,27 @@ msgstr ""
 # File: SeTconfig, line: 217
 # File: SeTconfig, line: 230
 # File: SeTconfig, line: 239
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:217
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:230
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:239
 msgid "Disabled"
 msgstr ""
 
 #
 # File: SeTconfig, line: 218
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:218
 msgid "Do you want to have numlock enabled or disabled on boot?"
 msgstr ""
 
 #
 # File: SeTconfig, line: 229
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:229
 msgid "IBus configuration"
 msgstr ""
 
 #
 # File: SeTconfig, line: 232
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:232
 msgid ""
 "IBus is an input platform for Chinese, Japanese, Korean and many other "
 "languages. Do you want to have it enabled or disabled on boot?"
@@ -1846,11 +2419,13 @@ msgstr ""
 
 #
 # File: SeTconfig, line: 238
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:238
 msgid "SCIM configuration"
 msgstr ""
 
 #
 # File: SeTconfig, line: 241
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:241
 msgid ""
 "SCIM is an input platform for Chinese, Japanese, Korean and many other "
 "languages. Do you want to have it enabled or disabled on boot?"
@@ -1858,41 +2433,46 @@ msgstr ""
 
 #
 # File: SeTdisk, line: 21
+#: ../initrd-scripts/usr-lib-setup/SeTdisk:21
 msgid "Go"
 msgstr ""
 
 #
 # File: SeTdisk, line: 22
+#: ../initrd-scripts/usr-lib-setup/SeTdisk:22
 msgid "Exit"
 msgstr ""
 
 #
 # File: 32-INShd, line: 53
 # File: 64-INShd, line: 53
+#: ../initrd-scripts/usr-lib-setup/SeTdisk:23
 #, fuzzy
 msgid "PARTITIONS EDITOR"
 msgstr "ΛΙΣΤΑ ΚΑΤΑΤΜΗΣΕΩΝ"
 
-#
-# File: SeTdisk, line: 24
+#: ../initrd-scripts/usr-lib-setup/SeTdisk:24
 msgid ""
 "Welcome to the Salix partition editor. Press <SPACE> to select a disk and "
 "select Go to start partitioning. If you don't want to alter the partition "
 "layout, select Exit.\n"
 "\n"
 "You usually need at least 2 partitions:\n"
+"- 1 LINUX bootable partition (5GB minimum recommended)\n"
 "- 1 SWAP partition (1GB minimum recommended) :"
 msgstr ""
 
 #
 # File: 32-SeTfull, line: 15
 # File: 64-SeTfull, line: 15
+#: ../initrd-scripts/usr-lib-setup/SeTfull:15
 msgid "ERROR: TARGET PARTITION FULL"
 msgstr "ΣΦΑΛΜΑ: Η ΚΑΤΑΤΜΗΣΗ ΕΓΚΑΤΑΣΤΑΣΗΣ ΔΕΝ ΕΧΕΙ ΑΛΛΟ ΧΩΡΟ"
 
 #
 # File: 32-SeTfull, line: 15
 # File: 64-SeTfull, line: 15
+#: ../initrd-scripts/usr-lib-setup/SeTfull:15
 msgid ""
 "Setup has detected that one or more of your target partitions has become "
 "full.  I'm sorry, but you will have to try installing again onto a partition "
@@ -1917,12 +2497,14 @@ msgstr ""
 #
 # File: 32-SeTkernel, line: 27
 # File: 64-SeTkernel, line: 27
+#: ../initrd-scripts/usr-lib-setup/SeTkernel:27
 msgid "REINSERT KERNEL DISC"
 msgstr "ΞΑΝΑΤΟΠΟΘΕΤΗΣΤΕ ΤΟ CD ΤΟΥ ΠΥΡΗΝΑ"
 
 #
 # File: 32-SeTkernel, line: 28
 # File: 64-SeTkernel, line: 28
+#: ../initrd-scripts/usr-lib-setup/SeTkernel:28
 #, fuzzy
 msgid ""
 "Please reinsert the Salix disc containing the collection of Linux kernels.  "
@@ -1936,12 +2518,14 @@ msgstr ""
 #
 # File: 32-SeTkernel, line: 80
 # File: 64-SeTkernel, line: 80
+#: ../initrd-scripts/usr-lib-setup/SeTkernel:80
 msgid "ERROR ATTEMPTING TO INSTALL KERNEL"
 msgstr "ΣΦΑΛΜΑ ΣΤΗΝ ΕΓΚΑΤΑΣΤΑΣΗ ΤΟΥ ΠΥΡΗΝΑ"
 
 #
 # File: 32-SeTkernel, line: 80
 # File: 64-SeTkernel, line: 80
+#: ../initrd-scripts/usr-lib-setup/SeTkernel:80
 #, sh-format
 msgid ""
 "Sorry, but the directory $PLINK/kernels was not found.  You may need to "
@@ -1956,28 +2540,33 @@ msgstr ""
 #
 # File: 32-SeTkeymap, line: 19
 # File: 64-SeTkeymap, line: 19
+#: ../initrd-scripts/usr-lib-setup/SeTkeymap:18
 msgid "KEYBOARD MAP SELECTION"
 msgstr "ΕΠΙΛΟΓΗ ΔΙΑΤΑΞΗΣ ΠΛΗΚΤΡΟΛΟΓΙΟΥ"
 
 #
 # File: 32-rc.S, line: 232
 # File: 64-rc.S, line: 232
+#: ../initrd-scripts/usr-lib-setup/SeTkeymap:198
 #, fuzzy
 msgid "Test keyboard map"
 msgstr "Εισάγετε το 1 για να επιλέξετε μια διάταξη πληκτρολογίου:"
 
 #
 # File: SeTkeymap, line: 199
+#: ../initrd-scripts/usr-lib-setup/SeTkeymap:199
 msgid "Accept keymap"
 msgstr ""
 
 #
 # File: SeTkeymap, line: 200
+#: ../initrd-scripts/usr-lib-setup/SeTkeymap:200
 msgid "Reject keymap"
 msgstr ""
 
 #
 # File: SeTkeymap, line: 201
+#: ../initrd-scripts/usr-lib-setup/SeTkeymap:201
 msgid ""
 "You may now test the new keyboard map by typing some text. You can accept "
 "the keyboard map or reject it and select another one. The installer only "
@@ -1990,6 +2579,7 @@ msgstr ""
 # File: 32-SeTpxemedia, line: 32
 # File: 64-SeTmedia, line: 8
 # File: 64-SeTpxemedia, line: 32
+#: ../initrd-scripts/usr-lib-setup/SeTmedia:11
 #, fuzzy
 msgid "Select Salix installation source."
 msgstr "Επιλέξτε την πηγή για την εγκατάσταση του Salix"
@@ -1999,12 +2589,14 @@ msgstr "Επιλέξτε την πηγή για την εγκατάσταση τ
 # File: 32-SeTpxemedia, line: 33
 # File: 64-SeTmedia, line: 9
 # File: 64-SeTpxemedia, line: 33
+#: ../initrd-scripts/usr-lib-setup/SeTmedia:12
 msgid "SOURCE MEDIA SELECTION"
 msgstr "ΕΠΙΛΟΓΗ ΜΕΣΟΥ ΠΡΟΕΛΕΥΣΗΣ"
 
 #
 # File: 32-SeTmedia, line: 10
 # File: 64-SeTmedia, line: 10
+#: ../initrd-scripts/usr-lib-setup/SeTmedia:14
 #, fuzzy
 msgid "Please select the media from which to install Salix Linux:"
 msgstr ""
@@ -2014,6 +2606,7 @@ msgstr ""
 #
 # File: 32-SeTmedia, line: 13
 # File: 64-SeTmedia, line: 13
+#: ../initrd-scripts/usr-lib-setup/SeTmedia:16
 #, fuzzy
 msgid "Install from a Salix USB stick"
 msgstr "Εγκατάσταση από ένα στικάκι USB Salix"
@@ -2021,6 +2614,7 @@ msgstr "Εγκατάσταση από ένα στικάκι USB Salix"
 #
 # File: 32-SeTmedia, line: 12
 # File: 64-SeTmedia, line: 12
+#: ../initrd-scripts/usr-lib-setup/SeTmedia:17
 #, fuzzy
 msgid "Install from a Salix CD or DVD"
 msgstr "Εγκατάσταση από CD ή DVD Salix"
@@ -2028,30 +2622,35 @@ msgstr "Εγκατάσταση από CD ή DVD Salix"
 #
 # File: 32-SeTmedia, line: 14
 # File: 64-SeTmedia, line: 14
+#: ../initrd-scripts/usr-lib-setup/SeTmedia:18
 msgid "Install from a hard drive partition"
 msgstr "Εγκατάσταση από τον σκληρό δίσκο"
 
 #
 # File: 32-SeTmedia, line: 18
 # File: 64-SeTmedia, line: 18
+#: ../initrd-scripts/usr-lib-setup/SeTmedia:19
 msgid "Install from a pre-mounted directory"
 msgstr "Εγκατάσταση από φάκελο που έχει ήδη αναρτηθεί στο σύστημα"
 
 #
 # File: 32-SeTmedia, line: 16
 # File: 64-SeTmedia, line: 16
+#: ../initrd-scripts/usr-lib-setup/SeTmedia:20
 msgid "Install from FTP/HTTP server"
 msgstr "Εγκατάσταση από server FTP/HTTP"
 
 #
 # File: 32-SeTmedia, line: 15
 # File: 64-SeTmedia, line: 15
+#: ../initrd-scripts/usr-lib-setup/SeTmedia:21
 msgid "Install from NFS (Network File System)"
 msgstr "Εγκατάσταση από NFS (Network File System)"
 
 #
 # File: 32-SeTmedia, line: 17
 # File: 64-SeTmedia, line: 17
+#: ../initrd-scripts/usr-lib-setup/SeTmedia:22
 #, fuzzy
 msgid "Install from a Samba share"
 msgstr "Εγκατάσταση από τοπικό δίκτυο Samba"
@@ -2059,6 +2658,7 @@ msgstr "Εγκατάσταση από τοπικό δίκτυο Samba"
 #
 # File: 32-SeTnet, line: 103
 # File: 64-SeTnet, line: 103
+#: ../initrd-scripts/usr-lib-setup/SeTnet:103
 msgid ""
 "\n"
 "You will now get a chance to probe your network interfaces.\n"
@@ -2071,12 +2671,15 @@ msgstr ""
 # File: 32-SeTnet, line: 119
 # File: 64-SeTnet, line: 106
 # File: 64-SeTnet, line: 119
+#: ../initrd-scripts/usr-lib-setup/SeTnet:106
+#: ../initrd-scripts/usr-lib-setup/SeTnet:119
 msgid "PROBING NETWORK DEVICES"
 msgstr "ΓΙΝΕΤΑΙ ΔΟΚΙΜΗ ΣΥΣΚΕΥΩΝ ΔΙΚΤΥΟΥ"
 
 #
 # File: 32-SeTnet, line: 113
 # File: 64-SeTnet, line: 113
+#: ../initrd-scripts/usr-lib-setup/SeTnet:113
 msgid ""
 "\n"
 "Are you OK with the network interface which was detected? If not, select "
@@ -2099,16 +2702,15 @@ msgstr ""
 # File: 32-SeTnet, line: 291
 # File: 64-SeTnet, line: 135
 # File: 64-SeTnet, line: 291
-#. hope that 3 seconds is enough for dhcpcd;
-#. if not then you had better specify the INTERFACE in the nic= parameter...
-#. end ask approval for ip config
-#. echo "Configuring ethernet card..."
+#: ../initrd-scripts/usr-lib-setup/SeTnet:135
+#: ../initrd-scripts/usr-lib-setup/SeTnet:291
 msgid "INITIALIZING NETWORK"
 msgstr "ΑΡΧΙΚΟΠΟΙΗΣΗ ΔΙΚΤΥΟΥ"
 
 #
 # File: 32-SeTnet, line: 136
 # File: 64-SeTnet, line: 136
+#: ../initrd-scripts/usr-lib-setup/SeTnet:136
 msgid ""
 "\n"
 "Waiting a few seconds for DHCP polling to settle ..."
@@ -2119,6 +2721,7 @@ msgstr ""
 #
 # File: 32-SeTnet, line: 159
 # File: 64-SeTnet, line: 159
+#: ../initrd-scripts/usr-lib-setup/SeTnet:159
 msgid ""
 "You're running off the hard drive filesystem. Is this machine currently "
 "running on the network you plan to install from? If so, we won't try to "
@@ -2137,13 +2740,15 @@ msgstr ""
 # File: 32-SeTnet, line: 284
 # File: 64-SeTnet, line: 164
 # File: 64-SeTnet, line: 284
+#: ../initrd-scripts/usr-lib-setup/SeTnet:164
+#: ../initrd-scripts/usr-lib-setup/SeTnet:284
 msgid "NETWORK CONFIGURATION"
 msgstr "ΡΥΘΜΙΣΕΙΣ ΔΙΚΤΥΟΥ"
 
 #
 # File: 32-SeTnet, line: 173
 # File: 64-SeTnet, line: 173
-#. Offer to install using DHCP:
+#: ../initrd-scripts/usr-lib-setup/SeTnet:173
 #, sh-format
 msgid ""
 "\n"
@@ -2164,12 +2769,14 @@ msgstr ""
 #
 # File: 32-SeTnet, line: 180
 # File: 64-SeTnet, line: 180
+#: ../initrd-scripts/usr-lib-setup/SeTnet:180
 msgid "DHCP CONFIGURATION"
 msgstr "ΡΥΘΜΙΣΕΙΣ DHCP"
 
 #
 # File: 32-SeTnet, line: 205
 # File: 64-SeTnet, line: 205
+#: ../initrd-scripts/usr-lib-setup/SeTnet:205
 msgid ""
 "\n"
 "You will need to enter the IP address you wish to assign to this machine. "
@@ -2186,12 +2793,14 @@ msgstr ""
 #
 # File: 32-SeTnet, line: 213
 # File: 64-SeTnet, line: 213
+#: ../initrd-scripts/usr-lib-setup/SeTnet:213
 msgid "ASSIGN IP ADDRESS"
 msgstr "ΡΥΘΜΙΣΗ ΔΙΕΥΘΥΝΣΗΣ IP"
 
 #
 # File: 32-SeTnet, line: 222
 # File: 64-SeTnet, line: 222
+#: ../initrd-scripts/usr-lib-setup/SeTnet:222
 msgid ""
 "\n"
 "Now we need to know your netmask. Typically this will be 255.255.255.0 but "
@@ -2209,24 +2818,28 @@ msgstr ""
 #
 # File: 32-SeTnet, line: 231
 # File: 64-SeTnet, line: 231
+#: ../initrd-scripts/usr-lib-setup/SeTnet:231
 msgid "ASSIGN NETMASK"
 msgstr "ΡΥΘΜΙΣΗ ΜΑΣΚΑΣ ΔΙΚΤΥΟΥ"
 
 #
 # File: 32-SeTnet, line: 240
 # File: 64-SeTnet, line: 240
+#: ../initrd-scripts/usr-lib-setup/SeTnet:240
 msgid "Do you have a gateway?"
 msgstr "Χρησιμοποιείτε πύλη δικτύου (gateway);"
 
 #
 # File: 32-SeTnet, line: 251
 # File: 64-SeTnet, line: 251
+#: ../initrd-scripts/usr-lib-setup/SeTnet:251
 msgid "ASSIGN GATEWAY ADDRESS"
 msgstr "ΡΥΘΜΙΣΗ ΠΥΛΗΣ ΔΙΚΤΥΟΥ"
 
 #
 # File: 32-SeTnet, line: 252
 # File: 64-SeTnet, line: 252
+#: ../initrd-scripts/usr-lib-setup/SeTnet:252
 msgid ""
 "\n"
 "What is the IP address for your gateway?"
@@ -2237,6 +2850,7 @@ msgstr ""
 #
 # File: 32-SeTnet, line: 272
 # File: 64-SeTnet, line: 272
+#: ../initrd-scripts/usr-lib-setup/SeTnet:272
 #, sh-format
 msgid ""
 "\n"
@@ -2258,6 +2872,7 @@ msgstr ""
 #
 # File: 32-SeTnet, line: 292
 # File: 64-SeTnet, line: 292
+#: ../initrd-scripts/usr-lib-setup/SeTnet:292
 #, sh-format
 msgid ""
 "\n"
@@ -2269,12 +2884,14 @@ msgstr ""
 #
 # File: 32-SeTnet, line: 329
 # File: 64-SeTnet, line: 329
+#: ../initrd-scripts/usr-lib-setup/SeTnet:329
 msgid "FETCHING CONFIGURATION"
 msgstr "ΓΙΝΕΤΑΙ ΛΗΨΗ ΡΥΘΜΙΣΕΩΝ"
 
 #
 # File: 32-SeTnet, line: 330
 # File: 64-SeTnet, line: 330
+#: ../initrd-scripts/usr-lib-setup/SeTnet:330
 #, sh-format
 msgid ""
 "\n"
@@ -2299,13 +2916,21 @@ msgstr ""
 # File: 64-SeTpartitions, line: 123
 # File: 64-SeTpartitions, line: 146
 # File: 64-SeTpartitions, line: 165
-#. output a nice status message
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:27
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:48
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:73
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:98
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:123
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:146
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:165
+#: ../initrd-scripts/usr-lib-setup/autoinstall:62
 msgid "FORMATTING"
 msgstr "ΔΙΑΜΟΡΦΩΣΗ (FORMAT)"
 
 #
 # File: 32-SeTpartitions, line: 28
 # File: 64-SeTpartitions, line: 28
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:28
 #, sh-format
 msgid "Formatting $ArG1 with filesystem btrfs."
 msgstr "Διαμόρφωση $ArG1 με σύστημα αρχείων btrfs."
@@ -2313,6 +2938,7 @@ msgstr "Διαμόρφωση $ArG1 με σύστημα αρχείων btrfs."
 #
 # File: 32-SeTpartitions, line: 29
 # File: 64-SeTpartitions, line: 29
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:29
 #, sh-format
 msgid ""
 "Formatting $ArG1\n"
@@ -2326,6 +2952,7 @@ msgstr ""
 #
 # File: 32-SeTpartitions, line: 49
 # File: 64-SeTpartitions, line: 49
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:49
 #, sh-format
 msgid "Formatting $ArG1 with filesystem ext2."
 msgstr "Διαμόρφωση $ArG1 με σύστημα αρχείων ext2."
@@ -2333,6 +2960,7 @@ msgstr "Διαμόρφωση $ArG1 με σύστημα αρχείων ext2."
 #
 # File: 32-SeTpartitions, line: 50
 # File: 64-SeTpartitions, line: 50
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:50
 #, sh-format
 msgid ""
 "Formatting $ArG1\n"
@@ -2346,6 +2974,7 @@ msgstr ""
 #
 # File: 32-SeTpartitions, line: 74
 # File: 64-SeTpartitions, line: 74
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:74
 #, sh-format
 msgid "Formatting $ArG1 with filesystem ext3."
 msgstr "Διαμόρφωση $ArG1 με σύστημα αρχείων ext3."
@@ -2353,6 +2982,7 @@ msgstr "Διαμόρφωση $ArG1 με σύστημα αρχείων ext3."
 #
 # File: 32-SeTpartitions, line: 75
 # File: 64-SeTpartitions, line: 75
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:75
 #, sh-format
 msgid ""
 "Formatting $ArG1\n"
@@ -2366,6 +2996,7 @@ msgstr ""
 #
 # File: 32-SeTpartitions, line: 99
 # File: 64-SeTpartitions, line: 99
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:99
 #, sh-format
 msgid "Formatting $ArG1 with filesystem ext4."
 msgstr "Διαμόρφωση $ArG1 με σύστημα αρχείων ext4."
@@ -2373,6 +3004,7 @@ msgstr "Διαμόρφωση $ArG1 με σύστημα αρχείων ext4."
 #
 # File: 32-SeTpartitions, line: 100
 # File: 64-SeTpartitions, line: 100
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:100
 #, sh-format
 msgid ""
 "Formatting $ArG1\n"
@@ -2386,6 +3018,7 @@ msgstr ""
 #
 # File: 32-SeTpartitions, line: 124
 # File: 64-SeTpartitions, line: 124
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:124
 #, sh-format
 msgid "Formatting $ArG1 with filesystem jfs."
 msgstr "Διαμόρφωση $ArG1 με σύστημα αρχείων jfs."
@@ -2393,6 +3026,7 @@ msgstr "Διαμόρφωση $ArG1 με σύστημα αρχείων jfs."
 #
 # File: 32-SeTpartitions, line: 125
 # File: 64-SeTpartitions, line: 125
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:125
 #, sh-format
 msgid ""
 "Formatting $ArG1\n"
@@ -2406,6 +3040,7 @@ msgstr ""
 #
 # File: 32-SeTpartitions, line: 147
 # File: 64-SeTpartitions, line: 147
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:147
 #, sh-format
 msgid "Formatting $ArG1 with filesystem reiserfs."
 msgstr "Διαμόρφωση $ArG1 με σύστημα αρχείων reiserfs."
@@ -2413,6 +3048,7 @@ msgstr "Διαμόρφωση $ArG1 με σύστημα αρχείων reiserfs."
 #
 # File: 32-SeTpartitions, line: 148
 # File: 64-SeTpartitions, line: 148
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:148
 #, sh-format
 msgid ""
 "Formatting $ArG1\n"
@@ -2426,6 +3062,7 @@ msgstr ""
 #
 # File: 32-SeTpartitions, line: 166
 # File: 64-SeTpartitions, line: 166
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:166
 #, sh-format
 msgid "Formatting $ArG1 with filesystem xfs."
 msgstr "Διαμόρφωση $ArG1 με σύστημα αρχείων xfs."
@@ -2433,6 +3070,7 @@ msgstr "Διαμόρφωση $ArG1 με σύστημα αρχείων xfs."
 #
 # File: 32-SeTpartitions, line: 167
 # File: 64-SeTpartitions, line: 167
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:167
 #, sh-format
 msgid ""
 "Formatting $ArG1\n"
@@ -2454,12 +3092,18 @@ msgstr ""
 # File: 64-SeTpartitions, line: 205
 # File: 64-SeTpartitions, line: 206
 # File: 64-SeTpartitions, line: 207
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:203
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:204
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:205
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:206
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:207
 msgid "done adding partitions, continue with setup"
 msgstr "Ολοκλήρωση προσάρτησης κατατμήσεων, συνεχίζουμε με την εγκατάσταση"
 
 #
 # File: 32-SeTpartitions, line: 214
 # File: 64-SeTpartitions, line: 214
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:214
 #, sh-format
 msgid "Do you want to format Linux partition ${ArG1}?"
 msgstr "Θέλετε να διαμορφωθεί η κατάτμηση ${ArG1};"
@@ -2467,6 +3111,7 @@ msgstr "Θέλετε να διαμορφωθεί η κατάτμηση ${ArG1};"
 #
 # File: 32-SeTpartitions, line: 215
 # File: 64-SeTpartitions, line: 215
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:215
 #, sh-format
 msgid "FORMAT PARTITION $ArG1"
 msgstr "ΔΙΑΜΟΡΦΩΣΗ ΚΑΤΑΤΜΗΣΗΣ (PARTITION) $ArG1"
@@ -2474,6 +3119,7 @@ msgstr "ΔΙΑΜΟΡΦΩΣΗ ΚΑΤΑΤΜΗΣΗΣ (PARTITION) $ArG1"
 #
 # File: 32-SeTpartitions, line: 215
 # File: 64-SeTpartitions, line: 215
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:215
 #, sh-format
 msgid ""
 "If this partition has not been formatted, you should format it.  NOTE: This "
@@ -2486,6 +3132,7 @@ msgstr ""
 #
 # File: 32-SeTpartitions, line: 219
 # File: 64-SeTpartitions, line: 219
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:219
 #, sh-format
 msgid "Quick format with no bad block checking"
 msgstr "Γρήγορη διαμόρφωση χωρίς έλεγχο για ελαττωματικούς τομείς (bad block)"
@@ -2493,6 +3140,7 @@ msgstr "Γρήγορη διαμόρφωση χωρίς έλεγχο για ελ�
 #
 # File: 32-SeTpartitions, line: 220
 # File: 64-SeTpartitions, line: 220
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:220
 #, sh-format
 msgid "Slow format that checks for bad blocks"
 msgstr "Διαμόρφωση με έλεγχο για ελαττωματικούς τομείς"
@@ -2500,6 +3148,7 @@ msgstr "Διαμόρφωση με έλεγχο για ελαττωματικού
 #
 # File: 32-SeTpartitions, line: 221
 # File: 64-SeTpartitions, line: 221
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:221
 #, sh-format
 msgid "No, do not format this partition"
 msgstr "Να μη γίνει διαμόρφωση αυτής της κατάτμησης"
@@ -2507,6 +3156,7 @@ msgstr "Να μη γίνει διαμόρφωση αυτής της κατάτμ
 #
 # File: 32-SeTpartitions, line: 234
 # File: 64-SeTpartitions, line: 234
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:234
 msgid "Ext2 is the traditional Linux file system and is fast and stable."
 msgstr ""
 "Το σύστημα αρχείων ext2 είναι το παραδοσιακό σύστημα αρχείων για τα Linux, "
@@ -2515,6 +3165,7 @@ msgstr ""
 #
 # File: 32-SeTpartitions, line: 237
 # File: 64-SeTpartitions, line: 237
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:237
 msgid "Ext3 is the journaling version of the Ext2 filesystem."
 msgstr ""
 "Το σύστημα αρχείων ext3 είναι βασισμένο στο ext2 αλλά με ικανότητες "
@@ -2523,12 +3174,14 @@ msgstr ""
 #
 # File: 32-SeTpartitions, line: 241
 # File: 64-SeTpartitions, line: 241
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:241
 msgid "Ext4 is the successor to the ext3 filesystem. "
 msgstr "Το σύστημα αρχείων ext4 είναι η πιο πρόσφατη έκδοση του ext3"
 
 #
 # File: 32-SeTpartitions, line: 245
 # File: 64-SeTpartitions, line: 245
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:245
 msgid ""
 "ReiserFS is a journaling filesystem that stores all files and filenames in a "
 "balanced tree structure."
@@ -2540,12 +3193,14 @@ msgstr ""
 #
 # File: 32-SeTpartitions, line: 248
 # File: 64-SeTpartitions, line: 248
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:248
 msgid "Btrfs is a B-tree copy-on-write filesystem."
 msgstr "Το Btrfs είναι ένα σύστημα αρχείων B-tree copy-on-write."
 
 #
 # File: 32-SeTpartitions, line: 253
 # File: 64-SeTpartitions, line: 253
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:253
 msgid ""
 "JFS is IBM's Journaled Filesystem, currently used in IBM enterprise servers."
 msgstr ""
@@ -2555,6 +3210,7 @@ msgstr ""
 #
 # File: 32-SeTpartitions, line: 256
 # File: 64-SeTpartitions, line: 256
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:256
 msgid "XFS is SGI's journaling filesystem that originated on IRIX."
 msgstr ""
 "Το σύστημα αρχείων XFS είναι το journaling σύστημα της SGI, βασισμένο στο "
@@ -2563,6 +3219,7 @@ msgstr ""
 #
 # File: 32-SeTpartitions, line: 259
 # File: 64-SeTpartitions, line: 259
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:260
 #, sh-format
 msgid "SELECT FILESYSTEM FOR $ArG1 "
 msgstr "ΕΠΙΛΟΓΗ ΣΥΣΤΗΜΑΤΟΣ ΑΡΧΕΙΩΝ ΓΙΑ ΤΗΝ ΚΑΤΑΤΜΗΣΗ $ArG1 "
@@ -2570,6 +3227,7 @@ msgstr "ΕΠΙΛΟΓΗ ΣΥΣΤΗΜΑΤΟΣ ΑΡΧΕΙΩΝ ΓΙΑ ΤΗΝ ΚΑΤ�
 #
 # File: 32-SeTpartitions, line: 261
 # File: 64-SeTpartitions, line: 261
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:262
 #, sh-format
 msgid "Partition $ArG1 will be formatted."
 msgstr "Η κατάτμηση $ArG1 είναι έτοιμη για διαμόρφωση"
@@ -2577,6 +3235,7 @@ msgstr "Η κατάτμηση $ArG1 είναι έτοιμη για διαμόρ�
 #
 # File: 32-SeTpartitions, line: 265
 # File: 64-SeTpartitions, line: 265
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:266
 msgid ""
 "Please select the type of filesystem to use for the specified device.  Here "
 "are descriptions of the available filesystems:"
@@ -2587,60 +3246,70 @@ msgstr ""
 #
 # File: 32-SeTpartitions, line: 270
 # File: 64-SeTpartitions, line: 270
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:271
 msgid "Standard Linux Ext2 Filesystem"
 msgstr "Κλασσικό σύστημα αρχείων Linux Ext2"
 
 #
 # File: 32-SeTpartitions, line: 273
 # File: 64-SeTpartitions, line: 273
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:274
 msgid "Ext3 Journaling Filesystem"
 msgstr "Journaling σύστημα αρχείων Ext3"
 
 #
 # File: 32-SeTpartitions, line: 276
 # File: 64-SeTpartitions, line: 276
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:277
 msgid "Ext4 Journaling Filesystem"
 msgstr "Journaling σύστημα αρχείων Ext4"
 
 #
 # File: 32-SeTpartitions, line: 279
 # File: 64-SeTpartitions, line: 279
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:280
 msgid "IBM's Journaled Filesystem"
 msgstr "Journaling σύστημα αρχείων της IBM"
 
 #
 # File: 32-SeTpartitions, line: 282
 # File: 64-SeTpartitions, line: 282
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:283
 msgid "ReiserFS Journaling Filesystem"
 msgstr "Journaling σύστημα αρχείων ReiserFS"
 
 #
 # File: 32-SeTpartitions, line: 285
 # File: 64-SeTpartitions, line: 285
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:286
 msgid "Btrfs Copy-on-Write B-tree Filesystem"
 msgstr "Σύστημα αρχείων Btrfs τύπου Copy-on-Write B-tree"
 
 #
 # File: 32-SeTpartitions, line: 288
 # File: 64-SeTpartitions, line: 288
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:289
 msgid "SGI's Journaling Filesystem"
 msgstr "Journaling σύστημα αρχείων της SGI"
 
 #
 # File: 32-SeTpartitions, line: 319
 # File: 64-SeTpartitions, line: 319
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:320
 msgid "Setting up root Linux partition."
 msgstr "Στήσιμο της κατάτμησης root (/)"
 
 #
 # File: 32-SeTpartitions, line: 321
 # File: 64-SeTpartitions, line: 321
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:322
 msgid "Select Linux installation partition:"
 msgstr "Επιλογή μιας κατάτμησης για την εγκατάσταση:"
 
 #
 # File: 32-SeTpartitions, line: 327
 # File: 64-SeTpartitions, line: 327
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:328
 msgid ""
 "Please select a partition from the following list to use for your root (/) "
 "Linux partition."
@@ -2651,18 +3320,21 @@ msgstr ""
 #
 # File: 32-SeTpartitions, line: 408
 # File: 64-SeTpartitions, line: 408
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:409
 msgid "Setting up other Linux partitions."
 msgstr "Στήσιμο των υπόλοιπων κατατμήσεων"
 
 #
 # File: 32-SeTpartitions, line: 410
 # File: 64-SeTpartitions, line: 410
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:411
 msgid "Select other Linux partitions for /etc/fstab"
 msgstr "Επιλογή κατατμήσεων για καταχώρηση στο αρχείο /etc/fstab"
 
 #
 # File: 32-SeTpartitions, line: 416
 # File: 64-SeTpartitions, line: 416
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:417
 #, sh-format
 msgid ""
 "You seem to have more than one partition tagged as type Linux.  You may use "
@@ -2690,6 +3362,7 @@ msgstr ""
 #
 # File: 32-SeTpartitions, line: 451
 # File: 64-SeTpartitions, line: 451
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:452
 #, sh-format
 msgid "Partition $NEXT_PARTITION will not be reformatted."
 msgstr "Δεν θα διαμορφώσουμε ξανά την κατάτμηση $NEXT_PARTITION"
@@ -2697,6 +3370,7 @@ msgstr "Δεν θα διαμορφώσουμε ξανά την κατάτμησ�
 #
 # File: 32-SeTpartitions, line: 456
 # File: 64-SeTpartitions, line: 456
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:457
 #, sh-format
 msgid "Partition $NEXT_PARTITION will be formatted with $NEXT_SYS_TYPE."
 msgstr ""
@@ -2706,8 +3380,7 @@ msgstr ""
 #
 # File: 32-SeTpartitions, line: 493
 # File: 64-SeTpartitions, line: 493
-#. DOFORMAT?
-#. Now ask the user where to mount this new filesystem:
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:494
 #, sh-format
 msgid "SELECT MOUNT POINT FOR $NEXT_PARTITION"
 msgstr "Επιλέξτε σημείο προσάρτησης για την $NEXT_PARTITION"
@@ -2715,6 +3388,7 @@ msgstr "Επιλέξτε σημείο προσάρτησης για την $NEXT
 #
 # File: 32-SeTpartitions, line: 494
 # File: 64-SeTpartitions, line: 494
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:495
 #, sh-format
 msgid ""
 "OK, now you need to specify where you want the new partition mounted.  For "
@@ -2729,24 +3403,28 @@ msgstr ""
 #
 # File: 32-SeTpartitions, line: 538
 # File: 64-SeTpartitions, line: 538
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:539
 msgid "Finished setting up Linux partitions."
 msgstr "Οι κατατμήσεις του συστήματος έχουν ρυθμιστεί"
 
 #
 # File: 32-SeTpartitions, line: 539
 # File: 64-SeTpartitions, line: 539
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:540
 msgid "DONE ADDING LINUX PARTITIONS TO /etc/fstab"
 msgstr "ΟΛΟΚΛΗΡΩΣΗ ΚΑΤΑΧΩΡΗΣΗΣ ΚΑΤΑΤΜΗΣΕΩΝ ΣΤΟ ΑΡΧΕΙΟ /etc/fstab"
 
 #
 # File: 32-SeTswap, line: 26
 # File: 64-SeTswap, line: 26
+#: ../initrd-scripts/usr-lib-setup/SeTswap:26
 msgid "NO SWAP SPACE DETECTED"
 msgstr "ΔΕΝ ΒΡΕΘΗΚΕ ΚΑΤΑΤΜΗΣΗ ΓΙΑ ΕΙΚΟΝΙΚΗ ΜΝΗΜΗ SWAP"
 
 #
 # File: 32-SeTswap, line: 26
 # File: 64-SeTswap, line: 26
+#: ../initrd-scripts/usr-lib-setup/SeTswap:26
 msgid ""
 "You have not created a swap partition with Linux fdisk.  Do you want to "
 "continue installing without one? "
@@ -2757,12 +3435,14 @@ msgstr ""
 #
 # File: 32-SeTswap, line: 30
 # File: 64-SeTswap, line: 30
+#: ../initrd-scripts/usr-lib-setup/SeTswap:30
 msgid "ABORTING INSTALLATION"
 msgstr "ΑΚΥΡΩΣΗ ΕΓΚΑΤΑΣΤΑΣΗΣ"
 
 #
 # File: 32-SeTswap, line: 30
 # File: 64-SeTswap, line: 30
+#: ../initrd-scripts/usr-lib-setup/SeTswap:30
 msgid "Create a swap partition with Linux fdisk, and then try this again."
 msgstr ""
 "Δημιουργήστε μία κατάτμηση για την εικονική μνήμη swap με την εντολή \"fdisk"
@@ -2773,18 +3453,22 @@ msgstr ""
 # File: 32-SeTswap, line: 79
 # File: 64-SeTswap, line: 39
 # File: 64-SeTswap, line: 79
+#: ../initrd-scripts/usr-lib-setup/SeTswap:39
+#: ../initrd-scripts/usr-lib-setup/SeTswap:79
 msgid "Setting up swap partitions."
 msgstr "Ρύθμιση κατατμήσεων εικονικής μνήμης SWAP"
 
 #
 # File: 32-SeTswap, line: 41
 # File: 64-SeTswap, line: 41
+#: ../initrd-scripts/usr-lib-setup/SeTswap:41
 msgid "SWAP SPACE DETECTED"
 msgstr "ΒΡΕΘΗΚΕ ΚΑΤΑΤΜΗΣΗ ΔΙΑΜΟΡΦΩΜΕΝΗ ΓΙΑ SWAP"
 
 #
 # File: 32-SeTswap, line: 43
 # File: 64-SeTswap, line: 43
+#: ../initrd-scripts/usr-lib-setup/SeTswap:43
 #, fuzzy
 msgid ""
 "Salix Setup has detected one or more swap partitions on your system.  These "
@@ -2803,6 +3487,7 @@ msgstr ""
 #
 # File: 32-SeTswap, line: 56
 # File: 64-SeTswap, line: 56
+#: ../initrd-scripts/usr-lib-setup/SeTswap:56
 #, sh-format
 msgid "Linux swap partition, ${PARTSIZE}"
 msgstr "Κατάτμηση εικονικής μνήμης swap, ${PARTSIZE}"
@@ -2810,6 +3495,7 @@ msgstr "Κατάτμηση εικονικής μνήμης swap, ${PARTSIZE}"
 #
 # File: 32-SeTswap, line: 80
 # File: 64-SeTswap, line: 80
+#: ../initrd-scripts/usr-lib-setup/SeTswap:80
 msgid "CHECK SWAP PARTITIONS FOR BAD BLOCKS?"
 msgstr ""
 "ΝΑ ΓΙΝΕΙ ΕΛΕΓΧΟΣ ΓΙΑ ΕΛΑΤΤΩΜΑΤΙΚΟΥΣ ΤΟΜΕΙΣ ΣΤΙΣ ΚΑΤΑΤΜΗΣΕΙΣ ΕΙΚΟΝΙΚΗΣ ΜΝΗΜΗΣ "
@@ -2818,6 +3504,7 @@ msgstr ""
 #
 # File: 32-SeTswap, line: 81
 # File: 64-SeTswap, line: 81
+#: ../initrd-scripts/usr-lib-setup/SeTswap:81
 #, fuzzy
 msgid ""
 "Salix Setup will now prepare your system's swap space.  When formatting swap "
@@ -2835,6 +3522,7 @@ msgstr ""
 #
 # File: 32-SeTswap, line: 101
 # File: 64-SeTswap, line: 101
+#: ../initrd-scripts/usr-lib-setup/SeTswap:101
 #, sh-format
 msgid "Activating swap partition ${swappartition}:"
 msgstr "Ενεργοποίηση κατάτμησης εικονικής μνήμης swap ${swappartition}:"
@@ -2842,6 +3530,7 @@ msgstr "Ενεργοποίηση κατάτμησης εικονικής μνή�
 #
 # File: 32-SeTswap, line: 117
 # File: 64-SeTswap, line: 117
+#: ../initrd-scripts/usr-lib-setup/SeTswap:117
 msgid ""
 "Your swapspace has been configured. This information   will be added to "
 "your /etc/fstab:"
@@ -2852,16 +3541,19 @@ msgstr ""
 #
 # File: 32-SeTswap, line: 122
 # File: 64-SeTswap, line: 122
+#: ../initrd-scripts/usr-lib-setup/SeTswap:122
 msgid "SWAP SPACE CONFIGURED"
 msgstr "Η ΜΝΗΜΗ SWAP ΕΙΝΑΙ ΕΤΟΙΜΗ"
 
 #
 # File: SeTusers, line: 9
+#: ../initrd-scripts/usr-lib-setup/SeTusers:9
 msgid "User setup"
 msgstr ""
 
 #
 # File: SeTusers, line: 10
+#: ../initrd-scripts/usr-lib-setup/SeTusers:10
 msgid ""
 "You will now be presented with some dialogs so that you can create one or "
 "more user accounts in your new system.\n"
@@ -2876,25 +3568,34 @@ msgstr ""
 #
 # File: 32-liloconfig, line: 1095
 # File: 64-liloconfig, line: 1095
-#. destroy ? ##########################################
+#: ../initrd-scripts/usr-lib-setup/autoinstall:25
+#: ../initrd-scripts/usr-lib-setup/autoinstall:105
+#: ../initrd-scripts/usr-lib-setup/autoinstall:126
+#: ../initrd-scripts/usr-lib-setup/autoinstall:140
+#: ../initrd-scripts/usr-lib-setup/autoinstall:203
+#: ../initrd-scripts/usr-lib-setup/autoinstall:206
+#: ../initrd-scripts/usr-lib-setup/autoinstall:258
 #, fuzzy
 msgid "AUTO PARTITION"
 msgstr "ΕΠΙΛΕΞΤΕ ΜΙΑ ΚΑΤΑΤΜΗΣΗ OS/2"
 
 #
 # File: autoinstall, line: 103
+#: ../initrd-scripts/usr-lib-setup/autoinstall:103
 msgid "Do It"
 msgstr ""
 
 #
 # File: 32-xwmconfig, line: 207
 # File: 64-xwmconfig, line: 207
+#: ../initrd-scripts/usr-lib-setup/autoinstall:104
 #, fuzzy
 msgid "Cancel"
 msgstr "Ακύρωση"
 
 #
 # File: autoinstall, line: 106
+#: ../initrd-scripts/usr-lib-setup/autoinstall:106
 msgid ""
 "This is automatic partition mode.\n"
 "Press <SPACE> to select the target disk where Salix will be installed.\n"
@@ -2904,11 +3605,13 @@ msgstr ""
 
 #
 # File: autoinstall, line: 131
+#: ../initrd-scripts/usr-lib-setup/autoinstall:131
 msgid "Go back to the main setup menu"
 msgstr ""
 
 #
 # File: autoinstall, line: 140
+#: ../initrd-scripts/usr-lib-setup/autoinstall:140
 msgid "No target disk selected, going back to main menu"
 msgstr ""
 
@@ -2919,8 +3622,7 @@ msgstr ""
 # File: 64-SeTDOS, line: 217
 # File: 64-SeTEFI, line: 73
 # File: 64-SeTpartitions, line: 533
-#. Done, report to the user:
-#. dialog --title "`gettext "AUTO PARTITION" --msgbox "$(cat $TMP/${PARTITION_TOOL}.report)" 0 0
+#: ../initrd-scripts/usr-lib-setup/autoinstall:252
 #, fuzzy
 msgid ""
 "\n"
@@ -2930,292 +3632,3 @@ msgstr ""
 "\n"
 "Προσθέτοντας αυτές τις πληροφορίες στο /etc/fstab:\n"
 "\n"
-
-#
-# File: 32-liloconfig, line: 815
-# File: 64-liloconfig, line: 815
-#, fuzzy
-msgid "WELCOME TO THE SALIX INSTALLATION"
-msgstr "ΕΓΚΑΤΑΣΤΑΣΗ ΤΟΥ LILO ΓΙΑ ΕΜΠΕΙΡΟΥΣ"
-
-#
-# File: 32-pkgtool, line: 442
-# File: 64-pkgtool, line: 442
-#, fuzzy
-msgid "Keep the current keymap"
-msgstr "Παραλείψτε την παρούσα σειρά δίσκων"
-
-#
-# File: global-blurbs, line: 17
-#, fuzzy
-msgid "Select another keymap"
-msgstr "Επιλέξτε γραμματοσειρά για την γραμμή εντολών"
-
-#
-# File: 32-INSCD, line: 234
-# File: 64-INSCD, line: 234
-#. if there is no EFI
-#, fuzzy
-msgid "Salix Installation"
-msgstr "Ακύρωση εγκατάστασης μέσω CD"
-
-#
-# File: 32-INSCD, line: 234
-# File: 64-INSCD, line: 234
-#, fuzzy
-msgid "Exit installation"
-msgstr "Ακύρωση εγκατάστασης μέσω CD"
-
-#
-# File: setup, line: 70
-msgid ""
-"You may now proceed with the installation by pressing the ENTER key.\n"
-"\n"
-"If you want to exit the installation and drop to a linux console, select "
-"'Exit installation'"
-msgstr ""
-
-#
-# File: setup, line: 74
-# File: setup, line: 94
-msgid "Install Salix using a step-by-step guide"
-msgstr ""
-
-#
-# File: 32-pxesetup, line: 52
-# File: 64-pxesetup, line: 52
-#, fuzzy
-msgid ""
-"You may select an option below using the UP/DOWN keys and SPACE or ENTER. "
-"Alternate keys may also be used: '+', '-', and TAB.\n"
-"\n"
-"If you want to exit the installation and drop to a linux console, select "
-"'Exit installation'"
-msgstr ""
-"Καλωσήλθατε στις ρυθμίσεις του Salix PXE.\n"
-"Κάντε μια από τις παρακάτω επιλογές χρησιμοποιώντας τα πλήκτρα UP/DOWN και "
-"το SPACE ή το ENTER.\n"
-"\n"
-"Μπορούν, επίσης, να χρησιμοποιηθούν και τα εναλλακτικά πλήκτρα: '+', '-', "
-"και το TAB."
-
-#
-# File: setup, line: 95
-msgid "Autopartition and install with few options (wipes your HD)"
-msgstr ""
-
-#
-# File: 32-setup, line: 57
-# File: 64-setup, line: 57
-msgid "NO LINUX PARTITIONS DETECTED"
-msgstr "ΔΕΝ ΒΡΕΘΗΚΑΝ ΚΑΤΑΤΜΗΣΕΙΣ LINUX"
-
-#
-# File: 32-setup, line: 58
-# File: 64-setup, line: 58
-#, fuzzy
-msgid ""
-"There don't seem to be any Linux partitions on this machine.\n"
-"\t\tYou'll need to make at least one of these to install Linux. Either "
-"select AUTOINSTALL from the menu, or select INSTALL and use the partition "
-"editor to create one."
-msgstr ""
-"Δεν φαίνεται να υπάρχουν καθόλου κατατμήσεις τύπου Linux σε αυτό το "
-"μηχάνημα. Πρέπει να φτιάξετε τουλάχιστον μία από αυτές για να εγκαταστήσετε "
-"το Linux. Για να το πετύχετε, πρέπει να αφήσετε το 'setup' και δημιουργήστε "
-"τις κατατμήσεις χρησιμοποιώντας το 'cfdisk' (κατατμήσεις MBR) ή το "
-"'cgfdisk' (κατατμήσεις GPT). Για περισσότερες πληροφορίες, διαβάστε το "
-"αρχείο βοήθειας του 'setup' από το επόμενο μενού."
-
-#
-# File: 32-setup, line: 67
-# File: 64-setup, line: 67
-msgid "NO EFI SYSTEM PARTITION DETECTED"
-msgstr "ΔΕΝ ΕΝΤΟΠΙΣΘΗΚΕ ΚΑΜΙΑ ΚΑΤΑΤΜΗΣΗ ΣΥΣΤΗΜΑΤΟΣ ΜΕ EFI"
-
-#
-# File: 32-setup, line: 68
-# File: 64-setup, line: 68
-#, fuzzy
-msgid ""
-"This machine appears to be using EFI/UEFI, but no EFI System Partition was "
-"found.\n"
-"\n"
-"You'll need to make an EFI System Partition in order to boot from the hard "
-"drive."
-msgstr ""
-"Αυτό το μηχάνημα φαίνεται πως χρησιμοποιεί EFI/UEFI, αλλά δεν βρέθηκε καμία "
-"κατάτμηση συστήματος EFI.  Θα πρέπει να δημιουργήσετε μια Κατάτμηση "
-"Συστήματος EFI για να μπορέσετε να κάνετε εκκίνηση από τον σκληρό.  Για να "
-"το καταφέρετε, αφήστε το 'setup', και χρησιμοποιήστε το 'cgdisk' για να "
-"δημιουργήσετε μια κατάτμηση 100MB του είδους EF00.  Για περισσότερες "
-"πληροφορίες, διαβάστε το αρχείο βοήθειας 'setup' από το επόμενο μενού."
-
-#
-# File: setup, line: 162
-# File: setup, line: 169
-msgid "-s"
-msgstr ""
-
-#
-# File: setup, line: 202
-msgid "No Source Selected"
-msgstr ""
-
-#
-# File: setup, line: 203
-msgid ""
-"\n"
-"The installer does not know where to find the source packages...\n"
-"Press ENTER to return to the main menu."
-msgstr ""
-
-#
-# File: 32-setup, line: 179
-# File: 64-setup, line: 179
-msgid "CANNOT INSTALL SOFTWARE YET"
-msgstr "ΔΕΝ ΜΠΟΡΕΙ ΑΚΟΜΗ ΝΑ ΓΙΝΕΙ ΕΓΚΑΤΑΣΤΑΣΗ ΛΟΓΙΣΜΙΚΟΥ"
-
-#
-# File: 32-setup, line: 179
-# File: 64-setup, line: 179
-#, fuzzy
-msgid ""
-"Before you can install software, complete the following tasks:\n"
-"   \n"
-"1. Select your source media.\n"
-"2. Set up your target Linux partition(s).\n"
-"\n"
-"You may also optionally remap your keyboard and set up your swap "
-"partition(s).\n"
-"\n"
-"Press ENTER to return to the main menu."
-msgstr ""
-"\n"
-"Πριν μπορέσετε να εγκαταστήσετε λογισμικό, διεκπεραιώστε τις ακόλουθες "
-"εργασίες:\n"
-"\n"
-"1. Επιλέξτε το μέσον προέλευσης.\n"
-"2. Ρυθμίστε την κατάτμησή σας (κατατμήσεις) για Linux partition.\n"
-"3. Επιλέξτε ποιων κατηγοριών λογισμικό θα εγκαταστήσετε.\n"
-"\n"
-"Μπορείτε, επίσης, προαιρετικά, να αλλάξετε την διάταξη του πληκτρολογίου σας "
-"και να ρυθμίσετε την κατάτμησή σας (κατατμήσεις) για εικονική μνήμη/swap.\n"
-"\n"
-"Πατήστε ENTER για να επιστρέψετε στο βασικό μενού."
-
-#
-# File: 32-display.lilohelp, line: 106
-# File: 64-display.lilohelp, line: 106
-#, fuzzy
-msgid "SELECT INSTALLATION MODE"
-msgstr "ΒΟΗΘΕΙΑ ΕΓΚΑΤΑΣΤΑΣΗΣ ΤΟΥ LILO"
-
-#
-# File: setup, line: 238
-msgid ""
-"Please select the installation mode you prefer from the following:\n"
-"BASIC will only install a minimal graphical environment and a web browser.\n"
-"CORE will install only the minimum essentials for your system to start in "
-"console mode (no graphical environment included) and is ideal if you are an "
-"experienced user and want to fully customize your installation for any "
-"specific purpose.\n"
-msgstr ""
-
-#
-# File: setup, line: 248
-# File: setup, line: 270
-msgid "Install a minimal graphical environment"
-msgstr ""
-
-#
-# File: setup, line: 249
-# File: setup, line: 271
-msgid "Install a minimal console system"
-msgstr ""
-
-#
-# File: setup, line: 256
-msgid ""
-"Please select the installation mode you prefer from the following:\n"
-"FULL (default) will install everything. That includes one application per "
-"task, such as an office suite, a multimedia player, a CD/DVD burner etc. "
-"BASIC will only install a minimal graphical environment and a web browser.\n"
-"CORE will install only the minimum essentials for your system to start in "
-"console mode (no graphical environment included) and is ideal if you are an "
-"experienced user and want to fully customize your installation for any "
-"specific purpose.\n"
-msgstr ""
-
-#
-# File: setup, line: 269
-msgid "Install everything"
-msgstr ""
-
-#
-# File: 32-setup, line: 346
-# File: 64-setup, line: 346
-msgid "REPLACE /etc/fstab?"
-msgstr "ΝΑ ΑΝΤΙΚΑΤΑΣΤΑΘΕΙ το  /etc/fstab ;"
-
-#
-# File: 32-setup, line: 346
-# File: 64-setup, line: 346
-#, fuzzy
-msgid ""
-"You already have an /etc/fstab on your install partition.\n"
-"\n"
-"If you were just adding software, you should probably keep your old /etc/"
-"fstab.\n"
-"\n"
-"If you've changed your partitioning scheme, you should use the new /etc/"
-"fstab.\n"
-"\n"
-"Do you want to replace your old /etc/fstab with the new one?"
-msgstr ""
-"Έχετε ήδη ένα /etc/fstab στην κατάτμησή σας με την εγκατάσταση.  Αν απλώς "
-"προσθέτετε λογισμικό, θα πρέπει πιθανώς να διατηρήσετε το παλιό σας /etc/"
-"fstab.  Αν αλλάξετε το σχήμα/ scheme κατάτμησή σας, τότε θα πρέπει να "
-"χρησιμοποιήσετε το καινούργιο σας /etc/fstab.  Θέλετε να αντικαταστήσετε το "
-"παλιό σας /etc/fstab με το νέο;"
-
-#
-# File: 32-display.lilohelp, line: 106
-# File: 64-display.lilohelp, line: 106
-#, fuzzy
-msgid "SALIX INSTALLATION IS COMPLETE"
-msgstr "ΒΟΗΘΕΙΑ ΕΓΚΑΤΑΣΤΑΣΗΣ ΤΟΥ LILO"
-
-#
-# File: setup, line: 372
-# File: setup, line: 379
-msgid "Reboot now"
-msgstr ""
-
-#
-# File: setup, line: 373
-# File: setup, line: 380
-msgid "Exit to command line"
-msgstr ""
-
-#
-# File: setup, line: 374
-msgid ""
-"System configuration and installation is complete. Please remove the "
-"installation disc. You can either select to reboot your system now or choose "
-"to exit the installation to the command line if you would like to do any "
-"manual tweaking."
-msgstr ""
-
-#
-# File: 32-setup, line: 472
-# File: 64-setup, line: 472
-#, fuzzy
-msgid ""
-"System configuration and installation is complete. You can either select to "
-"reboot your system now or choose to exit the installation to the command "
-"line if you would like to do any manual tweaking."
-msgstr ""
-"Η διαμόρφωση και η ρύθμιση του συστήματος ολοκληρώθηκαν. Μπορείτε να κάνετε "
-"ΕΞΟΔΟ από τις ρυθμίσεις και να επανεκκινήσετε τον υπολογιστή σας, πατώντας "
-"ctrl-alt-del"
