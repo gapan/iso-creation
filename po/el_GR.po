@@ -11,24 +11,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Salix-14.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-23 21:21+0300\n"
-"PO-Revision-Date: 2016-03-21 23:23+0100\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2016-05-23 23:07+0300\n"
+"PO-Revision-Date: 2016-05-23 23:11+0200\n"
+"Last-Translator: George Vlahavas <vlahavas~at~gmail~dot~com>\n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
 "Language: el_GR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #
 # File: 32-liloconfig, line: 815
 # File: 64-liloconfig, line: 815
 #: ../initrd-scripts/usr-lib-setup/setup:52
-#, fuzzy
 msgid "WELCOME TO THE SALIX INSTALLATION"
-msgstr "ΕΓΚΑΤΑΣΤΑΣΗ ΤΟΥ LILO ΓΙΑ ΕΜΠΕΙΡΟΥΣ"
+msgstr "ΚΑΛΩΣ ΗΡΘΑΤΕ ΣΤΗΝ ΕΓΚΑΤΑΣΤΑΣΗ ΤΟΥ SALIX"
 
 #
 # File: 32-pkgtool, line: 442
@@ -237,9 +236,8 @@ msgstr ""
 # File: 64-display.lilohelp, line: 106
 #: ../initrd-scripts/usr-lib-setup/setup:236
 #: ../initrd-scripts/usr-lib-setup/setup:253
-#, fuzzy
 msgid "SELECT INSTALLATION MODE"
-msgstr "ΒΟΗΘΕΙΑ ΕΓΚΑΤΑΣΤΑΣΗΣ ΤΟΥ LILO"
+msgstr "ΕΠΙΛΟΓΗ ΕΙΔΟΥΣ ΕΓΚΑΤΑΣΤΑΣΗΣ"
 
 #
 # File: setup, line: 238
@@ -323,9 +321,8 @@ msgstr ""
 # File: 64-display.lilohelp, line: 106
 #: ../initrd-scripts/usr-lib-setup/setup:371
 #: ../initrd-scripts/usr-lib-setup/setup:378
-#, fuzzy
 msgid "SALIX INSTALLATION IS COMPLETE"
-msgstr "ΒΟΗΘΕΙΑ ΕΓΚΑΤΑΣΤΑΣΗΣ ΤΟΥ LILO"
+msgstr "Η ΕΓΚΑΤΑΣΤΑΣΗ ΤΟΥ SALIX ΟΛΟΚΛΗΡΩΘΗΚΕ"
 
 #
 # File: setup, line: 372
@@ -1481,7 +1478,7 @@ msgstr "ΣΦΑΛΜΑ ΑΝΤΙΓΡΑΦΗΣ"
 #: ../initrd-scripts/usr-lib-setup/INSdir:26
 #: ../initrd-scripts/usr-lib-setup/INShd:26
 msgid "REBOOT"
-msgstr ""
+msgstr "ΕΠΑΝΕΚΚΙΝΗΣΗ"
 
 #
 # File: INSdir, line: 27
@@ -1489,7 +1486,7 @@ msgstr ""
 #: ../initrd-scripts/usr-lib-setup/INSdir:27
 #: ../initrd-scripts/usr-lib-setup/INShd:27
 msgid "CANCEL"
-msgstr ""
+msgstr "ΑΚΥΡΩΣΗ"
 
 #
 # File: INSdir, line: 40
@@ -2435,13 +2432,13 @@ msgstr ""
 # File: SeTdisk, line: 21
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:21
 msgid "Go"
-msgstr ""
+msgstr "Εκκίνηση"
 
 #
 # File: SeTdisk, line: 22
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:22
 msgid "Exit"
-msgstr ""
+msgstr "Έξοδος"
 
 #
 # File: 32-INShd, line: 53
@@ -2455,12 +2452,36 @@ msgstr "ΛΙΣΤΑ ΚΑΤΑΤΜΗΣΕΩΝ"
 msgid ""
 "Welcome to the Salix partition editor. Press <SPACE> to select a disk and "
 "select Go to start partitioning. If you don't want to alter the partition "
-"layout, select Exit.\n"
-"\n"
-"You usually need at least 2 partitions:\n"
-"- 1 LINUX bootable partition (5GB minimum recommended)\n"
-"- 1 SWAP partition (1GB minimum recommended) :"
+"layout, select Exit."
 msgstr ""
+"Καλώς ήρθατε στη διαχείριση κατατμήσεων του Salix. Πατήστε <ΚΕΝΟ> για να "
+"επιλέξετε ένα δίσκο και επιλέξτε Εκκίνηση για την έναρξη της επεξεργασίας "
+"κατατμήσεων. Αν δεν επιθυμείτε να μεταβάλετε τις κατατμήσεις, επιλέξτε "
+"Έξοδος."
+
+#: ../initrd-scripts/usr-lib-setup/SeTdisk:28
+msgid ""
+"NOTE: If you are planning to use BTRFS for your / filesystem, LILO the "
+"default boot loader will not be able to boot it. In that case, you will need "
+"a separate /boot partition with another filesystem."
+msgstr ""
+"ΣΗΜΕΙΩΣΗ: Αν σχεδιάζετε να χρησιμοποιήσετε το σύστημα αρχείων BTRFS για την "
+"κατάτμηση /, ο LILO που χρησιμοποιείται για την έναρξη του συστήματος δεν θα "
+"μπορέσει να εκκινήσει με αυτό. Σε αυτή την περίπτωση θα χρειαστείτε μία "
+"ξεχωριστή κατάτμηση /boot η οποία θα χρησιμοποιεί κάποιο άλλο σύστημα "
+"αρχείων."
+
+#: ../initrd-scripts/usr-lib-setup/SeTdisk:33
+msgid "You usually need at least 2 partitions:"
+msgstr "Συνήθως απαιτούνται τουλάχιστον 2 κατατμήσεις:"
+
+#: ../initrd-scripts/usr-lib-setup/SeTdisk:34
+msgid "1 LINUX bootable partition (10GB minimum recommended)"
+msgstr "1 εκκινήσιμη κατάτμηση LINUX (10GB ελάχιστο προτεινόμενο μέγεθος)"
+
+#: ../initrd-scripts/usr-lib-setup/SeTdisk:35
+msgid "1 SWAP partition (1GB minimum recommended)"
+msgstr "1 κατάτμηση SWAP (1GB ελάχιστο προτεινόμενο μέγεθος)"
 
 #
 # File: 32-SeTfull, line: 15
@@ -2556,13 +2577,13 @@ msgstr "Εισάγετε το 1 για να επιλέξετε μια διάτα
 # File: SeTkeymap, line: 199
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:199
 msgid "Accept keymap"
-msgstr ""
+msgstr "Αποδοχή διάταξης"
 
 #
 # File: SeTkeymap, line: 200
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:200
 msgid "Reject keymap"
-msgstr ""
+msgstr "Απόρριψη διάταξης"
 
 #
 # File: SeTkeymap, line: 201
@@ -3589,7 +3610,6 @@ msgstr ""
 # File: 32-xwmconfig, line: 207
 # File: 64-xwmconfig, line: 207
 #: ../initrd-scripts/usr-lib-setup/autoinstall:104
-#, fuzzy
 msgid "Cancel"
 msgstr "Ακύρωση"
 

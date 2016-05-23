@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Salix-14.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-23 21:21+0300\n"
+"POT-Creation-Date: 2016-05-23 23:07+0300\n"
 "PO-Revision-Date: 2016-03-22 00:20+0100\n"
 "Last-Translator: \n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
@@ -3574,11 +3574,26 @@ msgstr "LISTA DE PARTIÇÕES"
 msgid ""
 "Welcome to the Salix partition editor. Press <SPACE> to select a disk and "
 "select Go to start partitioning. If you don't want to alter the partition "
-"layout, select Exit.\n"
-"\n"
-"You usually need at least 2 partitions:\n"
-"- 1 LINUX bootable partition (5GB minimum recommended)\n"
-"- 1 SWAP partition (1GB minimum recommended) :"
+"layout, select Exit."
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/SeTdisk:28
+msgid ""
+"NOTE: If you are planning to use BTRFS for your / filesystem, LILO the "
+"default boot loader will not be able to boot it. In that case, you will need "
+"a separate /boot partition with another filesystem."
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/SeTdisk:33
+msgid "You usually need at least 2 partitions:"
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/SeTdisk:34
+msgid "1 LINUX bootable partition (10GB minimum recommended)"
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/SeTdisk:35
+msgid "1 SWAP partition (1GB minimum recommended)"
 msgstr ""
 
 #
