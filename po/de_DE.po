@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Salix-14.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-25 00:36+0300\n"
+"POT-Creation-Date: 2016-05-25 02:00+0300\n"
 "PO-Revision-Date: 2016-03-21 23:15+0100\n"
 "Last-Translator: \n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
@@ -46,6 +46,14 @@ msgstr "Überspringen der aktuellen Diskserie"
 #, fuzzy
 msgid "Select another keymap"
 msgstr "Wählen Sie eine Schriftart für die Konsole"
+
+#: ../initrd-scripts/usr-lib-setup/setup:55
+#, sh-format
+msgid ""
+"Welcome to the installation of Salix, The Bonsai OS!\n"
+"Before you proceed with the rest of the installation, you might want to "
+"select your keyboard map (keymap). The current keymap is $KMAP."
+msgstr ""
 
 #
 # File: 32-INSCD, line: 234
@@ -145,12 +153,12 @@ msgid ""
 "drive."
 msgstr ""
 
-#
-# File: setup, line: 162
-# File: setup, line: 169
 #: ../initrd-scripts/usr-lib-setup/setup:164
+msgid "Can't umount /var/log/mount.  Reboot machine and run setup again."
+msgstr ""
+
 #: ../initrd-scripts/usr-lib-setup/setup:171
-msgid "-s"
+msgid "Mount table corrupt.  Reboot machine and run setup again."
 msgstr ""
 
 #
@@ -776,17 +784,10 @@ msgstr "Den Fehler ignorieren und fortfahren"
 msgid "ATTEMPTING TO MOUNT CD/DVD on $DRIVE_FOUND"
 msgstr "VERSUCHE CD/DVD LAUFWERK an $DRIVE_FOUND EINZUBINDEN"
 
-#
-# File: 32-INSCD, line: 249
-# File: 64-INSCD, line: 249
 #: ../initrd-scripts/usr-lib-setup/INSCD:223
 #, sh-format
-msgid ""
-"Attempting to mount your CD/DVD again with the following command:\n"
-"$ArG"
+msgid "Attempting to mount your CD/DVD again with the following command:"
 msgstr ""
-"Versuche das CD/DVD Laufwerk mit folgendem Kommando erneut einzubinden:\n"
-"$ArG"
 
 #: ../initrd-scripts/usr-lib-setup/INSNFS:23
 msgid ""
@@ -1352,10 +1353,20 @@ msgstr ""
 msgid "SELECT A DIRECTORY"
 msgstr "WÄHLEN SIE DAS QUELLVERZEICHNIS AUS"
 
+#: ../initrd-scripts/usr-lib-setup/INSdir:85
+msgid "The ISO image you specified is not valid:"
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:89
+#: ../initrd-scripts/usr-lib-setup/INSdir:114
+#: ../initrd-scripts/usr-lib-setup/INShd:185
+msgid "Please check and try again."
+msgstr ""
+
 #
 # File: 32-INCISO, line: 14
 # File: 64-INCISO, line: 14
-#: ../initrd-scripts/usr-lib-setup/INSdir:93
+#: ../initrd-scripts/usr-lib-setup/INSdir:91
 #: ../initrd-scripts/usr-lib-setup/INShd:168
 #, fuzzy
 msgid "INVALID ISO IMAGE"
@@ -1364,16 +1375,21 @@ msgstr "BENUTZE ISO-ABBILD"
 #
 # File: 32-SeTpartitions, line: 540
 # File: 64-SeTpartitions, line: 540
-#: ../initrd-scripts/usr-lib-setup/INSdir:94
-#: ../initrd-scripts/usr-lib-setup/INSdir:122
+#: ../initrd-scripts/usr-lib-setup/INSdir:92
+#: ../initrd-scripts/usr-lib-setup/INSdir:118
 #: ../initrd-scripts/usr-lib-setup/INShd:93
 #: ../initrd-scripts/usr-lib-setup/INShd:107
 #: ../initrd-scripts/usr-lib-setup/INShd:169
-#: ../initrd-scripts/usr-lib-setup/INShd:190
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:541
-#: ../initrd-scripts/usr-lib-setup/autoinstall:258
+#: ../initrd-scripts/usr-lib-setup/INShd:188
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:539
+#: ../initrd-scripts/usr-lib-setup/autoinstall:262
 msgid "OK"
 msgstr "OK"
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:109
+#: ../initrd-scripts/usr-lib-setup/INShd:181
+msgid "The directory you specified is not valid:"
+msgstr ""
 
 #
 # File: 32-INSNFS, line: 56
@@ -1386,8 +1402,8 @@ msgstr "OK"
 # File: 64-INSURL, line: 97
 # File: 64-INShd, line: 58
 # File: 64-pkgtool, line: 385
-#: ../initrd-scripts/usr-lib-setup/INSdir:121
-#: ../initrd-scripts/usr-lib-setup/INShd:189
+#: ../initrd-scripts/usr-lib-setup/INSdir:117
+#: ../initrd-scripts/usr-lib-setup/INShd:187
 #, fuzzy
 msgid "INVALID SOURCE DIRECTORY"
 msgstr "WÄHLEN SIE DAS QUELLVERZEICHNIS AUS"
@@ -1716,37 +1732,24 @@ msgstr ""
 "Partition wird erst beim nächsten Neustart eingebunden. Wo möchten Sie die "
 "$DOS_PART einbinden?"
 
-#
-# File: 32-SeTDOS, line: 217
-# File: 32-SeTEFI, line: 73
-# File: 32-SeTpartitions, line: 533
-# File: 64-SeTDOS, line: 217
-# File: 64-SeTEFI, line: 73
-# File: 64-SeTpartitions, line: 533
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:216
 #: ../initrd-scripts/usr-lib-setup/SeTEFI:73
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:534
-#, sh-format
-msgid ""
-"\n"
-"Adding this information to your /etc/fstab:\n"
-"\n"
+#: ../initrd-scripts/usr-lib-setup/autoinstall:258
+msgid "Adding this information to your /etc/fstab:"
 msgstr ""
-"\n"
-"Diese Informationen zu /etc/fstab hinzufügen:\n"
-"\n"
 
 #
 # File: 32-SeTDOS, line: 222
 # File: 64-SeTDOS, line: 222
-#: ../initrd-scripts/usr-lib-setup/SeTDOS:221
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:219
 msgid "Finished setting up non-Linux partitions."
 msgstr "Einrichten der nicht-Linux-Partitionen abgeschlossen."
 
 #
 # File: 32-SeTDOS, line: 223
 # File: 64-SeTDOS, line: 223
-#: ../initrd-scripts/usr-lib-setup/SeTDOS:222
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:220
 msgid "DONE ADDING FAT or NTFS PARTITIONS"
 msgstr "HINZUFÜGEN DER FAT- oder NTFS-PARTITIONEN ABGESCHLOSSEN"
 
@@ -1789,314 +1792,16 @@ msgstr "Formatiere EFI System Partition ${PREFERRED_EFI_PARTITION} als FAT32."
 #
 # File: 32-SeTEFI, line: 78
 # File: 64-SeTEFI, line: 78
-#: ../initrd-scripts/usr-lib-setup/SeTEFI:78
+#: ../initrd-scripts/usr-lib-setup/SeTEFI:76
 msgid "Finished setting up EFI System Partition."
 msgstr "Einrichtung der EFI System Partition abgeschlossen."
 
 #
 # File: 32-SeTEFI, line: 79
 # File: 64-SeTEFI, line: 79
-#: ../initrd-scripts/usr-lib-setup/SeTEFI:79
+#: ../initrd-scripts/usr-lib-setup/SeTEFI:77
 msgid "EFI SYSTEM PARTITION RECOGNIZED"
 msgstr "EFI SYSTEM PARTITION ERKANNT"
-
-#
-# File: 32-SeTPKG, line: 27
-# File: 64-SeTPKG, line: 27
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:26
-msgid "Selecting software to install."
-msgstr "Software zum Installieren auswählen."
-
-#
-# File: 32-SeTPKG, line: 29
-# File: 64-SeTPKG, line: 29
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:28
-msgid "PACKAGE SERIES SELECTION"
-msgstr "PAKETSERIE AUSWAHL"
-
-#
-# File: 32-SeTPKG, line: 31
-# File: 64-SeTPKG, line: 31
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:30
-msgid ""
-"Now it is time to select which general categories of software to install on "
-"your system. Use the spacebar to select or unselect the software you wish to "
-"install. You can use the up and down arrows to see all the possible choices. "
-"Recommended choices have been preselected. Press the ENTER key when you are "
-"finished."
-msgstr ""
-"Nun ist es an der Zeit zu wählen, welche generellen Softwarekategorien Sie "
-"in Ihrem System installieren wollen. Verwenden Sie die Leertaste, um "
-"Software, die Sie installieren möchten, auszuwählen. Mit den auf- und ab-"
-"Pfeilen können Sie durch die gesamte Softwareliste navigieren. Empfohlene "
-"Pakete sind bereits selektiert. Drücken Sie ENTER, sobald Sie fertig sind."
-
-#
-# File: 32-SeTPKG, line: 38
-# File: 64-SeTPKG, line: 38
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:37
-msgid "Base Linux system"
-msgstr "Linux-Basissystem"
-
-#
-# File: 32-SeTPKG, line: 40
-# File: 64-SeTPKG, line: 40
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:39
-msgid "The A (base) series contains the kernel and main system utilities."
-msgstr ""
-"Die A (Basis) Serie enthält den Kernel und die wichtigsten System-"
-"Anwendungen."
-
-#
-# File: 32-SeTPKG, line: 45
-# File: 64-SeTPKG, line: 45
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:44
-msgid "Various Applications that do not need X"
-msgstr "Verschiedene Anwendungen, die X nicht benötigen"
-
-#
-# File: 32-SeTPKG, line: 47
-# File: 64-SeTPKG, line: 47
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:46
-msgid "The AP series is a collection of useful applications."
-msgstr "Die AP Serie ist eine Sammlung von nützlichen Anwendungen."
-
-#
-# File: 32-SeTPKG, line: 53
-# File: 64-SeTPKG, line: 53
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:52
-msgid "Program Development (C, C++, Lisp, Perl, etc.)"
-msgstr "Programm Entwicklung (C, C++, Lisp, Perl, etc.)"
-
-#
-# File: 32-SeTPKG, line: 55
-# File: 64-SeTPKG, line: 55
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:54
-msgid ""
-"The D series contains compilers, debuggers, and other programming tools."
-msgstr ""
-"Die D-Serie enthält Compiler, Debugger und andere Programmierwerkzeuge."
-
-#
-# File: 32-SeTPKG, line: 61
-# File: 64-SeTPKG, line: 61
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:60
-msgid "GNU Emacs"
-msgstr "GNU Emacs"
-
-#
-# File: 32-SeTPKG, line: 63
-# File: 64-SeTPKG, line: 63
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:62
-msgid "The E series contains the GNU Emacs advanced real-time display editor."
-msgstr "Die E Serie enthält den erweiterten GNU Emacs Echtzeitanzeige-Editor."
-
-#
-# File: 32-SeTPKG, line: 69
-# File: 64-SeTPKG, line: 69
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:68
-msgid "FAQ lists, HOWTO documentation"
-msgstr "FAQ-Listen, HOWTO-Dokumentation"
-
-#
-# File: 32-SeTPKG, line: 71
-# File: 64-SeTPKG, line: 71
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:70
-msgid ""
-"The F series contains essential documentation for Linux system "
-"administrators."
-msgstr ""
-"Die F Serie enthält grundlegende Dokumentationen für Linux "
-"Systemadministratoren."
-
-#
-# File: 32-SeTPKG, line: 77
-# File: 64-SeTPKG, line: 77
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:76
-msgid "The GNOME desktop for X"
-msgstr "Der GNOME-Desktop für X"
-
-#
-# File: 32-SeTPKG, line: 79
-# File: 64-SeTPKG, line: 79
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:78
-msgid ""
-"The GNOME series contains the GNOME desktop environment and related "
-"libraries."
-msgstr ""
-"Die GNOME-Serie enthält die GNOME-Desktopumgebung und dazugehörige "
-"Bibliotheken."
-
-#
-# File: 32-SeTPKG, line: 85
-# File: 64-SeTPKG, line: 85
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:84
-msgid "Linux kernel source"
-msgstr "Linux-Kernel-Quellen"
-
-#
-# File: 32-SeTPKG, line: 87
-# File: 64-SeTPKG, line: 87
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:86
-msgid "The K series contains the source code for the Linux kernel."
-msgstr "Die K-Serie enthält den Linux-Kernel-Quellcode."
-
-#
-# File: 32-SeTPKG, line: 93
-# File: 64-SeTPKG, line: 93
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:92
-msgid "Qt and the K Desktop Environment for X"
-msgstr "Qt und die K-Desktopumgebung für X"
-
-#
-# File: 32-SeTPKG, line: 95
-# File: 64-SeTPKG, line: 95
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:94
-msgid ""
-"The KDE series contains the K Desktop Environment and related libraries."
-msgstr ""
-"Die KDE-Serie enthält die K-Desktopumgebung und dazugehörige Bibliotheken."
-
-#
-# File: 32-SeTPKG, line: 101
-# File: 64-SeTPKG, line: 101
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:100
-msgid "International language support for KDE"
-msgstr "Internationale Sprachunterstützung für KDE"
-
-#
-# File: 32-SeTPKG, line: 103
-# File: 64-SeTPKG, line: 103
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:102
-msgid ""
-"The KDEI series provides support for languages other than US English in KDE."
-msgstr ""
-"Die KDEI-Serie stellt die Unterstützung für weitere Sprachen, neben US-"
-"Englisch, in KDE bereit."
-
-#
-# File: 32-SeTPKG, line: 109
-# File: 64-SeTPKG, line: 109
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:108
-msgid "System Libraries (some needed by both KDE and GNOME)"
-msgstr "System Bibliotheken (einige werden von KDE und GNOME benötigt)"
-
-#
-# File: 32-SeTPKG, line: 111
-# File: 64-SeTPKG, line: 111
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:110
-msgid ""
-"The L series contains libraries needed by GNOME, KDE, and other programs."
-msgstr ""
-"Die L-Serie enthält Bibliotheken, die von GNOME, KDE und anderen Anwendungen "
-"benötigt werden."
-
-#
-# File: 32-SeTPKG, line: 117
-# File: 64-SeTPKG, line: 117
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:116
-msgid "Networking (TCP/IP, UUCP, Mail, News)"
-msgstr "Netzwerk (TCP/IP, UUCP, Mail, News)"
-
-#
-# File: 32-SeTPKG, line: 119
-# File: 64-SeTPKG, line: 119
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:118
-msgid "The N series contains network related clients and servers."
-msgstr "Die N-Serie enthält Clients und Server für Netzwerke."
-
-#
-# File: 32-SeTPKG, line: 125
-# File: 64-SeTPKG, line: 125
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:124
-msgid "TeX typesetting software"
-msgstr "TeX Schriftsatz Software"
-
-#
-# File: 32-SeTPKG, line: 127
-# File: 64-SeTPKG, line: 127
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:126
-msgid ""
-"TeX is a typesetting system often used for mathematics and technical papers."
-msgstr ""
-"TeX ist ein Schriftsatzsystem, welches oft für mathematische und technische "
-"Papiere verwendet wird."
-
-#
-# File: 32-SeTPKG, line: 133
-# File: 64-SeTPKG, line: 133
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:132
-msgid "Tcl/Tk script languages"
-msgstr "Tcl/Tk-Skriptsprachen"
-
-#
-# File: 32-SeTPKG, line: 135
-# File: 64-SeTPKG, line: 135
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:134
-msgid ""
-"The TCL series contains the Tcl/Tk/TclX languages and programs that use them."
-msgstr ""
-"Die TCL-Serie enthält die Tcl/Tk/TclX-Sprachen und -Programme, die diese "
-"verwenden."
-
-#
-# File: 32-SeTPKG, line: 141
-# File: 64-SeTPKG, line: 141
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:140
-msgid "X Window System"
-msgstr "X Window System"
-
-#
-# File: 32-SeTPKG, line: 143
-# File: 64-SeTPKG, line: 143
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:142
-msgid "This series contains X, the windowing system used by Linux."
-msgstr "Diese Serie enthält X, die Fenstersteuerung, die Linux verwendet."
-
-#
-# File: 32-SeTPKG, line: 149
-# File: 64-SeTPKG, line: 149
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:148
-msgid "X Applications"
-msgstr "X-Anwendungen"
-
-#
-# File: 32-SeTPKG, line: 151
-# File: 64-SeTPKG, line: 151
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:150
-msgid "The XAP series is a collection of applications for X."
-msgstr "Die XAP-Serie enthält eine Sammlung von Anwendungen für X."
-
-#
-# File: 32-SeTPKG, line: 157
-# File: 64-SeTPKG, line: 157
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:156
-msgid "The Xfce Desktop Environment for X"
-msgstr "Die Xfce Desktop-Umgebung für X"
-
-#
-# File: 32-SeTPKG, line: 159
-# File: 64-SeTPKG, line: 159
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:158
-msgid "Xfce is a fast and lightweight GTK+ based desktop environment for X."
-msgstr ""
-"Xfce ist eine schnelle und leichtgewichtige GTK+ basierende Desktop-Umgebung "
-"für X."
-
-#
-# File: 32-SeTPKG, line: 165
-# File: 64-SeTPKG, line: 165
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:164
-msgid "Games"
-msgstr "Spiele"
-
-#
-# File: 32-SeTPKG, line: 167
-# File: 64-SeTPKG, line: 167
-#: ../initrd-scripts/usr-lib-setup/SeTPKG:166
-msgid "The Y series is a collection of classic BSD text-based games."
-msgstr ""
-"Die Y-Serie ist eine Sammlung von klassischen, Text-basierten BSD-Spielen."
 
 #
 # File: 32-SeTconfig, line: 80
@@ -2334,6 +2039,14 @@ msgstr ""
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:18
 msgid "KEYBOARD MAP SELECTION"
 msgstr "AUSWAHL DER TASTATURBELEGUNG "
+
+#: ../initrd-scripts/usr-lib-setup/SeTkeymap:21
+#, sh-format
+msgid ""
+"You may select one of the following keyboard maps.  If you do not select a "
+"keyboard map, $DefaultKeyMap is the current value.  Use the UP/DOWN arrow "
+"keys and PageUp/PageDown to scroll through the whole list of choices."
+msgstr ""
 
 #
 # File: 32-rc.S, line: 232
@@ -2711,7 +2424,7 @@ msgstr ""
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:123
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:146
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:165
-#: ../initrd-scripts/usr-lib-setup/autoinstall:62
+#: ../initrd-scripts/usr-lib-setup/autoinstall:69
 msgid "FORMATTING"
 msgstr "FORMATIERE"
 
@@ -2920,7 +2633,6 @@ msgstr ""
 # File: 32-SeTpartitions, line: 219
 # File: 64-SeTpartitions, line: 219
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:219
-#, sh-format
 msgid "Quick format with no bad block checking"
 msgstr "Schnellformatierung ohne Überprüfung auf fehlerhafte Blöcke"
 
@@ -2928,7 +2640,6 @@ msgstr "Schnellformatierung ohne Überprüfung auf fehlerhafte Blöcke"
 # File: 32-SeTpartitions, line: 220
 # File: 64-SeTpartitions, line: 220
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:220
-#, sh-format
 msgid "Slow format that checks for bad blocks"
 msgstr "Langsame Formatierung, die auf fehlerhafte Blöcke überprüft"
 
@@ -2936,7 +2647,6 @@ msgstr "Langsame Formatierung, die auf fehlerhafte Blöcke überprüft"
 # File: 32-SeTpartitions, line: 221
 # File: 64-SeTpartitions, line: 221
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:221
-#, sh-format
 msgid "No, do not format this partition"
 msgstr "Nein, diese Partition nicht formatieren"
 
@@ -3182,14 +2892,14 @@ msgstr ""
 #
 # File: 32-SeTpartitions, line: 538
 # File: 64-SeTpartitions, line: 538
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:539
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:537
 msgid "Finished setting up Linux partitions."
 msgstr "Das Einrichten der Linux-Partitionen ist abgeschlossen."
 
 #
 # File: 32-SeTpartitions, line: 539
 # File: 64-SeTpartitions, line: 539
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:540
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:538
 msgid "DONE ADDING LINUX PARTITIONS TO /etc/fstab"
 msgstr "HINZUFÜGEN VON LINUX-PARTITIONEN ZU /etc/fstab ABGESCHLOSSEN"
 
@@ -3347,65 +3057,414 @@ msgstr ""
 # File: 32-liloconfig, line: 1095
 # File: 64-liloconfig, line: 1095
 #: ../initrd-scripts/usr-lib-setup/autoinstall:25
-#: ../initrd-scripts/usr-lib-setup/autoinstall:105
-#: ../initrd-scripts/usr-lib-setup/autoinstall:126
-#: ../initrd-scripts/usr-lib-setup/autoinstall:140
-#: ../initrd-scripts/usr-lib-setup/autoinstall:203
-#: ../initrd-scripts/usr-lib-setup/autoinstall:206
-#: ../initrd-scripts/usr-lib-setup/autoinstall:257
+#: ../initrd-scripts/usr-lib-setup/autoinstall:108
+#: ../initrd-scripts/usr-lib-setup/autoinstall:129
+#: ../initrd-scripts/usr-lib-setup/autoinstall:142
+#: ../initrd-scripts/usr-lib-setup/autoinstall:205
+#: ../initrd-scripts/usr-lib-setup/autoinstall:209
+#: ../initrd-scripts/usr-lib-setup/autoinstall:261
 #, fuzzy
 msgid "AUTO PARTITION"
 msgstr "OS/2-PARTITION AUSWÄHLEN"
 
+#: ../initrd-scripts/usr-lib-setup/autoinstall:26
+#: ../initrd-scripts/usr-lib-setup/autoinstall:210
+#, sh-format
+msgid "Please wait while ${DISK} is being prepared for Salix"
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/autoinstall:64
+#, sh-format
+msgid "Formatting $PART"
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/autoinstall:66
+#, sh-format
+msgid "Size in 1K blocks: $SIZE"
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/autoinstall:68
+msgid "Filesystem type:xfs"
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/autoinstall:70
+#, sh-format
+msgid "Formatting $PART with filesystem xfs."
+msgstr ""
+
 #
 # File: autoinstall, line: 103
-#: ../initrd-scripts/usr-lib-setup/autoinstall:103
+#: ../initrd-scripts/usr-lib-setup/autoinstall:106
 msgid "Do It"
 msgstr ""
 
 #
 # File: 32-xwmconfig, line: 207
 # File: 64-xwmconfig, line: 207
-#: ../initrd-scripts/usr-lib-setup/autoinstall:104
+#: ../initrd-scripts/usr-lib-setup/autoinstall:107
 #, fuzzy
 msgid "Cancel"
 msgstr "Abgebrochen."
 
-#: ../initrd-scripts/usr-lib-setup/autoinstall:106
+#: ../initrd-scripts/usr-lib-setup/autoinstall:109
 msgid "This is automatic partition mode."
 msgstr ""
 
-#: ../initrd-scripts/usr-lib-setup/autoinstall:107
+#: ../initrd-scripts/usr-lib-setup/autoinstall:110
 msgid "Press <SPACE> to select the target disk where Salix will be installed."
 msgstr ""
 
-#: ../initrd-scripts/usr-lib-setup/autoinstall:109
+#: ../initrd-scripts/usr-lib-setup/autoinstall:112
 msgid "All data will be erased from the target disk."
 msgstr ""
 
-#: ../initrd-scripts/usr-lib-setup/autoinstall:110
+#: ../initrd-scripts/usr-lib-setup/autoinstall:113
 msgid "Only run this mode if the entire disk will be dedicated to Salix."
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/autoinstall:130
+#, sh-format
+msgid "Are you sure you want to globally erase existing data from ${DISK}?"
 msgstr ""
 
 #
 # File: autoinstall, line: 131
-#: ../initrd-scripts/usr-lib-setup/autoinstall:131
+#: ../initrd-scripts/usr-lib-setup/autoinstall:133
 msgid "Go back to the main setup menu"
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/autoinstall:134
+#, sh-format
+msgid "${DISK} is dedicated to Salix"
 msgstr ""
 
 #
 # File: autoinstall, line: 140
-#: ../initrd-scripts/usr-lib-setup/autoinstall:140
+#: ../initrd-scripts/usr-lib-setup/autoinstall:142
 msgid "No target disk selected, going back to main menu"
 msgstr ""
 
-#: ../initrd-scripts/usr-lib-setup/autoinstall:253
+#: ../initrd-scripts/usr-lib-setup/autoinstall:206
+#, sh-format
+msgid ""
+"${DISK} is only $DisksizeInKB KB, you need at least 3000000 KB to install "
+"Salix"
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/autoinstall:257
 msgid "Partitioning completed."
 msgstr ""
 
-#: ../initrd-scripts/usr-lib-setup/autoinstall:254
-msgid "Adding this information to your /etc/fstab:"
+#: ../initrd-scripts/usr-lib-setup/slackinstall:55
+msgid "FTP/HTTP DOWNLOAD FAILURE"
 msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/slackinstall:77
+#, sh-format
+msgid "installpkg error #$ArG1"
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/slackinstall:78
+#, sh-format
+msgid ""
+"There was a fatal error attempting to install $ArG2.  The package may be "
+"corrupt, the installation media may be bad, or something else has caused the "
+"package to be unable to be read without error.  You may hit enter to "
+"continue if you wish, but if this is an important required package then your "
+"installation may not work as-is."
+msgstr ""
+
+#
+# File: 32-INSCD, line: 249
+# File: 64-INSCD, line: 249
+#~ msgid ""
+#~ "Attempting to mount your CD/DVD again with the following command:\n"
+#~ "$ArG"
+#~ msgstr ""
+#~ "Versuche das CD/DVD Laufwerk mit folgendem Kommando erneut einzubinden:\n"
+#~ "$ArG"
+
+#
+# File: 32-SeTDOS, line: 217
+# File: 32-SeTEFI, line: 73
+# File: 32-SeTpartitions, line: 533
+# File: 64-SeTDOS, line: 217
+# File: 64-SeTEFI, line: 73
+# File: 64-SeTpartitions, line: 533
+#~ msgid ""
+#~ "\n"
+#~ "Adding this information to your /etc/fstab:\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Diese Informationen zu /etc/fstab hinzufügen:\n"
+#~ "\n"
+
+#
+# File: 32-SeTPKG, line: 27
+# File: 64-SeTPKG, line: 27
+#~ msgid "Selecting software to install."
+#~ msgstr "Software zum Installieren auswählen."
+
+#
+# File: 32-SeTPKG, line: 29
+# File: 64-SeTPKG, line: 29
+#~ msgid "PACKAGE SERIES SELECTION"
+#~ msgstr "PAKETSERIE AUSWAHL"
+
+#
+# File: 32-SeTPKG, line: 31
+# File: 64-SeTPKG, line: 31
+#~ msgid ""
+#~ "Now it is time to select which general categories of software to install "
+#~ "on your system. Use the spacebar to select or unselect the software you "
+#~ "wish to install. You can use the up and down arrows to see all the "
+#~ "possible choices. Recommended choices have been preselected. Press the "
+#~ "ENTER key when you are finished."
+#~ msgstr ""
+#~ "Nun ist es an der Zeit zu wählen, welche generellen Softwarekategorien "
+#~ "Sie in Ihrem System installieren wollen. Verwenden Sie die Leertaste, um "
+#~ "Software, die Sie installieren möchten, auszuwählen. Mit den auf- und ab-"
+#~ "Pfeilen können Sie durch die gesamte Softwareliste navigieren. Empfohlene "
+#~ "Pakete sind bereits selektiert. Drücken Sie ENTER, sobald Sie fertig sind."
+
+#
+# File: 32-SeTPKG, line: 38
+# File: 64-SeTPKG, line: 38
+#~ msgid "Base Linux system"
+#~ msgstr "Linux-Basissystem"
+
+#
+# File: 32-SeTPKG, line: 40
+# File: 64-SeTPKG, line: 40
+#~ msgid "The A (base) series contains the kernel and main system utilities."
+#~ msgstr ""
+#~ "Die A (Basis) Serie enthält den Kernel und die wichtigsten System-"
+#~ "Anwendungen."
+
+#
+# File: 32-SeTPKG, line: 45
+# File: 64-SeTPKG, line: 45
+#~ msgid "Various Applications that do not need X"
+#~ msgstr "Verschiedene Anwendungen, die X nicht benötigen"
+
+#
+# File: 32-SeTPKG, line: 47
+# File: 64-SeTPKG, line: 47
+#~ msgid "The AP series is a collection of useful applications."
+#~ msgstr "Die AP Serie ist eine Sammlung von nützlichen Anwendungen."
+
+#
+# File: 32-SeTPKG, line: 53
+# File: 64-SeTPKG, line: 53
+#~ msgid "Program Development (C, C++, Lisp, Perl, etc.)"
+#~ msgstr "Programm Entwicklung (C, C++, Lisp, Perl, etc.)"
+
+#
+# File: 32-SeTPKG, line: 55
+# File: 64-SeTPKG, line: 55
+#~ msgid ""
+#~ "The D series contains compilers, debuggers, and other programming tools."
+#~ msgstr ""
+#~ "Die D-Serie enthält Compiler, Debugger und andere Programmierwerkzeuge."
+
+#
+# File: 32-SeTPKG, line: 61
+# File: 64-SeTPKG, line: 61
+#~ msgid "GNU Emacs"
+#~ msgstr "GNU Emacs"
+
+#
+# File: 32-SeTPKG, line: 63
+# File: 64-SeTPKG, line: 63
+#~ msgid ""
+#~ "The E series contains the GNU Emacs advanced real-time display editor."
+#~ msgstr ""
+#~ "Die E Serie enthält den erweiterten GNU Emacs Echtzeitanzeige-Editor."
+
+#
+# File: 32-SeTPKG, line: 69
+# File: 64-SeTPKG, line: 69
+#~ msgid "FAQ lists, HOWTO documentation"
+#~ msgstr "FAQ-Listen, HOWTO-Dokumentation"
+
+#
+# File: 32-SeTPKG, line: 71
+# File: 64-SeTPKG, line: 71
+#~ msgid ""
+#~ "The F series contains essential documentation for Linux system "
+#~ "administrators."
+#~ msgstr ""
+#~ "Die F Serie enthält grundlegende Dokumentationen für Linux "
+#~ "Systemadministratoren."
+
+#
+# File: 32-SeTPKG, line: 77
+# File: 64-SeTPKG, line: 77
+#~ msgid "The GNOME desktop for X"
+#~ msgstr "Der GNOME-Desktop für X"
+
+#
+# File: 32-SeTPKG, line: 79
+# File: 64-SeTPKG, line: 79
+#~ msgid ""
+#~ "The GNOME series contains the GNOME desktop environment and related "
+#~ "libraries."
+#~ msgstr ""
+#~ "Die GNOME-Serie enthält die GNOME-Desktopumgebung und dazugehörige "
+#~ "Bibliotheken."
+
+#
+# File: 32-SeTPKG, line: 85
+# File: 64-SeTPKG, line: 85
+#~ msgid "Linux kernel source"
+#~ msgstr "Linux-Kernel-Quellen"
+
+#
+# File: 32-SeTPKG, line: 87
+# File: 64-SeTPKG, line: 87
+#~ msgid "The K series contains the source code for the Linux kernel."
+#~ msgstr "Die K-Serie enthält den Linux-Kernel-Quellcode."
+
+#
+# File: 32-SeTPKG, line: 93
+# File: 64-SeTPKG, line: 93
+#~ msgid "Qt and the K Desktop Environment for X"
+#~ msgstr "Qt und die K-Desktopumgebung für X"
+
+#
+# File: 32-SeTPKG, line: 95
+# File: 64-SeTPKG, line: 95
+#~ msgid ""
+#~ "The KDE series contains the K Desktop Environment and related libraries."
+#~ msgstr ""
+#~ "Die KDE-Serie enthält die K-Desktopumgebung und dazugehörige Bibliotheken."
+
+#
+# File: 32-SeTPKG, line: 101
+# File: 64-SeTPKG, line: 101
+#~ msgid "International language support for KDE"
+#~ msgstr "Internationale Sprachunterstützung für KDE"
+
+#
+# File: 32-SeTPKG, line: 103
+# File: 64-SeTPKG, line: 103
+#~ msgid ""
+#~ "The KDEI series provides support for languages other than US English in "
+#~ "KDE."
+#~ msgstr ""
+#~ "Die KDEI-Serie stellt die Unterstützung für weitere Sprachen, neben US-"
+#~ "Englisch, in KDE bereit."
+
+#
+# File: 32-SeTPKG, line: 109
+# File: 64-SeTPKG, line: 109
+#~ msgid "System Libraries (some needed by both KDE and GNOME)"
+#~ msgstr "System Bibliotheken (einige werden von KDE und GNOME benötigt)"
+
+#
+# File: 32-SeTPKG, line: 111
+# File: 64-SeTPKG, line: 111
+#~ msgid ""
+#~ "The L series contains libraries needed by GNOME, KDE, and other programs."
+#~ msgstr ""
+#~ "Die L-Serie enthält Bibliotheken, die von GNOME, KDE und anderen "
+#~ "Anwendungen benötigt werden."
+
+#
+# File: 32-SeTPKG, line: 117
+# File: 64-SeTPKG, line: 117
+#~ msgid "Networking (TCP/IP, UUCP, Mail, News)"
+#~ msgstr "Netzwerk (TCP/IP, UUCP, Mail, News)"
+
+#
+# File: 32-SeTPKG, line: 119
+# File: 64-SeTPKG, line: 119
+#~ msgid "The N series contains network related clients and servers."
+#~ msgstr "Die N-Serie enthält Clients und Server für Netzwerke."
+
+#
+# File: 32-SeTPKG, line: 125
+# File: 64-SeTPKG, line: 125
+#~ msgid "TeX typesetting software"
+#~ msgstr "TeX Schriftsatz Software"
+
+#
+# File: 32-SeTPKG, line: 127
+# File: 64-SeTPKG, line: 127
+#~ msgid ""
+#~ "TeX is a typesetting system often used for mathematics and technical "
+#~ "papers."
+#~ msgstr ""
+#~ "TeX ist ein Schriftsatzsystem, welches oft für mathematische und "
+#~ "technische Papiere verwendet wird."
+
+#
+# File: 32-SeTPKG, line: 133
+# File: 64-SeTPKG, line: 133
+#~ msgid "Tcl/Tk script languages"
+#~ msgstr "Tcl/Tk-Skriptsprachen"
+
+#
+# File: 32-SeTPKG, line: 135
+# File: 64-SeTPKG, line: 135
+#~ msgid ""
+#~ "The TCL series contains the Tcl/Tk/TclX languages and programs that use "
+#~ "them."
+#~ msgstr ""
+#~ "Die TCL-Serie enthält die Tcl/Tk/TclX-Sprachen und -Programme, die diese "
+#~ "verwenden."
+
+#
+# File: 32-SeTPKG, line: 141
+# File: 64-SeTPKG, line: 141
+#~ msgid "X Window System"
+#~ msgstr "X Window System"
+
+#
+# File: 32-SeTPKG, line: 143
+# File: 64-SeTPKG, line: 143
+#~ msgid "This series contains X, the windowing system used by Linux."
+#~ msgstr "Diese Serie enthält X, die Fenstersteuerung, die Linux verwendet."
+
+#
+# File: 32-SeTPKG, line: 149
+# File: 64-SeTPKG, line: 149
+#~ msgid "X Applications"
+#~ msgstr "X-Anwendungen"
+
+#
+# File: 32-SeTPKG, line: 151
+# File: 64-SeTPKG, line: 151
+#~ msgid "The XAP series is a collection of applications for X."
+#~ msgstr "Die XAP-Serie enthält eine Sammlung von Anwendungen für X."
+
+#
+# File: 32-SeTPKG, line: 157
+# File: 64-SeTPKG, line: 157
+#~ msgid "The Xfce Desktop Environment for X"
+#~ msgstr "Die Xfce Desktop-Umgebung für X"
+
+#
+# File: 32-SeTPKG, line: 159
+# File: 64-SeTPKG, line: 159
+#~ msgid "Xfce is a fast and lightweight GTK+ based desktop environment for X."
+#~ msgstr ""
+#~ "Xfce ist eine schnelle und leichtgewichtige GTK+ basierende Desktop-"
+#~ "Umgebung für X."
+
+#
+# File: 32-SeTPKG, line: 165
+# File: 64-SeTPKG, line: 165
+#~ msgid "Games"
+#~ msgstr "Spiele"
+
+#
+# File: 32-SeTPKG, line: 167
+# File: 64-SeTPKG, line: 167
+#~ msgid "The Y series is a collection of classic BSD text-based games."
+#~ msgstr ""
+#~ "Die Y-Serie ist eine Sammlung von klassischen, Text-basierten BSD-Spielen."
 
 #
 # File: 32-INSURL, line: 227
