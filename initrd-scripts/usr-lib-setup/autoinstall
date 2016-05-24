@@ -57,16 +57,17 @@ EOF2
 # make_xfs( dev ) - Create a new xfs filesystem on the named dev
 # Parameters:  dev     Device node to format.
 make_xfs() {
+   PART=$1
    # get the size of the named partition
-   SIZE=`get_part_size $1`
+   SIZE=`get_part_size $PART`
    # output a nice status message
-   eval_gettext "Formatting \$1" > $TMP/tempmsg
+   eval_gettext "Formatting \$PART" > $TMP/tempmsg
    echo "" >> $TMP/tempmsg
    eval_gettext "Size in 1K blocks: \$SIZE" >> $TMP/tempmsg
    echo "" >> $TMP/tempmsg
    gettext "Filesystem type:xfs" >> $TMP/tempmsg
    dialog --title "`gettext "FORMATTING"`" \
-     --backtitle "`eval_gettext "Formatting \\\$1 with filesystem xfs."`" \
+     --backtitle "`eval_gettext "Formatting \\\$PART with filesystem xfs."`" \
      --infobox "`cat $TMP/tempmsg`" \
      0 0
    # do the format
