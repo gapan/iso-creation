@@ -19,9 +19,8 @@ while [ 0 ]; do
  if [ "$REMOTE_IPADDR" = "" ]; then REMOTE_IPADDR=${NFS_SERVER}; fi
  if [ "$REMOTE_PATH" = "" ]; then REMOTE_PATH=${NFS_ROOT}; fi
 
-echo > $TMP/tempmsg
-gettext "
-Good! We're all set on the local end, but now we need to know \
+echo "" > $TMP/tempmsg
+gettext "Good! We're all set on the local end, but now we need to know \
 where to find the software packages to install.  First, we need \
 the IP address of the machine where the Salix sources are \
 stored." >> $TMP/tempmsg
@@ -43,16 +42,17 @@ to use the hostname instead of an IP address if you wish." >> $TMP/tempmsg
  fi
  REMOTE_IPADDR="`cat $TMP/remote`"
  rm $TMP/remote
-eval_gettext "
-There must be a directory on the server with the Salix \
-packages and files arranged in a tree like the FTP site.
-
-The installation script needs to know the name of the \
+ echo "" > $TMP/tempmsg
+ gettext "There must be a directory on the server with the Salix \
+packages and files arranged in a tree like the FTP site." \
+   >> $TMP/tempmsg
+ echo "" >> $TMP/tempmsg
+ gettext "The installation script needs to know the name of the \
 directory on your server that contains the series' \
 subdirectories. For example, if your A series is found at \
-/stuff/salix/a, then you would respond: /stuff/salix
-
-What is the Salix source directory?" > $TMP/tempmsg
+/stuff/salix/a, then you would respond: /stuff/salix" \
+  >> $TMP/tempmsg
+ gettext "What is the Salix source directory?" >> $TMP/tempmsg
  dialog --title "`gettext "SELECT SOURCE DIRECTORY"`" \
  --inputbox "`cat $TMP/tempmsg`" 0 0 $REMOTE_PATH 2> $TMP/slacksrc
  if [ ! $? = 0 ]; then
@@ -61,12 +61,13 @@ What is the Salix source directory?" > $TMP/tempmsg
  fi
  REMOTE_PATH="`cat $TMP/slacksrc`"
  rm $TMP/slacksrc
- gettext "
-In the next screen you should watch for NFS mount errors.
-
-If you see errors and you don't see your NFS server listed, then try setting up NFS again.
-
-" > $TMP/tempmsg
+ echo "" > $TMP/tempmsg
+ gettext "In the next screen you should watch for NFS mount errors." \
+   >> $TMP/tempmsg
+ echo "" >> $TMP/tempmsg
+ gettext "If you see errors and you don't see your NFS server listed, \
+then try setting up NFS again." >> $TMP/tempmsg
+ echo "" >> $TMP/tempmsg
  dialog --title "`gettext "NFS MOUNT INFORMATION"`" --msgbox "`cat $TMP/tempmsg`" 0 0
  rm -f $TMP/tempmsg
  touch $TMP/nfsout

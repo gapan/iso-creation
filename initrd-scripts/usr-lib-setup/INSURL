@@ -59,22 +59,21 @@ package_name() {
 while [ 0 ]; do
  rm -f $TMP/SeTDS $TMP/SeTmount
  UPNRUN=$(cat $TMP/SeTupnrun)
-gettext "
-Good! We're all set on the local end, but now we need to know \
+ echo "" > $TMP/tempmsg
+ gettext "Good! We're all set on the local end, but now we need to know \
 where to find the software packages to install. First, we need \
 the URL of the ftp or http server where the Salix sources \
-are stored.
-URL examples are: 'ftp://192.168.0.1' ; 'http://172.16.10.31'
-" > $TMP/tempmsg
+are stored." >> $TMP/tempmsg
+ echo "" >> $TMP/tempmsg
+ gettext "URL examples are:" >> $TMP/tempmsg
+ echo "'ftp://192.168.0.1' ; 'http://172.16.10.31'" >> $TMP/tempmsg
  if [ "$UPNRUN" = "0" ]; then
-echo >> $TMP/tempmsg
-gettext "Since you're already running on the network, you should be able \
-to use the hostname instead of an IP address if you wish.
-" >> $TMP/tempmsg
+  echo >> $TMP/tempmsg
+  gettext "Since you're already running on the network, you should be able \
+to use the hostname instead of an IP address if you wish." \
+    >> $TMP/tempmsg
  fi
- gettext "
-What is the URL of your FTP/HTTP server?
-" >> $TMP/tempmsg
+ gettext "What is the URL of your FTP/HTTP server?" >> $TMP/tempmsg
  dialog --title "`gettext "ENTER URL OF FTP/HTTP SERVER"`" --inputbox \
  "$(cat $TMP/tempmsg)" 0 0 $REMOTE_URL 2> $TMP/remote
  if [ ! $? = 0 ]; then
@@ -83,17 +82,18 @@ What is the URL of your FTP/HTTP server?
  fi
  REMOTE_URL="$(cat $TMP/remote)"
  rm $TMP/remote
-eval_gettext "
-There must be a directory on the server with the Salix \
-packages and files arranged in a tree like the FTP site.
-
-The installation script needs to know the name of the \
+ echo "" > $TMP/tempmsg
+ gettext "There must be a directory on the server with the Salix \
+packages and files arranged in a tree like the FTP site." \
+   >> $TMP/tempmsg
+ echo "" >> $TMP/tempmsg
+ gettext "The installation script needs to know the name of the \
 directory on your server that contains the series \
 subdirectories. For example, if your A series is found at \
-/stuff/salix/a, then you would respond: /stuff/salix
-
-What is the Salix source directory?
-" > $TMP/tempmsg
+/stuff/salix/a, then you would respond: /stuff/salix" \
+   >> $TMP/tempmsg
+ echo "" >> $TMP/tempmsg
+ gettext "What is the Salix source directory?" >> $TMP/tempmsg
  dialog --title "`gettext "SELECT SOURCE DIRECTORY"`" --inputbox "$(cat $TMP/tempmsg)" \
  0 0 $REMOTE_PATH 2> $TMP/slacksrc
  if [ ! $? = 0 ]; then
@@ -103,21 +103,21 @@ What is the Salix source directory?
  REMOTE_PATH="$(cat $TMP/slacksrc)"
  rm $TMP/slacksrc
 
-gettext "
-In the next screen you should watch for possible errors.
-
-First, we'll download the PACKAGES.TXT from the parent of the \
+ echo "" > $TMP/tempmsg
+ gettext "In the next screen you should watch for possible errors." \
+   >> $TMP/tempmsg
+ echo "" >> $TMP/tempmsg
+ gettext "First, we'll download the PACKAGES.TXT from the parent of the \
 directory that you entered before (which should be the root \
 of the remote Salix tree).  If that succeeds, then we use \
 PACKAGES.TXT to reconstruct a local cache of the package tree \
 (should take a minute or less on an average system).
-After that, we're all set to go!
-
-Downloading PACKAGES.TXT at the Salix root starts \
-after you press OK.
-That file is several hundreds of KB in size so it may \
-take some time to get here...
-" > $TMP/tempmsg
+After that, we're all set to go!" >> $TMP/tempmsg
+ echo "" >> $TMP/tempmsg
+ gettext "Downloading PACKAGES.TXT at the Salix root starts \
+after you press OK." >> $TMP/tempmsg
+ gettext "That file is several hundreds of KB in size so it may \
+take some time to get here..." >> $TMP/tempmsg
  dialog --title "`gettext "DOWNLOAD INFORMATION"`" --msgbox "$(cat $TMP/tempmsg)" 0 00
  rm -f $TMP/tempmsg
  REMOTE_ROOT=$(dirname $REMOTE_PATH)

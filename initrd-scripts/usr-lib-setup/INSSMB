@@ -19,22 +19,22 @@ modprobe cifs 2>/dev/null
 while [ 0 ]; do
  rm -f $TMP/SeTDS $TMP/SeTmount
  UPNRUN=`cat $TMP/SeTupnrun`
-gettext "
-Good! We're all set on the local end, but now we need to know \
+ echo "" > $TMP/tempmsg
+ gettext "Good! We're all set on the local end, but now we need to know \
 where to find the software packages to install. First, we need \
 the share address of the Samba server where the Salix sources \
-are stored.
-
-Example share address: //192.168.0.1/public
-" > $TMP/tempmsg
+are stored." >> $TMP/tempmsg
+ echo "" >> $TMP/tempmsg
+ gettext "Example share address:" >> $TMP/tempmsg
+ echo " //192.168.0.1/public" >> $TMP/tempmsg
  if [ "$UPNRUN" = "0" ]; then
 echo >> $TMP/tempmsg
 gettext "Since you're already running on the network, you should be able \
 to use the hostname instead of an IP address if you wish.
 " >> $TMP/tempmsg
  fi
- gettext "
-What is the share address of your Samba server? " >> $TMP/tempmsg
+ echo "" >> $TMP/tempmsg
+ gettext "What is the share address of your Samba server?" >> $TMP/tempmsg
  dialog --title "`gettext "ENTER SHARE ADDRESS OF SAMBA SERVER"`" --inputbox \
  "`cat $TMP/tempmsg`" 0 0 $REMOTE_SHARE 2> $TMP/remote
  if [ ! $? = 0 ]; then
@@ -43,16 +43,16 @@ What is the share address of your Samba server? " >> $TMP/tempmsg
  fi
  REMOTE_SHARE="`cat $TMP/remote`"
  rm $TMP/remote
- eval_gettext "
-There must be a directory on the server with the Salix \
-packages and files arranged in a tree like the FTP site. \
-
-The installation script needs to know the name of the \
+ echo "" > $TMP/tempmsg
+ gettext "There must be a directory on the server with the Salix \
+packages and files arranged in a tree like the FTP site." \
+   >> $TMP/tempmsg
+ gettext "The installation script needs to know the name of the \
 directory below your Samba share that contains the series \
 subdirectories. For example, if your A series is found at \
-/stuff/salix/a, then you would respond: /stuff/salix \
-
-What is the Salix source directory?" > $TMP/tempmsg
+/stuff/salix/a, then you would respond: /stuff/salix" \
+   >> $TMP/tempmsg
+ gettext "What is the Salix source directory?" >> $TMP/tempmsg
  dialog --title "`gettext "SELECT SOURCE DIRECTORY"`" --inputbox "`cat $TMP/tempmsg`" \
  0 0 $REMOTE_PATH 2> $TMP/slacksrc
  if [ ! $? = 0 ]; then

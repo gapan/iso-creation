@@ -87,9 +87,9 @@ dialog --title "`gettext "Salix Installation"`" \
 --cancel-label "`gettext "Exit installation"`" \
 --menu \
 "`gettext "You may select an option below using the UP/DOWN keys and SPACE or \
-ENTER. Alternate keys may also be used: '+', '-', and TAB.
+ENTER. Alternate keys may also be used: '+', '-', and TAB."`
 
-If you want to exit the installation and drop to a linux console, \
+`gettext "If you want to exit the installation and drop to a linux console, \
 select 'Exit installation'"`" 0 0 0 \
 "INSTALL" "`gettext "Install Salix using a step-by-step guide"`" \
 "AUTOINSTALL" "`gettext "Autopartition and install with few options (wipes your HD)"`" \
@@ -124,17 +124,19 @@ fi # end if-efi
 		MAINSELECT="ADDSWAP"
 	  else
 		dialog --title "`gettext "NO LINUX PARTITIONS DETECTED"`" \
-		--msgbox "`gettext "There don't seem to be any Linux partitions on this machine.
-		You'll need to make at least one of these to install Linux. Either select AUTOINSTALL from the menu, or select INSTALL and use the partition editor to create one."`" 0 0
+		--msgbox "`gettext "There don't seem to be any Linux partitions \
+on this machine. You'll need to make at least one of these to install \
+Linux. Either select AUTOINSTALL from the menu, or select INSTALL and \
+use the partition editor to create one."`" 0 0
 		MAINSELECT=""
 	  fi
 	  if [ -d /sys/firmware/efi ]; then
 		  if ! probe -l 2> /dev/null | grep "EFI System Partition" 1> /dev/null 2> /dev/null ; then
 			  dialog --title "`gettext "NO EFI SYSTEM PARTITION DETECTED"`" \
 				  --msgbox "`gettext "This machine appears to be using EFI/UEFI, but no EFI System \
-Partition was found.
+Partition was found."`
 
-You'll need to make an EFI System Partition in order \
+`gettext "You'll need to make an EFI System Partition in order \
 to boot from the hard drive."`" 0 0
 			  MAINSELECT=""
           fi
@@ -211,15 +213,15 @@ mkdir /var/log/mount 2> /dev/null
  if [ "$MAINSELECT" = "INSTALLSOFT" ]; then
   if [ ! -r $TMP/SeTsource -o ! -r $TMP/SeTnative ]; then
    dialog --title "`gettext "CANNOT INSTALL SOFTWARE YET"`" \
-   --msgbox "`gettext "Before you can install software, complete the following tasks:
+   --msgbox "`gettext "Before you can install software, complete the following tasks:"`
    
-1. Select your source media.
-2. Set up your target Linux partition(s).
+1. `gettext "Select your source media."`
+2. `gettext "Set up your target Linux partition(s)."`
 
-You may also optionally remap your keyboard and set up your \
-swap partition(s).
+`gettext "You may also optionally remap your keyboard and set up your \
+swap partition(s)."`
 
-Press ENTER to return to the main menu."`" 0 0
+`gettext "Press ENTER to return to the main menu."`" 0 0
    continue
   fi
   SERIES="#CORE##BASIC##FULL##SETTINGS#"
@@ -295,15 +297,15 @@ installation for any specific purpose."`
    if [ -r $T_PX/etc/fstab ]; then
     dialog --title "`gettext "REPLACE /etc/fstab?"`" \
     --yesno "`gettext "You already have an \
-/etc/fstab on your install partition.
+/etc/fstab on your install partition."`
 
-If you were just adding software, \
-you should probably keep your old /etc/fstab.
+`gettext "If you were just adding software, \
+you should probably keep your old /etc/fstab."`
 
-If you've changed your \
-partitioning scheme, you should use the new /etc/fstab.
+`gettext "If you've changed your \
+partitioning scheme, you should use the new /etc/fstab."`
 
-Do you want \
+`gettext "Do you want \
 to replace your old /etc/fstab with the new one?"`" 0 0
     if [ ! $? = 0 ]; then
      REPLACE_FSTAB=N

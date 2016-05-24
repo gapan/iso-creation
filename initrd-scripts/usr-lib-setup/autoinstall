@@ -249,10 +249,9 @@ fi
 
 #dialog --title "`gettext "AUTO PARTITION" --msgbox "$(cat $TMP/${PARTITION_TOOL}.report)" 0 0
 
-gettext "
-Partitioning completed,
-Adding this information to your /etc/fstab:
-" > $TMP/tempmsg
+echo "" > $TMP/tempmsg
+gettext "Partitioning completed." >> $TMP/tempmsg
+gettext "Adding this information to your /etc/fstab:" >> $TMP/tempmsg
 cat $TMP/SeTnative >> $TMP/tempmsg
 cat $TMP/SeTswap >> $TMP/tempmsg
 dialog --title "`gettext "AUTO PARTITION"`" \

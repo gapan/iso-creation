@@ -182,9 +182,9 @@ Please make sure you are using the correct bootdisk for your hardware, \
 consult the BOOTING file for possible information on \
 forcing the detection of your drive, and then reattempt installation.  \
 If all else fails, see FAQ.TXT for information about copying \
-parts of this CD to your DOS partition and installing it from there.
+parts of this CD to your DOS partition and installing it from there."`
 
-You will now be returned to the main menu.  If you want to try looking \
+`gettext "You will now be returned to the main menu.  If you want to try looking \
 for the CD again, you may skip directly to the SOURCE menu selection."`"  \
  0 0
  rm -f $TMP/SeTDS $TMP/SeTmount $TMP/SeTCDdev $TMP/errordo
