@@ -221,8 +221,8 @@ What would you like to do now?"`"  \
    ArG="mount -o ro -t iso9660 $DRIVE_FOUND /var/log/mount"
    dialog --title "`eval_gettext "ATTEMPTING TO MOUNT CD/DVD on \\\$DRIVE_FOUND"`"  \
    --infobox "`eval_gettext "Attempting to mount your CD/DVD again with the \
-following command:
-\\\$ArG"`"  4 80
+following command:"`
+$ArG"  4 80
    umount /var/log/mount 1> $NDIR 2> $NDIR
    sleep 5
   elif [ $DOWHAT = 3 ]; then

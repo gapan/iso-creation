@@ -55,7 +55,7 @@ dialog --title "`gettext "WELCOME TO THE SALIX INSTALLATION"`" \
 --yesno "`eval_gettext "Welcome to the installation of Salix, The Bonsai OS!
 Before you proceed \
 with the rest of the installation, you might want to \
-select your keyboard map (keymap). The current keymap is $KMAP."`" 0 0
+select your keyboard map (keymap). The current keymap is \\\$KMAP."`" 0 0
 [ $? -eq 1 ] && SeTkeymap
 
 while [ 0 ]; do

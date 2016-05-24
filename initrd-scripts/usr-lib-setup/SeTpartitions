@@ -216,9 +216,9 @@ ask_format() {
 not been formatted, you should format it.  NOTE: This will erase all data on \
 it.  Would you like \
 to format this partition?"`" 12 80 3 \
-   "Format" "`eval_gettext "Quick format with no bad block checking"`" \
-   "Check" "`eval_gettext "Slow format that checks for bad blocks"`" \
-   "No" "`eval_gettext "No, do not format this partition"`" 2> $TMP/return
+   "Format" "`gettext "Quick format with no bad block checking"`" \
+   "Check" "`gettext "Slow format that checks for bad blocks"`" \
+   "No" "`gettext "No, do not format this partition"`" 2> $TMP/return
    if [ ! $? = 0 ]; then
      rm -f $TMP/return
      exit
@@ -531,10 +531,8 @@ Where would you like to mount \\\$NEXT_PARTITION?"`" 11 80 2> $TMP/return
 fi # more than one Linux partition
 
 # Done, report to the user:
-eval_gettext "
-Adding this information to your /etc/fstab:
-
-" > $TMP/tempmsg
+gettext "Adding this information to your /etc/fstab:" > $TMP/tempmsg
+echo "" >> $TMP/tempmsg
 cat $TMP/SeTnative >> $TMP/tempmsg
 dialog --backtitle "`gettext "Finished setting up Linux partitions."`" \
 --title "`gettext "DONE ADDING LINUX PARTITIONS TO /etc/fstab"`" \

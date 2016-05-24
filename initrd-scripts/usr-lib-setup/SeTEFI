@@ -70,10 +70,8 @@ mount ${PREFERRED_EFI_PARTITION} /mnt/boot/efi 1> /dev/null 2> /dev/null
 
 # Add the EFI System Partition to /etc/fstab:
 printf "%-16s %-16s %-11s %-16s %-3s %s\n" "$PREFERRED_EFI_PARTITION" "/boot/efi" "vfat" "defaults" "1" "0" > $TMP/SeTEFI
-gettext "
-Adding this information to your /etc/fstab:
-
-" > $TMP/tempmsg
+gettext "Adding this information to your /etc/fstab:" > $TMP/tempmsg
+echo "" > $TMP/tempmsg
 cat $TMP/SeTEFI >> $TMP/tempmsg
 dialog --backtitle "`gettext "Finished setting up EFI System Partition."`" \
 --title "`gettext "EFI SYSTEM PARTITION RECOGNIZED"`" \

@@ -20,7 +20,7 @@ dialog --title "`gettext "KEYBOARD MAP SELECTION"`" \
 --ok-label "`gettext "Select"`" \
 --menu "`eval_gettext "You may select one \
 of the following keyboard maps.  If you do not select a keyboard \
-map, $DefaultKeyMap is the current value.  Use the UP/DOWN \
+map, \\\$DefaultKeyMap is the current value.  Use the UP/DOWN \
 arrow keys and PageUp/PageDown to scroll \
 through the whole list of choices."`" \
 0 0 0 \

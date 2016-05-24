@@ -81,14 +81,12 @@ setup." \
 		if [ -d /var/log/mount/salix ]; then
 			echo "/var/log/mount/salix" > $TMP/SeTDS
 		else
-SRCISO=$(basename $SOURCEISO)
-gettext "
-The ISO image you specified is not valid:
-
-$SRCISO
-
-Please check and try again.
-" > $TMP/tempmsg
+			SRCISO=$(basename $SOURCEISO)
+			gettext "The ISO image you specified is not valid:" > $TMP/tempmsg
+			echo "" >> $TMP/tempmsg
+			echo "$SRCISO" >> $TMP/tempmsg
+			echo "" >> $TMP/tempmsg
+			gettext "Please check and try again." >> $TMP/tempmsg
 			dialog \
 			  --title "`gettext "INVALID ISO IMAGE"`" \
 			  --exit-label "`gettext "OK"`" \
@@ -108,15 +106,13 @@ Please check and try again.
 		ln -sf $SOURCEDIR /var/log/mount
 		echo "/var/log/mount" > $TMP/SeTDS
 	else
-eval_gettext "
-
-The directory you specified is not valid:
-
-$SOURCEDIR
-
-Please check and try again.
-
-"> $TMP/tempmsg
+	gettext "The directory you specified is not valid:" \
+		> $TMP/tmpmsg
+	echo "" >> $TMP/tmpmsg
+	echo "$SOURCEDIR" >> $TMP/tmpmsg
+	echo "" >> $TMP/tmpmsg
+	gettext "Please check and try again." >> $TMP/tmpmsg
+	echo "" >> $TMP/tmpmsg
 		dialog \
 		  --title "`gettext "INVALID SOURCE DIRECTORY"`" \
 		  --exit-label "`gettext "OK"`" \

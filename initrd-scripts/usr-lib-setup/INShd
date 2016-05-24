@@ -178,13 +178,11 @@ Please check and try again.
 	elif [ -d $SRCDIR/core -a -d $SRCDIR/basic -a -d $SRCDIR/full ]; then
 		echo "$SRCDIR" > $TMP/SeTDS
 	else
-eval_gettext "
-The directory you specified is not valid:
-
-$SOURCEDIR
-
-Please check and try again.
-" > $TMP/tempmsg
+		gettext "The directory you specified is not valid:" > $TMP/tempmsg
+		echo "" >> $TMP/tempmsg
+		echo "$SOURCEDIR" >> $TEMP/tempmsg
+		echo "" >> $TMP/tempmsg
+		gettext "Please check and try again." >> $TMP/tempmsg
 		dialog \
 		  --title "`gettext "INVALID SOURCE DIRECTORY"`" \
 		  --exit-label "`gettext "OK"`" \

@@ -52,8 +52,8 @@ get_pkg () {
 	fi
 	if [ $? -ne 0 ]; then
 		dialog \
-		  --title "FTP/HTTP DOWNLOAD FAILURE" \
-		  --msgbox "Downloading $2 FAILED." \
+		  --title "`gettext "FTP/HTTP DOWNLOAD FAILURE"`" \
+		  --msgbox "`eval_gettext "Downloading $2 FAILED."`" \
 		  5 72
 	fi
 }
@@ -74,8 +74,8 @@ errorcode() {
   else
   ArG1=$1
   Arg2=`basename $2`
-    dialog --timeout 600 --title "` eval_gettext "installpkg error #$ArG1"`" --msgbox \
-"`eval_gettext "There was a fatal error attempting to install $ArG2.  The package may \
+    dialog --timeout 600 --title "` eval_gettext "installpkg error #\\\$ArG1"`" --msgbox \
+"`eval_gettext "There was a fatal error attempting to install \\\$ArG2.  The package may \
 be corrupt, the installation media may be bad, or something else \
 has caused the package to be unable to be read without error.  You \
 may hit enter to continue if you wish, but if this is an important \

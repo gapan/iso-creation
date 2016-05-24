@@ -22,7 +22,8 @@ export MAINSELECT=""
 # Parameters : rootfs_size     size of / partition in kB.
 #
 multipartition () {
-	dialog --title "`gettext "AUTO PARTITION"`" --infobox "`eval_gettext "Please wait while ${DISK} is being prepared for Salix"`" 0 0
+	dialog --title "`gettext "AUTO PARTITION"`" --infobox \
+		"`eval_gettext "Please wait while \\\${DISK} is being prepared for Salix"`" 0 0
 
 cat <<EOF2 >  $TMP/layout.${PARTITION_TOOL}
 /dev/${DISK}1 : start=        , size=          $1, Id= 83, bootable
@@ -59,14 +60,15 @@ make_xfs() {
    # get the size of the named partition
    SIZE=`get_part_size $1`
    # output a nice status message
+   eval_gettext "Formatting \$1" > $TMP/tempmsg
+   echo "" >> $TMP/tempmsg
+   eval_gettext "Size in 1K blocks: \$SIZE" >> $TMP/tempmsg
+   echo "" >> $TMP/tempmsg
+   gettext "Filesystem type:xfs" >> $TMP/tempmsg
    dialog --title "`gettext "FORMATTING"`" \
-   --backtitle "`eval_gettext "Formatting $1 with filesystem xfs."`" \
-   --infobox "`eval_gettext "Formatting $1
-   
-Size in 1K blocks: $SIZE
-
-Filesystem type: xfs
-"`" 0 0
+     --backtitle "`eval_gettext "Formatting \\\$1 with filesystem xfs."`" \
+     --infobox "`cat $TMP/tempmsg`" \
+     0 0
    # do the format
    if mount | grep "$1 " 1> $NDIR 2> $NDIR ; then
       umount $1 2> $NDIR
@@ -124,12 +126,11 @@ destroy=$(dialog \
 --stdout \
 --visit-items \
 --title "`gettext "AUTO PARTITION"`" \
---menu "`eval_gettext "
-Are you sure you want to globally erase existing data from ${DISK}?
-"`" \
+--menu "`eval_gettext "Are you sure you want to globally erase \
+existing data from \\\${DISK}?"`" \
 11 75 2 \
 "No" "`gettext "Go back to the main setup menu"`" \
-"Yes" "`gettext "${DISK} is dedicated to Salix"`"  )
+"Yes" "`eval_gettext "\\\${DISK} is dedicated to Salix"`"  )
 if LANG=C fdisk -l /dev/${DISK} 2> /dev/null | grep -q "Disklabel type: gpt" ; then
 	PARTITION_TOOL="sgdisk"
 else
@@ -200,10 +201,12 @@ DisksizeInMB=$(( $DisksizeInKB / 1024 ))
 clear
 
 if [ $DisksizeInMB -lt 3000 ] ; then
-	dialog --title "`gettext "AUTO PARTITION"`" --msgbox "`eval_gettext "${DISK} is only $DisksizeInKB KB, you need at least 3000000 KB to install Salix"`" 6 75
+	dialog --title "`gettext "AUTO PARTITION"`" --msgbox \
+		"`eval_gettext "\\\${DISK} is only \\\$DisksizeInKB KB, you need at least 3000000 KB to install Salix"`" 6 75
 
 elif [ $DisksizeInMB -lt 14000 ] ; then
-	dialog --title "`gettext "AUTO PARTITION"`" --infobox "`eval_gettext "Please wait while ${DISK} is being prepared for Salix"`" 0 0
+	dialog --title "`gettext "AUTO PARTITION"`" --infobox \
+		"`eval_gettext "Please wait while \\\${DISK} is being prepared for Salix"`" 0 0
 	rootsize=$(($DisksizeInMB - 1000))
 
 cat <<EOF1 >  $TMP/layout.${PARTITION_TOOL}

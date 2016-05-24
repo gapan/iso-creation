@@ -213,10 +213,8 @@ while [ 0 ]; do # main partition selection loop
  fi
 done # partition adding loop
 rm -f $TMP/SeTSKIP
-gettext "
-Adding this information to your /etc/fstab:
-
-" > $TMP/tempmsg
+gettext "Adding this information to your /etc/fstab:" > $TMP/tempmsg
+echo "" >> $TMP/tempmsg
 cat $TMP/SeTDOS >> $TMP/tempmsg
 dialog --backtitle "`gettext "Finished setting up non-Linux partitions."`" \
 --title "`gettext "DONE ADDING FAT or NTFS PARTITIONS"`" \
