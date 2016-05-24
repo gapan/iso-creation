@@ -224,8 +224,7 @@ if [ -r /var/log/mount/treecache/PACKAGES.TXT ]; then
   esac
  done \
  ) |  dialog --title "`gettext "INITIALIZING PACKAGE TREE"`" --gauge \
-       "`eval_gettext "
-processing \\\${TOTALP} Salix packages..."`" 8 80
+       "`eval_gettext "processing \\\${TOTALP} Salix packages..."`" 8 80
  
  # Make sure we can select stuff from the package series:
  dialog --title "`gettext "INITIALIZING PACKAGE TREE"`" --infobox \
