@@ -24,7 +24,6 @@ pot:
 		INShd \
 		SeTDOS \
 		SeTEFI \
-		SeTPKG \
 		SeTconfig \
 		SeTdisk \
 		SeTfull \
