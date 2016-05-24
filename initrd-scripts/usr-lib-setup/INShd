@@ -13,14 +13,12 @@ while [ 0 ]; do
 
 	umount -f /var/log/mount 2>/dev/null
 	if [ -n "$(mount | grep /var/log/mount)" -o -d /var/log/mount/lost+found -o -d /var/log/mount/recycled -o -r /var/log/mount/io.sys ]; then
-gettext "
-Setup failed to unmount a required directory:
-
-/var/log/mount
-
-Please reboot the machine an try again.
-
-" > $TMP/tempmsg
+		echo "" > $TMP/tempmsg
+		gettext "Setup failed to unmount a required directory:" >> $TMP/tempmsg
+		echo "" >> $TMP/tempmsg
+		echo "/var/log/mount" >> $TMP/tempmsg
+		gettext "Please reboot the machine an try again." >> $TMP/tempmsg
+		echo "" >> $TMP/tempmsg
 		dialog \
 		  --title "`gettext "ERROR"`" \
 		  --yes-label "`gettext "REBOOT"`" \
@@ -37,15 +35,15 @@ Please reboot the machine an try again.
 	fi
 
 	while [ 0 ]; do
-gettext "
-Please specify which partition on your hard disk or USB stick
-contains the contents (or an ISO image) of a Salix
-installation disc.
-
-Example: /dev/sdb2
-
-Note: Use the <Partitions> button to list available partitions.
-" > $TMP/tempmsg
+		echo "" > $TMP/tempmsg
+		gettext "Please specify which partition on your hard disk or \
+USB stick contains the contents (or an ISO image) of a Salix \
+installation disc." >> $TMP/tempmsg
+		echo "" >> $TMP/tempmsg
+		gettext "Example:" >> $TMP/tempmsg
+		echo " /dev/sdb2" >> $TMP/tempmsg
+		gettext "Note: Use the <Partitions> button to list available partitions." >> $TMP/tempmsg
+		echo "" >> $TMP/tempmsg
 		dialog \
 		  --title "`gettext "SELECT HARD DISK PARTITION"`" \
 		  --help-button --help-label "`gettext "Partitions"`" \
@@ -113,13 +111,14 @@ $(mount | grep $SOURCEDEV)
 	fi
 
 	while [ 0 ]; do
-gettext "
-Now please provide the path to a directory containing the contents
-(or an ISO image) of a Salix installation disc.
-
-Note: The path you enter must be relative to the mount point so
-'/var/log/mount/salix-xfce' should be entered as '/salix-xfce'.
-" > $TMP/tempmsg
+		echo "" > $TMP/tempmsg
+		gettext "Now please provide the path to a directory containing \
+the contents (or an ISO image) of a Salix installation disc." >> $TMP/tempmsg
+		echo "" >> $TMP/tempmsg
+		gettext "Note: The path you enter must be relative to the \
+mount point. So, '/var/log/mount/salix-xfce' should be entered \
+as '/salix-xfce'." >> $TMP/tempmsg
+		echo "" >> $TMP/tempmsg
 		dialog \
 		  --title "`gettext "SELECT SOURCE DIRECTORY"`" \
 		  --help-button --help-label "`gettext "Browse"`" \

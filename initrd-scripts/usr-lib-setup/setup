@@ -67,9 +67,9 @@ dialog --title "`gettext "Salix Installation"`" \
 --ok-label "`gettext "Select"`" \
 --cancel-label "`gettext "Exit installation"`" \
 --menu \
-"`gettext "You may now proceed with the installation by pressing the ENTER key.
+"`gettext "You may now proceed with the installation by pressing the ENTER key."`
 
-If you want to exit the installation and drop to a linux console, \
+`gettext "If you want to exit the installation and drop to a linux console, \
 select 'Exit installation'"`" 0 0 0 \
 "INSTALL" "`gettext "Install Salix using a step-by-step guide"`" \
 2> $TMP/hdset
@@ -200,9 +200,8 @@ mkdir /var/log/mount 2> /dev/null
 	SeTmedia 
 	if [ ! -r $TMP/SeTsource -a ! -r $TMP/SeTgateway -a ! -r $TMP/SeTmount ]; then
    		dialog --title "`gettext "No Source Selected"`" \
-   		--msgbox "`gettext "
-The installer does not know where to find the source packages...
-Press ENTER to return to the main menu."`" 0 0
+   		--msgbox "`gettext "The installer does not know where to find the source packages..."`
+`gettext "Press ENTER to return to the main menu."`" 0 0
    		continue
 	else
 	  MAINSELECT="INSTALLSOFT"
@@ -236,15 +235,15 @@ Press ENTER to return to the main menu."`" 0 0
 	  dialog --title "`gettext "SELECT INSTALLATION MODE"`" \
 		--no-cancel --visit-items --menu\
 "`gettext "Please select the installation mode you prefer \
-from the following:
-BASIC will only install a minimal graphical environment \
-and a web browser.
-CORE will install only the minimum essentials for \
+from the following:"`
+`gettext "BASIC will only install a minimal graphical environment \
+and a web browser."`
+`gettext "CORE will install only the minimum essentials for \
 your system to start in console mode (no graphical \
 environment included) and is ideal if you are an \
 experienced user and want to fully customize your \
-installation for any specific purpose.
-"`" 0 0 0 \
+installation for any specific purpose."`
+" 0 0 0 \
 "BASIC" "`gettext "Install a minimal graphical environment"`" \
 "CORE" "`gettext "Install a minimal console system"`" 2> $TMP/SeTpmode
       MODE=`cat $TMP/SeTpmode`
@@ -254,18 +253,18 @@ installation for any specific purpose.
     --visit-items \
   	  --no-cancel --menu \
 "`gettext "Please select the installation mode you prefer \
-from the following:
-FULL (default) will install everything. That includes \
+from the following:"`
+`getttext "FULL (default) will install everything. That includes \
 one application per task, such as an office \
-suite, a multimedia player, a CD/DVD burner etc. \
-BASIC will only install a minimal graphical environment \
-and a web browser.
-CORE will install only the minimum essentials for \
+suite, a multimedia player, a CD/DVD burner etc."`
+`gettext "BASIC will only install a minimal graphical environment \
+and a web browser."`
+`gettext "CORE will install only the minimum essentials for \
 your system to start in console mode (no graphical \
 environment included) and is ideal if you are an \
 experienced user and want to fully customize your \
-installation for any specific purpose.
-"`" 0 0 0 \
+installation for any specific purpose."`
+" 0 0 0 \
 "FULL" "`gettext "Install everything"`" \
 "BASIC" "`gettext "Install a minimal graphical environment"`" \
 "CORE" "`gettext "Install a minimal console system"`" 2> $TMP/SeTpmode

@@ -13,14 +13,13 @@ while [ 0 ]; do
 
 	umount -f /var/log/mount 2>/dev/null
 	if [ -n "$(mount | grep /var/log/mount)" -o -d /var/log/mount/lost+found -o -d /var/log/mount/recycled -o -r /var/log/mount/io.sys ]; then
-
-gettext "
-Setup failed to unmount a required directory:
-
-/var/log/mount
-
-Please reboot the machine and try again.
-" > $TMP/tempmsg
+		echo "" > $TMP/tempmsg
+		gettext "Setup failed to unmount a required directory:" >> $TMP/tempmsg
+		echo "" >> $TMP/tempmsg
+		echo "/var/log/mount" >> $TMP/tempmsg
+		echo "" >> $TMP/tempmsg
+		gettext "Please reboot the machine and try again." >> $TMP/tempmsg
+		echo "" >> $TMP/tempmsg
 		dialog \
 		  --title "`gettext "ERROR"`" \
 		  --yes-label "`gettext "REBOOT"`" \
@@ -37,14 +36,15 @@ Please reboot the machine and try again.
 	fi
 
 	while [ 0 ]; do
-gettext "
-Please provide the path to a directory containing the contents (or \
-an ISO image) of a Salix installation disc.
-
-Note: You may use any directory within the current filesystem \
+		echo "" > $TMP/tempmsg
+		gettext "Please provide the path to a directory containing the \
+contents (or an ISO image) of a Salix installation disc." \
+			>> $TMP/tempmsg
+		echo "" >> $TMP/tempmsg
+		gettext "Note: You may use any directory within the current filesystem \
 except '/mnt' or '/var/log/mount' as these are required by \
-setup.
-" > $TMP/tempmsg
+setup." \
+ 			>> $TMP/tempmsg
 		dialog \
 		  --title "`gettext "SELECT A PRE-MOUNTED DIRECTORY"`" \
 		  --help-button --help-label "`gettext "Browse"`" \

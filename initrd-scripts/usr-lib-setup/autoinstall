@@ -103,11 +103,11 @@ DISK=$(dialog \
 --ok-label "`gettext "Do It"`" \
 --cancel-label "`gettext "Cancel"`" \
 --title "`gettext "AUTO PARTITION"`" \
---radiolist "`gettext "This is automatic partition mode.
-Press <SPACE> to select the target disk \
-where Salix will be installed.
-All data will be erased from the target disk.
-Only run this mode if the entire \
+--radiolist "`gettext "This is automatic partition mode."`
+`gettext "Press <SPACE> to select the target disk \
+where Salix will be installed."`
+`gettext "All data will be erased from the target disk."`
+`gettext "Only run this mode if the entire \
 disk will be dedicated to Salix."`" \
 0 0 0 ${dglist} )
 # Previous line was:
