@@ -161,14 +161,14 @@ if mount | grep /var/log/mount 1> /dev/null 2> /dev/null ; then # clear source
 fi
 # Anything mounted on /var/log/mount now is a fatal error:
 if mount | grep /var/log/mount 1> /dev/null 2> /dev/null ; then
-  gettext -s "Can't umount /var/log/mount.  Reboot machine and run setup again."
+  gettext "Can't umount /var/log/mount.  Reboot machine and run setup again."
   exit
 fi
 # If the mount table is corrupt, the above might not do it, so we will
 # try to detect Linux and FAT32 partitions that have slipped by:
 if [ -d /var/log/mount/lost+found -o -d /var/log/mount/recycled \
 	 -o -r /var/log/mount/io.sys ]; then
-  gettext -s "Mount table corrupt.  Reboot machine and run setup again."
+  gettext "Mount table corrupt.  Reboot machine and run setup again."
   exit
 fi
 rm -f /var/log/mount 2> /dev/null
