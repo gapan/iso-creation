@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Salix-14.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-23 23:07+0300\n"
+"POT-Creation-Date: 2016-05-25 00:36+0300\n"
 "PO-Revision-Date: 2016-03-21 23:57+0100\n"
 "Last-Translator: \n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
@@ -75,12 +75,13 @@ msgstr "Velg"
 msgid "Exit installation"
 msgstr "Avbryt CD installasjon"
 
-#
-# File: setup, line: 70
 #: ../initrd-scripts/usr-lib-setup/setup:70
+msgid "You may now proceed with the installation by pressing the ENTER key."
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/setup:72
+#: ../initrd-scripts/usr-lib-setup/setup:92
 msgid ""
-"You may now proceed with the installation by pressing the ENTER key.\n"
-"\n"
 "If you want to exit the installation and drop to a linux console, select "
 "'Exit installation'"
 msgstr ""
@@ -93,22 +94,11 @@ msgstr ""
 msgid "Install Salix using a step-by-step guide"
 msgstr ""
 
-#
-# File: 32-pxesetup, line: 52
-# File: 64-pxesetup, line: 52
 #: ../initrd-scripts/usr-lib-setup/setup:89
-#, fuzzy
 msgid ""
 "You may select an option below using the UP/DOWN keys and SPACE or ENTER. "
-"Alternate keys may also be used: '+', '-', and TAB.\n"
-"\n"
-"If you want to exit the installation and drop to a linux console, select "
-"'Exit installation'"
+"Alternate keys may also be used: '+', '-', and TAB."
 msgstr ""
-"Velkommen til Salix PXE Setup.\n"
-"Velg et alternativ nedenfor med OPP/NED pilene og MELLOMROM eller ENTER.\n"
-"\n"
-"Alternative taster kan også brukes: '+','-', og TAB."
 
 #
 # File: setup, line: 95
@@ -123,196 +113,163 @@ msgstr ""
 msgid "NO LINUX PARTITIONS DETECTED"
 msgstr "FANT INGEN LINUX PARTISJON"
 
-#
-# File: 32-setup, line: 58
-# File: 64-setup, line: 58
 #: ../initrd-scripts/usr-lib-setup/setup:127
-#, fuzzy
 msgid ""
-"There don't seem to be any Linux partitions on this machine.\n"
-"\t\tYou'll need to make at least one of these to install Linux. Either "
-"select AUTOINSTALL from the menu, or select INSTALL and use the partition "
-"editor to create one."
+"There don't seem to be any Linux partitions on this machine. You'll need to "
+"make at least one of these to install Linux. Either select AUTOINSTALL from "
+"the menu, or select INSTALL and use the partition editor to create one."
 msgstr ""
-"Det ser ikke ut til at det er noen Linux partisjoner på denne maskinen. Du "
-"trenger å lage minst en slik partisjon for å installere Linux. For å gjøre "
-"dette må du avslutte 'setup' og lage partisjonene med 'cfdisk' (MBR "
-"partisjoner) eller 'cgdisk' (GPT partisjoner). Les 'setup' hjelpe dokumentet "
-"i neste meny for mer informasjon."
 
 #
 # File: 32-setup, line: 67
 # File: 64-setup, line: 67
-#: ../initrd-scripts/usr-lib-setup/setup:133
+#: ../initrd-scripts/usr-lib-setup/setup:135
 msgid "NO EFI SYSTEM PARTITION DETECTED"
 msgstr "FANT INGEN EFI SYSTEMPARTISJON"
 
-#
-# File: 32-setup, line: 68
-# File: 64-setup, line: 68
-#: ../initrd-scripts/usr-lib-setup/setup:134
-#, fuzzy
+#: ../initrd-scripts/usr-lib-setup/setup:136
 msgid ""
 "This machine appears to be using EFI/UEFI, but no EFI System Partition was "
-"found.\n"
-"\n"
+"found."
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/setup:139
+msgid ""
 "You'll need to make an EFI System Partition in order to boot from the hard "
 "drive."
 msgstr ""
-"Det ser ut til at maskinen bruker EFI/UEFI men ingen EFI Systempartisjon ble "
-"funnet. Du trenger å lage en EFI Systempartisjon for å kunne starte opp fra "
-"harddisken. For å gjøre dette må du avslutte 'setup' og lage en 100MB EF00 "
-"partisjon med 'cgdisk'. Les 'setup' hjelpe dokumentet i neste meny for mer "
-"informasjon."
 
 #
 # File: setup, line: 162
 # File: setup, line: 169
-#: ../initrd-scripts/usr-lib-setup/setup:162
-#: ../initrd-scripts/usr-lib-setup/setup:169
+#: ../initrd-scripts/usr-lib-setup/setup:164
+#: ../initrd-scripts/usr-lib-setup/setup:171
 msgid "-s"
 msgstr ""
 
 #
 # File: setup, line: 202
-#: ../initrd-scripts/usr-lib-setup/setup:202
+#: ../initrd-scripts/usr-lib-setup/setup:204
 msgid "No Source Selected"
 msgstr ""
 
-#
-# File: setup, line: 203
-#: ../initrd-scripts/usr-lib-setup/setup:203
-msgid ""
-"\n"
-"The installer does not know where to find the source packages...\n"
-"Press ENTER to return to the main menu."
+#: ../initrd-scripts/usr-lib-setup/setup:205
+msgid "The installer does not know where to find the source packages..."
 msgstr ""
 
-#
-# File: 32-setup, line: 179
-# File: 64-setup, line: 179
-#: ../initrd-scripts/usr-lib-setup/setup:214
-msgid "CANNOT INSTALL SOFTWARE YET"
-msgstr "KAN IKKE INSTALLERE PROGRAMVARER ENNÅ"
+#: ../initrd-scripts/usr-lib-setup/setup:206
+#: ../initrd-scripts/usr-lib-setup/setup:224
+msgid "Press ENTER to return to the main menu."
+msgstr ""
 
 #
 # File: 32-setup, line: 179
 # File: 64-setup, line: 179
 #: ../initrd-scripts/usr-lib-setup/setup:215
-#, fuzzy
-msgid ""
-"Before you can install software, complete the following tasks:\n"
-"   \n"
-"1. Select your source media.\n"
-"2. Set up your target Linux partition(s).\n"
-"\n"
-"You may also optionally remap your keyboard and set up your swap "
-"partition(s).\n"
-"\n"
-"Press ENTER to return to the main menu."
+msgid "CANNOT INSTALL SOFTWARE YET"
+msgstr "KAN IKKE INSTALLERE PROGRAMVARER ENNÅ"
+
+#: ../initrd-scripts/usr-lib-setup/setup:216
+msgid "Before you can install software, complete the following tasks:"
 msgstr ""
-"\n"
-"Før du kan installere programvarene må du gjøre følgende:\n"
-"\n"
-"1. Velg din media kilde.\n"
-"2. Sett opp Linux mål partisjonen(e).\n"
-"3. Velg programvare kategorier å installere.\n"
-"\n"
-"Du kan rekonfigurere tastaturet eller sette opp swap partisjonen(e) først "
-"hvis du vil.\n"
-"\n"
-"Trykk ENTER for å gå tilbake til hoved menyen."
+
+#: ../initrd-scripts/usr-lib-setup/setup:218
+msgid "Select your source media."
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/setup:219
+msgid "Set up your target Linux partition(s)."
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/setup:221
+msgid ""
+"You may also optionally remap your keyboard and set up your swap "
+"partition(s)."
+msgstr ""
 
 #
 # File: 32-display.lilohelp, line: 106
 # File: 64-display.lilohelp, line: 106
-#: ../initrd-scripts/usr-lib-setup/setup:236
-#: ../initrd-scripts/usr-lib-setup/setup:253
+#: ../initrd-scripts/usr-lib-setup/setup:237
+#: ../initrd-scripts/usr-lib-setup/setup:254
 #, fuzzy
 msgid "SELECT INSTALLATION MODE"
 msgstr "LILO INSTALLASJONS HJELP"
 
-#
-# File: setup, line: 238
-#: ../initrd-scripts/usr-lib-setup/setup:238
+#: ../initrd-scripts/usr-lib-setup/setup:239
+#: ../initrd-scripts/usr-lib-setup/setup:257
+msgid "Please select the installation mode you prefer from the following:"
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/setup:241
+#: ../initrd-scripts/usr-lib-setup/setup:262
 msgid ""
-"Please select the installation mode you prefer from the following:\n"
-"BASIC will only install a minimal graphical environment and a web browser.\n"
+"BASIC will only install a minimal graphical environment and a web browser."
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/setup:243
+#: ../initrd-scripts/usr-lib-setup/setup:264
+msgid ""
 "CORE will install only the minimum essentials for your system to start in "
 "console mode (no graphical environment included) and is ideal if you are an "
 "experienced user and want to fully customize your installation for any "
-"specific purpose.\n"
+"specific purpose."
 msgstr ""
 
 #
 # File: setup, line: 248
 # File: setup, line: 270
-#: ../initrd-scripts/usr-lib-setup/setup:248
-#: ../initrd-scripts/usr-lib-setup/setup:270
+#: ../initrd-scripts/usr-lib-setup/setup:249
+#: ../initrd-scripts/usr-lib-setup/setup:271
 msgid "Install a minimal graphical environment"
 msgstr ""
 
 #
 # File: setup, line: 249
 # File: setup, line: 271
-#: ../initrd-scripts/usr-lib-setup/setup:249
-#: ../initrd-scripts/usr-lib-setup/setup:271
+#: ../initrd-scripts/usr-lib-setup/setup:250
+#: ../initrd-scripts/usr-lib-setup/setup:272
 msgid "Install a minimal console system"
 msgstr ""
 
 #
-# File: setup, line: 256
-#: ../initrd-scripts/usr-lib-setup/setup:256
-msgid ""
-"Please select the installation mode you prefer from the following:\n"
-"FULL (default) will install everything. That includes one application per "
-"task, such as an office suite, a multimedia player, a CD/DVD burner etc. "
-"BASIC will only install a minimal graphical environment and a web browser.\n"
-"CORE will install only the minimum essentials for your system to start in "
-"console mode (no graphical environment included) and is ideal if you are an "
-"experienced user and want to fully customize your installation for any "
-"specific purpose.\n"
-msgstr ""
-
-#
 # File: setup, line: 269
-#: ../initrd-scripts/usr-lib-setup/setup:269
+#: ../initrd-scripts/usr-lib-setup/setup:270
 msgid "Install everything"
 msgstr ""
 
 #
 # File: 32-setup, line: 346
 # File: 64-setup, line: 346
-#: ../initrd-scripts/usr-lib-setup/setup:297
+#: ../initrd-scripts/usr-lib-setup/setup:298
 msgid "REPLACE /etc/fstab?"
 msgstr "ERSTATT /etc/fstab?"
 
-#
-# File: 32-setup, line: 346
-# File: 64-setup, line: 346
-#: ../initrd-scripts/usr-lib-setup/setup:298
-#, fuzzy
-msgid ""
-"You already have an /etc/fstab on your install partition.\n"
-"\n"
-"If you were just adding software, you should probably keep your old /etc/"
-"fstab.\n"
-"\n"
-"If you've changed your partitioning scheme, you should use the new /etc/"
-"fstab.\n"
-"\n"
-"Do you want to replace your old /etc/fstab with the new one?"
+#: ../initrd-scripts/usr-lib-setup/setup:299
+msgid "You already have an /etc/fstab on your install partition."
 msgstr ""
-"Du har allerede en /etc/fstab på installasjons partisjonen. Hvis du bare "
-"legger til programvarer bør du beholde den gamle /etc/fstab. Hvis du har "
-"endret partisjonsoppsettet bør du bruke den nye /etc/fstab. Vil du erstatte "
-"den gamle /etc/fstab med den nye?"
+
+#: ../initrd-scripts/usr-lib-setup/setup:302
+msgid ""
+"If you were just adding software, you should probably keep your old /etc/"
+"fstab."
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/setup:305
+msgid ""
+"If you've changed your partitioning scheme, you should use the new /etc/"
+"fstab."
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/setup:308
+msgid "Do you want to replace your old /etc/fstab with the new one?"
+msgstr ""
 
 #
 # File: 32-display.lilohelp, line: 106
 # File: 64-display.lilohelp, line: 106
-#: ../initrd-scripts/usr-lib-setup/setup:371
-#: ../initrd-scripts/usr-lib-setup/setup:378
+#: ../initrd-scripts/usr-lib-setup/setup:372
+#: ../initrd-scripts/usr-lib-setup/setup:379
 #, fuzzy
 msgid "SALIX INSTALLATION IS COMPLETE"
 msgstr "LILO INSTALLASJONS HJELP"
@@ -320,22 +277,22 @@ msgstr "LILO INSTALLASJONS HJELP"
 #
 # File: setup, line: 372
 # File: setup, line: 379
-#: ../initrd-scripts/usr-lib-setup/setup:372
-#: ../initrd-scripts/usr-lib-setup/setup:379
+#: ../initrd-scripts/usr-lib-setup/setup:373
+#: ../initrd-scripts/usr-lib-setup/setup:380
 msgid "Reboot now"
 msgstr ""
 
 #
 # File: setup, line: 373
 # File: setup, line: 380
-#: ../initrd-scripts/usr-lib-setup/setup:373
-#: ../initrd-scripts/usr-lib-setup/setup:380
+#: ../initrd-scripts/usr-lib-setup/setup:374
+#: ../initrd-scripts/usr-lib-setup/setup:381
 msgid "Exit to command line"
 msgstr ""
 
 #
 # File: setup, line: 374
-#: ../initrd-scripts/usr-lib-setup/setup:374
+#: ../initrd-scripts/usr-lib-setup/setup:375
 msgid ""
 "System configuration and installation is complete. Please remove the "
 "installation disc. You can either select to reboot your system now or choose "
@@ -346,7 +303,7 @@ msgstr ""
 #
 # File: 32-setup, line: 472
 # File: 64-setup, line: 472
-#: ../initrd-scripts/usr-lib-setup/setup:381
+#: ../initrd-scripts/usr-lib-setup/setup:382
 #, fuzzy
 msgid ""
 "System configuration and installation is complete. You can either select to "
@@ -356,29 +313,31 @@ msgstr ""
 "System konfigurasjon og installasjon er ferdig. Du kan AVSLUTTE setup og "
 "restarte maskinen med ctrl-alt-delete."
 
-#
-# File: 32-INCISO, line: 14
-# File: 64-INCISO, line: 14
-#: ../initrd-scripts/usr-lib-setup/INCISO:27
-msgid "USE ISO IMAGE"
-msgstr "BRUK ISO FIL"
+#: ../initrd-scripts/usr-lib-setup/INCISO:19
+msgid "Setup has found an ISO image in the source directory:"
+msgstr ""
 
-#
-# File: INCISO, line: 33
-#: ../initrd-scripts/usr-lib-setup/INCISO:33
-msgid ""
-"\n"
-"Setup has found ISO images in the source directory.\n"
-"\n"
-"Select an image if you want to use it as an installation source?\n"
+#: ../initrd-scripts/usr-lib-setup/INCISO:23
+msgid "Do you want to use this image as an installationsource?"
 msgstr ""
 
 #
-# File: INCISO, line: 52
-#: ../initrd-scripts/usr-lib-setup/INCISO:52
-msgid ""
-"\n"
-"Mounting ISO image...\n"
+# File: 32-INCISO, line: 14
+# File: 64-INCISO, line: 14
+#: ../initrd-scripts/usr-lib-setup/INCISO:28
+msgid "USE ISO IMAGE"
+msgstr "BRUK ISO FIL"
+
+#: ../initrd-scripts/usr-lib-setup/INCISO:35
+msgid "Setup has found ISO images in the source directory."
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/INCISO:38
+msgid "Select an image if you want to use it as an installation source."
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/INCISO:54
+msgid "Mounting ISO image..."
 msgstr ""
 
 #
@@ -718,11 +677,7 @@ msgstr ""
 msgid "CD/DVD DRIVE NOT FOUND"
 msgstr "FANT IKKE CD/DVD STASJON"
 
-#
-# File: 32-INSCD, line: 201
-# File: 64-INSCD, line: 201
 #: ../initrd-scripts/usr-lib-setup/INSCD:175
-#, fuzzy
 msgid ""
 "A CD/DVD drive could not be found on any of the devices that were scanned.  "
 "Possible reasons include using a bootdisk or kernel that doesn't support "
@@ -733,25 +688,14 @@ msgid ""
 "bootdisk for your hardware, consult the BOOTING file for possible "
 "information on forcing the detection of your drive, and then reattempt "
 "installation.  If all else fails, see FAQ.TXT for information about copying "
-"parts of this CD to your DOS partition and installing it from there.\n"
-"\n"
+"parts of this CD to your DOS partition and installing it from there."
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:187
+msgid ""
 "You will now be returned to the main menu.  If you want to try looking for "
 "the CD again, you may skip directly to the SOURCE menu selection."
 msgstr ""
-"Det ble ikke funnet noen CD/DVD stasjon i alle de enhetene vi søkte etter. "
-"Mulige årsaker kan være at du bruker en oppstarts-disk eller kjerne som ikke "
-"støtter denne stasjonen, at du ikke oppgav nødvendige driver parametre til "
-"kjernen, at du ikke har en Salix CD/DVD i stasjonen, eller at du bruker en "
-"stasjon koblet til et \"Plug and Play\" lydkort (i et slikt tilfelle hjelper "
-"det ofte å koble stasjonen direkte i en IDE kontakt). Vennligst sjekk at du "
-"bruker en riktig oppstarts-disk for maskinvaren, se etter informasjon om "
-"hvordan man kan tvinge gjenkjenning av stasjonen i BOOTING.TXT (på DVD-en), "
-"forsøk så å installere på nytt. Som en siste utvei, se etter informasjon om "
-"å kopiere deler av CD-en til en DOS partisjon og installere videre derifra i "
-"FAQ.TXT (på DVD-en).\n"
-"\n"
-"Du vil nå gå tilbake til hoved menyen. Hvis du ønsker å søke etter CD-en "
-"igjen kan du gå direkte til kategorien KILDE i meny valget."
 
 #
 # File: 32-INSCD, line: 223
@@ -837,25 +781,18 @@ msgstr ""
 "Forsøker å montere CD/DVD-en på nytt med følgende kommando:\n"
 "$ArG "
 
-#
-# File: 32-INSNFS, line: 24
-# File: 64-INSNFS, line: 24
 #: ../initrd-scripts/usr-lib-setup/INSNFS:23
-#, fuzzy
 msgid ""
-"\n"
 "Good! We're all set on the local end, but now we need to know where to find "
 "the software packages to install.  First, we need the IP address of the "
 "machine where the Salix sources are stored."
 msgstr ""
-"Fint! Da er maskinen konfigurert, det vi trenger nå er å vite\n"
-"hvor vi skal finne installasjons pakkene. Først trenger vi\n"
-"IP adressen til maskinen hvor Salix kildene ligger."
 
 #
 # File: 32-INSURL, line: 71
 # File: 64-INSURL, line: 71
-#: ../initrd-scripts/usr-lib-setup/INSNFS:31
+#: ../initrd-scripts/usr-lib-setup/INSNFS:30
+#: ../initrd-scripts/usr-lib-setup/INSURL:72
 #, fuzzy
 msgid ""
 "Since you're already running on the network, you should be able to use the "
@@ -867,42 +804,37 @@ msgstr ""
 #
 # File: 32-INSNFS, line: 36
 # File: 64-INSNFS, line: 36
-#: ../initrd-scripts/usr-lib-setup/INSNFS:36
+#: ../initrd-scripts/usr-lib-setup/INSNFS:35
 msgid "What is the IP address of your NFS server?"
 msgstr "Hva er IP adressen til NFS serveren?"
 
 #
 # File: 32-INSNFS, line: 38
 # File: 64-INSNFS, line: 38
-#: ../initrd-scripts/usr-lib-setup/INSNFS:38
+#: ../initrd-scripts/usr-lib-setup/INSNFS:37
 msgid "ENTER IP ADDRESS OF NFS SERVER"
 msgstr "SKRIV INN IP ADRESSEN TIL NFS SERVEREN"
 
-#
-# File: 32-INSURL, line: 86
-# File: 64-INSURL, line: 86
 #: ../initrd-scripts/usr-lib-setup/INSNFS:46
-#, fuzzy, sh-format
+#: ../initrd-scripts/usr-lib-setup/INSSMB:47
+#: ../initrd-scripts/usr-lib-setup/INSURL:86
 msgid ""
-"\n"
 "There must be a directory on the server with the Salix packages and files "
-"arranged in a tree like the FTP site.\n"
-"\n"
+"arranged in a tree like the FTP site."
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:50
+msgid ""
 "The installation script needs to know the name of the directory on your "
 "server that contains the series' subdirectories. For example, if your A "
-"series is found at /stuff/salix/a, then you would respond: /stuff/salix\n"
-"\n"
-"What is the Salix source directory?"
+"series is found at /stuff/salix/a, then you would respond: /stuff/salix"
 msgstr ""
-"\n"
-"Det må finnes en filkatalog på serveren med Salix pakkene, ordnet på samme "
-"måte som på FTP siden.\n"
-"\n"
-"Installasjons skriptet trenger å hvor filkatalogen på serveren som "
-"inneholder pakkeseriene er. For eksempel, hvis A serien ligger i /stuff/"
-"salix/a, skriv da: /stuff/salix\n"
-"\n"
-"Hvor ligger filkatalogen med Salix kildene?\n"
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:55
+#: ../initrd-scripts/usr-lib-setup/INSSMB:55
+#: ../initrd-scripts/usr-lib-setup/INSURL:96
+msgid "What is the Salix source directory?"
+msgstr ""
 
 #
 # File: 32-INSNFS, line: 56
@@ -918,39 +850,31 @@ msgstr ""
 #: ../initrd-scripts/usr-lib-setup/INSNFS:56
 #: ../initrd-scripts/usr-lib-setup/INSSMB:56
 #: ../initrd-scripts/usr-lib-setup/INSURL:97
-#: ../initrd-scripts/usr-lib-setup/INShd:124
+#: ../initrd-scripts/usr-lib-setup/INShd:123
 msgid "SELECT SOURCE DIRECTORY"
 msgstr "VELG FILKATALOG TIL KILDENE"
 
-#
-# File: 32-INSNFS, line: 64
-# File: 64-INSNFS, line: 64
-#: ../initrd-scripts/usr-lib-setup/INSNFS:64
-#, fuzzy
-msgid ""
-"\n"
-"In the next screen you should watch for NFS mount errors.\n"
-"\n"
-"If you see errors and you don't see your NFS server listed, then try setting "
-"up NFS again.\n"
-"\n"
+#: ../initrd-scripts/usr-lib-setup/INSNFS:65
+msgid "In the next screen you should watch for NFS mount errors."
 msgstr ""
-"\n"
-"Se etter potensielle feilmeldinger i NFS monteringen på neste side. Forsøk å "
-"sette opp NFS på nytt hvis du får feilmeldinger og NFS serveren ikke blir "
-"listet opp.\n"
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:68
+msgid ""
+"If you see errors and you don't see your NFS server listed, then try setting "
+"up NFS again."
+msgstr ""
 
 #
 # File: 32-INSNFS, line: 68
 # File: 64-INSNFS, line: 68
-#: ../initrd-scripts/usr-lib-setup/INSNFS:70
+#: ../initrd-scripts/usr-lib-setup/INSNFS:71
 msgid "NFS MOUNT INFORMATION"
 msgstr "NFS MONTERING INFORMASJON"
 
 #
 # File: 32-INSNFS, line: 83
 # File: 64-INSNFS, line: 83
-#: ../initrd-scripts/usr-lib-setup/INSNFS:79
+#: ../initrd-scripts/usr-lib-setup/INSNFS:80
 #, sh-format
 msgid "Mounting $REMOTE_PATH:"
 msgstr "Monterer $REMOTE_PATH:"
@@ -958,28 +882,28 @@ msgstr "Monterer $REMOTE_PATH:"
 #
 # File: 32-INSNFS, line: 88
 # File: 64-INSNFS, line: 88
-#: ../initrd-scripts/usr-lib-setup/INSNFS:84
+#: ../initrd-scripts/usr-lib-setup/INSNFS:85
 msgid "Didn't work."
 msgstr "Virket ikke."
 
 #
 # File: 32-INSNFS, line: 90
 # File: 64-INSNFS, line: 90
-#: ../initrd-scripts/usr-lib-setup/INSNFS:86
+#: ../initrd-scripts/usr-lib-setup/INSNFS:87
 msgid "Maybe you should check that the directory name is correct?"
 msgstr "Kanskje du burde sjekke at filkatalogen er skrevet riktig?"
 
 #
 # File: 32-INSNFS, line: 97
 # File: 64-INSNFS, line: 97
-#: ../initrd-scripts/usr-lib-setup/INSNFS:93
+#: ../initrd-scripts/usr-lib-setup/INSNFS:94
 msgid "Current NFS mounts:"
 msgstr "Nåværende NFS monteringer:"
 
 #
 # File: 32-INSNFS, line: 101
 # File: 64-INSNFS, line: 101
-#: ../initrd-scripts/usr-lib-setup/INSNFS:97
+#: ../initrd-scripts/usr-lib-setup/INSNFS:98
 msgid "Do you need to try setting up NFS again?"
 msgstr "Trenger du å sette opp NFS på nytt?"
 
@@ -988,36 +912,26 @@ msgstr "Trenger du å sette opp NFS på nytt?"
 # File: 32-INSNFS, line: 108
 # File: 64-INSNFS, line: 104
 # File: 64-INSNFS, line: 108
-#: ../initrd-scripts/usr-lib-setup/INSNFS:100
-#: ../initrd-scripts/usr-lib-setup/INSNFS:104
+#: ../initrd-scripts/usr-lib-setup/INSNFS:101
+#: ../initrd-scripts/usr-lib-setup/INSNFS:105
 msgid "NFS MOUNT RESULT"
 msgstr "NFS MONTERING RESULTATER"
 
-#
-# File: 32-INSSMB, line: 23
-# File: 64-INSSMB, line: 23
-#: ../initrd-scripts/usr-lib-setup/INSSMB:22
-#, fuzzy
+#: ../initrd-scripts/usr-lib-setup/INSSMB:23
 msgid ""
-"\n"
 "Good! We're all set on the local end, but now we need to know where to find "
 "the software packages to install. First, we need the share address of the "
-"Samba server where the Salix sources are stored.\n"
-"\n"
-"Example share address: //192.168.0.1/public\n"
+"Samba server where the Salix sources are stored."
 msgstr ""
-"\n"
-"Fint! Da er maskinen konfigurert, det vi trenger nå er å vite\n"
-"hvor vi kan finne installasjons pakkene. Først trenger vi\n"
-"adressen til Samba serveren hvor Salix kildene\n"
-"ligger.\n"
-"Eksempel på adresse: //192.168.0.1/public\n"
+
+#: ../initrd-scripts/usr-lib-setup/INSSMB:28
+msgid "Example share address:"
+msgstr ""
 
 #
 # File: 32-INSURL, line: 71
 # File: 64-INSURL, line: 71
 #: ../initrd-scripts/usr-lib-setup/INSSMB:32
-#: ../initrd-scripts/usr-lib-setup/INSURL:71
 msgid ""
 "Since you're already running on the network, you should be able to use the "
 "hostname instead of an IP address if you wish.\n"
@@ -1025,16 +939,9 @@ msgstr ""
 "Du er alerede koblet til det lokale nettverket, så du skal kunne bruke "
 "vertsnavnet istedet for en IP adresse hvis du vil. \n"
 
-#
-# File: 32-INSSMB, line: 36
-# File: 64-INSSMB, line: 36
-#: ../initrd-scripts/usr-lib-setup/INSSMB:36
-msgid ""
-"\n"
-"What is the share address of your Samba server? "
+#: ../initrd-scripts/usr-lib-setup/INSSMB:37
+msgid "What is the share address of your Samba server?"
 msgstr ""
-"\n"
-"Hva er adressen til Samba serveren?"
 
 #
 # File: 32-INSSMB, line: 38
@@ -1043,30 +950,12 @@ msgstr ""
 msgid "ENTER SHARE ADDRESS OF SAMBA SERVER"
 msgstr "SKRIV INN ADRESSEN PÅ SAMBA SERVEREN"
 
-#
-# File: 32-INSSMB, line: 46
-# File: 64-INSSMB, line: 46
-#: ../initrd-scripts/usr-lib-setup/INSSMB:46
-#, fuzzy, sh-format
+#: ../initrd-scripts/usr-lib-setup/INSSMB:50
 msgid ""
-"\n"
-"There must be a directory on the server with the Salix packages and files "
-"arranged in a tree like the FTP site. \n"
 "The installation script needs to know the name of the directory below your "
 "Samba share that contains the series subdirectories. For example, if your A "
-"series is found at /stuff/salix/a, then you would respond: /stuff/salix \n"
-"What is the Salix source directory?"
+"series is found at /stuff/salix/a, then you would respond: /stuff/salix"
 msgstr ""
-"\n"
-"Det må finnes en filkatalog på serveren med Salix\n"
-"pakkene, ordnet på samme måte som på FTP siden.\n"
-"\n"
-"Installasjons skriptet trenger å vite hvor \n"
-"filkatalogen på Samba serveren som inneholder\n"
-"pakke seriene er. For eksempel, hvis serie A finnes i\n"
-"/stuff/salix/a, skriv da: /stuff/salix\n"
-"\n"
-"Hvor ligger filkatalogen med Salix kildene?"
 
 #
 # File: 32-INSSMB, line: 65
@@ -1130,99 +1019,57 @@ msgstr "Vil du forsøke å sette opp Samba på nytt?"
 msgid "MOUNT RESULT"
 msgstr "MONTERING RESULTAT"
 
-#
-# File: 32-INSURL, line: 63
-# File: 64-INSURL, line: 63
-#: ../initrd-scripts/usr-lib-setup/INSURL:62
-#, fuzzy
+#: ../initrd-scripts/usr-lib-setup/INSURL:63
 msgid ""
-"\n"
 "Good! We're all set on the local end, but now we need to know where to find "
 "the software packages to install. First, we need the URL of the ftp or http "
-"server where the Salix sources are stored.\n"
-"URL examples are: 'ftp://192.168.0.1' ; 'http://172.16.10.31'\n"
+"server where the Salix sources are stored."
 msgstr ""
-"Fint! Da er maskinen konfigurert, det vi trenger å vite nå er hvor "
-"installasjons pakkene ligger. Først trenger vi URL-en til ftp eller http "
-"serveren hvor Salix kildene ligger.\n"
-"URL eksempler: 'ftp://192.168.0.1' ; 'http://172.16.10.31'\n"
 
-#
-# File: 32-INSURL, line: 75
-# File: 64-INSURL, line: 75
-#: ../initrd-scripts/usr-lib-setup/INSURL:75
-msgid ""
-"\n"
-"What is the URL of your FTP/HTTP server?\n"
+#: ../initrd-scripts/usr-lib-setup/INSURL:68
+msgid "URL examples are:"
 msgstr ""
-"\n"
-"Hva er URL-en til FTP/HTTP serveren?\n"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:76
+msgid "What is the URL of your FTP/HTTP server?"
+msgstr ""
 
 #
 # File: 32-INSURL, line: 78
 # File: 64-INSURL, line: 78
-#: ../initrd-scripts/usr-lib-setup/INSURL:78
+#: ../initrd-scripts/usr-lib-setup/INSURL:77
 msgid "ENTER URL OF FTP/HTTP SERVER"
 msgstr "SKRIV INN URL-EN TIL FTP/HTTP SERVEREN"
 
-#
-# File: 32-INSURL, line: 86
-# File: 64-INSURL, line: 86
-#: ../initrd-scripts/usr-lib-setup/INSURL:86
-#, fuzzy, sh-format
+#: ../initrd-scripts/usr-lib-setup/INSURL:90
 msgid ""
-"\n"
-"There must be a directory on the server with the Salix packages and files "
-"arranged in a tree like the FTP site.\n"
-"\n"
 "The installation script needs to know the name of the directory on your "
 "server that contains the series subdirectories. For example, if your A "
-"series is found at /stuff/salix/a, then you would respond: /stuff/salix\n"
-"\n"
-"What is the Salix source directory?\n"
+"series is found at /stuff/salix/a, then you would respond: /stuff/salix"
 msgstr ""
-"\n"
-"Det må finnes en filkatalog på serveren med Salix pakkene, ordnet på samme "
-"måte som på FTP siden.\n"
-"\n"
-"Installasjons skriptet trenger å hvor filkatalogen på serveren som "
-"inneholder pakkeseriene er. For eksempel, hvis A serien ligger i /stuff/"
-"salix/a, skriv da: /stuff/salix\n"
-"\n"
-"Hvor ligger filkatalogen med Salix kildene?\n"
 
-#
-# File: 32-INSURL, line: 106
-# File: 64-INSURL, line: 106
-#: ../initrd-scripts/usr-lib-setup/INSURL:106
-#, fuzzy
+#: ../initrd-scripts/usr-lib-setup/INSURL:107
+msgid "In the next screen you should watch for possible errors."
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:110
 msgid ""
-"\n"
-"In the next screen you should watch for possible errors.\n"
-"\n"
 "First, we'll download the PACKAGES.TXT from the parent of the directory that "
 "you entered before (which should be the root of the remote Salix tree).  If "
 "that succeeds, then we use PACKAGES.TXT to reconstruct a local cache of the "
 "package tree (should take a minute or less on an average system).\n"
-"After that, we're all set to go!\n"
-"\n"
-"Downloading PACKAGES.TXT at the Salix root starts after you press OK.\n"
-"That file is several hundreds of KB in size so it may take some time to get "
-"here...\n"
+"After that, we're all set to go!"
 msgstr ""
-"\n"
-"Se etter mulige feilmeldinger i neste vindu.\n"
-"\n"
-"Vi begynner med å laste ned PACKAGES.TXT fra nivået over filkatalogen du "
-"nettopp skrev inn (burde være toppnivået på det eksterne Salix fil treet). "
-"Hvis det lykkes bruker vi PACKAGES.TXT for å lage en lokal cache av fil "
-"treet (bør ta et minutt eller mindre).\n"
-"Etter dette er vi klare for å fortsette!\n"
-"\n"
-"Nedlasting av PACKAGES.TXT fra Salix toppnivå starter etter at du trykker "
-"OK.\n"
-"Tekstfilen tar mange hundre KB så det kan ta litt tid før den er "
-"nedlastet...\n"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:117
+msgid "Downloading PACKAGES.TXT at the Salix root starts after you press OK."
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:119
+msgid ""
+"That file is several hundreds of KB in size so it may take some time to get "
+"here..."
+msgstr ""
 
 #
 # File: 32-INSURL, line: 121
@@ -1295,7 +1142,7 @@ msgstr "NEDLASTINGS RESULTAT"
 # File: 64-INSURL, line: 231
 #: ../initrd-scripts/usr-lib-setup/INSURL:186
 #: ../initrd-scripts/usr-lib-setup/INSURL:226
-#: ../initrd-scripts/usr-lib-setup/INSURL:231
+#: ../initrd-scripts/usr-lib-setup/INSURL:230
 msgid "INITIALIZING PACKAGE TREE"
 msgstr "FORBEREDER FILTREET TIL PAKKENE"
 
@@ -1307,22 +1154,15 @@ msgid "Setting up local cache for the FTP/HTTP server's package tree ...\n"
 msgstr ""
 "Lager en lokal cache av filtreet til pakkene fra FTP/HTTP serveren ...\n"
 
-#
-# File: 32-INSURL, line: 227
-# File: 64-INSURL, line: 227
 #: ../initrd-scripts/usr-lib-setup/INSURL:227
-#, fuzzy, sh-format
-msgid ""
-"\n"
-"processing ${TOTALP} Salix packages..."
+#, sh-format
+msgid "processing ${TOTALP} Salix packages..."
 msgstr ""
-"\n"
-"installerer ${TOTALP} Salix pakker..."
 
 #
 # File: 32-INSURL, line: 232
 # File: 64-INSURL, line: 232
-#: ../initrd-scripts/usr-lib-setup/INSURL:232
+#: ../initrd-scripts/usr-lib-setup/INSURL:231
 msgid ""
 "\n"
 "Retrieving tagfile information for the package tree ..."
@@ -1333,14 +1173,14 @@ msgstr ""
 #
 # File: 32-INSURL, line: 240
 # File: 64-INSURL, line: 240
-#: ../initrd-scripts/usr-lib-setup/INSURL:240
+#: ../initrd-scripts/usr-lib-setup/INSURL:239
 msgid "REMOTE SERVER CONFIGURATION"
 msgstr "KONFIGURERING AV EKSTERN SERVER"
 
 #
 # File: 32-INSURL, line: 241
 # File: 64-INSURL, line: 241
-#: ../initrd-scripts/usr-lib-setup/INSURL:241
+#: ../initrd-scripts/usr-lib-setup/INSURL:240
 msgid "Failed to configure for installation from remote server."
 msgstr "Konfigureringen av installasjon fra ekstern server mislyktes."
 
@@ -1414,30 +1254,20 @@ msgstr "FANT USB PAKKE KILDE"
 msgid "A Salix package directory was found on device $DRIVE_FOUND."
 msgstr "En filkatalog med Salix pakker ble funnet på enheten $DRIVE_FOUND."
 
-#
-# File: 32-INSdir, line: 18
-# File: 32-INShd, line: 18
-# File: 32-setup, line: 84
-# File: 64-INSdir, line: 18
-# File: 64-INShd, line: 18
-# File: 64-setup, line: 84
 #: ../initrd-scripts/usr-lib-setup/INSdir:17
-#, fuzzy
-msgid ""
-"\n"
-"Setup failed to unmount a required directory:\n"
-"\n"
-"/var/log/mount\n"
-"\n"
-"Please reboot the machine and try again.\n"
+#: ../initrd-scripts/usr-lib-setup/INShd:17
+msgid "Setup failed to unmount a required directory:"
 msgstr ""
-"Kan ikke avmontere /var/log/mount. Restart maskinen og kjør setup på nytt."
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:21
+msgid "Please reboot the machine and try again."
+msgstr ""
 
 #
 # File: 32-SeTmaketag, line: 111
 # File: 64-SeTmaketag, line: 111
-#: ../initrd-scripts/usr-lib-setup/INSdir:25
-#: ../initrd-scripts/usr-lib-setup/INShd:25
+#: ../initrd-scripts/usr-lib-setup/INSdir:24
+#: ../initrd-scripts/usr-lib-setup/INShd:23
 #, fuzzy
 msgid "ERROR"
 msgstr "KOPIERINGS FEIL"
@@ -1445,29 +1275,29 @@ msgstr "KOPIERINGS FEIL"
 #
 # File: INSdir, line: 26
 # File: INShd, line: 26
-#: ../initrd-scripts/usr-lib-setup/INSdir:26
-#: ../initrd-scripts/usr-lib-setup/INShd:26
+#: ../initrd-scripts/usr-lib-setup/INSdir:25
+#: ../initrd-scripts/usr-lib-setup/INShd:24
 msgid "REBOOT"
 msgstr ""
 
 #
 # File: INSdir, line: 27
 # File: INShd, line: 27
-#: ../initrd-scripts/usr-lib-setup/INSdir:27
-#: ../initrd-scripts/usr-lib-setup/INShd:27
+#: ../initrd-scripts/usr-lib-setup/INSdir:26
+#: ../initrd-scripts/usr-lib-setup/INShd:25
 msgid "CANCEL"
 msgstr ""
 
-#
-# File: INSdir, line: 40
 #: ../initrd-scripts/usr-lib-setup/INSdir:40
 msgid ""
-"\n"
 "Please provide the path to a directory containing the contents (or an ISO "
-"image) of a Salix installation disc.\n"
-"\n"
+"image) of a Salix installation disc."
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:44
+msgid ""
 "Note: You may use any directory within the current filesystem except '/mnt' "
-"or '/var/log/mount' as these are required by setup.\n"
+"or '/var/log/mount' as these are required by setup."
 msgstr ""
 
 #
@@ -1490,7 +1320,7 @@ msgstr "VELG FILKATALOG TIL KILDENE"
 # File: INSdir, line: 50
 # File: INShd, line: 125
 #: ../initrd-scripts/usr-lib-setup/INSdir:50
-#: ../initrd-scripts/usr-lib-setup/INShd:125
+#: ../initrd-scripts/usr-lib-setup/INShd:124
 msgid "Browse"
 msgstr ""
 
@@ -1506,7 +1336,7 @@ msgstr ""
 # File: 64-INShd, line: 58
 # File: 64-pkgtool, line: 385
 #: ../initrd-scripts/usr-lib-setup/INSdir:63
-#: ../initrd-scripts/usr-lib-setup/INShd:138
+#: ../initrd-scripts/usr-lib-setup/INShd:137
 #, fuzzy
 msgid "SELECT A DIRECTORY"
 msgstr "VELG FILKATALOG TIL KILDENE"
@@ -1515,7 +1345,7 @@ msgstr "VELG FILKATALOG TIL KILDENE"
 # File: 32-INCISO, line: 14
 # File: 64-INCISO, line: 14
 #: ../initrd-scripts/usr-lib-setup/INSdir:93
-#: ../initrd-scripts/usr-lib-setup/INShd:169
+#: ../initrd-scripts/usr-lib-setup/INShd:168
 #, fuzzy
 msgid "INVALID ISO IMAGE"
 msgstr "BRUK ISO FIL"
@@ -1525,12 +1355,12 @@ msgstr "BRUK ISO FIL"
 # File: 64-SeTpartitions, line: 540
 #: ../initrd-scripts/usr-lib-setup/INSdir:94
 #: ../initrd-scripts/usr-lib-setup/INSdir:122
-#: ../initrd-scripts/usr-lib-setup/INShd:95
-#: ../initrd-scripts/usr-lib-setup/INShd:109
-#: ../initrd-scripts/usr-lib-setup/INShd:170
-#: ../initrd-scripts/usr-lib-setup/INShd:191
+#: ../initrd-scripts/usr-lib-setup/INShd:93
+#: ../initrd-scripts/usr-lib-setup/INShd:107
+#: ../initrd-scripts/usr-lib-setup/INShd:169
+#: ../initrd-scripts/usr-lib-setup/INShd:190
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:541
-#: ../initrd-scripts/usr-lib-setup/autoinstall:259
+#: ../initrd-scripts/usr-lib-setup/autoinstall:258
 msgid "OK"
 msgstr "OK"
 
@@ -1546,56 +1376,47 @@ msgstr "OK"
 # File: 64-INShd, line: 58
 # File: 64-pkgtool, line: 385
 #: ../initrd-scripts/usr-lib-setup/INSdir:121
-#: ../initrd-scripts/usr-lib-setup/INShd:190
+#: ../initrd-scripts/usr-lib-setup/INShd:189
 #, fuzzy
 msgid "INVALID SOURCE DIRECTORY"
 msgstr "VELG FILKATALOG TIL KILDENE"
 
-#
-# File: INShd, line: 16
-#: ../initrd-scripts/usr-lib-setup/INShd:16
-msgid ""
-"\n"
-"Setup failed to unmount a required directory:\n"
-"\n"
-"/var/log/mount\n"
-"\n"
-"Please reboot the machine an try again.\n"
-"\n"
+#: ../initrd-scripts/usr-lib-setup/INShd:20
+msgid "Please reboot the machine an try again."
 msgstr ""
 
-#
-# File: INShd, line: 40
-#: ../initrd-scripts/usr-lib-setup/INShd:40
+#: ../initrd-scripts/usr-lib-setup/INShd:39
 msgid ""
-"\n"
-"Please specify which partition on your hard disk or USB stick\n"
-"contains the contents (or an ISO image) of a Salix\n"
-"installation disc.\n"
-"\n"
-"Example: /dev/sdb2\n"
-"\n"
-"Note: Use the <Partitions> button to list available partitions.\n"
+"Please specify which partition on your hard disk or USB stick contains the "
+"contents (or an ISO image) of a Salix installation disc."
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/INShd:43
+msgid "Example:"
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/INShd:45
+msgid "Note: Use the <Partitions> button to list available partitions."
 msgstr ""
 
 #
 # File: 32-liloconfig, line: 1095
 # File: 64-liloconfig, line: 1095
-#: ../initrd-scripts/usr-lib-setup/INShd:50
+#: ../initrd-scripts/usr-lib-setup/INShd:48
 #, fuzzy
 msgid "SELECT HARD DISK PARTITION"
 msgstr "VELG OS/2 PARTISJON"
 
 #
 # File: INShd, line: 51
-#: ../initrd-scripts/usr-lib-setup/INShd:51
+#: ../initrd-scripts/usr-lib-setup/INShd:49
 msgid "Partitions"
 msgstr ""
 
 #
 # File: 32-INShd, line: 53
 # File: 64-INShd, line: 53
-#: ../initrd-scripts/usr-lib-setup/INShd:63
+#: ../initrd-scripts/usr-lib-setup/INShd:61
 #, fuzzy
 msgid "PARTITIONS LIST"
 msgstr "LISTE OVER PARTISJONER"
@@ -1603,7 +1424,7 @@ msgstr "LISTE OVER PARTISJONER"
 #
 # File: 32-SeTmaketag, line: 80
 # File: 64-SeTmaketag, line: 80
-#: ../initrd-scripts/usr-lib-setup/INShd:94
+#: ../initrd-scripts/usr-lib-setup/INShd:92
 msgid "MOUNT FAILURE"
 msgstr "MONTERINGS FEIL"
 
@@ -1612,21 +1433,21 @@ msgstr "MONTERINGS FEIL"
 # File: 32-INSSMB, line: 103
 # File: 64-INSSMB, line: 99
 # File: 64-INSSMB, line: 103
-#: ../initrd-scripts/usr-lib-setup/INShd:108
+#: ../initrd-scripts/usr-lib-setup/INShd:106
 #, fuzzy
 msgid "MOUNT SUCCESS"
 msgstr "MONTERING RESULTAT"
 
-#
-# File: INShd, line: 116
-#: ../initrd-scripts/usr-lib-setup/INShd:116
+#: ../initrd-scripts/usr-lib-setup/INShd:115
 msgid ""
-"\n"
-"Now please provide the path to a directory containing the contents\n"
-"(or an ISO image) of a Salix installation disc.\n"
-"\n"
-"Note: The path you enter must be relative to the mount point so\n"
-"'/var/log/mount/salix-xfce' should be entered as '/salix-xfce'.\n"
+"Now please provide the path to a directory containing the contents (or an "
+"ISO image) of a Salix installation disc."
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/INShd:118
+msgid ""
+"Note: The path you enter must be relative to the mount point. So, '/var/log/"
+"mount/salix-xfce' should be entered as '/salix-xfce'."
 msgstr ""
 
 #
@@ -3475,18 +3296,21 @@ msgstr "SWAP OMRÅDET KONFIGURERT"
 msgid "User setup"
 msgstr ""
 
-#
-# File: SeTusers, line: 10
 #: ../initrd-scripts/usr-lib-setup/SeTusers:10
 msgid ""
 "You will now be presented with some dialogs so that you can create one or "
-"more user accounts in your new system.\n"
-"\n"
+"more user accounts in your new system."
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/SeTusers:13
+msgid ""
 "The first user you will create, will be able to run commands as a privileged "
 "user through sudo. Any other user will not be able to run commands with sudo "
-"unless you add them to the wheel group.\n"
-"\n"
-"The root user is disabled by default."
+"unless you add them to the wheel group."
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/SeTusers:17
+msgid "The root user is disabled by default."
 msgstr ""
 
 #
@@ -3498,7 +3322,7 @@ msgstr ""
 #: ../initrd-scripts/usr-lib-setup/autoinstall:140
 #: ../initrd-scripts/usr-lib-setup/autoinstall:203
 #: ../initrd-scripts/usr-lib-setup/autoinstall:206
-#: ../initrd-scripts/usr-lib-setup/autoinstall:258
+#: ../initrd-scripts/usr-lib-setup/autoinstall:257
 #, fuzzy
 msgid "AUTO PARTITION"
 msgstr "VELG OS/2 PARTISJON"
@@ -3517,14 +3341,20 @@ msgstr ""
 msgid "Cancel"
 msgstr "Avbrutt."
 
-#
-# File: autoinstall, line: 106
 #: ../initrd-scripts/usr-lib-setup/autoinstall:106
-msgid ""
-"This is automatic partition mode.\n"
-"Press <SPACE> to select the target disk where Salix will be installed.\n"
-"All data will be erased from the target disk.\n"
-"Only run this mode if the entire disk will be dedicated to Salix."
+msgid "This is automatic partition mode."
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/autoinstall:107
+msgid "Press <SPACE> to select the target disk where Salix will be installed."
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/autoinstall:109
+msgid "All data will be erased from the target disk."
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/autoinstall:110
+msgid "Only run this mode if the entire disk will be dedicated to Salix."
 msgstr ""
 
 #
@@ -3539,6 +3369,368 @@ msgstr ""
 msgid "No target disk selected, going back to main menu"
 msgstr ""
 
+#: ../initrd-scripts/usr-lib-setup/autoinstall:253
+msgid "Partitioning completed."
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/autoinstall:254
+msgid "Adding this information to your /etc/fstab:"
+msgstr ""
+
+#
+# File: 32-INSURL, line: 227
+# File: 64-INSURL, line: 227
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "processing ${TOTALP} Salix packages..."
+#~ msgstr ""
+#~ "\n"
+#~ "installerer ${TOTALP} Salix pakker..."
+
+#
+# File: 32-pxesetup, line: 52
+# File: 64-pxesetup, line: 52
+#, fuzzy
+#~ msgid ""
+#~ "You may select an option below using the UP/DOWN keys and SPACE or ENTER. "
+#~ "Alternate keys may also be used: '+', '-', and TAB.\n"
+#~ "\n"
+#~ "If you want to exit the installation and drop to a linux console, select "
+#~ "'Exit installation'"
+#~ msgstr ""
+#~ "Velkommen til Salix PXE Setup.\n"
+#~ "Velg et alternativ nedenfor med OPP/NED pilene og MELLOMROM eller ENTER.\n"
+#~ "\n"
+#~ "Alternative taster kan også brukes: '+','-', og TAB."
+
+#
+# File: 32-setup, line: 58
+# File: 64-setup, line: 58
+#, fuzzy
+#~ msgid ""
+#~ "There don't seem to be any Linux partitions on this machine.\n"
+#~ "\t\tYou'll need to make at least one of these to install Linux. Either "
+#~ "select AUTOINSTALL from the menu, or select INSTALL and use the partition "
+#~ "editor to create one."
+#~ msgstr ""
+#~ "Det ser ikke ut til at det er noen Linux partisjoner på denne maskinen. "
+#~ "Du trenger å lage minst en slik partisjon for å installere Linux. For å "
+#~ "gjøre dette må du avslutte 'setup' og lage partisjonene med 'cfdisk' (MBR "
+#~ "partisjoner) eller 'cgdisk' (GPT partisjoner). Les 'setup' hjelpe "
+#~ "dokumentet i neste meny for mer informasjon."
+
+#
+# File: 32-setup, line: 68
+# File: 64-setup, line: 68
+#, fuzzy
+#~ msgid ""
+#~ "This machine appears to be using EFI/UEFI, but no EFI System Partition "
+#~ "was found.\n"
+#~ "\n"
+#~ "You'll need to make an EFI System Partition in order to boot from the "
+#~ "hard drive."
+#~ msgstr ""
+#~ "Det ser ut til at maskinen bruker EFI/UEFI men ingen EFI Systempartisjon "
+#~ "ble funnet. Du trenger å lage en EFI Systempartisjon for å kunne starte "
+#~ "opp fra harddisken. For å gjøre dette må du avslutte 'setup' og lage en "
+#~ "100MB EF00 partisjon med 'cgdisk'. Les 'setup' hjelpe dokumentet i neste "
+#~ "meny for mer informasjon."
+
+#
+# File: 32-setup, line: 179
+# File: 64-setup, line: 179
+#, fuzzy
+#~ msgid ""
+#~ "Before you can install software, complete the following tasks:\n"
+#~ "   \n"
+#~ "1. Select your source media.\n"
+#~ "2. Set up your target Linux partition(s).\n"
+#~ "\n"
+#~ "You may also optionally remap your keyboard and set up your swap "
+#~ "partition(s).\n"
+#~ "\n"
+#~ "Press ENTER to return to the main menu."
+#~ msgstr ""
+#~ "\n"
+#~ "Før du kan installere programvarene må du gjøre følgende:\n"
+#~ "\n"
+#~ "1. Velg din media kilde.\n"
+#~ "2. Sett opp Linux mål partisjonen(e).\n"
+#~ "3. Velg programvare kategorier å installere.\n"
+#~ "\n"
+#~ "Du kan rekonfigurere tastaturet eller sette opp swap partisjonen(e) først "
+#~ "hvis du vil.\n"
+#~ "\n"
+#~ "Trykk ENTER for å gå tilbake til hoved menyen."
+
+#
+# File: 32-setup, line: 346
+# File: 64-setup, line: 346
+#, fuzzy
+#~ msgid ""
+#~ "You already have an /etc/fstab on your install partition.\n"
+#~ "\n"
+#~ "If you were just adding software, you should probably keep your old /etc/"
+#~ "fstab.\n"
+#~ "\n"
+#~ "If you've changed your partitioning scheme, you should use the new /etc/"
+#~ "fstab.\n"
+#~ "\n"
+#~ "Do you want to replace your old /etc/fstab with the new one?"
+#~ msgstr ""
+#~ "Du har allerede en /etc/fstab på installasjons partisjonen. Hvis du bare "
+#~ "legger til programvarer bør du beholde den gamle /etc/fstab. Hvis du har "
+#~ "endret partisjonsoppsettet bør du bruke den nye /etc/fstab. Vil du "
+#~ "erstatte den gamle /etc/fstab med den nye?"
+
+#
+# File: 32-INSCD, line: 201
+# File: 64-INSCD, line: 201
+#, fuzzy
+#~ msgid ""
+#~ "A CD/DVD drive could not be found on any of the devices that were "
+#~ "scanned.  Possible reasons include using a bootdisk or kernel that "
+#~ "doesn't support your drive, failing to pass parameters needed by some "
+#~ "drives to the kernel, not having the Salix disc in your CD/DVD drive, or "
+#~ "using a drive connected to a Plug and Play soundcard (in this case, "
+#~ "connecting the drive directly to the IDE interface often helps). Please "
+#~ "make sure you are using the correct bootdisk for your hardware, consult "
+#~ "the BOOTING file for possible information on forcing the detection of "
+#~ "your drive, and then reattempt installation.  If all else fails, see FAQ."
+#~ "TXT for information about copying parts of this CD to your DOS partition "
+#~ "and installing it from there.\n"
+#~ "\n"
+#~ "You will now be returned to the main menu.  If you want to try looking "
+#~ "for the CD again, you may skip directly to the SOURCE menu selection."
+#~ msgstr ""
+#~ "Det ble ikke funnet noen CD/DVD stasjon i alle de enhetene vi søkte "
+#~ "etter. Mulige årsaker kan være at du bruker en oppstarts-disk eller "
+#~ "kjerne som ikke støtter denne stasjonen, at du ikke oppgav nødvendige "
+#~ "driver parametre til kjernen, at du ikke har en Salix CD/DVD i stasjonen, "
+#~ "eller at du bruker en stasjon koblet til et \"Plug and Play\" lydkort (i "
+#~ "et slikt tilfelle hjelper det ofte å koble stasjonen direkte i en IDE "
+#~ "kontakt). Vennligst sjekk at du bruker en riktig oppstarts-disk for "
+#~ "maskinvaren, se etter informasjon om hvordan man kan tvinge gjenkjenning "
+#~ "av stasjonen i BOOTING.TXT (på DVD-en), forsøk så å installere på nytt. "
+#~ "Som en siste utvei, se etter informasjon om å kopiere deler av CD-en til "
+#~ "en DOS partisjon og installere videre derifra i FAQ.TXT (på DVD-en).\n"
+#~ "\n"
+#~ "Du vil nå gå tilbake til hoved menyen. Hvis du ønsker å søke etter CD-en "
+#~ "igjen kan du gå direkte til kategorien KILDE i meny valget."
+
+#
+# File: 32-INSNFS, line: 24
+# File: 64-INSNFS, line: 24
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "Good! We're all set on the local end, but now we need to know where to "
+#~ "find the software packages to install.  First, we need the IP address of "
+#~ "the machine where the Salix sources are stored."
+#~ msgstr ""
+#~ "Fint! Da er maskinen konfigurert, det vi trenger nå er å vite\n"
+#~ "hvor vi skal finne installasjons pakkene. Først trenger vi\n"
+#~ "IP adressen til maskinen hvor Salix kildene ligger."
+
+#
+# File: 32-INSURL, line: 86
+# File: 64-INSURL, line: 86
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "There must be a directory on the server with the Salix packages and files "
+#~ "arranged in a tree like the FTP site.\n"
+#~ "\n"
+#~ "The installation script needs to know the name of the directory on your "
+#~ "server that contains the series' subdirectories. For example, if your A "
+#~ "series is found at /stuff/salix/a, then you would respond: /stuff/salix\n"
+#~ "\n"
+#~ "What is the Salix source directory?"
+#~ msgstr ""
+#~ "\n"
+#~ "Det må finnes en filkatalog på serveren med Salix pakkene, ordnet på "
+#~ "samme måte som på FTP siden.\n"
+#~ "\n"
+#~ "Installasjons skriptet trenger å hvor filkatalogen på serveren som "
+#~ "inneholder pakkeseriene er. For eksempel, hvis A serien ligger i /stuff/"
+#~ "salix/a, skriv da: /stuff/salix\n"
+#~ "\n"
+#~ "Hvor ligger filkatalogen med Salix kildene?\n"
+
+#
+# File: 32-INSNFS, line: 64
+# File: 64-INSNFS, line: 64
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "In the next screen you should watch for NFS mount errors.\n"
+#~ "\n"
+#~ "If you see errors and you don't see your NFS server listed, then try "
+#~ "setting up NFS again.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Se etter potensielle feilmeldinger i NFS monteringen på neste side. "
+#~ "Forsøk å sette opp NFS på nytt hvis du får feilmeldinger og NFS serveren "
+#~ "ikke blir listet opp.\n"
+
+#
+# File: 32-INSSMB, line: 23
+# File: 64-INSSMB, line: 23
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "Good! We're all set on the local end, but now we need to know where to "
+#~ "find the software packages to install. First, we need the share address "
+#~ "of the Samba server where the Salix sources are stored.\n"
+#~ "\n"
+#~ "Example share address: //192.168.0.1/public\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Fint! Da er maskinen konfigurert, det vi trenger nå er å vite\n"
+#~ "hvor vi kan finne installasjons pakkene. Først trenger vi\n"
+#~ "adressen til Samba serveren hvor Salix kildene\n"
+#~ "ligger.\n"
+#~ "Eksempel på adresse: //192.168.0.1/public\n"
+
+#
+# File: 32-INSSMB, line: 36
+# File: 64-INSSMB, line: 36
+#~ msgid ""
+#~ "\n"
+#~ "What is the share address of your Samba server? "
+#~ msgstr ""
+#~ "\n"
+#~ "Hva er adressen til Samba serveren?"
+
+#
+# File: 32-INSSMB, line: 46
+# File: 64-INSSMB, line: 46
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "There must be a directory on the server with the Salix packages and files "
+#~ "arranged in a tree like the FTP site. \n"
+#~ "The installation script needs to know the name of the directory below "
+#~ "your Samba share that contains the series subdirectories. For example, if "
+#~ "your A series is found at /stuff/salix/a, then you would respond: /stuff/"
+#~ "salix \n"
+#~ "What is the Salix source directory?"
+#~ msgstr ""
+#~ "\n"
+#~ "Det må finnes en filkatalog på serveren med Salix\n"
+#~ "pakkene, ordnet på samme måte som på FTP siden.\n"
+#~ "\n"
+#~ "Installasjons skriptet trenger å vite hvor \n"
+#~ "filkatalogen på Samba serveren som inneholder\n"
+#~ "pakke seriene er. For eksempel, hvis serie A finnes i\n"
+#~ "/stuff/salix/a, skriv da: /stuff/salix\n"
+#~ "\n"
+#~ "Hvor ligger filkatalogen med Salix kildene?"
+
+#
+# File: 32-INSURL, line: 63
+# File: 64-INSURL, line: 63
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "Good! We're all set on the local end, but now we need to know where to "
+#~ "find the software packages to install. First, we need the URL of the ftp "
+#~ "or http server where the Salix sources are stored.\n"
+#~ "URL examples are: 'ftp://192.168.0.1' ; 'http://172.16.10.31'\n"
+#~ msgstr ""
+#~ "Fint! Da er maskinen konfigurert, det vi trenger å vite nå er hvor "
+#~ "installasjons pakkene ligger. Først trenger vi URL-en til ftp eller http "
+#~ "serveren hvor Salix kildene ligger.\n"
+#~ "URL eksempler: 'ftp://192.168.0.1' ; 'http://172.16.10.31'\n"
+
+#
+# File: 32-INSURL, line: 75
+# File: 64-INSURL, line: 75
+#~ msgid ""
+#~ "\n"
+#~ "What is the URL of your FTP/HTTP server?\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Hva er URL-en til FTP/HTTP serveren?\n"
+
+#
+# File: 32-INSURL, line: 86
+# File: 64-INSURL, line: 86
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "There must be a directory on the server with the Salix packages and files "
+#~ "arranged in a tree like the FTP site.\n"
+#~ "\n"
+#~ "The installation script needs to know the name of the directory on your "
+#~ "server that contains the series subdirectories. For example, if your A "
+#~ "series is found at /stuff/salix/a, then you would respond: /stuff/salix\n"
+#~ "\n"
+#~ "What is the Salix source directory?\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Det må finnes en filkatalog på serveren med Salix pakkene, ordnet på "
+#~ "samme måte som på FTP siden.\n"
+#~ "\n"
+#~ "Installasjons skriptet trenger å hvor filkatalogen på serveren som "
+#~ "inneholder pakkeseriene er. For eksempel, hvis A serien ligger i /stuff/"
+#~ "salix/a, skriv da: /stuff/salix\n"
+#~ "\n"
+#~ "Hvor ligger filkatalogen med Salix kildene?\n"
+
+#
+# File: 32-INSURL, line: 106
+# File: 64-INSURL, line: 106
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "In the next screen you should watch for possible errors.\n"
+#~ "\n"
+#~ "First, we'll download the PACKAGES.TXT from the parent of the directory "
+#~ "that you entered before (which should be the root of the remote Salix "
+#~ "tree).  If that succeeds, then we use PACKAGES.TXT to reconstruct a local "
+#~ "cache of the package tree (should take a minute or less on an average "
+#~ "system).\n"
+#~ "After that, we're all set to go!\n"
+#~ "\n"
+#~ "Downloading PACKAGES.TXT at the Salix root starts after you press OK.\n"
+#~ "That file is several hundreds of KB in size so it may take some time to "
+#~ "get here...\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Se etter mulige feilmeldinger i neste vindu.\n"
+#~ "\n"
+#~ "Vi begynner med å laste ned PACKAGES.TXT fra nivået over filkatalogen du "
+#~ "nettopp skrev inn (burde være toppnivået på det eksterne Salix fil "
+#~ "treet). Hvis det lykkes bruker vi PACKAGES.TXT for å lage en lokal cache "
+#~ "av fil treet (bør ta et minutt eller mindre).\n"
+#~ "Etter dette er vi klare for å fortsette!\n"
+#~ "\n"
+#~ "Nedlasting av PACKAGES.TXT fra Salix toppnivå starter etter at du trykker "
+#~ "OK.\n"
+#~ "Tekstfilen tar mange hundre KB så det kan ta litt tid før den er "
+#~ "nedlastet...\n"
+
+#
+# File: 32-INSdir, line: 18
+# File: 32-INShd, line: 18
+# File: 32-setup, line: 84
+# File: 64-INSdir, line: 18
+# File: 64-INShd, line: 18
+# File: 64-setup, line: 84
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "Setup failed to unmount a required directory:\n"
+#~ "\n"
+#~ "/var/log/mount\n"
+#~ "\n"
+#~ "Please reboot the machine and try again.\n"
+#~ msgstr ""
+#~ "Kan ikke avmontere /var/log/mount. Restart maskinen og kjør setup på nytt."
+
 #
 # File: 32-SeTDOS, line: 217
 # File: 32-SeTEFI, line: 73
@@ -3546,13 +3738,12 @@ msgstr ""
 # File: 64-SeTDOS, line: 217
 # File: 64-SeTEFI, line: 73
 # File: 64-SeTpartitions, line: 533
-#: ../initrd-scripts/usr-lib-setup/autoinstall:252
 #, fuzzy
-msgid ""
-"\n"
-"Partitioning completed,\n"
-"Adding this information to your /etc/fstab:\n"
-msgstr ""
-"\n"
-"Lagrer informasjonen i /etc/fstab:\n"
-"\n"
+#~ msgid ""
+#~ "\n"
+#~ "Partitioning completed,\n"
+#~ "Adding this information to your /etc/fstab:\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Lagrer informasjonen i /etc/fstab:\n"
+#~ "\n"
