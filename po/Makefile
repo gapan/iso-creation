@@ -27,7 +27,6 @@ pot:
 		SeTconfig \
 		SeTdisk \
 		SeTfull \
-		SeTkernel \
 		SeTkeymap \
 		SeTmedia \
 		SeTnet \
