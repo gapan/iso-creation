@@ -62,3 +62,14 @@ tx-pull:
 	done
 	@rm -f messages.mo
 
+.PHONY: tx-pull-f
+tx-pull-f:
+	tx pull -a -f
+	@for i in `ls *.po`; do \
+		msgfmt --statistics $$i 2>&1 | grep "^0 translated" > /dev/null \
+			&& rm $$i || true; \
+		msgfmt --statistics $$i 2>&1 | grep "^1 translated" > /dev/null \
+			&& rm $$i || true; \
+	done
+	@rm -f messages.mo
+
