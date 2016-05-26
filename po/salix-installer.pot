@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-25 02:00+0300\n"
+"POT-Creation-Date: 2016-05-26 23:25+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1262,29 +1262,6 @@ msgid ""
 "delete to reboot and try again.  Before doing that, you might want to switch "
 "to another console (Alt-F2) and use df (disk free utility) to see if you can "
 "get an idea of how to avoid this the next time around."
-msgstr ""
-
-#: ../initrd-scripts/usr-lib-setup/SeTkernel:27
-msgid "REINSERT KERNEL DISC"
-msgstr ""
-
-#: ../initrd-scripts/usr-lib-setup/SeTkernel:28
-msgid ""
-"Please reinsert the Salix disc containing the collection of Linux kernels.  "
-"Usually this is disc number one (the disc that you boot from).  Once you've "
-"inserted the disc, hit ENTER to continue."
-msgstr ""
-
-#: ../initrd-scripts/usr-lib-setup/SeTkernel:80
-msgid "ERROR ATTEMPTING TO INSTALL KERNEL"
-msgstr ""
-
-#: ../initrd-scripts/usr-lib-setup/SeTkernel:80
-#, sh-format
-msgid ""
-"Sorry, but the directory $PLINK/kernels was not found.  You may need to "
-"install the requested kernel $SLACK_KERNEL manually and then install LILO "
-"before your system will be able to boot correctly."
 msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:18
