@@ -40,3 +40,10 @@ pot:
 			../initrd-scripts/usr-lib-setup/$$i; \
 	done
 
+stat:
+	@for i in `ls *.po`; do \
+		echo "Statistics for $$i:"; \
+		msgfmt --statistics $$i; \
+		echo; \
+	done
+	@rm -f messages.mo
