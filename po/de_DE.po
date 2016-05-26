@@ -1,76 +1,54 @@
-# This file is put in the public domain.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
 # Translators:
-# Christian Ruesch <cr@rt.fm>, 2013,2016.
-# Didier Spaier <didier@slint.fr>, 2014.
-# franzen <slint@schoepfer.info>, 2013.
-# Maik Wagner <maikwagner@yahoo.com>, 2013.
-# Marcel Saegebarth <marc@mos6581.de>, 2013.
-# Marek Srejma <sam@manjaro.org>, 2014.
-# Sam <sam@manajro.org>, 2014,2016.
-# spongetron <spongetron@gmail.com>, 2013.
+# Christian Ruesch <cr@rt.fm>, 2013,2016
+# Didier Spaier <didier@slint.fr>, 2014
+# franzen <slint@schoepfer.info>, 2013
+# Maik Wagner <maikwagner@yahoo.com>, 2013
+# Marcel Saegebarth <marc@mos6581.de>, 2013
+# Marek Srejma (Sam) <sam@manjaro.org>, 2014
+# Sam <sam@manajro.org>, 2014,2016
+# spongetron <spongetron@gmail.com>, 2013
 msgid ""
 msgstr ""
-"Project-Id-Version: Salix-14.2\n"
+"Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-05-26 23:25+0300\n"
-"PO-Revision-Date: 2016-03-21 23:15+0100\n"
-"Last-Translator: \n"
-"Language-Team: American English <kde-i18n-doc@kde.org>\n"
-"Language: de_DE\n"
+"PO-Revision-Date: 2016-05-26 20:35+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"Language-Team: German (Germany) (http://www.transifex.com/gapan/salix/language/de_DE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: de_DE\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 1.5\n"
 
-#
-# File: 32-liloconfig, line: 815
-# File: 64-liloconfig, line: 815
 #: ../initrd-scripts/usr-lib-setup/setup:52
-#, fuzzy
 msgid "WELCOME TO THE SALIX INSTALLATION"
-msgstr "LILO EXPERTENINSTALLATION"
+msgstr ""
 
-#
-# File: 32-pkgtool, line: 442
-# File: 64-pkgtool, line: 442
 #: ../initrd-scripts/usr-lib-setup/setup:53
-#, fuzzy
 msgid "Keep the current keymap"
-msgstr "Überspringen der aktuellen Diskserie"
+msgstr ""
 
-#
-# File: global-blurbs, line: 17
 #: ../initrd-scripts/usr-lib-setup/setup:54
-#, fuzzy
 msgid "Select another keymap"
-msgstr "Wählen Sie eine Schriftart für die Konsole"
+msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/setup:55
 #, sh-format
 msgid ""
 "Welcome to the installation of Salix, The Bonsai OS!\n"
-"Before you proceed with the rest of the installation, you might want to "
-"select your keyboard map (keymap). The current keymap is $KMAP."
+"Before you proceed with the rest of the installation, you might want to select your keyboard map (keymap). The current keymap is $KMAP."
 msgstr ""
 
-#
-# File: 32-INSCD, line: 234
-# File: 64-INSCD, line: 234
 #: ../initrd-scripts/usr-lib-setup/setup:66
 #: ../initrd-scripts/usr-lib-setup/setup:84
-#, fuzzy
 msgid "Salix Installation"
-msgstr "CD Installation abbrechen"
+msgstr ""
 
-#
-# File: 32-SeTDOS, line: 118
-# File: 32-SeTpartitions, line: 323
-# File: 32-SeTpartitions, line: 412
-# File: 64-SeTDOS, line: 118
-# File: 64-SeTpartitions, line: 323
-# File: 64-SeTpartitions, line: 412
 #: ../initrd-scripts/usr-lib-setup/setup:67
 #: ../initrd-scripts/usr-lib-setup/setup:86
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:117
@@ -80,14 +58,10 @@ msgstr "CD Installation abbrechen"
 msgid "Select"
 msgstr "Auswählen"
 
-#
-# File: 32-INSCD, line: 234
-# File: 64-INSCD, line: 234
 #: ../initrd-scripts/usr-lib-setup/setup:68
 #: ../initrd-scripts/usr-lib-setup/setup:87
-#, fuzzy
 msgid "Exit installation"
-msgstr "CD Installation abbrechen"
+msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/setup:70
 msgid "You may now proceed with the installation by pressing the ENTER key."
@@ -100,9 +74,6 @@ msgid ""
 "'Exit installation'"
 msgstr ""
 
-#
-# File: setup, line: 74
-# File: setup, line: 94
 #: ../initrd-scripts/usr-lib-setup/setup:74
 #: ../initrd-scripts/usr-lib-setup/setup:94
 msgid "Install Salix using a step-by-step guide"
@@ -114,15 +85,10 @@ msgid ""
 "Alternate keys may also be used: '+', '-', and TAB."
 msgstr ""
 
-#
-# File: setup, line: 95
 #: ../initrd-scripts/usr-lib-setup/setup:95
 msgid "Autopartition and install with few options (wipes your HD)"
 msgstr ""
 
-#
-# File: 32-setup, line: 57
-# File: 64-setup, line: 57
 #: ../initrd-scripts/usr-lib-setup/setup:126
 msgid "NO LINUX PARTITIONS DETECTED"
 msgstr "KEINE LINUX-PARTITIONEN ENTDECKT"
@@ -134,9 +100,6 @@ msgid ""
 "the menu, or select INSTALL and use the partition editor to create one."
 msgstr ""
 
-#
-# File: 32-setup, line: 67
-# File: 64-setup, line: 67
 #: ../initrd-scripts/usr-lib-setup/setup:135
 msgid "NO EFI SYSTEM PARTITION DETECTED"
 msgstr "KEINE EFI SYSTEM PARTITION ENTDECKT"
@@ -161,8 +124,6 @@ msgstr ""
 msgid "Mount table corrupt.  Reboot machine and run setup again."
 msgstr ""
 
-#
-# File: setup, line: 202
 #: ../initrd-scripts/usr-lib-setup/setup:204
 msgid "No Source Selected"
 msgstr ""
@@ -176,9 +137,6 @@ msgstr ""
 msgid "Press ENTER to return to the main menu."
 msgstr ""
 
-#
-# File: 32-setup, line: 179
-# File: 64-setup, line: 179
 #: ../initrd-scripts/usr-lib-setup/setup:215
 msgid "CANNOT INSTALL SOFTWARE YET"
 msgstr "KANN DIE SOFTWARE NOCH NICHT INSTALLIEREN"
@@ -201,14 +159,10 @@ msgid ""
 "partition(s)."
 msgstr ""
 
-#
-# File: 32-display.lilohelp, line: 106
-# File: 64-display.lilohelp, line: 106
 #: ../initrd-scripts/usr-lib-setup/setup:237
 #: ../initrd-scripts/usr-lib-setup/setup:254
-#, fuzzy
 msgid "SELECT INSTALLATION MODE"
-msgstr "INSTALLATIONSHILFE ZU LILO"
+msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/setup:239
 #: ../initrd-scripts/usr-lib-setup/setup:257
@@ -230,31 +184,20 @@ msgid ""
 "specific purpose."
 msgstr ""
 
-#
-# File: setup, line: 248
-# File: setup, line: 270
 #: ../initrd-scripts/usr-lib-setup/setup:249
 #: ../initrd-scripts/usr-lib-setup/setup:271
 msgid "Install a minimal graphical environment"
 msgstr ""
 
-#
-# File: setup, line: 249
-# File: setup, line: 271
 #: ../initrd-scripts/usr-lib-setup/setup:250
 #: ../initrd-scripts/usr-lib-setup/setup:272
 msgid "Install a minimal console system"
 msgstr ""
 
-#
-# File: setup, line: 269
 #: ../initrd-scripts/usr-lib-setup/setup:270
 msgid "Install everything"
 msgstr ""
 
-#
-# File: 32-setup, line: 346
-# File: 64-setup, line: 346
 #: ../initrd-scripts/usr-lib-setup/setup:298
 msgid "REPLACE /etc/fstab?"
 msgstr "ERSETZEN VON /etc/fstab?"
@@ -265,67 +208,49 @@ msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/setup:302
 msgid ""
-"If you were just adding software, you should probably keep your old /etc/"
-"fstab."
+"If you were just adding software, you should probably keep your old "
+"/etc/fstab."
 msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/setup:305
 msgid ""
-"If you've changed your partitioning scheme, you should use the new /etc/"
-"fstab."
+"If you've changed your partitioning scheme, you should use the new "
+"/etc/fstab."
 msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/setup:308
 msgid "Do you want to replace your old /etc/fstab with the new one?"
 msgstr ""
 
-#
-# File: 32-display.lilohelp, line: 106
-# File: 64-display.lilohelp, line: 106
 #: ../initrd-scripts/usr-lib-setup/setup:372
 #: ../initrd-scripts/usr-lib-setup/setup:379
-#, fuzzy
 msgid "SALIX INSTALLATION IS COMPLETE"
-msgstr "INSTALLATIONSHILFE ZU LILO"
+msgstr ""
 
-#
-# File: setup, line: 372
-# File: setup, line: 379
 #: ../initrd-scripts/usr-lib-setup/setup:373
 #: ../initrd-scripts/usr-lib-setup/setup:380
 msgid "Reboot now"
 msgstr ""
 
-#
-# File: setup, line: 373
-# File: setup, line: 380
 #: ../initrd-scripts/usr-lib-setup/setup:374
 #: ../initrd-scripts/usr-lib-setup/setup:381
 msgid "Exit to command line"
 msgstr ""
 
-#
-# File: setup, line: 374
 #: ../initrd-scripts/usr-lib-setup/setup:375
 msgid ""
 "System configuration and installation is complete. Please remove the "
-"installation disc. You can either select to reboot your system now or choose "
-"to exit the installation to the command line if you would like to do any "
+"installation disc. You can either select to reboot your system now or choose"
+" to exit the installation to the command line if you would like to do any "
 "manual tweaking."
 msgstr ""
 
-#
-# File: 32-setup, line: 472
-# File: 64-setup, line: 472
 #: ../initrd-scripts/usr-lib-setup/setup:382
-#, fuzzy
 msgid ""
 "System configuration and installation is complete. You can either select to "
 "reboot your system now or choose to exit the installation to the command "
 "line if you would like to do any manual tweaking."
 msgstr ""
-"Systemkonfiguration und Installation ist vollständig. Sie können Setup "
-"VERLASSEN und Ihren Rechner mit Strg-Alt-Entf neu starten."
 
 #: ../initrd-scripts/usr-lib-setup/INCISO:19
 msgid "Setup has found an ISO image in the source directory:"
@@ -335,9 +260,6 @@ msgstr ""
 msgid "Do you want to use this image as an installationsource?"
 msgstr ""
 
-#
-# File: 32-INCISO, line: 14
-# File: 64-INCISO, line: 14
 #: ../initrd-scripts/usr-lib-setup/INCISO:28
 msgid "USE ISO IMAGE"
 msgstr "BENUTZE ISO-ABBILD"
@@ -354,237 +276,134 @@ msgstr ""
 msgid "Mounting ISO image..."
 msgstr ""
 
-#
-# File: 32-INSCD, line: 15
-# File: 64-INSCD, line: 15
 #: ../initrd-scripts/usr-lib-setup/INSCD:14
 msgid "SCANNING FOR CD or DVD DRIVE"
 msgstr "SUCHE NACH einem CD- oder DVD-LAUFWERK"
 
-#
-# File: 32-INSCD, line: 16
-# File: 64-INSCD, line: 16
 #: ../initrd-scripts/usr-lib-setup/INSCD:15
-#, fuzzy
 msgid ""
 "Make sure the Salix disc is in your CD/DVD drive, and then press ENTER to "
 "begin the scanning process. Or, if you'd rather specify the device name "
 "manually (experts only), choose that option below."
 msgstr ""
-"Stellen Sie sicher, dass die Salix-Disk im CD/DVD-Laufwerk ist und drücken "
-"Sie danach ENTER um den Suchvorgang zu starten. Falls Sie das Laufwerk "
-"selber angeben möchten (nur für Experten), wählen Sie die untere Option."
 
-#
-# File: 32-INSCD, line: 21
-# File: 64-INSCD, line: 21
 #: ../initrd-scripts/usr-lib-setup/INSCD:20
 msgid "Scan for the CD or DVD drive (recommended)"
 msgstr "CD- oder DVD-Laufwerk automatisch erkennen (empfohlen)"
 
-#
-# File: 32-INSCD, line: 22
-# File: 64-INSCD, line: 22
 #: ../initrd-scripts/usr-lib-setup/INSCD:21
 msgid "Manually specify CD or DVD by device name"
 msgstr "CD- oder DVD-Laufwerk manuell per Gerätename festlegen"
 
-#
-# File: 32-INSCD, line: 31
-# File: 64-INSCD, line: 31
 #: ../initrd-scripts/usr-lib-setup/INSCD:30
 msgid "MANUAL CD/DVD DEVICE SELECTION"
 msgstr "MANUELLE CD/DVD-LAUFWERKSAUSWAHL"
 
-#
-# File: 32-INSCD, line: 32
-# File: 64-INSCD, line: 32
 #: ../initrd-scripts/usr-lib-setup/INSCD:31
 msgid ""
-"Please select your CD/DVD device from the list below.  If you don't see your "
-"device listed, choose 'custom'.  This will let you type in any device name. "
-"(and if necessary, will create the device)"
-msgstr ""
-"Bitte wählen Sie Ihr CD/DVD-Laufwerk von der Liste aus. Falls Ihr Laufwerk "
-"nicht aufgeführt wird, wählen Sie 'custom'. Dadurch können Sie einen "
-"beliebigen Laufwerksnamen angeben (falls nötig, wird das Laufwerk erstellt)."
+"Please select your CD/DVD device from the list below.  If you don't see your"
+" device listed, choose 'custom'.  This will let you type in any device name."
+" (and if necessary, will create the device)"
+msgstr "Bitte wählen Sie Ihr CD/DVD-Laufwerk von der Liste aus. Falls Ihr Laufwerk nicht aufgeführt wird, wählen Sie 'custom'. Dadurch können Sie einen beliebigen Laufwerksnamen angeben (falls nötig, wird das Laufwerk erstellt)."
 
-#
-# File: 32-INSCD, line: 37
-# File: 64-INSCD, line: 37
 #: ../initrd-scripts/usr-lib-setup/INSCD:36
 msgid "Type in the CD or DVD device to use"
 msgstr "Geben Sie das zu verwendende CD- oder DVD-Laufwerk an"
 
-#
-# File: 32-INSCD, line: 38
-# File: 64-INSCD, line: 38
 #: ../initrd-scripts/usr-lib-setup/INSCD:37
 msgid "First CD/DVD drive"
 msgstr "Erstes CD/DVD-Laufwerk"
 
-#
-# File: 32-INSCD, line: 39
-# File: 64-INSCD, line: 39
 #: ../initrd-scripts/usr-lib-setup/INSCD:38
 msgid "Second CD/DVD drive"
 msgstr "Zweites CD/DVD-Laufwerk"
 
-#
-# File: 32-INSCD, line: 40
-# File: 64-INSCD, line: 40
 #: ../initrd-scripts/usr-lib-setup/INSCD:39
 msgid "Third CD/DVD drive"
 msgstr "Drittes CD/DVD-Laufwerk"
 
-#
-# File: 32-INSCD, line: 41
-# File: 64-INSCD, line: 41
 #: ../initrd-scripts/usr-lib-setup/INSCD:40
 msgid "Fourth CD/DVD drive"
 msgstr "Viertes CD/DVD-Laufwerk"
 
-#
-# File: 32-INSCD, line: 50
-# File: 64-INSCD, line: 50
 #: ../initrd-scripts/usr-lib-setup/INSCD:41
 msgid "First parallel port ATAPI CD"
 msgstr "ATAPI-CD am ersten Parallelport"
 
-#
-# File: 32-INSCD, line: 51
-# File: 64-INSCD, line: 51
 #: ../initrd-scripts/usr-lib-setup/INSCD:42
 msgid "Second parallel port ATAPI CD"
 msgstr "ATAPI-CD am zweiten Parallelport"
 
-#
-# File: 32-INSCD, line: 52
-# File: 64-INSCD, line: 52
 #: ../initrd-scripts/usr-lib-setup/INSCD:43
 msgid "Third parallel port ATAPI CD"
 msgstr "ATAPI-CD am dritten Parallelport"
 
-#
-# File: 32-INSCD, line: 53
-# File: 64-INSCD, line: 53
 #: ../initrd-scripts/usr-lib-setup/INSCD:44
 msgid "Fourth parallel port ATAPI CD"
 msgstr "ATAPI-CD am vierten Parallelport"
 
-#
-# File: 32-INSCD, line: 54
-# File: 64-INSCD, line: 54
 #: ../initrd-scripts/usr-lib-setup/INSCD:45
 msgid "Non-IDE Aztech CD/DVD"
 msgstr "Nicht-IDE Aztech CD/DVD"
 
-#
-# File: 32-INSCD, line: 55
-# File: 64-INSCD, line: 55
 #: ../initrd-scripts/usr-lib-setup/INSCD:46
 msgid "Sony CDU-535 CD/DVD"
 msgstr "Sony CDU-535 CD/DVD"
 
-#
-# File: 32-INSCD, line: 56
-# File: 64-INSCD, line: 56
 #: ../initrd-scripts/usr-lib-setup/INSCD:47
 msgid "Non-IDE GoldStar CD/DVD"
 msgstr "Nicht-IDE GoldStar CD/DVD"
 
-#
-# File: 32-INSCD, line: 57
-# File: 64-INSCD, line: 57
 #: ../initrd-scripts/usr-lib-setup/INSCD:48
 msgid "Sony CDU-31a CD/DVD"
 msgstr "Sony CDU-31a CD/DVD"
 
-#
-# File: 32-INSCD, line: 58
-# File: 64-INSCD, line: 58
 #: ../initrd-scripts/usr-lib-setup/INSCD:49
 msgid "Optics Storage CD/DVD"
 msgstr "Optics Storage CD/DVD"
 
-#
-# File: 32-INSCD, line: 59
-# File: 64-INSCD, line: 59
 #: ../initrd-scripts/usr-lib-setup/INSCD:50
 msgid "Sanyo non-IDE CD/DVD"
 msgstr "Nicht-IDE Sanyo CD/DVD"
 
-#
-# File: 32-INSCD, line: 60
-# File: 64-INSCD, line: 60
 #: ../initrd-scripts/usr-lib-setup/INSCD:51
 msgid "Non-IDE Mitsumi drive 1"
 msgstr "Non-IDE Mitsumi Laufwerk 1"
 
-#
-# File: 32-INSCD, line: 61
-# File: 64-INSCD, line: 61
 #: ../initrd-scripts/usr-lib-setup/INSCD:52
 msgid "Non-IDE Mitsumi drive 2"
 msgstr "Non-IDE Mitsumi Laufwerk 2"
 
-#
-# File: 32-INSCD, line: 62
-# File: 64-INSCD, line: 62
 #: ../initrd-scripts/usr-lib-setup/INSCD:53
 msgid "Old non-IDE SoundBlaster CD/DVD"
 msgstr "Alte non-IDE SoundBlaster CD/DVD"
 
-#
-# File: 32-INSCD, line: 63
-# File: 64-INSCD, line: 63
 #: ../initrd-scripts/usr-lib-setup/INSCD:54
 msgid "Philips LMS CM-205 CD/DVD"
 msgstr "Philips LMS CM-205 CD/DVD"
 
-#
-# File: 32-INSCD, line: 64
-# File: 64-INSCD, line: 64
 #: ../initrd-scripts/usr-lib-setup/INSCD:55
 msgid "Philips LMS CM-206 CD/DVD"
 msgstr "Philips LMS CM-206 CD/DVD"
 
-#
-# File: 32-INSCD, line: 65
-# File: 64-INSCD, line: 65
 #: ../initrd-scripts/usr-lib-setup/INSCD:56
 msgid "Old non-IDE Mitsumi CD/DVD"
 msgstr "Alte Nicht-IDE Mitsumi CD/DVD"
 
-#
-# File: 32-INSCD, line: 74
-# File: 64-INSCD, line: 74
 #: ../initrd-scripts/usr-lib-setup/INSCD:65
 msgid "ENTER CD/DVD DEVICE MANUALLY"
 msgstr "CD/DVD-LAUFWERK MANUELL ANGEBEN"
 
-#
-# File: 32-INSCD, line: 75
-# File: 64-INSCD, line: 75
 #: ../initrd-scripts/usr-lib-setup/INSCD:66
-#, fuzzy
 msgid ""
 "Please enter the name of the CD/DVD device (such as /dev/hdc) that you wish "
 "to use to mount the Salix CD/DVD:"
 msgstr ""
-"Bitte geben Sie den Namen des CD/DVD Laufwerks (z.B. /dev/hdc) an, den Sie "
-"zum Einbinden der Salix-CD/DVD verwenden möchten:"
 
-#
-# File: 32-INSCD, line: 86
-# File: 64-INSCD, line: 86
 #: ../initrd-scripts/usr-lib-setup/INSCD:77
 msgid "MKNOD CD/DVD DEVICE"
 msgstr "MKNOD CD/DVD LAUFWERK"
 
-#
-# File: 32-INSCD, line: 87
-# File: 64-INSCD, line: 87
 #: ../initrd-scripts/usr-lib-setup/INSCD:78
 #, sh-format
 msgid ""
@@ -593,100 +412,47 @@ msgid ""
 "for the device.  If you're using a bootdisk with a custom CD/DVD driver on "
 "it, you should be able to find these numbers in the documentation.  Also, "
 "see the 'devices.txt' file that comes with the Linux kernel source.  If you "
-"don't know the numbers, you'll have to hit Esc to abort. Enter the major and "
-"minor numbers for the new device, separated by one space:"
-msgstr ""
-"Es scheint kein Gerät mit dem Namen $DRIVE_FOUND in /dev vorhanden zu sein, "
-"deshalb werden wir es mit den Major und Minor Nummern erstellen. Falls Sie "
-"eine Bootdisk mit benutzerspezifischen Treibern verwenden, sollten Sie diese "
-"Nummern in der Dokumentation finden. Überprüfen Sie auch 'devices.txt', "
-"welches Sie in der Linux Kernel Source finden. Falls Sie die Nummern nicht "
-"kennen, müssen Sie 'Esc' zum Beenden drücken. Geben Sie die Major und Minor "
-"Nummern des neuen Geräts, getrennt mit einem Leerschlag, ein:"
+"don't know the numbers, you'll have to hit Esc to abort. Enter the major and"
+" minor numbers for the new device, separated by one space:"
+msgstr "Es scheint kein Gerät mit dem Namen $DRIVE_FOUND in /dev vorhanden zu sein, deshalb werden wir es mit den Major und Minor Nummern erstellen. Falls Sie eine Bootdisk mit benutzerspezifischen Treibern verwenden, sollten Sie diese Nummern in der Dokumentation finden. Überprüfen Sie auch 'devices.txt', welches Sie in der Linux Kernel Source finden. Falls Sie die Nummern nicht kennen, müssen Sie 'Esc' zum Beenden drücken. Geben Sie die Major und Minor Nummern des neuen Geräts, getrennt mit einem Leerschlag, ein:"
 
-#
-# File: 32-INSCD, line: 102
-# File: 64-INSCD, line: 102
 #: ../initrd-scripts/usr-lib-setup/INSCD:93
 msgid "MAKING DEVICE IN /dev"
 msgstr "ERSTELLE LAUFWERK IN /dev"
 
-#
-# File: 32-INSCD, line: 107
-# File: 64-INSCD, line: 107
 #: ../initrd-scripts/usr-lib-setup/INSCD:98
 msgid "MKNOD FAILED"
 msgstr "MKNOD IST FEHLGESCHLAGEN"
 
-#
-# File: 32-INSCD, line: 108
-# File: 64-INSCD, line: 108
 #: ../initrd-scripts/usr-lib-setup/INSCD:99
 msgid ""
 "Sorry, but the mknod command failed to make the device.  You'll need to go "
 "back and try selecting your source media again.  Press ENTER to abort the "
 "source media selection process."
-msgstr ""
-"Entschuldigung, das mknod Kommando konnte das Laufwerk nicht erstellen. "
-"Gehen Sie zurück und versuchen Sie die Medienquelle erneut anzugeben. "
-"Drücken Sie ENTER um den Prozess zur Auswahl des Quellmediums abzubrechen."
+msgstr "Entschuldigung, das mknod Kommando konnte das Laufwerk nicht erstellen. Gehen Sie zurück und versuchen Sie die Medienquelle erneut anzugeben. Drücken Sie ENTER um den Prozess zur Auswahl des Quellmediums abzubrechen."
 
-#
-# File: 32-INSCD, line: 122
-# File: 32-INSCD, line: 139
-# File: 32-INSCD, line: 159
-# File: 32-INSCD, line: 179
-# File: 64-INSCD, line: 122
-# File: 64-INSCD, line: 139
-# File: 64-INSCD, line: 159
-# File: 64-INSCD, line: 179
 #: ../initrd-scripts/usr-lib-setup/INSCD:114
 #: ../initrd-scripts/usr-lib-setup/INSCD:131
 #: ../initrd-scripts/usr-lib-setup/INSCD:151
 msgid "SCANNING"
 msgstr "SUCHE"
 
-#
-# File: 32-INSCD, line: 122
-# File: 64-INSCD, line: 122
 #: ../initrd-scripts/usr-lib-setup/INSCD:114
-#, fuzzy
 msgid "Scanning for a CD/DVD drive containing a Salix disc..."
-msgstr "Suche nach einem CD/DVD Laufwerk mit der Salix-Disk..."
+msgstr ""
 
-#
-# File: 32-INSCD, line: 159
-# File: 64-INSCD, line: 159
 #: ../initrd-scripts/usr-lib-setup/INSCD:131
-#, fuzzy
 msgid ""
 "Scanning for a parallel port ATAPI CD/DVD drive containing a Salix disc..."
 msgstr ""
-"Suche nach einem Parallelport ATAPI CD/DVD Laufwerk mit der Salix-Disk..."
 
-#
-# File: 32-INSCD, line: 179
-# File: 64-INSCD, line: 179
 #: ../initrd-scripts/usr-lib-setup/INSCD:151
 msgid ""
-"No IDE/SCSI drive, so we will try scanning for CD drives on old proprietary "
-"interfaces, such as SoundBlaster pre-IDE CD drives, Sony CDU-31a, Sony 535, "
-"old Mitsumi pre-IDE, old Optics, etc.  For this scan to work at all, you'll "
-"need to be using a bootdisk that supports your CD drive.\n"
+"No IDE/SCSI drive, so we will try scanning for CD drives on old proprietary interfaces, such as SoundBlaster pre-IDE CD drives, Sony CDU-31a, Sony 535, old Mitsumi pre-IDE, old Optics, etc.  For this scan to work at all, you'll need to be using a bootdisk that supports your CD drive.\n"
 "\n"
 "Please press ENTER to begin this last-chance scan for old, obsolete hardware."
-msgstr ""
-"Kein IDE/SCSI Laufwerk gefunden. Deshalb versuchen wir ein Laufwerk an alten "
-"proprietären Schnittstellen, wie SoundBlaster pre-IDE CD Laufwerke, Sony "
-"CDU-31a, Sony 535, alte Mitsumi pre-IDE, alte Optics etc. Damit die Suche "
-"funktioniert brauchen Sie eine Bootdisk, die Ihr CD Laufwerk unterstützt.\n"
-"\n"
-"Bitte drücken Sie ENTER um die Suche nach alter und obsoleter Hardware zu "
-"starten."
+msgstr "Kein IDE/SCSI Laufwerk gefunden. Deshalb versuchen wir ein Laufwerk an alten proprietären Schnittstellen, wie SoundBlaster pre-IDE CD Laufwerke, Sony CDU-31a, Sony 535, alte Mitsumi pre-IDE, alte Optics etc. Damit die Suche funktioniert brauchen Sie eine Bootdisk, die Ihr CD Laufwerk unterstützt.\n\nBitte drücken Sie ENTER um die Suche nach alter und obsoleter Hardware zu starten."
 
-#
-# File: 32-INSCD, line: 200
-# File: 64-INSCD, line: 200
 #: ../initrd-scripts/usr-lib-setup/INSCD:174
 msgid "CD/DVD DRIVE NOT FOUND"
 msgstr "CD/DVD LAUFWERK NICHT GEFUNDEN"
@@ -697,8 +463,8 @@ msgid ""
 "Possible reasons include using a bootdisk or kernel that doesn't support "
 "your drive, failing to pass parameters needed by some drives to the kernel, "
 "not having the Salix disc in your CD/DVD drive, or using a drive connected "
-"to a Plug and Play soundcard (in this case, connecting the drive directly to "
-"the IDE interface often helps). Please make sure you are using the correct "
+"to a Plug and Play soundcard (in this case, connecting the drive directly to"
+" the IDE interface often helps). Please make sure you are using the correct "
 "bootdisk for your hardware, consult the BOOTING file for possible "
 "information on forcing the detection of your drive, and then reattempt "
 "installation.  If all else fails, see FAQ.TXT for information about copying "
@@ -711,35 +477,19 @@ msgid ""
 "the CD again, you may skip directly to the SOURCE menu selection."
 msgstr ""
 
-#
-# File: 32-INSCD, line: 223
-# File: 64-INSCD, line: 223
 #: ../initrd-scripts/usr-lib-setup/INSCD:197
 msgid "CD/DVD DRIVE FOUND"
 msgstr "CD/DVD LAUFWERK GEFUNDEN"
 
-#
-# File: 32-INSCD, line: 224
-# File: 64-INSCD, line: 224
 #: ../initrd-scripts/usr-lib-setup/INSCD:198
-#, fuzzy, sh-format
+#, sh-format
 msgid "A Salix disc was found in device $DRIVE_FOUND."
-msgstr "Eine Salix-Disk wurde im Laufwerk $DRIVE_FOUND gefunden."
+msgstr ""
 
-#
-# File: 32-INSCD, line: 227
-# File: 32-INShd, line: 98
-# File: 32-pkgtool, line: 431
-# File: 64-INSCD, line: 227
-# File: 64-INShd, line: 98
-# File: 64-pkgtool, line: 431
 #: ../initrd-scripts/usr-lib-setup/INSCD:201
 msgid "MOUNT ERROR"
 msgstr "EINHÄNGE-FEHLER"
 
-#
-# File: 32-INSCD, line: 227
-# File: 64-INSCD, line: 227
 #: ../initrd-scripts/usr-lib-setup/INSCD:201
 #, sh-format
 msgid ""
@@ -747,38 +497,20 @@ msgid ""
 "the device name is incorrect, the disc is not in the drive, or the kernel "
 "you are using does not support the device. (possibly an incorrect bootdisk) "
 "What would you like to do now?"
-msgstr ""
-"Das Einbinden der CD/DVD über $DRIVE_FOUND ist fehlgeschlagen. "
-"Möglicherweise ist der Gerätename falsch, die Disk nicht im Laufwerk, oder "
-"der Kernel unterstützt das Laufwerk nicht (vielleicht eine fehlerhafte "
-"Bootdisk). Was möchten Sie jetzt tun?"
+msgstr "Das Einbinden der CD/DVD über $DRIVE_FOUND ist fehlgeschlagen. Möglicherweise ist der Gerätename falsch, die Disk nicht im Laufwerk, oder der Kernel unterstützt das Laufwerk nicht (vielleicht eine fehlerhafte Bootdisk). Was möchten Sie jetzt tun?"
 
-#
-# File: 32-INSCD, line: 234
-# File: 64-INSCD, line: 234
 #: ../initrd-scripts/usr-lib-setup/INSCD:208
 msgid "Abort CD installation"
 msgstr "CD Installation abbrechen"
 
-#
-# File: 32-INSCD, line: 235
-# File: 64-INSCD, line: 235
 #: ../initrd-scripts/usr-lib-setup/INSCD:209
 msgid "Attempt to mount the CD/DVD device again"
 msgstr "Versuchen das CD/DVD Laufwerk erneut einzubinden"
 
-#
-# File: 32-INSCD, line: 236
-# File: 32-INShd, line: 100
-# File: 64-INSCD, line: 236
-# File: 64-INShd, line: 100
 #: ../initrd-scripts/usr-lib-setup/INSCD:210
 msgid "Ignore the error and continue"
 msgstr "Den Fehler ignorieren und fortfahren"
 
-#
-# File: 32-INSCD, line: 248
-# File: 64-INSCD, line: 248
 #: ../initrd-scripts/usr-lib-setup/INSCD:222
 #, sh-format
 msgid "ATTEMPTING TO MOUNT CD/DVD on $DRIVE_FOUND"
@@ -796,29 +528,17 @@ msgid ""
 "machine where the Salix sources are stored."
 msgstr ""
 
-#
-# File: 32-INSURL, line: 71
-# File: 64-INSURL, line: 71
 #: ../initrd-scripts/usr-lib-setup/INSNFS:30
 #: ../initrd-scripts/usr-lib-setup/INSURL:72
-#, fuzzy
 msgid ""
 "Since you're already running on the network, you should be able to use the "
 "hostname instead of an IP address if you wish."
 msgstr ""
-"Da Sie bereits mit dem Netzwerk verbunden sind, sollte es möglich sein den "
-"Hostnamen anstelle der IP-Adresse zu verwenden.\n"
 
-#
-# File: 32-INSNFS, line: 36
-# File: 64-INSNFS, line: 36
 #: ../initrd-scripts/usr-lib-setup/INSNFS:35
 msgid "What is the IP address of your NFS server?"
 msgstr "Wie lautet die IP-Adresse Ihres NFS Servers?"
 
-#
-# File: 32-INSNFS, line: 38
-# File: 64-INSNFS, line: 38
 #: ../initrd-scripts/usr-lib-setup/INSNFS:37
 msgid "ENTER IP ADDRESS OF NFS SERVER"
 msgstr "GEBEN SIE DIE IP ADRESSE DES NFS SERVERS EIN"
@@ -844,17 +564,6 @@ msgstr ""
 msgid "What is the Salix source directory?"
 msgstr ""
 
-#
-# File: 32-INSNFS, line: 56
-# File: 32-INSSMB, line: 56
-# File: 32-INSURL, line: 97
-# File: 32-INShd, line: 58
-# File: 32-pkgtool, line: 385
-# File: 64-INSNFS, line: 56
-# File: 64-INSSMB, line: 56
-# File: 64-INSURL, line: 97
-# File: 64-INShd, line: 58
-# File: 64-pkgtool, line: 385
 #: ../initrd-scripts/usr-lib-setup/INSNFS:56
 #: ../initrd-scripts/usr-lib-setup/INSSMB:56
 #: ../initrd-scripts/usr-lib-setup/INSURL:97
@@ -868,58 +577,35 @@ msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/INSNFS:68
 msgid ""
-"If you see errors and you don't see your NFS server listed, then try setting "
-"up NFS again."
+"If you see errors and you don't see your NFS server listed, then try setting"
+" up NFS again."
 msgstr ""
 
-#
-# File: 32-INSNFS, line: 68
-# File: 64-INSNFS, line: 68
 #: ../initrd-scripts/usr-lib-setup/INSNFS:71
 msgid "NFS MOUNT INFORMATION"
 msgstr "NFS MOUNT INFORMATION"
 
-#
-# File: 32-INSNFS, line: 83
-# File: 64-INSNFS, line: 83
 #: ../initrd-scripts/usr-lib-setup/INSNFS:80
 #, sh-format
 msgid "Mounting $REMOTE_PATH:"
 msgstr "Binde $REMOTE_PATH ein:"
 
-#
-# File: 32-INSNFS, line: 88
-# File: 64-INSNFS, line: 88
 #: ../initrd-scripts/usr-lib-setup/INSNFS:85
 msgid "Didn't work."
 msgstr "Fehlgeschlagen."
 
-#
-# File: 32-INSNFS, line: 90
-# File: 64-INSNFS, line: 90
 #: ../initrd-scripts/usr-lib-setup/INSNFS:87
 msgid "Maybe you should check that the directory name is correct?"
 msgstr "Vielleicht sollten Sie überprüfen, ob der Verzeichnisname korrekt ist."
 
-#
-# File: 32-INSNFS, line: 97
-# File: 64-INSNFS, line: 97
 #: ../initrd-scripts/usr-lib-setup/INSNFS:94
 msgid "Current NFS mounts:"
 msgstr "Aktuelle NFS-Mounts:"
 
-#
-# File: 32-INSNFS, line: 101
-# File: 64-INSNFS, line: 101
 #: ../initrd-scripts/usr-lib-setup/INSNFS:98
 msgid "Do you need to try setting up NFS again?"
 msgstr "Müssen Sie versuchen, NFS erneut zu konfigurieren?"
 
-#
-# File: 32-INSNFS, line: 104
-# File: 32-INSNFS, line: 108
-# File: 64-INSNFS, line: 104
-# File: 64-INSNFS, line: 108
 #: ../initrd-scripts/usr-lib-setup/INSNFS:101
 #: ../initrd-scripts/usr-lib-setup/INSNFS:105
 msgid "NFS MOUNT RESULT"
@@ -936,24 +622,16 @@ msgstr ""
 msgid "Example share address:"
 msgstr ""
 
-#
-# File: 32-INSURL, line: 71
-# File: 64-INSURL, line: 71
 #: ../initrd-scripts/usr-lib-setup/INSSMB:32
 msgid ""
 "Since you're already running on the network, you should be able to use the "
 "hostname instead of an IP address if you wish.\n"
-msgstr ""
-"Da Sie bereits mit dem Netzwerk verbunden sind, sollte es möglich sein den "
-"Hostnamen anstelle der IP-Adresse zu verwenden.\n"
+msgstr "Da Sie bereits mit dem Netzwerk verbunden sind, sollte es möglich sein den Hostnamen anstelle der IP-Adresse zu verwenden.\n"
 
 #: ../initrd-scripts/usr-lib-setup/INSSMB:37
 msgid "What is the share address of your Samba server?"
 msgstr ""
 
-#
-# File: 32-INSSMB, line: 38
-# File: 64-INSSMB, line: 38
 #: ../initrd-scripts/usr-lib-setup/INSSMB:38
 msgid "ENTER SHARE ADDRESS OF SAMBA SERVER"
 msgstr "GEBEN SIE DIE FREIGABEADRESSE DES SAMBA SERVERS AN"
@@ -965,63 +643,35 @@ msgid ""
 "series is found at /stuff/salix/a, then you would respond: /stuff/salix"
 msgstr ""
 
-#
-# File: 32-INSSMB, line: 65
-# File: 64-INSSMB, line: 65
 #: ../initrd-scripts/usr-lib-setup/INSSMB:65
 msgid "You should see no mount errors:"
 msgstr "Sie sollten keine Mountfehler sehen:"
 
-#
-# File: 32-INSSMB, line: 67
-# File: 64-INSSMB, line: 67
 #: ../initrd-scripts/usr-lib-setup/INSSMB:67
 #, sh-format
 msgid "Mounting $REMOTE_SHARE ..."
 msgstr "Binde $REMOTE_SHARE ein..."
 
-#
-# File: 32-INSSMB, line: 73
-# File: 64-INSSMB, line: 73
 #: ../initrd-scripts/usr-lib-setup/INSSMB:73
 msgid "Mount failed."
 msgstr "Einbinden ist fehlgeschlagen."
 
-#
-# File: 32-INSSMB, line: 78
-# File: 64-INSSMB, line: 78
 #: ../initrd-scripts/usr-lib-setup/INSSMB:78
 msgid "Mounted Samba share(s):"
 msgstr "Binde Samba-Freigabe(n) ein:"
 
-#
-# File: 32-INSSMB, line: 85
-# File: 64-INSSMB, line: 85
 #: ../initrd-scripts/usr-lib-setup/INSSMB:85
-#, fuzzy
 msgid "A Salix package tree was found! Ready to continue."
-msgstr "Ein Salix-Paketbaum wurde gefunden! Bereit zum Fortfahren."
+msgstr ""
 
-#
-# File: 32-INSSMB, line: 89
-# File: 64-INSSMB, line: 89
 #: ../initrd-scripts/usr-lib-setup/INSSMB:89
-#, fuzzy
 msgid "No Salix package tree found at the indicated path!"
-msgstr "Kein Salix-Paketbaum im angegebenen Pfad gefunden!"
+msgstr ""
 
-#
-# File: 32-INSSMB, line: 95
-# File: 64-INSSMB, line: 95
 #: ../initrd-scripts/usr-lib-setup/INSSMB:95
 msgid "Do you want to try setting up Samba again?"
 msgstr "Wollen Sie Samba erneut konfigurieren?"
 
-#
-# File: 32-INSSMB, line: 99
-# File: 32-INSSMB, line: 103
-# File: 64-INSSMB, line: 99
-# File: 64-INSSMB, line: 103
 #: ../initrd-scripts/usr-lib-setup/INSSMB:99
 #: ../initrd-scripts/usr-lib-setup/INSSMB:103
 msgid "MOUNT RESULT"
@@ -1042,9 +692,6 @@ msgstr ""
 msgid "What is the URL of your FTP/HTTP server?"
 msgstr ""
 
-#
-# File: 32-INSURL, line: 78
-# File: 64-INSURL, line: 78
 #: ../initrd-scripts/usr-lib-setup/INSURL:77
 msgid "ENTER URL OF FTP/HTTP SERVER"
 msgstr "URL DES FTP/HTTP-SERVERS EINGEBEN"
@@ -1062,10 +709,7 @@ msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:110
 msgid ""
-"First, we'll download the PACKAGES.TXT from the parent of the directory that "
-"you entered before (which should be the root of the remote Salix tree).  If "
-"that succeeds, then we use PACKAGES.TXT to reconstruct a local cache of the "
-"package tree (should take a minute or less on an average system).\n"
+"First, we'll download the PACKAGES.TXT from the parent of the directory that you entered before (which should be the root of the remote Salix tree).  If that succeeds, then we use PACKAGES.TXT to reconstruct a local cache of the package tree (should take a minute or less on an average system).\n"
 "After that, we're all set to go!"
 msgstr ""
 
@@ -1079,192 +723,106 @@ msgid ""
 "here..."
 msgstr ""
 
-#
-# File: 32-INSURL, line: 121
-# File: 64-INSURL, line: 121
 #: ../initrd-scripts/usr-lib-setup/INSURL:121
 msgid "DOWNLOAD INFORMATION"
 msgstr "DOWNLOAD-INFORMATION"
 
-#
-# File: 32-slackinstall, line: 60
-# File: 64-slackinstall, line: 60
 #: ../initrd-scripts/usr-lib-setup/INSURL:130
-#, fuzzy
 msgid "Downloading PACKAGES.TXT ..."
-msgstr "Herunterladen von $ArG2 FEHLGESCHLAGEN."
+msgstr ""
 
-#
-# File: 32-INSURL, line: 135
-# File: 64-INSURL, line: 135
 #: ../initrd-scripts/usr-lib-setup/INSURL:135
 msgid "> Download failed. Going to try one directory lower."
-msgstr ""
-"> Herunterladen ist fehlgeschlagen. Versuche es ein Verzeichnis tiefer."
+msgstr "> Herunterladen ist fehlgeschlagen. Versuche es ein Verzeichnis tiefer."
 
-#
-# File: 32-INSURL, line: 141
-# File: 64-INSURL, line: 141
 #: ../initrd-scripts/usr-lib-setup/INSURL:141
 msgid "> Download failed again."
 msgstr "> Herunterladen ist erneut fehlgeschlagen"
 
-#
-# File: 32-INSURL, line: 148
-# File: 64-INSURL, line: 148
 #: ../initrd-scripts/usr-lib-setup/INSURL:148
-#, fuzzy
 msgid "A Salix 'PACKAGES.TXT' is available. Ready to continue!"
-msgstr "Ein Salix 'PACKAGES.TXT' ist verfügbar. Bereit um fortzusetzen!"
+msgstr ""
 
-#
-# File: 32-INSURL, line: 153
-# File: 64-INSURL, line: 153
 #: ../initrd-scripts/usr-lib-setup/INSURL:153
 msgid "No file 'PACKAGES.TXT' was found. Wrong URL?"
 msgstr "Die Datei 'PACKAGES.TXT' wurde nicht gefunden. Falsche URL?"
 
-#
-# File: 32-INSURL, line: 158
-# File: 64-INSURL, line: 158
 #: ../initrd-scripts/usr-lib-setup/INSURL:158
 msgid "Do you want to try setting up FTP/HTTP again? "
 msgstr "Wollen Sie erneut versuchen FTP/HTTP einzurichten? "
 
-#
-# File: 32-INSURL, line: 161
-# File: 32-INSURL, line: 165
-# File: 64-INSURL, line: 161
-# File: 64-INSURL, line: 165
 #: ../initrd-scripts/usr-lib-setup/INSURL:161
 #: ../initrd-scripts/usr-lib-setup/INSURL:165
 msgid "DOWNLOAD RESULT"
 msgstr "DOWNLOAD-RESULTAT"
 
-#
-# File: 32-INSURL, line: 186
-# File: 32-INSURL, line: 226
-# File: 32-INSURL, line: 231
-# File: 64-INSURL, line: 186
-# File: 64-INSURL, line: 226
-# File: 64-INSURL, line: 231
 #: ../initrd-scripts/usr-lib-setup/INSURL:186
 #: ../initrd-scripts/usr-lib-setup/INSURL:226
 #: ../initrd-scripts/usr-lib-setup/INSURL:230
 msgid "INITIALIZING PACKAGE TREE"
 msgstr "INITIALISIERE PAKETBAUM"
 
-#
-# File: 32-INSURL, line: 187
-# File: 64-INSURL, line: 187
 #: ../initrd-scripts/usr-lib-setup/INSURL:187
 msgid "Setting up local cache for the FTP/HTTP server's package tree ...\n"
-msgstr ""
-"Konfiguriere den lokalen Cache für den Paketbaum des FTP/HTTP-Servers...\n"
+msgstr "Konfiguriere den lokalen Cache für den Paketbaum des FTP/HTTP-Servers...\n"
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:227
 #, sh-format
 msgid "processing ${TOTALP} Salix packages..."
 msgstr ""
 
-#
-# File: 32-INSURL, line: 232
-# File: 64-INSURL, line: 232
 #: ../initrd-scripts/usr-lib-setup/INSURL:231
 msgid ""
 "\n"
 "Retrieving tagfile information for the package tree ..."
-msgstr ""
-"\n"
-"Rufe Tagfile-Informationen für den Paketbaum ab..."
+msgstr "\nRufe Tagfile-Informationen für den Paketbaum ab..."
 
-#
-# File: 32-INSURL, line: 240
-# File: 64-INSURL, line: 240
 #: ../initrd-scripts/usr-lib-setup/INSURL:239
 msgid "REMOTE SERVER CONFIGURATION"
 msgstr "KONFIGURATION DER ENTFERNTEN SERVERS "
 
-#
-# File: 32-INSURL, line: 241
-# File: 64-INSURL, line: 241
 #: ../initrd-scripts/usr-lib-setup/INSURL:240
 msgid "Failed to configure for installation from remote server."
-msgstr ""
-"Die Konfiguration zum installieren vom entfernten Server ist fehlgeschlagen."
+msgstr "Die Konfiguration zum installieren vom entfernten Server ist fehlgeschlagen."
 
-#
-# File: 32-INSUSB, line: 14
-# File: 64-INSUSB, line: 14
 #: ../initrd-scripts/usr-lib-setup/INSUSB:13
 msgid "SCANNING FOR USB STICK"
 msgstr "SUCHE NACH USB-STICK"
 
-#
-# File: 32-INSUSB, line: 15
-# File: 64-INSUSB, line: 15
 #: ../initrd-scripts/usr-lib-setup/INSUSB:14
-#, fuzzy
 msgid ""
 "Make sure the USB stick containing the Salix package directory is inserted "
 "into a USB port, and then press ENTER to begin the scanning process."
 msgstr ""
-"Stellen Sie sicher, dass der USB-Stick mit dem Salix-Paketverzeichnis in "
-"einen USB-Anschluss gesteckt ist und drücken Sie ENTER, um den Suchvorgang "
-"zu beginnen."
 
-#
-# File: 32-INSUSB, line: 37
-# File: 64-INSUSB, line: 37
 #: ../initrd-scripts/usr-lib-setup/INSUSB:36
 msgid "NO REMOVABLE USB DEVICES FOUND"
 msgstr "KEINE ENTFERNBAREN USB-GERÄTE GEFUNDEN"
 
-#
-# File: 32-INSUSB, line: 38
-# File: 64-INSUSB, line: 38
 #: ../initrd-scripts/usr-lib-setup/INSUSB:37
 msgid ""
-"Sorry, but no removable USB devices could be found.  Exiting back to the top "
-"menu."
-msgstr ""
-"Entschuldigung, aber es wurden keine entfernbaren USB-Geräte gefunden. Kehre "
-"zum obersten Menü zurück."
+"Sorry, but no removable USB devices could be found.  Exiting back to the top"
+" menu."
+msgstr "Entschuldigung, aber es wurden keine entfernbaren USB-Geräte gefunden. Kehre zum obersten Menü zurück."
 
-#
-# File: 32-INSUSB, line: 89
-# File: 64-INSUSB, line: 89
 #: ../initrd-scripts/usr-lib-setup/INSUSB:88
-#, fuzzy
 msgid "NO SALIX DIRECTORY FOUND"
-msgstr "KEIN SALIX VERZEICHNIS GEFUNDEN"
+msgstr ""
 
-#
-# File: 32-INSUSB, line: 90
-# File: 64-INSUSB, line: 90
 #: ../initrd-scripts/usr-lib-setup/INSUSB:89
-#, fuzzy
 msgid ""
 "Sorry, but a Salix directory could not be found on any USB devices. Exiting "
 "back to the top menu."
 msgstr ""
-"Entschuldigung, aber ein Salix-Verzeichnis konnte auf keinem USB-Gerät "
-"gefunden werden. Kehre zum obersten Menü zurück."
 
-#
-# File: 32-INSUSB, line: 99
-# File: 64-INSUSB, line: 99
 #: ../initrd-scripts/usr-lib-setup/INSUSB:98
 msgid "USB PACKAGE SOURCE FOUND"
 msgstr "USB PAKETQUELLE ENTDECKT"
 
-#
-# File: 32-INSUSB, line: 100
-# File: 64-INSUSB, line: 100
 #: ../initrd-scripts/usr-lib-setup/INSUSB:99
-#, fuzzy, sh-format
+#, sh-format
 msgid "A Salix package directory was found on device $DRIVE_FOUND."
-msgstr "Ein Salix Paketverzeichnis wurde auf Gerät $DRIVE_FOUND gefunden."
+msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/INSdir:17
 #: ../initrd-scripts/usr-lib-setup/INShd:17
@@ -1275,26 +833,16 @@ msgstr ""
 msgid "Please reboot the machine and try again."
 msgstr ""
 
-#
-# File: 32-SeTmaketag, line: 111
-# File: 64-SeTmaketag, line: 111
 #: ../initrd-scripts/usr-lib-setup/INSdir:24
 #: ../initrd-scripts/usr-lib-setup/INShd:23
-#, fuzzy
 msgid "ERROR"
-msgstr "KOPIERFEHLER"
+msgstr ""
 
-#
-# File: INSdir, line: 26
-# File: INShd, line: 26
 #: ../initrd-scripts/usr-lib-setup/INSdir:25
 #: ../initrd-scripts/usr-lib-setup/INShd:24
 msgid "REBOOT"
 msgstr ""
 
-#
-# File: INSdir, line: 27
-# File: INShd, line: 27
 #: ../initrd-scripts/usr-lib-setup/INSdir:26
 #: ../initrd-scripts/usr-lib-setup/INShd:25
 msgid "CANCEL"
@@ -1312,46 +860,19 @@ msgid ""
 "or '/var/log/mount' as these are required by setup."
 msgstr ""
 
-#
-# File: 32-INSNFS, line: 56
-# File: 32-INSSMB, line: 56
-# File: 32-INSURL, line: 97
-# File: 32-INShd, line: 58
-# File: 32-pkgtool, line: 385
-# File: 64-INSNFS, line: 56
-# File: 64-INSSMB, line: 56
-# File: 64-INSURL, line: 97
-# File: 64-INShd, line: 58
-# File: 64-pkgtool, line: 385
 #: ../initrd-scripts/usr-lib-setup/INSdir:49
-#, fuzzy
 msgid "SELECT A PRE-MOUNTED DIRECTORY"
-msgstr "WÄHLEN SIE DAS QUELLVERZEICHNIS AUS"
+msgstr ""
 
-#
-# File: INSdir, line: 50
-# File: INShd, line: 125
 #: ../initrd-scripts/usr-lib-setup/INSdir:50
 #: ../initrd-scripts/usr-lib-setup/INShd:124
 msgid "Browse"
 msgstr ""
 
-#
-# File: 32-INSNFS, line: 56
-# File: 32-INSSMB, line: 56
-# File: 32-INSURL, line: 97
-# File: 32-INShd, line: 58
-# File: 32-pkgtool, line: 385
-# File: 64-INSNFS, line: 56
-# File: 64-INSSMB, line: 56
-# File: 64-INSURL, line: 97
-# File: 64-INShd, line: 58
-# File: 64-pkgtool, line: 385
 #: ../initrd-scripts/usr-lib-setup/INSdir:63
 #: ../initrd-scripts/usr-lib-setup/INShd:137
-#, fuzzy
 msgid "SELECT A DIRECTORY"
-msgstr "WÄHLEN SIE DAS QUELLVERZEICHNIS AUS"
+msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/INSdir:85
 msgid "The ISO image you specified is not valid:"
@@ -1363,18 +884,11 @@ msgstr ""
 msgid "Please check and try again."
 msgstr ""
 
-#
-# File: 32-INCISO, line: 14
-# File: 64-INCISO, line: 14
 #: ../initrd-scripts/usr-lib-setup/INSdir:91
 #: ../initrd-scripts/usr-lib-setup/INShd:168
-#, fuzzy
 msgid "INVALID ISO IMAGE"
-msgstr "BENUTZE ISO-ABBILD"
+msgstr ""
 
-#
-# File: 32-SeTpartitions, line: 540
-# File: 64-SeTpartitions, line: 540
 #: ../initrd-scripts/usr-lib-setup/INSdir:92
 #: ../initrd-scripts/usr-lib-setup/INSdir:118
 #: ../initrd-scripts/usr-lib-setup/INShd:93
@@ -1391,22 +905,10 @@ msgstr "OK"
 msgid "The directory you specified is not valid:"
 msgstr ""
 
-#
-# File: 32-INSNFS, line: 56
-# File: 32-INSSMB, line: 56
-# File: 32-INSURL, line: 97
-# File: 32-INShd, line: 58
-# File: 32-pkgtool, line: 385
-# File: 64-INSNFS, line: 56
-# File: 64-INSSMB, line: 56
-# File: 64-INSURL, line: 97
-# File: 64-INShd, line: 58
-# File: 64-pkgtool, line: 385
 #: ../initrd-scripts/usr-lib-setup/INSdir:117
 #: ../initrd-scripts/usr-lib-setup/INShd:187
-#, fuzzy
 msgid "INVALID SOURCE DIRECTORY"
-msgstr "WÄHLEN SIE DAS QUELLVERZEICHNIS AUS"
+msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/INShd:20
 msgid "Please reboot the machine an try again."
@@ -1426,44 +928,25 @@ msgstr ""
 msgid "Note: Use the <Partitions> button to list available partitions."
 msgstr ""
 
-#
-# File: 32-liloconfig, line: 1095
-# File: 64-liloconfig, line: 1095
 #: ../initrd-scripts/usr-lib-setup/INShd:48
-#, fuzzy
 msgid "SELECT HARD DISK PARTITION"
-msgstr "OS/2-PARTITION AUSWÄHLEN"
+msgstr ""
 
-#
-# File: INShd, line: 51
 #: ../initrd-scripts/usr-lib-setup/INShd:49
 msgid "Partitions"
 msgstr ""
 
-#
-# File: 32-INShd, line: 53
-# File: 64-INShd, line: 53
 #: ../initrd-scripts/usr-lib-setup/INShd:61
-#, fuzzy
 msgid "PARTITIONS LIST"
-msgstr "PARTITIONSLISTE"
+msgstr ""
 
-#
-# File: 32-SeTmaketag, line: 80
-# File: 64-SeTmaketag, line: 80
 #: ../initrd-scripts/usr-lib-setup/INShd:92
 msgid "MOUNT FAILURE"
 msgstr "FEHLER BEIM EINBINDEN"
 
-#
-# File: 32-INSSMB, line: 99
-# File: 32-INSSMB, line: 103
-# File: 64-INSSMB, line: 99
-# File: 64-INSSMB, line: 103
 #: ../initrd-scripts/usr-lib-setup/INShd:106
-#, fuzzy
 msgid "MOUNT SUCCESS"
-msgstr "MOUNT-ERGEBNIS"
+msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/INShd:115
 msgid ""
@@ -1473,31 +956,20 @@ msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/INShd:118
 msgid ""
-"Note: The path you enter must be relative to the mount point. So, '/var/log/"
-"mount/salix-xfce' should be entered as '/salix-xfce'."
+"Note: The path you enter must be relative to the mount point. So, "
+"'/var/log/mount/salix-xfce' should be entered as '/salix-xfce'."
 msgstr ""
 
-#
-# File: 32-SeTDOS, line: 29
-# File: 64-SeTDOS, line: 29
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:28
 #, sh-format
 msgid "Setting permissions on NTFS partition $DOS_PART"
 msgstr "Konfiguriere Berechtigungen der NTFS Partition $DOS_PART"
 
-#
-# File: 32-SeTDOS, line: 30
-# File: 64-SeTDOS, line: 30
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:29
 #, sh-format
 msgid "SET SECURITY FOR NTFS PARTITION $DOS_PART"
 msgstr "KONFIGURIERE SICHERHEIT DER NTFS-PARTITION $DOS_PART"
 
-#
-# File: 32-SeTDOS, line: 32
-# File: 32-SeTDOS, line: 55
-# File: 64-SeTDOS, line: 32
-# File: 64-SeTDOS, line: 55
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:31
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:54
 #, sh-format
@@ -1508,188 +980,96 @@ msgid ""
 "level can range from no access at all, to read-only for everyone, to read-"
 "write access for every user on the machine.  A reasonable default (read-"
 "write for root only) is chosen, but you may set this any way that you like."
-msgstr ""
-"Weil Benutzer in Ihrer Windowspartition herumschnüffeln (oder je nach "
-"Einstellung, Daten löschen) können, sollten Sie den Zugriff zur Partition "
-"$DOS_PART für Ihre nicht-root-Benutzer festlegen. Der Zugriff kann von "
-"keinem Zugriff, über lesenden Zugriff für jedermann, bis Lese-/"
-"Schreibzugriff für alle Benutzer auf der Maschine festgelegt werden. Als "
-"Standard ist Lese-/Schreibzugriff für den root-Benutzer definiert. Sie "
-"können die Einstellung jedoch auf Ihre Bedürfnisse anpassen."
+msgstr "Weil Benutzer in Ihrer Windowspartition herumschnüffeln (oder je nach Einstellung, Daten löschen) können, sollten Sie den Zugriff zur Partition $DOS_PART für Ihre nicht-root-Benutzer festlegen. Der Zugriff kann von keinem Zugriff, über lesenden Zugriff für jedermann, bis Lese-/Schreibzugriff für alle Benutzer auf der Maschine festgelegt werden. Als Standard ist Lese-/Schreibzugriff für den root-Benutzer definiert. Sie können die Einstellung jedoch auf Ihre Bedürfnisse anpassen."
 
-#
-# File: 32-SeTDOS, line: 39
-# File: 64-SeTDOS, line: 39
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:38
 msgid "Root has read/write access, users have no access (ntfs-3g)"
 msgstr "Root hat Lese-/Schreibzugriff, Benutzer haben keinen Zugriff (ntfs-3g)"
 
-#
-# File: 32-SeTDOS, line: 40
-# File: 64-SeTDOS, line: 40
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:39
 msgid "Everyone has read only access (built-in kernel ntfs driver)"
 msgstr "Jeder hat Lesezugriff (eingebauter Kernel ntfs Treiber)"
 
-#
-# File: 32-SeTDOS, line: 41
-# File: 64-SeTDOS, line: 41
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:40
 msgid "Everyone has read access, but only root can write (ntfs-3g)"
 msgstr "Jeder hat Lesezugriff, aber nur root hat Schreibzugriff (ntfs-3g)"
 
-#
-# File: 32-SeTDOS, line: 42
-# File: 64-SeTDOS, line: 42
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:41
 msgid "All users can read/write to any file (ntfs-3g)"
 msgstr "Alle Benutzer haben Lese-/Schreibrechte auf allen Dateien (ntfs-3g)"
 
-#
-# File: 32-SeTDOS, line: 52
-# File: 64-SeTDOS, line: 52
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:51
 #, sh-format
 msgid "Setting permissions on FAT partition $DOS_PART"
 msgstr "Konfiguriere Berechtigungen der FAT Partition $DOS_PART"
 
-#
-# File: 32-SeTDOS, line: 53
-# File: 64-SeTDOS, line: 53
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:52
 #, sh-format
 msgid "SET SECURITY FOR FAT PARTITION $DOS_PART"
 msgstr "KONFIGURIERE SICHERHEIT DER FAT-PARTITION $DOS_PART"
 
-#
-# File: 32-SeTDOS, line: 62
-# File: 64-SeTDOS, line: 62
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:61
 msgid "Root has read/write access, users have no access"
 msgstr "Root hat Lese-/Schreibzugriff, Benutzer haben keinen Zugriff"
 
-#
-# File: 32-SeTDOS, line: 63
-# File: 64-SeTDOS, line: 63
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:62
 msgid "Everyone has read only access"
 msgstr "Jeder hat Lesezugriff"
 
-#
-# File: 32-SeTDOS, line: 64
-# File: 64-SeTDOS, line: 64
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:63
 msgid "Everyone has read access, but only root can write"
 msgstr "Jeder hat Lesezugriff, aber nur root hat Schreibzugriff"
 
-#
-# File: 32-SeTDOS, line: 65
-# File: 64-SeTDOS, line: 65
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:64
 msgid "All users can read/write to any file"
 msgstr "Alle Benutzer haben Lese-/Schreibrechte auf allen Dateien"
 
-#
-# File: 32-SeTDOS, line: 100
-# File: 64-SeTDOS, line: 100
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:99
 msgid "Setting up non-Linux partitions."
 msgstr "Nicht-Linux Partitionen einrichten."
 
-#
-# File: 32-SeTDOS, line: 101
-# File: 64-SeTDOS, line: 101
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:100
 msgid "FAT or NTFS PARTITIONS DETECTED"
 msgstr "FAT- oder NTFS-PARTITIONEN ENTDECKT"
 
-#
-# File: 32-SeTDOS, line: 102
-# File: 64-SeTDOS, line: 102
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:101
 msgid ""
 "Partitions of type FAT or NTFS (commonly used by DOS and Windows) have been "
-"found on your system.  Would you like to add these partitions to your /etc/"
-"fstab so that these partitions are visible from Linux?"
-msgstr ""
-"FAT- oder NTFS-Partitionen (üblich von DOS und Windows verwendet) wurden auf "
-"Ihrem System entdeckt. Möchten Sie diese Partitionen zu /etc/fstab "
-"hinzufügen, damit diese aus Ihrem Linux System ersichtlich sind?"
+"found on your system.  Would you like to add these partitions to your "
+"/etc/fstab so that these partitions are visible from Linux?"
+msgstr "FAT- oder NTFS-Partitionen (üblich von DOS und Windows verwendet) wurden auf Ihrem System entdeckt. Möchten Sie diese Partitionen zu /etc/fstab hinzufügen, damit diese aus Ihrem Linux System ersichtlich sind?"
 
-#
-# File: 32-SeTDOS, line: 114
-# File: 64-SeTDOS, line: 114
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:113
 msgid "Selecting non-Linux partitions."
 msgstr "Wähle nicht-Linux Partitionen aus."
 
-#
-# File: 32-SeTDOS, line: 116
-# File: 64-SeTDOS, line: 116
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:115
 msgid "SELECT PARTITION TO ADD TO /etc/fstab"
 msgstr "PARTITION AUSWÄHLEN UND ZU /etc/fstab HINZUFÜGEN"
 
-#
-# File: 32-SeTDOS, line: 120
-# File: 32-SeTpartitions, line: 325
-# File: 32-SeTpartitions, line: 414
-# File: 32-setup.80.make-bootdisk, line: 216
-# File: 64-SeTDOS, line: 120
-# File: 64-SeTpartitions, line: 325
-# File: 64-SeTpartitions, line: 414
-# File: 64-setup.80.make-bootdisk, line: 216
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:119
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:326
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:415
 msgid "Continue"
 msgstr "Fortfahren"
 
-#
-# File: 32-SeTDOS, line: 122
-# File: 64-SeTDOS, line: 122
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:121
 msgid ""
 "In order to make these partitions visible from Linux, we  need to add them "
 "to your /etc/fstab.  Please pick a partition to  add to /etc/fstab, or "
 "select '---' to continue with the installation  process."
-msgstr ""
-"Um die Partitionen für Linux sichtbar zu machen, müssen wir diese zu /etc/"
-"fstab hinzufügen. Bitte wählen Sie eine Partition, die zu /etc/fstab "
-"hinzugefügt werden soll, oder wählen Sie '---' um den Installationsvorgang "
-"fortzusetzen."
+msgstr "Um die Partitionen für Linux sichtbar zu machen, müssen wir diese zu /etc/fstab hinzufügen. Bitte wählen Sie eine Partition, die zu /etc/fstab hinzugefügt werden soll, oder wählen Sie '---' um den Installationsvorgang fortzusetzen."
 
-#
-# File: 32-SeTDOS, line: 141
-# File: 32-SeTpartitions, line: 200
-# File: 64-SeTDOS, line: 141
-# File: 64-SeTpartitions, line: 200
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:140
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:200
 msgid "IN USE"
 msgstr "WIRD VERWENDET"
 
-#
-# File: 32-SeTDOS, line: 141
-# File: 32-SeTpartitions, line: 193
-# File: 64-SeTDOS, line: 141
-# File: 64-SeTpartitions, line: 193
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:140
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:193
 msgid "on"
 msgstr "an"
 
-#
-# File: 32-SeTDOS, line: 147
-# File: 32-SeTDOS, line: 148
-# File: 32-SeTDOS, line: 149
-# File: 32-SeTDOS, line: 150
-# File: 32-SeTDOS, line: 151
-# File: 64-SeTDOS, line: 147
-# File: 64-SeTDOS, line: 148
-# File: 64-SeTDOS, line: 149
-# File: 64-SeTDOS, line: 150
-# File: 64-SeTDOS, line: 151
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:146
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:147
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:148
@@ -1698,25 +1078,16 @@ msgstr "an"
 msgid "done, continue with setup"
 msgstr "Fertig, setze den Installationsvorgang fort"
 
-#
-# File: 32-SeTDOS, line: 186
-# File: 64-SeTDOS, line: 186
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:185
 #, sh-format
 msgid "Selecting a location to mount $DOS_PART."
 msgstr "Ort zum Einbinden von $DOS_PART auswählen."
 
-#
-# File: 32-SeTDOS, line: 187
-# File: 64-SeTDOS, line: 187
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:186
 #, sh-format
 msgid "PICK MOUNT POINT FOR $DOS_PART"
 msgstr "MOUNTPOINT FÜR $DOS_PART AUSWÄHLEN"
 
-#
-# File: 32-SeTDOS, line: 188
-# File: 64-SeTDOS, line: 188
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:187
 #, sh-format
 msgid ""
@@ -1725,12 +1096,7 @@ msgid ""
 "instance, you might want to  enter /fat-c or /fat-d or something similar.   "
 "NOTE: This partition will not actually be mounted until you reboot.   Where "
 "would you like to mount $DOS_PART?"
-msgstr ""
-"Nun muss diese Partition irgendwo in Ihrem Verzeichnisbaum eingebunden "
-"werden. Geben Sie das Verzeichnis an, in welchem Sie die Partition einbinden "
-"wollen. Zum Beispiel /fat-c, /fat-d oder etwas ähnliches. ACHTUNG: Diese "
-"Partition wird erst beim nächsten Neustart eingebunden. Wo möchten Sie die "
-"$DOS_PART einbinden?"
+msgstr "Nun muss diese Partition irgendwo in Ihrem Verzeichnisbaum eingebunden werden. Geben Sie das Verzeichnis an, in welchem Sie die Partition einbinden wollen. Zum Beispiel /fat-c, /fat-d oder etwas ähnliches. ACHTUNG: Diese Partition wird erst beim nächsten Neustart eingebunden. Wo möchten Sie die $DOS_PART einbinden?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:216
 #: ../initrd-scripts/usr-lib-setup/SeTEFI:73
@@ -1739,199 +1105,123 @@ msgstr ""
 msgid "Adding this information to your /etc/fstab:"
 msgstr ""
 
-#
-# File: 32-SeTDOS, line: 222
-# File: 64-SeTDOS, line: 222
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:219
 msgid "Finished setting up non-Linux partitions."
 msgstr "Einrichten der nicht-Linux-Partitionen abgeschlossen."
 
-#
-# File: 32-SeTDOS, line: 223
-# File: 64-SeTDOS, line: 223
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:220
 msgid "DONE ADDING FAT or NTFS PARTITIONS"
 msgstr "HINZUFÜGEN DER FAT- oder NTFS-PARTITIONEN ABGESCHLOSSEN"
 
-#
-# File: 32-SeTEFI, line: 44
-# File: 64-SeTEFI, line: 44
 #: ../initrd-scripts/usr-lib-setup/SeTEFI:44
 #, sh-format
 msgid "FORMAT EFI PARTITION ${PREFERRED_EFI_PARTITION}?"
 msgstr "FORMATIEREN VON EFI PARTITION ${PREFERRED_EFI_PARTITION}?"
 
-#
-# File: 32-SeTEFI, line: 45
-# File: 64-SeTEFI, line: 45
 #: ../initrd-scripts/usr-lib-setup/SeTEFI:45
 #, sh-format
 msgid ""
 "An EFI System Partition was found on ${PREFERRED_EFI_PARTITION}, but it has "
 "not yet been formatted.  Would you like to format this partition?"
-msgstr ""
-"Eine EFI System Partition wurde auf ${PREFERRED_EFI_PARTITION} gefunden, "
-"aber wurde noch nicht formatiert. Möchten Sie diese Partition formatieren?"
+msgstr "Eine EFI System Partition wurde auf ${PREFERRED_EFI_PARTITION} gefunden, aber wurde noch nicht formatiert. Möchten Sie diese Partition formatieren?"
 
-#
-# File: 32-SeTEFI, line: 53
-# File: 64-SeTEFI, line: 53
 #: ../initrd-scripts/usr-lib-setup/SeTEFI:53
 #, sh-format
 msgid "FORMATTING EFI PARTITION ${PREFERRED_EFI_PARTITION}"
 msgstr "FORMATIERE EFI PARTITION ${PREFERRED_EFI_PARTITION}"
 
-#
-# File: 32-SeTEFI, line: 54
-# File: 64-SeTEFI, line: 54
 #: ../initrd-scripts/usr-lib-setup/SeTEFI:54
 #, sh-format
 msgid "Formatting EFI System Partition ${PREFERRED_EFI_PARTITION} as FAT32."
 msgstr "Formatiere EFI System Partition ${PREFERRED_EFI_PARTITION} als FAT32."
 
-#
-# File: 32-SeTEFI, line: 78
-# File: 64-SeTEFI, line: 78
 #: ../initrd-scripts/usr-lib-setup/SeTEFI:76
 msgid "Finished setting up EFI System Partition."
 msgstr "Einrichtung der EFI System Partition abgeschlossen."
 
-#
-# File: 32-SeTEFI, line: 79
-# File: 64-SeTEFI, line: 79
 #: ../initrd-scripts/usr-lib-setup/SeTEFI:77
 msgid "EFI SYSTEM PARTITION RECOGNIZED"
 msgstr "EFI SYSTEM PARTITION ERKANNT"
 
-#
-# File: 32-SeTconfig, line: 80
-# File: 64-SeTconfig, line: 80
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:67
 msgid "DONE INSTALLING PACKAGES"
 msgstr "PAKETINSTALLATION ABGESCHLOSSEN"
 
-#
-# File: 32-SeTconfig, line: 81
-# File: 64-SeTconfig, line: 81
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:68
 msgid "Preparing to configure your new Linux system..."
 msgstr "Vorbereiten zur Konfiguration des neuen Linuxsystems..."
 
-#
-# File: SeTconfig, line: 73
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:73
 msgid "Boot Loader"
 msgstr ""
 
-#
-# File: SeTconfig, line: 74
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:74
 msgid "Please choose the Boot Loader that you would like to use"
 msgstr ""
 
-#
-# File: 32-liloconfig, line: 826
-# File: 64-liloconfig, line: 826
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:76
-#, fuzzy
 msgid "Install Lilo"
-msgstr "LILO installieren"
+msgstr ""
 
-#
-# File: 32-liloconfig, line: 826
-# File: 64-liloconfig, line: 826
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:77
-#, fuzzy
 msgid "Install Grub"
-msgstr "LILO installieren"
+msgstr ""
 
-#
-# File: 32-eliloconfig, line: 164
-# File: 64-eliloconfig, line: 164
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:78
-#, fuzzy
 msgid "(Do not install boot loader)"
-msgstr "Bootmenü-Eintrag nicht installieren"
+msgstr ""
 
-#
-# File: SeTconfig, line: 216
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:216
 msgid "Numlock configuration"
 msgstr ""
 
-#
-# File: SeTconfig, line: 217
-# File: SeTconfig, line: 230
-# File: SeTconfig, line: 239
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:217
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:230
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:239
 msgid "Enabled"
 msgstr ""
 
-#
-# File: SeTconfig, line: 217
-# File: SeTconfig, line: 230
-# File: SeTconfig, line: 239
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:217
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:230
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:239
 msgid "Disabled"
 msgstr ""
 
-#
-# File: SeTconfig, line: 218
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:218
 msgid "Do you want to have numlock enabled or disabled on boot?"
 msgstr ""
 
-#
-# File: SeTconfig, line: 229
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:229
 msgid "IBus configuration"
 msgstr ""
 
-#
-# File: SeTconfig, line: 232
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:232
 msgid ""
 "IBus is an input platform for Chinese, Japanese, Korean and many other "
 "languages. Do you want to have it enabled or disabled on boot?"
 msgstr ""
 
-#
-# File: SeTconfig, line: 238
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:238
 msgid "SCIM configuration"
 msgstr ""
 
-#
-# File: SeTconfig, line: 241
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:241
 msgid ""
 "SCIM is an input platform for Chinese, Japanese, Korean and many other "
 "languages. Do you want to have it enabled or disabled on boot?"
 msgstr ""
 
-#
-# File: SeTdisk, line: 21
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:21
 msgid "Go"
 msgstr ""
 
-#
-# File: SeTdisk, line: 22
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:22
 msgid "Exit"
 msgstr ""
 
-#
-# File: 32-INShd, line: 53
-# File: 64-INShd, line: 53
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:23
-#, fuzzy
 msgid "PARTITIONS EDITOR"
-msgstr "PARTITIONSLISTE"
+msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:24
 msgid ""
@@ -1943,8 +1233,8 @@ msgstr ""
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:28
 msgid ""
 "NOTE: If you are planning to use BTRFS for your / filesystem, LILO the "
-"default boot loader will not be able to boot it. In that case, you will need "
-"a separate /boot partition with another filesystem."
+"default boot loader will not be able to boot it. In that case, you will need"
+" a separate /boot partition with another filesystem."
 msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:33
@@ -1959,40 +1249,22 @@ msgstr ""
 msgid "1 SWAP partition (1GB minimum recommended)"
 msgstr ""
 
-#
-# File: 32-SeTfull, line: 15
-# File: 64-SeTfull, line: 15
 #: ../initrd-scripts/usr-lib-setup/SeTfull:15
 msgid "ERROR: TARGET PARTITION FULL"
 msgstr "FEHLER: ZIELPARTITION IST VOLL"
 
-#
-# File: 32-SeTfull, line: 15
-# File: 64-SeTfull, line: 15
 #: ../initrd-scripts/usr-lib-setup/SeTfull:15
 msgid ""
 "Setup has detected that one or more of your target partitions has become "
-"full.  I'm sorry, but you will have to try installing again onto a partition "
-"or partitions with more free space.  You could also try selecting fewer "
+"full.  I'm sorry, but you will have to try installing again onto a partition"
+" or partitions with more free space.  You could also try selecting fewer "
 "packages to install.  Since there is no longer any space for setup to make "
 "its temporary files, this is an unrecoverable error.  Press control-alt-"
-"delete to reboot and try again.  Before doing that, you might want to switch "
-"to another console (Alt-F2) and use df (disk free utility) to see if you can "
-"get an idea of how to avoid this the next time around."
-msgstr ""
-"Das Installationsprogramm entdeckte, dass eine oder mehrere Ihrer "
-"Zielpartitionen voll ist. Sie müssen die Installation auf eine oder mehrere "
-"Partitionen mit freiem Speicherplatz erneut versuchen oder Sie können "
-"weniger Pakete zur Installation auswählen. Weil es nicht genügend "
-"Speicherplatz für die temporären Dateien hat, ist dies ein unwiderruflicher "
-"Fehler. Drücken Sie Strg-Alt-Entfernen um das System neu zu starten. Bevor "
-"Sie die Installation neu starten, wechseln Sie zu einer anderen Konsole (Alt-"
-"F2) und prüfen Sie den Speicherplatz mit df (disk free utility), um den "
-"gleichen Fehler das nächste Mal zu vermeiden."
+"delete to reboot and try again.  Before doing that, you might want to switch"
+" to another console (Alt-F2) and use df (disk free utility) to see if you "
+"can get an idea of how to avoid this the next time around."
+msgstr "Das Installationsprogramm entdeckte, dass eine oder mehrere Ihrer Zielpartitionen voll ist. Sie müssen die Installation auf eine oder mehrere Partitionen mit freiem Speicherplatz erneut versuchen oder Sie können weniger Pakete zur Installation auswählen. Weil es nicht genügend Speicherplatz für die temporären Dateien hat, ist dies ein unwiderruflicher Fehler. Drücken Sie Strg-Alt-Entfernen um das System neu zu starten. Bevor Sie die Installation neu starten, wechseln Sie zu einer anderen Konsole (Alt-F2) und prüfen Sie den Speicherplatz mit df (disk free utility), um den gleichen Fehler das nächste Mal zu vermeiden."
 
-#
-# File: 32-SeTkeymap, line: 19
-# File: 64-SeTkeymap, line: 19
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:18
 msgid "KEYBOARD MAP SELECTION"
 msgstr "AUSWAHL DER TASTATURBELEGUNG "
@@ -2005,28 +1277,18 @@ msgid ""
 "keys and PageUp/PageDown to scroll through the whole list of choices."
 msgstr ""
 
-#
-# File: 32-rc.S, line: 232
-# File: 64-rc.S, line: 232
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:198
-#, fuzzy
 msgid "Test keyboard map"
-msgstr "Geben Sie 1 ein, um ein Tastaturlayout zu wählen: "
+msgstr ""
 
-#
-# File: SeTkeymap, line: 199
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:199
 msgid "Accept keymap"
 msgstr ""
 
-#
-# File: SeTkeymap, line: 200
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:200
 msgid "Reject keymap"
 msgstr ""
 
-#
-# File: SeTkeymap, line: 201
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:201
 msgid ""
 "You may now test the new keyboard map by typing some text. You can accept "
@@ -2035,345 +1297,168 @@ msgid ""
 "them during installation!"
 msgstr ""
 
-#
-# File: 32-SeTmedia, line: 8
-# File: 32-SeTpxemedia, line: 32
-# File: 64-SeTmedia, line: 8
-# File: 64-SeTpxemedia, line: 32
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:11
-#, fuzzy
 msgid "Select Salix installation source."
-msgstr "Quelle für die Salix-Installation auswählen."
+msgstr ""
 
-#
-# File: 32-SeTmedia, line: 9
-# File: 32-SeTpxemedia, line: 33
-# File: 64-SeTmedia, line: 9
-# File: 64-SeTpxemedia, line: 33
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:12
 msgid "SOURCE MEDIA SELECTION"
 msgstr "AUSWAHL DES QUELLMEDIUMS"
 
-#
-# File: 32-SeTmedia, line: 10
-# File: 64-SeTmedia, line: 10
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:14
-#, fuzzy
 msgid "Please select the media from which to install Salix Linux:"
 msgstr ""
-"Bitte wählen Sie das Medium, von welchem Salix installiert werden soll:"
 
-#
-# File: 32-SeTmedia, line: 13
-# File: 64-SeTmedia, line: 13
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:16
-#, fuzzy
 msgid "Install from a Salix USB stick"
-msgstr "Installieren von einem Salix USB-Stick"
+msgstr ""
 
-#
-# File: 32-SeTmedia, line: 12
-# File: 64-SeTmedia, line: 12
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:17
-#, fuzzy
 msgid "Install from a Salix CD or DVD"
-msgstr "Von einer Salix-CD oder -DVD installieren"
+msgstr ""
 
-#
-# File: 32-SeTmedia, line: 14
-# File: 64-SeTmedia, line: 14
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:18
 msgid "Install from a hard drive partition"
 msgstr "Von einer Festplattenpartition installieren"
 
-#
-# File: 32-SeTmedia, line: 18
-# File: 64-SeTmedia, line: 18
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:19
 msgid "Install from a pre-mounted directory"
 msgstr "Aus einem eingebundenen Verzeichnis installieren"
 
-#
-# File: 32-SeTmedia, line: 16
-# File: 64-SeTmedia, line: 16
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:20
 msgid "Install from FTP/HTTP server"
 msgstr "Von einem FTP/HTTP-Server installieren"
 
-#
-# File: 32-SeTmedia, line: 15
-# File: 64-SeTmedia, line: 15
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:21
 msgid "Install from NFS (Network File System)"
 msgstr "Aus einer NFS (Network File System) Freigabe installieren"
 
-#
-# File: 32-SeTmedia, line: 17
-# File: 64-SeTmedia, line: 17
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:22
-#, fuzzy
 msgid "Install from a Samba share"
-msgstr "Aus einer Samba-Freigabe installieren"
+msgstr ""
 
-#
-# File: 32-SeTnet, line: 103
-# File: 64-SeTnet, line: 103
 #: ../initrd-scripts/usr-lib-setup/SeTnet:103
 msgid ""
 "\n"
 "You will now get a chance to probe your network interfaces.\n"
-msgstr ""
-"\n"
-"Sie erhalten nun eine Möglichkeit, nach Ihren Netzwerkschnittstellen zu "
-"suchen.\n"
+msgstr "\nSie erhalten nun eine Möglichkeit, nach Ihren Netzwerkschnittstellen zu suchen.\n"
 
-#
-# File: 32-SeTnet, line: 106
-# File: 32-SeTnet, line: 119
-# File: 64-SeTnet, line: 106
-# File: 64-SeTnet, line: 119
 #: ../initrd-scripts/usr-lib-setup/SeTnet:106
 #: ../initrd-scripts/usr-lib-setup/SeTnet:119
 msgid "PROBING NETWORK DEVICES"
 msgstr "PRÜFUNG VON NETZWERKGERÄTEN"
 
-#
-# File: 32-SeTnet, line: 113
-# File: 64-SeTnet, line: 113
 #: ../initrd-scripts/usr-lib-setup/SeTnet:113
 msgid ""
 "\n"
-"Are you OK with the network interface which was detected? If not, select "
-"'No' to get back to the network probe program. You can try to load another "
-"driver explicitly, by using 'P <driver_name>'.\n"
+"Are you OK with the network interface which was detected? If not, select 'No' to get back to the network probe program. You can try to load another driver explicitly, by using 'P <driver_name>'.\n"
 "\n"
 "If you are satisfied, select 'Yes' to continue with network configuration."
-msgstr ""
-"\n"
-"Stimmen Sie der gefundenen Netzwerkschnittstelle zu? Falls nicht, wählen Sie "
-"'Nein' um zurück ins Netzwerkerkennungsprogramm zu gelangen. Sie können "
-"versuchen, einen anderen Treiber explizit zu laden. Dies geschieht über 'P "
-"<Treiber_Name>'.\n"
-"\n"
-"Wenn Sie zufrieden sind, wählen Sie 'Ja' um mit der Netzwerkkonfiguration "
-"weiter zu machen."
+msgstr "\nStimmen Sie der gefundenen Netzwerkschnittstelle zu? Falls nicht, wählen Sie 'Nein' um zurück ins Netzwerkerkennungsprogramm zu gelangen. Sie können versuchen, einen anderen Treiber explizit zu laden. Dies geschieht über 'P <Treiber_Name>'.\n\nWenn Sie zufrieden sind, wählen Sie 'Ja' um mit der Netzwerkkonfiguration weiter zu machen."
 
-#
-# File: 32-SeTnet, line: 135
-# File: 32-SeTnet, line: 291
-# File: 64-SeTnet, line: 135
-# File: 64-SeTnet, line: 291
 #: ../initrd-scripts/usr-lib-setup/SeTnet:135
 #: ../initrd-scripts/usr-lib-setup/SeTnet:291
 msgid "INITIALIZING NETWORK"
 msgstr "INITIALISIERE DAS NETZWERK"
 
-#
-# File: 32-SeTnet, line: 136
-# File: 64-SeTnet, line: 136
 #: ../initrd-scripts/usr-lib-setup/SeTnet:136
 msgid ""
 "\n"
 "Waiting a few seconds for DHCP polling to settle ..."
-msgstr ""
-"\n"
-"Warte ein paar Sekunden, bis die DHCP-Abfrage erledigt ist ..."
+msgstr "\nWarte ein paar Sekunden, bis die DHCP-Abfrage erledigt ist ..."
 
-#
-# File: 32-SeTnet, line: 159
-# File: 64-SeTnet, line: 159
 #: ../initrd-scripts/usr-lib-setup/SeTnet:159
 msgid ""
-"You're running off the hard drive filesystem. Is this machine currently "
-"running on the network you plan to install from? If so, we won't try to "
-"reconfigure your ethernet card.\n"
+"You're running off the hard drive filesystem. Is this machine currently running on the network you plan to install from? If so, we won't try to reconfigure your ethernet card.\n"
 "\n"
 "Are you up-and-running on the network?"
-msgstr ""
-"Sie arbeiten vom Festplattendateisystem aus. Läuft dieser Rechner aktuell in "
-"dem Netzwerk, aus dem Sie installieren wollen? Ist dies der Fall, werden wir "
-"nicht versuchen, Ihre Netzwerkeinstellungen zu ändern.\n"
-"\n"
-"Läuft das Netzwerk einwandfrei?"
+msgstr "Sie arbeiten vom Festplattendateisystem aus. Läuft dieser Rechner aktuell in dem Netzwerk, aus dem Sie installieren wollen? Ist dies der Fall, werden wir nicht versuchen, Ihre Netzwerkeinstellungen zu ändern.\n\nLäuft das Netzwerk einwandfrei?"
 
-#
-# File: 32-SeTnet, line: 164
-# File: 32-SeTnet, line: 284
-# File: 64-SeTnet, line: 164
-# File: 64-SeTnet, line: 284
 #: ../initrd-scripts/usr-lib-setup/SeTnet:164
 #: ../initrd-scripts/usr-lib-setup/SeTnet:284
 msgid "NETWORK CONFIGURATION"
 msgstr "NETZWERKKONFIGURATION"
 
-#
-# File: 32-SeTnet, line: 173
-# File: 64-SeTnet, line: 173
 #: ../initrd-scripts/usr-lib-setup/SeTnet:173
 #, sh-format
 msgid ""
 "\n"
-"I can configure your network interface $ENET_DEVICE fully automatically "
-"using DHCP. If you want this, please select 'yes'.\n"
+"I can configure your network interface $ENET_DEVICE fully automatically using DHCP. If you want this, please select 'yes'.\n"
 "\n"
-"If you select 'no' instead, then you will be able to assign the IP address, "
-"netmask and gateway manually.\n"
-msgstr ""
-"\n"
-"Ich kann Ihre Netzwerkschnittstelle $ENET_DEVICE vollautomatisch mit DHCP "
-"konfigurieren. Wenn Sie dies wünschen, wählen Sie bitte 'Ja'.\n"
-"\n"
-"Wenn Sie hingegen 'Nein' wählen, werden Sie IP-Adresse, Netzmaske und "
-"Gateway manuell eintragen können.\n"
+"If you select 'no' instead, then you will be able to assign the IP address, netmask and gateway manually.\n"
+msgstr "\nIch kann Ihre Netzwerkschnittstelle $ENET_DEVICE vollautomatisch mit DHCP konfigurieren. Wenn Sie dies wünschen, wählen Sie bitte 'Ja'.\n\nWenn Sie hingegen 'Nein' wählen, werden Sie IP-Adresse, Netzmaske und Gateway manuell eintragen können.\n"
 
-#
-# File: 32-SeTnet, line: 180
-# File: 64-SeTnet, line: 180
 #: ../initrd-scripts/usr-lib-setup/SeTnet:180
 msgid "DHCP CONFIGURATION"
 msgstr "DHCP KONFIGURIEREN"
 
-#
-# File: 32-SeTnet, line: 205
-# File: 64-SeTnet, line: 205
 #: ../initrd-scripts/usr-lib-setup/SeTnet:205
 msgid ""
 "\n"
-"You will need to enter the IP address you wish to assign to this machine. "
-"Example: 111.112.113.114\n"
+"You will need to enter the IP address you wish to assign to this machine. Example: 111.112.113.114\n"
 "\n"
 "What is your IP address?"
-msgstr ""
-"\n"
-"Sie werden die IP Adresse, die Sie dem Computer zuweisen möchten, eingeben "
-"müssen. Beispiel: 111.112.113.114\n"
-"\n"
-"Wie lautet Ihre IP Adresse?"
+msgstr "\nSie werden die IP Adresse, die Sie dem Computer zuweisen möchten, eingeben müssen. Beispiel: 111.112.113.114\n\nWie lautet Ihre IP Adresse?"
 
-#
-# File: 32-SeTnet, line: 213
-# File: 64-SeTnet, line: 213
 #: ../initrd-scripts/usr-lib-setup/SeTnet:213
 msgid "ASSIGN IP ADDRESS"
 msgstr "IP-ADRESSE ZUWEISEN"
 
-#
-# File: 32-SeTnet, line: 222
-# File: 64-SeTnet, line: 222
 #: ../initrd-scripts/usr-lib-setup/SeTnet:222
 msgid ""
 "\n"
-"Now we need to know your netmask. Typically this will be 255.255.255.0 but "
-"this can be different depending on your local setup.\n"
+"Now we need to know your netmask. Typically this will be 255.255.255.0 but this can be different depending on your local setup.\n"
 "\n"
 "What is your netmask?"
-msgstr ""
-"\n"
-"Nun benötigen wir die Netzwerkmaske (normalerweise 255.255.255.0). Je nach "
-"Konfiguration Ihres lokalen Netzwerks kann diese abweichend sein.\n"
-"\n"
-"Wie lautet Ihre Netzwerkmaske?"
+msgstr "\nNun benötigen wir die Netzwerkmaske (normalerweise 255.255.255.0). Je nach Konfiguration Ihres lokalen Netzwerks kann diese abweichend sein.\n\nWie lautet Ihre Netzwerkmaske?"
 
-#
-# File: 32-SeTnet, line: 231
-# File: 64-SeTnet, line: 231
 #: ../initrd-scripts/usr-lib-setup/SeTnet:231
 msgid "ASSIGN NETMASK"
 msgstr "NETZWERKMASKE ZUWEISEN"
 
-#
-# File: 32-SeTnet, line: 240
-# File: 64-SeTnet, line: 240
 #: ../initrd-scripts/usr-lib-setup/SeTnet:240
 msgid "Do you have a gateway?"
 msgstr "Haben Sie einen Gateway?"
 
-#
-# File: 32-SeTnet, line: 251
-# File: 64-SeTnet, line: 251
 #: ../initrd-scripts/usr-lib-setup/SeTnet:251
 msgid "ASSIGN GATEWAY ADDRESS"
 msgstr "GATEWAY-ADRESSE ZUWEISEN"
 
-#
-# File: 32-SeTnet, line: 252
-# File: 64-SeTnet, line: 252
 #: ../initrd-scripts/usr-lib-setup/SeTnet:252
 msgid ""
 "\n"
 "What is the IP address for your gateway?"
-msgstr ""
-"\n"
-"Wie lautet die IP-Adresse Ihres Gateways?"
+msgstr "\nWie lautet die IP-Adresse Ihres Gateways?"
 
-#
-# File: 32-SeTnet, line: 272
-# File: 64-SeTnet, line: 272
 #: ../initrd-scripts/usr-lib-setup/SeTnet:272
 #, sh-format
 msgid ""
 "\n"
-"This is the proposed network configuration for $ENET_DEVICE - If this is OK, "
-"then select 'Yes'.\n"
+"This is the proposed network configuration for $ENET_DEVICE - If this is OK, then select 'Yes'.\n"
 "If this is not OK and you want to configure again, select 'No'.\n"
 "\n"
 "* IP Address: $LOCAL_IPADDR\n"
 "* Netmask:    $LOCAL_NETMASK"
-msgstr ""
-"\n"
-"Dies ist die vorgeschlagene Konfiguration für $ENET_DEVICE - falls diese "
-"korrekt ist, drücken Sie 'Ja'.\n"
-"Falls nicht, drücken Sie 'Nein' um die Konfiguration erneut vorzunehmen.\n"
-"\n"
-"* IP-Adresse: $LOCAL_IPADDR\n"
-"* Netzwerkmaske: $LOCAL_NETMASK"
+msgstr "\nDies ist die vorgeschlagene Konfiguration für $ENET_DEVICE - falls diese korrekt ist, drücken Sie 'Ja'.\nFalls nicht, drücken Sie 'Nein' um die Konfiguration erneut vorzunehmen.\n\n* IP-Adresse: $LOCAL_IPADDR\n* Netzwerkmaske: $LOCAL_NETMASK"
 
-#
-# File: 32-SeTnet, line: 292
-# File: 64-SeTnet, line: 292
 #: ../initrd-scripts/usr-lib-setup/SeTnet:292
 #, sh-format
 msgid ""
 "\n"
 "Configuring your network interface $ENET_DEVICE ..."
-msgstr ""
-"\n"
-"Konfiguriere die Netzwerkschnittstelle $ENET_DEVICE ..."
+msgstr "\nKonfiguriere die Netzwerkschnittstelle $ENET_DEVICE ..."
 
-#
-# File: 32-SeTnet, line: 329
-# File: 64-SeTnet, line: 329
 #: ../initrd-scripts/usr-lib-setup/SeTnet:329
 msgid "FETCHING CONFIGURATION"
 msgstr "KONFIGURATION ABRUFEN"
 
-#
-# File: 32-SeTnet, line: 330
-# File: 64-SeTnet, line: 330
 #: ../initrd-scripts/usr-lib-setup/SeTnet:330
 #, sh-format
 msgid ""
 "\n"
 "Attempting to fetch a remote configuration file using $PROTO ..."
-msgstr ""
-"\n"
-"Versuche eine Remotekonfigurationsdatei mit $PROTO herunterzuladen..."
+msgstr "\nVersuche eine Remotekonfigurationsdatei mit $PROTO herunterzuladen..."
 
-#
-# File: 32-SeTpartitions, line: 27
-# File: 32-SeTpartitions, line: 48
-# File: 32-SeTpartitions, line: 73
-# File: 32-SeTpartitions, line: 98
-# File: 32-SeTpartitions, line: 123
-# File: 32-SeTpartitions, line: 146
-# File: 32-SeTpartitions, line: 165
-# File: 64-SeTpartitions, line: 27
-# File: 64-SeTpartitions, line: 48
-# File: 64-SeTpartitions, line: 73
-# File: 64-SeTpartitions, line: 98
-# File: 64-SeTpartitions, line: 123
-# File: 64-SeTpartitions, line: 146
-# File: 64-SeTpartitions, line: 165
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:27
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:48
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:73
@@ -2385,171 +1470,97 @@ msgstr ""
 msgid "FORMATTING"
 msgstr "FORMATIERE"
 
-#
-# File: 32-SeTpartitions, line: 28
-# File: 64-SeTpartitions, line: 28
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:28
 #, sh-format
 msgid "Formatting $ArG1 with filesystem btrfs."
 msgstr "Formatiere $ArG1 mit dem Dateisystem btrfs."
 
-#
-# File: 32-SeTpartitions, line: 29
-# File: 64-SeTpartitions, line: 29
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:29
 #, sh-format
 msgid ""
 "Formatting $ArG1\n"
 "Size in 1K blocks: $SIZE \n"
 "Filesystem type: btrfs"
-msgstr ""
-"Formatiere $ArG1\n"
-"Größe in 1K-Blöcken: $SIZE \n"
-"Dateisystem-Typ: btrfs"
+msgstr "Formatiere $ArG1\nGröße in 1K-Blöcken: $SIZE \nDateisystem-Typ: btrfs"
 
-#
-# File: 32-SeTpartitions, line: 49
-# File: 64-SeTpartitions, line: 49
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:49
 #, sh-format
 msgid "Formatting $ArG1 with filesystem ext2."
 msgstr "Formatiere $ArG1 mit dem Dateisystem ext2."
 
-#
-# File: 32-SeTpartitions, line: 50
-# File: 64-SeTpartitions, line: 50
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:50
 #, sh-format
 msgid ""
 "Formatting $ArG1\n"
 "Size in 1K blocks: $SIZE\n"
 "Filesystem type: ext2"
-msgstr ""
-"Formatiere $ArG1\n"
-"Größe in 1K-Blöcken: $SIZE\n"
-"Dateisystem-Typ: ext2"
+msgstr "Formatiere $ArG1\nGröße in 1K-Blöcken: $SIZE\nDateisystem-Typ: ext2"
 
-#
-# File: 32-SeTpartitions, line: 74
-# File: 64-SeTpartitions, line: 74
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:74
 #, sh-format
 msgid "Formatting $ArG1 with filesystem ext3."
 msgstr "Formatiere $ArG1 mit dem Dateisystem ext3."
 
-#
-# File: 32-SeTpartitions, line: 75
-# File: 64-SeTpartitions, line: 75
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:75
 #, sh-format
 msgid ""
 "Formatting $ArG1\n"
 "Size in 1K blocks: $SIZE\n"
 "Filesystem type: ext3"
-msgstr ""
-"Formatiere $ArG1\n"
-"Größe in 1K-Blöcken: $SIZE\n"
-"Dateisystem-Typ: ext3"
+msgstr "Formatiere $ArG1\nGröße in 1K-Blöcken: $SIZE\nDateisystem-Typ: ext3"
 
-#
-# File: 32-SeTpartitions, line: 99
-# File: 64-SeTpartitions, line: 99
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:99
 #, sh-format
 msgid "Formatting $ArG1 with filesystem ext4."
 msgstr "Formatiere $ArG1 mit dem Dateisystem ext4."
 
-#
-# File: 32-SeTpartitions, line: 100
-# File: 64-SeTpartitions, line: 100
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:100
 #, sh-format
 msgid ""
 "Formatting $ArG1\n"
 "Size in 1K blocks: $SIZE\n"
 "Filesystem type: ext4"
-msgstr ""
-"Formatiere $ArG1\n"
-"Größe in 1K-Blöcken: $SIZE\n"
-"Dateisystem-Typ: ext4"
+msgstr "Formatiere $ArG1\nGröße in 1K-Blöcken: $SIZE\nDateisystem-Typ: ext4"
 
-#
-# File: 32-SeTpartitions, line: 124
-# File: 64-SeTpartitions, line: 124
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:124
 #, sh-format
 msgid "Formatting $ArG1 with filesystem jfs."
 msgstr "Formatiere $ArG1 mit dem Dateisystem jfs."
 
-#
-# File: 32-SeTpartitions, line: 125
-# File: 64-SeTpartitions, line: 125
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:125
 #, sh-format
 msgid ""
 "Formatting $ArG1\n"
 "Size in 1K blocks: $SIZE\n"
 "Filesystem type: jfs"
-msgstr ""
-"Formatiere $ArG1\n"
-"Größe in 1K-Blöcken: $SIZE\n"
-"Dateisystem-Typ: jfs"
+msgstr "Formatiere $ArG1\nGröße in 1K-Blöcken: $SIZE\nDateisystem-Typ: jfs"
 
-#
-# File: 32-SeTpartitions, line: 147
-# File: 64-SeTpartitions, line: 147
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:147
 #, sh-format
 msgid "Formatting $ArG1 with filesystem reiserfs."
 msgstr "Formatiere $ArG1 mit dem Dateisystem reiserfs."
 
-#
-# File: 32-SeTpartitions, line: 148
-# File: 64-SeTpartitions, line: 148
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:148
 #, sh-format
 msgid ""
 "Formatting $ArG1\n"
 "Size in 1K blocks: $SIZE\n"
 "Filesystem type: reiserfs"
-msgstr ""
-"Formatiere $ArG1\n"
-"Größe in 1K-Blöcken: $SIZE\n"
-"Dateisystem-Typ: reiserfs"
+msgstr "Formatiere $ArG1\nGröße in 1K-Blöcken: $SIZE\nDateisystem-Typ: reiserfs"
 
-#
-# File: 32-SeTpartitions, line: 166
-# File: 64-SeTpartitions, line: 166
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:166
 #, sh-format
 msgid "Formatting $ArG1 with filesystem xfs."
 msgstr "Formatiere $ArG1 mit dem Dateisystem xfs."
 
-#
-# File: 32-SeTpartitions, line: 167
-# File: 64-SeTpartitions, line: 167
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:167
 #, sh-format
 msgid ""
 "Formatting $ArG1\n"
 "Size in 1K blocks: $SIZE\n"
 "Filesystem type: xfs"
-msgstr ""
-"Formatiere $ArG1\n"
-"Größe in 1K-Blöcken: $SIZE\n"
-"Dateisystem-Typ: xfs"
+msgstr "Formatiere $ArG1\nGröße in 1K-Blöcken: $SIZE\nDateisystem-Typ: xfs"
 
-#
-# File: 32-SeTpartitions, line: 203
-# File: 32-SeTpartitions, line: 204
-# File: 32-SeTpartitions, line: 205
-# File: 32-SeTpartitions, line: 206
-# File: 32-SeTpartitions, line: 207
-# File: 64-SeTpartitions, line: 203
-# File: 64-SeTpartitions, line: 204
-# File: 64-SeTpartitions, line: 205
-# File: 64-SeTpartitions, line: 206
-# File: 64-SeTpartitions, line: 207
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:203
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:204
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:205
@@ -2558,231 +1569,132 @@ msgstr ""
 msgid "done adding partitions, continue with setup"
 msgstr "Keine Partition mehr hinzufügen. Setup fortsetzen..."
 
-#
-# File: 32-SeTpartitions, line: 214
-# File: 64-SeTpartitions, line: 214
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:214
 #, sh-format
 msgid "Do you want to format Linux partition ${ArG1}?"
 msgstr "Wollen Sie die Linux-Partition ${ArG1} formatieren?"
 
-#
-# File: 32-SeTpartitions, line: 215
-# File: 64-SeTpartitions, line: 215
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:215
 #, sh-format
 msgid "FORMAT PARTITION $ArG1"
 msgstr "PARTITION $ArG1 FORMATIEREN"
 
-#
-# File: 32-SeTpartitions, line: 215
-# File: 64-SeTpartitions, line: 215
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:215
 #, sh-format
 msgid ""
 "If this partition has not been formatted, you should format it.  NOTE: This "
 "will erase all data on it.  Would you like to format this partition?"
-msgstr ""
-"Falls diese Partition noch nicht formatiert wurde, sollten Sie dies nun tun. "
-"ACHTUNG: Alle Daten werden gelöscht. Wollen Sie diese Partition formatieren?"
+msgstr "Falls diese Partition noch nicht formatiert wurde, sollten Sie dies nun tun. ACHTUNG: Alle Daten werden gelöscht. Wollen Sie diese Partition formatieren?"
 
-#
-# File: 32-SeTpartitions, line: 219
-# File: 64-SeTpartitions, line: 219
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:219
 msgid "Quick format with no bad block checking"
 msgstr "Schnellformatierung ohne Überprüfung auf fehlerhafte Blöcke"
 
-#
-# File: 32-SeTpartitions, line: 220
-# File: 64-SeTpartitions, line: 220
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:220
 msgid "Slow format that checks for bad blocks"
 msgstr "Langsame Formatierung, die auf fehlerhafte Blöcke überprüft"
 
-#
-# File: 32-SeTpartitions, line: 221
-# File: 64-SeTpartitions, line: 221
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:221
 msgid "No, do not format this partition"
 msgstr "Nein, diese Partition nicht formatieren"
 
-#
-# File: 32-SeTpartitions, line: 234
-# File: 64-SeTpartitions, line: 234
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:234
 msgid "Ext2 is the traditional Linux file system and is fast and stable."
-msgstr ""
-"Ext2 ist das traditionelle Linux-Dateisystem und es ist schnell und stabil."
+msgstr "Ext2 ist das traditionelle Linux-Dateisystem und es ist schnell und stabil."
 
-#
-# File: 32-SeTpartitions, line: 237
-# File: 64-SeTpartitions, line: 237
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:237
 msgid "Ext3 is the journaling version of the Ext2 filesystem."
 msgstr "Ext3 ist die Journaling-Version des Ext2 Dateisystems."
 
-#
-# File: 32-SeTpartitions, line: 241
-# File: 64-SeTpartitions, line: 241
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:241
 msgid "Ext4 is the successor to the ext3 filesystem. "
 msgstr "Ext4 ist der Nachfolger des Ext3 Dateisystems."
 
-#
-# File: 32-SeTpartitions, line: 245
-# File: 64-SeTpartitions, line: 245
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:245
 msgid ""
-"ReiserFS is a journaling filesystem that stores all files and filenames in a "
-"balanced tree structure."
-msgstr ""
-"ReiserFS ist ein Journaling-Dateisystem, dass alle Dateien und Dateinamen in "
-"einer ausgeglichenen Baumstruktur speichert."
+"ReiserFS is a journaling filesystem that stores all files and filenames in a"
+" balanced tree structure."
+msgstr "ReiserFS ist ein Journaling-Dateisystem, dass alle Dateien und Dateinamen in einer ausgeglichenen Baumstruktur speichert."
 
-#
-# File: 32-SeTpartitions, line: 248
-# File: 64-SeTpartitions, line: 248
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:248
 msgid "Btrfs is a B-tree copy-on-write filesystem."
 msgstr "Btrfs ist ein B-tree Copy-On-Write-Dateisystem."
 
-#
-# File: 32-SeTpartitions, line: 253
-# File: 64-SeTpartitions, line: 253
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:253
 msgid ""
 "JFS is IBM's Journaled Filesystem, currently used in IBM enterprise servers."
-msgstr ""
-"JFS ist das Journaling-Dateisystem von IBM, dass zur Zeit in IBM-Enterprise-"
-"Servern verwendet wird."
+msgstr "JFS ist das Journaling-Dateisystem von IBM, dass zur Zeit in IBM-Enterprise-Servern verwendet wird."
 
-#
-# File: 32-SeTpartitions, line: 256
-# File: 64-SeTpartitions, line: 256
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:256
 msgid "XFS is SGI's journaling filesystem that originated on IRIX."
-msgstr ""
-"XFS ist das Journaling-Dateisystem von SGI, dass seinen Ursprung in IRIX hat."
+msgstr "XFS ist das Journaling-Dateisystem von SGI, dass seinen Ursprung in IRIX hat."
 
-#
-# File: 32-SeTpartitions, line: 259
-# File: 64-SeTpartitions, line: 259
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:260
 #, sh-format
 msgid "SELECT FILESYSTEM FOR $ArG1 "
 msgstr "DATEISYSTEM FÜR $ArG1 WÄHLEN"
 
-#
-# File: 32-SeTpartitions, line: 261
-# File: 64-SeTpartitions, line: 261
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:262
 #, sh-format
 msgid "Partition $ArG1 will be formatted."
 msgstr "Die Partition $ArG1 wird formatiert."
 
-#
-# File: 32-SeTpartitions, line: 265
-# File: 64-SeTpartitions, line: 265
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:266
 msgid ""
 "Please select the type of filesystem to use for the specified device.  Here "
 "are descriptions of the available filesystems:"
-msgstr ""
-"Bitte wählen Sie den Dateisystemtyp für das angegebene Gerät. Nachfolgend "
-"eine Beschreibung zu den verfügbaren Dateisystemen:"
+msgstr "Bitte wählen Sie den Dateisystemtyp für das angegebene Gerät. Nachfolgend eine Beschreibung zu den verfügbaren Dateisystemen:"
 
-#
-# File: 32-SeTpartitions, line: 270
-# File: 64-SeTpartitions, line: 270
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:271
 msgid "Standard Linux Ext2 Filesystem"
 msgstr "Standard-Linux-Dateisystem Ext2"
 
-#
-# File: 32-SeTpartitions, line: 273
-# File: 64-SeTpartitions, line: 273
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:274
 msgid "Ext3 Journaling Filesystem"
 msgstr "Ext3 Journaling-Dateisystem"
 
-#
-# File: 32-SeTpartitions, line: 276
-# File: 64-SeTpartitions, line: 276
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:277
 msgid "Ext4 Journaling Filesystem"
 msgstr "Ext4 Journaling-Dateisystem"
 
-#
-# File: 32-SeTpartitions, line: 279
-# File: 64-SeTpartitions, line: 279
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:280
 msgid "IBM's Journaled Filesystem"
 msgstr "IBMs Journaling-Dateisystem"
 
-#
-# File: 32-SeTpartitions, line: 282
-# File: 64-SeTpartitions, line: 282
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:283
 msgid "ReiserFS Journaling Filesystem"
 msgstr "ReiserFS Journaling-Dateisystem"
 
-#
-# File: 32-SeTpartitions, line: 285
-# File: 64-SeTpartitions, line: 285
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:286
 msgid "Btrfs Copy-on-Write B-tree Filesystem"
 msgstr "Btrfs B-tree Copy-On-Write-Dateisystem"
 
-#
-# File: 32-SeTpartitions, line: 288
-# File: 64-SeTpartitions, line: 288
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:289
 msgid "SGI's Journaling Filesystem"
 msgstr "SGIs Journaling-Dateisystem"
 
-#
-# File: 32-SeTpartitions, line: 319
-# File: 64-SeTpartitions, line: 319
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:320
 msgid "Setting up root Linux partition."
 msgstr "Hauptpartition für Linux einrichten."
 
-#
-# File: 32-SeTpartitions, line: 321
-# File: 64-SeTpartitions, line: 321
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:322
 msgid "Select Linux installation partition:"
 msgstr "Installationspartition für Linux auswählen:"
 
-#
-# File: 32-SeTpartitions, line: 327
-# File: 64-SeTpartitions, line: 327
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:328
 msgid ""
 "Please select a partition from the following list to use for your root (/) "
 "Linux partition."
-msgstr ""
-"Bitte wählen Sie eine Partition aus der folgenden Liste, die Sie als "
-"Hauptpartition (/) verwenden wollen."
+msgstr "Bitte wählen Sie eine Partition aus der folgenden Liste, die Sie als Hauptpartition (/) verwenden wollen."
 
-#
-# File: 32-SeTpartitions, line: 408
-# File: 64-SeTpartitions, line: 408
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:409
 msgid "Setting up other Linux partitions."
 msgstr "Andere Linux-Partitionen einrichten."
 
-#
-# File: 32-SeTpartitions, line: 410
-# File: 64-SeTpartitions, line: 410
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:411
 msgid "Select other Linux partitions for /etc/fstab"
 msgstr "Andere Partitionen für /etc/fstab auswählen"
 
-#
-# File: 32-SeTpartitions, line: 416
-# File: 64-SeTpartitions, line: 416
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:417
 #, sh-format
 msgid ""
@@ -2795,125 +1707,66 @@ msgid ""
 "mount partitions.  Also, do not reuse a partition that you've already "
 "entered before.  Please select one of the Linux partitions listed below, or "
 "if you're done, hit <Continue>."
-msgstr ""
-"Sie scheinen mehr als eine Partition des Typs Linux deklariert zu haben. Sie "
-"können diese nutzen, um Ihr Linuxsystem über mehr als eine Partition zu "
-"verteilen.  Aktuell haben Sie $ROOT_DEVICE als Ihre / Partition eingehängt. "
-"Sie möchten eventuell Verzeichnisse wie /home oder /usr/local auf separaten "
-"Partitionen einhängen. Sie sollten nicht versuchen, /etc, /sbin oder /bin "
-"auf eigene Partitionen einzuhängen, da diese Werkzeuge beinhalten, die das "
-"System zum Betrieb benötigt und um Partitionen einzuhängen. Weiterhin "
-"verwenden Sie bitte keine Partition, die Sie bereits eingegeben haben. Bitte "
-"wählen Sie eine der unten genannten Linuxpartitionen oder, wenn Sie fertig "
-"sind, <Fortfahren>."
+msgstr "Sie scheinen mehr als eine Partition des Typs Linux deklariert zu haben. Sie können diese nutzen, um Ihr Linuxsystem über mehr als eine Partition zu verteilen.  Aktuell haben Sie $ROOT_DEVICE als Ihre / Partition eingehängt. Sie möchten eventuell Verzeichnisse wie /home oder /usr/local auf separaten Partitionen einhängen. Sie sollten nicht versuchen, /etc, /sbin oder /bin auf eigene Partitionen einzuhängen, da diese Werkzeuge beinhalten, die das System zum Betrieb benötigt und um Partitionen einzuhängen. Weiterhin verwenden Sie bitte keine Partition, die Sie bereits eingegeben haben. Bitte wählen Sie eine der unten genannten Linuxpartitionen oder, wenn Sie fertig sind, <Fortfahren>."
 
-#
-# File: 32-SeTpartitions, line: 451
-# File: 64-SeTpartitions, line: 451
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:452
 #, sh-format
 msgid "Partition $NEXT_PARTITION will not be reformatted."
 msgstr "Partition $NEXT_PARTITION wird nicht formatiert."
 
-#
-# File: 32-SeTpartitions, line: 456
-# File: 64-SeTpartitions, line: 456
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:457
 #, sh-format
 msgid "Partition $NEXT_PARTITION will be formatted with $NEXT_SYS_TYPE."
 msgstr "Partition $NEXT_PARTITION wird mit $NEXT_SYS_TYPE formatiert."
 
-#
-# File: 32-SeTpartitions, line: 493
-# File: 64-SeTpartitions, line: 493
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:494
 #, sh-format
 msgid "SELECT MOUNT POINT FOR $NEXT_PARTITION"
 msgstr "MOUNTPOINT FÜR $NEXT_PARTITION WÄHLEN"
 
-#
-# File: 32-SeTpartitions, line: 494
-# File: 64-SeTpartitions, line: 494
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:495
 #, sh-format
 msgid ""
-"OK, now you need to specify where you want the new partition mounted.  For "
-"example, if you want to put it under /usr/local, then respond:  /usr/local\n"
+"OK, now you need to specify where you want the new partition mounted.  For example, if you want to put it under /usr/local, then respond:  /usr/local\n"
 "Where would you like to mount $NEXT_PARTITION?"
-msgstr ""
-"OK, nun müssen Sie angeben, wo die Linuxpartition eingebunden werden soll. "
-"Falls Sie die Partition unter /usr/local einbinden möchten, antworten Sie "
-"mit: /usr/local\n"
-"Wo möchten Sie $NEXT_PARTITION einbinden?"
+msgstr "OK, nun müssen Sie angeben, wo die Linuxpartition eingebunden werden soll. Falls Sie die Partition unter /usr/local einbinden möchten, antworten Sie mit: /usr/local\nWo möchten Sie $NEXT_PARTITION einbinden?"
 
-#
-# File: 32-SeTpartitions, line: 538
-# File: 64-SeTpartitions, line: 538
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:537
 msgid "Finished setting up Linux partitions."
 msgstr "Das Einrichten der Linux-Partitionen ist abgeschlossen."
 
-#
-# File: 32-SeTpartitions, line: 539
-# File: 64-SeTpartitions, line: 539
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:538
 msgid "DONE ADDING LINUX PARTITIONS TO /etc/fstab"
 msgstr "HINZUFÜGEN VON LINUX-PARTITIONEN ZU /etc/fstab ABGESCHLOSSEN"
 
-#
-# File: 32-SeTswap, line: 26
-# File: 64-SeTswap, line: 26
 #: ../initrd-scripts/usr-lib-setup/SeTswap:26
 msgid "NO SWAP SPACE DETECTED"
 msgstr "KEIN SWAP-BEREICH ENTDECKT"
 
-#
-# File: 32-SeTswap, line: 26
-# File: 64-SeTswap, line: 26
 #: ../initrd-scripts/usr-lib-setup/SeTswap:26
 msgid ""
 "You have not created a swap partition with Linux fdisk.  Do you want to "
 "continue installing without one? "
-msgstr ""
-"Sie haben keine swap-Partition mit Linux fdisk erstellt. Möchten Sie die "
-"Installation ohne eine solche fortsetzen?"
+msgstr "Sie haben keine swap-Partition mit Linux fdisk erstellt. Möchten Sie die Installation ohne eine solche fortsetzen?"
 
-#
-# File: 32-SeTswap, line: 30
-# File: 64-SeTswap, line: 30
 #: ../initrd-scripts/usr-lib-setup/SeTswap:30
 msgid "ABORTING INSTALLATION"
 msgstr "INSTALLATION ABBRECHEN"
 
-#
-# File: 32-SeTswap, line: 30
-# File: 64-SeTswap, line: 30
 #: ../initrd-scripts/usr-lib-setup/SeTswap:30
 msgid "Create a swap partition with Linux fdisk, and then try this again."
 msgstr "Eine swap-Partition mit Linux fdisk erstellen und erneut versuchen."
 
-#
-# File: 32-SeTswap, line: 39
-# File: 32-SeTswap, line: 79
-# File: 64-SeTswap, line: 39
-# File: 64-SeTswap, line: 79
 #: ../initrd-scripts/usr-lib-setup/SeTswap:39
 #: ../initrd-scripts/usr-lib-setup/SeTswap:79
 msgid "Setting up swap partitions."
 msgstr "Swap-Partitionen einrichten."
 
-#
-# File: 32-SeTswap, line: 41
-# File: 64-SeTswap, line: 41
 #: ../initrd-scripts/usr-lib-setup/SeTswap:41
 msgid "SWAP SPACE DETECTED"
 msgstr "SWAP-BEREICH GEFUNDEN"
 
-#
-# File: 32-SeTswap, line: 43
-# File: 64-SeTswap, line: 43
 #: ../initrd-scripts/usr-lib-setup/SeTswap:43
-#, fuzzy
 msgid ""
 "Salix Setup has detected one or more swap partitions on your system.  These "
 "partitions have been preselected to be set up as swap space.  If there are "
@@ -2921,74 +1774,39 @@ msgid ""
 "please unselect them with the up and down arrows and spacebar.  If you wish "
 "to use all of them (this is recommended), simply hit the ENTER key."
 msgstr ""
-"Salix-Setup hat eine oder mehrere Swap-Partitionen in Ihrem System gefunden. "
-"Diese Partitionen wurden vorausgewählt, um als Swap-Bereich zu dienen. Wenn "
-"es andere Swap-Partitionen gibt, die Sie nicht mit dieser Installation "
-"nutzen möchten, wählen Sie diese mit den Pfeiltasten (hoch und runter) und "
-"der Leertaste ab. Wenn Sie alle verwenden möchten (dies wird empfohlen), "
-"drücken Sie einfach ENTER."
 
-#
-# File: 32-SeTswap, line: 56
-# File: 64-SeTswap, line: 56
 #: ../initrd-scripts/usr-lib-setup/SeTswap:56
 #, sh-format
 msgid "Linux swap partition, ${PARTSIZE}"
 msgstr "Linux swap-Partition, ${PARTSIZE}"
 
-#
-# File: 32-SeTswap, line: 80
-# File: 64-SeTswap, line: 80
 #: ../initrd-scripts/usr-lib-setup/SeTswap:80
 msgid "CHECK SWAP PARTITIONS FOR BAD BLOCKS?"
 msgstr "SWAP-PARTITION AUF FEHLERHAFTE BLÖCKE ÜBERPRÜFEN?"
 
-#
-# File: 32-SeTswap, line: 81
-# File: 64-SeTswap, line: 81
 #: ../initrd-scripts/usr-lib-setup/SeTswap:81
-#, fuzzy
 msgid ""
-"Salix Setup will now prepare your system's swap space.  When formatting swap "
-"partitions with mkswap you may also check them for bad blocks.  This is not "
-"the default since nearly all modern hard drives check themselves for bad "
+"Salix Setup will now prepare your system's swap space.  When formatting swap"
+" partitions with mkswap you may also check them for bad blocks.  This is not"
+" the default since nearly all modern hard drives check themselves for bad "
 "blocks anyway.  Would you like to check for bad blocks while running mkswap?"
 msgstr ""
-"Salix Setup wird nun den swap-Bereich Ihres Systems vorbereiten. Wenn swap-"
-"Partitionen mit mkswap formatiert werden, kann gleichzeitig nach "
-"fehlerhaften Blöcken gesucht werden. Dies ist standardmäßig nicht "
-"eingestellt, da sich ziemlich alle modernen Festplatten selbst nach "
-"fehlerhaften Blöcken untersuchen. Möchten Sie nach fehlerhaften Blöcken "
-"suchen, während mkswap läuft?"
 
-#
-# File: 32-SeTswap, line: 101
-# File: 64-SeTswap, line: 101
 #: ../initrd-scripts/usr-lib-setup/SeTswap:101
 #, sh-format
 msgid "Activating swap partition ${swappartition}:"
 msgstr "Aktiviere swap-Partition ${swappartition}:"
 
-#
-# File: 32-SeTswap, line: 117
-# File: 64-SeTswap, line: 117
 #: ../initrd-scripts/usr-lib-setup/SeTswap:117
 msgid ""
-"Your swapspace has been configured. This information   will be added to "
-"your /etc/fstab:"
-msgstr ""
-"Ihr swap-Bereich wurde konfiguriert. Diese Einträge werden in Ihrer /etc/"
-"fstab hinzugefügt:"
+"Your swapspace has been configured. This information   will be added to your"
+" /etc/fstab:"
+msgstr "Ihr swap-Bereich wurde konfiguriert. Diese Einträge werden in Ihrer /etc/fstab hinzugefügt:"
 
-#
-# File: 32-SeTswap, line: 122
-# File: 64-SeTswap, line: 122
 #: ../initrd-scripts/usr-lib-setup/SeTswap:122
 msgid "SWAP SPACE CONFIGURED"
 msgstr "SWAP-BEREICH KONFIGURIERT"
 
-#
-# File: SeTusers, line: 9
 #: ../initrd-scripts/usr-lib-setup/SeTusers:9
 msgid "User setup"
 msgstr ""
@@ -3001,18 +1819,15 @@ msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/SeTusers:13
 msgid ""
-"The first user you will create, will be able to run commands as a privileged "
-"user through sudo. Any other user will not be able to run commands with sudo "
-"unless you add them to the wheel group."
+"The first user you will create, will be able to run commands as a privileged"
+" user through sudo. Any other user will not be able to run commands with "
+"sudo unless you add them to the wheel group."
 msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/SeTusers:17
 msgid "The root user is disabled by default."
 msgstr ""
 
-#
-# File: 32-liloconfig, line: 1095
-# File: 64-liloconfig, line: 1095
 #: ../initrd-scripts/usr-lib-setup/autoinstall:25
 #: ../initrd-scripts/usr-lib-setup/autoinstall:108
 #: ../initrd-scripts/usr-lib-setup/autoinstall:129
@@ -3020,9 +1835,8 @@ msgstr ""
 #: ../initrd-scripts/usr-lib-setup/autoinstall:205
 #: ../initrd-scripts/usr-lib-setup/autoinstall:209
 #: ../initrd-scripts/usr-lib-setup/autoinstall:261
-#, fuzzy
 msgid "AUTO PARTITION"
-msgstr "OS/2-PARTITION AUSWÄHLEN"
+msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:26
 #: ../initrd-scripts/usr-lib-setup/autoinstall:210
@@ -3049,19 +1863,13 @@ msgstr ""
 msgid "Formatting $PART with filesystem xfs."
 msgstr ""
 
-#
-# File: autoinstall, line: 103
 #: ../initrd-scripts/usr-lib-setup/autoinstall:106
 msgid "Do It"
 msgstr ""
 
-#
-# File: 32-xwmconfig, line: 207
-# File: 64-xwmconfig, line: 207
 #: ../initrd-scripts/usr-lib-setup/autoinstall:107
-#, fuzzy
 msgid "Cancel"
-msgstr "Abgebrochen."
+msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:109
 msgid "This is automatic partition mode."
@@ -3084,8 +1892,6 @@ msgstr ""
 msgid "Are you sure you want to globally erase existing data from ${DISK}?"
 msgstr ""
 
-#
-# File: autoinstall, line: 131
 #: ../initrd-scripts/usr-lib-setup/autoinstall:133
 msgid "Go back to the main setup menu"
 msgstr ""
@@ -3095,8 +1901,6 @@ msgstr ""
 msgid "${DISK} is dedicated to Salix"
 msgstr ""
 
-#
-# File: autoinstall, line: 140
 #: ../initrd-scripts/usr-lib-setup/autoinstall:142
 msgid "No target disk selected, going back to main menu"
 msgstr ""
@@ -3125,727 +1929,8 @@ msgstr ""
 #, sh-format
 msgid ""
 "There was a fatal error attempting to install $ArG2.  The package may be "
-"corrupt, the installation media may be bad, or something else has caused the "
-"package to be unable to be read without error.  You may hit enter to "
-"continue if you wish, but if this is an important required package then your "
-"installation may not work as-is."
+"corrupt, the installation media may be bad, or something else has caused the"
+" package to be unable to be read without error.  You may hit enter to "
+"continue if you wish, but if this is an important required package then your"
+" installation may not work as-is."
 msgstr ""
-
-#
-# File: 32-SeTkernel, line: 27
-# File: 64-SeTkernel, line: 27
-#~ msgid "REINSERT KERNEL DISC"
-#~ msgstr "KERNEL-DISK ERNEUT EINLEGEN"
-
-#
-# File: 32-SeTkernel, line: 28
-# File: 64-SeTkernel, line: 28
-#, fuzzy
-#~ msgid ""
-#~ "Please reinsert the Salix disc containing the collection of Linux "
-#~ "kernels.  Usually this is disc number one (the disc that you boot from).  "
-#~ "Once you've inserted the disc, hit ENTER to continue."
-#~ msgstr ""
-#~ "Bitte legen Sie die Salix-Disk mit den unterschiedlichen Linuxkerneln "
-#~ "erneut in Ihr Laufwerk. Normalerweise ist dies Disk-Nummer Eins (die "
-#~ "Disk, von der Sie die Installation gestartet haben). Sobald Sie die Disk "
-#~ "eingelegt haben, drücken Sie ENTER um fortzufahren."
-
-#
-# File: 32-SeTkernel, line: 80
-# File: 64-SeTkernel, line: 80
-#~ msgid "ERROR ATTEMPTING TO INSTALL KERNEL"
-#~ msgstr "FEHLER BEIM VERSUCH DEN KERNEL ZU INSTALLIEREN"
-
-#
-# File: 32-SeTkernel, line: 80
-# File: 64-SeTkernel, line: 80
-#~ msgid ""
-#~ "Sorry, but the directory $PLINK/kernels was not found.  You may need to "
-#~ "install the requested kernel $SLACK_KERNEL manually and then install LILO "
-#~ "before your system will be able to boot correctly."
-#~ msgstr ""
-#~ "Entschuldigung, das Verzeichnis $PLINK/kernel konnte nicht gefunden "
-#~ "werden. Sie müssen den Kernel $SLACK_KERNEL manuell installieren. Danach "
-#~ "installieren Sie LILO, um Ihr System bootfähig zum machen."
-
-#
-# File: 32-INSCD, line: 249
-# File: 64-INSCD, line: 249
-#~ msgid ""
-#~ "Attempting to mount your CD/DVD again with the following command:\n"
-#~ "$ArG"
-#~ msgstr ""
-#~ "Versuche das CD/DVD Laufwerk mit folgendem Kommando erneut einzubinden:\n"
-#~ "$ArG"
-
-#
-# File: 32-SeTDOS, line: 217
-# File: 32-SeTEFI, line: 73
-# File: 32-SeTpartitions, line: 533
-# File: 64-SeTDOS, line: 217
-# File: 64-SeTEFI, line: 73
-# File: 64-SeTpartitions, line: 533
-#~ msgid ""
-#~ "\n"
-#~ "Adding this information to your /etc/fstab:\n"
-#~ "\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Diese Informationen zu /etc/fstab hinzufügen:\n"
-#~ "\n"
-
-#
-# File: 32-SeTPKG, line: 27
-# File: 64-SeTPKG, line: 27
-#~ msgid "Selecting software to install."
-#~ msgstr "Software zum Installieren auswählen."
-
-#
-# File: 32-SeTPKG, line: 29
-# File: 64-SeTPKG, line: 29
-#~ msgid "PACKAGE SERIES SELECTION"
-#~ msgstr "PAKETSERIE AUSWAHL"
-
-#
-# File: 32-SeTPKG, line: 31
-# File: 64-SeTPKG, line: 31
-#~ msgid ""
-#~ "Now it is time to select which general categories of software to install "
-#~ "on your system. Use the spacebar to select or unselect the software you "
-#~ "wish to install. You can use the up and down arrows to see all the "
-#~ "possible choices. Recommended choices have been preselected. Press the "
-#~ "ENTER key when you are finished."
-#~ msgstr ""
-#~ "Nun ist es an der Zeit zu wählen, welche generellen Softwarekategorien "
-#~ "Sie in Ihrem System installieren wollen. Verwenden Sie die Leertaste, um "
-#~ "Software, die Sie installieren möchten, auszuwählen. Mit den auf- und ab-"
-#~ "Pfeilen können Sie durch die gesamte Softwareliste navigieren. Empfohlene "
-#~ "Pakete sind bereits selektiert. Drücken Sie ENTER, sobald Sie fertig sind."
-
-#
-# File: 32-SeTPKG, line: 38
-# File: 64-SeTPKG, line: 38
-#~ msgid "Base Linux system"
-#~ msgstr "Linux-Basissystem"
-
-#
-# File: 32-SeTPKG, line: 40
-# File: 64-SeTPKG, line: 40
-#~ msgid "The A (base) series contains the kernel and main system utilities."
-#~ msgstr ""
-#~ "Die A (Basis) Serie enthält den Kernel und die wichtigsten System-"
-#~ "Anwendungen."
-
-#
-# File: 32-SeTPKG, line: 45
-# File: 64-SeTPKG, line: 45
-#~ msgid "Various Applications that do not need X"
-#~ msgstr "Verschiedene Anwendungen, die X nicht benötigen"
-
-#
-# File: 32-SeTPKG, line: 47
-# File: 64-SeTPKG, line: 47
-#~ msgid "The AP series is a collection of useful applications."
-#~ msgstr "Die AP Serie ist eine Sammlung von nützlichen Anwendungen."
-
-#
-# File: 32-SeTPKG, line: 53
-# File: 64-SeTPKG, line: 53
-#~ msgid "Program Development (C, C++, Lisp, Perl, etc.)"
-#~ msgstr "Programm Entwicklung (C, C++, Lisp, Perl, etc.)"
-
-#
-# File: 32-SeTPKG, line: 55
-# File: 64-SeTPKG, line: 55
-#~ msgid ""
-#~ "The D series contains compilers, debuggers, and other programming tools."
-#~ msgstr ""
-#~ "Die D-Serie enthält Compiler, Debugger und andere Programmierwerkzeuge."
-
-#
-# File: 32-SeTPKG, line: 61
-# File: 64-SeTPKG, line: 61
-#~ msgid "GNU Emacs"
-#~ msgstr "GNU Emacs"
-
-#
-# File: 32-SeTPKG, line: 63
-# File: 64-SeTPKG, line: 63
-#~ msgid ""
-#~ "The E series contains the GNU Emacs advanced real-time display editor."
-#~ msgstr ""
-#~ "Die E Serie enthält den erweiterten GNU Emacs Echtzeitanzeige-Editor."
-
-#
-# File: 32-SeTPKG, line: 69
-# File: 64-SeTPKG, line: 69
-#~ msgid "FAQ lists, HOWTO documentation"
-#~ msgstr "FAQ-Listen, HOWTO-Dokumentation"
-
-#
-# File: 32-SeTPKG, line: 71
-# File: 64-SeTPKG, line: 71
-#~ msgid ""
-#~ "The F series contains essential documentation for Linux system "
-#~ "administrators."
-#~ msgstr ""
-#~ "Die F Serie enthält grundlegende Dokumentationen für Linux "
-#~ "Systemadministratoren."
-
-#
-# File: 32-SeTPKG, line: 77
-# File: 64-SeTPKG, line: 77
-#~ msgid "The GNOME desktop for X"
-#~ msgstr "Der GNOME-Desktop für X"
-
-#
-# File: 32-SeTPKG, line: 79
-# File: 64-SeTPKG, line: 79
-#~ msgid ""
-#~ "The GNOME series contains the GNOME desktop environment and related "
-#~ "libraries."
-#~ msgstr ""
-#~ "Die GNOME-Serie enthält die GNOME-Desktopumgebung und dazugehörige "
-#~ "Bibliotheken."
-
-#
-# File: 32-SeTPKG, line: 85
-# File: 64-SeTPKG, line: 85
-#~ msgid "Linux kernel source"
-#~ msgstr "Linux-Kernel-Quellen"
-
-#
-# File: 32-SeTPKG, line: 87
-# File: 64-SeTPKG, line: 87
-#~ msgid "The K series contains the source code for the Linux kernel."
-#~ msgstr "Die K-Serie enthält den Linux-Kernel-Quellcode."
-
-#
-# File: 32-SeTPKG, line: 93
-# File: 64-SeTPKG, line: 93
-#~ msgid "Qt and the K Desktop Environment for X"
-#~ msgstr "Qt und die K-Desktopumgebung für X"
-
-#
-# File: 32-SeTPKG, line: 95
-# File: 64-SeTPKG, line: 95
-#~ msgid ""
-#~ "The KDE series contains the K Desktop Environment and related libraries."
-#~ msgstr ""
-#~ "Die KDE-Serie enthält die K-Desktopumgebung und dazugehörige Bibliotheken."
-
-#
-# File: 32-SeTPKG, line: 101
-# File: 64-SeTPKG, line: 101
-#~ msgid "International language support for KDE"
-#~ msgstr "Internationale Sprachunterstützung für KDE"
-
-#
-# File: 32-SeTPKG, line: 103
-# File: 64-SeTPKG, line: 103
-#~ msgid ""
-#~ "The KDEI series provides support for languages other than US English in "
-#~ "KDE."
-#~ msgstr ""
-#~ "Die KDEI-Serie stellt die Unterstützung für weitere Sprachen, neben US-"
-#~ "Englisch, in KDE bereit."
-
-#
-# File: 32-SeTPKG, line: 109
-# File: 64-SeTPKG, line: 109
-#~ msgid "System Libraries (some needed by both KDE and GNOME)"
-#~ msgstr "System Bibliotheken (einige werden von KDE und GNOME benötigt)"
-
-#
-# File: 32-SeTPKG, line: 111
-# File: 64-SeTPKG, line: 111
-#~ msgid ""
-#~ "The L series contains libraries needed by GNOME, KDE, and other programs."
-#~ msgstr ""
-#~ "Die L-Serie enthält Bibliotheken, die von GNOME, KDE und anderen "
-#~ "Anwendungen benötigt werden."
-
-#
-# File: 32-SeTPKG, line: 117
-# File: 64-SeTPKG, line: 117
-#~ msgid "Networking (TCP/IP, UUCP, Mail, News)"
-#~ msgstr "Netzwerk (TCP/IP, UUCP, Mail, News)"
-
-#
-# File: 32-SeTPKG, line: 119
-# File: 64-SeTPKG, line: 119
-#~ msgid "The N series contains network related clients and servers."
-#~ msgstr "Die N-Serie enthält Clients und Server für Netzwerke."
-
-#
-# File: 32-SeTPKG, line: 125
-# File: 64-SeTPKG, line: 125
-#~ msgid "TeX typesetting software"
-#~ msgstr "TeX Schriftsatz Software"
-
-#
-# File: 32-SeTPKG, line: 127
-# File: 64-SeTPKG, line: 127
-#~ msgid ""
-#~ "TeX is a typesetting system often used for mathematics and technical "
-#~ "papers."
-#~ msgstr ""
-#~ "TeX ist ein Schriftsatzsystem, welches oft für mathematische und "
-#~ "technische Papiere verwendet wird."
-
-#
-# File: 32-SeTPKG, line: 133
-# File: 64-SeTPKG, line: 133
-#~ msgid "Tcl/Tk script languages"
-#~ msgstr "Tcl/Tk-Skriptsprachen"
-
-#
-# File: 32-SeTPKG, line: 135
-# File: 64-SeTPKG, line: 135
-#~ msgid ""
-#~ "The TCL series contains the Tcl/Tk/TclX languages and programs that use "
-#~ "them."
-#~ msgstr ""
-#~ "Die TCL-Serie enthält die Tcl/Tk/TclX-Sprachen und -Programme, die diese "
-#~ "verwenden."
-
-#
-# File: 32-SeTPKG, line: 141
-# File: 64-SeTPKG, line: 141
-#~ msgid "X Window System"
-#~ msgstr "X Window System"
-
-#
-# File: 32-SeTPKG, line: 143
-# File: 64-SeTPKG, line: 143
-#~ msgid "This series contains X, the windowing system used by Linux."
-#~ msgstr "Diese Serie enthält X, die Fenstersteuerung, die Linux verwendet."
-
-#
-# File: 32-SeTPKG, line: 149
-# File: 64-SeTPKG, line: 149
-#~ msgid "X Applications"
-#~ msgstr "X-Anwendungen"
-
-#
-# File: 32-SeTPKG, line: 151
-# File: 64-SeTPKG, line: 151
-#~ msgid "The XAP series is a collection of applications for X."
-#~ msgstr "Die XAP-Serie enthält eine Sammlung von Anwendungen für X."
-
-#
-# File: 32-SeTPKG, line: 157
-# File: 64-SeTPKG, line: 157
-#~ msgid "The Xfce Desktop Environment for X"
-#~ msgstr "Die Xfce Desktop-Umgebung für X"
-
-#
-# File: 32-SeTPKG, line: 159
-# File: 64-SeTPKG, line: 159
-#~ msgid "Xfce is a fast and lightweight GTK+ based desktop environment for X."
-#~ msgstr ""
-#~ "Xfce ist eine schnelle und leichtgewichtige GTK+ basierende Desktop-"
-#~ "Umgebung für X."
-
-#
-# File: 32-SeTPKG, line: 165
-# File: 64-SeTPKG, line: 165
-#~ msgid "Games"
-#~ msgstr "Spiele"
-
-#
-# File: 32-SeTPKG, line: 167
-# File: 64-SeTPKG, line: 167
-#~ msgid "The Y series is a collection of classic BSD text-based games."
-#~ msgstr ""
-#~ "Die Y-Serie ist eine Sammlung von klassischen, Text-basierten BSD-Spielen."
-
-#
-# File: 32-INSURL, line: 227
-# File: 64-INSURL, line: 227
-#, fuzzy
-#~ msgid ""
-#~ "\n"
-#~ "processing ${TOTALP} Salix packages..."
-#~ msgstr ""
-#~ "\n"
-#~ "verarbeite ${TOTALP} Salix-Pakete..."
-
-#
-# File: 32-pxesetup, line: 52
-# File: 64-pxesetup, line: 52
-#, fuzzy
-#~ msgid ""
-#~ "You may select an option below using the UP/DOWN keys and SPACE or ENTER. "
-#~ "Alternate keys may also be used: '+', '-', and TAB.\n"
-#~ "\n"
-#~ "If you want to exit the installation and drop to a linux console, select "
-#~ "'Exit installation'"
-#~ msgstr ""
-#~ "Willkommen beim Salix-PXE-Setup\n"
-#~ "\n"
-#~ "Wählen Sie eine Option mit den AUF-/AB-Tasten und LEERTASTE oder ENTER.\n"
-#~ "\n"
-#~ "Alternative Tasten können auch verwendet werden: '+','-', und TAB."
-
-#
-# File: 32-setup, line: 58
-# File: 64-setup, line: 58
-#, fuzzy
-#~ msgid ""
-#~ "There don't seem to be any Linux partitions on this machine.\n"
-#~ "\t\tYou'll need to make at least one of these to install Linux. Either "
-#~ "select AUTOINSTALL from the menu, or select INSTALL and use the partition "
-#~ "editor to create one."
-#~ msgstr ""
-#~ "Es scheint keine Partitionen vom Typ Linux auf diesem Rechner zu geben. "
-#~ "Sie werden mindestens eine davon erzeugen müssen, um Linux zu "
-#~ "installieren. Um dies zu tun, verlassen Sie 'setup' und erstellen Sie die "
-#~ "Partitionen mit 'cfdisk' (MBR Partitionen) oder 'cgdisk' (GPT "
-#~ "Partitionen). Für weitere Informationen lesen Sie die 'setup' Hilfedatei "
-#~ "aus dem nächsten Menü."
-
-#
-# File: 32-setup, line: 68
-# File: 64-setup, line: 68
-#, fuzzy
-#~ msgid ""
-#~ "This machine appears to be using EFI/UEFI, but no EFI System Partition "
-#~ "was found.\n"
-#~ "\n"
-#~ "You'll need to make an EFI System Partition in order to boot from the "
-#~ "hard drive."
-#~ msgstr ""
-#~ "Dieser Rechner scheint EFI/UEFI zu nutzen, aber es wurde keine EFI "
-#~ "Systempartition gefunden. Sie werden eine EFI Systempartition erzeugen "
-#~ "müssen, um von der Festplatte starten zu können. Um dies zu tun, "
-#~ "verlassen Sie 'setup' und verwenden Sie 'cgdisk', um eine 100MB Partition "
-#~ "des Typs EF00 zu erzeugen. Für weitere Informationen lesen Sie die "
-#~ "'setup' Hilfedatei aus dem nächsten Menü."
-
-#
-# File: 32-setup, line: 179
-# File: 64-setup, line: 179
-#, fuzzy
-#~ msgid ""
-#~ "Before you can install software, complete the following tasks:\n"
-#~ "   \n"
-#~ "1. Select your source media.\n"
-#~ "2. Set up your target Linux partition(s).\n"
-#~ "\n"
-#~ "You may also optionally remap your keyboard and set up your swap "
-#~ "partition(s).\n"
-#~ "\n"
-#~ "Press ENTER to return to the main menu."
-#~ msgstr ""
-#~ "\n"
-#~ "Bevor Sie Software installieren können, vervollständigen Sie die "
-#~ "folgenden Aufgaben:\n"
-#~ "\n"
-#~ "1. Wählen Sie Ihr Quellmedium.\n"
-#~ "2. Richten Sie die Linux Zielpartition(en) ein.\n"
-#~ "3. Wählen Sie, welche Softwarekategorien installiert werden sollen.\n"
-#~ "\n"
-#~ "Sie können auch optional Ihre Tastaturbelegung umstellen und Ihre Swap-"
-#~ "Partition(en) einrichten.\n"
-#~ "\n"
-#~ "Drücken Sie ENTER, um zurück ins Hauptmenü zu gelangen."
-
-#
-# File: 32-setup, line: 346
-# File: 64-setup, line: 346
-#, fuzzy
-#~ msgid ""
-#~ "You already have an /etc/fstab on your install partition.\n"
-#~ "\n"
-#~ "If you were just adding software, you should probably keep your old /etc/"
-#~ "fstab.\n"
-#~ "\n"
-#~ "If you've changed your partitioning scheme, you should use the new /etc/"
-#~ "fstab.\n"
-#~ "\n"
-#~ "Do you want to replace your old /etc/fstab with the new one?"
-#~ msgstr ""
-#~ "Sie haben bereits eine /etc/fstab auf Ihrer Installationspartition. Wenn "
-#~ "Sie einfach Software hinzugefügt haben, sollten Sie eventuell Ihre alte /"
-#~ "etc/fstab behalten. Wenn Sie Ihr Partitionsschema geändert haben, sollten "
-#~ "Sie die neue /etc/fstab verwenden. Möchten Sie Ihre alte /etc/fstab durch "
-#~ "die neue ersetzen?"
-
-#
-# File: 32-INSCD, line: 201
-# File: 64-INSCD, line: 201
-#, fuzzy
-#~ msgid ""
-#~ "A CD/DVD drive could not be found on any of the devices that were "
-#~ "scanned.  Possible reasons include using a bootdisk or kernel that "
-#~ "doesn't support your drive, failing to pass parameters needed by some "
-#~ "drives to the kernel, not having the Salix disc in your CD/DVD drive, or "
-#~ "using a drive connected to a Plug and Play soundcard (in this case, "
-#~ "connecting the drive directly to the IDE interface often helps). Please "
-#~ "make sure you are using the correct bootdisk for your hardware, consult "
-#~ "the BOOTING file for possible information on forcing the detection of "
-#~ "your drive, and then reattempt installation.  If all else fails, see FAQ."
-#~ "TXT for information about copying parts of this CD to your DOS partition "
-#~ "and installing it from there.\n"
-#~ "\n"
-#~ "You will now be returned to the main menu.  If you want to try looking "
-#~ "for the CD again, you may skip directly to the SOURCE menu selection."
-#~ msgstr ""
-#~ "Unter den überprüften Geräten wurde kein CD/DVD Laufwerk gefunden. "
-#~ "Mögliche Gründe dafür sind: Sie verwenden eine Bootdisk oder ein Kernel, "
-#~ "der Ihr Laufwerk nicht unterstützt, vom Laufwerk benötigte Parameter "
-#~ "wurden nicht an den Kernel weitergegeben, die Salix-Disk ist nicht im CD/"
-#~ "DVD Laufwerk, oder Sie verwenden ein Laufwerk, das an einer Plug and Play "
-#~ "Soundkarte angeschlossen ist (in diesem Fall reicht es meistens, dass das "
-#~ "Laufwerk direkt an einer IDE Schnittstelle anzuschließen). Bitte "
-#~ "vergewissern Sie sich, dass Sie die richtige Bootdisk für Ihre Hardware "
-#~ "verwenden. Lesen Sie die Datei BOOTING für weitere Informationen über das "
-#~ "Erzwingen der Erkennung Ihres Laufwerks und versuchen Sie die "
-#~ "Installation erneut. Falls alle Bemühungen fehlschlagen, lesen Sie FAQ."
-#~ "TXT für Informationen über das Kopieren von Teilen der CD in Ihre DOS "
-#~ "Partition und installieren Sie das System von dort.\n"
-#~ "\n"
-#~ "Sie werden nun zum Hauptmenü zurückkehren. Falls Sie erneut das CD "
-#~ "Laufwerk suchen möchten, können Sie direkt zum Menüpunkt SOURCE springen."
-
-#
-# File: 32-INSNFS, line: 24
-# File: 64-INSNFS, line: 24
-#, fuzzy
-#~ msgid ""
-#~ "\n"
-#~ "Good! We're all set on the local end, but now we need to know where to "
-#~ "find the software packages to install.  First, we need the IP address of "
-#~ "the machine where the Salix sources are stored."
-#~ msgstr ""
-#~ "Gut, soweit ist alles bereit! Nun müssen wir wissen wo die\n"
-#~ "Softwarepakete für die Installation gefunden werden können.\n"
-#~ "Zuerst brauchen wir die IP Adresse des Computers, auf dem\n"
-#~ "die Salix Quellen gespeichert sind."
-
-#
-# File: 32-INSURL, line: 86
-# File: 64-INSURL, line: 86
-#, fuzzy
-#~ msgid ""
-#~ "\n"
-#~ "There must be a directory on the server with the Salix packages and files "
-#~ "arranged in a tree like the FTP site.\n"
-#~ "\n"
-#~ "The installation script needs to know the name of the directory on your "
-#~ "server that contains the series' subdirectories. For example, if your A "
-#~ "series is found at /stuff/salix/a, then you would respond: /stuff/salix\n"
-#~ "\n"
-#~ "What is the Salix source directory?"
-#~ msgstr ""
-#~ "\n"
-#~ "Auf dem Server muss ein Verzeichnis mit den Salix-\n"
-#~ "Paketen und -Dateien, angeordnet in einer Baumstruktur\n"
-#~ "wie auf der FTP-Seite, vorhanden sein.\n"
-#~ "\n"
-#~ "Das Installationsskript muss den Namen des Ordners mit\n"
-#~ "den Serien-Unterverzeichnissen auf Ihrem Server kennen.\n"
-#~ "Zum Beispiel: falls sich Ihre A-Serie im Ordner\n"
-#~ "/stuff/salix/a befindet, antworten Sie mit: \n"
-#~ "/stuff/salix\n"
-#~ "\n"
-#~ "Welches ist das Salix-Quellverzeichnis?\n"
-
-#
-# File: 32-INSNFS, line: 64
-# File: 64-INSNFS, line: 64
-#, fuzzy
-#~ msgid ""
-#~ "\n"
-#~ "In the next screen you should watch for NFS mount errors.\n"
-#~ "\n"
-#~ "If you see errors and you don't see your NFS server listed, then try "
-#~ "setting up NFS again.\n"
-#~ "\n"
-#~ msgstr ""
-#~ "\n"
-#~ "In der nächsten Maske sollten Sie nach NFS Fehlern Ausschau halten. Falls "
-#~ "Sie Fehler sehen und Ihr NFS Server nicht in der Liste erscheint, "
-#~ "versuchen Sie NFS erneut einzurichten.\n"
-
-#
-# File: 32-INSSMB, line: 23
-# File: 64-INSSMB, line: 23
-#, fuzzy
-#~ msgid ""
-#~ "\n"
-#~ "Good! We're all set on the local end, but now we need to know where to "
-#~ "find the software packages to install. First, we need the share address "
-#~ "of the Samba server where the Salix sources are stored.\n"
-#~ "\n"
-#~ "Example share address: //192.168.0.1/public\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Gut, soweit ist alles bereit! Nun müssen wir wissen wo die\n"
-#~ "Softwarepakete für die Installation gefunden werden können.\n"
-#~ "Zuerst brauchen wir die Freigabeadresse des Samba Servers,\n"
-#~ "auf dem die Salix-Quellen gespeichert sind.\n"
-#~ "Beispiel Freigabeadresse: //192.168.0.1/public\n"
-
-#
-# File: 32-INSSMB, line: 36
-# File: 64-INSSMB, line: 36
-#~ msgid ""
-#~ "\n"
-#~ "What is the share address of your Samba server? "
-#~ msgstr ""
-#~ "\n"
-#~ "Wie lautet die Freigabeadresse Ihres Samba Servers? "
-
-#
-# File: 32-INSSMB, line: 46
-# File: 64-INSSMB, line: 46
-#, fuzzy
-#~ msgid ""
-#~ "\n"
-#~ "There must be a directory on the server with the Salix packages and files "
-#~ "arranged in a tree like the FTP site. \n"
-#~ "The installation script needs to know the name of the directory below "
-#~ "your Samba share that contains the series subdirectories. For example, if "
-#~ "your A series is found at /stuff/salix/a, then you would respond: /stuff/"
-#~ "salix \n"
-#~ "What is the Salix source directory?"
-#~ msgstr ""
-#~ "\n"
-#~ "Auf dem Server muss ein Verzeichnis mit den Salix-\n"
-#~ "Paketen und -Dateien, angeordnet in einer Baumstruktur\n"
-#~ "wie auf der FTP-Seite, vorhanden sein.\n"
-#~ "\n"
-#~ "Das Installationsskript muss den Namen des Ordners mit\n"
-#~ "den Serien-Unterverzeichnissen auf Ihrem Server kennen.\n"
-#~ "Zum Beispiel: falls sich Ihre A-Serie im Ordner\n"
-#~ "/stuff/salix/a befindet, antworten Sie mit: \n"
-#~ "/stuff/salix\n"
-#~ "\n"
-#~ "Welches ist das Salix-Quellverzeichnis?"
-
-#
-# File: 32-INSURL, line: 63
-# File: 64-INSURL, line: 63
-#, fuzzy
-#~ msgid ""
-#~ "\n"
-#~ "Good! We're all set on the local end, but now we need to know where to "
-#~ "find the software packages to install. First, we need the URL of the ftp "
-#~ "or http server where the Salix sources are stored.\n"
-#~ "URL examples are: 'ftp://192.168.0.1' ; 'http://172.16.10.31'\n"
-#~ msgstr ""
-#~ "Gut, soweit ist alles bereit! Nun müssen wir wissen wo die Softwarepakete "
-#~ "für die Installation gefunden werden können. Zuerst brauchen wir die URL "
-#~ "des FTP oder HTTP Servers, auf dem die Salix Quellen gespeichert sind.\n"
-#~ "URL Beispiel: 'ftp://192.168.0.1'; 'http://172.16.10.31'\n"
-
-#
-# File: 32-INSURL, line: 75
-# File: 64-INSURL, line: 75
-#~ msgid ""
-#~ "\n"
-#~ "What is the URL of your FTP/HTTP server?\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Wie lautet die URL Ihres FTP/HTTP-Servers?\n"
-
-#
-# File: 32-INSURL, line: 86
-# File: 64-INSURL, line: 86
-#, fuzzy
-#~ msgid ""
-#~ "\n"
-#~ "There must be a directory on the server with the Salix packages and files "
-#~ "arranged in a tree like the FTP site.\n"
-#~ "\n"
-#~ "The installation script needs to know the name of the directory on your "
-#~ "server that contains the series subdirectories. For example, if your A "
-#~ "series is found at /stuff/salix/a, then you would respond: /stuff/salix\n"
-#~ "\n"
-#~ "What is the Salix source directory?\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Auf dem Server muss ein Verzeichnis mit den Salix-\n"
-#~ "Paketen und -Dateien, angeordnet in einer Baumstruktur\n"
-#~ "wie auf der FTP-Seite, vorhanden sein.\n"
-#~ "\n"
-#~ "Das Installationsskript muss den Namen des Ordners mit\n"
-#~ "den Serien-Unterverzeichnissen auf Ihrem Server kennen.\n"
-#~ "Zum Beispiel: falls sich Ihre A-Serie im Ordner\n"
-#~ "/stuff/salix/a befindet, antworten Sie mit: \n"
-#~ "/stuff/salix\n"
-#~ "\n"
-#~ "Welches ist das Salix-Quellverzeichnis?\n"
-
-#
-# File: 32-INSURL, line: 106
-# File: 64-INSURL, line: 106
-#, fuzzy
-#~ msgid ""
-#~ "\n"
-#~ "In the next screen you should watch for possible errors.\n"
-#~ "\n"
-#~ "First, we'll download the PACKAGES.TXT from the parent of the directory "
-#~ "that you entered before (which should be the root of the remote Salix "
-#~ "tree).  If that succeeds, then we use PACKAGES.TXT to reconstruct a local "
-#~ "cache of the package tree (should take a minute or less on an average "
-#~ "system).\n"
-#~ "After that, we're all set to go!\n"
-#~ "\n"
-#~ "Downloading PACKAGES.TXT at the Salix root starts after you press OK.\n"
-#~ "That file is several hundreds of KB in size so it may take some time to "
-#~ "get here...\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Im nächsten Bildschirm sollten Sie nach Fehlern Ausschau halten.\n"
-#~ "\n"
-#~ "Zuerst wird die Datei PACKAGES.TXT aus dem vorher angegebenen "
-#~ "Stammverzeichnis (dies sollte das Stammverzeichnis des entfernten "
-#~ "Salixbaums sein) heruntergeladen. Danach wird mit der Hilfe von PACKAGES."
-#~ "TXT ein lokaler Cache des Paketbaums erstellt (dies dauert eine Minute "
-#~ "oder weniger auf einem durchschnittlichen System).\n"
-#~ "Nun sind wird bereit für den nächsten Schritt!\n"
-#~ "\n"
-#~ "PACKAGES.TXT wird aus dem Salix-Stammverzeichnis heruntergeladen nachdem "
-#~ "Sie OK gedrückt haben.\n"
-#~ "Die Datei ist einige hundert KB groß. Es könnte eine Weile dauern bis der "
-#~ "Vorgang abgeschlossen ist...\n"
-
-#
-# File: 32-INSdir, line: 18
-# File: 32-INShd, line: 18
-# File: 32-setup, line: 84
-# File: 64-INSdir, line: 18
-# File: 64-INShd, line: 18
-# File: 64-setup, line: 84
-#, fuzzy
-#~ msgid ""
-#~ "\n"
-#~ "Setup failed to unmount a required directory:\n"
-#~ "\n"
-#~ "/var/log/mount\n"
-#~ "\n"
-#~ "Please reboot the machine and try again.\n"
-#~ msgstr ""
-#~ "Kann /var/log/mount nicht auswerfen. Starten Sie Ihren Computer neu und "
-#~ "führen Sie die Installation erneut aus."
-
-#
-# File: 32-SeTDOS, line: 217
-# File: 32-SeTEFI, line: 73
-# File: 32-SeTpartitions, line: 533
-# File: 64-SeTDOS, line: 217
-# File: 64-SeTEFI, line: 73
-# File: 64-SeTpartitions, line: 533
-#, fuzzy
-#~ msgid ""
-#~ "\n"
-#~ "Partitioning completed,\n"
-#~ "Adding this information to your /etc/fstab:\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Diese Informationen zu /etc/fstab hinzufügen:\n"
-#~ "\n"
