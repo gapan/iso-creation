@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Salix-14.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-25 02:00+0300\n"
+"POT-Creation-Date: 2016-05-26 23:25+0300\n"
 "PO-Revision-Date: 2016-03-21 23:15+0100\n"
 "Last-Translator: \n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
@@ -1991,49 +1991,6 @@ msgstr ""
 "gleichen Fehler das nächste Mal zu vermeiden."
 
 #
-# File: 32-SeTkernel, line: 27
-# File: 64-SeTkernel, line: 27
-#: ../initrd-scripts/usr-lib-setup/SeTkernel:27
-msgid "REINSERT KERNEL DISC"
-msgstr "KERNEL-DISK ERNEUT EINLEGEN"
-
-#
-# File: 32-SeTkernel, line: 28
-# File: 64-SeTkernel, line: 28
-#: ../initrd-scripts/usr-lib-setup/SeTkernel:28
-#, fuzzy
-msgid ""
-"Please reinsert the Salix disc containing the collection of Linux kernels.  "
-"Usually this is disc number one (the disc that you boot from).  Once you've "
-"inserted the disc, hit ENTER to continue."
-msgstr ""
-"Bitte legen Sie die Salix-Disk mit den unterschiedlichen Linuxkerneln erneut "
-"in Ihr Laufwerk. Normalerweise ist dies Disk-Nummer Eins (die Disk, von der "
-"Sie die Installation gestartet haben). Sobald Sie die Disk eingelegt haben, "
-"drücken Sie ENTER um fortzufahren."
-
-#
-# File: 32-SeTkernel, line: 80
-# File: 64-SeTkernel, line: 80
-#: ../initrd-scripts/usr-lib-setup/SeTkernel:80
-msgid "ERROR ATTEMPTING TO INSTALL KERNEL"
-msgstr "FEHLER BEIM VERSUCH DEN KERNEL ZU INSTALLIEREN"
-
-#
-# File: 32-SeTkernel, line: 80
-# File: 64-SeTkernel, line: 80
-#: ../initrd-scripts/usr-lib-setup/SeTkernel:80
-#, sh-format
-msgid ""
-"Sorry, but the directory $PLINK/kernels was not found.  You may need to "
-"install the requested kernel $SLACK_KERNEL manually and then install LILO "
-"before your system will be able to boot correctly."
-msgstr ""
-"Entschuldigung, das Verzeichnis $PLINK/kernel konnte nicht gefunden werden. "
-"Sie müssen den Kernel $SLACK_KERNEL manuell installieren. Danach "
-"installieren Sie LILO, um Ihr System bootfähig zum machen."
-
-#
 # File: 32-SeTkeymap, line: 19
 # File: 64-SeTkeymap, line: 19
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:18
@@ -3173,6 +3130,44 @@ msgid ""
 "continue if you wish, but if this is an important required package then your "
 "installation may not work as-is."
 msgstr ""
+
+#
+# File: 32-SeTkernel, line: 27
+# File: 64-SeTkernel, line: 27
+#~ msgid "REINSERT KERNEL DISC"
+#~ msgstr "KERNEL-DISK ERNEUT EINLEGEN"
+
+#
+# File: 32-SeTkernel, line: 28
+# File: 64-SeTkernel, line: 28
+#, fuzzy
+#~ msgid ""
+#~ "Please reinsert the Salix disc containing the collection of Linux "
+#~ "kernels.  Usually this is disc number one (the disc that you boot from).  "
+#~ "Once you've inserted the disc, hit ENTER to continue."
+#~ msgstr ""
+#~ "Bitte legen Sie die Salix-Disk mit den unterschiedlichen Linuxkerneln "
+#~ "erneut in Ihr Laufwerk. Normalerweise ist dies Disk-Nummer Eins (die "
+#~ "Disk, von der Sie die Installation gestartet haben). Sobald Sie die Disk "
+#~ "eingelegt haben, drücken Sie ENTER um fortzufahren."
+
+#
+# File: 32-SeTkernel, line: 80
+# File: 64-SeTkernel, line: 80
+#~ msgid "ERROR ATTEMPTING TO INSTALL KERNEL"
+#~ msgstr "FEHLER BEIM VERSUCH DEN KERNEL ZU INSTALLIEREN"
+
+#
+# File: 32-SeTkernel, line: 80
+# File: 64-SeTkernel, line: 80
+#~ msgid ""
+#~ "Sorry, but the directory $PLINK/kernels was not found.  You may need to "
+#~ "install the requested kernel $SLACK_KERNEL manually and then install LILO "
+#~ "before your system will be able to boot correctly."
+#~ msgstr ""
+#~ "Entschuldigung, das Verzeichnis $PLINK/kernel konnte nicht gefunden "
+#~ "werden. Sie müssen den Kernel $SLACK_KERNEL manuell installieren. Danach "
+#~ "installieren Sie LILO, um Ihr System bootfähig zum machen."
 
 #
 # File: 32-INSCD, line: 249

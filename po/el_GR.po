@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Salix-14.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-25 02:00+0300\n"
-"PO-Revision-Date: 2016-05-25 02:03+0200\n"
+"POT-Creation-Date: 2016-05-26 23:25+0300\n"
+"PO-Revision-Date: 2016-05-26 23:27+0200\n"
 "Last-Translator: George Vlahavas <vlahavas~at~gmail~dot~com>\n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
 "Language: el_GR\n"
@@ -361,7 +361,6 @@ msgstr "ΣΑΡΩΣΗ ΓΙΑ ΜΟΝΑΔΑ CD/DVD"
 # File: 32-INSCD, line: 16
 # File: 64-INSCD, line: 16
 #: ../initrd-scripts/usr-lib-setup/INSCD:15
-#, fuzzy
 msgid ""
 "Make sure the Salix disc is in your CD/DVD drive, and then press ENTER to "
 "begin the scanning process. Or, if you'd rather specify the device name "
@@ -568,7 +567,6 @@ msgstr "ΜΗ ΑΥΤΟΜΑΤΗ ΕΠΙΛΟΓΗ ΜΟΝΑΔΑΣ CD/DVD"
 # File: 32-INSCD, line: 75
 # File: 64-INSCD, line: 75
 #: ../initrd-scripts/usr-lib-setup/INSCD:66
-#, fuzzy
 msgid ""
 "Please enter the name of the CD/DVD device (such as /dev/hdc) that you wish "
 "to use to mount the Salix CD/DVD:"
@@ -653,15 +651,13 @@ msgstr "ΑΝΙΧΝΕΥΣΗ"
 # File: 32-INSCD, line: 122
 # File: 64-INSCD, line: 122
 #: ../initrd-scripts/usr-lib-setup/INSCD:114
-#, fuzzy
 msgid "Scanning for a CD/DVD drive containing a Salix disc..."
-msgstr "Ανίχνευση συσκευής CD/DVD που περιέχει το CD του Salix."
+msgstr "Ανίχνευση συσκευής CD/DVD που περιέχει το CD του Salix..."
 
 #
 # File: 32-INSCD, line: 159
 # File: 64-INSCD, line: 159
 #: ../initrd-scripts/usr-lib-setup/INSCD:131
-#, fuzzy
 msgid ""
 "Scanning for a parallel port ATAPI CD/DVD drive containing a Salix disc..."
 msgstr ""
@@ -725,9 +721,9 @@ msgstr "ΑΝΙΧΝΕΥΤΗΚΕ ΜΟΝΑΔΑ CD/DVD"
 # File: 32-INSCD, line: 224
 # File: 64-INSCD, line: 224
 #: ../initrd-scripts/usr-lib-setup/INSCD:198
-#, fuzzy, sh-format
+#, sh-format
 msgid "A Salix disc was found in device $DRIVE_FOUND."
-msgstr "Η ΜΟΝΑΔΑ $DRIVE_FOUND ΠΕΡΙΕΧΕΙ ΕΝΑ CD SALIX"
+msgstr "Ένα CD του Salix βρέθηκε στη συσκευή $DRIVE_FOUND."
 
 #
 # File: 32-INSCD, line: 227
@@ -804,13 +800,12 @@ msgstr ""
 # File: 64-INSURL, line: 71
 #: ../initrd-scripts/usr-lib-setup/INSNFS:30
 #: ../initrd-scripts/usr-lib-setup/INSURL:72
-#, fuzzy
 msgid ""
 "Since you're already running on the network, you should be able to use the "
 "hostname instead of an IP address if you wish."
 msgstr ""
 "Εφόσον το δίκτυο είναι ήδη σε λειτουργία, μπορείτε αντί για την διεύθυνση IP "
-"να χρησιμοποιήσετε το hostname σας.\n"
+"να χρησιμοποιήσετε το hostname σας."
 
 #
 # File: 32-INSNFS, line: 36
@@ -1001,7 +996,6 @@ msgstr "Προσαρτημένοι server Samba:"
 # File: 32-INSSMB, line: 85
 # File: 64-INSSMB, line: 85
 #: ../initrd-scripts/usr-lib-setup/INSSMB:85
-#, fuzzy
 msgid "A Salix package tree was found! Ready to continue."
 msgstr "Βρήκαμε ένα κατάλογο με πακέτα Salix! Μπορούμε να συνεχίσουμε."
 
@@ -1009,7 +1003,6 @@ msgstr "Βρήκαμε ένα κατάλογο με πακέτα Salix! Μπορ
 # File: 32-INSSMB, line: 89
 # File: 64-INSSMB, line: 89
 #: ../initrd-scripts/usr-lib-setup/INSSMB:89
-#, fuzzy
 msgid "No Salix package tree found at the indicated path!"
 msgstr "Δεν βρέθηκε κατάλογος με πακέτα Salix στο φάκελο που προσδιορίσατε!"
 
@@ -1115,9 +1108,8 @@ msgstr "> Το Download απέτυχε ξανά"
 # File: 32-INSURL, line: 148
 # File: 64-INSURL, line: 148
 #: ../initrd-scripts/usr-lib-setup/INSURL:148
-#, fuzzy
 msgid "A Salix 'PACKAGES.TXT' is available. Ready to continue!"
-msgstr "Εντοπίσαμε το αρχείο 'PACKAGES.TXT'. Συνεχίζουμε!"
+msgstr "Εντοπίσαμε το αρχείο 'PACKAGES.TXT' του Salix. Συνεχίζουμε!"
 
 #
 # File: 32-INSURL, line: 153
@@ -1208,7 +1200,6 @@ msgstr "ΓΙΝΕΤΑΙ ΑΝΙΧΝΕΥΣΗ ΓΙΑ USB STICK"
 # File: 32-INSUSB, line: 15
 # File: 64-INSUSB, line: 15
 #: ../initrd-scripts/usr-lib-setup/INSUSB:14
-#, fuzzy
 msgid ""
 "Make sure the USB stick containing the Salix package directory is inserted "
 "into a USB port, and then press ENTER to begin the scanning process."
@@ -1239,7 +1230,6 @@ msgstr ""
 # File: 32-INSUSB, line: 89
 # File: 64-INSUSB, line: 89
 #: ../initrd-scripts/usr-lib-setup/INSUSB:88
-#, fuzzy
 msgid "NO SALIX DIRECTORY FOUND"
 msgstr "ΔΕΝ ΒΡΕΘΗΚΕ ΚΑΤΑΛΟΓΟΣ SALIX"
 
@@ -1247,7 +1237,6 @@ msgstr "ΔΕΝ ΒΡΕΘΗΚΕ ΚΑΤΑΛΟΓΟΣ SALIX"
 # File: 32-INSUSB, line: 90
 # File: 64-INSUSB, line: 90
 #: ../initrd-scripts/usr-lib-setup/INSUSB:89
-#, fuzzy
 msgid ""
 "Sorry, but a Salix directory could not be found on any USB devices. Exiting "
 "back to the top menu."
@@ -1266,7 +1255,7 @@ msgstr "ΒΡΕΘΗΚΕ ΠΗΓΑΙΟ ΑΡΧΕΙΟ ΣΕ USB"
 # File: 32-INSUSB, line: 100
 # File: 64-INSUSB, line: 100
 #: ../initrd-scripts/usr-lib-setup/INSUSB:99
-#, fuzzy, sh-format
+#, sh-format
 msgid "A Salix package directory was found on device $DRIVE_FOUND."
 msgstr "Βρέθηκε ένας κατάλογος με πακέτα Salix στη συσκευή $DRIVE_FOUND."
 
@@ -2019,49 +2008,6 @@ msgstr ""
 "σχετικά με το πως μπορείτε να αποφύγετε κάτι τέτοιο την επόμενη φορά."
 
 #
-# File: 32-SeTkernel, line: 27
-# File: 64-SeTkernel, line: 27
-#: ../initrd-scripts/usr-lib-setup/SeTkernel:27
-msgid "REINSERT KERNEL DISC"
-msgstr "ΞΑΝΑΤΟΠΟΘΕΤΗΣΤΕ ΤΟ CD ΤΟΥ ΠΥΡΗΝΑ"
-
-#
-# File: 32-SeTkernel, line: 28
-# File: 64-SeTkernel, line: 28
-#: ../initrd-scripts/usr-lib-setup/SeTkernel:28
-#, fuzzy
-msgid ""
-"Please reinsert the Salix disc containing the collection of Linux kernels.  "
-"Usually this is disc number one (the disc that you boot from).  Once you've "
-"inserted the disc, hit ENTER to continue."
-msgstr ""
-"Επανατοποθετήστε το cd του Salix το οποίο περιέχει πυρήνες Linux. Κανονικά "
-"θα πρέπει να είναι το πρώτο cd (αυτό από το οποίο ξεκινήσατε την "
-"εγκατάσταση). Αφού τοποθετήσετε το cd πιέστε ENTER για συνέχεια"
-
-#
-# File: 32-SeTkernel, line: 80
-# File: 64-SeTkernel, line: 80
-#: ../initrd-scripts/usr-lib-setup/SeTkernel:80
-msgid "ERROR ATTEMPTING TO INSTALL KERNEL"
-msgstr "ΣΦΑΛΜΑ ΣΤΗΝ ΕΓΚΑΤΑΣΤΑΣΗ ΤΟΥ ΠΥΡΗΝΑ"
-
-#
-# File: 32-SeTkernel, line: 80
-# File: 64-SeTkernel, line: 80
-#: ../initrd-scripts/usr-lib-setup/SeTkernel:80
-#, sh-format
-msgid ""
-"Sorry, but the directory $PLINK/kernels was not found.  You may need to "
-"install the requested kernel $SLACK_KERNEL manually and then install LILO "
-"before your system will be able to boot correctly."
-msgstr ""
-"Δεν μπορέσαμε να βρούμε το φάκελο αρχείων $PLINK/kernels.  Ίσως να μην "
-"μπορέσετε να μπείτε στο σύστημά σας, εκτός εάν προσπαθήσετε να εγκαταστήσετε "
-"τον πυρήνα $SLACK_KERNEL μόνοι σας και στην συνέχεια να εγκαταστήσετε και να "
-"ρυθμίσετε το LILO"
-
-#
 # File: 32-SeTkeymap, line: 19
 # File: 64-SeTkeymap, line: 19
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:18
@@ -2112,7 +2058,6 @@ msgstr ""
 # File: 64-SeTmedia, line: 8
 # File: 64-SeTpxemedia, line: 32
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:11
-#, fuzzy
 msgid "Select Salix installation source."
 msgstr "Επιλέξτε την πηγή για την εγκατάσταση του Salix"
 
@@ -2129,7 +2074,6 @@ msgstr "ΕΠΙΛΟΓΗ ΜΕΣΟΥ ΠΡΟΕΛΕΥΣΗΣ"
 # File: 32-SeTmedia, line: 10
 # File: 64-SeTmedia, line: 10
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:14
-#, fuzzy
 msgid "Please select the media from which to install Salix Linux:"
 msgstr ""
 "Παρακαλώ επιλέξτε το μέσο από το οποίο θα κάνετε την εγκατάσταση του Salix "
@@ -2139,7 +2083,6 @@ msgstr ""
 # File: 32-SeTmedia, line: 13
 # File: 64-SeTmedia, line: 13
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:16
-#, fuzzy
 msgid "Install from a Salix USB stick"
 msgstr "Εγκατάσταση από ένα στικάκι USB Salix"
 
@@ -2147,7 +2090,6 @@ msgstr "Εγκατάσταση από ένα στικάκι USB Salix"
 # File: 32-SeTmedia, line: 12
 # File: 64-SeTmedia, line: 12
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:17
-#, fuzzy
 msgid "Install from a Salix CD or DVD"
 msgstr "Εγκατάσταση από CD ή DVD Salix"
 
@@ -2183,7 +2125,6 @@ msgstr "Εγκατάσταση από NFS (Network File System)"
 # File: 32-SeTmedia, line: 17
 # File: 64-SeTmedia, line: 17
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:22
-#, fuzzy
 msgid "Install from a Samba share"
 msgstr "Εγκατάσταση από τοπικό δίκτυο Samba"
 
@@ -2998,7 +2939,6 @@ msgstr "ΒΡΕΘΗΚΕ ΚΑΤΑΤΜΗΣΗ ΔΙΑΜΟΡΦΩΜΕΝΗ ΓΙΑ SWAP"
 # File: 32-SeTswap, line: 43
 # File: 64-SeTswap, line: 43
 #: ../initrd-scripts/usr-lib-setup/SeTswap:43
-#, fuzzy
 msgid ""
 "Salix Setup has detected one or more swap partitions on your system.  These "
 "partitions have been preselected to be set up as swap space.  If there are "
@@ -3034,7 +2974,6 @@ msgstr ""
 # File: 32-SeTswap, line: 81
 # File: 64-SeTswap, line: 81
 #: ../initrd-scripts/usr-lib-setup/SeTswap:81
-#, fuzzy
 msgid ""
 "Salix Setup will now prepare your system's swap space.  When formatting swap "
 "partitions with mkswap you may also check them for bad blocks.  This is not "
@@ -3216,6 +3155,43 @@ msgid ""
 "continue if you wish, but if this is an important required package then your "
 "installation may not work as-is."
 msgstr ""
+
+#
+# File: 32-SeTkernel, line: 27
+# File: 64-SeTkernel, line: 27
+#~ msgid "REINSERT KERNEL DISC"
+#~ msgstr "ΞΑΝΑΤΟΠΟΘΕΤΗΣΤΕ ΤΟ CD ΤΟΥ ΠΥΡΗΝΑ"
+
+#
+# File: 32-SeTkernel, line: 28
+# File: 64-SeTkernel, line: 28
+#~ msgid ""
+#~ "Please reinsert the Salix disc containing the collection of Linux "
+#~ "kernels.  Usually this is disc number one (the disc that you boot from).  "
+#~ "Once you've inserted the disc, hit ENTER to continue."
+#~ msgstr ""
+#~ "Επανατοποθετήστε το cd του Salix το οποίο περιέχει πυρήνες Linux. "
+#~ "Κανονικά θα πρέπει να είναι το πρώτο cd (αυτό από το οποίο ξεκινήσατε την "
+#~ "εγκατάσταση). Αφού τοποθετήσετε το cd πιέστε ENTER για συνέχεια"
+
+#
+# File: 32-SeTkernel, line: 80
+# File: 64-SeTkernel, line: 80
+#~ msgid "ERROR ATTEMPTING TO INSTALL KERNEL"
+#~ msgstr "ΣΦΑΛΜΑ ΣΤΗΝ ΕΓΚΑΤΑΣΤΑΣΗ ΤΟΥ ΠΥΡΗΝΑ"
+
+#
+# File: 32-SeTkernel, line: 80
+# File: 64-SeTkernel, line: 80
+#~ msgid ""
+#~ "Sorry, but the directory $PLINK/kernels was not found.  You may need to "
+#~ "install the requested kernel $SLACK_KERNEL manually and then install LILO "
+#~ "before your system will be able to boot correctly."
+#~ msgstr ""
+#~ "Δεν μπορέσαμε να βρούμε το φάκελο αρχείων $PLINK/kernels.  Ίσως να μην "
+#~ "μπορέσετε να μπείτε στο σύστημά σας, εκτός εάν προσπαθήσετε να "
+#~ "εγκαταστήσετε τον πυρήνα $SLACK_KERNEL μόνοι σας και στην συνέχεια να "
+#~ "εγκαταστήσετε και να ρυθμίσετε το LILO"
 
 #
 # File: 32-INSCD, line: 249

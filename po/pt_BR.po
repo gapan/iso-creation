@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Salix-14.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-25 02:00+0300\n"
+"POT-Creation-Date: 2016-05-26 23:25+0300\n"
 "PO-Revision-Date: 2016-03-22 00:20+0100\n"
 "Last-Translator: \n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
@@ -2720,64 +2720,6 @@ msgstr ""
 "da próxima vez."
 
 #
-# File: 32-13.37-SeTkernel, line: 27
-# File: 32-14.0-SeTkernel, line: 27
-# File: 32-14.1-SeTkernel, line: 27
-# File: 64-13.37-SeTkernel, line: 27
-# File: 64-14.0-SeTkernel, line: 27
-# File: 64-14.1-SeTkernel, line: 27
-#: ../initrd-scripts/usr-lib-setup/SeTkernel:27
-msgid "REINSERT KERNEL DISC"
-msgstr "REINSERIR DISCO DO KERNEL"
-
-#
-# File: 32-13.37-SeTkernel, line: 28
-# File: 32-14.0-SeTkernel, line: 28
-# File: 32-14.1-SeTkernel, line: 28
-# File: 64-13.37-SeTkernel, line: 28
-# File: 64-14.0-SeTkernel, line: 28
-# File: 64-14.1-SeTkernel, line: 28
-#: ../initrd-scripts/usr-lib-setup/SeTkernel:28
-#, fuzzy
-msgid ""
-"Please reinsert the Salix disc containing the collection of Linux kernels.  "
-"Usually this is disc number one (the disc that you boot from).  Once you've "
-"inserted the disc, hit ENTER to continue."
-msgstr ""
-"Por favor, reinsira o disco do Salix contendo a coleção de kernels do Linux. "
-"Geralmente este é o disco número um (o disco do qual você fez o boot). Assim "
-"que tiver inserido o disco, aperte ENTER para continuar."
-
-#
-# File: 32-13.37-SeTkernel, line: 80
-# File: 32-14.0-SeTkernel, line: 80
-# File: 32-14.1-SeTkernel, line: 80
-# File: 64-13.37-SeTkernel, line: 80
-# File: 64-14.0-SeTkernel, line: 80
-# File: 64-14.1-SeTkernel, line: 80
-#: ../initrd-scripts/usr-lib-setup/SeTkernel:80
-msgid "ERROR ATTEMPTING TO INSTALL KERNEL"
-msgstr "ERRO TENTANDO INSTALAR O KERNEL"
-
-#
-# File: 32-13.37-SeTkernel, line: 80
-# File: 32-14.0-SeTkernel, line: 80
-# File: 32-14.1-SeTkernel, line: 80
-# File: 64-13.37-SeTkernel, line: 80
-# File: 64-14.0-SeTkernel, line: 80
-# File: 64-14.1-SeTkernel, line: 80
-#: ../initrd-scripts/usr-lib-setup/SeTkernel:80
-#, sh-format
-msgid ""
-"Sorry, but the directory $PLINK/kernels was not found.  You may need to "
-"install the requested kernel $SLACK_KERNEL manually and then install LILO "
-"before your system will be able to boot correctly."
-msgstr ""
-"Desculpe, mas o diretório $PLINK/kernels não foi encontrado. Talvez você "
-"precise instalar o kernel requisitado $SLACK_KERNEL manualmente e então "
-"instalar o LILO antes de seu sistema ser capaz de inicializar corretamente."
-
-#
 # File: 32-13.37-SeTkeymap, line: 19
 # File: 32-14.0-SeTkeymap, line: 19
 # File: 32-14.1-SeTkeymap, line: 19
@@ -4362,6 +4304,60 @@ msgid ""
 "continue if you wish, but if this is an important required package then your "
 "installation may not work as-is."
 msgstr ""
+
+#
+# File: 32-13.37-SeTkernel, line: 27
+# File: 32-14.0-SeTkernel, line: 27
+# File: 32-14.1-SeTkernel, line: 27
+# File: 64-13.37-SeTkernel, line: 27
+# File: 64-14.0-SeTkernel, line: 27
+# File: 64-14.1-SeTkernel, line: 27
+#~ msgid "REINSERT KERNEL DISC"
+#~ msgstr "REINSERIR DISCO DO KERNEL"
+
+#
+# File: 32-13.37-SeTkernel, line: 28
+# File: 32-14.0-SeTkernel, line: 28
+# File: 32-14.1-SeTkernel, line: 28
+# File: 64-13.37-SeTkernel, line: 28
+# File: 64-14.0-SeTkernel, line: 28
+# File: 64-14.1-SeTkernel, line: 28
+#, fuzzy
+#~ msgid ""
+#~ "Please reinsert the Salix disc containing the collection of Linux "
+#~ "kernels.  Usually this is disc number one (the disc that you boot from).  "
+#~ "Once you've inserted the disc, hit ENTER to continue."
+#~ msgstr ""
+#~ "Por favor, reinsira o disco do Salix contendo a coleção de kernels do "
+#~ "Linux. Geralmente este é o disco número um (o disco do qual você fez o "
+#~ "boot). Assim que tiver inserido o disco, aperte ENTER para continuar."
+
+#
+# File: 32-13.37-SeTkernel, line: 80
+# File: 32-14.0-SeTkernel, line: 80
+# File: 32-14.1-SeTkernel, line: 80
+# File: 64-13.37-SeTkernel, line: 80
+# File: 64-14.0-SeTkernel, line: 80
+# File: 64-14.1-SeTkernel, line: 80
+#~ msgid "ERROR ATTEMPTING TO INSTALL KERNEL"
+#~ msgstr "ERRO TENTANDO INSTALAR O KERNEL"
+
+#
+# File: 32-13.37-SeTkernel, line: 80
+# File: 32-14.0-SeTkernel, line: 80
+# File: 32-14.1-SeTkernel, line: 80
+# File: 64-13.37-SeTkernel, line: 80
+# File: 64-14.0-SeTkernel, line: 80
+# File: 64-14.1-SeTkernel, line: 80
+#~ msgid ""
+#~ "Sorry, but the directory $PLINK/kernels was not found.  You may need to "
+#~ "install the requested kernel $SLACK_KERNEL manually and then install LILO "
+#~ "before your system will be able to boot correctly."
+#~ msgstr ""
+#~ "Desculpe, mas o diretório $PLINK/kernels não foi encontrado. Talvez você "
+#~ "precise instalar o kernel requisitado $SLACK_KERNEL manualmente e então "
+#~ "instalar o LILO antes de seu sistema ser capaz de inicializar "
+#~ "corretamente."
 
 #
 # File: 32-13.37-INSCD, line: 248

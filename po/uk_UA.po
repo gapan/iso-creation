@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Salix-14.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-25 02:00+0300\n"
+"POT-Creation-Date: 2016-05-26 23:25+0300\n"
 "PO-Revision-Date: 2016-03-22 00:47+0100\n"
 "Last-Translator: \n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
@@ -2708,64 +2708,6 @@ msgstr ""
 "того щоб отримати уявлення про те як уникнути цю проблему наступного разу."
 
 #
-# File: 32-13.37-SeTkernel, line: 27
-# File: 32-14.0-SeTkernel, line: 27
-# File: 32-14.1-SeTkernel, line: 27
-# File: 64-13.37-SeTkernel, line: 27
-# File: 64-14.0-SeTkernel, line: 27
-# File: 64-14.1-SeTkernel, line: 27
-#: ../initrd-scripts/usr-lib-setup/SeTkernel:27
-msgid "REINSERT KERNEL DISC"
-msgstr "ВСТАВТЕ ЗАНОВО ДИСК З ЯДРОМ"
-
-#
-# File: 32-13.37-SeTkernel, line: 28
-# File: 32-14.0-SeTkernel, line: 28
-# File: 32-14.1-SeTkernel, line: 28
-# File: 64-13.37-SeTkernel, line: 28
-# File: 64-14.0-SeTkernel, line: 28
-# File: 64-14.1-SeTkernel, line: 28
-#: ../initrd-scripts/usr-lib-setup/SeTkernel:28
-#, fuzzy
-msgid ""
-"Please reinsert the Salix disc containing the collection of Linux kernels.  "
-"Usually this is disc number one (the disc that you boot from).  Once you've "
-"inserted the disc, hit ENTER to continue."
-msgstr ""
-"Будь ласка вставте заново диск зі Salix який містить набір ядер Linux. "
-"Зазвичай це диск номер один (диск з якого ви завантажилися). Як тільки ви "
-"вставили диск натисніть ENTER для продовження."
-
-#
-# File: 32-13.37-SeTkernel, line: 80
-# File: 32-14.0-SeTkernel, line: 80
-# File: 32-14.1-SeTkernel, line: 80
-# File: 64-13.37-SeTkernel, line: 80
-# File: 64-14.0-SeTkernel, line: 80
-# File: 64-14.1-SeTkernel, line: 80
-#: ../initrd-scripts/usr-lib-setup/SeTkernel:80
-msgid "ERROR ATTEMPTING TO INSTALL KERNEL"
-msgstr "ПОМИЛКА ПРИ СПРОБІ ВСТАНОВЛЕННЯ ЯДРА"
-
-#
-# File: 32-13.37-SeTkernel, line: 80
-# File: 32-14.0-SeTkernel, line: 80
-# File: 32-14.1-SeTkernel, line: 80
-# File: 64-13.37-SeTkernel, line: 80
-# File: 64-14.0-SeTkernel, line: 80
-# File: 64-14.1-SeTkernel, line: 80
-#: ../initrd-scripts/usr-lib-setup/SeTkernel:80
-#, sh-format
-msgid ""
-"Sorry, but the directory $PLINK/kernels was not found.  You may need to "
-"install the requested kernel $SLACK_KERNEL manually and then install LILO "
-"before your system will be able to boot correctly."
-msgstr ""
-"Вибачте, але каталог $PLINK/kernels не знайдено. Вам може знадобитися "
-"встановити запитане ядро $SLACK_KERNEL вручну, і потім встановити LILO перед "
-"тим як ваша система буде здатна звантажитися коректно."
-
-#
 # File: 32-13.37-SeTkeymap, line: 19
 # File: 32-14.0-SeTkeymap, line: 19
 # File: 32-14.1-SeTkeymap, line: 19
@@ -4340,6 +4282,59 @@ msgid ""
 "continue if you wish, but if this is an important required package then your "
 "installation may not work as-is."
 msgstr ""
+
+#
+# File: 32-13.37-SeTkernel, line: 27
+# File: 32-14.0-SeTkernel, line: 27
+# File: 32-14.1-SeTkernel, line: 27
+# File: 64-13.37-SeTkernel, line: 27
+# File: 64-14.0-SeTkernel, line: 27
+# File: 64-14.1-SeTkernel, line: 27
+#~ msgid "REINSERT KERNEL DISC"
+#~ msgstr "ВСТАВТЕ ЗАНОВО ДИСК З ЯДРОМ"
+
+#
+# File: 32-13.37-SeTkernel, line: 28
+# File: 32-14.0-SeTkernel, line: 28
+# File: 32-14.1-SeTkernel, line: 28
+# File: 64-13.37-SeTkernel, line: 28
+# File: 64-14.0-SeTkernel, line: 28
+# File: 64-14.1-SeTkernel, line: 28
+#, fuzzy
+#~ msgid ""
+#~ "Please reinsert the Salix disc containing the collection of Linux "
+#~ "kernels.  Usually this is disc number one (the disc that you boot from).  "
+#~ "Once you've inserted the disc, hit ENTER to continue."
+#~ msgstr ""
+#~ "Будь ласка вставте заново диск зі Salix який містить набір ядер Linux. "
+#~ "Зазвичай це диск номер один (диск з якого ви завантажилися). Як тільки ви "
+#~ "вставили диск натисніть ENTER для продовження."
+
+#
+# File: 32-13.37-SeTkernel, line: 80
+# File: 32-14.0-SeTkernel, line: 80
+# File: 32-14.1-SeTkernel, line: 80
+# File: 64-13.37-SeTkernel, line: 80
+# File: 64-14.0-SeTkernel, line: 80
+# File: 64-14.1-SeTkernel, line: 80
+#~ msgid "ERROR ATTEMPTING TO INSTALL KERNEL"
+#~ msgstr "ПОМИЛКА ПРИ СПРОБІ ВСТАНОВЛЕННЯ ЯДРА"
+
+#
+# File: 32-13.37-SeTkernel, line: 80
+# File: 32-14.0-SeTkernel, line: 80
+# File: 32-14.1-SeTkernel, line: 80
+# File: 64-13.37-SeTkernel, line: 80
+# File: 64-14.0-SeTkernel, line: 80
+# File: 64-14.1-SeTkernel, line: 80
+#~ msgid ""
+#~ "Sorry, but the directory $PLINK/kernels was not found.  You may need to "
+#~ "install the requested kernel $SLACK_KERNEL manually and then install LILO "
+#~ "before your system will be able to boot correctly."
+#~ msgstr ""
+#~ "Вибачте, але каталог $PLINK/kernels не знайдено. Вам може знадобитися "
+#~ "встановити запитане ядро $SLACK_KERNEL вручну, і потім встановити LILO "
+#~ "перед тим як ваша система буде здатна звантажитися коректно."
 
 #
 # File: 32-13.37-INSCD, line: 248
