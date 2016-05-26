@@ -1,4 +1,5 @@
 
+.PHONY: update-po
 update-po:
 	for i in `ls *.po`; do \
 		echo "Merging $$i"; \
@@ -11,6 +12,7 @@ update-po:
 	rm -f messages.mo
 	rm -f *.po~
 
+.PHONY: pot
 pot:
 	xgettext --from-code=utf-8 -L shell -o salix-installer.pot \
 		../initrd-scripts/usr-lib-setup/setup;
@@ -40,6 +42,7 @@ pot:
 			../initrd-scripts/usr-lib-setup/$$i; \
 	done
 
+.PHONY: stat
 stat:
 	@for i in `ls *.po`; do \
 		echo "Statistics for $$i:"; \
@@ -48,6 +51,7 @@ stat:
 	done
 	@rm -f messages.mo
 
+.PHONY: tx-pull
 tx-pull:
 	tx pull -a
 	@for i in `ls *.po`; do \
