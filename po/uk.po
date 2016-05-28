@@ -7,6 +7,7 @@
 # Dima <whoknows2012@myopera.com>, 2013
 # Oleh, 2014,2016
 # Oleh <aalesshhkka@gmail.com>, 2014
+# Yarema aka Knedlyk <yupadmin@gmail.com>, 2016
 # Кісіль Андрій <kisilams@gmail.com>, 2013
 # Микола Ткач <Stuartlittle1970@gmail.com>, 2013
 msgid ""
@@ -14,26 +15,26 @@ msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-05-26 23:25+0300\n"
-"PO-Revision-Date: 2016-05-26 20:35+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
-"Language-Team: Ukrainian (Ukraine) (http://www.transifex.com/gapan/salix/language/uk_UA/)\n"
+"PO-Revision-Date: 2016-05-27 20:05+0000\n"
+"Last-Translator: Yarema aka Knedlyk <yupadmin@gmail.com>\n"
+"Language-Team: Ukrainian (http://www.transifex.com/gapan/salix/language/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: uk_UA\n"
+"Language: uk\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../initrd-scripts/usr-lib-setup/setup:52
 msgid "WELCOME TO THE SALIX INSTALLATION"
-msgstr ""
+msgstr "ЗАПРОШУЄМО ДО ВСТАНОВЛЕННЯ SALIX"
 
 #: ../initrd-scripts/usr-lib-setup/setup:53
 msgid "Keep the current keymap"
-msgstr ""
+msgstr "Залишити поточну розкладку"
 
 #: ../initrd-scripts/usr-lib-setup/setup:54
 msgid "Select another keymap"
-msgstr ""
+msgstr "Вибрати іншу розкладку"
 
 #: ../initrd-scripts/usr-lib-setup/setup:55
 #, sh-format
@@ -45,7 +46,7 @@ msgstr ""
 #: ../initrd-scripts/usr-lib-setup/setup:66
 #: ../initrd-scripts/usr-lib-setup/setup:84
 msgid "Salix Installation"
-msgstr ""
+msgstr "Встановлення Salix"
 
 #: ../initrd-scripts/usr-lib-setup/setup:67
 #: ../initrd-scripts/usr-lib-setup/setup:86
@@ -59,33 +60,33 @@ msgstr "Вибір"
 #: ../initrd-scripts/usr-lib-setup/setup:68
 #: ../initrd-scripts/usr-lib-setup/setup:87
 msgid "Exit installation"
-msgstr ""
+msgstr "Вийти з встановлення"
 
 #: ../initrd-scripts/usr-lib-setup/setup:70
 msgid "You may now proceed with the installation by pressing the ENTER key."
-msgstr ""
+msgstr "Тепер Ви можете перейти до встановлення, натиснувши кнопку ВВІД."
 
 #: ../initrd-scripts/usr-lib-setup/setup:72
 #: ../initrd-scripts/usr-lib-setup/setup:92
 msgid ""
 "If you want to exit the installation and drop to a linux console, select "
 "'Exit installation'"
-msgstr ""
+msgstr "Якщо Ви бажаєте вийти з встановлення і перейти до консолі linux, тоді виберіть 'Вийти з встановлення'"
 
 #: ../initrd-scripts/usr-lib-setup/setup:74
 #: ../initrd-scripts/usr-lib-setup/setup:94
 msgid "Install Salix using a step-by-step guide"
-msgstr ""
+msgstr "Встановлення Salix, використовуючи допомогу крок-за-кроком"
 
 #: ../initrd-scripts/usr-lib-setup/setup:89
 msgid ""
 "You may select an option below using the UP/DOWN keys and SPACE or ENTER. "
 "Alternate keys may also be used: '+', '-', and TAB."
-msgstr ""
+msgstr "Ви можете вибрати опцію нижче, використовуючи стрілки ВВЕРХ/ВНИЗ і ПРОБІЛ, або ВВІД. Як альтернативу можна також використовувати '+', '-' і кнопку ТАБУЛЯЦІЯ."
 
 #: ../initrd-scripts/usr-lib-setup/setup:95
 msgid "Autopartition and install with few options (wipes your HD)"
-msgstr ""
+msgstr "Авто-розбивка на розділи і встановлення з кількома опціями (твердий диск буде витерто)"
 
 #: ../initrd-scripts/usr-lib-setup/setup:126
 msgid "NO LINUX PARTITIONS DETECTED"
@@ -96,7 +97,7 @@ msgid ""
 "There don't seem to be any Linux partitions on this machine. You'll need to "
 "make at least one of these to install Linux. Either select AUTOINSTALL from "
 "the menu, or select INSTALL and use the partition editor to create one."
-msgstr ""
+msgstr "Здається, що на цьому комп'ютері немає жодного розділу Linux. Вам потрібно створити хоча б один з цих для встановлення Linux. Виберіть з меню або АВТОВСТАНОВЛЕННЯ, або виберіть ВСТАНОВЛЕННЯ і використайте редактор розділів для створення розділу."
 
 #: ../initrd-scripts/usr-lib-setup/setup:135
 msgid "NO EFI SYSTEM PARTITION DETECTED"
@@ -106,66 +107,66 @@ msgstr "СИСТЕМНИЙ РОЗДІЛ EFI НЕ ВИЯВЛЕНО"
 msgid ""
 "This machine appears to be using EFI/UEFI, but no EFI System Partition was "
 "found."
-msgstr ""
+msgstr "Здається, що цей комп'ютер використовує EFI/UEFI, однак системного розділу EFI не знайдено."
 
 #: ../initrd-scripts/usr-lib-setup/setup:139
 msgid ""
 "You'll need to make an EFI System Partition in order to boot from the hard "
 "drive."
-msgstr ""
+msgstr "Вам потрібно створити системний розділ EFI, щоб завантажитись з твердого диску."
 
 #: ../initrd-scripts/usr-lib-setup/setup:164
 msgid "Can't umount /var/log/mount.  Reboot machine and run setup again."
-msgstr ""
+msgstr "Неможливо відмонтувати /var/log/mount/. Перезавантажте комп'ютер і запустіть налаштування знову."
 
 #: ../initrd-scripts/usr-lib-setup/setup:171
 msgid "Mount table corrupt.  Reboot machine and run setup again."
-msgstr ""
+msgstr "Таблиця монтувань пошкоджена. Перезавантажте комп'ютер і запустіть налаштування знову."
 
 #: ../initrd-scripts/usr-lib-setup/setup:204
 msgid "No Source Selected"
-msgstr ""
+msgstr "Не вибрано джерело"
 
 #: ../initrd-scripts/usr-lib-setup/setup:205
 msgid "The installer does not know where to find the source packages..."
-msgstr ""
+msgstr "Встановлювач не знає, де знайти джерело пакунків..."
 
 #: ../initrd-scripts/usr-lib-setup/setup:206
 #: ../initrd-scripts/usr-lib-setup/setup:224
 msgid "Press ENTER to return to the main menu."
-msgstr ""
+msgstr "Натисніть ВВІД для повернення в головне меню."
 
 #: ../initrd-scripts/usr-lib-setup/setup:215
 msgid "CANNOT INSTALL SOFTWARE YET"
-msgstr "ВСТАНОВЛЕННЯ ПРОГРАМ НЕМОЖЛИВЕ"
+msgstr "ВСТАНОВЛЕННЯ ПРОГРАМ ВСЕ ЩЕ НЕМОЖЛИВЕ"
 
 #: ../initrd-scripts/usr-lib-setup/setup:216
 msgid "Before you can install software, complete the following tasks:"
-msgstr ""
+msgstr "Перед встановленням програмного забезпечення завершіть наступні завдання:"
 
 #: ../initrd-scripts/usr-lib-setup/setup:218
 msgid "Select your source media."
-msgstr ""
+msgstr "Виберіть джерело, з якого встановлювати."
 
 #: ../initrd-scripts/usr-lib-setup/setup:219
 msgid "Set up your target Linux partition(s)."
-msgstr ""
+msgstr "Встановіть цільовий розділ(и) Linux."
 
 #: ../initrd-scripts/usr-lib-setup/setup:221
 msgid ""
 "You may also optionally remap your keyboard and set up your swap "
 "partition(s)."
-msgstr ""
+msgstr "Ви також можете вказати розкладку і встановити розділ(и) підкачки."
 
 #: ../initrd-scripts/usr-lib-setup/setup:237
 #: ../initrd-scripts/usr-lib-setup/setup:254
 msgid "SELECT INSTALLATION MODE"
-msgstr ""
+msgstr "ВИБІР РЕЖИМУ ВСТАНОВЛЕННЯ"
 
 #: ../initrd-scripts/usr-lib-setup/setup:239
 #: ../initrd-scripts/usr-lib-setup/setup:257
 msgid "Please select the installation mode you prefer from the following:"
-msgstr ""
+msgstr "Будь ласка, виберіть бажаний режим встановлення з наступних:"
 
 #: ../initrd-scripts/usr-lib-setup/setup:241
 #: ../initrd-scripts/usr-lib-setup/setup:262
@@ -482,7 +483,7 @@ msgstr "ЗНАЙДЕНО CD/DVD ПРИСТРІЙ"
 #: ../initrd-scripts/usr-lib-setup/INSCD:198
 #, sh-format
 msgid "A Salix disc was found in device $DRIVE_FOUND."
-msgstr ""
+msgstr "Знайдено диск Salix знайдено в пристрої $DRIVE_FOUND."
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:201
 msgid "MOUNT ERROR"
@@ -517,7 +518,7 @@ msgstr "ПРОБУЮ ЗМОНТУВАТИ CD/DVD на $DRIVE_FOUND"
 #: ../initrd-scripts/usr-lib-setup/INSCD:223
 #, sh-format
 msgid "Attempting to mount your CD/DVD again with the following command:"
-msgstr ""
+msgstr "Проба змонтувати Ваш CD/DVD знову з наступною командою:"
 
 #: ../initrd-scripts/usr-lib-setup/INSNFS:23
 msgid ""
@@ -684,11 +685,11 @@ msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:68
 msgid "URL examples are:"
-msgstr ""
+msgstr "Приклад URL:"
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:76
 msgid "What is the URL of your FTP/HTTP server?"
-msgstr ""
+msgstr "Який URL Вашого сервера FTP/HTTP?"
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:77
 msgid "ENTER URL OF FTP/HTTP SERVER"
@@ -834,17 +835,17 @@ msgstr ""
 #: ../initrd-scripts/usr-lib-setup/INSdir:24
 #: ../initrd-scripts/usr-lib-setup/INShd:23
 msgid "ERROR"
-msgstr ""
+msgstr "ПОМИЛКА"
 
 #: ../initrd-scripts/usr-lib-setup/INSdir:25
 #: ../initrd-scripts/usr-lib-setup/INShd:24
 msgid "REBOOT"
-msgstr ""
+msgstr "ПЕРЕЗАВАНТАЖЕННЯ"
 
 #: ../initrd-scripts/usr-lib-setup/INSdir:26
 #: ../initrd-scripts/usr-lib-setup/INShd:25
 msgid "CANCEL"
-msgstr ""
+msgstr "СКАСУВАТИ"
 
 #: ../initrd-scripts/usr-lib-setup/INSdir:40
 msgid ""
@@ -870,22 +871,22 @@ msgstr ""
 #: ../initrd-scripts/usr-lib-setup/INSdir:63
 #: ../initrd-scripts/usr-lib-setup/INShd:137
 msgid "SELECT A DIRECTORY"
-msgstr ""
+msgstr "ВИБІР ТЕКИ"
 
 #: ../initrd-scripts/usr-lib-setup/INSdir:85
 msgid "The ISO image you specified is not valid:"
-msgstr ""
+msgstr "Вибраний ISO-образ не підходить:"
 
 #: ../initrd-scripts/usr-lib-setup/INSdir:89
 #: ../initrd-scripts/usr-lib-setup/INSdir:114
 #: ../initrd-scripts/usr-lib-setup/INShd:185
 msgid "Please check and try again."
-msgstr ""
+msgstr "Перевірте, будь ласка, і спробуйте знову."
 
 #: ../initrd-scripts/usr-lib-setup/INSdir:91
 #: ../initrd-scripts/usr-lib-setup/INShd:168
 msgid "INVALID ISO IMAGE"
-msgstr ""
+msgstr "ISO-ОБРАЗ НЕ ПІДХОДИТЬ"
 
 #: ../initrd-scripts/usr-lib-setup/INSdir:92
 #: ../initrd-scripts/usr-lib-setup/INSdir:118
@@ -901,16 +902,16 @@ msgstr "OK"
 #: ../initrd-scripts/usr-lib-setup/INSdir:109
 #: ../initrd-scripts/usr-lib-setup/INShd:181
 msgid "The directory you specified is not valid:"
-msgstr ""
+msgstr "Вибрана тека не підходить:"
 
 #: ../initrd-scripts/usr-lib-setup/INSdir:117
 #: ../initrd-scripts/usr-lib-setup/INShd:187
 msgid "INVALID SOURCE DIRECTORY"
-msgstr ""
+msgstr "НЕПРАВИЛЬНИЙ КАТАЛОГ-ДЖЕРЕЛО"
 
 #: ../initrd-scripts/usr-lib-setup/INShd:20
 msgid "Please reboot the machine an try again."
-msgstr ""
+msgstr "Перезавантажте комп'ютер і спробуйте знову."
 
 #: ../initrd-scripts/usr-lib-setup/INShd:39
 msgid ""
@@ -932,7 +933,7 @@ msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/INShd:49
 msgid "Partitions"
-msgstr ""
+msgstr "Розділи"
 
 #: ../initrd-scripts/usr-lib-setup/INShd:61
 msgid "PARTITIONS LIST"
@@ -1177,13 +1178,13 @@ msgstr ""
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:230
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:239
 msgid "Enabled"
-msgstr ""
+msgstr "Включено"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:217
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:230
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:239
 msgid "Disabled"
-msgstr ""
+msgstr "Виключено"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:218
 msgid "Do you want to have numlock enabled or disabled on boot?"
@@ -1191,7 +1192,7 @@ msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:229
 msgid "IBus configuration"
-msgstr ""
+msgstr "Налаштування IBus"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:232
 msgid ""
@@ -1211,15 +1212,15 @@ msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:21
 msgid "Go"
-msgstr ""
+msgstr "Перейти"
 
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:22
 msgid "Exit"
-msgstr ""
+msgstr "Вийти"
 
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:23
 msgid "PARTITIONS EDITOR"
-msgstr ""
+msgstr "РЕДАКТОР РОЗДІЛІВ"
 
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:24
 msgid ""

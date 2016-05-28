@@ -6,43 +6,44 @@
 # Didier Spaier <didier@slint.fr>, 2014
 # Eric Hameleers <alien@slackware.com>, 2013
 # Eric Hameleers <eric.hameleers@gmail.com>, 2014,2016
+# Gambit <gambit73@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-05-26 23:25+0300\n"
-"PO-Revision-Date: 2016-05-26 20:35+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
-"Language-Team: Dutch (Netherlands) (http://www.transifex.com/gapan/salix/language/nl_NL/)\n"
+"PO-Revision-Date: 2016-05-27 11:12+0000\n"
+"Last-Translator: Gambit <gambit73@gmail.com>\n"
+"Language-Team: Dutch (http://www.transifex.com/gapan/salix/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: nl_NL\n"
+"Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../initrd-scripts/usr-lib-setup/setup:52
 msgid "WELCOME TO THE SALIX INSTALLATION"
-msgstr ""
+msgstr "WELKOM BIJ DE SALIX INSTALLATIE"
 
 #: ../initrd-scripts/usr-lib-setup/setup:53
 msgid "Keep the current keymap"
-msgstr ""
+msgstr "Behoudt de huidige keymap"
 
 #: ../initrd-scripts/usr-lib-setup/setup:54
 msgid "Select another keymap"
-msgstr ""
+msgstr "Selecteer een andere keymap"
 
 #: ../initrd-scripts/usr-lib-setup/setup:55
 #, sh-format
 msgid ""
 "Welcome to the installation of Salix, The Bonsai OS!\n"
 "Before you proceed with the rest of the installation, you might want to select your keyboard map (keymap). The current keymap is $KMAP."
-msgstr ""
+msgstr "Welkom bij de installatie van Salix, Het Bonsai besturingssysteem!\nVoordat u doorgaat met de rest van de installatie wilt u misschien de toetsenbord indeling (keymap) kiezen. De huidige keymap is $KMAP."
 
 #: ../initrd-scripts/usr-lib-setup/setup:66
 #: ../initrd-scripts/usr-lib-setup/setup:84
 msgid "Salix Installation"
-msgstr ""
+msgstr "Salix Installatie"
 
 #: ../initrd-scripts/usr-lib-setup/setup:67
 #: ../initrd-scripts/usr-lib-setup/setup:86
@@ -56,33 +57,33 @@ msgstr "Selecteer"
 #: ../initrd-scripts/usr-lib-setup/setup:68
 #: ../initrd-scripts/usr-lib-setup/setup:87
 msgid "Exit installation"
-msgstr ""
+msgstr "Sluit installatie af"
 
 #: ../initrd-scripts/usr-lib-setup/setup:70
 msgid "You may now proceed with the installation by pressing the ENTER key."
-msgstr ""
+msgstr "U kan nu verder gaan met de installatie door op de ENTER toets te drukken."
 
 #: ../initrd-scripts/usr-lib-setup/setup:72
 #: ../initrd-scripts/usr-lib-setup/setup:92
 msgid ""
 "If you want to exit the installation and drop to a linux console, select "
 "'Exit installation'"
-msgstr ""
+msgstr "Als u de installatie wilt afsluiten en in een linux console terecht wilt komen, selecteer 'Sluit installatie af'"
 
 #: ../initrd-scripts/usr-lib-setup/setup:74
 #: ../initrd-scripts/usr-lib-setup/setup:94
 msgid "Install Salix using a step-by-step guide"
-msgstr ""
+msgstr "Installeer Salix met een stap voor stap handleiding"
 
 #: ../initrd-scripts/usr-lib-setup/setup:89
 msgid ""
 "You may select an option below using the UP/DOWN keys and SPACE or ENTER. "
 "Alternate keys may also be used: '+', '-', and TAB."
-msgstr ""
+msgstr "U kan hieronder een optie kiezen door de OP/NEER cursortoetsen te gebruiken en de SPATIE of ENTER te gebruiken. Alternatieve toetsen als '+', '-' en TAB kunnen ook gebruikt worden."
 
 #: ../initrd-scripts/usr-lib-setup/setup:95
 msgid "Autopartition and install with few options (wipes your HD)"
-msgstr ""
+msgstr "Autopartitionering en installatie met weinig opties (wist uw HardDisk)"
 
 #: ../initrd-scripts/usr-lib-setup/setup:126
 msgid "NO LINUX PARTITIONS DETECTED"
@@ -93,7 +94,7 @@ msgid ""
 "There don't seem to be any Linux partitions on this machine. You'll need to "
 "make at least one of these to install Linux. Either select AUTOINSTALL from "
 "the menu, or select INSTALL and use the partition editor to create one."
-msgstr ""
+msgstr "Er lijkt geen Linux partitie aanwezig te zijn op deze machine. U moet hier minstens één van hebben om Linux te installeren. Selecteer AUTOINSTALLATIE of INSTALLATIE en gebruik de partitie editor om er een aan te maken."
 
 #: ../initrd-scripts/usr-lib-setup/setup:135
 msgid "NO EFI SYSTEM PARTITION DETECTED"
@@ -929,7 +930,7 @@ msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/INShd:49
 msgid "Partitions"
-msgstr ""
+msgstr "Partities"
 
 #: ../initrd-scripts/usr-lib-setup/INShd:61
 msgid "PARTITIONS LIST"
