@@ -134,6 +134,19 @@ echo "Installing spkg..."
 spkg -qq --root=/boot/initrd-tree/ -i spkg-*.t?z
 rm spkg-*.t?z
 
+# the slackware installer does not install the locale files for dialog
+# and we need those to have the installer completely translated.
+install_dialog () {
+echo "Downloading dialog..."
+rm -f dialog-*.t?z
+LOC=`grep "dialog-.*t[gx]z$" slack.md5|sed "s|\(.*\)  \./\(.*\)|\2|"`
+wget -q $SLACKREPO/$LOC
+echo "Installing dialog..."
+spkg -qq --root=/boot/initrd-tree/ -i dialog-*.t?z
+rm -f dialog-*.t?z
+}
+install_dialog
+
 # We just  need xzdec, needed by spkg. - Didier
 install_xzdec () {
 echo "Downloading xz..."
