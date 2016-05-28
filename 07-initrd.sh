@@ -178,9 +178,7 @@ install_fonts
 install_messages_catalogs() {
 echo "Installing messages catalogs"
 for j in $(find po -name "*.po"); do
-  i=$(basename $j)
-  ll_TT=${i%%.*}
-  SeTLocaleDir
+  LocaleDir=`echo $j | sed "s|po/\(.*\)\.po|\1|"`
   MO_DIR=/boot/initrd-tree/usr/share/locale/$LocaleDir/LC_MESSAGES
   mkdir -p $MO_DIR
   msgfmt --strict -c -v --statistics -o $MO_DIR/salix-installer.mo $j
