@@ -215,7 +215,7 @@ tar -xf glibc-i18n-*t?z -C $TMPDIR
 # LOCALES is set in SeTlocales, sourced above.
 for i in $LOCALES; do
   cp -a $TMPDIR/usr/lib$LIBDIRSUFFIX/locale/$i \
-  /boot/initrd-tree/usr/lib$LIBDIRSUFFIX/locale
+    /boot/initrd-tree/usr/lib$LIBDIRSUFFIX/locale
 done
 rm -rf $TMPDIR
 rm -f glibc-i18n-*z
