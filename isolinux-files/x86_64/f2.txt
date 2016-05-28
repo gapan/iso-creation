@@ -2,11 +2,7 @@
                          09Usage of the installer07
 
 The Linux kernel provided in this installer, necessary to boot then
-install the system, requires at least an Athlon64 processor.
-This kernel includes Speakup support.
-
-To check your system memory with memtest86+, use 'memtest' like this:
-boot: memtest
+install the system, requires at least a 64-bit CPU.
 
 By default, booting uses "KMS" (acronym of Kernel Mode Setting). With some
 video cards that fails. In that case the screen becomes black a few seconds
