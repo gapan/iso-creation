@@ -15,6 +15,10 @@
  7f³70  Don't panic! To find the key that you need to press to print a character, ³10
  7f³70  visit the web page: http://slint.fr/en/kbd.svg                            ³10
  7f³70                                                                            ³10
+ 7f³70  If you want to use this as a rescue system, just select to exit the       ³10
+ 7f³70  installation at the main menu. You will then have access to a linux       ³10
+ 7f³70  console. If from there you wish to go back to installing Salix, just      ³10
+ 7f³70  type "setup" in the linux console.                                        ³10
  7f³70                                                                            ³10
  7f³70  For more help, visit: http://salixos.org/                                 ³10
  7f³70                                                                            ³10
