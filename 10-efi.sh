@@ -1,16 +1,20 @@
 #!/bin/sh
 #
-# This script get the EFI files from slackware and adapts them
-# to Salix.
-#
-# You will first need to install curlftpfs to use it.
+# This script creates an efiboot.img file that includes elilo and can
+# boot the installation media on UEFI systems
 
-if [ "$UID" -eq "0" ]; then
-	echo "Don't run this script as root"
+if [ "$UID" -ne "0" ]; then
+	echo "You need to be root to run this"
 	exit 1
 fi
 
 set -e
+
+if [ ! -f USER ]; then
+	echo "No USER file."
+	exit 1
+fi
+user=`cat USER`
 
 if [ ! -f ARCH ]; then
 	echo "No ARCH file."
@@ -19,20 +23,13 @@ else
 	arch=`cat ARCH`
 fi
 
-if [ ! -f VERSION ]; then
-	echo "No VERSION file."
+if [ ! -f kernel/x86_64/huge.s/bzImage ]; then
+	echo "I can't find the kernel in kernel/x86_64/huge.s/bzImage"
 	exit 1
-else
-	ver=`cat VERSION`
 fi
 
-# FIXME
-#
-# This is temporary. When slackware releases 14.2, remove this line
-ver=current
-
-if [ ! -d isolinux/x86_64 ]; then
-	echo "I can't find the isolinux files."
+if [ ! -f initrd/x86_64/initrd.img ]; then
+	echo "I can't find initrd/x86_64/initrd.img"
 	exit 1
 fi
 
@@ -43,24 +40,37 @@ if [[ "$arch" != "x86_64" ]]; then
 	exit 1
 fi
 
-# clean up previous files
 rm -rf efi
-mkdir efi
+mkdir -p efi/EFI/BOOT
 
-# get the slack EFI files
-echo "Getting the slackware EFI files..."
-(
-  cd efi
-  wget -np -nH --cut-dirs=2 -r -R huge.s,initrd.img ftp://ftp.slackware.uk/slackware/slackware64-$ver/EFI
-)
-(
-  cd isolinux/x86_64
-  wget -np -nH --cut-dirs=3 -r ftp://ftp.slackware.uk/slackware/slackware64-$ver/isolinux/efiboot.img
-)
+# Create the efiboot.img file
+dd if=/dev/zero of=isolinux/x86_64/efiboot.img bs=1K count=260
 
-# copy over the grub.cfg file to be used. This ones includes menu
-# entries for all available languages.
-cp efi-files/grub.cfg efi/EFI/BOOT
+# Format the image as FAT12:
+mkdosfs -F 12 isolinux/x86_64/efiboot.img
+
+# Create a temporary mount point and mount the efiboot.img file there
+MOUNTPOINT=$(mktemp -d)
+mount -o loop isolinux/x86_64/efiboot.img $MOUNTPOINT
+
+# Create efi/EFI/BOOT inside the efiboot.img file
+mkdir -p $MOUNTPOINT/efi/efi/BOOT
+
+# Copy elilo-x86_64.efi from the host system (make sure the latest
+# version of elilo is installed)
+cp /boot/elilo-x86_64.efi $MOUNTPOINT/efi/EFI/BOOT/BOOTx64.EFI
+# Now also in the efi directory
+cp /boot/elilo-x86_64.efi efi/EFI/BOOT/BOOTx64.EFI
+
+# Finally copy elilo menu files
+cp efi-files/* efi/EFI/BOOT/
+
+# Unmount and clean up:
+umount $MOUNTPOINT
+rmdir $MOUNTPOINT
+
+# chown everything back
+chown -R ${user}:users isolinux/x86_64/efiboot.img
 
 echo "DONE!"
 set +e
