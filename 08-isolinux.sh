@@ -24,29 +24,12 @@ else
 	arch=`cat ARCH`
 fi
 
-if [ ! -f VERSION ]; then
-	echo "No VERSION file."
-	exit 1
-else
-	ver=`cat VERSION`
-fi
-
-# FIXME
-#
-# This is temporary. When slackware releases 14.2, remove this line:
-ver=current
-
 rm -rf isolinux/$arch
 mkdir -p isolinux/$arch
 
 # copy the isolinux.bin from the system (it's exactly the same for both
-# architectures). For some reason slackware uses the
-# isolinux-debug.bin, which prevents making a hybrid iso
-#cp /usr/share/syslinux/isolinux.bin isolinux/$arch
-(
-  cd isolinux/$arch
-  wget ftp://ftp.slackware.uk/slackware/slackware64-$ver/isolinux/isolinux.bin
-)
+# architectures)
+cp /usr/share/syslinux/isolinux.bin isolinux/$arch
 
 # copy the initrd (it should already be there)
 cp initrd/$arch/*.img isolinux/$arch/
