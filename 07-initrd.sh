@@ -18,9 +18,6 @@ set -e
 CWD=`pwd`
 SCRIPTSDIR=$CWD/initrd-scripts
 
-# The script SeTlocales contains functions and variable settings - Didier
-. $SCRIPTSDIR/usr-lib-setup/SeTlocales
-
 if [ "$UID" != "0" ]; then
 	echo "You need to be root to run this"
 	exit 1
