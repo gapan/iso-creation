@@ -65,7 +65,7 @@ fi
 
 # Inform the user that we're done installing packages
   dialog --title "`gettext "DONE INSTALLING PACKAGES"`" --infobox  \
-"`gettext "Preparing to configure your new Linux system..."`" 3 70 
+"`gettext "Preparing to configure your new Linux system..."`" 0 0
 sleep 3
 
 # Let user choose Grub or Lilo Boot Loader only if both are installed 
