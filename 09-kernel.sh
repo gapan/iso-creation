@@ -1,10 +1,8 @@
 #!/bin/sh
 #
-# This script gets slackware kernel files from a slackware
-# repository 
-#
-# You will first need to install curlftpfs to use it.
-
+# This script extracts the kernel image files+friends from the kernel
+# packages that have been previously downloaded and places them inside
+# the kernels directory
 
 if [ "$UID" -eq "0" ]; then
 	echo "Don't run this script as root"
@@ -20,42 +18,36 @@ else
 	arch=`cat ARCH`
 fi
 
-if [ ! -f VERSION ]; then
-	echo "No VERSION file."
-	exit 1
-else
-	ver=`cat VERSION`
-fi
-
-# FIXME!
-#
-# This is temporary. When slackware releases 14.2, remove this line:
-ver=current
-
-unset LIBDIRSUFFIX
-if [[ "$arch" == "x86_64" ]]; then
-	export LIBDIRSUFFIX="64"
-fi
-
 rm -rf kernel/$arch
 mkdir -p kernel/$arch
 
 # get the slack kernel
 echo "Getting the slackware kernel..."
 if [[ "$arch" == "i486" ]]; then
-	(
-		cd kernel/$arch
-		wget -np -nH --cut-dirs=3 -r \
-			ftp://ftp.slackware.uk/slackware/slackware${LIBDIRSUFFIX}-$ver/kernels/huge.s
-		wget -np -nH --cut-dirs=3 -r \
-			ftp://ftp.slackware.uk/slackware/slackware${LIBDIRSUFFIX}-$ver/kernels/hugesmp.s
-	)
+	mkdir kernel/$arch/hugesmp.s
+	tar --wildcards -xf iso/salix/kernels/kernel-huge-smp-*-i686-*.txz \
+		boot/vmlinuz-huge-* -O > kernel/$arch/hugesmp.s/bzImage
+	tar --wildcards -xf iso/salix/kernels/kernel-huge-smp-*-i686-*.txz \
+		boot/System.map-huge-* -O | gzip > kernel/$arch/hugesmp.s/System.map.gz
+	tar --wildcards -xf iso/salix/kernels/kernel-huge-*-i686-*.txz \
+		boot/config-huge-* -O > kernel/$arch/hugesmp.s/config
+	if [ -f iso/salix/kernels/kernel-huge-*-i586-*.txz ]; then
+		mkdir kernel/$arch/huge.s
+		tar --wildcards -xf iso/salix/kernels/kernel-huge-*-i586-*.txz \
+			boot/vmlinuz-huge-* -O > kernel/$arch/huge.s/bzImage
+		tar --wildcards -xf iso/salix/kernels/kernel-huge-*-i586-*.txz \
+			boot/System.map-huge-* -O | gzip > kernel/$arch/huge.s/System.map.gz
+		tar --wildcards -xf iso/salix/kernels/kernel-huge-*-i586-*.txz \
+			boot/config-huge-* -O > kernel/$arch/huge.s/config
+	fi
 else
-	(
-		cd kernel/$arch
-		wget -np -nH --cut-dirs=3 -r \
-			ftp://ftp.slackware.uk/slackware/slackware${LIBDIRSUFFIX}-$ver/kernels/huge.s
-	)
+	mkdir kernel/$arch/huge.s
+	tar --wildcards -xf iso/salix/kernels/kernel-huge-*-x86_64-*.txz \
+		boot/vmlinuz-huge-* -O > kernel/$arch/huge.s/bzImage
+	tar --wildcards -xf iso/salix/kernels/kernel-huge-*-x86_64-*.txz \
+		boot/System.map-huge-* -O | gzip > kernel/$arch/huge.s/System.map.gz
+	tar --wildcards -xf iso/salix/kernels/kernel-huge-*-x86_64-*.txz \
+		boot/config-huge-* -O > kernel/$arch/huge.s/config
 fi
 
 echo "DONE!"
