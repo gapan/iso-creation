@@ -255,6 +255,7 @@ fi
 
 echo "" > $TMP/tempmsg
 gettext "Partitioning completed." >> $TMP/tempmsg
+echo -e "\n" >> $TMP/tempmsg
 gettext "Adding this information to your /etc/fstab:" >> $TMP/tempmsg
 cat $TMP/SeTnative >> $TMP/tempmsg
 cat $TMP/SeTswap >> $TMP/tempmsg
