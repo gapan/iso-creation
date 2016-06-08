@@ -181,6 +181,8 @@ for ARG in `cat /proc/cmdline` ; do
     BMAP="`echo $ARG | cut -f2 -d=`.bmap"
     tar xzOf /etc/keymaps.tar.gz $BMAP | loadkmap
     unset BMAP
+  else
+    /bin/sh /etc/rc.d/rc.keymap
   fi 
 done
 
