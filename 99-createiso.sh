@@ -14,6 +14,11 @@ if [ ! -f $ISOHYBRID_MBR ]; then
 	exit 1
 fi
 
+if [ ! -x /usr/bin/xorriso ]; then
+	echo "libisoburn is not installed"
+	exit 1
+fi
+
 CWD=`pwd`
 
 if [ ! -f EDITION ]; then
