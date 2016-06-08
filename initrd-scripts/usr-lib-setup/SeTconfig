@@ -125,15 +125,16 @@ if [ -d $T_PX/var/log/setup ]; then
          # Do not run GPM configuration during installation. Most people
          # would probably want this off and if someone wants it he can
          # always run mouseconfig after installation,
-         # also do not run the consolefont dialog and the time
-         # configuration dialog
+         # also do not run the consolefont dialog, netconfig and the
+         # time configuration dialog
          if [ "$SCRIPT" == "setup.mouse" ] || \
             [ "$SCRIPT" == "setup.setconsolefont" ] || \
+            [ "$SCRIPT" == "setup.netconfig" ] || \
             [ "$SCRIPT" == "setup.timeconfig" ] || \
             [ "$SCRIPT" == "setup.80.make-bootdisk" ]; then
           sleep 0
-         # netconfig should not be run in FULL mode
-         elif [ "$SCRIPT" == "setup.netconfig" ] && [ "$MODE" == "FULL" ]; then
+         # netsetup should not be run in FULL mode
+         elif [ "$SCRIPT" == "setup.netsetup" ] && [ "$MODE" == "FULL" ]; then
           sleep 0
          # lilo should only be setup if it was selected as the bootloader
          elif [ "$SCRIPT" == "setup.liloconfig" ] && [ "$BOOT_LOADER" != "Lilo" ]; then
