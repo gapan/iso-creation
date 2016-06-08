@@ -1,6 +1,4 @@
 a2ps
-aaa_base
-aaa_terminfo
 acl
 acpid
 apr
@@ -23,7 +21,6 @@ ccache
 cdparanoia
 cdrdao
 cdrtools
-coreutils
 cpio
 cryptsetup
 curl
@@ -47,7 +44,6 @@ dvd+rw-tools
 e2fsprogs
 eject
 enscript
-etc
 ethtool
 eudev
 expat
@@ -71,7 +67,6 @@ git
 glib2
 glibc
 glibc-i18n
-glibc-zoneinfo
 gmm
 gmp
 gnupg

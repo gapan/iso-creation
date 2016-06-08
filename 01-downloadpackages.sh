@@ -92,6 +92,7 @@ fi
 slapt-get -u -c slapt-getrc.$arch
 slapt-get --clean
 {
+	AAAPKG=`cat lists/AAA`
 	if [ $arch == "i486" ] && [ $smp -eq 0 ]; then
 		KERNELPKG=`cat lists/KERNEL | grep smp`
 	else
@@ -113,7 +114,7 @@ slapt-get --clean
 		FULLPKG=""
 	fi
 	SETTINGSPKG=`cat lists/SETTINGS`
-	for i in $KERNELPKG $COREPKG $BASICPKG $FULLPKG $SETTINGSPKG; do 
+	for i in $AAAPKG $KERNELPKG $COREPKG $BASICPKG $FULLPKG $SETTINGSPKG; do
 		slapt-get -d --no-dep --reinstall -c slapt-getrc.$arch -i $i
 	done
 } 2>&1 | tee download-$arch.log

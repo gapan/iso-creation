@@ -7,7 +7,7 @@ fi
 
 rm -rf iso
 rm -rf temp
-mkdir -p iso/salix/{kernels,core,settings}
+mkdir -p iso/salix/{aaa,kernels,core,settings}
 if [ -f lists/BASIC ]; then
 	mkdir -p iso/salix/basic
 fi
@@ -17,6 +17,10 @@ fi
 mkdir -p temp
 
 find /var/slapt-get -name "*.t[gx]z" -exec cp {} temp/ \;
+
+for i in `cat lists/AAA`; do
+	find temp/ | grep /$i- | sed "/$i-.*-.*-.*-.*/d" >> temp/AAALIST
+done
 
 for i in `cat lists/KERNEL`; do
 	find temp/ | grep /$i- | sed "/$i-.*-.*-.*-.*/d" >> temp/KERNELLIST
@@ -40,6 +44,10 @@ fi
 
 for i in `cat lists/SETTINGS`; do
 	find temp/ | grep /$i- | sed "/$i-.*-.*-.*-.*/d" >> temp/SETTINGSLIST
+done
+
+for i in `cat temp/AAALIST`; do
+	mv $i iso/salix/aaa/
 done
 
 for i in `cat temp/KERNELLIST`; do

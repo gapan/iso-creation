@@ -117,6 +117,19 @@ sleep 1
 # we need this or spkg will fail
 mkdir -p $ROOTDIR/var/log/packages
 
+# Install the aaa package series (these have to be installed first to
+# avoid problems):
+for package in $SRCPATH/aaa/*.t?z ; do
+  [ -n "$REMOTESVR" ] && get_pkg core $(basename $package) '-q'
+  dialog --progressbox "Installing `basename $package`" 17 80 < ${package%t[glbx]z}desc
+  spkg -i --root=$ROOTDIR -qq --no-ldconfig --no-gtk-update-icon-cache $package
+  ERROR=$?
+  if [ ! $ERROR = 0 ]; then
+	errorcode $ERROR $package
+  fi
+  [ -n "$REMOTESVR" ] && zap_pkg core $(basename $package)
+done
+
 # Install the core package series:
 for package in $SRCPATH/core/*.t?z ; do
   [ -n "$REMOTESVR" ] && get_pkg core $(basename $package) '-q'
