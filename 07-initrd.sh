@@ -271,44 +271,15 @@ rm -rf /boot/initrd-tree/var/log/packages
 # rm -f /boot/initrd-tree/etc/rc.d/rc.saslauthd
 # rm -rf /boot/initrd-tree/usr/lib${LIBDIRSUFFIX}/sasl*/
 
-# in i486 the initrd is >32MB, so we need to split it in two
-if [ "$arch" == "x86_64" ] ; then
-	# repack x86_64 initrd
-	echo "Repacking x86_64 initrd..."
-	# We didn't install modules, so no need for depmod - Didier
-	# depmod -b /boot/initrd-tree
-	rm -f /boot/initrd-tree/{wait-for-root,rootfs,rootdev,initrd-name}
-	( cd /boot/initrd-tree
-	  find . -print | cpio -o --owner root:root -H newc \
-	  | gzip -9 > $CWD/initrd/$arch/initrd.img
-	)
-else
-	#
-	# first create a combined initrd
-	# (we're disabling this for now)
-	#echo "Repacking i486 initrd (combined smp and non-smp)..."
-	#depmod -b /boot/initrd-tree/ $( uname -r | sed "s/-smp//" )
-	#mkinitrd -o $CWD/initrd/$arch/initrd.img
-	
-	#
-	# then do the split ones
-	#
-	cp -ar /boot/initrd-tree /boot/initrd-tree-copy
-	# first pack the non-smp initrd
-	echo "Repacking i486 non-smp initrd..."
-	rm -rf /boot/initrd-tree/lib/modules/*-smp
-	# depmod -b /boot/initrd-tree/ $( uname -r | sed "s/-smp//" )
-	rm -f /boot/initrd-tree/{wait-for-root,rootfs,rootdev,initrd-name}
-	mkinitrd -o $CWD/initrd/$arch/nosmp.img -k $( uname -r | sed "s/-smp//" )
-	# then pack the smp initrd
-	echo "Repacking i486 smp initrd..."
-	rm -rf /boot/initrd-tree
-	mv /boot/initrd-tree-copy /boot/initrd-tree
-	rm -rf $( ls -d /boot/initrd-tree/lib/modules/* | grep -v smp )
-	# depmod -b /boot/initrd-tree/
-	rm -f /boot/initrd-tree/{wait-for-root,rootfs,rootdev,initrd-name}
-	mkinitrd -o $CWD/initrd/$arch/smp.img
-fi
+echo "Repacking initrd..."
+# We didn't install modules, so no need for depmod
+# depmod -b /boot/initrd-tree
+rm -f /boot/initrd-tree/{wait-for-root,rootfs,rootdev,initrd-name}
+(
+  cd /boot/initrd-tree
+  find . -print | cpio -o --owner root:root -H newc \
+  | gzip -9 > $CWD/initrd/$arch/initrd.img
+)
 
 # clean up
 rm -f slack.md5 salix.md5
