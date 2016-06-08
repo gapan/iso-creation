@@ -319,7 +319,7 @@ echo $UPNRUN > $TMP/SeTupnrun
 # Basic initialisation completed. Let's see what the commandline has for us:
 # If we know of a remote configuration file, get it now:
 # Provide comma-separated values (protocol,remoteserver[:portnumber],configfile)
-# like this example: 'cf=tftp,192.168.0.22,/salix-12.1/configs/t43.cfg'
+# like this example: 'cf=tftp,192.168.0.22,/salix-14.2/configs/t43.cfg'
 for CMDELEM in $(cat /proc/cmdline) ; do
  if $(echo $CMDELEM | grep -q "^cf=") ; then
   CONFIGFILE=$(echo $CMDELEM | cut -f2 -d=)
