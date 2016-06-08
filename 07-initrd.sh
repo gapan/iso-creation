@@ -178,7 +178,8 @@ echo "Installing terminus fonts"
 rm -f terminus-font-*
 LOC=`grep "terminus-font.*t[gx]z$" slack.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
 wget -q $SLACKREPO/$LOC
-FONT_LIST=$(grep -o "FONT[^=]*=[^;]*" initrd-scripts/usr-lib-setup/SeTlocales|sort|uniq|cut -d= -f2|sed ':a;N;s/\n/ /;ta')
+FONT_LIST=$(grep -o "FONT[^=]*=[^;]*" initrd-scripts/etc-rc.d/rc.font | \
+    sort | uniq | cut -d= -f2| sed ':a;N;s/\n/ /;ta')
 for i in $FONT_LIST; do
   tar xf terminus-font-*t?z -C /boot/initrd-tree \
     usr/share/kbd/consolefonts/$i
