@@ -33,7 +33,7 @@ Filesystem type: btrfs"`" 0 0
    if mount | grep "$1 " 1> $NDIR 2> $NDIR ; then
       umount $1 2> $NDIR
    fi
-   mkfs.btrfs -d single -m single $1 1> $REDIR 2> $REDIR
+   mkfs.btrfs -f -d single -m single $1 1> $REDIR 2> $REDIR
 }
 
 # make_ext2( dev, check ) - Create a new ext2 filesystem on the named
@@ -289,7 +289,6 @@ echo -n '" 0 0 0 ' >> $TMP/tempscript
     echo "\"xfs\" \"`gettext "SGI's Journaling Filesystem"`\" \\" >> $TMP/tempscript
   fi
   echo " 2> $TMP/return" >> $TMP/tempscript
-
   . $TMP/tempscript
   if [ ! $? = 0 ]; then
     rm -f $TMP/return
@@ -329,6 +328,7 @@ gettext "Please select a partition from the following list to use for your \
 root (/) Linux partition." >> $TMP/tempscript
 echo -n '" 13 80 5 ' >> $TMP/tempscript
 gen_part_list
+
 . $TMP/tempscript
 if [ ! $? = 0 ]; then
    rm $TMP/tempscript
@@ -385,6 +385,7 @@ fi # DOFORMAT?
 
 # Sync before identifying and mounting the root device:
 sync
+
 # Determine the filesystem type using blkid:
 ROOT_SYS_TYPE=$(blkid -s TYPE $ROOT_DEVICE | cut -f 2 -d = | tr -d \")
 
@@ -538,10 +539,13 @@ dialog --backtitle "`gettext "Finished setting up Linux partitions."`" \
 --title "`gettext "DONE ADDING LINUX PARTITIONS TO /etc/fstab"`" \
 --exit-label "`gettext "OK"`" \
 --textbox $TMP/tempmsg 15 80
+
 # Before calling migrate.sh we will copy $TMP/pkeymap to $TMP/SeTkeymap
-# as the latter will be migrated, not the former - Didier Spaier
+# as the latter will be migrated, not the former
 cp $TMP/Pkeymap $TMP/SeTkeymap
+
 # Now, move our /tmp storage onto the target partition if possible:
 /usr/lib/setup/migrate.sh
-# get back $TMP/Pkeymap - Didier Spaier
+
+# get back $TMP/Pkeymap
 cp $TMP/SeTkeymap $TMP/Pkeymap
