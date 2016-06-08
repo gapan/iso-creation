@@ -193,7 +193,7 @@ through the whole list of choices."`" \
  MAPNAME="`basename $MAPNAME`"
  echo $MAPNAME > $TMP/SeTkeymap
  BMAP="`basename $MAPNAME .map`.bmap"
- tar xzOf /etc/keymaps.tar.gz $BMAP | loadkmap
+ tar xzOf /etc/keymaps.tar.gz $BMAP > /dev/null && tar xzOf /etc/keymaps.tar.gz $BMAP | loadkmap
 
  dialog --title "`gettext "Test keyboard map"`" \
  --ok-label "`gettext "Accept keymap"`" \
@@ -206,11 +206,11 @@ through the whole list of choices."`" \
   break;
  else
   rm -f $TMP/SeTkeymap
-  # Clear bad selection and revert to the previous keymap - Didier
+  # Clear bad selection and revert to the previous keymap
   MAPNAME="`cat $TMP/Pkeymap`"
   MAPNAME="`basename $MAPNAME`"
   BMAP="`basename $MAPNAME .map`.bmap"
-  tar xzOf /etc/keymaps.tar.gz $BMAP | loadkmap
+  tar xzOf /etc/keymaps.tar.gz $BMAP > /dev/null && tar xzOf /etc/keymaps.tar.gz $BMAP | loadkmap
   continue;
  fi
 done
