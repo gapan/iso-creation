@@ -4,8 +4,9 @@
  7f³70                                                                            ³10
  7f³70                   Press any key to return to main screen                   ³10
  7f³70                                                                            ³10
- 7f³70  If your native language is not availabla during installation, select      ³10
- 7f³70  English (USA). At end of installation you will be proposed to change it.  ³10
+ 7f³70  If your native language is not availabla during installation, select a    ³10
+ 7f³70  language to use now and at the end of install your will be presented with ³10
+ 7f³70  more language options for your installed system.                          ³10
  7f³70                                                                            ³10
  7f³70  If you need to enter kernel parameters, in the main screen first select   ³10
  7f³70  your language, then press [TAB] to display the command line and edit it.  ³10

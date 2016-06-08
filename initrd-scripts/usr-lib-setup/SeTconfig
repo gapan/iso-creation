@@ -199,15 +199,12 @@ if dmesg | grep "ATAPI CD" 1> /dev/null 2> /dev/null ; then
     break;
   done
 fi
-# LOCALES is set in SeTlocales
-. /usr/lib/setup/SeTlocales
+
 chroot $T_PX /usr/sbin/clocksetup -c -z
+
 dialog --infobox "Loading locales..." 0 0
-if echo $LOCALES|grep -wq $LANG && [ "$LANG" != "en_US.utf8" ]; then
-  chroot $T_PX /usr/sbin/localesetup $LANG 1>/dev/null
-else
-  chroot $T_PX /usr/sbin/localesetup
-fi
+chroot $T_PX /usr/sbin/localesetup
+
 dialog --infobox "Updating caches..." 0 0
 chroot $T_PX /usr/sbin/update-all
 
