@@ -213,7 +213,13 @@ wget -q $SLACKREPO/$LOC
 # We can't cherry pick the locales we need from the archive, because it
 # contains hard links. - Didier
 tar -xf glibc-i18n-*t?z -C $TMPDIR
-# LOCALES is set in SeTlocales, sourced above.
+
+# Read the available locales from the isolinux boot menu options. Use
+# the 64-bit one, it shouldn't make a difference anyway. Downside is
+# that if there is no menu option for a locale, there is no support for
+# it during installation.
+LOCALES=$( grep LANG isolinux-files/x86_64/isolinux.cfg | \
+    sed "s/.* LANG=\(.*\)\.utf8/\1.utf8/" | tr '\n' ' ' )
 for i in $LOCALES; do
   cp -a $TMPDIR/usr/lib$LIBDIRSUFFIX/locale/$i \
     /boot/initrd-tree/usr/lib$LIBDIRSUFFIX/locale
