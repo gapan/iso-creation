@@ -440,7 +440,7 @@ echo -n '" 18 80 4 ' >> $TMP/tempscript
       NEXT_PARTITION=`cat $TMP/return`
       if [ "$NEXT_PARTITION" = "---" ]; then
          break;
-      elif [ "$NEXT_PARTITION" = "(IN USE)" ]; then
+      elif [ "$NEXT_PARTITION" = `gettext "(IN USE)"` ]; then
          continue;
       fi
 

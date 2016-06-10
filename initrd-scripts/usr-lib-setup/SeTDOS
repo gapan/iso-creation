@@ -161,7 +161,7 @@ while [ 0 ]; do # main partition selection loop
  rm -f $TMP/tempscript
  if [ "$DOS_PART" = "---" ]; then
   break
- elif [ "$DOS_PART" = "(IN USE)" ]; then
+ elif [ "$DOS_PART" = `gettext "(IN USE)"` ]; then
   continue
  fi
  if echo "$DOSLIST" | grep -w $DOS_PART | grep NTFS 1> $NDIR 2> $NDIR ; then
