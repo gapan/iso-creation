@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-05-26 23:25+0300\n"
-"PO-Revision-Date: 2016-05-28 18:41+0000\n"
+"PO-Revision-Date: 2016-06-08 11:13+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: Greek (http://www.transifex.com/gapan/salix/language/el/)\n"
 "MIME-Version: 1.0\n"
@@ -1913,7 +1913,7 @@ msgstr "${DISK} είναι μόνο $DisksizeInKB KB, θα πρέπει να έ�
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:257
 msgid "Partitioning completed."
-msgstr "Η διαμόρφωση καταλόγων ολοκληρώθηκε"
+msgstr "Η διαμόρφωση καταλόγων ολοκληρώθηκε."
 
 #: ../initrd-scripts/usr-lib-setup/slackinstall:55
 msgid "FTP/HTTP DOWNLOAD FAILURE"
