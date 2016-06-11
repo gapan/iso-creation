@@ -322,7 +322,7 @@ gettext "Select Linux installation partition:" >> $TMP/tempscript
 echo -n '" --ok-label "' >> $TMP/tempscript
 gettext "Select" >> $TMP/tempscript
 echo -n '" --cancel-label "' >> $TMP/tempscript
-gettext "Continue" >> $TMP/tempscript
+gettext "Cancel" >> $TMP/tempscript
 echo -n '" --menu "' >> $TMP/tempscript
 gettext "Please select a partition from the following list to use for your \
 root (/) Linux partition." >> $TMP/tempscript
