@@ -1,5 +1,7 @@
 #!/bin/sh
 
+TMP=/var/log/setup/tmp
+
 case $LANG in
 	de_DE.utf8) kbd=de;;
 	el_GR.utf8) kbd=gr;;
@@ -23,3 +25,4 @@ esac
 
 tar xzOf /etc/keymaps.tar.gz ${kbd}.bmap > /dev/null && \
 	tar xzOf /etc/keymaps.tar.gz ${kbd}.bmap | loadkmap
+echo "${kbd}.map" > $TMP/Pkeymap
