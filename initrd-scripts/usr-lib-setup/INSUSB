@@ -90,7 +90,7 @@ if [ "$DRIVE_FOUND" = "" ]; then
 Exiting back to the top menu."`"  \
 6 80
   rm -f $TMP/SeTDS $TMP/SeTmount $TMP/SeTCDdev $TMP/errordo
-  exit
+  exit 1
 fi
 
 # Success!  Report back to the console:
