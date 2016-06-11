@@ -5,7 +5,7 @@ TMP=/var/log/setup/tmp
 case $LANG in
 	de_DE.utf8) kbd=de;;
 	el_GR.utf8) kbd=gr;;
-	en_GB.utf8) kbd=gb;;
+	en_GB.utf8) kbd=uk;;
 	en_US.utf8) kbd=us;;
 	es_ES.utf8) kbd=es;;
 	es_CR.utf8) kbd="la-latin1";;
