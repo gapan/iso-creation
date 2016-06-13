@@ -8,6 +8,11 @@
  7f³70  language to use now and at the end of install your will be presented with ³10
  7f³70  more language options for your installed system.                          ³10
  7f³70                                                                            ³10
+ 7f³70  If your hardware does not support PAE (Physical Address Extension), or    ³10
+ 7f³70  does not support i686 instructions, you can scroll down the list and      ³10
+ 7f³70  select one of the i586-noPAE options. If you're not sure what this is, go ³10
+ 7f³70  with one of the i686-PAE options.                                         ³10
+ 7f³70                                                                            ³10
  7f³70  If you need to enter kernel parameters, in the main screen first select   ³10
  7f³70  your language, then press [TAB] to display the command line and edit it.  ³10
  7f³70  In case of black screen after booting append to it:   nomodeset           ³10

@@ -71,33 +71,11 @@ else
 	arch=$answer
 fi
 
-smp=0
-if [ $arch == "i486" ]; then
-	answer="$(eval dialog --title \"Include i486 non-SMP kernel?\" \
-	--stdout \
-	--menu \"Do you want to include the i486 non-SMP kernel?\" \
-	0 0 0 \
-	'NO' 'o' \
-	'Yes' 'o' )"
-	retval=$?
-	if [ $retval -eq 1 ] || [ $retval -eq 255 ]; then
-		exit 0
-	else
-		if [ "$answer" == "Yes" ]; then
-			smp=1
-		fi
-	fi
-fi
-
 slapt-get -u -c slapt-getrc.$arch
 slapt-get --clean
 {
 	AAAPKG=`cat lists/AAA`
-	if [ $arch == "i486" ] && [ $smp -eq 0 ]; then
-		KERNELPKG=`cat lists/KERNEL | grep smp`
-	else
-		KERNELPKG=`cat lists/KERNEL`
-	fi
+	KERNELPKG=`cat lists/KERNEL`
 	if [ $arch == "x86_64" ]; then
 		COREPKG=`cat lists/CORE lists/EFI`
 	else
