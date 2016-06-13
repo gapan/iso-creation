@@ -7,6 +7,7 @@
 # Dima <whoknows2012@myopera.com>, 2013
 # Oleh, 2014,2016
 # Oleh <aalesshhkka@gmail.com>, 2014
+# gapan <vlahavas@gmail.com>, 2016
 # Yarema aka Knedlyk <yupadmin@gmail.com>, 2016
 # Кісіль Андрій <kisilams@gmail.com>, 2013
 # Микола Ткач <Stuartlittle1970@gmail.com>, 2013
@@ -14,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-13 16:41+0300\n"
-"PO-Revision-Date: 2016-06-13 13:41+0000\n"
+"POT-Creation-Date: 2016-06-13 16:59+0300\n"
+"PO-Revision-Date: 2016-06-13 21:57+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: Ukrainian (http://www.transifex.com/gapan/salix/language/uk/)\n"
 "MIME-Version: 1.0\n"
@@ -827,7 +828,7 @@ msgstr "ДЖЕРЕЛО ПАКУНКІВ НА USB ВИЯВЛЕНО"
 #: ../initrd-scripts/usr-lib-setup/INSUSB:99
 #, sh-format
 msgid "A Salix package directory was found on device $DRIVE_FOUND."
-msgstr "Теки пакунків Salix знайдено на пристрої "
+msgstr "Теки пакунків Salix знайдено на пристрої $DRIVE_FOUND."
 
 #: ../initrd-scripts/usr-lib-setup/INSdir:17
 #: ../initrd-scripts/usr-lib-setup/INShd:17
@@ -857,22 +858,22 @@ msgstr "СКАСУВАТИ"
 msgid ""
 "Please provide the path to a directory containing the contents (or an ISO "
 "image) of a Salix installation disc."
-msgstr ""
+msgstr "Будь ласка, введіть шлях до теки, яка містить вміст (або образ ISO) встановлювального диску Salix."
 
 #: ../initrd-scripts/usr-lib-setup/INSdir:44
 msgid ""
 "Note: You may use any directory within the current filesystem except '/mnt' "
 "or '/var/log/mount' as these are required by setup."
-msgstr ""
+msgstr "Зауваження: Ви можете використати будь-яку теку з поточної файлової системи крім '/mnt' або '/var/log/mount', оскільки вони вимагаються встановленням."
 
 #: ../initrd-scripts/usr-lib-setup/INSdir:49
 msgid "SELECT A PRE-MOUNTED DIRECTORY"
-msgstr ""
+msgstr "ВИБІР ВЖЕ ЗМОНТОВАНОЇ ТЕКИ"
 
 #: ../initrd-scripts/usr-lib-setup/INSdir:50
 #: ../initrd-scripts/usr-lib-setup/INShd:124
 msgid "Browse"
-msgstr ""
+msgstr "Перегляд"
 
 #: ../initrd-scripts/usr-lib-setup/INSdir:63
 #: ../initrd-scripts/usr-lib-setup/INShd:137
@@ -923,19 +924,19 @@ msgstr "Перезавантажте комп'ютер і спробуйте з�
 msgid ""
 "Please specify which partition on your hard disk or USB stick contains the "
 "contents (or an ISO image) of a Salix installation disc."
-msgstr ""
+msgstr "Будь ласка, вкажіть, який розділ на вашому твердому диску або USB флешки містить вміст (або образ ISO) встановлювального диску Salix."
 
 #: ../initrd-scripts/usr-lib-setup/INShd:43
 msgid "Example:"
-msgstr ""
+msgstr "Приклад:"
 
 #: ../initrd-scripts/usr-lib-setup/INShd:45
 msgid "Note: Use the <Partitions> button to list available partitions."
-msgstr ""
+msgstr "Зауваження: Використайте кнопку <Розділи> для списку доступних розділів."
 
 #: ../initrd-scripts/usr-lib-setup/INShd:48
 msgid "SELECT HARD DISK PARTITION"
-msgstr ""
+msgstr "ВИБІР РОЗДІЛУ ТВЕРДОГО ДИСКУ"
 
 #: ../initrd-scripts/usr-lib-setup/INShd:49
 msgid "Partitions"
@@ -943,7 +944,7 @@ msgstr "Розділи"
 
 #: ../initrd-scripts/usr-lib-setup/INShd:61
 msgid "PARTITIONS LIST"
-msgstr ""
+msgstr "СПИСОК РОЗДІЛІВ"
 
 #: ../initrd-scripts/usr-lib-setup/INShd:92
 msgid "MOUNT FAILURE"
@@ -951,19 +952,19 @@ msgstr "ВІДМОВА МОНТУВАННЯ"
 
 #: ../initrd-scripts/usr-lib-setup/INShd:106
 msgid "MOUNT SUCCESS"
-msgstr ""
+msgstr "МОНТУВАННЯ ВДАЛОСЯ"
 
 #: ../initrd-scripts/usr-lib-setup/INShd:115
 msgid ""
 "Now please provide the path to a directory containing the contents (or an "
 "ISO image) of a Salix installation disc."
-msgstr ""
+msgstr "Будь ласка, вкажіть шлях до теки, яка містить вміст (або образ ISO) встановлювального диску Salix."
 
 #: ../initrd-scripts/usr-lib-setup/INShd:118
 msgid ""
 "Note: The path you enter must be relative to the mount point. So, "
 "'/var/log/mount/salix-xfce' should be entered as '/salix-xfce'."
-msgstr ""
+msgstr "Зауваження: Шлях, яки потрібно ввести, повинен бути відносним шляхом до точки монтування. Так, '/var/log/mount/salix-xfce' повинен повинен бути введений як '/salix-xfce'."
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:28
 #, sh-format
@@ -1109,7 +1110,7 @@ msgstr "Тепер цей розділ потрібно змонтувати к�
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:535
 #: ../initrd-scripts/usr-lib-setup/autoinstall:259
 msgid "Adding this information to your /etc/fstab:"
-msgstr ""
+msgstr "Додавання цієї інформації до Вашого /etc/fstab:"
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:219
 msgid "Finished setting up non-Linux partitions."
@@ -1159,11 +1160,11 @@ msgstr "Підготовка до налаштування вашої нової
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:73
 msgid "Boot Loader"
-msgstr ""
+msgstr "Завантажувач"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:74
 msgid "Please choose the Boot Loader that you would like to use"
-msgstr ""
+msgstr "Будь ласка, виберіть Завантажувач, який Ви бажаєте використовувати"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:76
 msgid "Install Lilo"
@@ -1176,6 +1177,14 @@ msgstr "Встановлення Grub"
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:78
 msgid "(Do not install boot loader)"
 msgstr "(Не встановлювати менеджер завантаження)"
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:206
+msgid "Loading locales..."
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:209
+msgid "Updating caches..."
+msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:214
 msgid "Numlock configuration"
@@ -1195,7 +1204,7 @@ msgstr "Виключено"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:216
 msgid "Do you want to have numlock enabled or disabled on boot?"
-msgstr ""
+msgstr "Ви бажаєте мати numlock включеним чи виключеним при завантаженні?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:227
 msgid "IBus configuration"
@@ -1341,7 +1350,7 @@ msgstr "Встановлення з NFS (мережева файлова сис�
 
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:22
 msgid "Install from a Samba share"
-msgstr ""
+msgstr "Встановлення з сервера Samba"
 
 #: ../initrd-scripts/usr-lib-setup/SeTnet:103
 msgid ""
@@ -1690,7 +1699,7 @@ msgstr "Виберіть розділ для встановлення Linux:"
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:325
 #: ../initrd-scripts/usr-lib-setup/autoinstall:107
 msgid "Cancel"
-msgstr ""
+msgstr "Скасувати"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:327
 msgid ""
@@ -1820,7 +1829,7 @@ msgstr "ДІЛЯНКУ ПІДКАЧКИ НАЛАШТОВАНО"
 
 #: ../initrd-scripts/usr-lib-setup/SeTusers:9
 msgid "User setup"
-msgstr ""
+msgstr "Налаштування користувачів"
 
 #: ../initrd-scripts/usr-lib-setup/SeTusers:10
 msgid ""
@@ -1847,7 +1856,7 @@ msgstr ""
 #: ../initrd-scripts/usr-lib-setup/autoinstall:209
 #: ../initrd-scripts/usr-lib-setup/autoinstall:262
 msgid "AUTO PARTITION"
-msgstr ""
+msgstr "АВТОМАТИЧНА РОЗБИВКА РОЗДІЛІВ"
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:26
 #: ../initrd-scripts/usr-lib-setup/autoinstall:210
@@ -1876,11 +1885,11 @@ msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:106
 msgid "Do It"
-msgstr ""
+msgstr "Зробити це"
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:109
 msgid "This is automatic partition mode."
-msgstr ""
+msgstr "Це є режим автоматичної розбивки розділів."
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:110
 msgid "Press <SPACE> to select the target disk where Salix will be installed."
@@ -1888,11 +1897,11 @@ msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:112
 msgid "All data will be erased from the target disk."
-msgstr ""
+msgstr "Всі дані будуть знищені з вказаного диску."
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:113
 msgid "Only run this mode if the entire disk will be dedicated to Salix."
-msgstr ""
+msgstr "Вибирайте цей режим, якщо весь диск буде присвячений для Salix."
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:130
 #, sh-format
@@ -1901,7 +1910,7 @@ msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:133
 msgid "Go back to the main setup menu"
-msgstr ""
+msgstr "Перехід до головного меню налаштування"
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:134
 #, sh-format
@@ -1940,4 +1949,18 @@ msgid ""
 " package to be unable to be read without error.  You may hit enter to "
 "continue if you wish, but if this is an important required package then your"
 " installation may not work as-is."
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/slackinstall:115
+msgid "Installing package set:"
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/slackinstall:125
+#: ../initrd-scripts/usr-lib-setup/slackinstall:137
+#: ../initrd-scripts/usr-lib-setup/slackinstall:151
+#: ../initrd-scripts/usr-lib-setup/slackinstall:166
+#: ../initrd-scripts/usr-lib-setup/slackinstall:179
+#: ../initrd-scripts/usr-lib-setup/slackinstall:192
+#: ../initrd-scripts/usr-lib-setup/slackinstall:203
+msgid "Installing:"
 msgstr ""

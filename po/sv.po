@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-13 16:41+0300\n"
-"PO-Revision-Date: 2016-06-13 13:41+0000\n"
+"POT-Creation-Date: 2016-06-13 16:59+0300\n"
+"PO-Revision-Date: 2016-06-13 14:00+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: Swedish (http://www.transifex.com/gapan/salix/language/sv/)\n"
 "MIME-Version: 1.0\n"
@@ -1172,6 +1172,14 @@ msgstr "Installera Grub"
 msgid "(Do not install boot loader)"
 msgstr "(Installera inte en starthanterare)"
 
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:206
+msgid "Loading locales..."
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:209
+msgid "Updating caches..."
+msgstr ""
+
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:214
 msgid "Numlock configuration"
 msgstr "Num lock konfiguration"
@@ -1936,3 +1944,17 @@ msgid ""
 "continue if you wish, but if this is an important required package then your"
 " installation may not work as-is."
 msgstr "Det var ett ödesdigert misstag vid installation av $ArG2. Paketet kan vara skadad, installationsmedia kan vara dålig, eller något annat har orsakat att paketet inte kan läsas utan fel. Du kan trycka Enter för att fortsätta om du vill, men om detta är en viktig paket fungerar installationen kanske inte som det är."
+
+#: ../initrd-scripts/usr-lib-setup/slackinstall:115
+msgid "Installing package set:"
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/slackinstall:125
+#: ../initrd-scripts/usr-lib-setup/slackinstall:137
+#: ../initrd-scripts/usr-lib-setup/slackinstall:151
+#: ../initrd-scripts/usr-lib-setup/slackinstall:166
+#: ../initrd-scripts/usr-lib-setup/slackinstall:179
+#: ../initrd-scripts/usr-lib-setup/slackinstall:192
+#: ../initrd-scripts/usr-lib-setup/slackinstall:203
+msgid "Installing:"
+msgstr ""

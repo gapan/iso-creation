@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-13 16:41+0300\n"
-"PO-Revision-Date: 2016-06-13 13:41+0000\n"
+"POT-Creation-Date: 2016-06-13 16:59+0300\n"
+"PO-Revision-Date: 2016-06-13 14:00+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: Polish (http://www.transifex.com/gapan/salix/language/pl/)\n"
 "MIME-Version: 1.0\n"
@@ -1175,6 +1175,14 @@ msgstr ""
 msgid "(Do not install boot loader)"
 msgstr ""
 
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:206
+msgid "Loading locales..."
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:209
+msgid "Updating caches..."
+msgstr ""
+
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:214
 msgid "Numlock configuration"
 msgstr ""
@@ -1938,4 +1946,18 @@ msgid ""
 " package to be unable to be read without error.  You may hit enter to "
 "continue if you wish, but if this is an important required package then your"
 " installation may not work as-is."
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/slackinstall:115
+msgid "Installing package set:"
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/slackinstall:125
+#: ../initrd-scripts/usr-lib-setup/slackinstall:137
+#: ../initrd-scripts/usr-lib-setup/slackinstall:151
+#: ../initrd-scripts/usr-lib-setup/slackinstall:166
+#: ../initrd-scripts/usr-lib-setup/slackinstall:179
+#: ../initrd-scripts/usr-lib-setup/slackinstall:192
+#: ../initrd-scripts/usr-lib-setup/slackinstall:203
+msgid "Installing:"
 msgstr ""

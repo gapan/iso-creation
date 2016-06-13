@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-13 16:41+0300\n"
-"PO-Revision-Date: 2016-06-13 13:47+0000\n"
+"POT-Creation-Date: 2016-06-13 16:59+0300\n"
+"PO-Revision-Date: 2016-06-13 21:56+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: Greek (http://www.transifex.com/gapan/salix/language/el/)\n"
 "MIME-Version: 1.0\n"
@@ -1177,6 +1177,14 @@ msgstr "Εγκαταστήστε τον Grub"
 msgid "(Do not install boot loader)"
 msgstr "(Να μην εγκατασταθεί ο φορτωτής εκκίνησης)"
 
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:206
+msgid "Loading locales..."
+msgstr "Φόρτωση διαθέσιμων γλωσσών..."
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:209
+msgid "Updating caches..."
+msgstr "Ενημέρωση ρυθμίσεων..."
+
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:214
 msgid "Numlock configuration"
 msgstr "Διαμόρφωση Numlock"
@@ -1941,3 +1949,17 @@ msgid ""
 "continue if you wish, but if this is an important required package then your"
 " installation may not work as-is."
 msgstr "Υπήρξε ένα μοιραίο σφάλμα κατά την προσπάθεια για την εγκατάσταση $ArG2. Το πακέτο μπορεί να είναι κατεστραμμένο, το μέσο εγκατάστασης μπορεί να είναι κακό, ή κάτι άλλο έχει προκαλέσει το πακέτο να μην είναι σε θέση να διαβαστεί χωρίς σφάλμα. Μπορείτε να πατήστε enter για να συνεχίσετε αν θέλετε, αλλά αν αυτό είναι ένα σημαντικό απαιτούμενο πακέτο τότε η εγκατάσταση δεν μπορεί να λειτουργήσει ως έχει."
+
+#: ../initrd-scripts/usr-lib-setup/slackinstall:115
+msgid "Installing package set:"
+msgstr "Εγκατάσταση της ομάδας πακέτων:"
+
+#: ../initrd-scripts/usr-lib-setup/slackinstall:125
+#: ../initrd-scripts/usr-lib-setup/slackinstall:137
+#: ../initrd-scripts/usr-lib-setup/slackinstall:151
+#: ../initrd-scripts/usr-lib-setup/slackinstall:166
+#: ../initrd-scripts/usr-lib-setup/slackinstall:179
+#: ../initrd-scripts/usr-lib-setup/slackinstall:192
+#: ../initrd-scripts/usr-lib-setup/slackinstall:203
+msgid "Installing:"
+msgstr "Εγκατάσταση του:"
