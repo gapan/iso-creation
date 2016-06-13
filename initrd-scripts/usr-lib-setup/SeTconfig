@@ -204,6 +204,7 @@ fi
 chroot $T_PX /usr/sbin/clocksetup -c -z
 
 dialog --infobox "`gettext "Loading locales..."`" 0 0
+sed -i "s/^ *\(export LANG=\).*$/\1$LANG/" $T_PX/etc/profile.d/lang.sh
 chroot $T_PX /usr/sbin/localesetup
 
 dialog --infobox "`gettext "Updating caches..."`" 0 0
