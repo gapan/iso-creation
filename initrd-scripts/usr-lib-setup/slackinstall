@@ -144,7 +144,7 @@ for package in $SRCPATH/core/*.t?z ; do
 done
 
 # Install basic packages if requested
-if [ ! "$MODE" = "CORE" ]; then
+if [ ! "$MODE" = "`gettext 'CORE'`" ]; then
 	# Install the package series:
 	for package in $SRCPATH/basic/*.t?z ; do
 	  [ -n "$REMOTESVR" ] && get_pkg basic $(basename $package) '-q'
@@ -159,7 +159,7 @@ if [ ! "$MODE" = "CORE" ]; then
 fi
 
 # Install full set of package if requested
-if [ "$MODE" = "FULL" ]; then
+if [ "$MODE" = "`gettext 'FULL'`" ]; then
 	# Install the package series:
 	for package in $SRCPATH/full/*.t?z ; do
 	  [ -n "$REMOTESVR" ] && get_pkg full $(basename $package) '-q'

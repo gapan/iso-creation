@@ -134,7 +134,8 @@ if [ -d $T_PX/var/log/setup ]; then
             [ "$SCRIPT" == "setup.80.make-bootdisk" ]; then
           sleep 0
          # netsetup should not be run in FULL mode
-         elif [ "$SCRIPT" == "setup.netsetup" ] && [ "$MODE" == "FULL" ]; then
+         elif [ "$SCRIPT" == "setup.netsetup" ] && \
+           [ "$MODE" == "`gettext 'FULL'`" ]; then
           sleep 0
          # lilo should only be setup if it was selected as the bootloader
          elif [ "$SCRIPT" == "setup.liloconfig" ] && [ "$BOOT_LOADER" != "Lilo" ]; then
