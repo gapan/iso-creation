@@ -18,7 +18,7 @@ is inserted into a USB port, and then press ENTER to begin the scanning process.
 if [ ! -r $TMP/reply ]; then
  # cancel or esc
  rm -f $TMP/SeTDS $TMP/SeTmount $TMP/SeTCDdev $TMP/errordo
- exit
+ exit 1
 fi
 
 # Run "rescan-scsi-bus -l" to get an up to date overview of devices:
@@ -37,7 +37,7 @@ if [ "$REMOVEABLE_DEVICES" = "" ]; then
 "`gettext "Sorry, but no removable USB devices could be found.  Exiting back to the top menu."`" \
 6 80
   rm -f $TMP/SeTDS $TMP/SeTmount $TMP/SeTCDdev $TMP/errordo
-  exit
+  exit 1
 fi
 
 # Make a mount location for the USB source:
