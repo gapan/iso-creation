@@ -111,7 +111,8 @@ else
   exit 1;
 fi
 
-dialog --infobox "Installing \"`echo $MODE | sed "s/\(.*\)/\L\1/"`\" package set" 5 45
+dialog --infobox \
+  "`gettext "Installing package set:"` `echo $MODE | sed 's/\(.*\)/\L\1/'`" 5 45
 sleep 1
 
 # we need this or spkg will fail
@@ -121,7 +122,7 @@ mkdir -p $ROOTDIR/var/log/packages
 # avoid problems):
 for package in $SRCPATH/aaa/*.t?z ; do
   [ -n "$REMOTESVR" ] && get_pkg core $(basename $package) '-q'
-  dialog --progressbox "Installing `basename $package`" 17 80 < ${package%t[glbx]z}desc
+  dialog --progressbox "`gettext "Installing:"` `basename $package`" 17 80 < ${package%t[glbx]z}desc
   spkg -i --root=$ROOTDIR -qq --no-ldconfig --no-gtk-update-icon-cache $package
   ERROR=$?
   if [ ! $ERROR = 0 ]; then
@@ -133,7 +134,7 @@ done
 # Install the core package series:
 for package in $SRCPATH/core/*.t?z ; do
   [ -n "$REMOTESVR" ] && get_pkg core $(basename $package) '-q'
-  dialog --progressbox "Installing `basename $package`" 17 80 < ${package%t[glbx]z}desc
+  dialog --progressbox "`gettext "Installing:"` `basename $package`" 17 80 < ${package%t[glbx]z}desc
   spkg -i --root=$ROOTDIR -qq --no-ldconfig --no-gtk-update-icon-cache $package
   ERROR=$?
   if [ ! $ERROR = 0 ]; then
@@ -147,7 +148,7 @@ if [ ! "$MODE" = "CORE" ]; then
 	# Install the package series:
 	for package in $SRCPATH/basic/*.t?z ; do
 	  [ -n "$REMOTESVR" ] && get_pkg basic $(basename $package) '-q'
-	  dialog --progressbox "Installing `basename $package`" 17 80 < ${package%t[glbx]z}desc
+	  dialog --progressbox "`gettext "Installing:"` `basename $package`" 17 80 < ${package%t[glbx]z}desc
 	  spkg -i --root=$ROOTDIR -qq --no-ldconfig --no-gtk-update-icon-cache $package
 	  ERROR=$?
 	  if [ ! $ERROR = 0 ]; then
@@ -162,7 +163,7 @@ if [ "$MODE" = "FULL" ]; then
 	# Install the package series:
 	for package in $SRCPATH/full/*.t?z ; do
 	  [ -n "$REMOTESVR" ] && get_pkg full $(basename $package) '-q'
-	  dialog --progressbox "Installing `basename $package`" 17 80 < ${package%t[glbx]z}desc
+	  dialog --progressbox "`gettext "Installing:"` `basename $package`" 17 80 < ${package%t[glbx]z}desc
 	  spkg -i --root=$ROOTDIR -qq --no-ldconfig --no-gtk-update-icon-cache $package
 	  ERROR=$?
 	  if [ ! $ERROR = 0 ]; then
@@ -175,7 +176,7 @@ fi
 # Install the settings package series (some settings files only)
 for package in $SRCPATH/settings/*.t?z ; do
 	[ -n "$REMOTESVR" ] && get_pkg settings $(basename $package) '-q'
-	dialog --progressbox "Installing `basename $package`" 17 80 < ${package%t[glbx]z}desc
+	dialog --progressbox "`gettext "Installing:"` `basename $package`" 17 80 < ${package%t[glbx]z}desc
 	spkg -i --root=$ROOTDIR -qq --no-ldconfig --no-gtk-update-icon-cache $package
 	ERROR=$?
 	if [ ! $ERROR = 0 ]; then
@@ -188,7 +189,7 @@ done
 if [[ `uname -r | grep "smp$"` ]]; then
 	for package in `ls $SRCPATH/kernels/*.t?z |grep smp`; do
 		[ -n "$REMOTESVR" ] && get_pkg kernels $(basename $package) '-q'
-		dialog --progressbox "Installing `basename $package`" 17 80 < ${package%t[glbx]z}desc
+		dialog --progressbox "`gettext "Installing:"` `basename $package`" 17 80 < ${package%t[glbx]z}desc
 		spkg -i --root=$ROOTDIR -qq --no-ldconfig --no-gtk-update-icon-cache $package
 		ERROR=$?
 		if [ ! $ERROR = 0 ]; then
@@ -199,7 +200,7 @@ if [[ `uname -r | grep "smp$"` ]]; then
 else
 	for package in `ls $SRCPATH/kernels/*.t?z |grep -v smp`; do
 		[ -n "$REMOTESVR" ] && get_pkg kernels $(basename $package) '-q'
-		dialog --progressbox "Installing `basename $package`" 17 80 < ${package%t[glbx]z}desc
+		dialog --progressbox "`gettext "Installing:"` `basename $package`" 17 80 < ${package%t[glbx]z}desc
 		spkg -i --root=$ROOTDIR -qq --no-ldconfig --no-gtk-update-icon-cache $package
 		ERROR=$?
 		if [ ! $ERROR = 0 ]; then
