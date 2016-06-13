@@ -112,7 +112,7 @@ else
 fi
 
 dialog --infobox \
-  "`gettext "Installing package set:"` `echo $MODE | sed 's/\(.*\)/\L\1/'`" 5 45
+  "`gettext "Installing package set:"` $MODE" 5 45
 sleep 1
 
 # we need this or spkg will fail
