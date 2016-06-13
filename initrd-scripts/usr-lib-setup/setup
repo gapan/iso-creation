@@ -253,10 +253,10 @@ installation for any specific purpose."`
   else
     dialog --title "`gettext "SELECT INSTALLATION MODE"`" \
     --visit-items \
-  	  --no-cancel --menu \
+    --no-cancel --menu \
 "`gettext "Please select the installation mode you prefer \
 from the following:"`
-`getttext "FULL (default) will install everything. That includes \
+`gettext "FULL (default) will install everything. That includes \
 one application per task, such as an office \
 suite, a multimedia player, a CD/DVD burner etc."`
 `gettext "BASIC will only install a minimal graphical environment \
