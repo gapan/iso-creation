@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-13 16:59+0300\n"
-"PO-Revision-Date: 2016-06-13 21:57+0000\n"
+"POT-Creation-Date: 2016-06-14 01:19+0300\n"
+"PO-Revision-Date: 2016-06-13 22:20+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: Ukrainian (http://www.transifex.com/gapan/salix/language/uk/)\n"
 "MIME-Version: 1.0\n"
@@ -159,6 +159,13 @@ msgid ""
 "partition(s)."
 msgstr "Ви також можете вказати розкладку і встановити розділ(и) підкачки."
 
+#: ../initrd-scripts/usr-lib-setup/setup:235
+#: ../initrd-scripts/usr-lib-setup/setup:250
+#: ../initrd-scripts/usr-lib-setup/setup:272
+#: ../initrd-scripts/usr-lib-setup/slackinstall:147
+msgid "CORE"
+msgstr ""
+
 #: ../initrd-scripts/usr-lib-setup/setup:237
 #: ../initrd-scripts/usr-lib-setup/setup:254
 msgid "SELECT INSTALLATION MODE"
@@ -186,6 +193,11 @@ msgstr "ОСНОВНИЙ режим встановлює тільки мінім
 
 #: ../initrd-scripts/usr-lib-setup/setup:249
 #: ../initrd-scripts/usr-lib-setup/setup:271
+msgid "BASIC"
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/setup:249
+#: ../initrd-scripts/usr-lib-setup/setup:271
 msgid "Install a minimal graphical environment"
 msgstr "Встановлення мінімального графічного середовища"
 
@@ -198,6 +210,12 @@ msgstr "Встановлення мінімальної консольної с�
 msgid ""
 "FULL (default) will install everything. That includes one application per "
 "task, such as an office suite, a multimedia player, a CD/DVD burner etc."
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/setup:270
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:138
+#: ../initrd-scripts/usr-lib-setup/slackinstall:162
+msgid "FULL"
 msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/setup:270
@@ -1178,49 +1196,49 @@ msgstr "Встановлення Grub"
 msgid "(Do not install boot loader)"
 msgstr "(Не встановлювати менеджер завантаження)"
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:206
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:207
 msgid "Loading locales..."
 msgstr ""
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:209
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:211
 msgid "Updating caches..."
 msgstr ""
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:214
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:216
 msgid "Numlock configuration"
 msgstr "Налаштування numlock"
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:215
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:228
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:237
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:217
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:230
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:239
 msgid "Enabled"
 msgstr "Включено"
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:215
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:228
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:237
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:217
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:230
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:239
 msgid "Disabled"
 msgstr "Виключено"
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:216
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:218
 msgid "Do you want to have numlock enabled or disabled on boot?"
 msgstr "Ви бажаєте мати numlock включеним чи виключеним при завантаженні?"
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:227
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:229
 msgid "IBus configuration"
 msgstr "Налаштування IBus"
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:230
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:232
 msgid ""
 "IBus is an input platform for Chinese, Japanese, Korean and many other "
 "languages. Do you want to have it enabled or disabled on boot?"
 msgstr ""
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:236
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:238
 msgid "SCIM configuration"
 msgstr "Налаштування SCIM"
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:239
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:241
 msgid ""
 "SCIM is an input platform for Chinese, Japanese, Korean and many other "
 "languages. Do you want to have it enabled or disabled on boot?"

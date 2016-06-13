@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-13 16:59+0300\n"
-"PO-Revision-Date: 2016-06-13 14:00+0000\n"
+"POT-Creation-Date: 2016-06-14 01:19+0300\n"
+"PO-Revision-Date: 2016-06-13 22:20+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: Swedish (http://www.transifex.com/gapan/salix/language/sv/)\n"
 "MIME-Version: 1.0\n"
@@ -153,6 +153,13 @@ msgid ""
 "partition(s)."
 msgstr "Du kan också eventuellt ändra tangentbordet och ställa in din swap-partition(er)."
 
+#: ../initrd-scripts/usr-lib-setup/setup:235
+#: ../initrd-scripts/usr-lib-setup/setup:250
+#: ../initrd-scripts/usr-lib-setup/setup:272
+#: ../initrd-scripts/usr-lib-setup/slackinstall:147
+msgid "CORE"
+msgstr ""
+
 #: ../initrd-scripts/usr-lib-setup/setup:237
 #: ../initrd-scripts/usr-lib-setup/setup:254
 msgid "SELECT INSTALLATION MODE"
@@ -180,6 +187,11 @@ msgstr "CORE installerar endast de nödvändigaste för systemet att starta i ko
 
 #: ../initrd-scripts/usr-lib-setup/setup:249
 #: ../initrd-scripts/usr-lib-setup/setup:271
+msgid "BASIC"
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/setup:249
+#: ../initrd-scripts/usr-lib-setup/setup:271
 msgid "Install a minimal graphical environment"
 msgstr "Installera en minimal grafisk miljö"
 
@@ -192,6 +204,12 @@ msgstr "Installera ett minimalt konsol-system"
 msgid ""
 "FULL (default) will install everything. That includes one application per "
 "task, such as an office suite, a multimedia player, a CD/DVD burner etc."
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/setup:270
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:138
+#: ../initrd-scripts/usr-lib-setup/slackinstall:162
+msgid "FULL"
 msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/setup:270
@@ -1172,49 +1190,49 @@ msgstr "Installera Grub"
 msgid "(Do not install boot loader)"
 msgstr "(Installera inte en starthanterare)"
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:206
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:207
 msgid "Loading locales..."
 msgstr ""
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:209
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:211
 msgid "Updating caches..."
 msgstr ""
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:214
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:216
 msgid "Numlock configuration"
 msgstr "Num lock konfiguration"
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:215
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:228
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:237
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:217
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:230
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:239
 msgid "Enabled"
 msgstr "Aktivera"
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:215
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:228
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:237
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:217
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:230
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:239
 msgid "Disabled"
 msgstr "Inaktivera"
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:216
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:218
 msgid "Do you want to have numlock enabled or disabled on boot?"
 msgstr "Vill du ha Num lock aktiverad eller inaktiverad vid uppstart?"
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:227
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:229
 msgid "IBus configuration"
 msgstr "IBus konfiguration"
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:230
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:232
 msgid ""
 "IBus is an input platform for Chinese, Japanese, Korean and many other "
 "languages. Do you want to have it enabled or disabled on boot?"
 msgstr "IBus är en inmatnings-plattform för kinesiska, japanska, koreanska och många andra språk. Vill du ha det aktiverad eller inaktiverad vid start?"
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:236
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:238
 msgid "SCIM configuration"
 msgstr "SCIM konfiguration"
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:239
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:241
 msgid ""
 "SCIM is an input platform for Chinese, Japanese, Korean and many other "
 "languages. Do you want to have it enabled or disabled on boot?"
