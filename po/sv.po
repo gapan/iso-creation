@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-26 23:25+0300\n"
-"PO-Revision-Date: 2016-05-28 10:14+0000\n"
-"Last-Translator: Ingemar Karlsson <ingemar@ingk.se>\n"
+"POT-Creation-Date: 2016-06-13 16:41+0300\n"
+"PO-Revision-Date: 2016-06-13 13:41+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: Swedish (http://www.transifex.com/gapan/salix/language/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -47,8 +47,8 @@ msgstr "Salix installation"
 #: ../initrd-scripts/usr-lib-setup/setup:86
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:117
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:20
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:324
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:413
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:323
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:414
 msgid "Select"
 msgstr "Välj"
 
@@ -187,6 +187,12 @@ msgstr "Installera en minimal grafisk miljö"
 #: ../initrd-scripts/usr-lib-setup/setup:272
 msgid "Install a minimal console system"
 msgstr "Installera ett minimalt konsol-system"
+
+#: ../initrd-scripts/usr-lib-setup/setup:259
+msgid ""
+"FULL (default) will install everything. That includes one application per "
+"task, such as an office suite, a multimedia player, a CD/DVD burner etc."
+msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/setup:270
 msgid "Install everything"
@@ -889,8 +895,8 @@ msgstr "OGILTIG ISAO-AVBILD"
 #: ../initrd-scripts/usr-lib-setup/INShd:107
 #: ../initrd-scripts/usr-lib-setup/INShd:169
 #: ../initrd-scripts/usr-lib-setup/INShd:188
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:539
-#: ../initrd-scripts/usr-lib-setup/autoinstall:262
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:540
+#: ../initrd-scripts/usr-lib-setup/autoinstall:263
 msgid "OK"
 msgstr "OK"
 
@@ -1042,8 +1048,7 @@ msgid "SELECT PARTITION TO ADD TO /etc/fstab"
 msgstr "VÄLJ PARTITON ATT LÄGGA TILL I /etc/fstab"
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:119
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:326
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:415
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:416
 msgid "Continue"
 msgstr "Fortsätt"
 
@@ -1055,7 +1060,9 @@ msgid ""
 msgstr "För att göra dessa partitioner synliga från Linux, måste vi lägga till dem i /etc/fstab. Vänligen välj en partition för att lägga till i /etc/fstab, eller välj \"---\" för att fortsätta med installationen."
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:140
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:164
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:200
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:443
 msgid "IN USE"
 msgstr "ANVÄNDS"
 
@@ -1094,8 +1101,8 @@ msgstr "Denna partition ska monteras någonstans i ditt katalogträd. Ange den k
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:216
 #: ../initrd-scripts/usr-lib-setup/SeTEFI:73
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:534
-#: ../initrd-scripts/usr-lib-setup/autoinstall:258
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:535
+#: ../initrd-scripts/usr-lib-setup/autoinstall:259
 msgid "Adding this information to your /etc/fstab:"
 msgstr "Lägger till denna information till din /etc/fstab:"
 
@@ -1165,41 +1172,41 @@ msgstr "Installera Grub"
 msgid "(Do not install boot loader)"
 msgstr "(Installera inte en starthanterare)"
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:216
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:214
 msgid "Numlock configuration"
 msgstr "Num lock konfiguration"
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:217
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:230
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:239
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:215
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:228
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:237
 msgid "Enabled"
 msgstr "Aktivera"
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:217
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:230
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:239
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:215
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:228
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:237
 msgid "Disabled"
 msgstr "Inaktivera"
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:218
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:216
 msgid "Do you want to have numlock enabled or disabled on boot?"
 msgstr "Vill du ha Num lock aktiverad eller inaktiverad vid uppstart?"
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:229
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:227
 msgid "IBus configuration"
 msgstr "IBus konfiguration"
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:232
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:230
 msgid ""
 "IBus is an input platform for Chinese, Japanese, Korean and many other "
 "languages. Do you want to have it enabled or disabled on boot?"
 msgstr "IBus är en inmatnings-plattform för kinesiska, japanska, koreanska och många andra språk. Vill du ha det aktiverad eller inaktiverad vid start?"
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:238
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:236
 msgid "SCIM configuration"
 msgstr "SCIM konfiguration"
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:241
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:239
 msgid ""
 "SCIM is an input platform for Chinese, Japanese, Korean and many other "
 "languages. Do you want to have it enabled or disabled on boot?"
@@ -1667,29 +1674,34 @@ msgstr "Btrfs kopiera-vid-skriv B-träd filsystem"
 msgid "SGI's Journaling Filesystem"
 msgstr "SGI's journalförande filsystem"
 
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:320
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:319
 msgid "Setting up root Linux partition."
 msgstr "Sätter upp Linux root partition."
 
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:322
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:321
 msgid "Select Linux installation partition:"
 msgstr "Välj Linux installations partition:"
 
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:328
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:325
+#: ../initrd-scripts/usr-lib-setup/autoinstall:107
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:327
 msgid ""
 "Please select a partition from the following list to use for your root (/) "
 "Linux partition."
 msgstr "Välj en partition från följande lista som ska användas som Linux root (/)."
 
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:409
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:410
 msgid "Setting up other Linux partitions."
 msgstr "Sätter upp andra Linux-partitioner."
 
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:411
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:412
 msgid "Select other Linux partitions for /etc/fstab"
 msgstr "Välj andra Linux-partitioner för /etc/fstab"
 
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:417
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:418
 #, sh-format
 msgid ""
 "You seem to have more than one partition tagged as type Linux.  You may use "
@@ -1703,33 +1715,33 @@ msgid ""
 "if you're done, hit <Continue>."
 msgstr "Du verkar ha mer än en partition märkt som typ Linux. Du kan använda dessa för att distribuera ditt Linux-system i fler än en partition. För närvarande har du $ROOT_DEVICE monterad som din / partition. Du kanske vill montera kataloger som /home eller /usr/local på separata partitioner. Du bör inte försöka montera /etc, /sbin, eller /bin på egna partitioner, eftersom de innehåller verktyg som behövs för att starta upp systemet och montera partitioner. Också, inte återanvända en partition som du redan har angett tidigare. Välj en av de Linux-partitioner som anges nedan, eller om du är klar, tryck <Fortsätt>."
 
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:452
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:453
 #, sh-format
 msgid "Partition $NEXT_PARTITION will not be reformatted."
 msgstr "Partitionen $NEXT_PARTITION kommer inte att formateras."
 
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:457
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:458
 #, sh-format
 msgid "Partition $NEXT_PARTITION will be formatted with $NEXT_SYS_TYPE."
 msgstr "Partitionen $NEXT_PARTITION formateras med $NEXT_SYS_TYPE."
 
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:494
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:495
 #, sh-format
 msgid "SELECT MOUNT POINT FOR $NEXT_PARTITION"
 msgstr "VÄLJ MONTERINGSPUNKT FÖR $NEXT_PARTITION"
 
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:495
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:496
 #, sh-format
 msgid ""
 "OK, now you need to specify where you want the new partition mounted.  For example, if you want to put it under /usr/local, then respond:  /usr/local\n"
 "Where would you like to mount $NEXT_PARTITION?"
 msgstr "OK, nu måste du ange var du vill att den nya partitionen monteras. Till exempel, om du vill lägga den under /usr/local, svara: /usr/local\nVar vill du montera $NEXT_PARTITION?"
 
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:537
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:538
 msgid "Finished setting up Linux partitions."
 msgstr "Klar med inställningen av Linux-partitioner."
 
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:538
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:539
 msgid "DONE ADDING LINUX PARTITIONS TO /etc/fstab"
 msgstr "LAGT TILL LINUX-PARTITIONER TILL /etc/fstab"
 
@@ -1828,7 +1840,7 @@ msgstr "Rootanvändaren är avaktiverad som standard."
 #: ../initrd-scripts/usr-lib-setup/autoinstall:142
 #: ../initrd-scripts/usr-lib-setup/autoinstall:205
 #: ../initrd-scripts/usr-lib-setup/autoinstall:209
-#: ../initrd-scripts/usr-lib-setup/autoinstall:261
+#: ../initrd-scripts/usr-lib-setup/autoinstall:262
 msgid "AUTO PARTITION"
 msgstr "AUTOMATISK PARTITIONERING"
 
@@ -1860,10 +1872,6 @@ msgstr "Formaterar $PART med filsystemet xfs."
 #: ../initrd-scripts/usr-lib-setup/autoinstall:106
 msgid "Do It"
 msgstr "Gör det"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:107
-msgid "Cancel"
-msgstr "Avbryt"
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:109
 msgid "This is automatic partition mode."

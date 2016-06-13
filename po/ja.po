@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-26 23:25+0300\n"
-"PO-Revision-Date: 2016-05-27 20:38+0000\n"
-"Last-Translator: tsuren <hydrangea_and_snail@hotmail.com>\n"
+"POT-Creation-Date: 2016-06-13 16:41+0300\n"
+"PO-Revision-Date: 2016-06-13 13:41+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/gapan/salix/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -46,8 +46,8 @@ msgstr "Salixインストレーション"
 #: ../initrd-scripts/usr-lib-setup/setup:86
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:117
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:20
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:324
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:413
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:323
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:414
 msgid "Select"
 msgstr "選択する。"
 
@@ -185,6 +185,12 @@ msgstr ""
 #: ../initrd-scripts/usr-lib-setup/setup:250
 #: ../initrd-scripts/usr-lib-setup/setup:272
 msgid "Install a minimal console system"
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/setup:259
+msgid ""
+"FULL (default) will install everything. That includes one application per "
+"task, such as an office suite, a multimedia player, a CD/DVD burner etc."
 msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/setup:270
@@ -888,8 +894,8 @@ msgstr ""
 #: ../initrd-scripts/usr-lib-setup/INShd:107
 #: ../initrd-scripts/usr-lib-setup/INShd:169
 #: ../initrd-scripts/usr-lib-setup/INShd:188
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:539
-#: ../initrd-scripts/usr-lib-setup/autoinstall:262
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:540
+#: ../initrd-scripts/usr-lib-setup/autoinstall:263
 msgid "OK"
 msgstr ""
 
@@ -1041,8 +1047,7 @@ msgid "SELECT PARTITION TO ADD TO /etc/fstab"
 msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:119
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:326
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:415
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:416
 msgid "Continue"
 msgstr ""
 
@@ -1054,7 +1059,9 @@ msgid ""
 msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:140
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:164
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:200
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:443
 msgid "IN USE"
 msgstr ""
 
@@ -1093,8 +1100,8 @@ msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:216
 #: ../initrd-scripts/usr-lib-setup/SeTEFI:73
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:534
-#: ../initrd-scripts/usr-lib-setup/autoinstall:258
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:535
+#: ../initrd-scripts/usr-lib-setup/autoinstall:259
 msgid "Adding this information to your /etc/fstab:"
 msgstr ""
 
@@ -1164,41 +1171,41 @@ msgstr "Grubをインストールする"
 msgid "(Do not install boot loader)"
 msgstr "(ブートローダーをインストールしない)"
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:216
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:214
 msgid "Numlock configuration"
 msgstr "テンキーパッドの設定"
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:217
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:230
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:239
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:215
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:228
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:237
 msgid "Enabled"
 msgstr "有効化"
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:217
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:230
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:239
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:215
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:228
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:237
 msgid "Disabled"
 msgstr "無効化"
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:218
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:216
 msgid "Do you want to have numlock enabled or disabled on boot?"
 msgstr "テンキーパッドを起動時に有効化しますか？"
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:229
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:227
 msgid "IBus configuration"
 msgstr "IBus設定"
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:232
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:230
 msgid ""
 "IBus is an input platform for Chinese, Japanese, Korean and many other "
 "languages. Do you want to have it enabled or disabled on boot?"
 msgstr ""
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:238
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:236
 msgid "SCIM configuration"
 msgstr "SCIM設定"
 
-#: ../initrd-scripts/usr-lib-setup/SeTconfig:241
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:239
 msgid ""
 "SCIM is an input platform for Chinese, Japanese, Korean and many other "
 "languages. Do you want to have it enabled or disabled on boot?"
@@ -1666,29 +1673,34 @@ msgstr ""
 msgid "SGI's Journaling Filesystem"
 msgstr ""
 
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:320
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:319
 msgid "Setting up root Linux partition."
 msgstr ""
 
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:322
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:321
 msgid "Select Linux installation partition:"
 msgstr ""
 
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:328
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:325
+#: ../initrd-scripts/usr-lib-setup/autoinstall:107
+msgid "Cancel"
+msgstr ""
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:327
 msgid ""
 "Please select a partition from the following list to use for your root (/) "
 "Linux partition."
 msgstr ""
 
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:409
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:410
 msgid "Setting up other Linux partitions."
 msgstr ""
 
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:411
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:412
 msgid "Select other Linux partitions for /etc/fstab"
 msgstr ""
 
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:417
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:418
 #, sh-format
 msgid ""
 "You seem to have more than one partition tagged as type Linux.  You may use "
@@ -1702,33 +1714,33 @@ msgid ""
 "if you're done, hit <Continue>."
 msgstr ""
 
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:452
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:453
 #, sh-format
 msgid "Partition $NEXT_PARTITION will not be reformatted."
 msgstr ""
 
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:457
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:458
 #, sh-format
 msgid "Partition $NEXT_PARTITION will be formatted with $NEXT_SYS_TYPE."
 msgstr ""
 
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:494
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:495
 #, sh-format
 msgid "SELECT MOUNT POINT FOR $NEXT_PARTITION"
 msgstr ""
 
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:495
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:496
 #, sh-format
 msgid ""
 "OK, now you need to specify where you want the new partition mounted.  For example, if you want to put it under /usr/local, then respond:  /usr/local\n"
 "Where would you like to mount $NEXT_PARTITION?"
 msgstr ""
 
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:537
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:538
 msgid "Finished setting up Linux partitions."
 msgstr ""
 
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:538
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:539
 msgid "DONE ADDING LINUX PARTITIONS TO /etc/fstab"
 msgstr ""
 
@@ -1827,7 +1839,7 @@ msgstr ""
 #: ../initrd-scripts/usr-lib-setup/autoinstall:142
 #: ../initrd-scripts/usr-lib-setup/autoinstall:205
 #: ../initrd-scripts/usr-lib-setup/autoinstall:209
-#: ../initrd-scripts/usr-lib-setup/autoinstall:261
+#: ../initrd-scripts/usr-lib-setup/autoinstall:262
 msgid "AUTO PARTITION"
 msgstr ""
 
@@ -1858,10 +1870,6 @@ msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:106
 msgid "Do It"
-msgstr ""
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:107
-msgid "Cancel"
 msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:109
