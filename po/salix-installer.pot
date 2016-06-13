@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-13 16:36+0300\n"
+"POT-Creation-Date: 2016-06-13 16:41+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1065,7 +1065,9 @@ msgid ""
 msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:140
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:164
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:200
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:443
 msgid "IN USE"
 msgstr ""
 
@@ -1080,11 +1082,6 @@ msgstr ""
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:149
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:150
 msgid "done, continue with setup"
-msgstr ""
-
-#: ../initrd-scripts/usr-lib-setup/SeTDOS:164
-#: ../initrd-scripts/usr-lib-setup/SeTpartitions:443
-msgid "(IN USE)"
 msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:185
