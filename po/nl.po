@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-14 01:19+0300\n"
-"PO-Revision-Date: 2016-06-13 22:20+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"PO-Revision-Date: 2016-06-14 07:17+0000\n"
+"Last-Translator: Gambit <gambit73@gmail.com>\n"
 "Language-Team: Dutch (http://www.transifex.com/gapan/salix/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -160,7 +160,7 @@ msgstr "U kan eventueel uw toetsenbord en uw swap partitie(s) opnieuw instellen 
 #: ../initrd-scripts/usr-lib-setup/setup:272
 #: ../initrd-scripts/usr-lib-setup/slackinstall:147
 msgid "CORE"
-msgstr ""
+msgstr "CORE"
 
 #: ../initrd-scripts/usr-lib-setup/setup:237
 #: ../initrd-scripts/usr-lib-setup/setup:254
@@ -190,7 +190,7 @@ msgstr "CORE zal alleen de minimale benodigdheden installeren voor uw systeem om
 #: ../initrd-scripts/usr-lib-setup/setup:249
 #: ../initrd-scripts/usr-lib-setup/setup:271
 msgid "BASIC"
-msgstr ""
+msgstr "BASIC"
 
 #: ../initrd-scripts/usr-lib-setup/setup:249
 #: ../initrd-scripts/usr-lib-setup/setup:271
@@ -206,13 +206,13 @@ msgstr "Installeer een minimaal console systeem"
 msgid ""
 "FULL (default) will install everything. That includes one application per "
 "task, such as an office suite, a multimedia player, a CD/DVD burner etc."
-msgstr ""
+msgstr "FULL (standaard) zal alles installeren. Dat houdt één applicatie per taak in, zoals een office pakket, een multimedia speler, een CD/DVD brander etc."
 
 #: ../initrd-scripts/usr-lib-setup/setup:270
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:138
 #: ../initrd-scripts/usr-lib-setup/slackinstall:162
 msgid "FULL"
-msgstr ""
+msgstr "FULL"
 
 #: ../initrd-scripts/usr-lib-setup/setup:270
 msgid "Install everything"
@@ -978,7 +978,7 @@ msgstr "Voer alstublieft nu het pad van een folder in welke de inhoud (of een IS
 msgid ""
 "Note: The path you enter must be relative to the mount point. So, "
 "'/var/log/mount/salix-xfce' should be entered as '/salix-xfce'."
-msgstr ""
+msgstr "Notitie: Het pad dat u invoert moet relatief staan ten opzichte van het mount punt. Dus, '/var/log/mount/salix-xfce' moet worden ingevoerd als '/salix-xfce'."
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:28
 #, sh-format
@@ -1124,7 +1124,7 @@ msgstr "Vervolgens moet deze partitie ergens in je directorystructuur worden aan
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:535
 #: ../initrd-scripts/usr-lib-setup/autoinstall:259
 msgid "Adding this information to your /etc/fstab:"
-msgstr ""
+msgstr "Bezig met deze informatie toevoegen aan uw /etc/fstab:"
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:219
 msgid "Finished setting up non-Linux partitions."
