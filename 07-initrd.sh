@@ -83,10 +83,6 @@ REPO=http://slackware.uk
 
 # http://slackware.uk/slackware/slackware64-14.2/
 SLACKREPO=$REPO/slackware/slackware${LIBDIRSUFFIX}-current
-SLACK2REPO=$SLACKREPO/slackware${LIBDIRSUFFIX}
-# http://slackware.uk/slackware/slackware64-14.2/slackware64/
-SALIXREPO=$REPO/salix/$arch/14.2/
-# http://slackware.uk/salix/x86_64/14.2/
 
 mkdir -p initrd/$arch
 rm -rf initrd/$arch/*initrd*.img
@@ -117,71 +113,42 @@ rm /boot/initrd-tree/usr/lib/setup/*
 cp $SCRIPTSDIR/usr-lib-setup/* /boot/initrd-tree/usr/lib/setup/
 
 # download and install required packages
-rm -f slack.md5 salix.md5
-echo "Downloading slack CHECKSUMS.md5 file"
-wget -q $SLACKREPO/CHECKSUMS.md5 -O slack.md5
-echo "Downloading salix CHECKSUMS.md5 file"
-wget -q $SALIXREPO/CHECKSUMS.md5 -O salix.md5
-
-echo "Downloading spkg..."
-rm -f spkg-*.t?z
-LOC=`grep "\/spkg-.*-.*-.*\.tgz$" salix.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
-wget -q $SALIXREPO/$LOC
 echo "Installing spkg..."
-spkg -qq --root=/boot/initrd-tree/ -i spkg-*.t?z
-rm spkg-*.t?z
+spkg -qq --root=/boot/initrd-tree/ -i iso/salix/core/spkg-*.t?z
 
 # the slackware installer does not install the locale files for dialog
 # and we need those to have the installer completely translated.
 install_dialog () {
-echo "Downloading dialog..."
-rm -f dialog-*.t?z
-LOC=`grep "dialog-.*t[gx]z$" slack.md5|sed "s|\(.*\)  \./\(.*\)|\2|"`
-wget -q $SLACKREPO/$LOC
 echo "Installing dialog..."
-spkg -qq --root=/boot/initrd-tree/ -i dialog-*.t?z
-rm -f dialog-*.t?z
+spkg -qq --root=/boot/initrd-tree/ -i iso/salix/core/dialog-*.t?z
 }
 install_dialog
 
 # We just  need xzdec, needed by spkg. - Didier
 install_xzdec () {
-echo "Downloading xz..."
-rm -f xz-*.t?z
-LOC=`grep "xz-.*t[gx]z$" slack.md5|sed "s|\(.*\)  \./\(.*\)|\2|"`
-wget -q $SLACKREPO/$LOC
 echo "Installing xzdec ..."
-tar xf xz-*.t?z -C /boot/initrd-tree usr/bin/xzdec
+tar xf iso/salix/core/xz-*.t?z -C /boot/initrd-tree usr/bin/xzdec
 mv /boot/initrd-tree/usr/bin/xzdec /boot/initrd-tree/bin/xzdec
-rm -f xz-*.t?z
 }
 install_xzdec
 
 # We need gettext (but not gettext-tools) - Didier
 install_gettext() {
-echo "Downloading gettext..."
-rm -rf gettext-*.txz
-LOC=`grep "gettext-[[:digit:]].*.t[gx]z$" slack.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
-wget -q $SLACKREPO/$LOC
-tar xf gettext-*t?z -C /boot/initrd-tree --wildcards \
+echo "Installing gettext..."
+tar xf iso/salix/core/gettext-[[:digit:]]*.txz -C /boot/initrd-tree --wildcards \
   usr/bin/{envsubst,gettext*}
-rm -f gettext-*.txz
 }
 install_gettext
 
 # We need appropriate fonts for each locale - Didier
 install_fonts() {
-echo "Installing terminus fonts"
-rm -f terminus-font-*
-LOC=`grep "terminus-font.*t[gx]z$" slack.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
-wget -q $SLACKREPO/$LOC
+echo "Installing terminus fonts..."
 FONT_LIST=$(grep -o "FONT[^=]*=[^;]*" $SCRIPTSDIR/etc-rc.d/rc.font | \
     sort | uniq | cut -d= -f2| sed ':a;N;s/\n/ /;ta')
 for i in $FONT_LIST; do
-  tar xf terminus-font-*t?z -C /boot/initrd-tree \
+  tar xf iso/salix/core/terminus-font-*t?z -C /boot/initrd-tree \
     usr/share/kbd/consolefonts/$i
 done
-rm -f terminus-font-*
 }
 install_fonts
 
@@ -204,13 +171,9 @@ install_locales_definitions() {
 echo "Installing locale definitions"
 mkdir -p /boot/initrd-tree/usr/lib$LIBDIRSUFFIX/locale
 TMPDIR=$(mktemp -d)
-rm -rf glibc-i18n-*.txz
-LOC=`grep "glibc-i18n-.*.t[gx]z$" slack.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
-wget -q $SLACKREPO/$LOC
 # We can't cherry pick the locales we need from the archive, because it
 # contains hard links. - Didier
-tar -xf glibc-i18n-*t?z -C $TMPDIR
-
+tar -xf iso/salix/core/glibc-i18n-*.txz -C $TMPDIR
 # Read the available locales from the isolinux boot menu options. Use
 # the 64-bit one, it shouldn't make a difference anyway. Downside is
 # that if there is no menu option for a locale, there is no support for
@@ -222,27 +185,16 @@ for i in $LOCALES; do
     /boot/initrd-tree/usr/lib$LIBDIRSUFFIX/locale
 done
 rm -rf $TMPDIR
-rm -f glibc-i18n-*z
 }
 install_locales_definitions
 
 # lets'install nano, a newbie friendly text editor, and its dependency
 # libmagic.
 install_nano() {
-echo "Installing nano and its dependency libmagic"
-rm -rf nano-*
-LOC=`grep "/nano-.*.t[gx]z$" slack.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
-wget -q $SLACKREPO/$LOC
-THENANO=$(ls nano-*)
-tar -xf $THENANO -C /boot/initrd-tree usr/bin/nano
-rm -f nano-*
-rm -f $THENANO 
-LOC=`grep "/file-.*.t[gx]z$" slack.md5 | sed "s|\(.*\)  \./\(.*\)|\2|"`
-wget -q $SLACKREPO/$LOC
-THEFILE=$(ls file-*)
-tar -xf $THEFILE -C /boot/initrd-tree \
+echo "Installing nano and its dependency libmagic..."
+tar -xf iso/salix/core/nano-*.txz -C /boot/initrd-tree usr/bin/nano
+tar -xf iso/salix/core/file-*.txz -C /boot/initrd-tree \
   usr/lib$LIBDIRSUFFIX/libmagic.so.1.0.0
-rm -f $THEFILE
 }
 install_nano
 
@@ -282,7 +234,6 @@ rm -f /boot/initrd-tree/{wait-for-root,rootfs,rootdev,initrd-name}
 )
 
 # clean up
-rm -f slack.md5 salix.md5
 rm -rf /boot/initrd-tree
 
 # chown everything back
