@@ -79,10 +79,7 @@ if [[ "$arch" == "x86_64" ]]; then
 	export LIBDIRSUFFIX="64"
 fi
 
-REPO=http://slackware.uk
-
-# http://slackware.uk/slackware/slackware64-14.2/
-SLACKREPO=$REPO/slackware/slackware${LIBDIRSUFFIX}-current
+SLACKREPO=http://download.salixos.org/$arch/slackware-$VER
 
 mkdir -p initrd/$arch
 rm -rf initrd/$arch/*initrd*.img
