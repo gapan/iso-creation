@@ -74,3 +74,5 @@ fi
     -boot-info-table $EFIOPTIONS . \
 )
 
+# Distrowatch like to have this easily accessible
+cp iso/PACKAGELIST salix${LIBDIRSUFFIX}-${edition}-${ver}.pkglist
