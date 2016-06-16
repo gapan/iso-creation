@@ -51,6 +51,7 @@ ipw2200-fw
 iso-codes
 iw
 json-c
+json-glib
 keybinder
 libaio
 libass
