@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-14 01:19+0300\n"
-"PO-Revision-Date: 2016-06-14 06:46+0000\n"
+"PO-Revision-Date: 2016-06-16 14:01+0000\n"
 "Last-Translator: Yarema aka Knedlyk <yupadmin@gmail.com>\n"
 "Language-Team: Ukrainian (http://www.transifex.com/gapan/salix/language/uk/)\n"
 "MIME-Version: 1.0\n"
@@ -210,7 +210,7 @@ msgstr "Встановлення мінімальної консольної с�
 msgid ""
 "FULL (default) will install everything. That includes one application per "
 "task, such as an office suite, a multimedia player, a CD/DVD burner etc."
-msgstr ""
+msgstr "ПАВНИЙ (типовий) режим встановить все. Він включає одну програму на одне завдання, такі як офісні програми, програвач медіа, CD/DVD записувач, етс."
 
 #: ../initrd-scripts/usr-lib-setup/setup:270
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:138
@@ -493,7 +493,7 @@ msgid ""
 "information on forcing the detection of your drive, and then reattempt "
 "installation.  If all else fails, see FAQ.TXT for information about copying "
 "parts of this CD to your DOS partition and installing it from there."
-msgstr ""
+msgstr "Неможливо знайти пристрій CD/DVD серед усіх пристроїв, які були проскановані. Серед можливих причин можуть бути такі: завантажувальний диск або ядро не підтримують Ваш пристрій, помилка передачі параметрів ядру, які потрібні Вашому пристрою, немає диску Salix у Вашому пристрої CD/DVD, або Ви використовуєте пристрій, під'єднаний за допомогою Plug and Play до звукової карти (в цьому випадку доцільно під'єднювати пристрій безпосередньо до інтерфейсу IDE). Будь ласка, впевніться, що Ви використовуєте правильний завантажувальний диск для Вашої конфігурації комп'ютера, загляньте до файлу BOOTING щодо інформації про вимушене розпізнавання Вашого пристрою, а тоді спробуйте знову процес встановлення. Якщо ж і це не допоможе, перегляньте файл FAQ.TXT щодо інформації про копіювання частини цього CD на Ваш розділ DOS і встановлення з нього."
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:187
 msgid ""
@@ -557,7 +557,7 @@ msgstr "Добре! Ми вже майже підійшли до закінче�
 msgid ""
 "Since you're already running on the network, you should be able to use the "
 "hostname instead of an IP address if you wish."
-msgstr ""
+msgstr "Оскільки мережа вже налаштована, Ви можете, за бажанням, використати ім'я сервера замість його IP адреси."
 
 #: ../initrd-scripts/usr-lib-setup/INSNFS:35
 msgid "What is the IP address of your NFS server?"
@@ -735,11 +735,11 @@ msgstr "На наступному екрані Ви повинні спосте�
 msgid ""
 "First, we'll download the PACKAGES.TXT from the parent of the directory that you entered before (which should be the root of the remote Salix tree).  If that succeeds, then we use PACKAGES.TXT to reconstruct a local cache of the package tree (should take a minute or less on an average system).\n"
 "After that, we're all set to go!"
-msgstr ""
+msgstr "На початку ми звантажимо файл PACKAGES.TXT з кореня теки, яку Ви вказали перед тим (яка є коренем здального дерева тек Salix). Якщо все пройде добре, ми використаємо PACKAGES.TXT для реконструкції локального кешу дерева пакунків (триває хвилину або й менше на звичайній системі).\nПісля цього можемо продовжувати далі!"
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:117
 msgid "Downloading PACKAGES.TXT at the Salix root starts after you press OK."
-msgstr ""
+msgstr "Звантаження файлу PACKAGES.TXT в корені  тек Salix почнеться після натиснення OK."
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:119
 msgid ""
@@ -1198,7 +1198,7 @@ msgstr "(Не встановлювати менеджер завантаженн
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:207
 msgid "Loading locales..."
-msgstr ""
+msgstr "Завантаження локалей..."
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:211
 msgid "Updating caches..."
@@ -1232,7 +1232,7 @@ msgstr "Налаштування IBus"
 msgid ""
 "IBus is an input platform for Chinese, Japanese, Korean and many other "
 "languages. Do you want to have it enabled or disabled on boot?"
-msgstr ""
+msgstr "IBus є платформою вводу для китайської, японської, корейської і багато інших мов. Ви бажаєте ввімкнути або вимкнути її при завантаженні? "
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:238
 msgid "SCIM configuration"
@@ -1242,7 +1242,7 @@ msgstr "Налаштування SCIM"
 msgid ""
 "SCIM is an input platform for Chinese, Japanese, Korean and many other "
 "languages. Do you want to have it enabled or disabled on boot?"
-msgstr ""
+msgstr "SCIM є платформою вводу для китайської, японської, корейської і багато інших мов. Ви бажаєте ввімкнути або вимкнути її при завантаженні? "
 
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:21
 msgid "Go"
@@ -1261,14 +1261,14 @@ msgid ""
 "Welcome to the Salix partition editor. Press <SPACE> to select a disk and "
 "select Go to start partitioning. If you don't want to alter the partition "
 "layout, select Exit."
-msgstr ""
+msgstr "Ласкаво просимо до редактора розділів Salix. Натисніть <Пробіл> для вибору диску і виберіть Вперед для початку розбивки. Якщо Ви не бажаєте змінювати структуру розділів, виберіть Вийти."
 
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:28
 msgid ""
 "NOTE: If you are planning to use BTRFS for your / filesystem, LILO the "
 "default boot loader will not be able to boot it. In that case, you will need"
 " a separate /boot partition with another filesystem."
-msgstr ""
+msgstr "ЗАУВАЖЕННЯ: Якщо Ви плануєте використовувати BTRFS для Вашої файлової системи / , тоді типовий менеджер завантаження LILO буде не в змозі її завантажити. У цьому випадку Вам потрібно мати окремий розділ /boot з іншою файловою системою."
 
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:33
 msgid "You usually need at least 2 partitions:"
@@ -1308,7 +1308,7 @@ msgid ""
 "You may select one of the following keyboard maps.  If you do not select a "
 "keyboard map, $DefaultKeyMap is the current value.  Use the UP/DOWN arrow "
 "keys and PageUp/PageDown to scroll through the whole list of choices."
-msgstr ""
+msgstr "Ви можете вибрати одну з наступних розкладок клавіатури. Якщо Ви не вибере розкладку коавіатури, тоді по замовчуванню буде $DefaultKeyMap. Використайте стрілки ВВЕРХ/ВНИЗ і PageUp/PageDown для ошляду всіх можливостей."
 
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:198
 msgid "Test keyboard map"
@@ -1328,7 +1328,7 @@ msgid ""
 "the keyboard map or reject it and select another one. The installer only "
 "supports ASCII characters, so don't try any special characters here or use "
 "them during installation!"
-msgstr ""
+msgstr "Ви можете протестувати нову розкладку клавіатури, друкуючи якийсь текст. Ви можете прийняти розкладку клавіатури або відмовитися від неї і вибрати іншу. Встановлювач підтримує тільки символи ASCII, тому не пробуйте тут жодних спеціальних символів і не використовуйте їх під час встановлення!"
 
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:11
 msgid "Select Salix installation source."
@@ -1811,7 +1811,7 @@ msgid ""
 "any swap partitions that you do not wish to use with this installation, "
 "please unselect them with the up and down arrows and spacebar.  If you wish "
 "to use all of them (this is recommended), simply hit the ENTER key."
-msgstr ""
+msgstr "Встановлювач Salix розпізнав один або більше розділів підкачки у Вашій системі. Ці розділи вибрані для використання як простір підкачки. Якщо серед них є такі, які Ви не бажаєте використовувати, зніміть з них відмітку, використовуючи стрілки вверх, вниз і кнопку пробілу. Якщо ж Ви бажаєте використовувати їх всі (це рекомендується), тоді просто натисніть кнопку ВВІД."
 
 #: ../initrd-scripts/usr-lib-setup/SeTswap:56
 #, sh-format
@@ -1828,7 +1828,7 @@ msgid ""
 " partitions with mkswap you may also check them for bad blocks.  This is not"
 " the default since nearly all modern hard drives check themselves for bad "
 "blocks anyway.  Would you like to check for bad blocks while running mkswap?"
-msgstr ""
+msgstr "Встановлювач Salix зараз підготує Ваш системний простір підкачки. Під час форматування розділів підкачки за допомогою mkswap можна перевірити їх на погані блоки. Ця операція не є типовою, оскільки майже всі сучасні пристрої постійно перевіряють себе на погані блоки. Ви б бажали перевірити на погані блоки під час роботи mkswap?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTswap:101
 #, sh-format
@@ -1853,14 +1853,14 @@ msgstr "Налаштування користувачів"
 msgid ""
 "You will now be presented with some dialogs so that you can create one or "
 "more user accounts in your new system."
-msgstr ""
+msgstr "Зараз Вам буде показано деякі пропозиції щодо створення одного або й більше користувачів для Вашої нової системи."
 
 #: ../initrd-scripts/usr-lib-setup/SeTusers:13
 msgid ""
 "The first user you will create, will be able to run commands as a privileged"
 " user through sudo. Any other user will not be able to run commands with "
 "sudo unless you add them to the wheel group."
-msgstr ""
+msgstr "Перший створений користувач зможе виконувати команди як привілейований користувач за допомогою команди sudo. Будь-який  інший користувач не буде в змозі виконувати команди за допомогою sudo, аж поки Ви не додасте його до групи wheel."
 
 #: ../initrd-scripts/usr-lib-setup/SeTusers:17
 msgid "The root user is disabled by default."
@@ -1880,26 +1880,26 @@ msgstr "АВТОМАТИЧНА РОЗБИВКА РОЗДІЛІВ"
 #: ../initrd-scripts/usr-lib-setup/autoinstall:210
 #, sh-format
 msgid "Please wait while ${DISK} is being prepared for Salix"
-msgstr ""
+msgstr "Будь ласка, зачекайте, поки ${DISK} не буде підготовлений для Salix"
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:64
 #, sh-format
 msgid "Formatting $PART"
-msgstr ""
+msgstr "Форматування $PART"
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:66
 #, sh-format
 msgid "Size in 1K blocks: $SIZE"
-msgstr ""
+msgstr "Розмір 1К блоків: $SIZE"
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:68
 msgid "Filesystem type:xfs"
-msgstr ""
+msgstr "Тип файлової системи type:xfs"
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:70
 #, sh-format
 msgid "Formatting $PART with filesystem xfs."
-msgstr ""
+msgstr "Форматування $PART файловою системою xfs."
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:106
 msgid "Do It"
@@ -1911,7 +1911,7 @@ msgstr "Це є режим автоматичної розбивки розді�
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:110
 msgid "Press <SPACE> to select the target disk where Salix will be installed."
-msgstr ""
+msgstr "Натисніть <ПРОБІЛ> для вибору диску, де буде встановлено Salix."
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:112
 msgid "All data will be erased from the target disk."
@@ -1924,7 +1924,7 @@ msgstr "Вибирайте цей режим, якщо весь диск буд�
 #: ../initrd-scripts/usr-lib-setup/autoinstall:130
 #, sh-format
 msgid "Are you sure you want to globally erase existing data from ${DISK}?"
-msgstr ""
+msgstr "Ви впевнені, що бажаєте глобально знищити всі дані з ${DISK}?"
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:133
 msgid "Go back to the main setup menu"
@@ -1933,18 +1933,18 @@ msgstr "Перехід до головного меню налаштування
 #: ../initrd-scripts/usr-lib-setup/autoinstall:134
 #, sh-format
 msgid "${DISK} is dedicated to Salix"
-msgstr ""
+msgstr "${DISK} призначений для Salix"
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:142
 msgid "No target disk selected, going back to main menu"
-msgstr ""
+msgstr "Не вибрано доцільовий диск, перехід до головного меню"
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:206
 #, sh-format
 msgid ""
 "${DISK} is only $DisksizeInKB KB, you need at least 3000000 KB to install "
 "Salix"
-msgstr ""
+msgstr "${DISK} має тільки $DisksizeInKB КБ, Вам потрібно хоча б 3000000 КБ для встановлення Salix"
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:257
 msgid "Partitioning completed."
@@ -1952,12 +1952,12 @@ msgstr "Розбивку на розділи завершено."
 
 #: ../initrd-scripts/usr-lib-setup/slackinstall:55
 msgid "FTP/HTTP DOWNLOAD FAILURE"
-msgstr ""
+msgstr "ЗВАНТАЖЕННЯ З FTP/HTTP НЕ ПОВЕЛОСЯ"
 
 #: ../initrd-scripts/usr-lib-setup/slackinstall:77
 #, sh-format
 msgid "installpkg error #$ArG1"
-msgstr ""
+msgstr "помилка installpkg #$ArG1"
 
 #: ../initrd-scripts/usr-lib-setup/slackinstall:78
 #, sh-format
@@ -1967,11 +1967,11 @@ msgid ""
 " package to be unable to be read without error.  You may hit enter to "
 "continue if you wish, but if this is an important required package then your"
 " installation may not work as-is."
-msgstr ""
+msgstr "Сталася фатальна помилка під час спроби встановлення $ArG2. Пакунок, можливо, був пошкоджений, або погані джерела встановлення, або щось інше унеможливило читання пакунку без помилок. Ви можете натиснути ввід для продовження, однак, якщо це важливий пакунок, тоді Ваше встановлення може перестати працювати так як треба."
 
 #: ../initrd-scripts/usr-lib-setup/slackinstall:115
 msgid "Installing package set:"
-msgstr ""
+msgstr "Встановлення набору пакунків:"
 
 #: ../initrd-scripts/usr-lib-setup/slackinstall:125
 #: ../initrd-scripts/usr-lib-setup/slackinstall:137

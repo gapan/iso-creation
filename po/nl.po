@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-14 01:19+0300\n"
-"PO-Revision-Date: 2016-06-14 07:17+0000\n"
+"PO-Revision-Date: 2016-06-16 11:18+0000\n"
 "Last-Translator: Gambit <gambit73@gmail.com>\n"
 "Language-Team: Dutch (http://www.transifex.com/gapan/salix/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -1174,109 +1174,109 @@ msgstr "Voorbereiding op het configureren van je nieuwe Linux systeem..."
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:73
 msgid "Boot Loader"
-msgstr ""
+msgstr "Boot Lader"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:74
 msgid "Please choose the Boot Loader that you would like to use"
-msgstr ""
+msgstr "Kies alstublieft de Boot Lader welke u wilt gebruiken"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:76
 msgid "Install Lilo"
-msgstr ""
+msgstr "Installeer LILO"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:77
 msgid "Install Grub"
-msgstr ""
+msgstr "Installeer Grub"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:78
 msgid "(Do not install boot loader)"
-msgstr ""
+msgstr "(Installeer boot lader niet)"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:207
 msgid "Loading locales..."
-msgstr ""
+msgstr "Locales laden..."
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:211
 msgid "Updating caches..."
-msgstr ""
+msgstr "Cache bijwerken..."
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:216
 msgid "Numlock configuration"
-msgstr ""
+msgstr "Numlock instellingen"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:217
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:230
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:239
 msgid "Enabled"
-msgstr ""
+msgstr "Ingeschakeld"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:217
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:230
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:239
 msgid "Disabled"
-msgstr ""
+msgstr "Uitgeschakeld"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:218
 msgid "Do you want to have numlock enabled or disabled on boot?"
-msgstr ""
+msgstr "Wilt u numlock in- of uitgeschakeld tijdens het opstarten?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:229
 msgid "IBus configuration"
-msgstr ""
+msgstr "IBus instellingen"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:232
 msgid ""
 "IBus is an input platform for Chinese, Japanese, Korean and many other "
 "languages. Do you want to have it enabled or disabled on boot?"
-msgstr ""
+msgstr "IBus is een invoer platform voor chinese, japanse, koreaanse en vele andere talen. Wilt u dit in- of uitgeschakeld hebben tijdens het opstarten?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:238
 msgid "SCIM configuration"
-msgstr ""
+msgstr "SCIM instellingen"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:241
 msgid ""
 "SCIM is an input platform for Chinese, Japanese, Korean and many other "
 "languages. Do you want to have it enabled or disabled on boot?"
-msgstr ""
+msgstr "SCIM is een invoer platform voor chinese, japanse, koreaanse en vele andere talen. Wilt u dit in- of uitgeschakeld hebben tijdens het opstarten?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:21
 msgid "Go"
-msgstr ""
+msgstr "Ga"
 
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:22
 msgid "Exit"
-msgstr ""
+msgstr "Sluit af"
 
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:23
 msgid "PARTITIONS EDITOR"
-msgstr ""
+msgstr "PARTITIE EDITOR"
 
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:24
 msgid ""
 "Welcome to the Salix partition editor. Press <SPACE> to select a disk and "
 "select Go to start partitioning. If you don't want to alter the partition "
 "layout, select Exit."
-msgstr ""
+msgstr "Welkom bij de Salix Partitie editor. Druk op de <SPACE> toets om een schijf te selecteren en selecteer Ga om het partitioneren te starten. Indien u de partitie structuur niet wilt aanpassen, selecteer dan Sluit af."
 
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:28
 msgid ""
 "NOTE: If you are planning to use BTRFS for your / filesystem, LILO the "
 "default boot loader will not be able to boot it. In that case, you will need"
 " a separate /boot partition with another filesystem."
-msgstr ""
+msgstr "NOTITIE: Als u van plan bent om BTRFS voor uw / bestandssysteem te gebruiken, kan de standaard LILO boot lader niet in staat zijn het te starten. In dit geval heeft u een andere /boot partitie nodig met een ander bestandssysteem."
 
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:33
 msgid "You usually need at least 2 partitions:"
-msgstr ""
+msgstr "U heeft normaliter minstens 2 partities nodig:"
 
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:34
 msgid "1 LINUX bootable partition (10GB minimum recommended)"
-msgstr ""
+msgstr "1 Linux bootable partitie (10GB minimum bij voorkeur)"
 
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:35
 msgid "1 SWAP partition (1GB minimum recommended)"
-msgstr ""
+msgstr "1 SWAP partitie (1GB minimum bij voorkeur)"
 
 #: ../initrd-scripts/usr-lib-setup/SeTfull:15
 msgid "ERROR: TARGET PARTITION FULL"
@@ -1304,19 +1304,19 @@ msgid ""
 "You may select one of the following keyboard maps.  If you do not select a "
 "keyboard map, $DefaultKeyMap is the current value.  Use the UP/DOWN arrow "
 "keys and PageUp/PageDown to scroll through the whole list of choices."
-msgstr ""
+msgstr "U kan een van de volgende toetsenbord indeling kiezen. Als u geen toetsenbord indeling kiest, is $DefaultKeyMap de huidige indeling. Gebruik de UP/DOWN pijltoetsen en PageUp/PageDown om door de hele keuzelijst te bladeren."
 
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:198
 msgid "Test keyboard map"
-msgstr ""
+msgstr "Test toetsenbord indeling"
 
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:199
 msgid "Accept keymap"
-msgstr ""
+msgstr "Accepteer keymap"
 
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:200
 msgid "Reject keymap"
-msgstr ""
+msgstr "Verwerp keymap"
 
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:201
 msgid ""
@@ -1324,11 +1324,11 @@ msgid ""
 "the keyboard map or reject it and select another one. The installer only "
 "supports ASCII characters, so don't try any special characters here or use "
 "them during installation!"
-msgstr ""
+msgstr "U kan nu de nieuwe toetsenbord indeling testen door willekeurig tekst te typen. U kan de toetsenbord indeling accepteren of afwijzen en een ander selecteren. Het installatieprogramma accepteert alleen ASCII karakters, dus probeer hier of tijdens de installatie niet speciale karakters!"
 
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:11
 msgid "Select Salix installation source."
-msgstr ""
+msgstr "Selecteer bron Salix installatie."
 
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:12
 msgid "SOURCE MEDIA SELECTION"
@@ -1336,15 +1336,15 @@ msgstr "SOURCE MEDIUM SELECTIE"
 
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:14
 msgid "Please select the media from which to install Salix Linux:"
-msgstr ""
+msgstr "Selecteer alstublieft de media waarvan u Salix Linux wilt installeren:"
 
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:16
 msgid "Install from a Salix USB stick"
-msgstr ""
+msgstr "Installeer vanaf een Salix USB stick"
 
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:17
 msgid "Install from a Salix CD or DVD"
-msgstr ""
+msgstr "Installeer vanaf een Salix CD of DVD"
 
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:18
 msgid "Install from a hard drive partition"
@@ -1364,7 +1364,7 @@ msgstr "Installeer vanaf NFS (Network File System)"
 
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:22
 msgid "Install from a Samba share"
-msgstr ""
+msgstr "Installeer vanaf een Samba share"
 
 #: ../initrd-scripts/usr-lib-setup/SeTnet:103
 msgid ""
@@ -1713,7 +1713,7 @@ msgstr "Selecteer de Linux installatie partitie:"
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:325
 #: ../initrd-scripts/usr-lib-setup/autoinstall:107
 msgid "Cancel"
-msgstr ""
+msgstr "Annuleer"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:327
 msgid ""
@@ -1807,7 +1807,7 @@ msgid ""
 "any swap partitions that you do not wish to use with this installation, "
 "please unselect them with the up and down arrows and spacebar.  If you wish "
 "to use all of them (this is recommended), simply hit the ENTER key."
-msgstr ""
+msgstr "Salix Setup heeft een of meer swap partities gevonden op uw systeem. Deze partities zullen worden gekozen als swap ruimte. Als er swap partities zijn welke u niet wilt gebruiken voor deze installatie, deselecteer ze alstublieft met de up en down pijltoetsen en spatiebalk. Als u ze allemaal wilt gebruiken (dit is aanbevolen), druk dan simpelweg op de ENTER toets."
 
 #: ../initrd-scripts/usr-lib-setup/SeTswap:56
 #, sh-format
@@ -1824,7 +1824,7 @@ msgid ""
 " partitions with mkswap you may also check them for bad blocks.  This is not"
 " the default since nearly all modern hard drives check themselves for bad "
 "blocks anyway.  Would you like to check for bad blocks while running mkswap?"
-msgstr ""
+msgstr "Salix Setup zal de swap ruimte van uw systeem voorbereiden. Tijdens het formatteren van swap partities met mkswap kunt u deze tevens controleren op slechte blokken. Dit is niet standaard aangezien bijna alle moderne hard disks zichzelf al controleren op slechte blokken. Wilt u controleren op slechte blokken tijdens de uitvoer van mkswap?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTswap:101
 #, sh-format
@@ -1843,24 +1843,24 @@ msgstr "WISSELGEHEUGEN GECONFIGUREERD"
 
 #: ../initrd-scripts/usr-lib-setup/SeTusers:9
 msgid "User setup"
-msgstr ""
+msgstr "Gebruikers inrichting"
 
 #: ../initrd-scripts/usr-lib-setup/SeTusers:10
 msgid ""
 "You will now be presented with some dialogs so that you can create one or "
 "more user accounts in your new system."
-msgstr ""
+msgstr "U zult nu verschillend dialogen worden aangeboden zodat u één of meer gebruikers account in uw nieuwe systeem kan aanmaken."
 
 #: ../initrd-scripts/usr-lib-setup/SeTusers:13
 msgid ""
 "The first user you will create, will be able to run commands as a privileged"
 " user through sudo. Any other user will not be able to run commands with "
 "sudo unless you add them to the wheel group."
-msgstr ""
+msgstr "De eerste gebruiker welke u aanmaakt zal commando's kunnen uitvoeren als een gebruiker met meer privileges via sudo. Iedere andere gebruiker kan geen commando's uitvoeren met sudo als u deze niet toevoegt aan de wheel groep."
 
 #: ../initrd-scripts/usr-lib-setup/SeTusers:17
 msgid "The root user is disabled by default."
-msgstr ""
+msgstr "De root gebruiker is standaard uitgeschakeld."
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:25
 #: ../initrd-scripts/usr-lib-setup/autoinstall:108
@@ -1870,90 +1870,90 @@ msgstr ""
 #: ../initrd-scripts/usr-lib-setup/autoinstall:209
 #: ../initrd-scripts/usr-lib-setup/autoinstall:262
 msgid "AUTO PARTITION"
-msgstr ""
+msgstr "AUTO PARTITIE"
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:26
 #: ../initrd-scripts/usr-lib-setup/autoinstall:210
 #, sh-format
 msgid "Please wait while ${DISK} is being prepared for Salix"
-msgstr ""
+msgstr "Wacht alstublieft terwijl ${DISK} wordt geprepareerd voor Salix"
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:64
 #, sh-format
 msgid "Formatting $PART"
-msgstr ""
+msgstr "Bezig met formatteren $PART"
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:66
 #, sh-format
 msgid "Size in 1K blocks: $SIZE"
-msgstr ""
+msgstr "Grootte in 1K blokken: $SIZE"
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:68
 msgid "Filesystem type:xfs"
-msgstr ""
+msgstr "Bestandssysteem type:xfs"
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:70
 #, sh-format
 msgid "Formatting $PART with filesystem xfs."
-msgstr ""
+msgstr "Formatteren $PART met bestandssysteem xfs."
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:106
 msgid "Do It"
-msgstr ""
+msgstr "Voer Uit"
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:109
 msgid "This is automatic partition mode."
-msgstr ""
+msgstr "Dit is automatische partitie modus."
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:110
 msgid "Press <SPACE> to select the target disk where Salix will be installed."
-msgstr ""
+msgstr "Druk op de <SPACE> toets om de doel disk te kiezen waar Salix zal worden geinstalleerd."
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:112
 msgid "All data will be erased from the target disk."
-msgstr ""
+msgstr "Alle gegevens zullen worden gewist van de doel disk"
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:113
 msgid "Only run this mode if the entire disk will be dedicated to Salix."
-msgstr ""
+msgstr "Voer deze modus alleen uit als de gehele disk voor Salix is bestemd."
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:130
 #, sh-format
 msgid "Are you sure you want to globally erase existing data from ${DISK}?"
-msgstr ""
+msgstr "Bent u zeker dat u bestaande gegeven volledig wilt wissen van ${DISK}?"
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:133
 msgid "Go back to the main setup menu"
-msgstr ""
+msgstr "Ga terug naar het hoofdmenu van setup"
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:134
 #, sh-format
 msgid "${DISK} is dedicated to Salix"
-msgstr ""
+msgstr "${DISK} is toegewijd aan Salix"
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:142
 msgid "No target disk selected, going back to main menu"
-msgstr ""
+msgstr "Geen doel disk gekozen, terug naar hoofdmenu"
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:206
 #, sh-format
 msgid ""
 "${DISK} is only $DisksizeInKB KB, you need at least 3000000 KB to install "
 "Salix"
-msgstr ""
+msgstr "${DISK} is maar $DisksizeInKB KB, u heeft minstens 3000000 KB nodig om Salix te installeren"
 
 #: ../initrd-scripts/usr-lib-setup/autoinstall:257
 msgid "Partitioning completed."
-msgstr ""
+msgstr "Partitioneren voltooid."
 
 #: ../initrd-scripts/usr-lib-setup/slackinstall:55
 msgid "FTP/HTTP DOWNLOAD FAILURE"
-msgstr ""
+msgstr "FTP/HTTP DOWNLOAD MISLUKT"
 
 #: ../initrd-scripts/usr-lib-setup/slackinstall:77
 #, sh-format
 msgid "installpkg error #$ArG1"
-msgstr ""
+msgstr "installpkg foutmelding #$ArG1"
 
 #: ../initrd-scripts/usr-lib-setup/slackinstall:78
 #, sh-format
@@ -1963,11 +1963,11 @@ msgid ""
 " package to be unable to be read without error.  You may hit enter to "
 "continue if you wish, but if this is an important required package then your"
 " installation may not work as-is."
-msgstr ""
+msgstr "Er heeft een fatale foutmelding opgetreden bij de poging om $ArG2 te installeren. Het pakket is mogelijk corrupt, het installatiemedium kan slecht zijn of iets anders heeft ervoor gezorgd dat het pakket zonder fout wordt gelezen. U kan op de ENTER toets drukken indien gewenst, maar als het een belangrijk pakket is dat nodig is is het mogelijk dat uw installatie niet naar behoren werkt."
 
 #: ../initrd-scripts/usr-lib-setup/slackinstall:115
 msgid "Installing package set:"
-msgstr ""
+msgstr "Bezig met installeren van:"
 
 #: ../initrd-scripts/usr-lib-setup/slackinstall:125
 #: ../initrd-scripts/usr-lib-setup/slackinstall:137
@@ -1977,4 +1977,4 @@ msgstr ""
 #: ../initrd-scripts/usr-lib-setup/slackinstall:192
 #: ../initrd-scripts/usr-lib-setup/slackinstall:203
 msgid "Installing:"
-msgstr ""
+msgstr "Bezig met installeren:"

@@ -6,6 +6,7 @@
 # Didier Spaier <didier (at) slint (dot) fr>, 2014
 # Didier Spaier <didier@slint.fr>, 2014
 # elesmod <elesmod@lavabit.com>, 2013
+# Lukasz Kaminski <elpikej@gmail.com>, 2016
 # Marcin Herda <mherda@slackword.net>, 2013
 # Piotr Maksymiec <parkette.pjm@gmail.com>, 2013,2016
 msgid ""
@@ -13,8 +14,8 @@ msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-14 01:19+0300\n"
-"PO-Revision-Date: 2016-06-13 22:20+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"PO-Revision-Date: 2016-06-17 13:15+0000\n"
+"Last-Translator: Lukasz Kaminski <elpikej@gmail.com>\n"
 "Language-Team: Polish (http://www.transifex.com/gapan/salix/language/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,27 +25,27 @@ msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/setup:52
 msgid "WELCOME TO THE SALIX INSTALLATION"
-msgstr ""
+msgstr "WITAMY W INSTALATORZE SALIX"
 
 #: ../initrd-scripts/usr-lib-setup/setup:53
 msgid "Keep the current keymap"
-msgstr ""
+msgstr "Zachowaj obecny układ klawiatury"
 
 #: ../initrd-scripts/usr-lib-setup/setup:54
 msgid "Select another keymap"
-msgstr ""
+msgstr "Wybierz inny układ klawiatury"
 
 #: ../initrd-scripts/usr-lib-setup/setup:55
 #, sh-format
 msgid ""
 "Welcome to the installation of Salix, The Bonsai OS!\n"
 "Before you proceed with the rest of the installation, you might want to select your keyboard map (keymap). The current keymap is $KMAP."
-msgstr ""
+msgstr "Witamy w instalacji Salix, Systemu Operacyjnego Bonsai!\nZanim rozpoczniesz instalację, być może zechcesz wybrać układ klawiatury (keymap). Obecny układ klawiatury to $KMAP."
 
 #: ../initrd-scripts/usr-lib-setup/setup:66
 #: ../initrd-scripts/usr-lib-setup/setup:84
 msgid "Salix Installation"
-msgstr ""
+msgstr "Instalacja Salix"
 
 #: ../initrd-scripts/usr-lib-setup/setup:67
 #: ../initrd-scripts/usr-lib-setup/setup:86
@@ -58,33 +59,33 @@ msgstr "Wybierz"
 #: ../initrd-scripts/usr-lib-setup/setup:68
 #: ../initrd-scripts/usr-lib-setup/setup:87
 msgid "Exit installation"
-msgstr ""
+msgstr "Zakończ instalację"
 
 #: ../initrd-scripts/usr-lib-setup/setup:70
 msgid "You may now proceed with the installation by pressing the ENTER key."
-msgstr ""
+msgstr "Możesz teraz kontynuować instalację naciskając klawisz ENTER"
 
 #: ../initrd-scripts/usr-lib-setup/setup:72
 #: ../initrd-scripts/usr-lib-setup/setup:92
 msgid ""
 "If you want to exit the installation and drop to a linux console, select "
 "'Exit installation'"
-msgstr ""
+msgstr "Jeśli chcesz zakończyć instalację i wrócić do konsoli linux, wybierz 'Zakończ instalację\""
 
 #: ../initrd-scripts/usr-lib-setup/setup:74
 #: ../initrd-scripts/usr-lib-setup/setup:94
 msgid "Install Salix using a step-by-step guide"
-msgstr ""
+msgstr "Zainstaluj Salix używając przewodnika krok-po-kroku"
 
 #: ../initrd-scripts/usr-lib-setup/setup:89
 msgid ""
 "You may select an option below using the UP/DOWN keys and SPACE or ENTER. "
 "Alternate keys may also be used: '+', '-', and TAB."
-msgstr ""
+msgstr "Możesz wybrać opcję poniżej używając klawiszy GÓRA/DÓŁ i SPACJA albo ENTER. Alternatywnie możesz też użyć: \"+\", \"-\" i TAB"
 
 #: ../initrd-scripts/usr-lib-setup/setup:95
 msgid "Autopartition and install with few options (wipes your HD)"
-msgstr ""
+msgstr "Automatycznie partycjonuj i zainstaluj z kilkoma opcjami (kasuje wszystkie pliki na Dysku Twardym)"
 
 #: ../initrd-scripts/usr-lib-setup/setup:126
 msgid "NO LINUX PARTITIONS DETECTED"
