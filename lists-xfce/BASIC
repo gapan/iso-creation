@@ -17,6 +17,8 @@ cairo
 cgmanager
 clearlooks-phenix
 compositeproto
+cups
+cups-filters
 damageproto
 dejavu-fonts-ttf
 desktop-file-utils
@@ -86,6 +88,7 @@ inputproto
 intltool
 jasper
 js185
+json-c
 kbproto
 lcms
 lcms2
@@ -124,7 +127,9 @@ libXvMC
 libXxf86dga
 libXxf86misc
 libXxf86vm
+libaio
 libart_lgpl
+libasyncns
 libatasmart
 libcdio-paranoia
 libdmx
@@ -188,16 +193,20 @@ mozilla-nss
 mtdev
 numlockx
 obsidian-cursors
+openjpeg
 orc
 pango
 pixman
 polkit
+poppler
 presentproto
 printproto
+pulseaudio
 pycairo
 pygobject
 pygtk
 pysimpleconfig
+qpdf
 radeontool
 randrproto
 rarian
@@ -208,7 +217,9 @@ resourceproto
 rgb
 salix-artwork
 salixtools-gtk
+samba
 sazanami-fonts-ttf
+sbc
 scrnsaverproto
 sdl
 sessreg
@@ -218,6 +229,7 @@ showfont
 sinhala_lklug-font-ttf
 smproxy
 sourcery
+speexdsp
 startup-notification
 svgalib
 t1lib
