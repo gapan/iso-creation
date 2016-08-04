@@ -34,7 +34,6 @@ fi
 # Use /tmp on floppy for now:
 /usr/lib/setup/unmigrate.sh
 rm -f $TMP/SeT*
-rm -f $TMP/isAuto
 # If a keymap was set up, restore that data.
 # Although unlikely we can't competely rule out that the user quits
 # installation, do a "rm $TMP/Pkeymap" then type 'setup". In tha case we
@@ -60,8 +59,6 @@ select your keyboard map (keymap). The current keymap is \\\$KMAP."`" 0 0
 
 while [ 0 ]; do
 
-# if-efi
-# if we are on an EFI system, don't show the autopartition option
 if [ -d /sys/firmware/efi ]; then
 dialog --title "`gettext "Salix Installation"`" \
 --ok-label "`gettext "Select"`" \
@@ -79,36 +76,9 @@ select 'Exit installation'"`" 0 0 0 \
  fi
  MAINSELECT="`cat $TMP/hdset`"
  rm $TMP/hdset
-else
-# if there is no EFI
-dialog --title "`gettext "Salix Installation"`" \
---visit-items \
---ok-label "`gettext "Select"`" \
---cancel-label "`gettext "Exit installation"`" \
---menu \
-"`gettext "You may select an option below using the UP/DOWN keys and SPACE or \
-ENTER. Alternate keys may also be used: '+', '-', and TAB."`
-
-`gettext "If you want to exit the installation and drop to a linux console, \
-select 'Exit installation'"`" 0 0 0 \
-"INSTALL" "`gettext "Install Salix using a step-by-step guide"`" \
-"AUTOINSTALL" "`gettext "Autopartition and install with few options (wipes your HD)"`" \
-2> $TMP/hdset
- if [ ! $? = 0 ]; then
-  rm -f $TMP/hdset $TMP/SeT*
-  exit
- fi
- MAINSELECT="`cat $TMP/hdset`"
- rm $TMP/hdset
-fi # end if-efi
 
  # Start checking what to do. Some modules may reset MAINSELECT to run the
  # next item in line.
-
- if [ "$MAINSELECT" = "AUTOINSTALL" ]; then
-  rm -f $TMP/isAuto
-  . autoinstall 2>/dev/null
- fi
 
  if [ "$MAINSELECT" = "INSTALL" ]; then
 	MAINSELECT="PARTITION"
@@ -147,14 +117,8 @@ to boot from the hard drive."`" 0 0
 T_PX="/mnt"
 echo "$T_PX" > $TMP/SeTT_PX
 
-if [ -f $TMP/isAuto ]; then
-	ROOT_DEVICE="`mount | grep "on /mnt " | cut -f 1 -d ' '`"
-	echo "$ROOT_DEVICE" > $TMP/SeTrootdev
-else
-	ROOT_DEVICE="`mount | grep "on / " | cut -f 1 -d ' '`"
-	echo "$ROOT_DEVICE" > $TMP/SeTrootdev
-fi
-
+ROOT_DEVICE="`mount | grep "on / " | cut -f 1 -d ' '`"
+echo "$ROOT_DEVICE" > $TMP/SeTrootdev
 
 if mount | grep /var/log/mount 1> /dev/null 2> /dev/null ; then # clear source
  umount /var/log/mount                                           # location
@@ -393,7 +357,6 @@ fi
 rm -rf $TMP/dhcpc
 rm -f $TMP/tagfile $TMP/SeT* $TMP/tar-error $TMP/PKGTOOL_REMOVED
 rm -f /var/log/mount/pkgrepo
-rm -f $TMP/isAuto
 rmdir /var/log/mntiso 2>/dev/null
 rm -rf $TMP/pkgrepo
 rm -rf $TMP/pkgcache
