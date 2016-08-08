@@ -35,7 +35,6 @@ pot:
 		SeTpartitions \
 		SeTswap \
 		SeTusers \
-		autoinstall \
 		slackinstall; \
 	do \
 		xgettext --from-code=utf-8 -j -L shell -o salix-installer.pot \
