@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-14 01:19+0300\n"
-"PO-Revision-Date: 2016-08-01 10:42+0000\n"
+"PO-Revision-Date: 2016-08-05 11:48+0000\n"
 "Last-Translator: Davidmp <medipas@gmail.com>\n"
 "Language-Team: Catalan (http://www.transifex.com/gapan/salix/language/ca/)\n"
 "MIME-Version: 1.0\n"
@@ -975,7 +975,7 @@ msgstr ""
 msgid ""
 "Note: The path you enter must be relative to the mount point. So, "
 "'/var/log/mount/salix-xfce' should be entered as '/salix-xfce'."
-msgstr ""
+msgstr "Nota: el camí que introduïu ha de ser relatiu al punt de muntatge. Per tant, \"/var/log/mount/salix-xfce\" hauria d'introduir-se com a \"/salix-xfce\"."
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:28
 #, sh-format
@@ -1630,7 +1630,7 @@ msgstr "Ext2 és el sistema de fitxers tradicional de Linux i és ràpid i estab
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:237
 msgid "Ext3 is the journaling version of the Ext2 filesystem."
-msgstr "Ext3 és la versió amb registre del sistema de fitxers Ext2."
+msgstr "Ext3 és la versió amb diari del sistema de fitxers Ext2."
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:241
 msgid "Ext4 is the successor to the ext3 filesystem. "
@@ -1640,7 +1640,7 @@ msgstr "Ext4 és el successor del sistema de fitxers ext3."
 msgid ""
 "ReiserFS is a journaling filesystem that stores all files and filenames in a"
 " balanced tree structure."
-msgstr "ReiserFS és un sistema de fitxers de registre que emmagatzema tots els fitxers i noms de fitxers en una estructura d'arbre d'equilibrada."
+msgstr "ReiserFS és un sistema de fitxers amb diari que emmagatzema tots els fitxers i noms de fitxers en una estructura d'arbre d'equilibrada."
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:248
 msgid "Btrfs is a B-tree copy-on-write filesystem."
@@ -1649,11 +1649,11 @@ msgstr "Btrfs és un sistema de fitxers d'arbre-B de còpia en escriptura."
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:253
 msgid ""
 "JFS is IBM's Journaled Filesystem, currently used in IBM enterprise servers."
-msgstr "JFS és el sistema de fitxers de registre d'IBM que s'utilitza actualment en servidors de l'empresa IBM."
+msgstr "JFS és el sistema de fitxers amb diari d'IBM que s'utilitza actualment en servidors de l'empresa IBM."
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:256
 msgid "XFS is SGI's journaling filesystem that originated on IRIX."
-msgstr "XFS és un sistema de fitxers de registre d'SGI que es va originar a IRIX."
+msgstr "XFS és un sistema de fitxers amb diari d'SGI que es va originar a IRIX."
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:260
 #, sh-format
@@ -1677,27 +1677,27 @@ msgstr "Sistema de fitxers estàndard de Linux Ext2"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:274
 msgid "Ext3 Journaling Filesystem"
-msgstr ""
+msgstr "Sistema de fitxers amb diari Ext3"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:277
 msgid "Ext4 Journaling Filesystem"
-msgstr ""
+msgstr "Sistema de fitxers amb diari Ext4"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:280
 msgid "IBM's Journaled Filesystem"
-msgstr ""
+msgstr "Sistema de fitxers amb diari d'IBM"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:283
 msgid "ReiserFS Journaling Filesystem"
-msgstr ""
+msgstr "Sistema de fitxers amb diari ReiserFS"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:286
 msgid "Btrfs Copy-on-Write B-tree Filesystem"
-msgstr ""
+msgstr "Sistema de fitxers d'arbre-B de còpia en escriptura Btrfs"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:289
 msgid "SGI's Journaling Filesystem"
-msgstr ""
+msgstr "Sistema de fitxers amb diari d'SGI"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:319
 msgid "Setting up root Linux partition."
@@ -1804,7 +1804,7 @@ msgid ""
 "any swap partitions that you do not wish to use with this installation, "
 "please unselect them with the up and down arrows and spacebar.  If you wish "
 "to use all of them (this is recommended), simply hit the ENTER key."
-msgstr ""
+msgstr "La configuració de Salix ha detectat una o més particions d'intercanvi al sistema. Aquestes particions s'han preseleccionades per ser establertes com a espai d'intercanvi. Si hi ha cap partició d'intercanvi que no vulgueu utilitzar en aquesta instal·lació; si us plau, desmarqueu-la amb les fletxes i la barra espaiadora. Si les voleu utilitzar totes (això és el que es recomana), premeu la tecla de retorn."
 
 #: ../initrd-scripts/usr-lib-setup/SeTswap:56
 #, sh-format
@@ -1821,7 +1821,7 @@ msgid ""
 " partitions with mkswap you may also check them for bad blocks.  This is not"
 " the default since nearly all modern hard drives check themselves for bad "
 "blocks anyway.  Would you like to check for bad blocks while running mkswap?"
-msgstr ""
+msgstr "Ara la configuració de Salix prepararà l'espai d'intercanvi del sistema. A l'hora de formatar les particions d'intercanvi amb mkswap també podeu comprovar si hi ha blocs defectuosos. Aquest no és el valor per defecte ja que gairebé tots els discos durs moderns comproven ells mateixos si tenen blocs incorrectes. Voleu comprovar si hi ha blocs defectuosos durant  l'execució de mkswap?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTswap:101
 #, sh-format
@@ -1853,7 +1853,7 @@ msgid ""
 "The first user you will create, will be able to run commands as a privileged"
 " user through sudo. Any other user will not be able to run commands with "
 "sudo unless you add them to the wheel group."
-msgstr ""
+msgstr "El primer usuari que creareu serà capaç d'executar ordres com a usuari privilegiat mitjançant sudo. Qualsevol altre usuari no serà capaç d'executar ordres amb sudo si no és que els afegiu al grup wheel."
 
 #: ../initrd-scripts/usr-lib-setup/SeTusers:17
 msgid "The root user is disabled by default."
