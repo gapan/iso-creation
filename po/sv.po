@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-14 01:19+0300\n"
-"PO-Revision-Date: 2016-07-16 06:14+0000\n"
-"Last-Translator: Ingemar Karlsson <ingemar@ingk.se>\n"
+"POT-Creation-Date: 2016-08-08 18:53+0300\n"
+"PO-Revision-Date: 2016-08-08 15:54+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: Swedish (http://www.transifex.com/gapan/salix/language/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,32 +19,30 @@ msgstr ""
 "Language: sv\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../initrd-scripts/usr-lib-setup/setup:52
+#: ../initrd-scripts/usr-lib-setup/setup:51
 msgid "WELCOME TO THE SALIX INSTALLATION"
 msgstr "VÄLKOMMEN TILL SALIX INSTALLATIONEN"
 
-#: ../initrd-scripts/usr-lib-setup/setup:53
+#: ../initrd-scripts/usr-lib-setup/setup:52
 msgid "Keep the current keymap"
 msgstr "Behåll nuvarande tangentbordslayout"
 
-#: ../initrd-scripts/usr-lib-setup/setup:54
+#: ../initrd-scripts/usr-lib-setup/setup:53
 msgid "Select another keymap"
 msgstr "Välj en annan tangentbordslayout"
 
-#: ../initrd-scripts/usr-lib-setup/setup:55
+#: ../initrd-scripts/usr-lib-setup/setup:54
 #, sh-format
 msgid ""
 "Welcome to the installation of Salix, The Bonsai OS!\n"
 "Before you proceed with the rest of the installation, you might want to select your keyboard map (keymap). The current keymap is $KMAP."
 msgstr "Välkommen till Salix installation, Bonsai OS'et!\nInnan du fortsätter med installationen, vill du kanske välja tangentbordslayout (keymap). Den nuvarande är $KMAP."
 
-#: ../initrd-scripts/usr-lib-setup/setup:66
-#: ../initrd-scripts/usr-lib-setup/setup:84
+#: ../initrd-scripts/usr-lib-setup/setup:63
 msgid "Salix Installation"
 msgstr "Salix installation"
 
-#: ../initrd-scripts/usr-lib-setup/setup:67
-#: ../initrd-scripts/usr-lib-setup/setup:86
+#: ../initrd-scripts/usr-lib-setup/setup:64
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:117
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:20
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:323
@@ -52,132 +50,119 @@ msgstr "Salix installation"
 msgid "Select"
 msgstr "Välj"
 
-#: ../initrd-scripts/usr-lib-setup/setup:68
-#: ../initrd-scripts/usr-lib-setup/setup:87
+#: ../initrd-scripts/usr-lib-setup/setup:65
 msgid "Exit installation"
 msgstr "Avsluta installation"
 
-#: ../initrd-scripts/usr-lib-setup/setup:70
+#: ../initrd-scripts/usr-lib-setup/setup:67
 msgid "You may now proceed with the installation by pressing the ENTER key."
 msgstr "Du kan nu fortsätta med installationen genom att trycka på ENTER."
 
-#: ../initrd-scripts/usr-lib-setup/setup:72
-#: ../initrd-scripts/usr-lib-setup/setup:92
+#: ../initrd-scripts/usr-lib-setup/setup:69
 msgid ""
 "If you want to exit the installation and drop to a linux console, select "
 "'Exit installation'"
 msgstr "Om du vill avsluta installationen och hamna i en konsol, välj 'Avsluta installation'"
 
-#: ../initrd-scripts/usr-lib-setup/setup:74
-#: ../initrd-scripts/usr-lib-setup/setup:94
+#: ../initrd-scripts/usr-lib-setup/setup:71
 msgid "Install Salix using a step-by-step guide"
 msgstr "Installera Salix genom en steg för steg guide"
 
-#: ../initrd-scripts/usr-lib-setup/setup:89
-msgid ""
-"You may select an option below using the UP/DOWN keys and SPACE or ENTER. "
-"Alternate keys may also be used: '+', '-', and TAB."
-msgstr "Du kan välja ett alternativ nedan med UPP/NER tangenter och mellanslag eller ENTER. Alternativa tangenter kan också användas: '+', '-' och TAB."
-
-#: ../initrd-scripts/usr-lib-setup/setup:95
-msgid "Autopartition and install with few options (wipes your HD)"
-msgstr "Automatisk partitionering och installation med få alternativ (raderar din HD)"
-
-#: ../initrd-scripts/usr-lib-setup/setup:126
+#: ../initrd-scripts/usr-lib-setup/setup:96
 msgid "NO LINUX PARTITIONS DETECTED"
 msgstr "INGA LINUX-PARTITIONER HITTADES"
 
-#: ../initrd-scripts/usr-lib-setup/setup:127
+#: ../initrd-scripts/usr-lib-setup/setup:97
 msgid ""
 "There don't seem to be any Linux partitions on this machine. You'll need to "
 "make at least one of these to install Linux. Either select AUTOINSTALL from "
 "the menu, or select INSTALL and use the partition editor to create one."
 msgstr "Det ser inte ut att finnas någon Linux partition på denna maskin. Du behöver skapa minst en för att installera Linux. Välj antingen AUTOINSTALL från menyn, eller välj INSTALL och använd partitionseditorn för att skapa en."
 
-#: ../initrd-scripts/usr-lib-setup/setup:135
+#: ../initrd-scripts/usr-lib-setup/setup:105
 msgid "NO EFI SYSTEM PARTITION DETECTED"
 msgstr "INGEN EFI SYSTEMPARTITION UPPTÄCKT"
 
-#: ../initrd-scripts/usr-lib-setup/setup:136
+#: ../initrd-scripts/usr-lib-setup/setup:106
 msgid ""
 "This machine appears to be using EFI/UEFI, but no EFI System Partition was "
 "found."
 msgstr "Denna maskin verkar använda EFI/UEFI, men ingen EFI System Partition hittades."
 
-#: ../initrd-scripts/usr-lib-setup/setup:139
+#: ../initrd-scripts/usr-lib-setup/setup:109
 msgid ""
 "You'll need to make an EFI System Partition in order to boot from the hard "
 "drive."
 msgstr "Du behöver skapa en EFI System Partition för att kunna starta från hårddisken."
 
-#: ../initrd-scripts/usr-lib-setup/setup:164
+#: ../initrd-scripts/usr-lib-setup/setup:128
 msgid "Can't umount /var/log/mount.  Reboot machine and run setup again."
 msgstr "Kan inte avmontera /var/log/mount. Starta om maskinen och kör setup igen."
 
-#: ../initrd-scripts/usr-lib-setup/setup:171
+#: ../initrd-scripts/usr-lib-setup/setup:135
 msgid "Mount table corrupt.  Reboot machine and run setup again."
 msgstr "Monteringstabel korrupt. Starta om maskinen och kör setup igen."
 
-#: ../initrd-scripts/usr-lib-setup/setup:204
+#: ../initrd-scripts/usr-lib-setup/setup:168
 msgid "No Source Selected"
 msgstr "Ingen källa vald"
 
-#: ../initrd-scripts/usr-lib-setup/setup:205
+#: ../initrd-scripts/usr-lib-setup/setup:169
 msgid "The installer does not know where to find the source packages..."
 msgstr "Installeraren vet inte var den hittar källpaketen..."
 
-#: ../initrd-scripts/usr-lib-setup/setup:206
-#: ../initrd-scripts/usr-lib-setup/setup:224
+#: ../initrd-scripts/usr-lib-setup/setup:170
+#: ../initrd-scripts/usr-lib-setup/setup:188
 msgid "Press ENTER to return to the main menu."
 msgstr "Tryck på ENTER för att återgå till huvudmenyn."
 
-#: ../initrd-scripts/usr-lib-setup/setup:215
+#: ../initrd-scripts/usr-lib-setup/setup:179
 msgid "CANNOT INSTALL SOFTWARE YET"
 msgstr "KAN INTE INSTALLERA MJUKVARA ÄNNU"
 
-#: ../initrd-scripts/usr-lib-setup/setup:216
+#: ../initrd-scripts/usr-lib-setup/setup:180
 msgid "Before you can install software, complete the following tasks:"
 msgstr "Innan du kan installera mjukvaror, slutför följande uppgifter:"
 
-#: ../initrd-scripts/usr-lib-setup/setup:218
+#: ../initrd-scripts/usr-lib-setup/setup:182
 msgid "Select your source media."
 msgstr "Välj källmedia."
 
-#: ../initrd-scripts/usr-lib-setup/setup:219
+#: ../initrd-scripts/usr-lib-setup/setup:183
 msgid "Set up your target Linux partition(s)."
 msgstr "Ställ in din(a) mål Linux partiton(er)."
 
-#: ../initrd-scripts/usr-lib-setup/setup:221
+#: ../initrd-scripts/usr-lib-setup/setup:185
 msgid ""
 "You may also optionally remap your keyboard and set up your swap "
 "partition(s)."
 msgstr "Du kan också eventuellt ändra tangentbordet och ställa in din swap-partition(er)."
 
-#: ../initrd-scripts/usr-lib-setup/setup:235
-#: ../initrd-scripts/usr-lib-setup/setup:250
-#: ../initrd-scripts/usr-lib-setup/setup:272
+#: ../initrd-scripts/usr-lib-setup/setup:199
+#: ../initrd-scripts/usr-lib-setup/setup:214
+#: ../initrd-scripts/usr-lib-setup/setup:236
 #: ../initrd-scripts/usr-lib-setup/slackinstall:147
 msgid "CORE"
 msgstr "KÄRNA"
 
-#: ../initrd-scripts/usr-lib-setup/setup:237
-#: ../initrd-scripts/usr-lib-setup/setup:254
+#: ../initrd-scripts/usr-lib-setup/setup:201
+#: ../initrd-scripts/usr-lib-setup/setup:218
 msgid "SELECT INSTALLATION MODE"
 msgstr "vÄLJ INSTALLATIONSLÄGE"
 
-#: ../initrd-scripts/usr-lib-setup/setup:239
-#: ../initrd-scripts/usr-lib-setup/setup:257
+#: ../initrd-scripts/usr-lib-setup/setup:203
+#: ../initrd-scripts/usr-lib-setup/setup:221
 msgid "Please select the installation mode you prefer from the following:"
 msgstr "Välj det installationsläge du föredrar från följande:"
 
-#: ../initrd-scripts/usr-lib-setup/setup:241
-#: ../initrd-scripts/usr-lib-setup/setup:262
+#: ../initrd-scripts/usr-lib-setup/setup:205
+#: ../initrd-scripts/usr-lib-setup/setup:226
 msgid ""
 "BASIC will only install a minimal graphical environment and a web browser."
 msgstr "BASIC installerar endast en minimal grafisk skrivbordsmiljö och en webbläsare."
 
-#: ../initrd-scripts/usr-lib-setup/setup:243
-#: ../initrd-scripts/usr-lib-setup/setup:264
+#: ../initrd-scripts/usr-lib-setup/setup:207
+#: ../initrd-scripts/usr-lib-setup/setup:228
 msgid ""
 "CORE will install only the minimum essentials for your system to start in "
 "console mode (no graphical environment included) and is ideal if you are an "
@@ -185,77 +170,77 @@ msgid ""
 "specific purpose."
 msgstr "KÄRNA installerar endast de nödvändigaste för systemet att starta i konsolläge (ingen grafisk miljö ingår) och är perfekt om du är en erfaren användare och vill helt skräddarsy din installation för något specifikt ändamål."
 
-#: ../initrd-scripts/usr-lib-setup/setup:249
-#: ../initrd-scripts/usr-lib-setup/setup:271
+#: ../initrd-scripts/usr-lib-setup/setup:213
+#: ../initrd-scripts/usr-lib-setup/setup:235
 msgid "BASIC"
 msgstr "GRUNDLÄGGANDE"
 
-#: ../initrd-scripts/usr-lib-setup/setup:249
-#: ../initrd-scripts/usr-lib-setup/setup:271
+#: ../initrd-scripts/usr-lib-setup/setup:213
+#: ../initrd-scripts/usr-lib-setup/setup:235
 msgid "Install a minimal graphical environment"
 msgstr "Installera en minimal grafisk miljö"
 
-#: ../initrd-scripts/usr-lib-setup/setup:250
-#: ../initrd-scripts/usr-lib-setup/setup:272
+#: ../initrd-scripts/usr-lib-setup/setup:214
+#: ../initrd-scripts/usr-lib-setup/setup:236
 msgid "Install a minimal console system"
 msgstr "Installera ett minimalt konsol-system"
 
-#: ../initrd-scripts/usr-lib-setup/setup:259
+#: ../initrd-scripts/usr-lib-setup/setup:223
 msgid ""
 "FULL (default) will install everything. That includes one application per "
 "task, such as an office suite, a multimedia player, a CD/DVD burner etc."
 msgstr "FULLSTÄNDIG (standard) kommer att installera allt. Det innefattar en komplett skrivbordsmiljö och ett komplett utbud av matchande program, alltid efter \"ett program per uppgift\" filosofin."
 
-#: ../initrd-scripts/usr-lib-setup/setup:270
+#: ../initrd-scripts/usr-lib-setup/setup:234
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:138
 #: ../initrd-scripts/usr-lib-setup/slackinstall:162
 msgid "FULL"
 msgstr "FULLSTÄNDIG"
 
-#: ../initrd-scripts/usr-lib-setup/setup:270
+#: ../initrd-scripts/usr-lib-setup/setup:234
 msgid "Install everything"
 msgstr "Installera allt"
 
-#: ../initrd-scripts/usr-lib-setup/setup:298
+#: ../initrd-scripts/usr-lib-setup/setup:262
 msgid "REPLACE /etc/fstab?"
 msgstr "ERSÄTTA /etc/fstab?"
 
-#: ../initrd-scripts/usr-lib-setup/setup:299
+#: ../initrd-scripts/usr-lib-setup/setup:263
 msgid "You already have an /etc/fstab on your install partition."
 msgstr "Du har redan en /etc/fstab på din installations-partition."
 
-#: ../initrd-scripts/usr-lib-setup/setup:302
+#: ../initrd-scripts/usr-lib-setup/setup:266
 msgid ""
 "If you were just adding software, you should probably keep your old "
 "/etc/fstab."
 msgstr "Om du bara lade till programvara, bör du nog behålla din gamla /etc/fstab."
 
-#: ../initrd-scripts/usr-lib-setup/setup:305
+#: ../initrd-scripts/usr-lib-setup/setup:269
 msgid ""
 "If you've changed your partitioning scheme, you should use the new "
 "/etc/fstab."
 msgstr "Om du har ändrat din partitionsschema , bör du använda den nya /etc/fstab."
 
-#: ../initrd-scripts/usr-lib-setup/setup:308
+#: ../initrd-scripts/usr-lib-setup/setup:272
 msgid "Do you want to replace your old /etc/fstab with the new one?"
 msgstr "Vill du ersätta din gamla /etc/fstab med den nya?"
 
-#: ../initrd-scripts/usr-lib-setup/setup:372
-#: ../initrd-scripts/usr-lib-setup/setup:379
+#: ../initrd-scripts/usr-lib-setup/setup:336
+#: ../initrd-scripts/usr-lib-setup/setup:343
 msgid "SALIX INSTALLATION IS COMPLETE"
 msgstr "SALIX INSTALLATIONEN ÄR KLAR"
 
-#: ../initrd-scripts/usr-lib-setup/setup:373
-#: ../initrd-scripts/usr-lib-setup/setup:380
+#: ../initrd-scripts/usr-lib-setup/setup:337
+#: ../initrd-scripts/usr-lib-setup/setup:344
 msgid "Reboot now"
 msgstr "Starta om nu"
 
-#: ../initrd-scripts/usr-lib-setup/setup:374
-#: ../initrd-scripts/usr-lib-setup/setup:381
+#: ../initrd-scripts/usr-lib-setup/setup:338
+#: ../initrd-scripts/usr-lib-setup/setup:345
 msgid "Exit to command line"
 msgstr "Avsluta till kommandorad"
 
-#: ../initrd-scripts/usr-lib-setup/setup:375
+#: ../initrd-scripts/usr-lib-setup/setup:339
 msgid ""
 "System configuration and installation is complete. Please remove the "
 "installation disc. You can either select to reboot your system now or choose"
@@ -263,7 +248,7 @@ msgid ""
 "manual tweaking."
 msgstr "Systemkonfiguration och installationen är klar. Ta ut installationsskivan . Du kan antingen välja att starta om systemet nu eller välja att avsluta installationen till kommandoraden om du vill göra några manuella justeringar."
 
-#: ../initrd-scripts/usr-lib-setup/setup:382
+#: ../initrd-scripts/usr-lib-setup/setup:346
 msgid ""
 "System configuration and installation is complete. You can either select to "
 "reboot your system now or choose to exit the installation to the command "
@@ -914,7 +899,6 @@ msgstr "OGILTIG ISAO-AVBILD"
 #: ../initrd-scripts/usr-lib-setup/INShd:169
 #: ../initrd-scripts/usr-lib-setup/INShd:188
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:540
-#: ../initrd-scripts/usr-lib-setup/autoinstall:263
 msgid "OK"
 msgstr "OK"
 
@@ -1120,7 +1104,6 @@ msgstr "Denna partition ska monteras någonstans i ditt katalogträd. Ange den k
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:216
 #: ../initrd-scripts/usr-lib-setup/SeTEFI:73
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:535
-#: ../initrd-scripts/usr-lib-setup/autoinstall:259
 msgid "Adding this information to your /etc/fstab:"
 msgstr "Lägger till denna information till din /etc/fstab:"
 
@@ -1493,7 +1476,6 @@ msgstr "\nFörsöker att hämta en fjärr konfigurationsfil med hjälp av $PROTO
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:123
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:146
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:165
-#: ../initrd-scripts/usr-lib-setup/autoinstall:69
 msgid "FORMATTING"
 msgstr "FORMATERAR"
 
@@ -1709,7 +1691,6 @@ msgid "Select Linux installation partition:"
 msgstr "Välj Linux installations partition:"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:325
-#: ../initrd-scripts/usr-lib-setup/autoinstall:107
 msgid "Cancel"
 msgstr "Avbryt"
 
@@ -1859,90 +1840,6 @@ msgstr "Den första användaren du kommer att skapa, kommer att kunna köra komm
 #: ../initrd-scripts/usr-lib-setup/SeTusers:17
 msgid "The root user is disabled by default."
 msgstr "Rootanvändaren är avaktiverad som standard."
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:25
-#: ../initrd-scripts/usr-lib-setup/autoinstall:108
-#: ../initrd-scripts/usr-lib-setup/autoinstall:129
-#: ../initrd-scripts/usr-lib-setup/autoinstall:142
-#: ../initrd-scripts/usr-lib-setup/autoinstall:205
-#: ../initrd-scripts/usr-lib-setup/autoinstall:209
-#: ../initrd-scripts/usr-lib-setup/autoinstall:262
-msgid "AUTO PARTITION"
-msgstr "AUTOMATISK PARTITIONERING"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:26
-#: ../initrd-scripts/usr-lib-setup/autoinstall:210
-#, sh-format
-msgid "Please wait while ${DISK} is being prepared for Salix"
-msgstr "Vänta medan ${DISK} förbereds för Salix"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:64
-#, sh-format
-msgid "Formatting $PART"
-msgstr "Formaterar $PART"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:66
-#, sh-format
-msgid "Size in 1K blocks: $SIZE"
-msgstr "Storlek i 1K block: $SIZE"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:68
-msgid "Filesystem type:xfs"
-msgstr "Filsystemstyp:xfs"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:70
-#, sh-format
-msgid "Formatting $PART with filesystem xfs."
-msgstr "Formaterar $PART med filsystemet xfs."
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:106
-msgid "Do It"
-msgstr "Gör det"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:109
-msgid "This is automatic partition mode."
-msgstr "Detta är automatisk partitionsläge."
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:110
-msgid "Press <SPACE> to select the target disk where Salix will be installed."
-msgstr "Tryck <SPACE> för att välja hårddisk där Salix kommer att installeras."
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:112
-msgid "All data will be erased from the target disk."
-msgstr "All data raderas från hårddisken."
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:113
-msgid "Only run this mode if the entire disk will be dedicated to Salix."
-msgstr "Kör endast det här läget om hela disken kommer att ägnas åt Salix."
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:130
-#, sh-format
-msgid "Are you sure you want to globally erase existing data from ${DISK}?"
-msgstr "Är du säker på att du globalt vill radera befintliga data från ${DISK}?"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:133
-msgid "Go back to the main setup menu"
-msgstr "Gå tillbaka till huvudinställningsmenyn "
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:134
-#, sh-format
-msgid "${DISK} is dedicated to Salix"
-msgstr "${DISK} är dedikerad till Salix"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:142
-msgid "No target disk selected, going back to main menu"
-msgstr "Ingen hårddisk vald, går tillbaka till huvudmenyn "
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:206
-#, sh-format
-msgid ""
-"${DISK} is only $DisksizeInKB KB, you need at least 3000000 KB to install "
-"Salix"
-msgstr "${DISK} är endast $DisksizeInKB KB, du behöver minst 3000000 KB för att installera Salix"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:257
-msgid "Partitioning completed."
-msgstr "Partitionering klar."
 
 #: ../initrd-scripts/usr-lib-setup/slackinstall:55
 msgid "FTP/HTTP DOWNLOAD FAILURE"

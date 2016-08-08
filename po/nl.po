@@ -11,9 +11,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-14 01:19+0300\n"
-"PO-Revision-Date: 2016-06-16 11:18+0000\n"
-"Last-Translator: Gambit <gambit73@gmail.com>\n"
+"POT-Creation-Date: 2016-08-08 18:53+0300\n"
+"PO-Revision-Date: 2016-08-08 15:54+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: Dutch (http://www.transifex.com/gapan/salix/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,32 +21,30 @@ msgstr ""
 "Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../initrd-scripts/usr-lib-setup/setup:52
+#: ../initrd-scripts/usr-lib-setup/setup:51
 msgid "WELCOME TO THE SALIX INSTALLATION"
 msgstr "WELKOM BIJ DE SALIX INSTALLATIE"
 
-#: ../initrd-scripts/usr-lib-setup/setup:53
+#: ../initrd-scripts/usr-lib-setup/setup:52
 msgid "Keep the current keymap"
 msgstr "Behoudt de huidige keymap"
 
-#: ../initrd-scripts/usr-lib-setup/setup:54
+#: ../initrd-scripts/usr-lib-setup/setup:53
 msgid "Select another keymap"
 msgstr "Selecteer een andere keymap"
 
-#: ../initrd-scripts/usr-lib-setup/setup:55
+#: ../initrd-scripts/usr-lib-setup/setup:54
 #, sh-format
 msgid ""
 "Welcome to the installation of Salix, The Bonsai OS!\n"
 "Before you proceed with the rest of the installation, you might want to select your keyboard map (keymap). The current keymap is $KMAP."
 msgstr "Welkom bij de installatie van Salix, Het Bonsai besturingssysteem!\nVoordat u doorgaat met de rest van de installatie wilt u misschien de toetsenbord indeling (keymap) kiezen. De huidige keymap is $KMAP."
 
-#: ../initrd-scripts/usr-lib-setup/setup:66
-#: ../initrd-scripts/usr-lib-setup/setup:84
+#: ../initrd-scripts/usr-lib-setup/setup:63
 msgid "Salix Installation"
 msgstr "Salix Installatie"
 
-#: ../initrd-scripts/usr-lib-setup/setup:67
-#: ../initrd-scripts/usr-lib-setup/setup:86
+#: ../initrd-scripts/usr-lib-setup/setup:64
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:117
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:20
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:323
@@ -54,132 +52,119 @@ msgstr "Salix Installatie"
 msgid "Select"
 msgstr "Selecteer"
 
-#: ../initrd-scripts/usr-lib-setup/setup:68
-#: ../initrd-scripts/usr-lib-setup/setup:87
+#: ../initrd-scripts/usr-lib-setup/setup:65
 msgid "Exit installation"
 msgstr "Sluit installatie af"
 
-#: ../initrd-scripts/usr-lib-setup/setup:70
+#: ../initrd-scripts/usr-lib-setup/setup:67
 msgid "You may now proceed with the installation by pressing the ENTER key."
 msgstr "U kan nu verder gaan met de installatie door op de ENTER toets te drukken."
 
-#: ../initrd-scripts/usr-lib-setup/setup:72
-#: ../initrd-scripts/usr-lib-setup/setup:92
+#: ../initrd-scripts/usr-lib-setup/setup:69
 msgid ""
 "If you want to exit the installation and drop to a linux console, select "
 "'Exit installation'"
 msgstr "Als u de installatie wilt afsluiten en in een linux console terecht wilt komen, selecteer 'Sluit installatie af'"
 
-#: ../initrd-scripts/usr-lib-setup/setup:74
-#: ../initrd-scripts/usr-lib-setup/setup:94
+#: ../initrd-scripts/usr-lib-setup/setup:71
 msgid "Install Salix using a step-by-step guide"
 msgstr "Installeer Salix met een stap voor stap handleiding"
 
-#: ../initrd-scripts/usr-lib-setup/setup:89
-msgid ""
-"You may select an option below using the UP/DOWN keys and SPACE or ENTER. "
-"Alternate keys may also be used: '+', '-', and TAB."
-msgstr "U kan hieronder een optie kiezen door de OP/NEER cursortoetsen te gebruiken en de SPATIE of ENTER te gebruiken. Alternatieve toetsen als '+', '-' en TAB kunnen ook gebruikt worden."
-
-#: ../initrd-scripts/usr-lib-setup/setup:95
-msgid "Autopartition and install with few options (wipes your HD)"
-msgstr "Autopartitionering en installatie met weinig opties (wist uw HardDisk)"
-
-#: ../initrd-scripts/usr-lib-setup/setup:126
+#: ../initrd-scripts/usr-lib-setup/setup:96
 msgid "NO LINUX PARTITIONS DETECTED"
 msgstr "GEEN LINUX-PARTITIES GEDETECTEERD"
 
-#: ../initrd-scripts/usr-lib-setup/setup:127
+#: ../initrd-scripts/usr-lib-setup/setup:97
 msgid ""
 "There don't seem to be any Linux partitions on this machine. You'll need to "
 "make at least one of these to install Linux. Either select AUTOINSTALL from "
 "the menu, or select INSTALL and use the partition editor to create one."
 msgstr "Er lijkt geen Linux partitie aanwezig te zijn op deze machine. U moet hier minstens één van hebben om Linux te installeren. Selecteer AUTOINSTALLATIE of INSTALLATIE en gebruik de partitie editor om er een aan te maken."
 
-#: ../initrd-scripts/usr-lib-setup/setup:135
+#: ../initrd-scripts/usr-lib-setup/setup:105
 msgid "NO EFI SYSTEM PARTITION DETECTED"
 msgstr "GEEN EFI SYSTEEMPARTITIE GEDETECTEERD"
 
-#: ../initrd-scripts/usr-lib-setup/setup:136
+#: ../initrd-scripts/usr-lib-setup/setup:106
 msgid ""
 "This machine appears to be using EFI/UEFI, but no EFI System Partition was "
 "found."
 msgstr "Deze machine schijnt EFI/UEFI te gebruiken, maar er is geen EFI Systeempartitie gevonden."
 
-#: ../initrd-scripts/usr-lib-setup/setup:139
+#: ../initrd-scripts/usr-lib-setup/setup:109
 msgid ""
 "You'll need to make an EFI System Partition in order to boot from the hard "
 "drive."
 msgstr "U zult een EFI Systeempartitie moeten aanmaken om van de harddisk te starten."
 
-#: ../initrd-scripts/usr-lib-setup/setup:164
+#: ../initrd-scripts/usr-lib-setup/setup:128
 msgid "Can't umount /var/log/mount.  Reboot machine and run setup again."
 msgstr "Kan /var/log/mount niet umounten. Herstart machine en voer setup opnieuw uit."
 
-#: ../initrd-scripts/usr-lib-setup/setup:171
+#: ../initrd-scripts/usr-lib-setup/setup:135
 msgid "Mount table corrupt.  Reboot machine and run setup again."
 msgstr "Mount tabel corrupt. Herstart machine en voer setup opnieuw uit."
 
-#: ../initrd-scripts/usr-lib-setup/setup:204
+#: ../initrd-scripts/usr-lib-setup/setup:168
 msgid "No Source Selected"
 msgstr "Geen Bron Geselecteerd"
 
-#: ../initrd-scripts/usr-lib-setup/setup:205
+#: ../initrd-scripts/usr-lib-setup/setup:169
 msgid "The installer does not know where to find the source packages..."
 msgstr "Het installatieprogramma weet niet waar de bron pakketten te vinden zijn..."
 
-#: ../initrd-scripts/usr-lib-setup/setup:206
-#: ../initrd-scripts/usr-lib-setup/setup:224
+#: ../initrd-scripts/usr-lib-setup/setup:170
+#: ../initrd-scripts/usr-lib-setup/setup:188
 msgid "Press ENTER to return to the main menu."
 msgstr "Druk op de ENTER toets om terug te keren naar het hoofdmenu."
 
-#: ../initrd-scripts/usr-lib-setup/setup:215
+#: ../initrd-scripts/usr-lib-setup/setup:179
 msgid "CANNOT INSTALL SOFTWARE YET"
 msgstr "KAN SOFTWARE NOG NIET INSTALLEREN"
 
-#: ../initrd-scripts/usr-lib-setup/setup:216
+#: ../initrd-scripts/usr-lib-setup/setup:180
 msgid "Before you can install software, complete the following tasks:"
 msgstr "Voordat u software kan installeren, voltooi de volgende taken:"
 
-#: ../initrd-scripts/usr-lib-setup/setup:218
+#: ../initrd-scripts/usr-lib-setup/setup:182
 msgid "Select your source media."
 msgstr "Selecteer uw bron media."
 
-#: ../initrd-scripts/usr-lib-setup/setup:219
+#: ../initrd-scripts/usr-lib-setup/setup:183
 msgid "Set up your target Linux partition(s)."
 msgstr "Stel uw doel Linux partitie(s) in."
 
-#: ../initrd-scripts/usr-lib-setup/setup:221
+#: ../initrd-scripts/usr-lib-setup/setup:185
 msgid ""
 "You may also optionally remap your keyboard and set up your swap "
 "partition(s)."
 msgstr "U kan eventueel uw toetsenbord en uw swap partitie(s) opnieuw instellen ."
 
-#: ../initrd-scripts/usr-lib-setup/setup:235
-#: ../initrd-scripts/usr-lib-setup/setup:250
-#: ../initrd-scripts/usr-lib-setup/setup:272
+#: ../initrd-scripts/usr-lib-setup/setup:199
+#: ../initrd-scripts/usr-lib-setup/setup:214
+#: ../initrd-scripts/usr-lib-setup/setup:236
 #: ../initrd-scripts/usr-lib-setup/slackinstall:147
 msgid "CORE"
 msgstr "CORE"
 
-#: ../initrd-scripts/usr-lib-setup/setup:237
-#: ../initrd-scripts/usr-lib-setup/setup:254
+#: ../initrd-scripts/usr-lib-setup/setup:201
+#: ../initrd-scripts/usr-lib-setup/setup:218
 msgid "SELECT INSTALLATION MODE"
 msgstr "SELECTEER INSTALLATIEMODUS"
 
-#: ../initrd-scripts/usr-lib-setup/setup:239
-#: ../initrd-scripts/usr-lib-setup/setup:257
+#: ../initrd-scripts/usr-lib-setup/setup:203
+#: ../initrd-scripts/usr-lib-setup/setup:221
 msgid "Please select the installation mode you prefer from the following:"
 msgstr "Selecteer alstublieft de installatiemodus welke uw voorkeur heeft van het volgende:"
 
-#: ../initrd-scripts/usr-lib-setup/setup:241
-#: ../initrd-scripts/usr-lib-setup/setup:262
+#: ../initrd-scripts/usr-lib-setup/setup:205
+#: ../initrd-scripts/usr-lib-setup/setup:226
 msgid ""
 "BASIC will only install a minimal graphical environment and a web browser."
 msgstr "BASIC zal alleen een minimale grafische omgeving en een web browser installeren."
 
-#: ../initrd-scripts/usr-lib-setup/setup:243
-#: ../initrd-scripts/usr-lib-setup/setup:264
+#: ../initrd-scripts/usr-lib-setup/setup:207
+#: ../initrd-scripts/usr-lib-setup/setup:228
 msgid ""
 "CORE will install only the minimum essentials for your system to start in "
 "console mode (no graphical environment included) and is ideal if you are an "
@@ -187,77 +172,77 @@ msgid ""
 "specific purpose."
 msgstr "CORE zal alleen de minimale benodigdheden installeren voor uw systeem om te starten in console modus (geen grafische omgeving inbegrepen) en is ideaal indien u een ervaren gebruiker bent en uw installatie volledig zelf wilt aanpassen voor enig specifiek doel."
 
-#: ../initrd-scripts/usr-lib-setup/setup:249
-#: ../initrd-scripts/usr-lib-setup/setup:271
+#: ../initrd-scripts/usr-lib-setup/setup:213
+#: ../initrd-scripts/usr-lib-setup/setup:235
 msgid "BASIC"
 msgstr "BASIC"
 
-#: ../initrd-scripts/usr-lib-setup/setup:249
-#: ../initrd-scripts/usr-lib-setup/setup:271
+#: ../initrd-scripts/usr-lib-setup/setup:213
+#: ../initrd-scripts/usr-lib-setup/setup:235
 msgid "Install a minimal graphical environment"
 msgstr "Installeer een minimale grafische omgeving"
 
-#: ../initrd-scripts/usr-lib-setup/setup:250
-#: ../initrd-scripts/usr-lib-setup/setup:272
+#: ../initrd-scripts/usr-lib-setup/setup:214
+#: ../initrd-scripts/usr-lib-setup/setup:236
 msgid "Install a minimal console system"
 msgstr "Installeer een minimaal console systeem"
 
-#: ../initrd-scripts/usr-lib-setup/setup:259
+#: ../initrd-scripts/usr-lib-setup/setup:223
 msgid ""
 "FULL (default) will install everything. That includes one application per "
 "task, such as an office suite, a multimedia player, a CD/DVD burner etc."
 msgstr "FULL (standaard) zal alles installeren. Dat houdt één applicatie per taak in, zoals een office pakket, een multimedia speler, een CD/DVD brander etc."
 
-#: ../initrd-scripts/usr-lib-setup/setup:270
+#: ../initrd-scripts/usr-lib-setup/setup:234
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:138
 #: ../initrd-scripts/usr-lib-setup/slackinstall:162
 msgid "FULL"
 msgstr "FULL"
 
-#: ../initrd-scripts/usr-lib-setup/setup:270
+#: ../initrd-scripts/usr-lib-setup/setup:234
 msgid "Install everything"
 msgstr "Installeer alles"
 
-#: ../initrd-scripts/usr-lib-setup/setup:298
+#: ../initrd-scripts/usr-lib-setup/setup:262
 msgid "REPLACE /etc/fstab?"
 msgstr "/etc/fstab VERVANGEN?"
 
-#: ../initrd-scripts/usr-lib-setup/setup:299
+#: ../initrd-scripts/usr-lib-setup/setup:263
 msgid "You already have an /etc/fstab on your install partition."
 msgstr "U heeft al een /etc/fstab op uw installatie partitie."
 
-#: ../initrd-scripts/usr-lib-setup/setup:302
+#: ../initrd-scripts/usr-lib-setup/setup:266
 msgid ""
 "If you were just adding software, you should probably keep your old "
 "/etc/fstab."
 msgstr "Indien u zojuist software toevoegde, moet u wellicht uw oude /etc/fstab behouden."
 
-#: ../initrd-scripts/usr-lib-setup/setup:305
+#: ../initrd-scripts/usr-lib-setup/setup:269
 msgid ""
 "If you've changed your partitioning scheme, you should use the new "
 "/etc/fstab."
 msgstr "Indien u uw partitieschema wijzigde, moet u wellicht de nieuwe /etc/fstab gebruiken."
 
-#: ../initrd-scripts/usr-lib-setup/setup:308
+#: ../initrd-scripts/usr-lib-setup/setup:272
 msgid "Do you want to replace your old /etc/fstab with the new one?"
 msgstr "Wilt u uw oude /etc/fstab vervangen met de nieuwe?"
 
-#: ../initrd-scripts/usr-lib-setup/setup:372
-#: ../initrd-scripts/usr-lib-setup/setup:379
+#: ../initrd-scripts/usr-lib-setup/setup:336
+#: ../initrd-scripts/usr-lib-setup/setup:343
 msgid "SALIX INSTALLATION IS COMPLETE"
 msgstr "SALIX INSTALLATIE IS VOLTOOID"
 
-#: ../initrd-scripts/usr-lib-setup/setup:373
-#: ../initrd-scripts/usr-lib-setup/setup:380
+#: ../initrd-scripts/usr-lib-setup/setup:337
+#: ../initrd-scripts/usr-lib-setup/setup:344
 msgid "Reboot now"
 msgstr "Herstart nu"
 
-#: ../initrd-scripts/usr-lib-setup/setup:374
-#: ../initrd-scripts/usr-lib-setup/setup:381
+#: ../initrd-scripts/usr-lib-setup/setup:338
+#: ../initrd-scripts/usr-lib-setup/setup:345
 msgid "Exit to command line"
 msgstr "Sluit af naar de command prompt"
 
-#: ../initrd-scripts/usr-lib-setup/setup:375
+#: ../initrd-scripts/usr-lib-setup/setup:339
 msgid ""
 "System configuration and installation is complete. Please remove the "
 "installation disc. You can either select to reboot your system now or choose"
@@ -265,7 +250,7 @@ msgid ""
 "manual tweaking."
 msgstr "Systeemconfiguratie en installatie is gereed. Verwijder alstublieft de installatieschijf. U kan nu kiezen om uw systeem te herstarten of kiezen om de installatie te verlaten naar de command prompt voor gewenste handmatige optimalisaties."
 
-#: ../initrd-scripts/usr-lib-setup/setup:382
+#: ../initrd-scripts/usr-lib-setup/setup:346
 msgid ""
 "System configuration and installation is complete. You can either select to "
 "reboot your system now or choose to exit the installation to the command "
@@ -916,7 +901,6 @@ msgstr "ONGELDIGE ISO IMAGE"
 #: ../initrd-scripts/usr-lib-setup/INShd:169
 #: ../initrd-scripts/usr-lib-setup/INShd:188
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:540
-#: ../initrd-scripts/usr-lib-setup/autoinstall:263
 msgid "OK"
 msgstr "OK"
 
@@ -1122,7 +1106,6 @@ msgstr "Vervolgens moet deze partitie ergens in je directorystructuur worden aan
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:216
 #: ../initrd-scripts/usr-lib-setup/SeTEFI:73
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:535
-#: ../initrd-scripts/usr-lib-setup/autoinstall:259
 msgid "Adding this information to your /etc/fstab:"
 msgstr "Bezig met deze informatie toevoegen aan uw /etc/fstab:"
 
@@ -1495,7 +1478,6 @@ msgstr "\nProberen een configuratiebestand op te halen middels $PROTO ..."
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:123
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:146
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:165
-#: ../initrd-scripts/usr-lib-setup/autoinstall:69
 msgid "FORMATTING"
 msgstr "FORMATTEREN"
 
@@ -1711,7 +1693,6 @@ msgid "Select Linux installation partition:"
 msgstr "Selecteer de Linux installatie partitie:"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:325
-#: ../initrd-scripts/usr-lib-setup/autoinstall:107
 msgid "Cancel"
 msgstr "Annuleer"
 
@@ -1861,90 +1842,6 @@ msgstr "De eerste gebruiker welke u aanmaakt zal commando's kunnen uitvoeren als
 #: ../initrd-scripts/usr-lib-setup/SeTusers:17
 msgid "The root user is disabled by default."
 msgstr "De root gebruiker is standaard uitgeschakeld."
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:25
-#: ../initrd-scripts/usr-lib-setup/autoinstall:108
-#: ../initrd-scripts/usr-lib-setup/autoinstall:129
-#: ../initrd-scripts/usr-lib-setup/autoinstall:142
-#: ../initrd-scripts/usr-lib-setup/autoinstall:205
-#: ../initrd-scripts/usr-lib-setup/autoinstall:209
-#: ../initrd-scripts/usr-lib-setup/autoinstall:262
-msgid "AUTO PARTITION"
-msgstr "AUTO PARTITIE"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:26
-#: ../initrd-scripts/usr-lib-setup/autoinstall:210
-#, sh-format
-msgid "Please wait while ${DISK} is being prepared for Salix"
-msgstr "Wacht alstublieft terwijl ${DISK} wordt geprepareerd voor Salix"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:64
-#, sh-format
-msgid "Formatting $PART"
-msgstr "Bezig met formatteren $PART"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:66
-#, sh-format
-msgid "Size in 1K blocks: $SIZE"
-msgstr "Grootte in 1K blokken: $SIZE"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:68
-msgid "Filesystem type:xfs"
-msgstr "Bestandssysteem type:xfs"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:70
-#, sh-format
-msgid "Formatting $PART with filesystem xfs."
-msgstr "Formatteren $PART met bestandssysteem xfs."
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:106
-msgid "Do It"
-msgstr "Voer Uit"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:109
-msgid "This is automatic partition mode."
-msgstr "Dit is automatische partitie modus."
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:110
-msgid "Press <SPACE> to select the target disk where Salix will be installed."
-msgstr "Druk op de <SPACE> toets om de doel disk te kiezen waar Salix zal worden geinstalleerd."
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:112
-msgid "All data will be erased from the target disk."
-msgstr "Alle gegevens zullen worden gewist van de doel disk"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:113
-msgid "Only run this mode if the entire disk will be dedicated to Salix."
-msgstr "Voer deze modus alleen uit als de gehele disk voor Salix is bestemd."
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:130
-#, sh-format
-msgid "Are you sure you want to globally erase existing data from ${DISK}?"
-msgstr "Bent u zeker dat u bestaande gegeven volledig wilt wissen van ${DISK}?"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:133
-msgid "Go back to the main setup menu"
-msgstr "Ga terug naar het hoofdmenu van setup"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:134
-#, sh-format
-msgid "${DISK} is dedicated to Salix"
-msgstr "${DISK} is toegewijd aan Salix"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:142
-msgid "No target disk selected, going back to main menu"
-msgstr "Geen doel disk gekozen, terug naar hoofdmenu"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:206
-#, sh-format
-msgid ""
-"${DISK} is only $DisksizeInKB KB, you need at least 3000000 KB to install "
-"Salix"
-msgstr "${DISK} is maar $DisksizeInKB KB, u heeft minstens 3000000 KB nodig om Salix te installeren"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:257
-msgid "Partitioning completed."
-msgstr "Partitioneren voltooid."
 
 #: ../initrd-scripts/usr-lib-setup/slackinstall:55
 msgid "FTP/HTTP DOWNLOAD FAILURE"

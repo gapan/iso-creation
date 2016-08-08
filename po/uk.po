@@ -15,9 +15,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-14 01:19+0300\n"
-"PO-Revision-Date: 2016-06-16 14:01+0000\n"
-"Last-Translator: Yarema aka Knedlyk <yupadmin@gmail.com>\n"
+"POT-Creation-Date: 2016-08-08 18:53+0300\n"
+"PO-Revision-Date: 2016-08-08 15:54+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: Ukrainian (http://www.transifex.com/gapan/salix/language/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,32 +25,30 @@ msgstr ""
 "Language: uk\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: ../initrd-scripts/usr-lib-setup/setup:52
+#: ../initrd-scripts/usr-lib-setup/setup:51
 msgid "WELCOME TO THE SALIX INSTALLATION"
 msgstr "ЗАПРОШУЄМО ДО ВСТАНОВЛЕННЯ SALIX"
 
-#: ../initrd-scripts/usr-lib-setup/setup:53
+#: ../initrd-scripts/usr-lib-setup/setup:52
 msgid "Keep the current keymap"
 msgstr "Залишити поточну розкладку"
 
-#: ../initrd-scripts/usr-lib-setup/setup:54
+#: ../initrd-scripts/usr-lib-setup/setup:53
 msgid "Select another keymap"
 msgstr "Вибрати іншу розкладку"
 
-#: ../initrd-scripts/usr-lib-setup/setup:55
+#: ../initrd-scripts/usr-lib-setup/setup:54
 #, sh-format
 msgid ""
 "Welcome to the installation of Salix, The Bonsai OS!\n"
 "Before you proceed with the rest of the installation, you might want to select your keyboard map (keymap). The current keymap is $KMAP."
 msgstr "Вітаємо Вас у процедурі встановлення Salix,  Bonsai OS!\nПеред початком встановлення виберіть бажану розкладку клавіатури (keymap). Поточна розкладка є $KMAP."
 
-#: ../initrd-scripts/usr-lib-setup/setup:66
-#: ../initrd-scripts/usr-lib-setup/setup:84
+#: ../initrd-scripts/usr-lib-setup/setup:63
 msgid "Salix Installation"
 msgstr "Встановлення Salix"
 
-#: ../initrd-scripts/usr-lib-setup/setup:67
-#: ../initrd-scripts/usr-lib-setup/setup:86
+#: ../initrd-scripts/usr-lib-setup/setup:64
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:117
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:20
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:323
@@ -58,132 +56,119 @@ msgstr "Встановлення Salix"
 msgid "Select"
 msgstr "Вибір"
 
-#: ../initrd-scripts/usr-lib-setup/setup:68
-#: ../initrd-scripts/usr-lib-setup/setup:87
+#: ../initrd-scripts/usr-lib-setup/setup:65
 msgid "Exit installation"
 msgstr "Вийти з встановлення"
 
-#: ../initrd-scripts/usr-lib-setup/setup:70
+#: ../initrd-scripts/usr-lib-setup/setup:67
 msgid "You may now proceed with the installation by pressing the ENTER key."
 msgstr "Тепер Ви можете перейти до встановлення, натиснувши кнопку ВВІД."
 
-#: ../initrd-scripts/usr-lib-setup/setup:72
-#: ../initrd-scripts/usr-lib-setup/setup:92
+#: ../initrd-scripts/usr-lib-setup/setup:69
 msgid ""
 "If you want to exit the installation and drop to a linux console, select "
 "'Exit installation'"
 msgstr "Якщо Ви бажаєте вийти з встановлення і перейти до консолі linux, тоді виберіть 'Вийти з встановлення'"
 
-#: ../initrd-scripts/usr-lib-setup/setup:74
-#: ../initrd-scripts/usr-lib-setup/setup:94
+#: ../initrd-scripts/usr-lib-setup/setup:71
 msgid "Install Salix using a step-by-step guide"
 msgstr "Встановлення Salix, використовуючи допомогу крок-за-кроком"
 
-#: ../initrd-scripts/usr-lib-setup/setup:89
-msgid ""
-"You may select an option below using the UP/DOWN keys and SPACE or ENTER. "
-"Alternate keys may also be used: '+', '-', and TAB."
-msgstr "Ви можете вибрати опцію нижче, використовуючи стрілки ВВЕРХ/ВНИЗ і ПРОБІЛ, або ВВІД. Як альтернативу можна також використовувати '+', '-' і кнопку ТАБУЛЯЦІЯ."
-
-#: ../initrd-scripts/usr-lib-setup/setup:95
-msgid "Autopartition and install with few options (wipes your HD)"
-msgstr "Авто-розбивка на розділи і встановлення з кількома опціями (твердий диск буде витерто)"
-
-#: ../initrd-scripts/usr-lib-setup/setup:126
+#: ../initrd-scripts/usr-lib-setup/setup:96
 msgid "NO LINUX PARTITIONS DETECTED"
 msgstr "НЕ ВИЯВЛЕНО РОЗДІЛІВ LINUX"
 
-#: ../initrd-scripts/usr-lib-setup/setup:127
+#: ../initrd-scripts/usr-lib-setup/setup:97
 msgid ""
 "There don't seem to be any Linux partitions on this machine. You'll need to "
 "make at least one of these to install Linux. Either select AUTOINSTALL from "
 "the menu, or select INSTALL and use the partition editor to create one."
 msgstr "Здається, що на цьому комп'ютері немає жодного розділу Linux. Вам потрібно створити хоча б один з цих для встановлення Linux. Виберіть з меню або АВТОВСТАНОВЛЕННЯ, або виберіть ВСТАНОВЛЕННЯ і використайте редактор розділів для створення розділу."
 
-#: ../initrd-scripts/usr-lib-setup/setup:135
+#: ../initrd-scripts/usr-lib-setup/setup:105
 msgid "NO EFI SYSTEM PARTITION DETECTED"
 msgstr "СИСТЕМНИЙ РОЗДІЛ EFI НЕ ВИЯВЛЕНО"
 
-#: ../initrd-scripts/usr-lib-setup/setup:136
+#: ../initrd-scripts/usr-lib-setup/setup:106
 msgid ""
 "This machine appears to be using EFI/UEFI, but no EFI System Partition was "
 "found."
 msgstr "Здається, що цей комп'ютер використовує EFI/UEFI, однак системного розділу EFI не знайдено."
 
-#: ../initrd-scripts/usr-lib-setup/setup:139
+#: ../initrd-scripts/usr-lib-setup/setup:109
 msgid ""
 "You'll need to make an EFI System Partition in order to boot from the hard "
 "drive."
 msgstr "Вам потрібно створити системний розділ EFI, щоб завантажитись з твердого диску."
 
-#: ../initrd-scripts/usr-lib-setup/setup:164
+#: ../initrd-scripts/usr-lib-setup/setup:128
 msgid "Can't umount /var/log/mount.  Reboot machine and run setup again."
 msgstr "Неможливо відмонтувати /var/log/mount/. Перезавантажте комп'ютер і запустіть налаштування знову."
 
-#: ../initrd-scripts/usr-lib-setup/setup:171
+#: ../initrd-scripts/usr-lib-setup/setup:135
 msgid "Mount table corrupt.  Reboot machine and run setup again."
 msgstr "Таблиця монтувань пошкоджена. Перезавантажте комп'ютер і запустіть налаштування знову."
 
-#: ../initrd-scripts/usr-lib-setup/setup:204
+#: ../initrd-scripts/usr-lib-setup/setup:168
 msgid "No Source Selected"
 msgstr "Не вибрано джерело"
 
-#: ../initrd-scripts/usr-lib-setup/setup:205
+#: ../initrd-scripts/usr-lib-setup/setup:169
 msgid "The installer does not know where to find the source packages..."
 msgstr "Встановлювач не знає, де знайти джерело пакунків..."
 
-#: ../initrd-scripts/usr-lib-setup/setup:206
-#: ../initrd-scripts/usr-lib-setup/setup:224
+#: ../initrd-scripts/usr-lib-setup/setup:170
+#: ../initrd-scripts/usr-lib-setup/setup:188
 msgid "Press ENTER to return to the main menu."
 msgstr "Натисніть ВВІД для повернення в головне меню."
 
-#: ../initrd-scripts/usr-lib-setup/setup:215
+#: ../initrd-scripts/usr-lib-setup/setup:179
 msgid "CANNOT INSTALL SOFTWARE YET"
 msgstr "ВСТАНОВЛЕННЯ ПРОГРАМ ВСЕ ЩЕ НЕМОЖЛИВЕ"
 
-#: ../initrd-scripts/usr-lib-setup/setup:216
+#: ../initrd-scripts/usr-lib-setup/setup:180
 msgid "Before you can install software, complete the following tasks:"
 msgstr "Перед встановленням програмного забезпечення завершіть наступні завдання:"
 
-#: ../initrd-scripts/usr-lib-setup/setup:218
+#: ../initrd-scripts/usr-lib-setup/setup:182
 msgid "Select your source media."
 msgstr "Виберіть джерело, з якого встановлювати."
 
-#: ../initrd-scripts/usr-lib-setup/setup:219
+#: ../initrd-scripts/usr-lib-setup/setup:183
 msgid "Set up your target Linux partition(s)."
 msgstr "Встановіть цільовий розділ(и) Linux."
 
-#: ../initrd-scripts/usr-lib-setup/setup:221
+#: ../initrd-scripts/usr-lib-setup/setup:185
 msgid ""
 "You may also optionally remap your keyboard and set up your swap "
 "partition(s)."
 msgstr "Ви також можете вказати розкладку і встановити розділ(и) підкачки."
 
-#: ../initrd-scripts/usr-lib-setup/setup:235
-#: ../initrd-scripts/usr-lib-setup/setup:250
-#: ../initrd-scripts/usr-lib-setup/setup:272
+#: ../initrd-scripts/usr-lib-setup/setup:199
+#: ../initrd-scripts/usr-lib-setup/setup:214
+#: ../initrd-scripts/usr-lib-setup/setup:236
 #: ../initrd-scripts/usr-lib-setup/slackinstall:147
 msgid "CORE"
 msgstr "ОСНОВНИЙ"
 
-#: ../initrd-scripts/usr-lib-setup/setup:237
-#: ../initrd-scripts/usr-lib-setup/setup:254
+#: ../initrd-scripts/usr-lib-setup/setup:201
+#: ../initrd-scripts/usr-lib-setup/setup:218
 msgid "SELECT INSTALLATION MODE"
 msgstr "ВИБІР РЕЖИМУ ВСТАНОВЛЕННЯ"
 
-#: ../initrd-scripts/usr-lib-setup/setup:239
-#: ../initrd-scripts/usr-lib-setup/setup:257
+#: ../initrd-scripts/usr-lib-setup/setup:203
+#: ../initrd-scripts/usr-lib-setup/setup:221
 msgid "Please select the installation mode you prefer from the following:"
 msgstr "Будь ласка, виберіть бажаний режим встановлення з наступних:"
 
-#: ../initrd-scripts/usr-lib-setup/setup:241
-#: ../initrd-scripts/usr-lib-setup/setup:262
+#: ../initrd-scripts/usr-lib-setup/setup:205
+#: ../initrd-scripts/usr-lib-setup/setup:226
 msgid ""
 "BASIC will only install a minimal graphical environment and a web browser."
 msgstr "БАЗОВИЙ режим встановлює тільки мінімальне графічне середовище і веб-переглядач."
 
-#: ../initrd-scripts/usr-lib-setup/setup:243
-#: ../initrd-scripts/usr-lib-setup/setup:264
+#: ../initrd-scripts/usr-lib-setup/setup:207
+#: ../initrd-scripts/usr-lib-setup/setup:228
 msgid ""
 "CORE will install only the minimum essentials for your system to start in "
 "console mode (no graphical environment included) and is ideal if you are an "
@@ -191,77 +176,77 @@ msgid ""
 "specific purpose."
 msgstr "ОСНОВНИЙ режим встановлює тільки мінімум важливих програм для Вашої системи для початкової роботи в консольному режимі (графічне середовище не включене) і є ідеальним для досвідченого користувача, який бажає повністю підлаштувати систему для своїх потреб."
 
-#: ../initrd-scripts/usr-lib-setup/setup:249
-#: ../initrd-scripts/usr-lib-setup/setup:271
+#: ../initrd-scripts/usr-lib-setup/setup:213
+#: ../initrd-scripts/usr-lib-setup/setup:235
 msgid "BASIC"
 msgstr "БАЗОВИЙ"
 
-#: ../initrd-scripts/usr-lib-setup/setup:249
-#: ../initrd-scripts/usr-lib-setup/setup:271
+#: ../initrd-scripts/usr-lib-setup/setup:213
+#: ../initrd-scripts/usr-lib-setup/setup:235
 msgid "Install a minimal graphical environment"
 msgstr "Встановлення мінімального графічного середовища"
 
-#: ../initrd-scripts/usr-lib-setup/setup:250
-#: ../initrd-scripts/usr-lib-setup/setup:272
+#: ../initrd-scripts/usr-lib-setup/setup:214
+#: ../initrd-scripts/usr-lib-setup/setup:236
 msgid "Install a minimal console system"
 msgstr "Встановлення мінімальної консольної системи"
 
-#: ../initrd-scripts/usr-lib-setup/setup:259
+#: ../initrd-scripts/usr-lib-setup/setup:223
 msgid ""
 "FULL (default) will install everything. That includes one application per "
 "task, such as an office suite, a multimedia player, a CD/DVD burner etc."
 msgstr "ПАВНИЙ (типовий) режим встановить все. Він включає одну програму на одне завдання, такі як офісні програми, програвач медіа, CD/DVD записувач, етс."
 
-#: ../initrd-scripts/usr-lib-setup/setup:270
+#: ../initrd-scripts/usr-lib-setup/setup:234
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:138
 #: ../initrd-scripts/usr-lib-setup/slackinstall:162
 msgid "FULL"
 msgstr "ПОВНИЙ"
 
-#: ../initrd-scripts/usr-lib-setup/setup:270
+#: ../initrd-scripts/usr-lib-setup/setup:234
 msgid "Install everything"
 msgstr "Встановлення всього"
 
-#: ../initrd-scripts/usr-lib-setup/setup:298
+#: ../initrd-scripts/usr-lib-setup/setup:262
 msgid "REPLACE /etc/fstab?"
 msgstr "ЗАМІНИТИ /etc/fstab?"
 
-#: ../initrd-scripts/usr-lib-setup/setup:299
+#: ../initrd-scripts/usr-lib-setup/setup:263
 msgid "You already have an /etc/fstab on your install partition."
 msgstr "Ви вже маєте файл /etc/fstab на Вашому розділі встановлення."
 
-#: ../initrd-scripts/usr-lib-setup/setup:302
+#: ../initrd-scripts/usr-lib-setup/setup:266
 msgid ""
 "If you were just adding software, you should probably keep your old "
 "/etc/fstab."
 msgstr "Якщо Ви бажаєте тільки додати пакунки, тоді Вам бажано зберегти старий /etc/fstab."
 
-#: ../initrd-scripts/usr-lib-setup/setup:305
+#: ../initrd-scripts/usr-lib-setup/setup:269
 msgid ""
 "If you've changed your partitioning scheme, you should use the new "
 "/etc/fstab."
 msgstr "Якщо Ви змінили Вашу схему розділів, тоді потрібно використати новий /etc/fstab."
 
-#: ../initrd-scripts/usr-lib-setup/setup:308
+#: ../initrd-scripts/usr-lib-setup/setup:272
 msgid "Do you want to replace your old /etc/fstab with the new one?"
 msgstr "Ви бажаєте замінити старий /etc/fstab новим?"
 
-#: ../initrd-scripts/usr-lib-setup/setup:372
-#: ../initrd-scripts/usr-lib-setup/setup:379
+#: ../initrd-scripts/usr-lib-setup/setup:336
+#: ../initrd-scripts/usr-lib-setup/setup:343
 msgid "SALIX INSTALLATION IS COMPLETE"
 msgstr "ВСТАНОВЛЕННЯ SALIX ЗАКІНЧЕНО"
 
-#: ../initrd-scripts/usr-lib-setup/setup:373
-#: ../initrd-scripts/usr-lib-setup/setup:380
+#: ../initrd-scripts/usr-lib-setup/setup:337
+#: ../initrd-scripts/usr-lib-setup/setup:344
 msgid "Reboot now"
 msgstr "Перезавантажити зараз"
 
-#: ../initrd-scripts/usr-lib-setup/setup:374
-#: ../initrd-scripts/usr-lib-setup/setup:381
+#: ../initrd-scripts/usr-lib-setup/setup:338
+#: ../initrd-scripts/usr-lib-setup/setup:345
 msgid "Exit to command line"
 msgstr "Повернутися до командної стрічки"
 
-#: ../initrd-scripts/usr-lib-setup/setup:375
+#: ../initrd-scripts/usr-lib-setup/setup:339
 msgid ""
 "System configuration and installation is complete. Please remove the "
 "installation disc. You can either select to reboot your system now or choose"
@@ -269,7 +254,7 @@ msgid ""
 "manual tweaking."
 msgstr "Налаштування системи і встановлення завершені. Будь ласка, вийміть диск встановлення. Ви можете або перевантажити систему зараз, або вийти з встановлення до режиму командної стрічки, якщо бажаєте зробити ще якісь налаштування вручну."
 
-#: ../initrd-scripts/usr-lib-setup/setup:382
+#: ../initrd-scripts/usr-lib-setup/setup:346
 msgid ""
 "System configuration and installation is complete. You can either select to "
 "reboot your system now or choose to exit the installation to the command "
@@ -920,7 +905,6 @@ msgstr "ISO-ОБРАЗ НЕ ПІДХОДИТЬ"
 #: ../initrd-scripts/usr-lib-setup/INShd:169
 #: ../initrd-scripts/usr-lib-setup/INShd:188
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:540
-#: ../initrd-scripts/usr-lib-setup/autoinstall:263
 msgid "OK"
 msgstr "OK"
 
@@ -1126,7 +1110,6 @@ msgstr "Тепер цей розділ потрібно змонтувати к�
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:216
 #: ../initrd-scripts/usr-lib-setup/SeTEFI:73
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:535
-#: ../initrd-scripts/usr-lib-setup/autoinstall:259
 msgid "Adding this information to your /etc/fstab:"
 msgstr "Додавання цієї інформації до Вашого /etc/fstab:"
 
@@ -1499,7 +1482,6 @@ msgstr "\nСпроба отримання віддаленого файлу на
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:123
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:146
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:165
-#: ../initrd-scripts/usr-lib-setup/autoinstall:69
 msgid "FORMATTING"
 msgstr "ФОРМАТУВАННЯ"
 
@@ -1715,7 +1697,6 @@ msgid "Select Linux installation partition:"
 msgstr "Виберіть розділ для встановлення Linux:"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:325
-#: ../initrd-scripts/usr-lib-setup/autoinstall:107
 msgid "Cancel"
 msgstr "Скасувати"
 
@@ -1865,90 +1846,6 @@ msgstr "Перший створений користувач зможе вико
 #: ../initrd-scripts/usr-lib-setup/SeTusers:17
 msgid "The root user is disabled by default."
 msgstr "Користувач root типово недоступний."
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:25
-#: ../initrd-scripts/usr-lib-setup/autoinstall:108
-#: ../initrd-scripts/usr-lib-setup/autoinstall:129
-#: ../initrd-scripts/usr-lib-setup/autoinstall:142
-#: ../initrd-scripts/usr-lib-setup/autoinstall:205
-#: ../initrd-scripts/usr-lib-setup/autoinstall:209
-#: ../initrd-scripts/usr-lib-setup/autoinstall:262
-msgid "AUTO PARTITION"
-msgstr "АВТОМАТИЧНА РОЗБИВКА РОЗДІЛІВ"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:26
-#: ../initrd-scripts/usr-lib-setup/autoinstall:210
-#, sh-format
-msgid "Please wait while ${DISK} is being prepared for Salix"
-msgstr "Будь ласка, зачекайте, поки ${DISK} не буде підготовлений для Salix"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:64
-#, sh-format
-msgid "Formatting $PART"
-msgstr "Форматування $PART"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:66
-#, sh-format
-msgid "Size in 1K blocks: $SIZE"
-msgstr "Розмір 1К блоків: $SIZE"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:68
-msgid "Filesystem type:xfs"
-msgstr "Тип файлової системи type:xfs"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:70
-#, sh-format
-msgid "Formatting $PART with filesystem xfs."
-msgstr "Форматування $PART файловою системою xfs."
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:106
-msgid "Do It"
-msgstr "Зробити це"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:109
-msgid "This is automatic partition mode."
-msgstr "Це є режим автоматичної розбивки розділів."
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:110
-msgid "Press <SPACE> to select the target disk where Salix will be installed."
-msgstr "Натисніть <ПРОБІЛ> для вибору диску, де буде встановлено Salix."
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:112
-msgid "All data will be erased from the target disk."
-msgstr "Всі дані будуть знищені з вказаного диску."
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:113
-msgid "Only run this mode if the entire disk will be dedicated to Salix."
-msgstr "Вибирайте цей режим, якщо весь диск буде присвячений для Salix."
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:130
-#, sh-format
-msgid "Are you sure you want to globally erase existing data from ${DISK}?"
-msgstr "Ви впевнені, що бажаєте глобально знищити всі дані з ${DISK}?"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:133
-msgid "Go back to the main setup menu"
-msgstr "Перехід до головного меню налаштування"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:134
-#, sh-format
-msgid "${DISK} is dedicated to Salix"
-msgstr "${DISK} призначений для Salix"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:142
-msgid "No target disk selected, going back to main menu"
-msgstr "Не вибрано доцільовий диск, перехід до головного меню"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:206
-#, sh-format
-msgid ""
-"${DISK} is only $DisksizeInKB KB, you need at least 3000000 KB to install "
-"Salix"
-msgstr "${DISK} має тільки $DisksizeInKB КБ, Вам потрібно хоча б 3000000 КБ для встановлення Salix"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:257
-msgid "Partitioning completed."
-msgstr "Розбивку на розділи завершено."
 
 #: ../initrd-scripts/usr-lib-setup/slackinstall:55
 msgid "FTP/HTTP DOWNLOAD FAILURE"

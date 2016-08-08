@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-14 01:19+0300\n"
-"PO-Revision-Date: 2016-06-13 23:22+0000\n"
+"POT-Creation-Date: 2016-08-08 18:53+0300\n"
+"PO-Revision-Date: 2016-08-08 15:54+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: Greek (http://www.transifex.com/gapan/salix/language/el/)\n"
 "MIME-Version: 1.0\n"
@@ -24,32 +24,30 @@ msgstr ""
 "Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../initrd-scripts/usr-lib-setup/setup:52
+#: ../initrd-scripts/usr-lib-setup/setup:51
 msgid "WELCOME TO THE SALIX INSTALLATION"
 msgstr "ΚΑΛΩΣ ΗΡΘΑΤΕ ΣΤΗΝ ΕΓΚΑΤΑΣΤΑΣΗ ΤΟΥ SALIX"
 
-#: ../initrd-scripts/usr-lib-setup/setup:53
+#: ../initrd-scripts/usr-lib-setup/setup:52
 msgid "Keep the current keymap"
 msgstr "Κρατήστε την"
 
-#: ../initrd-scripts/usr-lib-setup/setup:54
+#: ../initrd-scripts/usr-lib-setup/setup:53
 msgid "Select another keymap"
 msgstr "Επιλέξτε άλλη"
 
-#: ../initrd-scripts/usr-lib-setup/setup:55
+#: ../initrd-scripts/usr-lib-setup/setup:54
 #, sh-format
 msgid ""
 "Welcome to the installation of Salix, The Bonsai OS!\n"
 "Before you proceed with the rest of the installation, you might want to select your keyboard map (keymap). The current keymap is $KMAP."
 msgstr "Καλώς ήλθατε στην εγκατάσταση του Salix, To Bonsai OS!\nΠριν προχωρήσετε με την υπόλοιπη εγκατάσταση, ίσως να θέλετε να επιλέξετε το πληκτρολόγιο σας (διάταξη πληκτρολογίου). Η τρέχουσα διάταξη πληκτρολογίου είναι η $KMAP."
 
-#: ../initrd-scripts/usr-lib-setup/setup:66
-#: ../initrd-scripts/usr-lib-setup/setup:84
+#: ../initrd-scripts/usr-lib-setup/setup:63
 msgid "Salix Installation"
 msgstr "Εγκατάσταση του Salix"
 
-#: ../initrd-scripts/usr-lib-setup/setup:67
-#: ../initrd-scripts/usr-lib-setup/setup:86
+#: ../initrd-scripts/usr-lib-setup/setup:64
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:117
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:20
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:323
@@ -57,132 +55,119 @@ msgstr "Εγκατάσταση του Salix"
 msgid "Select"
 msgstr "Επιλογή"
 
-#: ../initrd-scripts/usr-lib-setup/setup:68
-#: ../initrd-scripts/usr-lib-setup/setup:87
+#: ../initrd-scripts/usr-lib-setup/setup:65
 msgid "Exit installation"
 msgstr "Ακύρωση εγκατάστασης"
 
-#: ../initrd-scripts/usr-lib-setup/setup:70
+#: ../initrd-scripts/usr-lib-setup/setup:67
 msgid "You may now proceed with the installation by pressing the ENTER key."
 msgstr "Μπορείτε τώρα να προχωρήσετε με την εγκατάσταση πατώντας το πλήκτρο ENTER."
 
-#: ../initrd-scripts/usr-lib-setup/setup:72
-#: ../initrd-scripts/usr-lib-setup/setup:92
+#: ../initrd-scripts/usr-lib-setup/setup:69
 msgid ""
 "If you want to exit the installation and drop to a linux console, select "
 "'Exit installation'"
 msgstr "Αν θέλετε να βγείτε από την εγκατάσταση και να πέσετε σε μια κονσόλα Linux, επιλέξτε ' Έξοδος'"
 
-#: ../initrd-scripts/usr-lib-setup/setup:74
-#: ../initrd-scripts/usr-lib-setup/setup:94
+#: ../initrd-scripts/usr-lib-setup/setup:71
 msgid "Install Salix using a step-by-step guide"
 msgstr "Εγκατάσταση του Salix με οδηγό βήμα-προς-βήμα"
 
-#: ../initrd-scripts/usr-lib-setup/setup:89
-msgid ""
-"You may select an option below using the UP/DOWN keys and SPACE or ENTER. "
-"Alternate keys may also be used: '+', '-', and TAB."
-msgstr "Μπορείτε να επιλέξετε μια επιλογή παρακάτω χρησιμοποιώντας τα πλήκτρα UP/DOWN και SPACE ή ENTER. Μπορούν επίσης να χρησιμοποιηθούν εναλλακτικά πλήκτρα: '+', '-', και TAB."
-
-#: ../initrd-scripts/usr-lib-setup/setup:95
-msgid "Autopartition and install with few options (wipes your HD)"
-msgstr "Αυτόματη διαμέριση/εγκατάσταση (σβήνει το σκληρό)"
-
-#: ../initrd-scripts/usr-lib-setup/setup:126
+#: ../initrd-scripts/usr-lib-setup/setup:96
 msgid "NO LINUX PARTITIONS DETECTED"
 msgstr "ΔΕΝ ΒΡΕΘΗΚΑΝ ΚΑΤΑΤΜΗΣΕΙΣ LINUX"
 
-#: ../initrd-scripts/usr-lib-setup/setup:127
+#: ../initrd-scripts/usr-lib-setup/setup:97
 msgid ""
 "There don't seem to be any Linux partitions on this machine. You'll need to "
 "make at least one of these to install Linux. Either select AUTOINSTALL from "
 "the menu, or select INSTALL and use the partition editor to create one."
 msgstr "Δεν φαίνεται να υπάρχουν κατατμήσεις του Linux σε αυτό το μηχάνημα. Θα πρέπει να κάνετε τουλάχιστον μία για να εγκαταστήσετε το Linux. Είτε επιλέξτε ΑΥΤΟΜΑΤΗ ΔΙΑΜΕΡΙΣΗ από το μενού, ή επιλέξετε εγκατάσταση και χρησιμοποιήστε τον διαχειριστή κατατμήσεων για να δημιουργήσετε ένα."
 
-#: ../initrd-scripts/usr-lib-setup/setup:135
+#: ../initrd-scripts/usr-lib-setup/setup:105
 msgid "NO EFI SYSTEM PARTITION DETECTED"
 msgstr "ΔΕΝ ΕΝΤΟΠΙΣΘΗΚΕ ΚΑΜΙΑ ΚΑΤΑΤΜΗΣΗ ΣΥΣΤΗΜΑΤΟΣ ΜΕ EFI"
 
-#: ../initrd-scripts/usr-lib-setup/setup:136
+#: ../initrd-scripts/usr-lib-setup/setup:106
 msgid ""
 "This machine appears to be using EFI/UEFI, but no EFI System Partition was "
 "found."
 msgstr "Αυτό το μηχάνημα φαίνεται να χρησιμοποιεί EFI/UEFI, αλλά δεν βρέθηκε διαμέρισμα EFI στο Σύστημα."
 
-#: ../initrd-scripts/usr-lib-setup/setup:139
+#: ../initrd-scripts/usr-lib-setup/setup:109
 msgid ""
 "You'll need to make an EFI System Partition in order to boot from the hard "
 "drive."
 msgstr "Θα χρειαστεί να κάνετε ένα διαμέρισμα EFI σύστημα, προκειμένου να εκκινήσετε από τον σκληρό δίσκο."
 
-#: ../initrd-scripts/usr-lib-setup/setup:164
+#: ../initrd-scripts/usr-lib-setup/setup:128
 msgid "Can't umount /var/log/mount.  Reboot machine and run setup again."
 msgstr "Δεν μπορεί να αποπροσαρτήσω το /var/log/mount. Επανεκκινήστε τη μηχανή και τρέξετε το setup ξανά."
 
-#: ../initrd-scripts/usr-lib-setup/setup:171
+#: ../initrd-scripts/usr-lib-setup/setup:135
 msgid "Mount table corrupt.  Reboot machine and run setup again."
 msgstr " Ο πίνακας κατατμήσεων είναι κατεστραμμένος. Επανεκκινήστε τη μηχανή και τρέξετε το setup ξανά."
 
-#: ../initrd-scripts/usr-lib-setup/setup:204
+#: ../initrd-scripts/usr-lib-setup/setup:168
 msgid "No Source Selected"
 msgstr "Δεν επιλέχθηκε πηγή"
 
-#: ../initrd-scripts/usr-lib-setup/setup:205
+#: ../initrd-scripts/usr-lib-setup/setup:169
 msgid "The installer does not know where to find the source packages..."
 msgstr "Το πρόγραμμα εγκατάστασης δεν ξέρει που να βρει τα πηγαία πακέτα"
 
-#: ../initrd-scripts/usr-lib-setup/setup:206
-#: ../initrd-scripts/usr-lib-setup/setup:224
+#: ../initrd-scripts/usr-lib-setup/setup:170
+#: ../initrd-scripts/usr-lib-setup/setup:188
 msgid "Press ENTER to return to the main menu."
 msgstr "Πιέστε το πλήκτρο ENTER για να επιστρέψετε στο κύριο μενού."
 
-#: ../initrd-scripts/usr-lib-setup/setup:215
+#: ../initrd-scripts/usr-lib-setup/setup:179
 msgid "CANNOT INSTALL SOFTWARE YET"
 msgstr "ΔΕΝ ΜΠΟΡΕΙ ΑΚΟΜΗ ΝΑ ΓΙΝΕΙ ΕΓΚΑΤΑΣΤΑΣΗ ΛΟΓΙΣΜΙΚΟΥ"
 
-#: ../initrd-scripts/usr-lib-setup/setup:216
+#: ../initrd-scripts/usr-lib-setup/setup:180
 msgid "Before you can install software, complete the following tasks:"
 msgstr "Για να μπορέσετε να εγκαταστήσετε το λογισμικό, εκτελέστε τις ακόλουθες εργασίες:"
 
-#: ../initrd-scripts/usr-lib-setup/setup:218
+#: ../initrd-scripts/usr-lib-setup/setup:182
 msgid "Select your source media."
 msgstr "Επιλέξτε τη πηγή λογισμικού σας."
 
-#: ../initrd-scripts/usr-lib-setup/setup:219
+#: ../initrd-scripts/usr-lib-setup/setup:183
 msgid "Set up your target Linux partition(s)."
 msgstr "Ρυθμίστε τις κατατμήσεις του Linux."
 
-#: ../initrd-scripts/usr-lib-setup/setup:221
+#: ../initrd-scripts/usr-lib-setup/setup:185
 msgid ""
 "You may also optionally remap your keyboard and set up your swap "
 "partition(s)."
 msgstr "Μπορείτε επίσης προαιρετικά να επαναορίσετε το πληκτρολόγιό σας και να ρυθμίσετε τη κατάτμηση(εις) swap."
 
-#: ../initrd-scripts/usr-lib-setup/setup:235
-#: ../initrd-scripts/usr-lib-setup/setup:250
-#: ../initrd-scripts/usr-lib-setup/setup:272
+#: ../initrd-scripts/usr-lib-setup/setup:199
+#: ../initrd-scripts/usr-lib-setup/setup:214
+#: ../initrd-scripts/usr-lib-setup/setup:236
 #: ../initrd-scripts/usr-lib-setup/slackinstall:147
 msgid "CORE"
 msgstr "ΚΟΝΣΟΛΑ"
 
-#: ../initrd-scripts/usr-lib-setup/setup:237
-#: ../initrd-scripts/usr-lib-setup/setup:254
+#: ../initrd-scripts/usr-lib-setup/setup:201
+#: ../initrd-scripts/usr-lib-setup/setup:218
 msgid "SELECT INSTALLATION MODE"
 msgstr "ΕΠΙΛΟΓΗ ΕΙΔΟΥΣ ΕΓΚΑΤΑΣΤΑΣΗΣ"
 
-#: ../initrd-scripts/usr-lib-setup/setup:239
-#: ../initrd-scripts/usr-lib-setup/setup:257
+#: ../initrd-scripts/usr-lib-setup/setup:203
+#: ../initrd-scripts/usr-lib-setup/setup:221
 msgid "Please select the installation mode you prefer from the following:"
 msgstr "Επιλέξτε τον τρόπο εγκατάστασης που προτιμάτε από το επόμενο:"
 
-#: ../initrd-scripts/usr-lib-setup/setup:241
-#: ../initrd-scripts/usr-lib-setup/setup:262
+#: ../initrd-scripts/usr-lib-setup/setup:205
+#: ../initrd-scripts/usr-lib-setup/setup:226
 msgid ""
 "BASIC will only install a minimal graphical environment and a web browser."
 msgstr "Η ΒΑΣΙΚΗ θα εγκαταστήσει μόνο ένα ελάχιστο γραφικό περιβάλλον και ένα web browser."
 
-#: ../initrd-scripts/usr-lib-setup/setup:243
-#: ../initrd-scripts/usr-lib-setup/setup:264
+#: ../initrd-scripts/usr-lib-setup/setup:207
+#: ../initrd-scripts/usr-lib-setup/setup:228
 msgid ""
 "CORE will install only the minimum essentials for your system to start in "
 "console mode (no graphical environment included) and is ideal if you are an "
@@ -190,77 +175,77 @@ msgid ""
 "specific purpose."
 msgstr "Η ΚΟΝΣΟΛΑ θα εγκαταστήσει μόνο τα ελάχιστα απαραίτητα για το σύστημά σας για να ξεκινήσει σε κατάσταση κονσόλας (χωρίς γραφικό περιβάλλον) και είναι ιδανικό εάν είστε έμπειρος χρήστης και θέλετε να προσαρμόσετε πλήρως την εγκατάσταση σας για οποιοδήποτε συγκεκριμένο σκοπό."
 
-#: ../initrd-scripts/usr-lib-setup/setup:249
-#: ../initrd-scripts/usr-lib-setup/setup:271
+#: ../initrd-scripts/usr-lib-setup/setup:213
+#: ../initrd-scripts/usr-lib-setup/setup:235
 msgid "BASIC"
 msgstr "ΒΑΣΙΚΗ"
 
-#: ../initrd-scripts/usr-lib-setup/setup:249
-#: ../initrd-scripts/usr-lib-setup/setup:271
+#: ../initrd-scripts/usr-lib-setup/setup:213
+#: ../initrd-scripts/usr-lib-setup/setup:235
 msgid "Install a minimal graphical environment"
 msgstr "Εγκαταστήστε ένα ελάχιστο γραφικό περιβάλλον"
 
-#: ../initrd-scripts/usr-lib-setup/setup:250
-#: ../initrd-scripts/usr-lib-setup/setup:272
+#: ../initrd-scripts/usr-lib-setup/setup:214
+#: ../initrd-scripts/usr-lib-setup/setup:236
 msgid "Install a minimal console system"
 msgstr "Εγκαταστήστε ένα ελάχιστο σύστημα κονσόλας"
 
-#: ../initrd-scripts/usr-lib-setup/setup:259
+#: ../initrd-scripts/usr-lib-setup/setup:223
 msgid ""
 "FULL (default) will install everything. That includes one application per "
 "task, such as an office suite, a multimedia player, a CD/DVD burner etc."
 msgstr "Η ΠΛΗΡΗΣ (εξ ορισμού επιλογή) εγκαθιστά τα πάντα. Αυτό περιλαμβάνει μία εφαρμογή ανά χρήση, όπως μία σουίτα γραφείου, μία εφαρμογή αναπαραγωγής πολυμέσεων, μία εφαρμογή εγγραφής οπτικών δίσκων κλπ."
 
-#: ../initrd-scripts/usr-lib-setup/setup:270
+#: ../initrd-scripts/usr-lib-setup/setup:234
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:138
 #: ../initrd-scripts/usr-lib-setup/slackinstall:162
 msgid "FULL"
 msgstr "ΠΛΗΡΗΣ"
 
-#: ../initrd-scripts/usr-lib-setup/setup:270
+#: ../initrd-scripts/usr-lib-setup/setup:234
 msgid "Install everything"
 msgstr "Εγκαταστήστε τα πάντα"
 
-#: ../initrd-scripts/usr-lib-setup/setup:298
+#: ../initrd-scripts/usr-lib-setup/setup:262
 msgid "REPLACE /etc/fstab?"
 msgstr "ΝΑ ΑΝΤΙΚΑΤΑΣΤΑΘΕΙ το  /etc/fstab ;"
 
-#: ../initrd-scripts/usr-lib-setup/setup:299
+#: ../initrd-scripts/usr-lib-setup/setup:263
 msgid "You already have an /etc/fstab on your install partition."
 msgstr "Έχετε ήδη ένα αρχείο /etc/fstab στο διαμέρισμα εγκατάστασή σας."
 
-#: ../initrd-scripts/usr-lib-setup/setup:302
+#: ../initrd-scripts/usr-lib-setup/setup:266
 msgid ""
 "If you were just adding software, you should probably keep your old "
 "/etc/fstab."
 msgstr "Αν απλά προσθέτετε λογισμικό, μάλλον θα πρέπει να κρατήσετε το παλιό /etc/fstab."
 
-#: ../initrd-scripts/usr-lib-setup/setup:305
+#: ../initrd-scripts/usr-lib-setup/setup:269
 msgid ""
 "If you've changed your partitioning scheme, you should use the new "
 "/etc/fstab."
 msgstr "Εάν έχετε αλλάξει το χάρτη διαμέρισής σας, θα πρέπει να χρησιμοποιήσετε το νέο αρχείο /etc/fstab."
 
-#: ../initrd-scripts/usr-lib-setup/setup:308
+#: ../initrd-scripts/usr-lib-setup/setup:272
 msgid "Do you want to replace your old /etc/fstab with the new one?"
 msgstr "Θέλετε να αντικατασταθεί το παλιό /etc/fstab με το νέο;"
 
-#: ../initrd-scripts/usr-lib-setup/setup:372
-#: ../initrd-scripts/usr-lib-setup/setup:379
+#: ../initrd-scripts/usr-lib-setup/setup:336
+#: ../initrd-scripts/usr-lib-setup/setup:343
 msgid "SALIX INSTALLATION IS COMPLETE"
 msgstr "Η ΕΓΚΑΤΑΣΤΑΣΗ ΤΟΥ SALIX ΟΛΟΚΛΗΡΩΘΗΚΕ"
 
-#: ../initrd-scripts/usr-lib-setup/setup:373
-#: ../initrd-scripts/usr-lib-setup/setup:380
+#: ../initrd-scripts/usr-lib-setup/setup:337
+#: ../initrd-scripts/usr-lib-setup/setup:344
 msgid "Reboot now"
 msgstr "Επανεκκίνηση τώρα"
 
-#: ../initrd-scripts/usr-lib-setup/setup:374
-#: ../initrd-scripts/usr-lib-setup/setup:381
+#: ../initrd-scripts/usr-lib-setup/setup:338
+#: ../initrd-scripts/usr-lib-setup/setup:345
 msgid "Exit to command line"
 msgstr "Έξοδος στη γραμμή εντολών"
 
-#: ../initrd-scripts/usr-lib-setup/setup:375
+#: ../initrd-scripts/usr-lib-setup/setup:339
 msgid ""
 "System configuration and installation is complete. Please remove the "
 "installation disc. You can either select to reboot your system now or choose"
@@ -268,7 +253,7 @@ msgid ""
 "manual tweaking."
 msgstr "Η διαμόρφωση του συστήματος και η εγκατάσταση ολοκληρώθηκαν. Παρακαλώ αφαιρέστε το δίσκο εγκατάστασης. Μπορείτε είτε να επιλέξετε να επανεκκινήσετε το σύστημά σας τώρα ή να επιλέξετε να βγείτε από την εγκατάσταση στη γραμμή εντολών αν θέλετε να κάνετε οποιεσδήποτε χειροκίνητες μικροαλλαγές."
 
-#: ../initrd-scripts/usr-lib-setup/setup:382
+#: ../initrd-scripts/usr-lib-setup/setup:346
 msgid ""
 "System configuration and installation is complete. You can either select to "
 "reboot your system now or choose to exit the installation to the command "
@@ -919,7 +904,6 @@ msgstr "ΜΗ ΕΓΚΥΡΗ ΕΙΚΟΝΑ ISO"
 #: ../initrd-scripts/usr-lib-setup/INShd:169
 #: ../initrd-scripts/usr-lib-setup/INShd:188
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:540
-#: ../initrd-scripts/usr-lib-setup/autoinstall:263
 msgid "OK"
 msgstr "ΟΚ"
 
@@ -1125,7 +1109,6 @@ msgstr "Τώρα αυτή η κατάτμηση πρέπει να προσαρτ
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:216
 #: ../initrd-scripts/usr-lib-setup/SeTEFI:73
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:535
-#: ../initrd-scripts/usr-lib-setup/autoinstall:259
 msgid "Adding this information to your /etc/fstab:"
 msgstr "Προσθέτοντας αυτές τις πληροφορίες στο /etc/fstab:"
 
@@ -1498,7 +1481,6 @@ msgstr "\nΓίνεται προσπάθεια λήψης μιας απομεμα
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:123
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:146
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:165
-#: ../initrd-scripts/usr-lib-setup/autoinstall:69
 msgid "FORMATTING"
 msgstr "ΔΙΑΜΟΡΦΩΣΗ (FORMAT)"
 
@@ -1714,7 +1696,6 @@ msgid "Select Linux installation partition:"
 msgstr "Επιλογή μιας κατάτμησης για την εγκατάσταση:"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:325
-#: ../initrd-scripts/usr-lib-setup/autoinstall:107
 msgid "Cancel"
 msgstr "Ακύρωση"
 
@@ -1864,90 +1845,6 @@ msgstr "Ο πρώτος χρήστης που θα δημιουργήσετε, �
 #: ../initrd-scripts/usr-lib-setup/SeTusers:17
 msgid "The root user is disabled by default."
 msgstr "Ο χρήστης root είναι απενεργοποιημένος από προεπιλογή."
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:25
-#: ../initrd-scripts/usr-lib-setup/autoinstall:108
-#: ../initrd-scripts/usr-lib-setup/autoinstall:129
-#: ../initrd-scripts/usr-lib-setup/autoinstall:142
-#: ../initrd-scripts/usr-lib-setup/autoinstall:205
-#: ../initrd-scripts/usr-lib-setup/autoinstall:209
-#: ../initrd-scripts/usr-lib-setup/autoinstall:262
-msgid "AUTO PARTITION"
-msgstr "ΑΥΤΟΜΑΤΗ ΔΙΑΜΕΡΙΣΗ ΔΙΣΚΟΥ"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:26
-#: ../initrd-scripts/usr-lib-setup/autoinstall:210
-#, sh-format
-msgid "Please wait while ${DISK} is being prepared for Salix"
-msgstr "Παρακαλώ περιμένετε ενώ ${DISK} ετοιμάζεται για Salix"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:64
-#, sh-format
-msgid "Formatting $PART"
-msgstr "Διαμόρφωση $PART"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:66
-#, sh-format
-msgid "Size in 1K blocks: $SIZE"
-msgstr "Μέγεθος σε 1 blocks: $SIZE"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:68
-msgid "Filesystem type:xfs"
-msgstr "Σύστημα αρχείων: xfs"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:70
-#, sh-format
-msgid "Formatting $PART with filesystem xfs."
-msgstr "Διαμόρφωση $PART σε σύστημα αρχείων xfs."
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:106
-msgid "Do It"
-msgstr "Κάνε το"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:109
-msgid "This is automatic partition mode."
-msgstr "Αυτό είναι αυτόματη λειτουργία διαμερισμάτων."
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:110
-msgid "Press <SPACE> to select the target disk where Salix will be installed."
-msgstr "Πατήστε <SPACE> για να επιλέξετε το δίσκο όπου θα εγκατασταθεί το Salix."
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:112
-msgid "All data will be erased from the target disk."
-msgstr "Όλα τα δεδομένα θα διαγραφούν από το δίσκο στόχο."
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:113
-msgid "Only run this mode if the entire disk will be dedicated to Salix."
-msgstr "Εκτελέσετε αυτή τη λειτουργία μόνο εάν ολόκληρος ο δίσκος θα είναι αφιερωμένος στο Salix."
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:130
-#, sh-format
-msgid "Are you sure you want to globally erase existing data from ${DISK}?"
-msgstr "Είστε βέβαιοι ότι θέλετε να διαγράψετε όλα τα  υπάρχοντα δεδομένα από ${DISK};"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:133
-msgid "Go back to the main setup menu"
-msgstr "Επιστρέψτε στο κύριο μενού ρύθμισης"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:134
-#, sh-format
-msgid "${DISK} is dedicated to Salix"
-msgstr "Ο ${DISK} είναι αφιερωμένος στο Salix"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:142
-msgid "No target disk selected, going back to main menu"
-msgstr "Δεν επιλέχθηκε δίσκος προορισμού, επιστροφή στο κύριο μενού"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:206
-#, sh-format
-msgid ""
-"${DISK} is only $DisksizeInKB KB, you need at least 3000000 KB to install "
-"Salix"
-msgstr "${DISK} είναι μόνο $DisksizeInKB KB, θα πρέπει να έχετε τουλάχιστον 3000000 KB για την εγκατάσταση του Salix"
-
-#: ../initrd-scripts/usr-lib-setup/autoinstall:257
-msgid "Partitioning completed."
-msgstr "Η διαμόρφωση καταλόγων ολοκληρώθηκε."
 
 #: ../initrd-scripts/usr-lib-setup/slackinstall:55
 msgid "FTP/HTTP DOWNLOAD FAILURE"
