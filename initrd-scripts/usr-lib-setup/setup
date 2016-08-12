@@ -59,7 +59,6 @@ select your keyboard map (keymap). The current keymap is \\\$KMAP."`" 0 0
 
 while [ 0 ]; do
 
-if [ -d /sys/firmware/efi ]; then
 dialog --title "`gettext "Salix Installation"`" \
 --ok-label "`gettext "Select"`" \
 --cancel-label "`gettext "Exit installation"`" \
