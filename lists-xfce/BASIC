@@ -70,6 +70,7 @@ glu
 gmime
 gnome-themes-standard
 gnsu
+gobject-introspection
 gsettings-desktop-schemas
 gslapt
 gst-plugins-base
