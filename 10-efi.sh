@@ -44,7 +44,7 @@ rm -rf efi
 mkdir -p efi/EFI/BOOT
 
 # Create the efiboot.img file
-dd if=/dev/zero of=isolinux/x86_64/efiboot.img bs=1K count=260
+dd if=/dev/zero of=isolinux/x86_64/efiboot.img bs=1M count=51
 
 # Format the image as FAT12:
 mkdosfs -F 12 isolinux/x86_64/efiboot.img
@@ -54,16 +54,26 @@ MOUNTPOINT=$(mktemp -d)
 mount -o loop isolinux/x86_64/efiboot.img $MOUNTPOINT
 
 # Create efi/EFI/BOOT inside the efiboot.img file
-mkdir -p $MOUNTPOINT/efi/efi/BOOT
+mkdir -p $MOUNTPOINT/EFI/BOOT
 
 # Copy elilo-x86_64.efi from the host system (make sure the latest
 # version of elilo is installed)
-cp /boot/elilo-x86_64.efi $MOUNTPOINT/efi/EFI/BOOT/BOOTx64.EFI
+cp /boot/elilo-x86_64.efi $MOUNTPOINT/EFI/BOOT/BOOTx64.EFI
 # Now also in the efi directory
 cp /boot/elilo-x86_64.efi efi/EFI/BOOT/BOOTx64.EFI
 
 # Finally copy elilo menu files
+# in the efiboot.img
+cp efi-files/* $MOUNTPOINT/EFI/BOOT/
+# as well as the efi directory...
 cp efi-files/* efi/EFI/BOOT/
+
+# copy the kernel in the same places...
+cp kernel/x86_64/huge.s/bzImage $MOUNTPOINT/EFI/BOOT/
+cp kernel/x86_64/huge.s/bzImage efi/EFI/BOOT/
+# and put the initrd in there too
+cp initrd/x86_64/initrd.img $MOUNTPOINT/EFI/BOOT/
+cp initrd/x86_64/initrd.img efi/EFI/BOOT/
 
 # Unmount and clean up:
 umount $MOUNTPOINT
