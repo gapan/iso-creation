@@ -39,7 +39,7 @@ answer="$(eval dialog \
 	--title \"Enter Salix version\" \
 	--stdout \
 	--inputbox \
-	\"Enter the salix version you want to create the iso for.\n\You can add suffixes like alpha1, beta1, RC1 etc here.:\" \
+	\"Enter the salix version you want to create the iso for. You can add suffixes like alpha1, beta1, RC1 etc here.:\" \
 	0 0 )"
 retval=$?
 if [ $retval -eq 1 ] || [ $retval -eq 255 ]; then
