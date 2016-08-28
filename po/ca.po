@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-08 18:53+0300\n"
-"PO-Revision-Date: 2016-08-08 15:54+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"PO-Revision-Date: 2016-08-13 14:30+0000\n"
+"Last-Translator: Davidmp <medipas@gmail.com>\n"
 "Language-Team: Catalan (http://www.transifex.com/gapan/salix/language/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -453,7 +453,7 @@ msgid ""
 "No IDE/SCSI drive, so we will try scanning for CD drives on old proprietary interfaces, such as SoundBlaster pre-IDE CD drives, Sony CDU-31a, Sony 535, old Mitsumi pre-IDE, old Optics, etc.  For this scan to work at all, you'll need to be using a bootdisk that supports your CD drive.\n"
 "\n"
 "Please press ENTER to begin this last-chance scan for old, obsolete hardware."
-msgstr ""
+msgstr "No hi ha cap dispositiu IDE/SCSI, per això s'intentarà explorar si hi ha dispositius de CD d'antigues interfícies de propietat, com ara unitats de CD preIDE SoundBlaster, Sony CDU-31a, Sony 535, l'antic Mitsumi preIDE, antigues òptiques, etc. Perquè aquesta exploració funcioni, haureu d'utilitzar un disc d'arrencada que tingui suport per a la vostra unitat de CD.\n\nSi us plau, premeu RETORN per iniciar l'exploració d'última oportunitat per a maquinari antic, obsolet."
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:174
 msgid "CD/DVD DRIVE NOT FOUND"
@@ -471,13 +471,13 @@ msgid ""
 "information on forcing the detection of your drive, and then reattempt "
 "installation.  If all else fails, see FAQ.TXT for information about copying "
 "parts of this CD to your DOS partition and installing it from there."
-msgstr ""
+msgstr "No s'ha pogut trobar una unitat de CD/DVD a cap dels dispositius que s'ha explorat. Les possibles raons inclouen l'ús d'un disc d'arrencada o d'un nucli que no té suport per a la vostra unitat, que no pot passar paràmetres necessaris d'alguns controladors al nucli, no tenir el disc de Salix a la unitat de CD/DVD o l'ús d'una unitat connectada a una targeta de so Plug and Play (en aquest cas, connectar la unitat directament a la interfície IDE sovint ajuda). Si us plau, assegureu-vos que utilitzeu el disc d'arrencada correcte per al vostre maquinari, consulteu el fitxer BOOTING per a informació possible sobre forçar la detecció del vostre dispositiu i després torneu a intentar la instal·lació. Si tota la resta falla, consulteu FAQ.TXT per obtenir informació sobre com copiar parts d'aquest CD a la partició de DOS i instal·lar el sistema des d'allà."
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:187
 msgid ""
 "You will now be returned to the main menu.  If you want to try looking for "
 "the CD again, you may skip directly to the SOURCE menu selection."
-msgstr ""
+msgstr "Ara tornareu al menú principal. Si voleu provar de cercar el CD un altre cop, podeu passar directament al menú de selecció de FONTS."
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:197
 msgid "CD/DVD DRIVE FOUND"
@@ -499,7 +499,7 @@ msgid ""
 "the device name is incorrect, the disc is not in the drive, or the kernel "
 "you are using does not support the device. (possibly an incorrect bootdisk) "
 "What would you like to do now?"
-msgstr ""
+msgstr "S'ha produït un error en intentar muntar el CD/DVD a $DRIVE_FOUND. Potser el nom del dispositiu no és correcte, el disc no és a la unitat o el nucli que utilitzeu no és compatible amb el dispositiu. (Possiblement un disc d'arrencada incorrecte.) Què voleu fer ara?"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:208
 msgid "Abort CD installation"
@@ -528,14 +528,14 @@ msgid ""
 "Good! We're all set on the local end, but now we need to know where to find "
 "the software packages to install.  First, we need the IP address of the "
 "machine where the Salix sources are stored."
-msgstr ""
+msgstr "Bé! Ja estem pel que fa a la configuració local, però ara hem de saber on trobar els paquets de programari per instal·lar. En primer lloc, necessitem l'adreça IP de la màquina on s'emmagatzemen les fonts de Salix."
 
 #: ../initrd-scripts/usr-lib-setup/INSNFS:30
 #: ../initrd-scripts/usr-lib-setup/INSURL:72
 msgid ""
 "Since you're already running on the network, you should be able to use the "
 "hostname instead of an IP address if you wish."
-msgstr ""
+msgstr "Atès que ja està funcionant la xarxa, hauríeu de ser capaços d'utilitzar el nom d'amfitrió en lloc d'una adreça IP si ho desitgeu."
 
 #: ../initrd-scripts/usr-lib-setup/INSNFS:35
 msgid "What is the IP address of your NFS server?"
@@ -551,14 +551,14 @@ msgstr "ESCRIVIU L'ADREÇA IP DEL SERVIDOR NFS"
 msgid ""
 "There must be a directory on the server with the Salix packages and files "
 "arranged in a tree like the FTP site."
-msgstr ""
+msgstr "Hi ha d'haver un directori al servidor amb els paquets del Salix i amb els fitxers classificats en un arbre com al lloc FTP."
 
 #: ../initrd-scripts/usr-lib-setup/INSNFS:50
 msgid ""
 "The installation script needs to know the name of the directory on your "
 "server that contains the series' subdirectories. For example, if your A "
 "series is found at /stuff/salix/a, then you would respond: /stuff/salix"
-msgstr ""
+msgstr "L'script d'instal·lació necessita saber el nom del directori del servidor que conté els subdirectoris de la sèrie. Per exemple, si les sèries A són a /stuff/salix/a, llavors hauríeu de respondre \"/stuff/salix\"."
 
 #: ../initrd-scripts/usr-lib-setup/INSNFS:55
 #: ../initrd-scripts/usr-lib-setup/INSSMB:55
@@ -684,7 +684,7 @@ msgid ""
 "Good! We're all set on the local end, but now we need to know where to find "
 "the software packages to install. First, we need the URL of the ftp or http "
 "server where the Salix sources are stored."
-msgstr ""
+msgstr "Bé! Estem preparats localment, però ara hem de saber on trobar els paquets de programari per a instal·lar. En primer lloc, necessitem l'adreça URL del servidor FTP o HTTP on s'emmagatzemen les fonts de Salix."
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:68
 msgid "URL examples are:"
@@ -703,7 +703,7 @@ msgid ""
 "The installation script needs to know the name of the directory on your "
 "server that contains the series subdirectories. For example, if your A "
 "series is found at /stuff/salix/a, then you would respond: /stuff/salix"
-msgstr ""
+msgstr "L'script d'instal·lació necessita saber el nom del directori del servidor que conté els subdirectoris de la sèrie. Per exemple, si les sèries A són a /stuff/salix/a, llavors respondríeu \"/stuff/salix\"."
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:107
 msgid "In the next screen you should watch for possible errors."
@@ -713,7 +713,7 @@ msgstr "A la pantalla següent hauríeu de mirar si hi ha errors."
 msgid ""
 "First, we'll download the PACKAGES.TXT from the parent of the directory that you entered before (which should be the root of the remote Salix tree).  If that succeeds, then we use PACKAGES.TXT to reconstruct a local cache of the package tree (should take a minute or less on an average system).\n"
 "After that, we're all set to go!"
-msgstr ""
+msgstr "Primer es baixarà PACKAGES.TXT de l'arrel del directori que heu escrit abans (que hauria de ser l'arrel de l'arbre remot de Salix). Si surt bé, llavors es farà servir PACKAGES.TXT per reconstruir una cau local de l'arbre de paquets (hauria de trigar un minut o menys, en un sistema normal).\nDesprés d'això, ja estarem a punt!"
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:117
 msgid "Downloading PACKAGES.TXT at the Salix root starts after you press OK."
@@ -860,7 +860,7 @@ msgstr "Si us plau, proporcioneu un camí a un directori que contigui els contin
 msgid ""
 "Note: You may use any directory within the current filesystem except '/mnt' "
 "or '/var/log/mount' as these are required by setup."
-msgstr ""
+msgstr "Nota: podeu usar qualsevol directori del sistema de fitxers actual excepte \"/mnt\" o \"/var/log/mount\", ja que són necessaris per a la configuració."
 
 #: ../initrd-scripts/usr-lib-setup/INSdir:49
 msgid "SELECT A PRE-MOUNTED DIRECTORY"
@@ -919,7 +919,7 @@ msgstr "Si us plau, reinicieu l'ordinador i torneu-ho a intentar."
 msgid ""
 "Please specify which partition on your hard disk or USB stick contains the "
 "contents (or an ISO image) of a Salix installation disc."
-msgstr ""
+msgstr "Si us plau, especifiqueu quina partició del disc dur o memòria USB conté els continguts (o una imatge ISO) d'un disc d'instal·lació de Salix."
 
 #: ../initrd-scripts/usr-lib-setup/INShd:43
 msgid "Example:"
@@ -953,7 +953,7 @@ msgstr "EL MUNTATGE ÉS CORRECTE"
 msgid ""
 "Now please provide the path to a directory containing the contents (or an "
 "ISO image) of a Salix installation disc."
-msgstr ""
+msgstr "Si us plau, proporcioneu un camí a un directori que contigui els continguts (o la imatge ISO) d'un disc d'instal·lació de Salix."
 
 #: ../initrd-scripts/usr-lib-setup/INShd:118
 msgid ""
@@ -981,7 +981,7 @@ msgid ""
 "level can range from no access at all, to read-only for everyone, to read-"
 "write access for every user on the machine.  A reasonable default (read-"
 "write for root only) is chosen, but you may set this any way that you like."
-msgstr ""
+msgstr "Atès que els usuaris podrien fer espionatge a través de (o destruir, depenent de la configuració) la partició de Windows, hauríeu de triar el nivell d'accés que us agradaria que els usuaris no root tinguessin a la partició $DOS_PART. El nivell d'accés pot anar d'un no-accés, a només de lectura per a tothom, o a accés de lectura i escriptura per a tots els usuaris de la màquina. Per defecte es tria un valor raonable (lectura i escriptura per a només root), però ho podeu establir de la manera que vulgueu."
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:38
 msgid "Root has read/write access, users have no access (ntfs-3g)"
@@ -1038,7 +1038,7 @@ msgid ""
 "Partitions of type FAT or NTFS (commonly used by DOS and Windows) have been "
 "found on your system.  Would you like to add these partitions to your "
 "/etc/fstab so that these partitions are visible from Linux?"
-msgstr ""
+msgstr "S'han trobat particions del tipus FAT o NTFS (generalment utilitzades per DOS i Windows). Us agradaria afegir aquestes particions al vostre /etc/fstab perquè aquestes particions siguin visibles des de Linux?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:113
 msgid "Selecting non-Linux partitions."
@@ -1058,7 +1058,7 @@ msgid ""
 "In order to make these partitions visible from Linux, we  need to add them "
 "to your /etc/fstab.  Please pick a partition to  add to /etc/fstab, or "
 "select '---' to continue with the installation  process."
-msgstr ""
+msgstr "Per tal de fer que aquestes particions siguin visibles des de Linux, cal afegir-les a /etc/fstab. Si us plau, trieu una partició per afegir a /etc/fstab, o seleccioneu \"---\" per continuar amb el procés d'instal·lació."
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:140
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:164
@@ -1098,7 +1098,7 @@ msgid ""
 "instance, you might want to  enter /fat-c or /fat-d or something similar.   "
 "NOTE: This partition will not actually be mounted until you reboot.   Where "
 "would you like to mount $DOS_PART?"
-msgstr ""
+msgstr "Ara aquesta partició s'ha de muntar en algun lloc del vostre arbre de directoris. Si us plau, escriviu el directori sota el qual la voleu posar. Per exemple, potser voldríeu escriure /fat-c o /fat-d o alguna cosa semblant. NOTA: aquesta partició no es muntarà fins que no reinicieu. On voleu muntar $DOS_PART?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:216
 #: ../initrd-scripts/usr-lib-setup/SeTEFI:73
@@ -1124,7 +1124,7 @@ msgstr "ES FORMATA LA PARTICIÓ EFI ${PREFERRED_EFI_PARTITION}?"
 msgid ""
 "An EFI System Partition was found on ${PREFERRED_EFI_PARTITION}, but it has "
 "not yet been formatted.  Would you like to format this partition?"
-msgstr ""
+msgstr "S'ha trobat una partició EFI de sistema a\n${PREFERRED_EFI_PARTITION}, però encara no s'ha formatat. Voleu formatar aquesta partició?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTEFI:53
 #, sh-format
@@ -1208,7 +1208,7 @@ msgstr "Configuració d'IBus"
 msgid ""
 "IBus is an input platform for Chinese, Japanese, Korean and many other "
 "languages. Do you want to have it enabled or disabled on boot?"
-msgstr ""
+msgstr "L'IBus és una plataforma d'entrada per a xinès, japonès, coreà i moltes altres llengües. Voleu tenir-lo activat o desactivat a l'arrencada?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:238
 msgid "SCIM configuration"
@@ -1218,7 +1218,7 @@ msgstr "CONFIGURACIÓ D'SCIM"
 msgid ""
 "SCIM is an input platform for Chinese, Japanese, Korean and many other "
 "languages. Do you want to have it enabled or disabled on boot?"
-msgstr ""
+msgstr "L'SCIM és una plataforma d'entrada per a xinès, japonès, coreà i moltes altres llengües. Voleu tenir-lo activat o desactivat a l'arrencada?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:21
 msgid "Go"
@@ -1237,14 +1237,14 @@ msgid ""
 "Welcome to the Salix partition editor. Press <SPACE> to select a disk and "
 "select Go to start partitioning. If you don't want to alter the partition "
 "layout, select Exit."
-msgstr ""
+msgstr "Us donem la benvinguda a l'editor de particions del Salix. Premeu la <Barra espaiadora> per seleccionar un disc i marqueu Som-hi per començar les particions. Si no voleu modificar la distribució de particions, seleccioneu Surt."
 
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:28
 msgid ""
 "NOTE: If you are planning to use BTRFS for your / filesystem, LILO the "
 "default boot loader will not be able to boot it. In that case, you will need"
 " a separate /boot partition with another filesystem."
-msgstr ""
+msgstr "NOTA: si teniu pensat fer servir BTRFS per al sistema de fitxers /, el carregador d'arrencada per defecte LILO no serà capaç d'arrencar-lo. En aquest cas, necessitareu una partició /boot separada amb un altre sistema de fitxers."
 
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:33
 msgid "You usually need at least 2 partitions:"
@@ -1272,7 +1272,7 @@ msgid ""
 "delete to reboot and try again.  Before doing that, you might want to switch"
 " to another console (Alt-F2) and use df (disk free utility) to see if you "
 "can get an idea of how to avoid this the next time around."
-msgstr ""
+msgstr "La configuració ha detectat que una o més de les particions de destinació s'ha emplenat. Ho sento, però haureu de tornar a intentar la instal·lació en una partició o particions amb més espai lliure. També podeu provar de seleccionar menys paquets per instal·lar. Atès que ja no hi ha espai perquè la configuració faci els seus fitxers temporals, això és un error irrecuperable. Premeu Control-Alt-Suprimir per reiniciar i tornar-ho a intentar. Abans de fer-ho, és possible que vulgueu canviar a una altra consola (Alt-F2) i usar df (utilitat d'alliberament de disc) per veure si podeu tenir una idea per evitar això la propera vegada."
 
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:18
 msgid "KEYBOARD MAP SELECTION"
@@ -1284,7 +1284,7 @@ msgid ""
 "You may select one of the following keyboard maps.  If you do not select a "
 "keyboard map, $DefaultKeyMap is the current value.  Use the UP/DOWN arrow "
 "keys and PageUp/PageDown to scroll through the whole list of choices."
-msgstr ""
+msgstr "Podeu seleccionar una de les disposicions de teclat següents.  Si no en seleccioneu cap, el valor actual és $DefaultKeyMap.  Useu les fletxes AMUNT i AVALL i les tecles d'avançar i retrocedir pàgines per desplaçar-vos per tota la llista."
 
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:198
 msgid "Test keyboard map"
@@ -1304,7 +1304,7 @@ msgid ""
 "the keyboard map or reject it and select another one. The installer only "
 "supports ASCII characters, so don't try any special characters here or use "
 "them during installation!"
-msgstr ""
+msgstr "Ara podeu provar el nou mapa de teclat escrivint una mica de text. Podeu acceptar la disposició del teclat o rebutjar-la i seleccionar-ne una altra. El programa d'instal·lació només és compatible amb caràcters ASCII; per tant, no intenteu cap caràcter especial aquí ni durant la instal·lació!"
 
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:11
 msgid "Select Salix installation source."
@@ -1363,7 +1363,7 @@ msgid ""
 "Are you OK with the network interface which was detected? If not, select 'No' to get back to the network probe program. You can try to load another driver explicitly, by using 'P <driver_name>'.\n"
 "\n"
 "If you are satisfied, select 'Yes' to continue with network configuration."
-msgstr ""
+msgstr "\nEsteu d'acord en la interfície de xarxa que s'ha detectat? Si no, seleccioneu \"No\" per tornar al programa de sondeig de xarxes. Podeu intentar carregar un altre connector de manera explícita usant \"P <nom_del_connector>\".\n\nSi ja us sembla bé, seleccioneu \"Sí\" per continuar la configuració de la xarxa."
 
 #: ../initrd-scripts/usr-lib-setup/SeTnet:135
 #: ../initrd-scripts/usr-lib-setup/SeTnet:291
@@ -1374,14 +1374,14 @@ msgstr "S'INICIA LA XARXA"
 msgid ""
 "\n"
 "Waiting a few seconds for DHCP polling to settle ..."
-msgstr ""
+msgstr "\nS'esperen uns segons perquè el sondeig DHCP es resolgui..."
 
 #: ../initrd-scripts/usr-lib-setup/SeTnet:159
 msgid ""
 "You're running off the hard drive filesystem. Is this machine currently running on the network you plan to install from? If so, we won't try to reconfigure your ethernet card.\n"
 "\n"
 "Are you up-and-running on the network?"
-msgstr ""
+msgstr "Esteu executant el sistema de fitxers del disc dur. Aquesta màquina s'està executant a la xarxa des de la qual voleu fer la instal·lació? Si és així, no s'intentarà reconfigurar la targeta ethernet.\n\nEsteu funcionant amb la xarxa?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTnet:164
 #: ../initrd-scripts/usr-lib-setup/SeTnet:284
@@ -1395,7 +1395,7 @@ msgid ""
 "I can configure your network interface $ENET_DEVICE fully automatically using DHCP. If you want this, please select 'yes'.\n"
 "\n"
 "If you select 'no' instead, then you will be able to assign the IP address, netmask and gateway manually.\n"
-msgstr ""
+msgstr "\nPuc configurar la interfície de xarxa $ENET_DEVICE de forma totalment automàtica mitjançant DHCP. Si ho voleu així; si us plau, seleccioneu \"sí\".\n\nSi en canvi seleccioneu \"no\", podreu assignar l'adreça IP, la màscara de xarxa i la passarel·la manualment.\n"
 
 #: ../initrd-scripts/usr-lib-setup/SeTnet:180
 msgid "DHCP CONFIGURATION"
@@ -1407,7 +1407,7 @@ msgid ""
 "You will need to enter the IP address you wish to assign to this machine. Example: 111.112.113.114\n"
 "\n"
 "What is your IP address?"
-msgstr ""
+msgstr "\nHaureu d'escriure l'adreça IP que vulgueu assignar a aquesta màquina. Exemple: 111.112.113.114\n\nQuina és la vostra adreça IP?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTnet:213
 msgid "ASSIGN IP ADDRESS"
@@ -1419,7 +1419,7 @@ msgid ""
 "Now we need to know your netmask. Typically this will be 255.255.255.0 but this can be different depending on your local setup.\n"
 "\n"
 "What is your netmask?"
-msgstr ""
+msgstr "\nAra necessitem saber la màscara de xarxa. Normalment, això serà 255.255.255.0 però pot ser diferent depenent de la configuració local.\n\nQuina és la màscara de xarxa?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTnet:231
 msgid "ASSIGN NETMASK"
@@ -1448,7 +1448,7 @@ msgid ""
 "\n"
 "* IP Address: $LOCAL_IPADDR\n"
 "* Netmask:    $LOCAL_NETMASK"
-msgstr ""
+msgstr "\nAquesta és la configuració de xarxa proposada per a $ENET_DEVICE. Si és correcta, seleccioneu \"Sí\".\nSi no és correcta i voleu tornar-la a configurar, seleccioneu \"No\".\n\n* Adreça IP: $LOCAL_IPADDR\n* Màscara de xarxa: $LOCAL_NETMASK"
 
 #: ../initrd-scripts/usr-lib-setup/SeTnet:292
 #, sh-format
@@ -1466,7 +1466,7 @@ msgstr "S'OBTÉ LA CONFIGURACIÓ"
 msgid ""
 "\n"
 "Attempting to fetch a remote configuration file using $PROTO ..."
-msgstr ""
+msgstr "\nS'intenta obtenir un fitxer de configuració remot usant $PROTO..."
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:27
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:48
@@ -1719,7 +1719,7 @@ msgid ""
 "mount partitions.  Also, do not reuse a partition that you've already "
 "entered before.  Please select one of the Linux partitions listed below, or "
 "if you're done, hit <Continue>."
-msgstr ""
+msgstr "Sembla que teniu més d'una partició etiquetada com a tipus de Linux. Les podeu usar per distribuir el sistema Linux a través de més d'una partició. Ara teniu $ROOT_DEVICE muntada com a partició /. Potser voldríeu muntar directoris com ara /home o /usr/local en particions separades. No hauríeu d'intentar muntar muntar /etc, /sbin o /bin en particions separades pròpies ja que contenen utilitats necessàries per fer funcionar el sistema i muntar particions. Tampoc no reutilitzeu una partició que ja hàgiu escrit abans. Si us plau, seleccioneu una de les particions de la llista següent o, si ja esteu, premeu <Continua>."
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:453
 #, sh-format
@@ -1741,7 +1741,7 @@ msgstr "SELECCIONEU UN PUNT DE MUNTATGE PER A $NEXT_PARTITION"
 msgid ""
 "OK, now you need to specify where you want the new partition mounted.  For example, if you want to put it under /usr/local, then respond:  /usr/local\n"
 "Where would you like to mount $NEXT_PARTITION?"
-msgstr ""
+msgstr "D'acord, ara heu d'especificar el punt de muntatge de la nova partició. Per exemple, si voleu que es posi sota /usr/local, responeu \"/usr/local\".\nOn voleu que es munti $NEXT_PARTITION?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:538
 msgid "Finished setting up Linux partitions."
@@ -1857,7 +1857,7 @@ msgid ""
 " package to be unable to be read without error.  You may hit enter to "
 "continue if you wish, but if this is an important required package then your"
 " installation may not work as-is."
-msgstr ""
+msgstr "Hi ha hagut un error fatal intentant instal·lar $ArG2. El paquet pot ser corrupte, el mitjà d'instal·lació pot ser incorrecte o alguna altra cosa ha causat que el paquet no es pugui llegir sense cap error. Podeu prémer retorn per continuar, si ho voleu, però aquest és un paquet necessari important i pot ser que la instal·lació no funcioni en aquestes condicions."
 
 #: ../initrd-scripts/usr-lib-setup/slackinstall:115
 msgid "Installing package set:"
