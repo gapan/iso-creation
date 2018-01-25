@@ -91,8 +91,17 @@ slapt-get --clean
 	else
 		FULLPKG=""
 	fi
+	if [[ "$arch" == "x86_64" ]]; then
+		if [ -f lists/EFI ]; then
+			EFIPKG=`cat lists/EFI`
+		fi
+		if [ -f lists/EFI-GUI ]; then
+			EFIGUIPKG=`cat lists/EFI-GUI`
+		fi
+	fi
 	SETTINGSPKG=`cat lists/SETTINGS`
-	for i in $AAAPKG $KERNELPKG $COREPKG $BASICPKG $FULLPKG $SETTINGSPKG; do
+	for i in $AAAPKG $KERNELPKG $COREPKG $BASICPKG $FULLPKG $EFIPKG \
+		$EFIGUIPKG $SETTINGSPKG; do
 		slapt-get -d --no-dep --reinstall -c slapt-getrc.$arch -i $i
 	done
 } 2>&1 | tee download-$arch.log
