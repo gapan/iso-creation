@@ -171,7 +171,7 @@ Filesystem type: xfs"`" 0 0
    if mount | grep "$1 " 1> $NDIR 2> $NDIR ; then
       umount $1 2> $NDIR
    fi
-   mkfs.xfs -f $1 1> $REDIR 2> $REDIR
+   mkfs.xfs -n ftype=1 -f $1 1> $REDIR 2> $REDIR
 }
 
 # gen_part_list() - Prints out a partition listing for the system into the
