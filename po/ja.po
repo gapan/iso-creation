@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# ふうせん Fu-sen. | BALLOON a.k.a. Fu-sen., 2016
 # tsuren <hydrangea_and_snail@hotmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-08 18:53+0300\n"
-"PO-Revision-Date: 2016-08-08 15:54+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"PO-Revision-Date: 2017-09-22 23:42+0000\n"
+"Last-Translator: ふうせん Fu-sen. | BALLOON a.k.a. Fu-sen.\n"
 "Language-Team: Japanese (http://www.transifex.com/gapan/salix/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,26 +21,26 @@ msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/setup:51
 msgid "WELCOME TO THE SALIX INSTALLATION"
-msgstr "Salixインストレーションにようこそ"
+msgstr "Salix インストールへようこそ"
 
 #: ../initrd-scripts/usr-lib-setup/setup:52
 msgid "Keep the current keymap"
-msgstr "今使用しているキーマップを使う。"
+msgstr "現在使用しているキーマップを維持"
 
 #: ../initrd-scripts/usr-lib-setup/setup:53
 msgid "Select another keymap"
-msgstr "別のキーマップを選ぶ。"
+msgstr "キーマップを選択する"
 
 #: ../initrd-scripts/usr-lib-setup/setup:54
 #, sh-format
 msgid ""
 "Welcome to the installation of Salix, The Bonsai OS!\n"
 "Before you proceed with the rest of the installation, you might want to select your keyboard map (keymap). The current keymap is $KMAP."
-msgstr "盆栽OS、Salixのインストレーション·ツールにようこそ。\n先に進みインストールする前に、インスト中に使用したいキーボードのマップ (キーマップ) を選んでください。現在の次のキーマップを使用しています：$KMAP"
+msgstr "Bonsai(盆栽)OS、Salix インストールへようこそ！\nこの後インストールを進める前に、キーボードマップ (keymap )を選択することができます。現在キーマップは $KMAP を使用しています。"
 
 #: ../initrd-scripts/usr-lib-setup/setup:63
 msgid "Salix Installation"
-msgstr "Salixインストレーション"
+msgstr "Salix インストール"
 
 #: ../initrd-scripts/usr-lib-setup/setup:64
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:117
@@ -47,46 +48,46 @@ msgstr "Salixインストレーション"
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:323
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:414
 msgid "Select"
-msgstr "選択する。"
+msgstr "選択"
 
 #: ../initrd-scripts/usr-lib-setup/setup:65
 msgid "Exit installation"
-msgstr "インストーラーを閉じる"
+msgstr "インストールを閉じる"
 
 #: ../initrd-scripts/usr-lib-setup/setup:67
 msgid "You may now proceed with the installation by pressing the ENTER key."
-msgstr "リターン·キーを押してインストレーションのために次のステップに進んでください。"
+msgstr "ENTER キーを押してインストールを続行できます。"
 
 #: ../initrd-scripts/usr-lib-setup/setup:69
 msgid ""
 "If you want to exit the installation and drop to a linux console, select "
 "'Exit installation'"
-msgstr "インストーラーを閉じ、Linuxコンソールにアクセスしたい場合は、「インストーラーを閉じる」を選んでください。"
+msgstr "インストールを終了し、Linux コンソールへ移りたい場合は、「インストールを閉じる」を選択して下さい。"
 
 #: ../initrd-scripts/usr-lib-setup/setup:71
 msgid "Install Salix using a step-by-step guide"
-msgstr "Salixを初心者モードでインストールする。"
+msgstr "ステップバイステップガイドを用いて Salix をインストール"
 
 #: ../initrd-scripts/usr-lib-setup/setup:96
 msgid "NO LINUX PARTITIONS DETECTED"
-msgstr "Linux用のパーティションが見つかりません"
+msgstr "LINUX パーティションが見つかりません"
 
 #: ../initrd-scripts/usr-lib-setup/setup:97
 msgid ""
 "There don't seem to be any Linux partitions on this machine. You'll need to "
 "make at least one of these to install Linux. Either select AUTOINSTALL from "
 "the menu, or select INSTALL and use the partition editor to create one."
-msgstr "このコンピューターには、Linux用のパーティションが存在しないようです。少なくともLinux用のパーティションが、インストールするためには必要です。メニューから「お任せインストールする」、もしくは「インストールする」を選択してからLinux用のパーティションを用意してください。"
+msgstr "この環境には Linux パーティションが存在しないようです。Linux をインストールするには、これらのうち少なくとも一つ作成する必要があります。選択メニューから「自動インストール」または「インストール」を選択、または作成するためにパーティションエディタを使用して下さい。"
 
 #: ../initrd-scripts/usr-lib-setup/setup:105
 msgid "NO EFI SYSTEM PARTITION DETECTED"
-msgstr "EFIシステム·パーティションが見つかりません"
+msgstr "EFI システムパーティションが見つかりません"
 
 #: ../initrd-scripts/usr-lib-setup/setup:106
 msgid ""
 "This machine appears to be using EFI/UEFI, but no EFI System Partition was "
 "found."
-msgstr "このコンピューターは、EFI/UEFIを使用しているようです。しかしEFIシステム·パーティションが存在しないようです。"
+msgstr "この環境は EFI/UEFI を使用しているようです。しかし EFI システムパーティションが存在していません。"
 
 #: ../initrd-scripts/usr-lib-setup/setup:109
 msgid ""
@@ -96,69 +97,69 @@ msgstr "ハードドライブから起動するためには、EFIシステム·�
 
 #: ../initrd-scripts/usr-lib-setup/setup:128
 msgid "Can't umount /var/log/mount.  Reboot machine and run setup again."
-msgstr ""
+msgstr "/var/log/mount をアンマウントできません。環境を再起動し、再度セットアップを実行して下さい。"
 
 #: ../initrd-scripts/usr-lib-setup/setup:135
 msgid "Mount table corrupt.  Reboot machine and run setup again."
-msgstr ""
+msgstr "マウントテーブルが破損しています。環境を再起動し、再度セットアップを実行して下さい。"
 
 #: ../initrd-scripts/usr-lib-setup/setup:168
 msgid "No Source Selected"
-msgstr ""
+msgstr "ソースが選択されていません"
 
 #: ../initrd-scripts/usr-lib-setup/setup:169
 msgid "The installer does not know where to find the source packages..."
-msgstr ""
+msgstr "インストーラはソースパッケージの検索先が分かりません..."
 
 #: ../initrd-scripts/usr-lib-setup/setup:170
 #: ../initrd-scripts/usr-lib-setup/setup:188
 msgid "Press ENTER to return to the main menu."
-msgstr ""
+msgstr "ENTER キーを押すとメインメニューへ戻ります。"
 
 #: ../initrd-scripts/usr-lib-setup/setup:179
 msgid "CANNOT INSTALL SOFTWARE YET"
-msgstr ""
+msgstr "まだソフトウェアをインストールできません"
 
 #: ../initrd-scripts/usr-lib-setup/setup:180
 msgid "Before you can install software, complete the following tasks:"
-msgstr ""
+msgstr "ソフトウェアをインストールする前に、次のタスクを完了して下さい:"
 
 #: ../initrd-scripts/usr-lib-setup/setup:182
 msgid "Select your source media."
-msgstr ""
+msgstr "ソースメディアを選択して下さい。"
 
 #: ../initrd-scripts/usr-lib-setup/setup:183
 msgid "Set up your target Linux partition(s)."
-msgstr ""
+msgstr "指定 Linux パーティションのセットアップ"
 
 #: ../initrd-scripts/usr-lib-setup/setup:185
 msgid ""
 "You may also optionally remap your keyboard and set up your swap "
 "partition(s)."
-msgstr ""
+msgstr "オプションでキーボードマップの再選択、またスワップパーティションを設定することができます。"
 
 #: ../initrd-scripts/usr-lib-setup/setup:199
 #: ../initrd-scripts/usr-lib-setup/setup:214
 #: ../initrd-scripts/usr-lib-setup/setup:236
 #: ../initrd-scripts/usr-lib-setup/slackinstall:147
 msgid "CORE"
-msgstr ""
+msgstr "CORE"
 
 #: ../initrd-scripts/usr-lib-setup/setup:201
 #: ../initrd-scripts/usr-lib-setup/setup:218
 msgid "SELECT INSTALLATION MODE"
-msgstr ""
+msgstr "インストールモードの選択"
 
 #: ../initrd-scripts/usr-lib-setup/setup:203
 #: ../initrd-scripts/usr-lib-setup/setup:221
 msgid "Please select the installation mode you prefer from the following:"
-msgstr ""
+msgstr "次の中からインストールモードを選択して下さい:"
 
 #: ../initrd-scripts/usr-lib-setup/setup:205
 #: ../initrd-scripts/usr-lib-setup/setup:226
 msgid ""
 "BASIC will only install a minimal graphical environment and a web browser."
-msgstr ""
+msgstr "BASIC は最小限のグラフィック環境と Web ブラウザをインストールします。"
 
 #: ../initrd-scripts/usr-lib-setup/setup:207
 #: ../initrd-scripts/usr-lib-setup/setup:228
@@ -167,77 +168,77 @@ msgid ""
 "console mode (no graphical environment included) and is ideal if you are an "
 "experienced user and want to fully customize your installation for any "
 "specific purpose."
-msgstr ""
+msgstr "COREはシステムがコンソールモードで起動するための最低限必要なものインストールします。（グラフィカル環境は含まれません） 経験豊富なユーザーであり、完全に特定目的のためにインストールをカスタマイズしたい場合に選択するでしょう。"
 
 #: ../initrd-scripts/usr-lib-setup/setup:213
 #: ../initrd-scripts/usr-lib-setup/setup:235
 msgid "BASIC"
-msgstr ""
+msgstr "BASIC"
 
 #: ../initrd-scripts/usr-lib-setup/setup:213
 #: ../initrd-scripts/usr-lib-setup/setup:235
 msgid "Install a minimal graphical environment"
-msgstr ""
+msgstr "最低限のグラフィカル環境をインストール"
 
 #: ../initrd-scripts/usr-lib-setup/setup:214
 #: ../initrd-scripts/usr-lib-setup/setup:236
 msgid "Install a minimal console system"
-msgstr ""
+msgstr "最低限のコントールシステムをインストール"
 
 #: ../initrd-scripts/usr-lib-setup/setup:223
 msgid ""
 "FULL (default) will install everything. That includes one application per "
 "task, such as an office suite, a multimedia player, a CD/DVD burner etc."
-msgstr ""
+msgstr "FULL (デフォルト) はすべてをインストールします。オフィススイート、マルチメディアプレーヤー、CD/DVD書き込みツールなど、タスクごとに様々なアプリケーションを含んでいます。"
 
 #: ../initrd-scripts/usr-lib-setup/setup:234
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:138
 #: ../initrd-scripts/usr-lib-setup/slackinstall:162
 msgid "FULL"
-msgstr ""
+msgstr "FULL"
 
 #: ../initrd-scripts/usr-lib-setup/setup:234
 msgid "Install everything"
-msgstr "全てインストールする。"
+msgstr "すべてインストール"
 
 #: ../initrd-scripts/usr-lib-setup/setup:262
 msgid "REPLACE /etc/fstab?"
-msgstr "/etc/fstabを取り替える?"
+msgstr "/etc/fstab を置き換えますか？"
 
 #: ../initrd-scripts/usr-lib-setup/setup:263
 msgid "You already have an /etc/fstab on your install partition."
-msgstr ""
+msgstr "すでにインストールされているパーティションには /etc/fstab が存在します。"
 
 #: ../initrd-scripts/usr-lib-setup/setup:266
 msgid ""
 "If you were just adding software, you should probably keep your old "
 "/etc/fstab."
-msgstr ""
+msgstr "ソフトウェアを追加した場合、おそらく古い /etc/fstab ファイルを維持する必要があります。"
 
 #: ../initrd-scripts/usr-lib-setup/setup:269
 msgid ""
 "If you've changed your partitioning scheme, you should use the new "
 "/etc/fstab."
-msgstr ""
+msgstr "パーティション状態を変更した場合、新しい /etc/fstab ファイルを使用する必要があります。"
 
 #: ../initrd-scripts/usr-lib-setup/setup:272
 msgid "Do you want to replace your old /etc/fstab with the new one?"
-msgstr "古い/etc/fstabを新しいのと取り換えますか？"
+msgstr "古い /etc/fstab ファイルを新しいものに置き換えますか？"
 
 #: ../initrd-scripts/usr-lib-setup/setup:336
 #: ../initrd-scripts/usr-lib-setup/setup:343
 msgid "SALIX INSTALLATION IS COMPLETE"
-msgstr "Salixのインストレーションが終了しました"
+msgstr "Salix インストールが完了しました"
 
 #: ../initrd-scripts/usr-lib-setup/setup:337
 #: ../initrd-scripts/usr-lib-setup/setup:344
 msgid "Reboot now"
-msgstr "再起動する。"
+msgstr "今すぐ再起動"
 
 #: ../initrd-scripts/usr-lib-setup/setup:338
 #: ../initrd-scripts/usr-lib-setup/setup:345
 msgid "Exit to command line"
-msgstr "インスト−ラ−を閉じコマンドラインにいく"
+msgstr "終了 コマンドラインへ"
 
 #: ../initrd-scripts/usr-lib-setup/setup:339
 msgid ""
@@ -245,166 +246,166 @@ msgid ""
 "installation disc. You can either select to reboot your system now or choose"
 " to exit the installation to the command line if you would like to do any "
 "manual tweaking."
-msgstr ""
+msgstr "システム構成とインストールは完了しました。インストールディスクを取り出して下さい。システムを再起動するか、手動で微調整をしたいと思った場合はインストールを終了しコマンドラインへ入る事を選択する事ができます。"
 
 #: ../initrd-scripts/usr-lib-setup/setup:346
 msgid ""
 "System configuration and installation is complete. You can either select to "
 "reboot your system now or choose to exit the installation to the command "
 "line if you would like to do any manual tweaking."
-msgstr ""
+msgstr "システム構成とインストールが完了しました。システムを再起動するか、手動で微調整をしたいと思った場合はインストールを終了しコマンドラインへ入る事を選択する事ができます。"
 
 #: ../initrd-scripts/usr-lib-setup/INCISO:19
 msgid "Setup has found an ISO image in the source directory:"
-msgstr ""
+msgstr "セットアップはソースディレクトリにISOイメージを発見しました:"
 
 #: ../initrd-scripts/usr-lib-setup/INCISO:23
 msgid "Do you want to use this image as an installationsource?"
-msgstr ""
+msgstr "インストールソースとしてこのイメージを使用しますか？"
 
 #: ../initrd-scripts/usr-lib-setup/INCISO:28
 msgid "USE ISO IMAGE"
-msgstr "ISOイメージをつかう"
+msgstr "ISO イメージを使用する"
 
 #: ../initrd-scripts/usr-lib-setup/INCISO:35
 msgid "Setup has found ISO images in the source directory."
-msgstr ""
+msgstr "セットアップはソースディレクトリに ISO イメージを発見しました。"
 
 #: ../initrd-scripts/usr-lib-setup/INCISO:38
 msgid "Select an image if you want to use it as an installation source."
-msgstr ""
+msgstr "インストールソースとして使用したいイメージを選択して下さい。"
 
 #: ../initrd-scripts/usr-lib-setup/INCISO:54
 msgid "Mounting ISO image..."
-msgstr "ISOイメージをマウントします。"
+msgstr "ISO イメージをマウント..."
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:14
 msgid "SCANNING FOR CD or DVD DRIVE"
-msgstr "CDもしくは、DVDドライブをスキャン"
+msgstr "CD/DVDドライブを検索"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:15
 msgid ""
 "Make sure the Salix disc is in your CD/DVD drive, and then press ENTER to "
 "begin the scanning process. Or, if you'd rather specify the device name "
 "manually (experts only), choose that option below."
-msgstr ""
+msgstr "Salix ディスクが CD/DVD ドライブにあることを確認し Enter キーを押し検索処理を開始します。また手動でデバイス名を指定します。(上級者向け) 以下のオプションを選択して下さい。"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:20
 msgid "Scan for the CD or DVD drive (recommended)"
-msgstr ""
+msgstr "CD/DVD ドライブを検索する (推奨)"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:21
 msgid "Manually specify CD or DVD by device name"
-msgstr ""
+msgstr "手動で CD/DVD ドライブ名を指定する"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:30
 msgid "MANUAL CD/DVD DEVICE SELECTION"
-msgstr ""
+msgstr "手動 CD/DVD ドライブの選択"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:31
 msgid ""
 "Please select your CD/DVD device from the list below.  If you don't see your"
 " device listed, choose 'custom'.  This will let you type in any device name."
 " (and if necessary, will create the device)"
-msgstr ""
+msgstr "下のリストから使用している CD/DVD デバイスを選択して下さい。リストにデバイスが表示されない場合は「カスタム」を選択します。これは任意のデバイス名を入力できるようになります。（必要に応じてデバイスを生成します）"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:36
 msgid "Type in the CD or DVD device to use"
-msgstr ""
+msgstr "使用する CD/DVD デバイスを入力する"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:37
 msgid "First CD/DVD drive"
-msgstr ""
+msgstr "1 台目の CD/DVD ドライブ"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:38
 msgid "Second CD/DVD drive"
-msgstr ""
+msgstr "2 台目の CD/DVD ドライブ"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:39
 msgid "Third CD/DVD drive"
-msgstr ""
+msgstr "3 台目の CD/DVD ドライブ"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:40
 msgid "Fourth CD/DVD drive"
-msgstr ""
+msgstr "4 台目の CD/DVD ドライブ"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:41
 msgid "First parallel port ATAPI CD"
-msgstr ""
+msgstr "1 台目のパラレルポード ATAPI CD"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:42
 msgid "Second parallel port ATAPI CD"
-msgstr ""
+msgstr "2 台目のパラレルモード ATAPI CD"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:43
 msgid "Third parallel port ATAPI CD"
-msgstr ""
+msgstr "3 台目のパラレルモード ATAPI CD"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:44
 msgid "Fourth parallel port ATAPI CD"
-msgstr ""
+msgstr "4 台目のパラレルモード ATAPI CD"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:45
 msgid "Non-IDE Aztech CD/DVD"
-msgstr ""
+msgstr "非 IDE Aztech CD/DVD"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:46
 msgid "Sony CDU-535 CD/DVD"
-msgstr ""
+msgstr "SONY CDU-535 CD/DVD"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:47
 msgid "Non-IDE GoldStar CD/DVD"
-msgstr ""
+msgstr "非 IDE GoldStar CD/DVD"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:48
 msgid "Sony CDU-31a CD/DVD"
-msgstr ""
+msgstr "SONY CDU-31a CD/DVD"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:49
 msgid "Optics Storage CD/DVD"
-msgstr ""
+msgstr "光ストレージ CD/DVD"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:50
 msgid "Sanyo non-IDE CD/DVD"
-msgstr ""
+msgstr "SANYO 非 IDE CD/DVD"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:51
 msgid "Non-IDE Mitsumi drive 1"
-msgstr ""
+msgstr "非 IDE Mitsumi ドライブ 1"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:52
 msgid "Non-IDE Mitsumi drive 2"
-msgstr ""
+msgstr "非 IDE Mitsumi drive 2"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:53
 msgid "Old non-IDE SoundBlaster CD/DVD"
-msgstr ""
+msgstr "古い 非 IDE SoundBlaster CD/DVD"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:54
 msgid "Philips LMS CM-205 CD/DVD"
-msgstr ""
+msgstr "Philips LMS CM-205 CD/DVD"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:55
 msgid "Philips LMS CM-206 CD/DVD"
-msgstr ""
+msgstr "Philips LMS CM-206 CD/DVD"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:56
 msgid "Old non-IDE Mitsumi CD/DVD"
-msgstr ""
+msgstr "古い 非 IDE Mitsumi CD/DVD"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:65
 msgid "ENTER CD/DVD DEVICE MANUALLY"
-msgstr ""
+msgstr "CD/DVD デバイスの手動入力"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:66
 msgid ""
 "Please enter the name of the CD/DVD device (such as /dev/hdc) that you wish "
 "to use to mount the Salix CD/DVD:"
-msgstr ""
+msgstr "Salix CD/DVD をマウントするために使用したい CD/DVDデバイス名を入力して下さい。（例えば /dev/hdc）"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:77
 msgid "MKNOD CD/DVD DEVICE"
-msgstr ""
+msgstr "MKNOD CD/DVD DEVICE"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:78
 #, sh-format
@@ -416,32 +417,32 @@ msgid ""
 "see the 'devices.txt' file that comes with the Linux kernel source.  If you "
 "don't know the numbers, you'll have to hit Esc to abort. Enter the major and"
 " minor numbers for the new device, separated by one space:"
-msgstr ""
+msgstr "/dev ディレクトリ内に $DRIVE_FOUND のデバイスではないようです。デバイスのメジャー番号とマイナー番号を使用して作成する必要があります。カスタム CD/DVD ドライバと起動ディスクを使用している場合は、ドキュメントでこれらの番号を見つけることができるはずです。また、Linux カーネルソースに付属している devices.txt ファイルを参照してください。数字がわからない場合は、中止するため Esc キーを押して下さい。スペースで区切って、新しいデバイス用のメジャー番号とマイナー番号を入力します:"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:93
 msgid "MAKING DEVICE IN /dev"
-msgstr ""
+msgstr "/dev にデバイスを作成"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:98
 msgid "MKNOD FAILED"
-msgstr ""
+msgstr "MKNOD 失敗"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:99
 msgid ""
 "Sorry, but the mknod command failed to make the device.  You'll need to go "
 "back and try selecting your source media again.  Press ENTER to abort the "
 "source media selection process."
-msgstr ""
+msgstr "申し訳ありませんが、mknod コマンドはデバイスの生成に失敗しました。戻って再びソースメディアを選択する必要があります。ソースメディアの選択プロセスを中止するため ENTER キーを押して下さい。"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:114
 #: ../initrd-scripts/usr-lib-setup/INSCD:131
 #: ../initrd-scripts/usr-lib-setup/INSCD:151
 msgid "SCANNING"
-msgstr ""
+msgstr "検索中"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:114
 msgid "Scanning for a CD/DVD drive containing a Salix disc..."
-msgstr ""
+msgstr "Salix ディスクが入っている CD/DVD ドライブを検索しています..."
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:131
 msgid ""
@@ -838,7 +839,7 @@ msgstr ""
 #: ../initrd-scripts/usr-lib-setup/INSdir:24
 #: ../initrd-scripts/usr-lib-setup/INShd:23
 msgid "ERROR"
-msgstr ""
+msgstr "エラー"
 
 #: ../initrd-scripts/usr-lib-setup/INSdir:25
 #: ../initrd-scripts/usr-lib-setup/INShd:24
@@ -1051,7 +1052,7 @@ msgstr ""
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:119
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:416
 msgid "Continue"
-msgstr ""
+msgstr "続ける"
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:121
 msgid ""
@@ -1146,11 +1147,11 @@ msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:67
 msgid "DONE INSTALLING PACKAGES"
-msgstr "パッケージをインストールしない"
+msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:68
 msgid "Preparing to configure your new Linux system..."
-msgstr "あなたの新しいLinuxのシステム設定を行います。"
+msgstr "新しい Linux システムの設定を準備中..."
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:73
 msgid "Boot Loader"
@@ -1162,11 +1163,11 @@ msgstr "利用したいブートローダーを選択してください。"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:76
 msgid "Install Lilo"
-msgstr "Liloをインストールする"
+msgstr "Lilo をインストール"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:77
 msgid "Install Grub"
-msgstr "Grubをインストールする"
+msgstr "Grub をインストール"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:78
 msgid "(Do not install boot loader)"
@@ -1174,15 +1175,15 @@ msgstr "(ブートローダーをインストールしない)"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:207
 msgid "Loading locales..."
-msgstr ""
+msgstr "ロケールを読み込み中..."
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:211
 msgid "Updating caches..."
-msgstr ""
+msgstr "キャッシュを更新中..."
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:216
 msgid "Numlock configuration"
-msgstr "テンキーパッドの設定"
+msgstr "Numlock の設定"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:217
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:230
@@ -1198,11 +1199,11 @@ msgstr "無効化"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:218
 msgid "Do you want to have numlock enabled or disabled on boot?"
-msgstr "テンキーパッドを起動時に有効化しますか？"
+msgstr "Numlock を起動時に有効化しますか？"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:229
 msgid "IBus configuration"
-msgstr "IBus設定"
+msgstr "IBus 設定"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:232
 msgid ""
@@ -1212,7 +1213,7 @@ msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:238
 msgid "SCIM configuration"
-msgstr "SCIM設定"
+msgstr "SCIM 設定"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:241
 msgid ""
@@ -1226,7 +1227,7 @@ msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:22
 msgid "Exit"
-msgstr "閉じる"
+msgstr "終了"
 
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:23
 msgid "PARTITIONS EDITOR"
@@ -1276,7 +1277,7 @@ msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:18
 msgid "KEYBOARD MAP SELECTION"
-msgstr "キーボード·マップの選択"
+msgstr "キーボードマップの選択"
 
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:21
 #, sh-format
@@ -1288,7 +1289,7 @@ msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:198
 msgid "Test keyboard map"
-msgstr "このキーマップでテストタイプしてみる"
+msgstr "キーマップのテスト"
 
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:199
 msgid "Accept keymap"
@@ -1691,7 +1692,7 @@ msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:325
 msgid "Cancel"
-msgstr ""
+msgstr "キャンセル"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:327
 msgid ""
@@ -1763,7 +1764,7 @@ msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/SeTswap:30
 msgid "ABORTING INSTALLATION"
-msgstr ""
+msgstr "インストールを中断しました"
 
 #: ../initrd-scripts/usr-lib-setup/SeTswap:30
 msgid "Create a swap partition with Linux fdisk, and then try this again."
@@ -1790,7 +1791,7 @@ msgstr ""
 #: ../initrd-scripts/usr-lib-setup/SeTswap:56
 #, sh-format
 msgid "Linux swap partition, ${PARTSIZE}"
-msgstr ""
+msgstr "Linux swap パーディション, ${PARTSIZE}"
 
 #: ../initrd-scripts/usr-lib-setup/SeTswap:80
 msgid "CHECK SWAP PARTITIONS FOR BAD BLOCKS?"
@@ -1821,7 +1822,7 @@ msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/SeTusers:9
 msgid "User setup"
-msgstr ""
+msgstr "ユーザーセットアップ"
 
 #: ../initrd-scripts/usr-lib-setup/SeTusers:10
 msgid ""
@@ -1838,16 +1839,16 @@ msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/SeTusers:17
 msgid "The root user is disabled by default."
-msgstr ""
+msgstr "root ユーザーで無効がデフォルトです。"
 
 #: ../initrd-scripts/usr-lib-setup/slackinstall:55
 msgid "FTP/HTTP DOWNLOAD FAILURE"
-msgstr ""
+msgstr "FTP/HTTP ダウンロード失敗"
 
 #: ../initrd-scripts/usr-lib-setup/slackinstall:77
 #, sh-format
 msgid "installpkg error #$ArG1"
-msgstr ""
+msgstr "installpkg エラー #$ArG1"
 
 #: ../initrd-scripts/usr-lib-setup/slackinstall:78
 #, sh-format
@@ -1861,7 +1862,7 @@ msgstr ""
 
 #: ../initrd-scripts/usr-lib-setup/slackinstall:115
 msgid "Installing package set:"
-msgstr ""
+msgstr "インストール中: パッケージセット "
 
 #: ../initrd-scripts/usr-lib-setup/slackinstall:125
 #: ../initrd-scripts/usr-lib-setup/slackinstall:137
@@ -1871,4 +1872,4 @@ msgstr ""
 #: ../initrd-scripts/usr-lib-setup/slackinstall:192
 #: ../initrd-scripts/usr-lib-setup/slackinstall:203
 msgid "Installing:"
-msgstr ""
+msgstr "インストール中:"
