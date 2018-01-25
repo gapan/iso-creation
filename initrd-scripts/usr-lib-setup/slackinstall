@@ -141,6 +141,19 @@ for package in $SRCPATH/core/*.t?z ; do
 	errorcode $ERROR $package
   fi
   [ -n "$REMOTESVR" ] && zap_pkg core $(basename $package)
+  # On EFI systems, also install the respective packages
+  if [ -d /sys/firmware/efi ]; then
+  	for package in $SRCPATH/efi/*.t?z ; do
+  	  [ -n "$REMOTESVR" ] && get_pkg efi $(basename $package) '-q'
+  	  dialog --progressbox "`gettext "Installing:"` `basename $package`" 17 80 < ${package%t[glbx]z}desc
+  	  spkg -i --root=$ROOTDIR -qq --no-ldconfig --no-gtk-update-icon-cache $package
+  	  ERROR=$?
+  	  if [ ! $ERROR = 0 ]; then
+  		errorcode $ERROR $package
+  	  fi
+  	  [ -n "$REMOTESVR" ] && zap_pkg efi $(basename $package)
+  	done
+  fi
 done
 
 # Install basic packages if requested
@@ -156,6 +169,19 @@ if [ ! "$MODE" = "`gettext 'CORE'`" ]; then
 	  fi
 	  [ -n "$REMOTESVR" ] && zap_pkg basic $(basename $package)
 	done
+	# On EFI systems, also install the respective GUI packages
+	if [ -d /sys/firmware/efi ]; then
+		for package in $SRCPATH/efi/*.t?z ; do
+		  [ -n "$REMOTESVR" ] && get_pkg efi-gui $(basename $package) '-q'
+		  dialog --progressbox "`gettext "Installing:"` `basename $package`" 17 80 < ${package%t[glbx]z}desc
+		  spkg -i --root=$ROOTDIR -qq --no-ldconfig --no-gtk-update-icon-cache $package
+		  ERROR=$?
+		  if [ ! $ERROR = 0 ]; then
+			errorcode $ERROR $package
+		  fi
+		  [ -n "$REMOTESVR" ] && zap_pkg efi-gui $(basename $package)
+		done
+	fi
 fi
 
 # Install full set of package if requested
