@@ -9,10 +9,17 @@ rm -f $TMP/SeTefipartitions
 touch $TMP/SeTefipartitions
 
 # Scan for EFI partitions:
-for drive in sda sdb sdc sdd sde sdf sdg sdh sdi sdj sdk sdl sdm sdn sdo sdp ; do
+# We accept at most 10 NVMe controllers, each controlling at most 4 SSDs
+for drive in sda sdb sdc sdd sde sdf sdg sdh sdi sdj sdk sdl sdm sdn sdo sdp sd \
+  nvme0n1 nvme1n1 nvme2n1 nvme3n1 nvme4n1 nvme5n1 nvme6n1 nvme7n1 nvme8n1 nvme9n1 \
+  nvme0n2 nvme1n2 nvme2n2 nvme3n2 nvme4n2 nvme5n2 nvme6n2 nvme7n2 nvme8n2 nvme9n2 \
+  nvme0n3 nvme1n3 nvme2n3 nvme3n3 nvme4n3 nvme5n3 nvme6n3 nvme7n3 nvme8n3 nvme9n3 \
+  nvme0n4 nvme1n4 nvme2n4 nvme3n4 nvme4n4 nvme5n4 nvme6n4 nvme7n4 nvme8n4 nvme9n4  ; do
   if LANG=C fdisk -l /dev/$drive 2> /dev/null | grep -q "Disklabel type: gpt" ; then
     gdisk -l /dev/$drive 2> /dev/null | grep -w EF00 | while read efisp ; do
-      echo /dev/$drive$(expr $(echo "$efisp" | cut -b 1-4)) >> $TMP/SeTefipartitions
+	  p=""
+      echo $drive| grep -q nvme && p="p"
+      echo /dev/$drive$p$(expr $(echo "$efisp" | cut -b 1-4)) >> $TMP/SeTefipartitions
     done
   fi
 done
