@@ -5,48 +5,50 @@
 # Translators:
 # Didier Spaier <didier (at) slint (dot) fr>, 2014
 # Didier Spaier <didier@slint.fr>, 2014
-# elesmod <elesmod@lavabit.com>, 2013
-# Karol Chmurzyński <chmuri@gmail.com>, 2017
-# Lukasz Kaminski <inactive+elpikej@transifex.com>, 2016-2017
-# Mherda <mherda@slackword.net>, 2013
-# Nikki Blanco <rayla@tutanota.com>, 2018
-# pjm, 2013,2016
+# Enrico Nicoletto <enrico.BR@gmx.co.uk>, 2013
+# Francis Real Ushiyama <francisushiyama@gmail.com>, 2013
+# Gabriel Magno de Oliveira Silva <gabrielmagno1@gmail.com>, 2013
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2014,2016,2019
+# Isaque Galdino <igaldino@gmail.com>, 2013
+# Marcelo Pio de Castro <belfalas.vinyamar@gmail.com>, 2013
+# ric, 2017
+# Thaigo Rocco <thiagomt.rocco@gmail.com>, 2013,2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-08 18:53+0300\n"
-"PO-Revision-Date: 2018-03-26 16:13+0000\n"
-"Last-Translator: Nikki Blanco <rayla@tutanota.com>\n"
-"Language-Team: Polish (http://www.transifex.com/gapan/salix/language/pl/)\n"
+"PO-Revision-Date: 2019-01-30 00:30+0000\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
+"Language-Team: Portuguese (http://www.transifex.com/gapan/salix/language/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pl\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"Language: pt\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../initrd-scripts/usr-lib-setup/setup:51
 msgid "WELCOME TO THE SALIX INSTALLATION"
-msgstr "WITAMY W INSTALATORZE SALIX"
+msgstr "BEM-VINDO À INSTALAÇÃO DO SALIX"
 
 #: ../initrd-scripts/usr-lib-setup/setup:52
 msgid "Keep the current keymap"
-msgstr "Zachowaj obecny układ klawiatury"
+msgstr "Manter o mapa de teclado atual"
 
 #: ../initrd-scripts/usr-lib-setup/setup:53
 msgid "Select another keymap"
-msgstr "Wybierz inny układ klawiatury"
+msgstr "Selecionar outro mapa de teclado"
 
 #: ../initrd-scripts/usr-lib-setup/setup:54
 #, sh-format
 msgid ""
 "Welcome to the installation of Salix, The Bonsai OS!\n"
 "Before you proceed with the rest of the installation, you might want to select your keyboard map (keymap). The current keymap is $KMAP."
-msgstr "Witamy w instalacji Salix, Systemu Operacyjnego Bonsai!\nZanim rozpoczniesz instalację, być może zechcesz wybrać układ klawiatury (keymap). Obecny układ klawiatury to $KMAP."
+msgstr "Bem-vindo à instalação do Salix, o OS Bonsai!\nAntes de continuar com a instalação, poderá querer selecionar o seu esquema (mapa) de teclado. O esquema de teclado atual é $KMAP."
 
 #: ../initrd-scripts/usr-lib-setup/setup:63
 msgid "Salix Installation"
-msgstr "Instalacja Salix"
+msgstr "Instalação do Salix"
 
 #: ../initrd-scripts/usr-lib-setup/setup:64
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:117
@@ -54,118 +56,118 @@ msgstr "Instalacja Salix"
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:323
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:414
 msgid "Select"
-msgstr "Wybierz"
+msgstr "Selecionar"
 
 #: ../initrd-scripts/usr-lib-setup/setup:65
 msgid "Exit installation"
-msgstr "Zakończ instalację"
+msgstr "Sair da instalação"
 
 #: ../initrd-scripts/usr-lib-setup/setup:67
 msgid "You may now proceed with the installation by pressing the ENTER key."
-msgstr "Możesz teraz kontynuować instalację naciskając klawisz ENTER"
+msgstr "Pode agora continuar a instalação premindo ENTER."
 
 #: ../initrd-scripts/usr-lib-setup/setup:69
 msgid ""
 "If you want to exit the installation and drop to a linux console, select "
 "'Exit installation'"
-msgstr "Jeśli chcesz zakończyć instalację i wrócić do konsoli linux, wybierz 'Zakończ instalację'"
+msgstr "Se pretender sair da instalação e abrir um terminal linux, selecione 'Sair da instalação'"
 
 #: ../initrd-scripts/usr-lib-setup/setup:71
 msgid "Install Salix using a step-by-step guide"
-msgstr "Zainstaluj Salix używając przewodnika krok-po-kroku"
+msgstr "Instalar o Salix usando um guia passo-a-passo"
 
 #: ../initrd-scripts/usr-lib-setup/setup:96
 msgid "NO LINUX PARTITIONS DETECTED"
-msgstr "NIE WYKRYTO PARTYCJI LINUKSOWYCH"
+msgstr "NENHUMA PARTIÇÃO LINUX DETETADA"
 
 #: ../initrd-scripts/usr-lib-setup/setup:97
 msgid ""
 "There don't seem to be any Linux partitions on this machine. You'll need to "
 "make at least one of these to install Linux. Either select AUTOINSTALL from "
 "the menu, or select INSTALL and use the partition editor to create one."
-msgstr "Nie znaleziono żadnych partycji Linuxa na tym komputerze. Potrzebujesz przynajmniej jednej z nich aby zainstalować Linuxa. Wybierz AUTOINSTALACJĘ z menu, lub INSTALACJĘ i użyj edytora partycji aby stworzyć partycję Linuxa."
+msgstr "Parece que não existe nenhuma partição Linux neste sistema. Tem de criar pelo menos uma para instalar o Linux. Selecione o AUTOINSTALAR do menu, ou selecione INSTALAR e use o editor de partições para criar uma."
 
 #: ../initrd-scripts/usr-lib-setup/setup:105
 msgid "NO EFI SYSTEM PARTITION DETECTED"
-msgstr "NIE WYKRYTO PARTYCJI SYSTEMOWEJ EFI"
+msgstr "NENHUMA PARTIÇÃO DE SISTEMA EFI DETECTADA"
 
 #: ../initrd-scripts/usr-lib-setup/setup:106
 msgid ""
 "This machine appears to be using EFI/UEFI, but no EFI System Partition was "
 "found."
-msgstr "To urządzenie zdaje się używać EFI/UEFI, ale nie znaleziono Partycji Systemowej EFI."
+msgstr "Este computador parece estar a usar EFI/UEFI, mas não foi encontrada nenhuma Partição de Sistema EFI."
 
 #: ../initrd-scripts/usr-lib-setup/setup:109
 msgid ""
 "You'll need to make an EFI System Partition in order to boot from the hard "
 "drive."
-msgstr "Musisz zrobić partycję systemową EFI jeżeli chcesz uruchomić z dysku twardego."
+msgstr "Precisa de criar uma Partição de Sistema EFI para arrancar do disco rígido."
 
 #: ../initrd-scripts/usr-lib-setup/setup:128
 msgid "Can't umount /var/log/mount.  Reboot machine and run setup again."
-msgstr "Nie mogę odmontować /var/log/mount/. Zrestartuj komputer i uruchom instalację jeszcze raz."
+msgstr "Não é possível desmontar /var/log/mount.  Reinicie o computador e execute novamente a configuração ."
 
 #: ../initrd-scripts/usr-lib-setup/setup:135
 msgid "Mount table corrupt.  Reboot machine and run setup again."
-msgstr "Zamontowana tablica jest uszkodzona  Zrestartuj komputer i uruchom instalację jeszcze raz."
+msgstr "Tabela de montagem corrompida. Reinicie o computador e execute novamente a configuração."
 
 #: ../initrd-scripts/usr-lib-setup/setup:168
 msgid "No Source Selected"
-msgstr "Nie wybrano źródła"
+msgstr "Nenhuma Fonte Selecionada"
 
 #: ../initrd-scripts/usr-lib-setup/setup:169
 msgid "The installer does not know where to find the source packages..."
-msgstr "Intalator nie wie gdzie znaleść źródło pakietów..."
+msgstr "O instalador não sabe onde encontrar os pacotes fonte..."
 
 #: ../initrd-scripts/usr-lib-setup/setup:170
 #: ../initrd-scripts/usr-lib-setup/setup:188
 msgid "Press ENTER to return to the main menu."
-msgstr "Naciśnij ENTER aby wrócić do głównego menu."
+msgstr "Prima ENTER para voltar ao menu principal."
 
 #: ../initrd-scripts/usr-lib-setup/setup:179
 msgid "CANNOT INSTALL SOFTWARE YET"
-msgstr "NIE MOŻNA JESZCZE ZAINSTALOWAĆ OPROGRAMOWANIA"
+msgstr "NÃO É POSSÍVEL INSTALAR SOFTWARES AINDA"
 
 #: ../initrd-scripts/usr-lib-setup/setup:180
 msgid "Before you can install software, complete the following tasks:"
-msgstr "Zanim będzie możliwowe zainstalowanie oprogramowania, wykonaj następujące czynności:"
+msgstr "Antes de poder instalar software, complete as seguintes tarefas:"
 
 #: ../initrd-scripts/usr-lib-setup/setup:182
 msgid "Select your source media."
-msgstr "Wybierz źródło instalacji"
+msgstr "Selecione a fonte de media."
 
 #: ../initrd-scripts/usr-lib-setup/setup:183
 msgid "Set up your target Linux partition(s)."
-msgstr "Wybierz swoje docelowe partycje Linuxowe."
+msgstr "Defina a(s) sua partição Linux."
 
 #: ../initrd-scripts/usr-lib-setup/setup:185
 msgid ""
 "You may also optionally remap your keyboard and set up your swap "
 "partition(s)."
-msgstr "Możesz opcjolanie zmienić swój układ klawiatury i ustawić partycję swap"
+msgstr "Pode ainda, opcionalmente, alterar o mapa de teclado e definir a(s) partição swap."
 
 #: ../initrd-scripts/usr-lib-setup/setup:199
 #: ../initrd-scripts/usr-lib-setup/setup:214
 #: ../initrd-scripts/usr-lib-setup/setup:236
 #: ../initrd-scripts/usr-lib-setup/slackinstall:147
 msgid "CORE"
-msgstr "MINIMALNA"
+msgstr "NÚCLEO"
 
 #: ../initrd-scripts/usr-lib-setup/setup:201
 #: ../initrd-scripts/usr-lib-setup/setup:218
 msgid "SELECT INSTALLATION MODE"
-msgstr "WYBIERZ TRYB INSTALACJI"
+msgstr "SELECIONE MODO DE INSTALAÇÃO"
 
 #: ../initrd-scripts/usr-lib-setup/setup:203
 #: ../initrd-scripts/usr-lib-setup/setup:221
 msgid "Please select the installation mode you prefer from the following:"
-msgstr "Proszę wybierz tryb instalacj z poniższych :"
+msgstr "Por favor selecione o modo de instalação preferido:"
 
 #: ../initrd-scripts/usr-lib-setup/setup:205
 #: ../initrd-scripts/usr-lib-setup/setup:226
 msgid ""
 "BASIC will only install a minimal graphical environment and a web browser."
-msgstr "PODSTAWOWY zainstaluje tylko minimalne środowisko graficzne i przeglądarkę."
+msgstr "BÁSICO instala apenas um ambiente gráfico minimal e um navegador."
 
 #: ../initrd-scripts/usr-lib-setup/setup:207
 #: ../initrd-scripts/usr-lib-setup/setup:228
@@ -174,77 +176,77 @@ msgid ""
 "console mode (no graphical environment included) and is ideal if you are an "
 "experienced user and want to fully customize your installation for any "
 "specific purpose."
-msgstr "MINIMALNA w której zasintalowane zostanie minimum wymagane do uruchominiea konsoli ( bez graficznego interfejsu). Jest idealne dla doświadczonych użytkowników którzy chcą cały system dopasować do siebie od podstaw."
+msgstr "CORE instala apenas o mínimo essencial para o sistema iniciar em modo consola (não está incluído qualquer ambiente gráfico) e é ideal se for um utilizador experiente e quiser personalizar completamente a sua instalação para qualquer fim específico."
 
 #: ../initrd-scripts/usr-lib-setup/setup:213
 #: ../initrd-scripts/usr-lib-setup/setup:235
 msgid "BASIC"
-msgstr "PODSTAWOWY"
+msgstr "BÁSICA"
 
 #: ../initrd-scripts/usr-lib-setup/setup:213
 #: ../initrd-scripts/usr-lib-setup/setup:235
 msgid "Install a minimal graphical environment"
-msgstr "Zainstaluj graficzne środowisko"
+msgstr "Instalar um ambiente gráfico minimal"
 
 #: ../initrd-scripts/usr-lib-setup/setup:214
 #: ../initrd-scripts/usr-lib-setup/setup:236
 msgid "Install a minimal console system"
-msgstr "Zainstaluj mimimalne środowisko w konsoli"
+msgstr "Instalar um sistema de terminal minimal"
 
 #: ../initrd-scripts/usr-lib-setup/setup:223
 msgid ""
 "FULL (default) will install everything. That includes one application per "
 "task, such as an office suite, a multimedia player, a CD/DVD burner etc."
-msgstr "PEŁNA (domyślna) zainstaluje wszystko co ma dostępne. Zawiera jedną aplikację na zadanie, czyli jeden pakiet office, odtwarzacz multimediów, program do nagrywania płyt CD/DVD itd."
+msgstr "COMPLETO (predefinido) instala tudo. Inclui uma aplicação por tarefa, tal como uma suite de escritório, um leitor multimedia, um gravador de CD/DVD etc."
 
 #: ../initrd-scripts/usr-lib-setup/setup:234
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:138
 #: ../initrd-scripts/usr-lib-setup/slackinstall:162
 msgid "FULL"
-msgstr "PEŁNA"
+msgstr "COMPLETA"
 
 #: ../initrd-scripts/usr-lib-setup/setup:234
 msgid "Install everything"
-msgstr "Zainstaluj wszystko"
+msgstr "Instalar tudo"
 
 #: ../initrd-scripts/usr-lib-setup/setup:262
 msgid "REPLACE /etc/fstab?"
-msgstr "ZASTĄP /etc/fstab?"
+msgstr "SUBSTITUIR /etc/fstab?"
 
 #: ../initrd-scripts/usr-lib-setup/setup:263
 msgid "You already have an /etc/fstab on your install partition."
-msgstr "Już masz plik /etc/fstab/ na partycji w której chcesz instalować."
+msgstr "Já tem na sua partição de instalação um /etc/fstab."
 
 #: ../initrd-scripts/usr-lib-setup/setup:266
 msgid ""
 "If you were just adding software, you should probably keep your old "
 "/etc/fstab."
-msgstr "Jeżeli chcesz dodać oprogramowanie, powinieneś zatrzymać swój stary plik /etc/fstab."
+msgstr "Se só esteve a adicionar software, provavelmente deveria manter o /etc/fstab anterior."
 
 #: ../initrd-scripts/usr-lib-setup/setup:269
 msgid ""
 "If you've changed your partitioning scheme, you should use the new "
 "/etc/fstab."
-msgstr "Jeśli zmieniałeś schemat partycji, powinieneś użyć nowego /etc/fstab."
+msgstr "Se alterou o esquema de partições, deverá usar o novo /etc/fstab."
 
 #: ../initrd-scripts/usr-lib-setup/setup:272
 msgid "Do you want to replace your old /etc/fstab with the new one?"
-msgstr "Czy chcesz zamienić stary /etc/fstab na nowy?"
+msgstr "Deseja substituir o /etc/fstab anterior pelo novo?"
 
 #: ../initrd-scripts/usr-lib-setup/setup:336
 #: ../initrd-scripts/usr-lib-setup/setup:343
 msgid "SALIX INSTALLATION IS COMPLETE"
-msgstr "INSTALACJA SALIX JEST ZAKOŃCZONA"
+msgstr "A INSTALAÇÃO DO SALIX ESTÁ COMPLETA"
 
 #: ../initrd-scripts/usr-lib-setup/setup:337
 #: ../initrd-scripts/usr-lib-setup/setup:344
 msgid "Reboot now"
-msgstr "Restartuj teraz"
+msgstr "Reiniciar agora"
 
 #: ../initrd-scripts/usr-lib-setup/setup:338
 #: ../initrd-scripts/usr-lib-setup/setup:345
 msgid "Exit to command line"
-msgstr "Wyjdź do trybu tekstowego"
+msgstr "Sair para a linha de comando"
 
 #: ../initrd-scripts/usr-lib-setup/setup:339
 msgid ""
@@ -252,166 +254,166 @@ msgid ""
 "installation disc. You can either select to reboot your system now or choose"
 " to exit the installation to the command line if you would like to do any "
 "manual tweaking."
-msgstr "Konfiguracja i instalacja systemu została zakończona. Wyjmij płytę instalacyjną. Możesz teraz wybrać ponowne uruchomienie systemu lub wyjść z instalacji do wiersza poleceń, jeśli chcesz wykonać jakieś ręczne poprawki."
+msgstr "A confguração e instalação do sistema estão completas. Por favor remova o disco de instalação. Agora pode reiniciar o sistema ou escolher sair da instalação para a linha de comandos se quiser fazer alguns ajustes manualmente."
 
 #: ../initrd-scripts/usr-lib-setup/setup:346
 msgid ""
 "System configuration and installation is complete. You can either select to "
 "reboot your system now or choose to exit the installation to the command "
 "line if you would like to do any manual tweaking."
-msgstr "Konfiguracja i instalacja systemu została zakończona. Możesz teraz wybrać ponowne uruchomienie systemu lub wyjść z instalacji do wiersza poleceń, jeśli chcesz wykonać jakieś ręczne poprawki."
+msgstr "A confguração e instalação do sistema estão completas. Agora pode reiniciar o sistema ou escolher sair da instalação para a linha de comandos se quiser fazer alguns ajustes manualmente."
 
 #: ../initrd-scripts/usr-lib-setup/INCISO:19
 msgid "Setup has found an ISO image in the source directory:"
-msgstr "Instalator znalazł obraz ISO w katalogu źródłowym:"
+msgstr "A instalação encontrou uma imagem ISO no diretório fonte:"
 
 #: ../initrd-scripts/usr-lib-setup/INCISO:23
 msgid "Do you want to use this image as an installationsource?"
-msgstr "Czy chcesz użyć tego obrazu jako źródła instalacji?"
+msgstr "Deseja usar esta imagem como fonte da instalação?"
 
 #: ../initrd-scripts/usr-lib-setup/INCISO:28
 msgid "USE ISO IMAGE"
-msgstr "UŻYJ OBRAZU ISO"
+msgstr "USAR IMAGEM ISO"
 
 #: ../initrd-scripts/usr-lib-setup/INCISO:35
 msgid "Setup has found ISO images in the source directory."
-msgstr "Instalator znalazł obrazy ISO w katalogu źródłowym."
+msgstr "A instalação encontrou imagens ISO no diretório fonte."
 
 #: ../initrd-scripts/usr-lib-setup/INCISO:38
 msgid "Select an image if you want to use it as an installation source."
-msgstr "Wybierz obraz, jeśli chcesz go użyć jako źródła instalacji."
+msgstr "Selecione uma imagem se a pretender usar como fonte da instalação."
 
 #: ../initrd-scripts/usr-lib-setup/INCISO:54
 msgid "Mounting ISO image..."
-msgstr "Montuje obraż ISO..."
+msgstr "A montar imagem ISO..."
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:14
 msgid "SCANNING FOR CD or DVD DRIVE"
-msgstr "SZUKANIE NAPĘDU CD lub DVD"
+msgstr "PROCURANDO POR UNIDADES DE CD ou DVD"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:15
 msgid ""
 "Make sure the Salix disc is in your CD/DVD drive, and then press ENTER to "
 "begin the scanning process. Or, if you'd rather specify the device name "
 "manually (experts only), choose that option below."
-msgstr "Upewnij się, że dysk Salix znajduje się w napędzie CD / DVD, a następnie naciśnij klawisz ENTER, aby rozpocząć proces skanowania. Lub, jeśli wolisz ręcznie określać nazwę urządzenia (tylko dla ekspertów), wybierz tę opcję poniżej."
+msgstr "Certifique-se que o disco Salix está no seu leitor CD/DVD, depois prima ENTER para iniciar o processo de varrimento. Ou, se pretender indicar o nome do dispositivo manualmente (apenas para peritos), selecione essa opção abaixo."
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:20
 msgid "Scan for the CD or DVD drive (recommended)"
-msgstr "Wyszukaj napęd CD lub DVD (zalecane)"
+msgstr "Procurar pela unidade de CD ou DVD (recomendado)"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:21
 msgid "Manually specify CD or DVD by device name"
-msgstr "Ręcznie podaj nazwę napędu CD lub DVD"
+msgstr "Especificar o nome do dispositivo de CD ou DVD manualmente"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:30
 msgid "MANUAL CD/DVD DEVICE SELECTION"
-msgstr "RĘCZNY WYBÓR NAPĘDU CD/DVD"
+msgstr "SELEÇÃO MANUAL DO DISPOSITIVO DE CD/DVD"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:31
 msgid ""
 "Please select your CD/DVD device from the list below.  If you don't see your"
 " device listed, choose 'custom'.  This will let you type in any device name."
 " (and if necessary, will create the device)"
-msgstr "Z poniższej listy proszę wybrać odpowiedni napęd CD/DVD. Jeśli nie znajduje się on na liście, wybierz 'niestandardowy'. Pozwoli to na wprowadzenie nazwy urządzenia (oraz jego ewentualne utworzenie)."
+msgstr "Por favor selecione o seu dispositivo de CD/DVD a partir da lista abaixo. Caso o seu dispositivo não esteja listado, escolha a opção 'personalizado'. Isto permitirá que você digite qualquer nome do dispositivo. (e se necessário, irá criar o dispositivo)"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:36
 msgid "Type in the CD or DVD device to use"
-msgstr "Wprowadź nazwę napędu CD/DVD"
+msgstr "Digite o dispositivo de CD ou DVD a ser utilizado"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:37
 msgid "First CD/DVD drive"
-msgstr "Pierwszy napęd CD/DVD"
+msgstr "Primeira unidade de CD/DVD"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:38
 msgid "Second CD/DVD drive"
-msgstr "Drugi napęd CD/DVD"
+msgstr "Segunda unidade de CD/DVD"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:39
 msgid "Third CD/DVD drive"
-msgstr "Trzeci napęd CD/DVD"
+msgstr "Terceira unidade de CD/DVD"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:40
 msgid "Fourth CD/DVD drive"
-msgstr "Czwarty napęd CD/DVD"
+msgstr "Quarta unidade de CD/DVD"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:41
 msgid "First parallel port ATAPI CD"
-msgstr "Pierwszy port równoległy ATAPI CD"
+msgstr "ATAPI CD da primeira porta paralela"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:42
 msgid "Second parallel port ATAPI CD"
-msgstr "Drugi port równoległy ATAPI CD"
+msgstr "ATAPI CD da segunda porta paralela"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:43
 msgid "Third parallel port ATAPI CD"
-msgstr "Trzeci port równoległy ATAPI CD"
+msgstr "ATAPI CD da terceira porta paralela"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:44
 msgid "Fourth parallel port ATAPI CD"
-msgstr "Czwarty port równoległy ATAPI CD"
+msgstr "ATAPI CD da quarta porta paralela"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:45
 msgid "Non-IDE Aztech CD/DVD"
-msgstr "Nie-IDE Aztech CD/DVD"
+msgstr "CD/DVD Aztech não-IDE"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:46
 msgid "Sony CDU-535 CD/DVD"
-msgstr "Sony CDU-535 CD/DVD"
+msgstr "CD/DVD Sony CDU-535"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:47
 msgid "Non-IDE GoldStar CD/DVD"
-msgstr "Nie-IDE GoldStar CD/DVD"
+msgstr "CD/DVD GoldStar não-IDE"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:48
 msgid "Sony CDU-31a CD/DVD"
-msgstr "Sony CDU-31a CD/DVD"
+msgstr "CD/DVD Sony CDU-31a"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:49
 msgid "Optics Storage CD/DVD"
-msgstr "Optics Storage CD/DVD"
+msgstr "CD/DVD Armazenamento óptico"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:50
 msgid "Sanyo non-IDE CD/DVD"
-msgstr "Nie-IDE Sanyo CD/DVD"
+msgstr "CD/DVD Sanyo não-IDE"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:51
 msgid "Non-IDE Mitsumi drive 1"
-msgstr "Pierwszy napęd Mitsumi (nie-IDE)"
+msgstr "Mitsumi unidade 1 não-IDE"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:52
 msgid "Non-IDE Mitsumi drive 2"
-msgstr "Drugi napęd Mitsumi (nie-IDE)"
+msgstr "Mitsumi unidade 2 não-IDE"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:53
 msgid "Old non-IDE SoundBlaster CD/DVD"
-msgstr "Stary nie-IDE SoundBlaster CD/DVD"
+msgstr "CD/DVD SoundBlaster não-IDE antigo"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:54
 msgid "Philips LMS CM-205 CD/DVD"
-msgstr "Philips LMS CM-205 CD/DVD"
+msgstr "CD/DVD Philips LMS CM-205"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:55
 msgid "Philips LMS CM-206 CD/DVD"
-msgstr "Philips LMS CM-206 CD/DVD"
+msgstr "CD/DVD Philips LMS CM-206"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:56
 msgid "Old non-IDE Mitsumi CD/DVD"
-msgstr "Stary nie-IDE Mitsumi CD/DVD"
+msgstr "CD/DVD Mitsumi não-IDE antigo"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:65
 msgid "ENTER CD/DVD DEVICE MANUALLY"
-msgstr "RĘCZNIE WPROWADŹ NAZWĘ NAPĘDU CD/DVD"
+msgstr "INTRODUZA O DISPOSITIVO DE CD/DVD MANUALMENTE"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:66
 msgid ""
 "Please enter the name of the CD/DVD device (such as /dev/hdc) that you wish "
 "to use to mount the Salix CD/DVD:"
-msgstr "Wprowadź nazwę urządzenia CD / DVD (takiego jak /dev/hdc), którego chcesz użyć do zamontowania dysku CD / DVD Salix,"
+msgstr "Por favor indique o nome do dispositivo CD/DVD (como /dev/hdc) que deseja usar para montar o CD/DVD Salix:"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:77
 msgid "MKNOD CD/DVD DEVICE"
-msgstr "URZĄDZENIE CD/DVD MKNOD"
+msgstr "DISPOSITIVO CD/DVD MKNOD"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:78
 #, sh-format
@@ -423,48 +425,48 @@ msgid ""
 "see the 'devices.txt' file that comes with the Linux kernel source.  If you "
 "don't know the numbers, you'll have to hit Esc to abort. Enter the major and"
 " minor numbers for the new device, separated by one space:"
-msgstr "Wygląda na to, że urządzenie o nazwie $DRIVE_FOUND nie istnieje w katalogu /dev. Będziemy więc musieli go stworzyć używając dla niego numerów głównego i podrzędnego. Jeśli używasz dysku rozruchowego z niestandardowym sterownikiem CD/DVD, powinieneś być w stanie znaleźć te numery w dokumentacji. Sprawdź także plik 'devices.txt' znajdujący się w katalogu źródła jądra Linux. Jeśli nie znasz tych numerów, będziesz musiał wcisnąć Esc w celu przerwania. Podaj numer główny i podrzędny oddzielone jedną spacją dla nowego urządzenia:"
+msgstr "Parece não existir um dispositivo com o nome de $DRIVE_FOUND no diretório /dev, então teremos que criá-lo usando o número principal e o número secundário para o dispositivo. Se estiver a usar um disco de arranque com um driver de CD/DVD personalizado nele, você deverá ser capaz de encontrar estes números na documentação. Além disso, veja o ficheiro 'devices.txt' que vem com o código fonte do kernel do Linux. Caso não saiba os números, você terá que apertar Esc para abortar. Forneça o número principal e o secundário para o novo dispositivo, separados por um espaço:"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:93
 msgid "MAKING DEVICE IN /dev"
-msgstr "TWORZENIE URZĄDZENIA W /dev"
+msgstr "CRIANDO DISPOSITIVO EM /dev"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:98
 msgid "MKNOD FAILED"
-msgstr "KOMENDA MKNOD NIE POWIODŁA SIĘ"
+msgstr "MKNOD FALHOU"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:99
 msgid ""
 "Sorry, but the mknod command failed to make the device.  You'll need to go "
 "back and try selecting your source media again.  Press ENTER to abort the "
 "source media selection process."
-msgstr "Niestety polecenie mknod nie było w stanie utworzyć urządzenia. Powróć, aby ponownie wybrać nośnik źródłowy. Naciśnij ENTER w celu przerwania procesu wyboru nośnika."
+msgstr "Desculpe, mas o comando mknod falhou ao criar o dispositivo. Você terá que voltar atrás e tentar selecionar a sua media de origem novamente. Pressione ENTER para abortar o processo de seleção da media de origem."
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:114
 #: ../initrd-scripts/usr-lib-setup/INSCD:131
 #: ../initrd-scripts/usr-lib-setup/INSCD:151
 msgid "SCANNING"
-msgstr "SZUKANIE"
+msgstr "PROCURANDO"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:114
 msgid "Scanning for a CD/DVD drive containing a Salix disc..."
-msgstr "Skanowanie w poszukiwaniu napędu CD / DVD zawierającego dysk Salix ..."
+msgstr "A procurar CD/DVD que contenha um disco Salix..."
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:131
 msgid ""
 "Scanning for a parallel port ATAPI CD/DVD drive containing a Salix disc..."
-msgstr "Skanowanie dla portu równoległego ATAPI Napęd CD / DVD zawierający dysk Salix ..."
+msgstr "À procura do disco Salix no drive de port paralelo ATAPI CD/DVD..."
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:151
 msgid ""
 "No IDE/SCSI drive, so we will try scanning for CD drives on old proprietary interfaces, such as SoundBlaster pre-IDE CD drives, Sony CDU-31a, Sony 535, old Mitsumi pre-IDE, old Optics, etc.  For this scan to work at all, you'll need to be using a bootdisk that supports your CD drive.\n"
 "\n"
 "Please press ENTER to begin this last-chance scan for old, obsolete hardware."
-msgstr "Nie znaleziono napędu IDE/SCSI. Rozpoczniemy wyszukiwanie napędu CD na starych i opatentowanych interfejsach, takich jak napędy CD Soundblaster sprzed IDE, Sony CDU-31a, Sony 535, stare (sprzed IDE) Mitsumi, stare Optics itd. Aby ten proces był w ogóle możliwy, dysk rozruchowy, którego używasz musi wspierać twój napęd CD.\n\nWciśnij ENTER aby podjąć próbę ostatniej szansy wyszukania przestarzałego sprzętu."
+msgstr "Nenhuma unidade IDE/SCSI, então vamos tentar procurar unidades de CD em interfaces proprietárias antigas, como unidades de CD SoundBlaster pre-IDE, Sony CDU-31a, Sony 535, Mitsumi pre-IDE antigo, Optics antigo, etc. Para essa procura funcionar, você deve de usar um disco de inicialização que suporte a sua unidade de CD.\n\nPor favor pressione ENTER para iniciar essa última tentativa de procura por hardware antigo e obsoleto."
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:174
 msgid "CD/DVD DRIVE NOT FOUND"
-msgstr "NIE ODNALEZIONO NAPĘDU CD/DVD"
+msgstr "UNIDADE DE CD/DVD NÃO ENCONTRADO"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:175
 msgid ""
@@ -478,26 +480,26 @@ msgid ""
 "information on forcing the detection of your drive, and then reattempt "
 "installation.  If all else fails, see FAQ.TXT for information about copying "
 "parts of this CD to your DOS partition and installing it from there."
-msgstr "Napęd CD / DVD nie został znaleziony na żadnym z urządzeń, które zostały zeskanowane. Możliwe powody to użycie bootdisku lub jądra, które nie obsługuje twojego napędu, nie przekazanie parametrów wymaganych przez niektóre napędy do jądra, brak dysku Salix w napędzie CD / DVD lub użycie dysku podłączonego do Plug and Play karta dźwiękowa (w tym przypadku często pomaga połączenie napędu bezpośrednio z interfejsem IDE). Upewnij się, że używasz właściwej dyskietki rozruchowej dla twojego sprzętu, sprawdź plik BOOTING, aby uzyskać informacje na temat wymuszania wykrycia dysku, a następnie ponownie spróbuj zainstalować. Jeśli wszystko inne zawiedzie, zobacz FAQ.TXT, aby uzyskać informacje na temat kopiowania części tego dysku CD na partycję DOS i instalowania jej z tego miejsca."
+msgstr "Não foi possível encontrar nenhum leitor CD/DVD em todos os dispositivos que foram verificados. Razões possíveis incluem um disco de arranque ou kernel não compatíveis com o dispositivo, impossibilidade de transmitir para o kernel parâmetros requeridos por alguns dispositivos, ou usar um dispositivo ligado a uma placa de som Plug and Play (neste caso, ligar o dispositivo diretamente ao interface IDE costuma ajudar). Por favor certifique-se que está a usar o disco de arranque correto para o seu hardware, consulte o ficheiro BOOTING para possível informação em forçar a deteção do seu dispositivo e tente novamente a instalação. Se tudo o mais falhar, veja FAQ.TXT para informações sobre copiar partes deste CD para a sua partição DOS e instalar a partir daí."
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:187
 msgid ""
 "You will now be returned to the main menu.  If you want to try looking for "
 "the CD again, you may skip directly to the SOURCE menu selection."
-msgstr "Teraz powrócisz do menu głównego. Jeśli chcesz spróbować ponownie wyszukać płytę CD, możesz przejść bezpośrednio do wyboru menu SOURCE."
+msgstr "Vai regressar ao menu principal. Se quiser tentar procurar novamente o CD, pode saltar diretamente para a seleção de menu ORIGEM."
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:197
 msgid "CD/DVD DRIVE FOUND"
-msgstr "ZNALEZIONO NAPĘD CD/DVD"
+msgstr "UNIDADE DE CD/DVD ENCONTRADA"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:198
 #, sh-format
 msgid "A Salix disc was found in device $DRIVE_FOUND."
-msgstr "Dysk z Salixem został znależiony w  $DRIVE_FOUND."
+msgstr "Foi encontrado um disco Salix no dispositivo $DRIVE_FOUND."
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:201
 msgid "MOUNT ERROR"
-msgstr "BŁĄD MONTOWANIA"
+msgstr "ERRO DE MONTAGEM"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:201
 #, sh-format
@@ -506,51 +508,51 @@ msgid ""
 "the device name is incorrect, the disc is not in the drive, or the kernel "
 "you are using does not support the device. (possibly an incorrect bootdisk) "
 "What would you like to do now?"
-msgstr "Wystąpił błąd przy próbie zamontowania CD/DVD na $DRIVE_FOUND. Sprawdź, czy nazwa urządzenia jest poprawna, czy płyta jest w napędzie oraz czy jądro systemu wspiera to urządzenie. (możliwy niewłasciwy dysk rozruchowy) Co chciałbyś zrobić?"
+msgstr "Ocorreu um erro ao tentar montar o CD/DVD em $DRIVE_FOUND. Talvez o nome do dispositivo esteja incorreto, o disco não esteja na unidade ou o kernel que você está a usar não suporte o dispositivo. (possívelmente um disco de arranque incorreto) O que você quer fazer agora?"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:208
 msgid "Abort CD installation"
-msgstr "Przerwij instalację CD"
+msgstr "Abortar instalação do CD"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:209
 msgid "Attempt to mount the CD/DVD device again"
-msgstr "Ponownie spróbuj zamontować urządzenie CD/DVD"
+msgstr "Tentar montar o dispositivo de CD/DVD novamente"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:210
 msgid "Ignore the error and continue"
-msgstr "Kontynuuj ignorując błędy"
+msgstr "Ignorar o erro e continuar"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:222
 #, sh-format
 msgid "ATTEMPTING TO MOUNT CD/DVD on $DRIVE_FOUND"
-msgstr "PRÓBA ZAMONTOWANIA CD/DVD na $DRIVE_FOUND"
+msgstr "TENTANDO MONTAR O CD/DVD em $DRIVE_FOUND"
 
 #: ../initrd-scripts/usr-lib-setup/INSCD:223
 #, sh-format
 msgid "Attempting to mount your CD/DVD again with the following command:"
-msgstr "Probuję ponownie zamontować twój dysk CD/DVD z użyciem komendy:"
+msgstr "A tentar montar novamente o CD/DVD com o seguinte comando:"
 
 #: ../initrd-scripts/usr-lib-setup/INSNFS:23
 msgid ""
 "Good! We're all set on the local end, but now we need to know where to find "
 "the software packages to install.  First, we need the IP address of the "
 "machine where the Salix sources are stored."
-msgstr "Dobrze! Wszytko jest zrobione na naszym komputerze, ale teraz musimy wiedzieć, gdzie znaleźć pakiety oprogramowania do zainstalowania. Najpierw potrzebujemy adresu IP komputera, na którym przechowywane są źródła Salix."
+msgstr "Ótimo! Desde lado está tudo pronto, mas agora precisamos de encontrar os pacotes de software a instalar. Primeiro, precisamos do endereço IP do computador onde as fontes Salix estão guardadas."
 
 #: ../initrd-scripts/usr-lib-setup/INSNFS:30
 #: ../initrd-scripts/usr-lib-setup/INSURL:72
 msgid ""
 "Since you're already running on the network, you should be able to use the "
 "hostname instead of an IP address if you wish."
-msgstr "Ponieważ jesteś już uruchomiony w sieci, powinieneś być w stanie użyć nazwy hosta zamiast adresu IP, jeśli chcesz."
+msgstr "Uma vez que já está em rede, se assim o desejar deverá poder utilizar um hostname em vez do endereço IP."
 
 #: ../initrd-scripts/usr-lib-setup/INSNFS:35
 msgid "What is the IP address of your NFS server?"
-msgstr "Jaki jest adres IP twojego serwera NFS?"
+msgstr "Qual é o endereço IP do seu servidor NFS?"
 
 #: ../initrd-scripts/usr-lib-setup/INSNFS:37
 msgid "ENTER IP ADDRESS OF NFS SERVER"
-msgstr "PODAJ ADRES IP SERWERA NFS"
+msgstr "INTRODUZA O ENDEREÇO IP DO SERVIDOR NFS"
 
 #: ../initrd-scripts/usr-lib-setup/INSNFS:46
 #: ../initrd-scripts/usr-lib-setup/INSSMB:47
@@ -558,345 +560,345 @@ msgstr "PODAJ ADRES IP SERWERA NFS"
 msgid ""
 "There must be a directory on the server with the Salix packages and files "
 "arranged in a tree like the FTP site."
-msgstr "Musi istnieć katalog na serwerze z pakietami Salix i plikami ułożonymi w drzewie, takim jak witryna FTP."
+msgstr "Tem de existir um diretório no servidor com os pacotes e ficheiros Salix organizados em árvore como no site FTP."
 
 #: ../initrd-scripts/usr-lib-setup/INSNFS:50
 msgid ""
 "The installation script needs to know the name of the directory on your "
 "server that contains the series' subdirectories. For example, if your A "
 "series is found at /stuff/salix/a, then you would respond: /stuff/salix"
-msgstr "Skrypt instalacyjny musi znać nazwę katalogu na serwerze zawierającą podkatalogi serii. Na przykład, jeśli twoja seria A zostanie znaleziona w /stuff/salix/a, odpowiedziałbyś: /stuff/salix"
+msgstr "O script de instalação precisa do nome do diretório no seu servidor que contem os subdiretórios da série. Por exemplo, se a sua série A está em /stuff/salix/a, então deverá responder: /stuff/salix"
 
 #: ../initrd-scripts/usr-lib-setup/INSNFS:55
 #: ../initrd-scripts/usr-lib-setup/INSSMB:55
 #: ../initrd-scripts/usr-lib-setup/INSURL:96
 msgid "What is the Salix source directory?"
-msgstr "Podaj katalog źródłowy Salixa."
+msgstr "Qual é o diretório de origem do Salix?"
 
 #: ../initrd-scripts/usr-lib-setup/INSNFS:56
 #: ../initrd-scripts/usr-lib-setup/INSSMB:56
 #: ../initrd-scripts/usr-lib-setup/INSURL:97
 #: ../initrd-scripts/usr-lib-setup/INShd:123
 msgid "SELECT SOURCE DIRECTORY"
-msgstr "WYBIERZ KATALOG ŹRÓDŁOWY"
+msgstr "SELECIONAR DIRETÓRIO DA FONTE"
 
 #: ../initrd-scripts/usr-lib-setup/INSNFS:65
 msgid "In the next screen you should watch for NFS mount errors."
-msgstr "Na następnym ekranie powinieneś zwrócić uwagę na błędy montowania NFS."
+msgstr "No próximo ecrã deverá verificar a existência de erros de montagem NFS."
 
 #: ../initrd-scripts/usr-lib-setup/INSNFS:68
 msgid ""
 "If you see errors and you don't see your NFS server listed, then try setting"
 " up NFS again."
-msgstr "Jeśli widzisz błędy i nie widzisz swojego serwera NFS na liście, spróbuj ponownie skonfigurować NFS."
+msgstr "Se vê erros e não vê listado o seu servidor NFS, então tente configurar novamente o seu NFS."
 
 #: ../initrd-scripts/usr-lib-setup/INSNFS:71
 msgid "NFS MOUNT INFORMATION"
-msgstr "INFORMACJE DOTYCZĄCE ZASOBÓW NFS"
+msgstr "INFORMAÇÃO DA MONTAGEM NFS"
 
 #: ../initrd-scripts/usr-lib-setup/INSNFS:80
 #, sh-format
 msgid "Mounting $REMOTE_PATH:"
-msgstr "Montowanie $REMOTE_PATH:"
+msgstr "Montando $REMOTE_PATH:"
 
 #: ../initrd-scripts/usr-lib-setup/INSNFS:85
 msgid "Didn't work."
-msgstr "Nie zadziałało."
+msgstr "Não funcionou."
 
 #: ../initrd-scripts/usr-lib-setup/INSNFS:87
 msgid "Maybe you should check that the directory name is correct?"
-msgstr "Upewnij się, czy nazwa katalogu jest poprawna."
+msgstr "Talvez devia verificar se o nome do diretório está correto?"
 
 #: ../initrd-scripts/usr-lib-setup/INSNFS:94
 msgid "Current NFS mounts:"
-msgstr "Obecne zasoby NFS:"
+msgstr "Montagens NFS atuais:"
 
 #: ../initrd-scripts/usr-lib-setup/INSNFS:98
 msgid "Do you need to try setting up NFS again?"
-msgstr "Czy chciałbyś ponownie skonfigurować NFS?"
+msgstr "Precisa de tentar configurar o NFS novamente?"
 
 #: ../initrd-scripts/usr-lib-setup/INSNFS:101
 #: ../initrd-scripts/usr-lib-setup/INSNFS:105
 msgid "NFS MOUNT RESULT"
-msgstr "WYNIKI MONTOWANIA NFS"
+msgstr "RESULTADO DA MONTAGEM NFS"
 
 #: ../initrd-scripts/usr-lib-setup/INSSMB:23
 msgid ""
 "Good! We're all set on the local end, but now we need to know where to find "
 "the software packages to install. First, we need the share address of the "
 "Samba server where the Salix sources are stored."
-msgstr "Dobrze! Wszystko jest zrobione na naszym komputerze, ale teraz musimy wiedzieć, gdzie znaleźć pakiety oprogramowania do zainstalowania. Najpierw potrzebujemy adresu udostępniania serwera Samby, w którym przechowywane są źródła Salix."
+msgstr "Ótimo! Desde lado está tudo pronto, mas agora precisamos de encontrar os pacotes de software a instalar. Primeiro, precisamos do endereço de partilha do servidor Samba onde as fontes Salix estão guardadas."
 
 #: ../initrd-scripts/usr-lib-setup/INSSMB:28
 msgid "Example share address:"
-msgstr "Przykładowy adres folderu udostępniania:"
+msgstr "Exemplo de endereço de partilha:"
 
 #: ../initrd-scripts/usr-lib-setup/INSSMB:32
 msgid ""
 "Since you're already running on the network, you should be able to use the "
 "hostname instead of an IP address if you wish.\n"
-msgstr "Jako że jesteśmy już podłączeni do sieci, możesz zacząć używać nazwy komputera (hostname) zamiast adresu IP.\n"
+msgstr "Uma vez que já se encontra a executar na rede, você deve ser capaz de usar o hostname ao invés do endereço IP se desejar.\n"
 
 #: ../initrd-scripts/usr-lib-setup/INSSMB:37
 msgid "What is the share address of your Samba server?"
-msgstr "Jaki jest adres udostępniania twojego serwera Samby?"
+msgstr "Qual o endereço de partilha do seu servidor Samba?"
 
 #: ../initrd-scripts/usr-lib-setup/INSSMB:38
 msgid "ENTER SHARE ADDRESS OF SAMBA SERVER"
-msgstr "WPISZ ADRES ZASOBU SERWERA SAMBY"
+msgstr "INFORMAR ENDEREÇO DE COMPARTILHAMENTO DO SERVIDOR SAMBA"
 
 #: ../initrd-scripts/usr-lib-setup/INSSMB:50
 msgid ""
 "The installation script needs to know the name of the directory below your "
 "Samba share that contains the series subdirectories. For example, if your A "
 "series is found at /stuff/salix/a, then you would respond: /stuff/salix"
-msgstr "Skrypt instalacyjny musi znać nazwę katalogu znajdującego się poniżej udziału Samby zawierającego serie podkatalogów. Na przykład, jeśli twoja seria A zostanie znaleziona w /stuff/salix/a, odpowiedziałbyś: /stuff/salix"
+msgstr "O script de instalação precisa do nome do diretório na partilha Samba que contem os subdiretórios da série. Por exemplo, se a sua série A está em /stuff/salix/a, então deverá responder: /stuff/salix"
 
 #: ../initrd-scripts/usr-lib-setup/INSSMB:65
 msgid "You should see no mount errors:"
-msgstr "Nie powinieneś widzieć żadnych błędów montowania:"
+msgstr "Nenhum erro de montagem deve ocorrer:"
 
 #: ../initrd-scripts/usr-lib-setup/INSSMB:67
 #, sh-format
 msgid "Mounting $REMOTE_SHARE ..."
-msgstr "Montuję $REMOTE_SHARE ..."
+msgstr "Montando $REMOTE_SHARE ..."
 
 #: ../initrd-scripts/usr-lib-setup/INSSMB:73
 msgid "Mount failed."
-msgstr "Montowanie nie powiodło się."
+msgstr "Montagem falhou."
 
 #: ../initrd-scripts/usr-lib-setup/INSSMB:78
 msgid "Mounted Samba share(s):"
-msgstr "Zamontowano następujący zasób lub zasoby Samby:"
+msgstr "Compartilhamento(s) Samba montados:"
 
 #: ../initrd-scripts/usr-lib-setup/INSSMB:85
 msgid "A Salix package tree was found! Ready to continue."
-msgstr "Znaleziono drzewo pakietów Salix! Gotowy, aby kontynuować."
+msgstr "Encontrada árvore de pacotes Salix! Pronto para continuar."
 
 #: ../initrd-scripts/usr-lib-setup/INSSMB:89
 msgid "No Salix package tree found at the indicated path!"
-msgstr "Nie znaleziono drzewa pakietów Salix na wskazanej ścieżce!"
+msgstr "No caminho indicado não foi encontrada árvore de pacotes Salix!"
 
 #: ../initrd-scripts/usr-lib-setup/INSSMB:95
 msgid "Do you want to try setting up Samba again?"
-msgstr "Czy chciałbyś ponownie skonfigurować Sambę?"
+msgstr "Quer tentar configurar o Samba novamente?"
 
 #: ../initrd-scripts/usr-lib-setup/INSSMB:99
 #: ../initrd-scripts/usr-lib-setup/INSSMB:103
 msgid "MOUNT RESULT"
-msgstr "WYNIKI MONTOWANIA"
+msgstr "RESULTADO DA MONTAGEM"
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:63
 msgid ""
 "Good! We're all set on the local end, but now we need to know where to find "
 "the software packages to install. First, we need the URL of the ftp or http "
 "server where the Salix sources are stored."
-msgstr "Dobry! Wszystko jest zrobione na naszym komputerze, ale teraz musimy wiedzieć, gdzie znaleźć pakiety oprogramowania do zainstalowania. Najpierw potrzebujemy adresu URL serwera ftp lub http, w którym przechowywane są źródła Salix."
+msgstr "Ótimo! Estamos prontos no lado local, mas agora precisamos saber onde encontrar os pacotes de software para instalar. Primeiro, precisamos do URL do servidor ftp ou http onde estão guardadas as fontes do Salix."
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:68
 msgid "URL examples are:"
-msgstr "Przykładowe URL:"
+msgstr "Exemplos de URL são:"
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:76
 msgid "What is the URL of your FTP/HTTP server?"
-msgstr "Podaj URL serwera FTP/HTTP:"
+msgstr "Qual o URL do seu servidor FTP/HTTP?"
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:77
 msgid "ENTER URL OF FTP/HTTP SERVER"
-msgstr "WPROWADŹ ADRES URL SERWERA FTP/HTTP"
+msgstr "INTRODUZIR O URL DO SERVIDOR FTP/HTTP"
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:90
 msgid ""
 "The installation script needs to know the name of the directory on your "
 "server that contains the series subdirectories. For example, if your A "
 "series is found at /stuff/salix/a, then you would respond: /stuff/salix"
-msgstr "Skrypt instalacyjny musi znać nazwę katalogu na serwerze zawierającą podkatalogi serii. Na przykład, jeśli twoja seria A zostanie znaleziona w /stuff/salix/a, odpowiedziałbyś: /stuff/salix"
+msgstr "O script de instalação precisa do nome do diretório no seu servidor que contém os subdiretórios de série. Por exemplo, se a sua série A está em /coisas/salix/a, então deve responder: /coisas/salix"
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:107
 msgid "In the next screen you should watch for possible errors."
-msgstr "Na następnym ekranie powinieneś zwrócić uwagę na możliwe błędy."
+msgstr "No próximo ecrã deverá verificar possíveis erros."
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:110
 msgid ""
 "First, we'll download the PACKAGES.TXT from the parent of the directory that you entered before (which should be the root of the remote Salix tree).  If that succeeds, then we use PACKAGES.TXT to reconstruct a local cache of the package tree (should take a minute or less on an average system).\n"
 "After that, we're all set to go!"
-msgstr "Najpierw pobierzemy PACKAGES.TXT z nadrzędnego katalogu, który wpisaliśmy wcześniej (który powinien być katalogiem zdalnego drzewa Salix). Jeśli to się powiedzie, użyjemy PACKAGES.TXT do rekonstrukcji lokalnej pamięci podręcznej drzewa pakietów (powinno to zająć minutę lub mniej w przeciętnym systemie).\nPo tym wszystkim jesteśmy gotowi do pracy!"
+msgstr "Primeiro, descarregamos PACKAGES.TXT da raiz do diretório que indicou anteriormente (que deverá ser a raiz da árvore Salix remota). Se bem sucedido, então usaremos PACKAGES.TXT para reconstruir uma cache local da árvore de pacotes (deverá demorar um minuto ou menos num sistema médio).\nDepois disso, estamos prontos para começar!"
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:117
 msgid "Downloading PACKAGES.TXT at the Salix root starts after you press OK."
-msgstr "Pobieranie PACKAGES.TXT w katalogu głównym Salix rozpoczyna się po naciśnięciu OK."
+msgstr "A descarga de PACKAGES.TXT da raiz Salix começará assim que premir OK."
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:119
 msgid ""
 "That file is several hundreds of KB in size so it may take some time to get "
 "here..."
-msgstr "Ten plik ma kilkaset KB, więc może zająć trochę czasu ..."
+msgstr "O ficheiro tem várias centenas de KB pelo que poderá demorar algum tempo a lá chegar..."
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:121
 msgid "DOWNLOAD INFORMATION"
-msgstr "INFORMACJE O POBRANIU"
+msgstr "INFORMAÇÃO DE TRANSFERÊNCIA"
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:130
 msgid "Downloading PACKAGES.TXT ..."
-msgstr "Pobieram PACKAGES.TXT ..."
+msgstr "A descarregar PACKAGES.TXT..."
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:135
 msgid "> Download failed. Going to try one directory lower."
-msgstr "> Pobieranie nie powiodło się. Próbuję jeden katalog niżej."
+msgstr "> A transferência falhou. A tentar um diretório abaixo."
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:141
 msgid "> Download failed again."
-msgstr "> Pobieranie ponownie się nie powiodło."
+msgstr "> A transferência falhou novamente."
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:148
 msgid "A Salix 'PACKAGES.TXT' is available. Ready to continue!"
-msgstr "Dostępny jest plik Salix \"PACKAGES.TXT\". Gotowy do kontynuowania!"
+msgstr "Um ficheiro Salix 'PACKAGES.TXT' está disponível. Pronto para continuar!"
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:153
 msgid "No file 'PACKAGES.TXT' was found. Wrong URL?"
-msgstr "Plik 'PACKAGES.TXT' nie został odnaleziony. Błędny URL?"
+msgstr "Nenhum ficheiro 'PACKAGES.TXT' foi encontrado. URL errado?"
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:158
 msgid "Do you want to try setting up FTP/HTTP again? "
-msgstr "Czy chciałbyś ponownie skonfigurować FTP/HTTP?"
+msgstr "Você quer tentar configurar o FTP/HTTP novamente?"
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:161
 #: ../initrd-scripts/usr-lib-setup/INSURL:165
 msgid "DOWNLOAD RESULT"
-msgstr "WYNIK POBRANIA"
+msgstr "RESULTADO DA TRANSFERÊNCIA"
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:186
 #: ../initrd-scripts/usr-lib-setup/INSURL:226
 #: ../initrd-scripts/usr-lib-setup/INSURL:230
 msgid "INITIALIZING PACKAGE TREE"
-msgstr "INICJALIZACJA DRZEWA PAKIETÓW"
+msgstr "A INICIAR ÁRVORE DE PACOTES"
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:187
 msgid "Setting up local cache for the FTP/HTTP server's package tree ...\n"
-msgstr "Ustawianie lokalnej pamięci podręcznej dla drzewa pakietów serwera FTP/HTTP...\n"
+msgstr "Configurando cache local para a árvore de pacotes do servidor FTP/HTTP ...\n"
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:227
 #, sh-format
 msgid "processing ${TOTALP} Salix packages..."
-msgstr "przetwarzanie pakietów SALX ${TOTALP} ..."
+msgstr "a processar ${TOTALP} pacotes Salix..."
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:231
 msgid ""
 "\n"
 "Retrieving tagfile information for the package tree ..."
-msgstr "\nGromadzenie informacji o plikach tagfile dla drzewa pakietów..."
+msgstr "\nExtraindo informação de tagfile para a árvore de pacotes ..."
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:239
 msgid "REMOTE SERVER CONFIGURATION"
-msgstr "KONFIGURACJA ODLEGŁEGO SERWERA"
+msgstr "CONFIGURAÇÃO DE SERVIDOR REMOTO"
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:240
 msgid "Failed to configure for installation from remote server."
-msgstr "Konfiguracja instalacji z odległego serwera nie powiodła się."
+msgstr "Falhou ao configurar instalação a partir de servidor remoto."
 
 #: ../initrd-scripts/usr-lib-setup/INSUSB:13
 msgid "SCANNING FOR USB STICK"
-msgstr "SZUKANIE PAMIĘCI PRZENOŚNEJ USB"
+msgstr "PROCURANDO POR UNIDADE USB"
 
 #: ../initrd-scripts/usr-lib-setup/INSUSB:14
 msgid ""
 "Make sure the USB stick containing the Salix package directory is inserted "
 "into a USB port, and then press ENTER to begin the scanning process."
-msgstr "Upewnij się, że pamięć USB zawierająca katalog pakietów Salix jest włożona do portu USB, a następnie naciśnij klawisz ENTER, aby rozpocząć proces skanowania."
+msgstr "Certifique-se que a pen USB com o diretório de pacotes Salix está inserido num porto USB, então prima ENTER para iniciar o processo de varrimento."
 
 #: ../initrd-scripts/usr-lib-setup/INSUSB:36
 msgid "NO REMOVABLE USB DEVICES FOUND"
-msgstr "NIE WYKRYTO PAMIĘCI PRZENOŚNYCH USB"
+msgstr "NENHUM DISPOSITIVO USB REMOVÍVEL ENCONTRADO"
 
 #: ../initrd-scripts/usr-lib-setup/INSUSB:37
 msgid ""
 "Sorry, but no removable USB devices could be found.  Exiting back to the top"
 " menu."
-msgstr "Niestety nie znaleziono urządzeń przenośnych USB. Wychodzę do głównego menu."
+msgstr "Desculpe, mas nenhum dispositivo USB removível foi encontrado. A regressar ao menu principal."
 
 #: ../initrd-scripts/usr-lib-setup/INSUSB:88
 msgid "NO SALIX DIRECTORY FOUND"
-msgstr "Nie znaleziono katalogu z salixem"
+msgstr "DIRETÓRIO SALIX NÃO ENCONTRADO"
 
 #: ../initrd-scripts/usr-lib-setup/INSUSB:89
 msgid ""
 "Sorry, but a Salix directory could not be found on any USB devices. Exiting "
 "back to the top menu."
-msgstr "Przepraszamy, ale katalogu Salix nie można znaleźć na żadnym urządzeniu USB. Wyjście z powrotem do głównego menu."
+msgstr "Desculpe, mas não foi encontrado um diretório Salix em nenhum dispositivo USB. A sair para o menu de topo."
 
 #: ../initrd-scripts/usr-lib-setup/INSUSB:98
 msgid "USB PACKAGE SOURCE FOUND"
-msgstr "ZNALEZIONO ŹRÓDŁO PAKIETU USB"
+msgstr "FONTE USB DE PACOTES ENCONTRADA"
 
 #: ../initrd-scripts/usr-lib-setup/INSUSB:99
 #, sh-format
 msgid "A Salix package directory was found on device $DRIVE_FOUND."
-msgstr "Znaleziono katalog pakietów Salix na urządzeniu $DRIVE_FOUND."
+msgstr "Um diretório de pacotes Salix foi encontrado no dispositivo $DRIVE_FOUND."
 
 #: ../initrd-scripts/usr-lib-setup/INSdir:17
 #: ../initrd-scripts/usr-lib-setup/INShd:17
 msgid "Setup failed to unmount a required directory:"
-msgstr "Instalator nie mógł odmontować wymaganego katalogu:"
+msgstr "A instalação falhou a desmontar um diretório requerido:"
 
 #: ../initrd-scripts/usr-lib-setup/INSdir:21
 msgid "Please reboot the machine and try again."
-msgstr "Uruchom ponownie komputer i spróbuj ponownie."
+msgstr "Por favor reinicie o computador e volte a tentar."
 
 #: ../initrd-scripts/usr-lib-setup/INSdir:24
 #: ../initrd-scripts/usr-lib-setup/INShd:23
 msgid "ERROR"
-msgstr "BŁĄD"
+msgstr "ERRO"
 
 #: ../initrd-scripts/usr-lib-setup/INSdir:25
 #: ../initrd-scripts/usr-lib-setup/INShd:24
 msgid "REBOOT"
-msgstr "URUCHOM PONOWNIE"
+msgstr "REINICIAR"
 
 #: ../initrd-scripts/usr-lib-setup/INSdir:26
 #: ../initrd-scripts/usr-lib-setup/INShd:25
 msgid "CANCEL"
-msgstr "ANULUJ"
+msgstr "CANCELAR"
 
 #: ../initrd-scripts/usr-lib-setup/INSdir:40
 msgid ""
 "Please provide the path to a directory containing the contents (or an ISO "
 "image) of a Salix installation disc."
-msgstr "Proszę o podanie ścieżki do folderu zawierającego zawartość (lub obraz ISO) dysku instalacyjnego Salixa."
+msgstr "Por favor indique o caminho para o diretório com o conteúdo (ou imagem ISO) do disco de instalação Salix."
 
 #: ../initrd-scripts/usr-lib-setup/INSdir:44
 msgid ""
 "Note: You may use any directory within the current filesystem except '/mnt' "
 "or '/var/log/mount' as these are required by setup."
-msgstr "Uwaga: Możesz użyć każdego folderu znajdującego się na bieżącym systemie plików, oprócz '/mnt/' oraz '/var/log/mount', ponieważ są one wymagane przy instalacji."
+msgstr "Nota: Pode usar qualquer diretório no sistema de ficheiros atual menos '/mnt' ou '/var/log/mount' pois estes são precisos pela instalação."
 
 #: ../initrd-scripts/usr-lib-setup/INSdir:49
 msgid "SELECT A PRE-MOUNTED DIRECTORY"
-msgstr "WYBIERZ ZAMONTOWANY WCZEŚNIEJ FOLDER"
+msgstr "SELECIONE UM DIRETÓRIO JÁ MONTADO"
 
 #: ../initrd-scripts/usr-lib-setup/INSdir:50
 #: ../initrd-scripts/usr-lib-setup/INShd:124
 msgid "Browse"
-msgstr "Eksploruj"
+msgstr "Navegar"
 
 #: ../initrd-scripts/usr-lib-setup/INSdir:63
 #: ../initrd-scripts/usr-lib-setup/INShd:137
 msgid "SELECT A DIRECTORY"
-msgstr "WYBIERZ FOLDER"
+msgstr "SELECIONE UM DIRETÓRIO"
 
 #: ../initrd-scripts/usr-lib-setup/INSdir:85
 msgid "The ISO image you specified is not valid:"
-msgstr "Wybrany obraz ISO jest nieprawidłowy:"
+msgstr "A imagem ISO que indicou não é válida:"
 
 #: ../initrd-scripts/usr-lib-setup/INSdir:89
 #: ../initrd-scripts/usr-lib-setup/INSdir:114
 #: ../initrd-scripts/usr-lib-setup/INShd:185
 msgid "Please check and try again."
-msgstr "Sprawdź i spróbuj jeszcze raz."
+msgstr "Por favor verifique e tente novamente."
 
 #: ../initrd-scripts/usr-lib-setup/INSdir:91
 #: ../initrd-scripts/usr-lib-setup/INShd:168
 msgid "INVALID ISO IMAGE"
-msgstr "NIEPRAWIDŁOWY OBRAZ ISO"
+msgstr "IMAGEM ISO INVÁLIDA"
 
 #: ../initrd-scripts/usr-lib-setup/INSdir:92
 #: ../initrd-scripts/usr-lib-setup/INSdir:118
@@ -911,72 +913,72 @@ msgstr "OK"
 #: ../initrd-scripts/usr-lib-setup/INSdir:109
 #: ../initrd-scripts/usr-lib-setup/INShd:181
 msgid "The directory you specified is not valid:"
-msgstr "Wybrany folder jest nieprawidłowy:"
+msgstr "O diretório que indicou não é válido:"
 
 #: ../initrd-scripts/usr-lib-setup/INSdir:117
 #: ../initrd-scripts/usr-lib-setup/INShd:187
 msgid "INVALID SOURCE DIRECTORY"
-msgstr "NIEPRAWIDŁOWY FOLDER ŹRÓDŁOWY"
+msgstr "DIRETÓRIO FONTE INVÁLIDO"
 
 #: ../initrd-scripts/usr-lib-setup/INShd:20
 msgid "Please reboot the machine an try again."
-msgstr "Uruchom ponownie komputer i spróbuj jeszcze raz."
+msgstr "Por favor reinicie o computador e volte a tentar."
 
 #: ../initrd-scripts/usr-lib-setup/INShd:39
 msgid ""
 "Please specify which partition on your hard disk or USB stick contains the "
 "contents (or an ISO image) of a Salix installation disc."
-msgstr "Proszę określić, która partycja na Twoim dysku twardym lub USB posiada zawartość (lub obraz ISO) dysku instalacyjnego Salixa."
+msgstr "Por favor indique em que partição no seu disco rígido ou pen USB se encontra o conteúdo do disco (ou imagem ISO) de uma instalação Salix."
 
 #: ../initrd-scripts/usr-lib-setup/INShd:43
 msgid "Example:"
-msgstr "Przykład:"
+msgstr "Exemplo:"
 
 #: ../initrd-scripts/usr-lib-setup/INShd:45
 msgid "Note: Use the <Partitions> button to list available partitions."
-msgstr "Uwaga: Użyj klawisza <Partitions> aby wyświetlić dostępne partycje."
+msgstr "Nota: Use  o botão <Partitions> para uma lista de partições disponíveis."
 
 #: ../initrd-scripts/usr-lib-setup/INShd:48
 msgid "SELECT HARD DISK PARTITION"
-msgstr "WYBIERZ PARTYCJĘ DYSKU TWARDEGO"
+msgstr "SELECIONE PARTIÇÃO DO DISCO RÍGIDO"
 
 #: ../initrd-scripts/usr-lib-setup/INShd:49
 msgid "Partitions"
-msgstr "Partycja"
+msgstr "Partições"
 
 #: ../initrd-scripts/usr-lib-setup/INShd:61
 msgid "PARTITIONS LIST"
-msgstr "LISTA PARTYCJI"
+msgstr "LISTA DE PARTIÇÕES"
 
 #: ../initrd-scripts/usr-lib-setup/INShd:92
 msgid "MOUNT FAILURE"
-msgstr "MONTOWANIE NIE POWIODŁO SIĘ"
+msgstr "FALHA NA MONTAGEM"
 
 #: ../initrd-scripts/usr-lib-setup/INShd:106
 msgid "MOUNT SUCCESS"
-msgstr "MONTOWANIE UDANE"
+msgstr "MONTAGEM BEM SUCEDIDA"
 
 #: ../initrd-scripts/usr-lib-setup/INShd:115
 msgid ""
 "Now please provide the path to a directory containing the contents (or an "
 "ISO image) of a Salix installation disc."
-msgstr "Teraz proszę o podanie ścieżki do folderu w którym znajduje się zawartość (lub obraz ISO) dysku instalacyjnego Salixa."
+msgstr "Por favor indique agora o caminho para o diretório onde se encontra o conteúdo do disco (ou imagem ISO) de uma instalação Salix."
 
 #: ../initrd-scripts/usr-lib-setup/INShd:118
 msgid ""
 "Note: The path you enter must be relative to the mount point. So, "
 "'/var/log/mount/salix-xfce' should be entered as '/salix-xfce'."
-msgstr "Uwaga: Podana ścieżka musi być względna do punktu montowania. A więc, '/var/log/mount/salix-xfce' powinna być wpisana jako '/salix-xfce'."
+msgstr "Nota: O caminho que indicar deve ser relativo ao ponto de montagem. Assim, '/var/log/mount/salix-xfce' deve ser inserido como '/salix-xfce'."
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:28
 #, sh-format
 msgid "Setting permissions on NTFS partition $DOS_PART"
-msgstr "Ustawianie praw dostępu do partycji NTFS $DOS_PART"
+msgstr "Definindo permissões na partição NTFS $DOS_PART"
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:29
 #, sh-format
 msgid "SET SECURITY FOR NTFS PARTITION $DOS_PART"
-msgstr "USTAW ZABEZPIECZENIA DLA PARTYCJI NTFS $DOS_PART"
+msgstr "DEFINIR SEGURANÇA DA PARTIÇÃO NTFS $DOS_PART"
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:31
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:54
@@ -988,96 +990,96 @@ msgid ""
 "level can range from no access at all, to read-only for everyone, to read-"
 "write access for every user on the machine.  A reasonable default (read-"
 "write for root only) is chosen, but you may set this any way that you like."
-msgstr "Aby uchronić się przed ewentualnym myszkowaniem po partycji Windows przez innych użytkowników (lub nawet zniszczeniem danych w zależności od ustawień), powinieneś określić poziom dostępu do partycji $DOS_PART dla zwykłych użytkowników (nie-root). Poziom dostępu może wahać się od kompletnego braku dostępu, poprzez dostęp tylko do odczytu dla wszystkich, po nieskrępowane prawa odczytu i zapisu dla każdego użytkownika danego komputera. Wybrano całkiem rozsądne wartości domyślne (prawa zapisu/odczytu tylko dla użytkownika root), ale możesz zmienić je w dowolny sposób."
+msgstr "Porque os utilizadores podiam espiar (ou destruir, dependendo das definições) a sua partição Windows, você deve escolher a quantidade de acesso que gostaria que seus utilizadores não-administradores tivessem na partição $DOS_PART. O nível de acesso varia, podendo ser nenhum acesso, somente-leitura para todos ou até leitura-escrita para todos os utilizadores na máquina. Um padrão razoável (leitura-escrita somente para o administrador) é escolhido, mas você pode configurar como preferir."
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:38
 msgid "Root has read/write access, users have no access (ntfs-3g)"
-msgstr "Root ma prawa odczytu/zapisu, użytkownicy nie mają żadnych uprawnień (ntfs-3g)"
+msgstr "O administrador tem acesso de leitura/escrita, utilizadores não tem acesso (ntfs-3g)"
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:39
 msgid "Everyone has read only access (built-in kernel ntfs driver)"
-msgstr "Wszyscy mają wyłącznie prawo do odczytu (wbudowany w jądro sterownik ntfs)"
+msgstr "Todos têm acesso somente a leitura (driver ntfs embutido no kernel)"
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:40
 msgid "Everyone has read access, but only root can write (ntfs-3g)"
-msgstr "Wszyscy mają prawo do odczytu, ale tylko root ma prawo zapisu (ntfs-3g)"
+msgstr "Todos tem acesso de leitura, mas só o administrador pode escrever (ntfs-3g)"
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:41
 msgid "All users can read/write to any file (ntfs-3g)"
-msgstr "Każdy użytkownik ma prawo odczytu/zapisu do wszystkich plików (ntfs-3g)"
+msgstr "Todos os utilizadores podem ler/escrever em qualquer ficheiro (ntfs-3g)"
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:51
 #, sh-format
 msgid "Setting permissions on FAT partition $DOS_PART"
-msgstr "Ustawianie praw dostępu do partycji $DOS_PART (FAT)"
+msgstr "Definindo permissões na partição FAT $DOS_PART"
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:52
 #, sh-format
 msgid "SET SECURITY FOR FAT PARTITION $DOS_PART"
-msgstr "USTAW ZABEZPIECZENIA DLA PARTYCJI $DOS_PART (FAT)"
+msgstr "DEFINIR SEGURANÇA DA PARTIÇÃO FAT $DOS_PART"
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:61
 msgid "Root has read/write access, users have no access"
-msgstr "Root ma prawo odczytu/zapisu, pozostali użytkownicy nie mają żadnych uprawnień"
+msgstr "Administrador tem acesso de leitura/escrita, utilizadores não tem acesso"
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:62
 msgid "Everyone has read only access"
-msgstr "Wszyscy mają wyłącznie prawo do odczytu"
+msgstr "Todos tem acesso somente a leitura"
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:63
 msgid "Everyone has read access, but only root can write"
-msgstr "Wszyscy mają prawo do odczytu, ale tylko root ma prawo zapisu"
+msgstr "Todos tem acesso de leitura, mas apenas o administrador pode escrever"
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:64
 msgid "All users can read/write to any file"
-msgstr "Każdy użytkownik ma prawo odczytu/zapisu dla wszystkich plików "
+msgstr "Todos os utilizadores podem ler/escrever em qualquer ficheiro"
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:99
 msgid "Setting up non-Linux partitions."
-msgstr "Konfiguracja partycji innego typu niż Linux"
+msgstr "A configurar partições não-Linux."
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:100
 msgid "FAT or NTFS PARTITIONS DETECTED"
-msgstr "Wykryto partycje FAT lub NTFS"
+msgstr "PARTIÇÕES FAT ou NTFS DETECTADAS"
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:101
 msgid ""
 "Partitions of type FAT or NTFS (commonly used by DOS and Windows) have been "
 "found on your system.  Would you like to add these partitions to your "
 "/etc/fstab so that these partitions are visible from Linux?"
-msgstr "Znaleziono partycje typu FAT lub NTFS (powszechnie używane w systemach DOS i Windows). Czy chciałbyś dodać te partycje do /etc/fstab aby były one widoczne z systemu Linux?"
+msgstr "Partições do tipo FAT ou NTFS (geralmente usadas pelo DOS e pelo Windows) foram encontradas no seu sistema. Você gostaria de adicionar estas partições ao seu /etc/fstab para que estas partições sejam visíveis no Linux?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:113
 msgid "Selecting non-Linux partitions."
-msgstr "Wybór partycji nie-linuksowych."
+msgstr "A selecionar partições não-Linux."
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:115
 msgid "SELECT PARTITION TO ADD TO /etc/fstab"
-msgstr "WYBIERZ PARTYCJĘ DO DODANIA DO /etc/fstab"
+msgstr "SELECIONAR PARTIÇÃO PARA ADICIONAR AO /etc/fstab"
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:119
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:416
 msgid "Continue"
-msgstr "Dalej"
+msgstr "Continuar"
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:121
 msgid ""
 "In order to make these partitions visible from Linux, we  need to add them "
 "to your /etc/fstab.  Please pick a partition to  add to /etc/fstab, or "
 "select '---' to continue with the installation  process."
-msgstr "Aby partycje te były widoczne z systemu Linux, musimy dodać je do /etc/fstab. Wybierz partycję, którą chcesz dodać do /etc/fstab, bądź też zaznacz '---' by kontynuować proces instalacyjny."
+msgstr "Afim de tornarmos essas partições visíveis no Linux, precisamos adicioná-las ao seu /etc/fstab. Por favor escolha uma partição para adicionar ao /etc/fstab, ou selecione '---' para continuar com o processo de instalação."
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:140
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:164
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:200
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:443
 msgid "IN USE"
-msgstr "W UŻYCIU"
+msgstr "EM USO"
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:140
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:193
 msgid "on"
-msgstr "na"
+msgstr "em"
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:146
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:147
@@ -1085,17 +1087,17 @@ msgstr "na"
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:149
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:150
 msgid "done, continue with setup"
-msgstr "ukończono, kontynuuj ustawienia"
+msgstr "concluído, continuar com a instalação"
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:185
 #, sh-format
 msgid "Selecting a location to mount $DOS_PART."
-msgstr "Wybór miejsca na montowanie $DOS_PART."
+msgstr "Selecionando um local para montar $DOS_PART."
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:186
 #, sh-format
 msgid "PICK MOUNT POINT FOR $DOS_PART"
-msgstr "WYBIERZ PUNKT MONTOWANIA DLA $DOS_PART"
+msgstr "ESCOLHER PONTO DE MONTAGEM PARA $DOS_PART"
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:187
 #, sh-format
@@ -1105,169 +1107,169 @@ msgid ""
 "instance, you might want to  enter /fat-c or /fat-d or something similar.   "
 "NOTE: This partition will not actually be mounted until you reboot.   Where "
 "would you like to mount $DOS_PART?"
-msgstr "Partycja ta musi być teraz zamontowana gdzieś w drzewie katalogów. Wpisz nazwę katalogu, pod którym chciałbyś ją zamontować. Przykładowo może to być /fat-c lub /fat-d lub coś podobnego. UWAGA: Partycja ta zostanie zamontowana po zrestartowaniu systemu. Gdzie chciałbyś zamontować $DOS_PART?"
+msgstr "Agora esta partição precisa de ser montada em algum lugar na sua árvore de diretórios. Por favor introduza o diretório no qual você gostaria de a colocar. Por exemplo, poderia introduzir /fat-c ou /fat-d, ou algo similar. NOTA: Esta partição não será realmente montada até que você reinicie. Onde gostaria de montar $DOS_PART?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:216
 #: ../initrd-scripts/usr-lib-setup/SeTEFI:73
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:535
 msgid "Adding this information to your /etc/fstab:"
-msgstr "Dodaję te informacje do Twojego /etc/fstab:"
+msgstr "A adicionar informação ao seu /etc/fstab:"
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:219
 msgid "Finished setting up non-Linux partitions."
-msgstr "Zakończono konfigurację nie-linuksowych partycji."
+msgstr "Terminamos de configurar as partições não-Linux."
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:220
 msgid "DONE ADDING FAT or NTFS PARTITIONS"
-msgstr "PARTYCJE FAT lub NTFS ZOSTAŁY DODANE"
+msgstr "ADICÃO DE PARTIÇÕES FAT ou NTFS CONCLUÍDA"
 
 #: ../initrd-scripts/usr-lib-setup/SeTEFI:44
 #, sh-format
 msgid "FORMAT EFI PARTITION ${PREFERRED_EFI_PARTITION}?"
-msgstr "SFORMATOWAĆ PARTYCJĘ EFI ${PREFERRED_EFI_PARTITION}?"
+msgstr "FORMATAR PARTIÇÃO EFI ${PREFERRED_EFI_PARTITION}?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTEFI:45
 #, sh-format
 msgid ""
 "An EFI System Partition was found on ${PREFERRED_EFI_PARTITION}, but it has "
 "not yet been formatted.  Would you like to format this partition?"
-msgstr "Wykryto niesformatowaną systemową partycję EFI na ${PREFERRED_EFI_PARTITION}. Czy chciałbyś ją teraz sformatować?"
+msgstr "Uma Partição de Sistema EFI foi encontrada em ${PREFERRED_EFI_PARTITION}, mas ainda não foi formatada. Você gostaria de formatar esta partição?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTEFI:53
 #, sh-format
 msgid "FORMATTING EFI PARTITION ${PREFERRED_EFI_PARTITION}"
-msgstr "FORMATUJĘ PARTYCJĘ EFI ${PREFERRED_EFI_PARTITION}"
+msgstr "A FORMATAR PARTIÇÃO EFI ${PREFERRED_EFI_PARTITION}"
 
 #: ../initrd-scripts/usr-lib-setup/SeTEFI:54
 #, sh-format
 msgid "Formatting EFI System Partition ${PREFERRED_EFI_PARTITION} as FAT32."
-msgstr "Formatuję systemową partycję EFI ${PREFERRED_EFI_PARTITION} jako FAT32"
+msgstr "A formatar Partição de Sistema EFI ${PREFERRED_EFI_PARTITION} como FAT32."
 
 #: ../initrd-scripts/usr-lib-setup/SeTEFI:76
 msgid "Finished setting up EFI System Partition."
-msgstr "Ukończono ustawianie partycji systemowej EFI."
+msgstr "Configuração da Partição de Sistema EFI concluída."
 
 #: ../initrd-scripts/usr-lib-setup/SeTEFI:77
 msgid "EFI SYSTEM PARTITION RECOGNIZED"
-msgstr "ROZPOZNANO SYSTEMOWĄ PARTYCJĘ EFI"
+msgstr "PARTIÇÃO DE SISTEMA EFI RECONHECIDA"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:67
 msgid "DONE INSTALLING PACKAGES"
-msgstr "PAKIETY ZOSTAŁY ZAINSTALOWANE"
+msgstr "INSTALAÇÃO DE PACOTES CONCLUÍDA"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:68
 msgid "Preparing to configure your new Linux system..."
-msgstr "Przygotowania do konfiguracji twojego nowego systemu Linux..."
+msgstr "Preparando para configurar seu novo sistema Linux..."
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:73
 msgid "Boot Loader"
-msgstr "Program rozruchowy"
+msgstr "Carregador de Arranque"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:74
 msgid "Please choose the Boot Loader that you would like to use"
-msgstr "Wybierz program rozruchowy którego chciałbyś używać"
+msgstr "Por favor indique qual o Carregador de Arranque que quer usar"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:76
 msgid "Install Lilo"
-msgstr "Zainstaluj Lilo"
+msgstr "Instalar Lilo"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:77
 msgid "Install Grub"
-msgstr "Zainstaluj Grub"
+msgstr "Instalar Grub"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:78
 msgid "(Do not install boot loader)"
-msgstr "(Nie instaluj programu rozruchowego)"
+msgstr "(não instalar carregador de arranque)"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:207
 msgid "Loading locales..."
-msgstr "Wczytywanie ustawien regionalnych..."
+msgstr "A carregar localizações..."
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:211
 msgid "Updating caches..."
-msgstr "Aktualizacja pamięci podręcznej..."
+msgstr "A atualizar caches..."
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:216
 msgid "Numlock configuration"
-msgstr "Ustawienia Numlocka"
+msgstr "Configuração do Numlock"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:217
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:230
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:239
 msgid "Enabled"
-msgstr "Włączony"
+msgstr "Ativado"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:217
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:230
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:239
 msgid "Disabled"
-msgstr "Wyłączony"
+msgstr "Inativo"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:218
 msgid "Do you want to have numlock enabled or disabled on boot?"
-msgstr "Czy chcesz mieć Numlock włączony, czy wyłączony podczas uruchamiania systemu?"
+msgstr "Pretende ativar ou não o numlock no arranque?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:229
 msgid "IBus configuration"
-msgstr "Ustawienia IBus"
+msgstr "Configuração IBus"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:232
 msgid ""
 "IBus is an input platform for Chinese, Japanese, Korean and many other "
 "languages. Do you want to have it enabled or disabled on boot?"
-msgstr "IBus jest platformą wprowadzania dla języka Chińskiego, Japońskiego, Koreańskiego i innych. Czy chcesz mieć ją włączoną, lub wyłączoną przy uruchamianiu systemu?"
+msgstr "IBus é uma plataforma de entrada para Chinês, Japonês, Koreano e muitos outros idiomas. Quer ativá-la ou não no arranque?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:238
 msgid "SCIM configuration"
-msgstr "Ustawienia SCIM"
+msgstr "Configuração SCIM"
 
 #: ../initrd-scripts/usr-lib-setup/SeTconfig:241
 msgid ""
 "SCIM is an input platform for Chinese, Japanese, Korean and many other "
 "languages. Do you want to have it enabled or disabled on boot?"
-msgstr "SCIM jest platformą wprowadzania dla języka Chińskiego, Japońskiego, Koreańskiego i innych. Czy chcesz mieć ją włączoną, lub wyłączoną przy uruchamianiu systemu?"
+msgstr "SCIM é uma plataforma de entrada para Chinês, Japonês, Koreano e muitos outros idiomas. Quer ativá-la ou não no arranque?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:21
 msgid "Go"
-msgstr "Idź"
+msgstr "Começar"
 
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:22
 msgid "Exit"
-msgstr "Wyjdź"
+msgstr "Sair"
 
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:23
 msgid "PARTITIONS EDITOR"
-msgstr "EDYTOR PARTYCJI"
+msgstr "EDITOR DE PARTIÇÕES"
 
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:24
 msgid ""
 "Welcome to the Salix partition editor. Press <SPACE> to select a disk and "
 "select Go to start partitioning. If you don't want to alter the partition "
 "layout, select Exit."
-msgstr "Witamy w edytorze partycji Salix. Wciśnij <SPACE> aby wybrać dysk, a potem Idź aby zacząć partycjonowanie. Jeśli nie chcesz zmieniać schematu partycji, wybierz Wyjdź."
+msgstr "Bem-vindo ao editor de partições Salix. Prima <SPACE> para selecionar um disco e Começar para iniciar o particionamento. Se não quiser alterar o esquema de partições, selecione Sair."
 
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:28
 msgid ""
 "NOTE: If you are planning to use BTRFS for your / filesystem, LILO the "
 "default boot loader will not be able to boot it. In that case, you will need"
 " a separate /boot partition with another filesystem."
-msgstr "UWAGA: Jeśli masz zamiar używać BTRFS jako systemu plików dla /, LILO - domyślny program rozruchowy - nie będzie mógł go uruchomić. W takim przypadku, będziesz potrzebował osobnej partycji /boot z innym systemem plików."
+msgstr "NOTA: Se pensa vir a usar BTRFS para o seu / sistema de ficheiros, o carregador de arranque predefinido LILO não será capaz de o iniciar. Nesse caso, precisará de um partição /boot separada com outro sistema de ficheiros."
 
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:33
 msgid "You usually need at least 2 partitions:"
-msgstr "Zwykle potrzeba przynajmniej 2 partycji:"
+msgstr "Normalmente precisa, no mínimo, de 2 partições:"
 
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:34
 msgid "1 LINUX bootable partition (10GB minimum recommended)"
-msgstr "Jedna partycja uruchamiająca Linuxa (przynajmniej 10GB miejsca)"
+msgstr "1 partição LINUX iniciável (mínimo recomendado de 10 GB)"
 
 #: ../initrd-scripts/usr-lib-setup/SeTdisk:35
 msgid "1 SWAP partition (1GB minimum recommended)"
-msgstr "I druga partycja typu SWAP (przynajmniej 1GB miejsca)"
+msgstr "1 partição SWAP (mínimo recomendado de 1 GB)"
 
 #: ../initrd-scripts/usr-lib-setup/SeTfull:15
 msgid "ERROR: TARGET PARTITION FULL"
-msgstr "BŁĄD: DOCELOWA PARTYCJA JEST PEŁNA"
+msgstr "ERRO: PARTIÇÃO DE DESTINO CHEIA"
 
 #: ../initrd-scripts/usr-lib-setup/SeTfull:15
 msgid ""
@@ -1279,11 +1281,11 @@ msgid ""
 "delete to reboot and try again.  Before doing that, you might want to switch"
 " to another console (Alt-F2) and use df (disk free utility) to see if you "
 "can get an idea of how to avoid this the next time around."
-msgstr "Setup wykrył, że przynajmniej jedna z partycji docelowych jest pełna. Niestety, będziesz musiał spróbować ponownie zainstalować system na partycji o większej pojemności. Możesz także wybrać mniej pakietów do instalacji. Z braku wolnego miejsca na dysku program setup nie może już utworzyć plików tymczasowych. Jest to więc błąd nieodwracalny. Wciśnij Control+Alt+Del aby zrestartować komputer i spróbować ponownie. Najpierw jednak, możesz przejść do innej konsoli (Alt+F2) i użyć df (disk free) aby ocenić sytuację i uniknąć tego problemu następnym razem."
+msgstr "O Setup detectou que uma ou mais das suas partições de destino ficou cheia. Desculpe, mas você terá que instalar novamente numa ou mais partições com mais espaço livre. Você pode também tentar escolher menos pacotes para instalar. Como não existe mais espaço para a instalação fazer seus ficheiros temporários, este é um erro irrecuperável. Pressione control-alt-delete para reiniciar e tentar novamente. Antes de fazer isso, você pode querer mudar para outra consola (Alt-F2) e usar o df (utilitário de espaço livre em disco) para ver se você consegue ter uma ideia de como evitar isso da próxima vez."
 
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:18
 msgid "KEYBOARD MAP SELECTION"
-msgstr "WYBÓR MAPY KLAWIATURY"
+msgstr "SELEÇÃO DO MAPA DE TECLADO"
 
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:21
 #, sh-format
@@ -1291,19 +1293,19 @@ msgid ""
 "You may select one of the following keyboard maps.  If you do not select a "
 "keyboard map, $DefaultKeyMap is the current value.  Use the UP/DOWN arrow "
 "keys and PageUp/PageDown to scroll through the whole list of choices."
-msgstr "Możesz wybrać jedną z dostępnych map klawiatury. Jeśli jej nie wybierzesz, $DefaultKeyMap jest bieżącą wartością. Użyj kursorów GÓRA/DÓŁ oraz klawiszy PageUp / PageDown aby przejać całą listę map."
+msgstr "Pode selecionar um dos seguintes esquemas de teclado. Se o não fizer, o valor predefinido é $DefaultKeyMap. Use as teclas de direção CIMA/BAIXO e PageUp/PageDown para percorrer todas as escolhas."
 
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:198
 msgid "Test keyboard map"
-msgstr "Sprawdź mapę klawiatury"
+msgstr "Testar esquema de teclado"
 
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:199
 msgid "Accept keymap"
-msgstr "Zatwierdź mapę klawiatury"
+msgstr "Aceitar esquema de teclado"
 
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:200
 msgid "Reject keymap"
-msgstr "Odrzuć mapę klawiatury"
+msgstr "Rejeitar esquema de teclado"
 
 #: ../initrd-scripts/usr-lib-setup/SeTkeymap:201
 msgid ""
@@ -1311,58 +1313,58 @@ msgid ""
 "the keyboard map or reject it and select another one. The installer only "
 "supports ASCII characters, so don't try any special characters here or use "
 "them during installation!"
-msgstr "Teraz możesz przetestować nową mapę klawiatury pisząc coś. Zatwierdź ją lub odrzuć i wybierz inną. Instalator wspiera tylko znaki ASCII, więc nie wpisuj żadnych znaków specjalnych, ani nie używaj ich podczas instalacji!"
+msgstr "Pode agora testar o novo esquema de teclado inserindo algum texto. Pode aceitar o esquema de teclado ou rejeitá-lo e selecionar outro. O instalador apenas suporta carateres ASCII, assim não tente inserir aqui ou durante a instalação nenhum caracter especial!"
 
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:11
 msgid "Select Salix installation source."
-msgstr "Wybierz źródło instalacji Salixa."
+msgstr "Selecione a fonte de instalação do Salix."
 
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:12
 msgid "SOURCE MEDIA SELECTION"
-msgstr "WYBÓR NOŚNIKA ŹRÓDŁOWEGO"
+msgstr "SELEÇÃO DA MÉDIA DE ORIGEM"
 
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:14
 msgid "Please select the media from which to install Salix Linux:"
-msgstr "Proszę wybrać medium instalacji Salixa:"
+msgstr "Por favor selecione o dispositivo de onde instalar o Salix Linux:"
 
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:16
 msgid "Install from a Salix USB stick"
-msgstr "Zainstaluj z dysku USB Salix"
+msgstr "Instalar de uma pen USB Salix"
 
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:17
 msgid "Install from a Salix CD or DVD"
-msgstr "Zainstaluj z płyty CD / DVD Salix"
+msgstr "Instalar de um CD ou DVD Salix"
 
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:18
 msgid "Install from a hard drive partition"
-msgstr "Zainstaluj z partycji na twardym dysku"
+msgstr "Instalar a partir de uma partição no disco rígido"
 
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:19
 msgid "Install from a pre-mounted directory"
-msgstr "Zainstaluj z zamontowanego wcześniej katalogu"
+msgstr "Instalar a partir de um diretório pré-montado"
 
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:20
 msgid "Install from FTP/HTTP server"
-msgstr "Zainstaluj z serwera FTP/HTTP"
+msgstr "Instalar a partir de um servidor FTP/HTTP"
 
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:21
 msgid "Install from NFS (Network File System)"
-msgstr "Zainstaluj z NFS (Sieciowy System Plików)"
+msgstr "Instalar a partir de NFS (Network File System)"
 
 #: ../initrd-scripts/usr-lib-setup/SeTmedia:22
 msgid "Install from a Samba share"
-msgstr "Zainstaluj z serwera Samba"
+msgstr "Instalar de uma partilha Samba"
 
 #: ../initrd-scripts/usr-lib-setup/SeTnet:103
 msgid ""
 "\n"
 "You will now get a chance to probe your network interfaces.\n"
-msgstr "\nTeraz spróbujemy wykryć karty sieciowe.\n"
+msgstr "\nVocê agora terá uma oportunidade de examinar as suas interfaces de rede.\n"
 
 #: ../initrd-scripts/usr-lib-setup/SeTnet:106
 #: ../initrd-scripts/usr-lib-setup/SeTnet:119
 msgid "PROBING NETWORK DEVICES"
-msgstr "WYKRYWANIE URZĄDZEŃ SIECIOWYCH"
+msgstr "EXAMINANDO DISPOSITIVOS DE REDE"
 
 #: ../initrd-scripts/usr-lib-setup/SeTnet:113
 msgid ""
@@ -1370,30 +1372,30 @@ msgid ""
 "Are you OK with the network interface which was detected? If not, select 'No' to get back to the network probe program. You can try to load another driver explicitly, by using 'P <driver_name>'.\n"
 "\n"
 "If you are satisfied, select 'Yes' to continue with network configuration."
-msgstr "\nCzy wykryto poprawną kartę sieciową? Jeśli nie, wybierz 'Nie', aby wrócić do programu wykrywającego. Możesz spróbować bezpośrednio załadować inny sterownik używając \n'P <nazwa_sterownika>'.\n\nJeśli wszystko jest w porządku, wybierz 'Tak', aby przejść do konfiguracji sieci."
+msgstr "\nVocê está satisfeito com a interface de rede que foi detectada? Se não está, selecione 'Não' para voltar para o programa de sondagem de rede. Você pode tentar carregar outro driver explicitamente, usando 'P <nome_do_driver>'.\n\nSe você está satisfeito, selecione 'Sim' para continuar com a configuração de rede."
 
 #: ../initrd-scripts/usr-lib-setup/SeTnet:135
 #: ../initrd-scripts/usr-lib-setup/SeTnet:291
 msgid "INITIALIZING NETWORK"
-msgstr "INICJALIZUJĘ SIEĆ"
+msgstr "INICIALIZANDO REDE"
 
 #: ../initrd-scripts/usr-lib-setup/SeTnet:136
 msgid ""
 "\n"
 "Waiting a few seconds for DHCP polling to settle ..."
-msgstr "\nCzekam kilka sekund aż DHCP zakończy pobieranie..."
+msgstr "\nAguardando alguns segundos para que a pesquisa do DHCP se estabeleça ..."
 
 #: ../initrd-scripts/usr-lib-setup/SeTnet:159
 msgid ""
 "You're running off the hard drive filesystem. Is this machine currently running on the network you plan to install from? If so, we won't try to reconfigure your ethernet card.\n"
 "\n"
 "Are you up-and-running on the network?"
-msgstr "System uruchomiono z twardego dysku. Czy jesteś podłączony do sieci, z której planujesz instalować? Jeśli tak, nie będziemy próbować ponownej konfiguracji karty sieciowej.\n\nCzy twoje połączenie z siecią działa?"
+msgstr "Você está executando fora do sistema de ficheiros do disco rígido. Está esta máquina a ser executada atualmente na mesma rede de onde você planeia instalar? Se for o caso, não tentaremos reconfigurar a sua placa ethernet.\n\nVocê está ligado e a funcionar na rede?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTnet:164
 #: ../initrd-scripts/usr-lib-setup/SeTnet:284
 msgid "NETWORK CONFIGURATION"
-msgstr "KONFIGURACJA SIECI"
+msgstr "CONFIGURAÇÃO DE REDE"
 
 #: ../initrd-scripts/usr-lib-setup/SeTnet:173
 #, sh-format
@@ -1402,11 +1404,11 @@ msgid ""
 "I can configure your network interface $ENET_DEVICE fully automatically using DHCP. If you want this, please select 'yes'.\n"
 "\n"
 "If you select 'no' instead, then you will be able to assign the IP address, netmask and gateway manually.\n"
-msgstr "\nMogę automatycznie skonfigurować kartę sieciową $ENET_DEVICE używając DHCP. Jeśli tego chcesz, zaznacz 'tak'.\n\nJeśli wybierzesz 'nie', będziesz mógł ręcznie przypisać adres IP, maskę oraz bramę sieciową.\n"
+msgstr "\nEu posso configurar a sua interface de rede $ENET_DEVICE completamente usando DHCP. Se você quer isso,  por favor selecione 'sim'.\n\nSe ao invés disso você selecionar 'não', então será capaz de atribuir o endereço IP, a máscara de rede e o gateway manualmente.\n"
 
 #: ../initrd-scripts/usr-lib-setup/SeTnet:180
 msgid "DHCP CONFIGURATION"
-msgstr "KONFIGURACJA DHCP"
+msgstr "CONFIGURAÇÃO DHCP"
 
 #: ../initrd-scripts/usr-lib-setup/SeTnet:205
 msgid ""
@@ -1414,11 +1416,11 @@ msgid ""
 "You will need to enter the IP address you wish to assign to this machine. Example: 111.112.113.114\n"
 "\n"
 "What is your IP address?"
-msgstr "\nBędziesz musiał podać adres IP, który chcesz przypisać do tego komputera. Przykład: 111.112.113.114\n\nPodaj adres IP:"
+msgstr "\nVocê precisa de fornecer o endereço IP que deseja atribuir a esta máquina. Exemplo: 111.112.113.114\n\nQual é o seu endereço IP?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTnet:213
 msgid "ASSIGN IP ADDRESS"
-msgstr "PRZYPISZ ADRES IP"
+msgstr "ATRIBUIR ENDEREÇO IP"
 
 #: ../initrd-scripts/usr-lib-setup/SeTnet:222
 msgid ""
@@ -1426,25 +1428,25 @@ msgid ""
 "Now we need to know your netmask. Typically this will be 255.255.255.0 but this can be different depending on your local setup.\n"
 "\n"
 "What is your netmask?"
-msgstr "\nTeraz ustawimy maskę podsieci. Zwykle jest to 255.255.255.0, ale może się to różnić w zależności od twoich lokalnych ustawień.\n\nJaka jest maska podsieci?"
+msgstr "\nAgora precisamos de saber a sua máscara de rede. Normalmente ela será 255.255.255.0 mas pode ser diferente dependendo de sua configuração local.\n\nQual é a sua máscara de rede?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTnet:231
 msgid "ASSIGN NETMASK"
-msgstr "PRZYPISZ MASKĘ PODSIECI"
+msgstr "ATRIBUIR MÁSCARA DE REDE"
 
 #: ../initrd-scripts/usr-lib-setup/SeTnet:240
 msgid "Do you have a gateway?"
-msgstr "Czy używasz bramy sieciowej?"
+msgstr "Você tem um gateway?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTnet:251
 msgid "ASSIGN GATEWAY ADDRESS"
-msgstr "PRZYPISZ ADRES BRAMY SIECIOWEJ"
+msgstr "ATRIBUIR ENDEREÇO DE GATEWAY"
 
 #: ../initrd-scripts/usr-lib-setup/SeTnet:252
 msgid ""
 "\n"
 "What is the IP address for your gateway?"
-msgstr "\njaki jest adres IP bramy sieciowej?"
+msgstr "\nQual é o endereço IP para o seu gateway?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTnet:272
 #, sh-format
@@ -1455,25 +1457,25 @@ msgid ""
 "\n"
 "* IP Address: $LOCAL_IPADDR\n"
 "* Netmask:    $LOCAL_NETMASK"
-msgstr "\nOto sugerowana konfiguracja sieciowa dla $ENET_DEVICE - Jeśli wszystko wygląda w porządku, wybierz 'Tak'.\nJeśli chcesz coś zmienić, wybierz 'Nie'.\n\n* Adres IP:             $LOCAL_IPADDR\n* Maska Podsieci:   $LOCAL_NETMASK"
+msgstr "\nEsta é a configuração de rede proposta para $ENET_DEVICE - Se estiver OK, selecione 'Sim'.\nSe não estiver OK e quiser configurar novamente, selecione 'Não'.\n\n* Endereço IP: $LOCAL_IPADDR\n* Máscara de rede: $LOCAL_NETMASK"
 
 #: ../initrd-scripts/usr-lib-setup/SeTnet:292
 #, sh-format
 msgid ""
 "\n"
 "Configuring your network interface $ENET_DEVICE ..."
-msgstr "\nKonfiguruję kartę sieciową $ENET_DEVICE ..."
+msgstr "\nA configurar a sua interface de rede $ENET_DEVICE ..."
 
 #: ../initrd-scripts/usr-lib-setup/SeTnet:329
 msgid "FETCHING CONFIGURATION"
-msgstr "POBIERANIE KONFIGURACJI"
+msgstr "BUSCANDO CONFIGURAÇÃO"
 
 #: ../initrd-scripts/usr-lib-setup/SeTnet:330
 #, sh-format
 msgid ""
 "\n"
 "Attempting to fetch a remote configuration file using $PROTO ..."
-msgstr "\nTrwa próba pobrania odległego pliku konfiguracyjnego używając $PROTO ..."
+msgstr "\nA tentar buscar um ficheiro de configuração remoto usando $PROTO ..."
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:27
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:48
@@ -1483,12 +1485,12 @@ msgstr "\nTrwa próba pobrania odległego pliku konfiguracyjnego używając $PRO
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:146
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:165
 msgid "FORMATTING"
-msgstr "FORMATUJĘ"
+msgstr "FORMATANDO"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:28
 #, sh-format
 msgid "Formatting $ArG1 with filesystem btrfs."
-msgstr "Formatowanie $ArG1 w systemie plików btrfs. "
+msgstr "Formatando $ArG1 com o sistema de ficheiros btrfs."
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:29
 #, sh-format
@@ -1496,12 +1498,12 @@ msgid ""
 "Formatting $ArG1\n"
 "Size in 1K blocks: $SIZE \n"
 "Filesystem type: btrfs"
-msgstr "Formatuję $ArG1\nWielkość w blokach 1K: $SIZE \nSystem plików: btrfs"
+msgstr "Formatando $ArG1\nTamanho em blocos de 1K: $SIZE\nTipo do sistema de ficheiros: btrfs"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:49
 #, sh-format
 msgid "Formatting $ArG1 with filesystem ext2."
-msgstr "Formatowanie $ArG1 w systemie plików ext2"
+msgstr "Formatando $ArG1 com o sistema de ficheiros ext2."
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:50
 #, sh-format
@@ -1509,12 +1511,12 @@ msgid ""
 "Formatting $ArG1\n"
 "Size in 1K blocks: $SIZE\n"
 "Filesystem type: ext2"
-msgstr "Formatuje $ArG1\nWielkość w blokach 1K: $SIZE\nSystem plików: ext2"
+msgstr "Formatando $ArG1\nTamanho em blocos de 1K: $SIZE\nTipo do sistema de ficheiros: ext2"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:74
 #, sh-format
 msgid "Formatting $ArG1 with filesystem ext3."
-msgstr "Formatowanie $ArG1 w systemie plików ext3."
+msgstr "Formatando $ArG1 com o sistema de ficheiros ext3."
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:75
 #, sh-format
@@ -1522,12 +1524,12 @@ msgid ""
 "Formatting $ArG1\n"
 "Size in 1K blocks: $SIZE\n"
 "Filesystem type: ext3"
-msgstr "Formatuję $ArG1\nWielkość w blokach 1K: $SIZE\nSystem plików: ext3"
+msgstr "Formatando $ArG1\nTamanho em blocos de 1K: $SIZE\nTipo do sistema de ficheiros: ext3"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:99
 #, sh-format
 msgid "Formatting $ArG1 with filesystem ext4."
-msgstr "Formatowanie $ArG1 w systemie plików ext4."
+msgstr "Formatando $ArG1 com o sistema de ficheiros ext4."
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:100
 #, sh-format
@@ -1535,12 +1537,12 @@ msgid ""
 "Formatting $ArG1\n"
 "Size in 1K blocks: $SIZE\n"
 "Filesystem type: ext4"
-msgstr "Formatuję $ArG1\nWielkość w blokach 1K: $SIZE\nSystem plików: ext4"
+msgstr "Formatando $ArG1\nTamanho em blocos de 1K: $SIZE\nTipo do sistema de ficheiros: ext4"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:124
 #, sh-format
 msgid "Formatting $ArG1 with filesystem jfs."
-msgstr "Formatowanie $ArG1 w systemie plików jfs."
+msgstr "Formatando $ArG1 com o sistema de ficheiros jfs."
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:125
 #, sh-format
@@ -1548,12 +1550,12 @@ msgid ""
 "Formatting $ArG1\n"
 "Size in 1K blocks: $SIZE\n"
 "Filesystem type: jfs"
-msgstr "Formatuję $ArG1\nWielkość w blokach 1K: $SIZE\nSystem plików: jfs"
+msgstr "Formatando $ArG1\nTamanho em blocos de 1K: $SIZE\nTipo do sistema de ficheiros: jfs"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:147
 #, sh-format
 msgid "Formatting $ArG1 with filesystem reiserfs."
-msgstr "Formatowanie $ArG1 w systemie plików reiserfs."
+msgstr "Formatando $ArG1 com o sistema de ficheiros reiserfs."
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:148
 #, sh-format
@@ -1561,12 +1563,12 @@ msgid ""
 "Formatting $ArG1\n"
 "Size in 1K blocks: $SIZE\n"
 "Filesystem type: reiserfs"
-msgstr "Formatuję $ArG1\nWielkość w blokach 1K: $SIZE\nSystem plików: reiserfs"
+msgstr "Formatando $ArG1\nTamanho em blocos de 1K: $SIZE\nTipo do sistema de ficheiros: reiserfs"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:166
 #, sh-format
 msgid "Formatting $ArG1 with filesystem xfs."
-msgstr "Formatowanie $ArG1 w systemie plików xfs."
+msgstr "Formatando $ArG1 com o sistema de ficheiros xfs."
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:167
 #, sh-format
@@ -1574,7 +1576,7 @@ msgid ""
 "Formatting $ArG1\n"
 "Size in 1K blocks: $SIZE\n"
 "Filesystem type: xfs"
-msgstr "Formatuję $ArG1\nWielkość w blokach 1K: $SIZE\nSystem plików: xfs"
+msgstr "Formatando $ArG1\nTamanho em blocos de 1K: $SIZE\nTipo do sistema de ficheiros: xfs"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:203
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:204
@@ -1582,137 +1584,137 @@ msgstr "Formatuję $ArG1\nWielkość w blokach 1K: $SIZE\nSystem plików: xfs"
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:206
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:207
 msgid "done adding partitions, continue with setup"
-msgstr "dodawanie partycji ukończone, przejdź dalej..."
+msgstr "terminamos de adicionar partições, continuar com o setup"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:214
 #, sh-format
 msgid "Do you want to format Linux partition ${ArG1}?"
-msgstr "Czy chcesz sformatować partycję ${ArG1}?"
+msgstr "Você quer formatar a partição Linux ${ArG1}?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:215
 #, sh-format
 msgid "FORMAT PARTITION $ArG1"
-msgstr "FORMATUJ PARTYCJĘ $ArG1"
+msgstr "FORMATAR PARTIÇÃO $ArG1"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:215
 #, sh-format
 msgid ""
 "If this partition has not been formatted, you should format it.  NOTE: This "
 "will erase all data on it.  Would you like to format this partition?"
-msgstr "Jeśli partycja ta nie została sformatowana, powinieneś ją sformatować. UWAGA: Wszystkie dane znajdujące się na niej zostaną usunięte. Czy chciałbyś sformatować tę partycję?"
+msgstr "Se esta partição não foi formatada, você deve formatá-la. NOTA: Isto vai apagar todos os dados existentes. Deseja formatar esta partição?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:219
 msgid "Quick format with no bad block checking"
-msgstr "Szybkie formatowanie bez sprawdzania bloków"
+msgstr "Formatação rápida sem verificação de bad blocks"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:220
 msgid "Slow format that checks for bad blocks"
-msgstr "Dokładne formatowanie ze sprawdzaniem bloków"
+msgstr "Formatação lenta que verifica se existem bad blocks"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:221
 msgid "No, do not format this partition"
-msgstr "Nie, nie formatuj tej partycji"
+msgstr "Não, não formate esta partição"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:234
 msgid "Ext2 is the traditional Linux file system and is fast and stable."
-msgstr "Ext2 to tradycyjny, szybki i stabilny system plików w systemie Linux."
+msgstr "Ext2 é o sistema de ficheiros tradicional do Linux, além de ser rápido e estável."
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:237
 msgid "Ext3 is the journaling version of the Ext2 filesystem."
-msgstr "Ext3 to odmiana systemu plików Ext2 z dodanym mechanizmem księgowania."
+msgstr "Ext3 é a versão com journaling do sistema de ficheiros Ext2."
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:241
 msgid "Ext4 is the successor to the ext3 filesystem. "
-msgstr "Ext4 to następca systemu plików ext3."
+msgstr "Ext4 é o sucessor do sistema de ficheiros ext3."
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:245
 msgid ""
 "ReiserFS is a journaling filesystem that stores all files and filenames in a"
 " balanced tree structure."
-msgstr "ReiserFS to system plików z funkcją księgowania, gromadzący wszystkie pliki i ich nazwy w postaci zbalansowanej struktury drzewiastej."
+msgstr "ReiserFS é um sistema de ficheiros com journaling que armazena todos os ficheiros e nomes de ficheiro numa estrutura de árvore balanceada."
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:248
 msgid "Btrfs is a B-tree copy-on-write filesystem."
-msgstr "Btrfs to system plików typu kopiuj-zapisując."
+msgstr "Btrfs é um sistema de ficheiros copy-on-write com árvore-B."
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:253
 msgid ""
 "JFS is IBM's Journaled Filesystem, currently used in IBM enterprise servers."
-msgstr "JFS to system plików z funkcją księgowania firmy IBM obecnie używany na serwerach tej firmy."
+msgstr "JFS é o sistema de ficheiros com journaling da IBM, usado atualmente em servidores corporativos da IBM."
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:256
 msgid "XFS is SGI's journaling filesystem that originated on IRIX."
-msgstr "XFS to zapoczątkowany na systemie IRIX system plików firmy SGI z funkcją księgowania."
+msgstr "XFS é sistema de ficheiros com journaling do SGI's que originou no IRIX."
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:260
 #, sh-format
 msgid "SELECT FILESYSTEM FOR $ArG1 "
-msgstr "WYBIERZ SYSTEM PLIKÓW DLA $ArG1"
+msgstr "SELECIONAR O SISTEMA DE FICHEIROS PARA $ArG1"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:262
 #, sh-format
 msgid "Partition $ArG1 will be formatted."
-msgstr "Partycja $ArG1 zostanie sformatowana."
+msgstr "A partição $ArG1 será formatada."
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:266
 msgid ""
 "Please select the type of filesystem to use for the specified device.  Here "
 "are descriptions of the available filesystems:"
-msgstr "Proszę wybrać system plików dla podanego urządzenia. Poniżej znajduje się opis dostępnych systemów plików."
+msgstr "Por favor selecione o tipo de sistema de ficheiros a ser utilizado no dispositivo especificado. Aqui estão descrições dos sistemas de ficheiros disponíveis:"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:271
 msgid "Standard Linux Ext2 Filesystem"
-msgstr "Standardowy linuksowy system plików Ext2"
+msgstr "Sistema de ficheiros Padrão do Linux Ext2"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:274
 msgid "Ext3 Journaling Filesystem"
-msgstr "System plików Ext3 z funkcją księgowania"
+msgstr "Sistema de ficheiros com Journaling Ext3"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:277
 msgid "Ext4 Journaling Filesystem"
-msgstr "System plików Ext4 z funkcją księgowania"
+msgstr "Sistema de ficheiros com Journaling Ext4"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:280
 msgid "IBM's Journaled Filesystem"
-msgstr "System plików firmy IBM z funkcją księgowania"
+msgstr "Sistema de ficheiros com Journaling da IBM"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:283
 msgid "ReiserFS Journaling Filesystem"
-msgstr "System plików ReiserFS z funkcją księgowania"
+msgstr "Sistema de ficheiros com Journaling ReiserFS"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:286
 msgid "Btrfs Copy-on-Write B-tree Filesystem"
-msgstr "System plików Btrfs (B-tree file system) z możliwością kopiowania przy zapisie."
+msgstr "Sistema de ficheiros com Árvore-B Copy-on-Write Btrfs"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:289
 msgid "SGI's Journaling Filesystem"
-msgstr "System plików firmy SGI posiadający możliwość księgowania"
+msgstr "Sistema de ficheiros com Journaling do SGI's"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:319
 msgid "Setting up root Linux partition."
-msgstr "Konfiguracja partycji root systemu Linux."
+msgstr "Configurando a partição raíz do Linux."
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:321
 msgid "Select Linux installation partition:"
-msgstr "Wybierz partycję instalacyjną:"
+msgstr "Selecione a partição de instalação do Linux:"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:325
 msgid "Cancel"
-msgstr "Anuluj"
+msgstr "Cancelar"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:327
 msgid ""
 "Please select a partition from the following list to use for your root (/) "
 "Linux partition."
-msgstr "Z poniższej listy proszę wybrać partycję, która będzie użyta jako partycja root (/) na twoim systemie Linux."
+msgstr "Por favor selecione uma partição da lista a seguir para ser usada como a partição raíz (/) do Linux."
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:410
 msgid "Setting up other Linux partitions."
-msgstr "Konfiguruję inne linuksowe partycje."
+msgstr "Configurando outras partições do Linux."
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:412
 msgid "Select other Linux partitions for /etc/fstab"
-msgstr "Wybierz inne partycje linuksowe dla /etc/fstab"
+msgstr "Selecione outras partições Linux para o /etc/fstab"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:418
 #, sh-format
@@ -1726,64 +1728,64 @@ msgid ""
 "mount partitions.  Also, do not reuse a partition that you've already "
 "entered before.  Please select one of the Linux partitions listed below, or "
 "if you're done, hit <Continue>."
-msgstr "Wygląda na to, że masz więcej niż jedną partycję typu Linux. Możesz ich użyć do rozprowadzenia systemu Linux po kilku partycjach. Obecnie, partycja $ROOT_DEVICE jest zamontowana jako twoja partycja / (root). Na osobnych partycjach możesz zamontować katalogi takie jak /home lub /usr/local. Nie powinieneś montować katalogów /etc, /sbin lub /bin na osobnych partycjach, gdyż zawierają one narzędzia potrzebne do uruchomienia systemu i montowania partycji. Nie używaj również partycji, które już zostały wykorzystane wcześniej. Wybierz jedną z poniższych partycji linuksowych lub jeśli jesteś gotowy, wciśnij <Dalej>."
+msgstr "Parece que você tem mais de uma partição marcada como tipo Linux. Você pode usá-las para distribuir o seu sistema Linux entre duas ou mais partições. No momento você tem $ROOT_DEVICE montado como sua partição /. Talvez você queira montar diretórios como o /home ou o /usr/local em partições separadas. Você não deve tentar montar o /etc, o /sbin ou o /bin em partições próprias, já que eles contêm utilitários necessários para colocar o sistema de pé e montar partições. Além disso, não reutilize uma partição que já tenha sido introduzida. Por favor selecione uma das partições Linux mostradas abaixo, ou se estiver concluído, prima <Continue>."
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:453
 #, sh-format
 msgid "Partition $NEXT_PARTITION will not be reformatted."
-msgstr "Partycja $NEXT_PARTITION nie zostanie przeformatowana."
+msgstr "A partição $NEXT_PARTITION não será reformatada."
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:458
 #, sh-format
 msgid "Partition $NEXT_PARTITION will be formatted with $NEXT_SYS_TYPE."
-msgstr "Partycja $NEXT_PARTITION zostanie sformatowana w systemie $NEXT_SYS_TYPE."
+msgstr "A partição $NEXT_PARTITION será formatada com $NEXT_SYS_TYPE."
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:495
 #, sh-format
 msgid "SELECT MOUNT POINT FOR $NEXT_PARTITION"
-msgstr "WYBIERZ PUNKT MONTOWANIA DLA $NEXT_PARTITION"
+msgstr "SELECIONAR PONTO DE MONTAGEM PARA $NEXT_PARTITION"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:496
 #, sh-format
 msgid ""
 "OK, now you need to specify where you want the new partition mounted.  For example, if you want to put it under /usr/local, then respond:  /usr/local\n"
 "Where would you like to mount $NEXT_PARTITION?"
-msgstr "Dobrze, teraz musisz podać, gdzie chcesz zamontować nową partycję. Na przykład, jeśli chcesz zamontować ją pod /usr/local, wpisz: /usr/local\nGdzie chciałbyś zamontować $NEXT_PARTITION?"
+msgstr "OK, agora você precisa de espeficicar onde quer que a nova partição seja montada. Por exemplo, se quiser colocá-la em /usr/local, então responda: /usr/local\nOnde gostaria de montar $NEXT_PARTITION?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:538
 msgid "Finished setting up Linux partitions."
-msgstr "Konfiguracja partycji linuksowych została ukończona."
+msgstr "Configuração de partições Linux concluída."
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:539
 msgid "DONE ADDING LINUX PARTITIONS TO /etc/fstab"
-msgstr "PARTYCJE LINUKSOWE ZOSTAŁY DODANE DO /etc/fstab"
+msgstr "ADIÇÃO DE PARTIÇÕES LINUX AO /etc/fstab CONCLUÍDA"
 
 #: ../initrd-scripts/usr-lib-setup/SeTswap:26
 msgid "NO SWAP SPACE DETECTED"
-msgstr "NIE WYKRYTO PRZESTRZENI WYMIANY (SWAP)"
+msgstr "NENHUM ESPAÇO DE SWAP DETECTADO"
 
 #: ../initrd-scripts/usr-lib-setup/SeTswap:26
 msgid ""
 "You have not created a swap partition with Linux fdisk.  Do you want to "
 "continue installing without one? "
-msgstr "Nie utworzono partycji wymiany (SWAP) przy pomocy programu fdisk. Czy chcesz bez niej kontynuować instalację?"
+msgstr "Você não criou uma partição swap com o fdisk do Linux. Quer continuar a instalar sem uma?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTswap:30
 msgid "ABORTING INSTALLATION"
-msgstr "INSTALACJA PRZERWANA"
+msgstr "ABORTANDO INSTALAÇÃO"
 
 #: ../initrd-scripts/usr-lib-setup/SeTswap:30
 msgid "Create a swap partition with Linux fdisk, and then try this again."
-msgstr "Utwórz partycję SWAP używając programu fdisk i spróbuj ponownie."
+msgstr "Criar uma partição swap com o fdisk do Linux e então tentar novamente."
 
 #: ../initrd-scripts/usr-lib-setup/SeTswap:39
 #: ../initrd-scripts/usr-lib-setup/SeTswap:79
 msgid "Setting up swap partitions."
-msgstr "Konfiguruję partycje wymiany."
+msgstr "Configurando partições swap."
 
 #: ../initrd-scripts/usr-lib-setup/SeTswap:41
 msgid "SWAP SPACE DETECTED"
-msgstr "WYKRYTO PRZESTRZEŃ WYMIANY (SWAP)"
+msgstr "ESPAÇO DE SWAP DETECTADO"
 
 #: ../initrd-scripts/usr-lib-setup/SeTswap:43
 msgid ""
@@ -1792,16 +1794,16 @@ msgid ""
 "any swap partitions that you do not wish to use with this installation, "
 "please unselect them with the up and down arrows and spacebar.  If you wish "
 "to use all of them (this is recommended), simply hit the ENTER key."
-msgstr "Instalator Salix wykrył jedną lub więcej partycji swap na Twoim systemie. Te partycje zostały automatycznie użyte jako miejsce swap. Jeśli nie chcesz używać którejś z nich, odznacz ją używając kursorów góra/dół oraz spacji. Jeśli chcesz użyć wszystkich (rekomendowane), poprostu wciśnij ENTER."
+msgstr "A Instalação Salix detetou uma ou mais partições swap no seu sistema. Estas partições foram pré-selecionadas para serem configuradas como espaço swap. Se existem algumas partições swap que não pretenda usar nesta instalação, por favor desmarque-as com as teclas de direção cima e baixo e com a barra de espaços. Se deseja usar todas (recomendado), prima apenas ENTER."
 
 #: ../initrd-scripts/usr-lib-setup/SeTswap:56
 #, sh-format
 msgid "Linux swap partition, ${PARTSIZE}"
-msgstr "Linuksowa partycja wymiany (swap), ${PARTSIZE}"
+msgstr "Partição de swap do Linux, ${PARTSIZE}"
 
 #: ../initrd-scripts/usr-lib-setup/SeTswap:80
 msgid "CHECK SWAP PARTITIONS FOR BAD BLOCKS?"
-msgstr "SPRAWDZIĆ POPRAWNOŚĆ PARTYCJI WYMIANY (SWAP)?"
+msgstr "VERIFICAR BAD BLOCKS NAS PARTIÇÕES SWAP?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTswap:81
 msgid ""
@@ -1809,52 +1811,52 @@ msgid ""
 " partitions with mkswap you may also check them for bad blocks.  This is not"
 " the default since nearly all modern hard drives check themselves for bad "
 "blocks anyway.  Would you like to check for bad blocks while running mkswap?"
-msgstr "Instalator Salix przygotuje teraz miejsce swap Twojego systemu. Formatując partycje swap przy użyciu mkswap możesz także sprawdzić czy mają uszkodzone sektory dysku. To nie jest domyślne gdyż prawie wszystkie dyski twarde same to sprawdzają. Czy mimo to chcesz to sprawdzić?"
+msgstr "A Instalação Salix vai agora preparar o seu espaço swap. Ao formatar as partições swap com mkswap pode também verificar blocos corrompidos. Isto não é a predefinição uma vez que praticamente todos os drives modernos fazem eles próprios essa verificação. Deseja verificar a existência de blocos corrompidos ao executar mkswap?"
 
 #: ../initrd-scripts/usr-lib-setup/SeTswap:101
 #, sh-format
 msgid "Activating swap partition ${swappartition}:"
-msgstr "Aktywuję partycję wymiany ${swappartition}:"
+msgstr "Ativando partição de swap ${swappartition}:"
 
 #: ../initrd-scripts/usr-lib-setup/SeTswap:117
 msgid ""
 "Your swapspace has been configured. This information   will be added to your"
 " /etc/fstab:"
-msgstr "Skonfigurowano przestrzeń wymiany (swap). Informacja o niej zostanie dodana do /etc/fstab:"
+msgstr "O seu espaço de swap foi configurado. Esta informação será adicionada ao seu /etc/fstab:"
 
 #: ../initrd-scripts/usr-lib-setup/SeTswap:122
 msgid "SWAP SPACE CONFIGURED"
-msgstr "PRZESTRZEŃ WYMIANY (SWAP) ZOSTAŁA SKONFIGUROWANA"
+msgstr "ESPAÇO DE SWAP CONFIGURADO"
 
 #: ../initrd-scripts/usr-lib-setup/SeTusers:9
 msgid "User setup"
-msgstr "Tworzenie użytkowników"
+msgstr "Configuração de utilizador"
 
 #: ../initrd-scripts/usr-lib-setup/SeTusers:10
 msgid ""
 "You will now be presented with some dialogs so that you can create one or "
 "more user accounts in your new system."
-msgstr "Teraz wyświetlimy kilka okien dialogowych abyś mógł stworzyć jednego lub więcej użytkowników na Twoim nowym systemie."
+msgstr "Vão agora aparecer algumas opções para que possa criar uma ou mais contas de utilizador no seu novo sistema."
 
 #: ../initrd-scripts/usr-lib-setup/SeTusers:13
 msgid ""
 "The first user you will create, will be able to run commands as a privileged"
 " user through sudo. Any other user will not be able to run commands with "
 "sudo unless you add them to the wheel group."
-msgstr "Pierwszy stworzony użytkownik będzie mógł uruchamiać komendy jako uprzywilejowany użytkownik dzięki sudo. Żaden inny użytkownik nie będzie mógł tego robić jeśli nie zostanie dodany do grupy wheel."
+msgstr "O primeiro utilizador que criar será capaz de executar comandos como utilizador privilegiado através de sudo. Qualquer outro utilizador não será capaz de executar comandos com sudo a não ser que o adicione ao grupo wheel."
 
 #: ../initrd-scripts/usr-lib-setup/SeTusers:17
 msgid "The root user is disabled by default."
-msgstr "Uzytkownik root jest domyślnie wyłączony."
+msgstr "O utilizador root está inativo por predefinição."
 
 #: ../initrd-scripts/usr-lib-setup/slackinstall:55
 msgid "FTP/HTTP DOWNLOAD FAILURE"
-msgstr "BŁĄD POBIERANIA FTP/HTTP"
+msgstr "FALHA NA DESCARGA FTP/HTTP"
 
 #: ../initrd-scripts/usr-lib-setup/slackinstall:77
 #, sh-format
 msgid "installpkg error #$ArG1"
-msgstr "błąd installpkg #$ArG1"
+msgstr "Erro instalpkg #$ArG1"
 
 #: ../initrd-scripts/usr-lib-setup/slackinstall:78
 #, sh-format
@@ -1864,11 +1866,11 @@ msgid ""
 " package to be unable to be read without error.  You may hit enter to "
 "continue if you wish, but if this is an important required package then your"
 " installation may not work as-is."
-msgstr "Wystąpił błąd krytyczny podczas instalacji $ArG2. Pakiet / źródło instalacji mogą być uszkodzone, lub coś innego spowodowało brak możliwości bezbłędnego odczytu pakietu. Naciśnij enter jeśli chcesz kontynuować, ale jeśli ten pakiet był wymagany, to Twoja instalacja może nie działać poprawnie."
+msgstr "Ocorreu um erro fatal ao tentar instalar $ArG2. O pacote pode estar corrompido, o dispositivo de instalação defeituoso ou qualquer outra causa fez com que fosse impossível ler o pacote sem erro. Pode premir enter para continuar se quiser, mas este é um pacote importante  necessário e a sua instalação poderá não funcionar como esperado."
 
 #: ../initrd-scripts/usr-lib-setup/slackinstall:115
 msgid "Installing package set:"
-msgstr "Instalacja serii pakietów:"
+msgstr "A instalar conjunto de pacotes:"
 
 #: ../initrd-scripts/usr-lib-setup/slackinstall:125
 #: ../initrd-scripts/usr-lib-setup/slackinstall:137
@@ -1878,4 +1880,4 @@ msgstr "Instalacja serii pakietów:"
 #: ../initrd-scripts/usr-lib-setup/slackinstall:192
 #: ../initrd-scripts/usr-lib-setup/slackinstall:203
 msgid "Installing:"
-msgstr "Instalacja:"
+msgstr "A instalar:"
