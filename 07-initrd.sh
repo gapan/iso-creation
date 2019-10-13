@@ -85,7 +85,6 @@ mkdir -p initrd/$arch
 rm -rf initrd/$arch/*initrd*.img
 
 # get the slack initrd
-# use wget instead of ftp, less error prone
 echo "Getting the slackware initrd..."
 wget $SLACKREPO/isolinux/initrd.img -O initrd/$arch/slack-initrd.img
 
