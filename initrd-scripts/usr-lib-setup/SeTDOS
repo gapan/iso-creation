@@ -71,7 +71,7 @@ is chosen, but you may set this any way that you like."`" \
 
 # Since the USB installers (both usbboot.img and the ones created using
 # usbimg2disk.sh) present bogus FAT/NTFS partitions, we need a way to
-# filter these from the partition scan.  To do this, we'll set a variable
+# filter these from the partition scan. To do this, we'll set a variable
 # $BANHAMMER that contains the name of the device the stick was found on.
 # First, we'll set that to contain some random nonsense that will never
 # be an actual device since reverse grepping for "" won't work.
