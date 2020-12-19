@@ -5,6 +5,7 @@
 export TEXTDOMAIN=salix-installer
 . gettext.sh
 TMP=/var/log/setup/tmp
+T_PX="$(cat $TMP/SeTT_PX)"
 if [ ! -d $TMP ]; then
   mkdir -p $TMP
 fi
@@ -204,8 +205,8 @@ while [ 0 ]; do # main partition selection loop
  if [ ! "$(echo $NEW_DIR | cut -b1)" = "/" ]; then
   NEW_DIR="/$NEW_DIR"
  fi
- mkdir -p /mnt$NEW_DIR
- chmod 755 /mnt$NEW_DIR
+ mkdir -p ${T_PX}$NEW_DIR
+ chmod 755 ${T_PX}$NEW_DIR
  if echo "$DOSLIST" | grep $DOS_PART | grep NTFS 1> $NDIR 2> $NDIR ; then
   printf "%-16s %-16s %-11s %-16s %-3s %s\n" "$DOS_PART" "$NEW_DIR" "$FS_TYPE" "$FS_UMASK" "1" "0" >> $TMP/SeTDOS
  else
