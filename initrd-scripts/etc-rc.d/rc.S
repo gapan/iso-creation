@@ -128,26 +128,26 @@ else
 
 fi # End Run udev:
 
-# Here's the situation.  Because of the practice of keeping the local
+# Here's the situation. Because of the practice of keeping the local
 # time (rather than UTC) in the system's clock, at any given time half
 # of the people doing an install will be creating files that upon
 # reboot will appear to have been created in the future.
 #
-# There are a lot of things that aren't happy when that happens.  The
+# There are a lot of things that aren't happy when that happens. The
 # one that screams the most loudly is e2fsck, and we don't want to
-# anger that!  Sometimes it even proceeds to check the partitions just
+# anger that! Sometimes it even proceeds to check the partitions just
 # to be sure the user is fully punished.
 #
-# But, there's a simple solution.  If we set the (temporary) Linux clock
-# to yesterday (-24h), then there's no way that could occur.  Everything
+# But, there's a simple solution. If we set the (temporary) Linux clock
+# to yesterday (-24h), then there's no way that could occur. Everything
 # on the system will be in the past (but not too far in the past).
 # Since files will quickly be put into use and given the correct after
-# reboot, this really shouldn't have a negative impact.  Plus, it affects
+# reboot, this really shouldn't have a negative impact. Plus, it affects
 # only newly created files during installation -- any file shipped in a
-# package will have an accurate time of creation.  (for its timezone ;-)
+# package will have an accurate time of creation. (for its timezone ;-)
 #
-# Update:  We have to use 2 days ago, or chroot()+timezone offset might
-# still be in the future...  <sigh>
+# Update: We have to use 2 days ago, or chroot()+timezone offset might
+# still be in the future... <sigh>
 #
 touch /.today
 /bin/sh /sbin/fakedate
