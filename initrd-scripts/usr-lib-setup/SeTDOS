@@ -157,7 +157,7 @@ while [ 0 ]; do # main partition selection loop
   rm $TMP/tempscript
   exit 255 # user abort
  fi
- DOS_PART="`cat $TMP/return`"
+ DOS_PART="$(cat $TMP/return)"
  rm -f $TMP/tempscript
  if [ "$DOS_PART" = "---" ]; then
   break
@@ -195,13 +195,13 @@ while [ 0 ]; do # main partition selection loop
   rm -f $TMP/tempmsg $TMP/mount-point $TMP/SeTDOS
   exit
  fi
- NEW_DIR="`cat $TMP/mount-point`"
+ NEW_DIR="$(cat $TMP/mount-point)"
  rm -f $TMP/mount-point
  # If this was left blank or is '/', drop back to the first menu and start over.
  if [ "$NEW_DIR" = "" -o "$NEW_DIR" = "/" ]; then
    continue
  fi
- if [ ! "`echo $NEW_DIR | cut -b1`" = "/" ]; then
+ if [ ! "$(echo $NEW_DIR | cut -b1)" = "/" ]; then
   NEW_DIR="/$NEW_DIR"
  fi
  mkdir -p /mnt$NEW_DIR
