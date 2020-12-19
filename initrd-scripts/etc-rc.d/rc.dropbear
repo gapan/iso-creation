@@ -25,9 +25,9 @@ dropbear_stop() {
 dropbear_restart() {
   if [ -r /var/run/dropbear.pid ]; then
     echo "WARNING: killing listener process only.  To kill every dropbear process, you "
-    echo "         must use 'rc.dropbear stop'.  'rc.dropbear restart' kills only the "
+    echo "         must use 'rc.dropbear stop'. 'rc.dropbear restart' kills only the "
     echo "         parent dropbear to allow an admin logged in through dropbear to use "
-    echo "         'rc.dropbear restart' without being cut off.  If dropbear has been "
+    echo "         'rc.dropbear restart' without being cut off. If dropbear has been "
     echo "         upgraded, new connections will now use the new version, which should "
     echo "         be a safe enough approach." 
     kill `cat /var/run/dropbear.pid`
