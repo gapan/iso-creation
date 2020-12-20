@@ -25,6 +25,7 @@ arrow keys and PageUp/PageDown to scroll \
 through the whole list of choices."`" \
 0 0 0 \
 "qwerty/us.map" "" \
+"qwerty/uk.map" "" \
 "azerty/azerty.map" "" \
 "azerty/be-latin1.map" "" \
 "azerty/fr-latin0.map" "" \
