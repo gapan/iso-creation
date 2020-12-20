@@ -16,6 +16,6 @@
  7f³70  visit the web page http://slint.fr/en/kbd.svg                             ³10
  7f³70                                                                            ³10
  7f³70                                                                            ³10
- 7f³70  For more help, visit http://www.salixos.org/                              ³10
+ 7f³70  For more help, visit https://www.salixos.org/                             ³10
  7f³70                                                                            ³10
  7fÀ70ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ10
