@@ -8,9 +8,11 @@
 export TEXTDOMAIN=salix-installer
 . gettext.sh
 TMP=/var/log/setup/tmp
+T_PX="$(cat $TMP/SeTT_PX 2> /dev/null)"
 if [ ! -d $TMP ]; then
  mkdir -p $TMP
 fi
+
 # Terminate the script now if we have an interface with an IP address:
 # Running the script is not needed anymore in that case.
 if `ip -f inet -o addr show | grep -v " lo " 1>/dev/null 2>/dev/null` ; then
@@ -104,8 +106,8 @@ if [ `cat /proc/net/dev | grep ':' | sed -e "s/^ *//" | cut -f1 -d: | grep -v lo
 You will now get a chance to probe your network interfaces.
 " > $TMP/tempmsg 
       dialog --title "`gettext "PROBING NETWORK DEVICES"`" --msgbox "`cat $TMP/tempmsg`" 7 80
-      rm -f $TMP/tempmsg
       clear
+      rm -f $TMP/tempmsg
       /bin/network --installer
       read -p "Press any key..." JUNK
       sleep 5 # Give dhcpcd a change to probe
@@ -153,7 +155,7 @@ Waiting a few seconds for DHCP polling to settle ..."`" 5 80
 fi
 
 while [ 0 ]; do
- T_PX="`cat $TMP/SeTT_PX`"
+ T_PX="$(cat $TMP/SeTT_PX 2> /dev/null)"
  UPNRUN=1
  if [ "$T_PX" = "/" ]; then
 gettext "You're running off the hard drive filesystem. Is this \
