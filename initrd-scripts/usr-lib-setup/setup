@@ -31,8 +31,11 @@ TMP=/var/log/setup/tmp
 if [ ! -d $TMP ]; then
   mkdir -p $TMP
 fi
-# Use /tmp on floppy for now:
-/usr/lib/setup/unmigrate.sh
+# Wipe the probe md5sum to force rescanning partitions if setup is restarted:
+rm -f $TMP/SeTpartition.md5
+## FLOPPY? Comment out this obsolete code. We ain't gonna need it.
+## Use /tmp on floppy for now:
+#/usr/lib/setup/unmigrate.sh
 rm -f $TMP/SeT*
 # If a keymap was set up, restore that data.
 # Although unlikely we can't competely rule out that the user quits
@@ -118,9 +121,13 @@ echo "$T_PX" > $TMP/SeTT_PX
 
 ROOT_DEVICE="`mount | grep "on / " | cut -f 1 -d ' '`"
 echo "$ROOT_DEVICE" > $TMP/SeTrootdev
-
-if mount | grep /var/log/mount 1> /dev/null 2> /dev/null ; then # clear source
- umount /var/log/mount                                           # location
+if mount | grep /var/log/mount 1> /dev/null 2> /dev/null ; then # clear source location:
+ # In case of bind mounts, try to unmount them first:
+ umount /var/log/mount/dev 2> /dev/null
+ umount /var/log/mount/proc 2> /dev/null
+ umount /var/log/mount/sys 2> /dev/null
+ # Unmount target partition:
+ umount /var/log/mount
 fi
 # Anything mounted on /var/log/mount now is a fatal error:
 if mount | grep /var/log/mount 1> /dev/null 2> /dev/null ; then
@@ -254,6 +261,10 @@ installation for any specific purpose."`
  fi
 
  if [ "$MAINSELECT" = "CONFIGURE" ]; then
+  # Make bind mounts for /dev, /proc, and /sys:
+  mount -o bind /dev $T_PX/dev 2> /dev/null
+  mount -o bind /proc $T_PX/proc 2> /dev/null
+  mount -o bind /sys $T_PX/sys 2> /dev/null
   SeTconfig
   REPLACE_FSTAB=Y
   if [ -r $TMP/SeTnative ]; then
@@ -284,10 +295,10 @@ to replace your old /etc/fstab with the new one?"`" 0 0
      cat $TMP/SeTDOS >> $T_PX/etc/fstab
     fi
     printf "%-16s %-16s %-11s %-16s %-3s %s\n" "#/dev/cdrom" "/mnt/cdrom" "auto" "noauto,owner,ro,comment=x-gvfs-show" "0" "0" >> $T_PX/etc/fstab
-    printf "%-16s %-16s %-11s %-16s %-3s %s\n" "/dev/fd0" "/mnt/floppy" "auto" "noauto,users,rw,umask=00" "0" "0" >> $T_PX/etc/fstab
+    printf "%-16s %-16s %-11s %-16s %-3s %s\n" "/dev/fd0" "/mnt/floppy" "auto" "noauto,owner" "0" "0" >> $T_PX/etc/fstab
     printf "%-16s %-16s %-11s %-16s %-3s %s\n" "devpts" "/dev/pts" "devpts" "gid=5,mode=620" "0" "0" >> $T_PX/etc/fstab
     printf "%-16s %-16s %-11s %-16s %-3s %s\n" "proc" "/proc" "proc" "defaults" "0" "0" >> $T_PX/etc/fstab
-    printf "%-16s %-16s %-11s %-16s %-3s %s\n" "tmpfs" "/dev/shm" "tmpfs" "defaults" "0" "0" >> $T_PX/etc/fstab
+    printf "%-16s %-16s %-11s %-16s %-3s %s\n" "tmpfs" "/dev/shm" "tmpfs" "nosuid,nodev,noexec" "0" "0" >> $T_PX/etc/fstab
    fi
   fi
   MAINSELECT="EXIT"
@@ -325,7 +336,9 @@ rmdir /var/log/mount 2> /dev/null
 mkdir /var/log/mount 2> /dev/null
 chmod 755 /var/log/mount
 
-if [ -f /mnt/etc/fstab ]; then
+# An fstab file is indicative of an OS installation, rather than
+# just loading the "setup" script and selecting "EXIT"
+if [ -f ${T_PX}/etc/fstab ]; then
   # umount CD:
   if [ -r $TMP/SeTCDdev ]; then
     if mount | grep iso9660 > /dev/null 2> /dev/null ; then
@@ -356,8 +369,10 @@ fi
 rm -rf $TMP/dhcpc
 rm -f $TMP/tagfile $TMP/SeT* $TMP/tar-error $TMP/PKGTOOL_REMOVED
 rm -f /var/log/mount/pkgrepo
+rm -f /var/log/mount/treecache
 rmdir /var/log/mntiso 2>/dev/null
 rm -rf $TMP/pkgrepo
+rm -rf $TMP/treecache
 rm -rf $TMP/pkgcache
 rmdir /mnt/tmp/orbit-root 2> /dev/null
 # end Salix setup script
