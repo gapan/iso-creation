@@ -17,7 +17,7 @@ fi
 . /usr/lib/setup/SeTfull
 
 # These next lines are intended to clean up any permissions
-# problems that could be caused by a bad package.  We don't
+# problems that could be caused by a bad package. We don't
 # intend to make any bad packages here, but it never hurts
 # to be safe. :^)
 ( cd $T_PX ; chmod 755 ./ )
@@ -55,7 +55,7 @@ fi
 if [ -r $TMP/SeTkeymap ]; then
   MAPNAME="`cat $TMP/SeTkeymap`"
   echo "#!/bin/sh" > $T_PX/etc/rc.d/rc.keymap
-  echo "# Load the keyboard map.  More maps are in /usr/share/kbd/keymaps." \
+  echo "# Load the keyboard map. More maps are in /usr/share/kbd/keymaps." \
   >> $T_PX/etc/rc.d/rc.keymap
   echo "if [ -x /usr/bin/loadkeys ]; then" >> $T_PX/etc/rc.d/rc.keymap
   echo " /usr/bin/loadkeys -u $MAPNAME" >> $T_PX/etc/rc.d/rc.keymap
@@ -96,7 +96,6 @@ else
  BOOT_LOADER="None"
 fi
 
-
 # Post installation and setup scripts added by packages.
 if [ -d $T_PX/var/log/setup ]; then
   # Prepare for LVM in a newly installed system
@@ -113,7 +112,7 @@ if [ -d $T_PX/var/log/setup ]; then
   for INSTALL_SCRIPTS in $T_PX/var/log/setup/setup.*; do
     SCRIPT=`basename $INSTALL_SCRIPTS`
     # Here, we call each script in /var/log/setup. Two arguments are provided:
-    # 1 -- the target prefix (normally /, but /mnt from the bootdisk)
+    # 1 -- the target prefix (normally /, but ${T_PX} from the bootdisk)
     # 2 -- the name of the root device.
     ( cd $T_PX 
       if [ -x var/log/setup/$SCRIPT ]; then
@@ -196,7 +195,7 @@ if dmesg | grep "ATAPI CD" 1> /dev/null 2> /dev/null ; then
       ln -sf /dev/$shortdev dvd
     )
     # Rather than keep overwriting the devices, quit keeping only links to the first
-    # device found.  "Real" users will use the actual devices instead of silly links
+    # device found. "Real" users will use the actual devices instead of silly links
     # anyway.  ;-)
     break;
   done
