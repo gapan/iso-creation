@@ -8,13 +8,33 @@ export TEXTDOMAIN=salix-installer
 TMP=/var/log/setup/tmp
 NDIR=/dev/null
 REDIR=/dev/tty4
-T_PX=/mnt
+T_PX="`cat $TMP/SeTT_PX`"
 
 # FUNCTIONS
+
 # crunch() -  remove extra whitespace
 crunch () {
    read STRING;
    echo $STRING
+}
+
+# make_f2fs( dev ) - Create a new f2fs filesystem on the named dev.
+# Parameters:  dev     Device node to format.
+make_f2fs() {
+   ArG1=$1
+   # get the size of the named partition
+   SIZE=`get_part_size $1`
+   # output a nice status message
+   dialog --title "`gettext "FORMATTING"`" \
+   --backtitle "`eval_gettext "Formatting \\\$ArG1 with filesystem f2fs."`" \
+   --infobox "`eval_gettext "Formatting \\\$ArG1
+Size: \\\$SIZE 
+Filesystem type: f2fs"`" 0 0
+   # do the format
+   if mount | grep "$1 " 1> $NDIR 2> $NDIR ; then
+      umount $1 2> $NDIR
+   fi
+   mkfs.f2fs -f $1 1> $REDIR 2> $REDIR
 }
 
 # make_btrfs( dev ) - Create a new btrfs filesystem on the named dev.
@@ -229,7 +249,7 @@ to format this partition?"`" 12 80 3 \
 #                 device.  Answer in $TMP/return
 ask_fs() {
   ArG1=$1
-  unset BTRFS EXT2 EXT3 JFS REISERFS XFS
+  unset BTRFS EXT2 EXT3 F2FS JFS REISERFS XFS
   if grep -wq ext2 /proc/filesystems 1> $NDIR 2> $NDIR ; then
     EXT2="`gettext "Ext2 is the traditional Linux file system and is fast and stable."`"
   fi
@@ -246,6 +266,9 @@ ask_fs() {
   fi
   if grep -wq btrfs /proc/filesystems 1> $NDIR 2> $NDIR ; then
     BTRFS="`gettext "Btrfs is a B-tree copy-on-write filesystem."`"
+  fi
+  if grep -wq f2fs /proc/filesystems 1> $NDIR 2> $NDIR ; then
+    F2FS="`gettext "F2FS is a Flash-Friendly File System."`"
   fi
   # These last two will only be present if the user asked for a special kernel.
   # They should probably be the default in that case.
@@ -265,7 +288,7 @@ echo -n "$DEFAULT" >> $TMP/tempscript
 echo -n ' --menu "' >> $TMP/tempscript
 gettext "Please select the type of filesystem to use for the specified \
 device.  Here are descriptions of the available filesystems:" >> $TMP/tempscript
-echo -n " $EXT2 $EXT3 $EXT4 $JFS $REISERFS $XFS" >> $TMP/tempscript
+echo -n " $EXT2 $EXT3 $EXT4 $F2FS $JFS $REISERFS $XFS" >> $TMP/tempscript
 echo -n '" 0 0 0 ' >> $TMP/tempscript
   if [ ! "$EXT2" = "" ]; then
     echo "\"ext2\" \"`gettext "Standard Linux Ext2 Filesystem"`\" \\" >> $TMP/tempscript
@@ -284,6 +307,9 @@ echo -n '" 0 0 0 ' >> $TMP/tempscript
   fi
   if [ ! "$BTRFS" = "" ]; then
     echo "\"btrfs\" \"`gettext "Btrfs Copy-on-Write B-tree Filesystem"`\" \\" >> $TMP/tempscript
+  fi
+  if [ ! "$F2FS" = "" ]; then
+    echo "\"f2fs\" \"`gettext "Flash-Friendly File System"`\" \\" >> $TMP/tempscript
   fi
   if [ ! "$XFS" = "" ]; then
     echo "\"xfs\" \"`gettext "SGI's Journaling Filesystem"`\" \\" >> $TMP/tempscript
@@ -372,6 +398,8 @@ if [ ! "$DOFORMAT" = "No" ]; then
     make_reiserfs $ROOT_DEVICE
   elif [ "$ROOT_SYS_TYPE" = "btrfs" ]; then
     make_btrfs $ROOT_DEVICE
+  elif [ "$ROOT_SYS_TYPE" = "f2fs" ]; then
+    make_f2fs $ROOT_DEVICE
   elif [ "$ROOT_SYS_TYPE" = "jfs" ]; then
     if [ "$DOFORMAT" = "Check" ]; then
       make_jfs $ROOT_DEVICE "y"
@@ -402,7 +430,7 @@ echo $ROOT_DEVICE > $TMP/SeTrootdev
 if [ ! "`cat $TMP/SeTplist | sed -n '2 p'`" = "" ]; then
    while [ 0 ]; do # next partition loop
       # OK, we will set this flag, and if we find an unused partition, we
-      # change it.  If it doesn't get switched, we skip the next menu.
+      # change it. If it doesn't get switched, we skip the next menu.
       rm -f $TMP/SeTSKIP
       echo "true" > $TMP/SeTSKIP
 
@@ -479,6 +507,8 @@ echo -n '" 18 80 4 ' >> $TMP/tempscript
           make_reiserfs $NEXT_PARTITION
         elif [ "$NEXT_SYS_TYPE" = "btrfs" ]; then
           make_btrfs $NEXT_PARTITION
+        elif [ "$NEXT_SYS_TYPE" = "f2fs" ]; then
+          make_f2fs $NEXT_PARTITION
         elif [ "$NEXT_SYS_TYPE" = "jfs" ]; then
           if [ "$DOFORMAT" = "Check" ]; then
             make_jfs $NEXT_PARTITION "y"
@@ -516,15 +546,15 @@ Where would you like to mount \\\$NEXT_PARTITION?"`" 11 80 2> $TMP/return
       sync
       
       # Create the mount point if it does not exist:
-      if [ ! -d /mnt/$MTPT ]; then
-         mkdir -p /mnt/$MTPT
+      if [ ! -d ${T_PX}/$MTPT ]; then
+         mkdir -p ${T_PX}/$MTPT
       fi
 
       # Determine the filesystem type using blkid:
       NEXT_SYS_TYPE=$(blkid -s TYPE $NEXT_PARTITION | cut -f 2 -d = | tr -d \")
 
       # Mount the partition:
-      mount $NEXT_PARTITION /mnt/$MTPT -t $NEXT_SYS_TYPE 1> $REDIR 2> $REDIR
+      mount $NEXT_PARTITION ${T_PX}/$MTPT -t $NEXT_SYS_TYPE 1> $REDIR 2> $REDIR
 
       #echo "$NEXT_PARTITION       $MTPT      $NEXT_SYS_TYPE        defaults   1   1" >> $TMP/SeTnative
       printf "%-16s %-16s %-11s %-16s %-3s %s\n" "$NEXT_PARTITION" "$MTPT" "$NEXT_SYS_TYPE" "defaults" "1" "2" >> $TMP/SeTnative
