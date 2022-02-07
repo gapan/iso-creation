@@ -94,7 +94,7 @@ echo "Unpacking slackware initrd..."
 rm -rf /boot/initrd-tree
 mkdir /boot/initrd-tree
 cd /boot/initrd-tree
-gzip -dc < $CWD/initrd/$arch/slack-initrd.img | cpio -i
+xzcat < $CWD/initrd/$arch/slack-initrd.img | cpio -i
 # not needed anymore
 cd $CWD
 rm initrd/$arch/slack-initrd.img
@@ -226,7 +226,7 @@ rm -f /boot/initrd-tree/{wait-for-root,rootfs,rootdev,initrd-name}
 (
   cd /boot/initrd-tree
   find . -print | cpio -o --owner root:root -H newc \
-  | gzip -9 > $CWD/initrd/$arch/initrd.img
+  | xz -9 > $CWD/initrd/$arch/initrd.img
 )
 
 # clean up
