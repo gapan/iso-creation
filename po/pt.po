@@ -8,7 +8,7 @@
 # Enrico Nicoletto <enrico.BR@gmx.co.uk>, 2013
 # Francis Real Ushiyama <francisushiyama@gmail.com>, 2013
 # Gabriel Magno de Oliveira Silva <gabrielmagno1@gmail.com>, 2013
-# Hugo Carvalho <hugokarvalho@hotmail.com>, 2014,2016,2019
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2014,2016,2019,2021
 # Isaque Galdino <igaldino@gmail.com>, 2013
 # Marcelo Pio de Castro <belfalas.vinyamar@gmail.com>, 2013
 # ric, 2017
@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-08 18:53+0300\n"
-"PO-Revision-Date: 2019-01-30 00:30+0000\n"
+"PO-Revision-Date: 2021-01-02 16:27+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese (http://www.transifex.com/gapan/salix/language/pt/)\n"
 "MIME-Version: 1.0\n"
@@ -661,7 +661,7 @@ msgstr "Nenhum erro de montagem deve ocorrer:"
 #: ../initrd-scripts/usr-lib-setup/INSSMB:67
 #, sh-format
 msgid "Mounting $REMOTE_SHARE ..."
-msgstr "Montando $REMOTE_SHARE ..."
+msgstr "A montar $REMOTE_SHARE ..."
 
 #: ../initrd-scripts/usr-lib-setup/INSSMB:73
 msgid "Mount failed."

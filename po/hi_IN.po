@@ -1,0 +1,1874 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Panwar108 <caspian7pena@gmail.com>, 2020-2021
+msgid ""
+msgstr ""
+"Project-Id-Version: Salix\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-08 18:53+0300\n"
+"PO-Revision-Date: 2021-07-31 13:50+0000\n"
+"Last-Translator: Panwar108 <caspian7pena@gmail.com>\n"
+"Language-Team: Hindi (India) (http://www.transifex.com/gapan/salix/language/hi_IN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: hi_IN\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../initrd-scripts/usr-lib-setup/setup:51
+msgid "WELCOME TO THE SALIX INSTALLATION"
+msgstr "सेलिक्स इंस्टॉल प्रक्रिया में स्वागत है"
+
+#: ../initrd-scripts/usr-lib-setup/setup:52
+msgid "Keep the current keymap"
+msgstr "वर्तमान कुंजीपटल ही उपयोग करें"
+
+#: ../initrd-scripts/usr-lib-setup/setup:53
+msgid "Select another keymap"
+msgstr "अन्य कुंजीपटल का चयन करें"
+
+#: ../initrd-scripts/usr-lib-setup/setup:54
+#, sh-format
+msgid ""
+"Welcome to the installation of Salix, The Bonsai OS!\n"
+"Before you proceed with the rest of the installation, you might want to select your keyboard map (keymap). The current keymap is $KMAP."
+msgstr "सेलिक्स - बोन्साई ऑपरेटिंग सिस्टम की इंस्टॉल प्रक्रिया में आपका स्वागत है!\nप्रक्रिया जारी रखने से पूर्व आप अपने सिस्टम हेतु कुंजीपटल अभिन्यास का चयन करें। वर्तमान अभिन्यास $KMAP है।"
+
+#: ../initrd-scripts/usr-lib-setup/setup:63
+msgid "Salix Installation"
+msgstr "सेलिक्स इंस्टॉल"
+
+#: ../initrd-scripts/usr-lib-setup/setup:64
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:117
+#: ../initrd-scripts/usr-lib-setup/SeTkeymap:20
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:323
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:414
+msgid "Select"
+msgstr "चुनें"
+
+#: ../initrd-scripts/usr-lib-setup/setup:65
+msgid "Exit installation"
+msgstr "इंस्टॉल प्रक्रिया निरस्त करें"
+
+#: ../initrd-scripts/usr-lib-setup/setup:67
+msgid "You may now proceed with the installation by pressing the ENTER key."
+msgstr "अब आप एंटर कुंजी दबाकर इंस्टॉल प्रक्रिया जारी रख सकते हैं।"
+
+#: ../initrd-scripts/usr-lib-setup/setup:69
+msgid ""
+"If you want to exit the installation and drop to a linux console, select "
+"'Exit installation'"
+msgstr "इंस्टॉल प्रक्रिया निरस्त कर लिनक्स कंसोल पर वापस जाने हेतु 'इंस्टॉल प्रक्रिया निरस्त करें' का चयन करें"
+
+#: ../initrd-scripts/usr-lib-setup/setup:71
+msgid "Install Salix using a step-by-step guide"
+msgstr "चरणबद्ध सहायक गाइड उपयोग कर सेलिक्स इंस्टॉल करें"
+
+#: ../initrd-scripts/usr-lib-setup/setup:96
+msgid "NO LINUX PARTITIONS DETECTED"
+msgstr "कोई लिनक्स विभाजन नहीं मिला"
+
+#: ../initrd-scripts/usr-lib-setup/setup:97
+msgid ""
+"There don't seem to be any Linux partitions on this machine. You'll need to "
+"make at least one of these to install Linux. Either select AUTOINSTALL from "
+"the menu, or select INSTALL and use the partition editor to create one."
+msgstr "प्रतीत होता है कि इस मशीन पर कोई लिनक्स विभाजन नहीं है। लिनक्स इंस्टॉल करने हेतु आपको इस प्रकार का एक विभाजन होना आवश्यक है। मेन्यू से स्वतः इंस्टॉल या इंस्टॉल में से कोई एक विकल्प चुनें व विभाजन संपादक द्वारा लिनक्स विभाजन का सृजन करें।"
+
+#: ../initrd-scripts/usr-lib-setup/setup:105
+msgid "NO EFI SYSTEM PARTITION DETECTED"
+msgstr "कोई EFI सिस्टम विभाजन नहीं मिला"
+
+#: ../initrd-scripts/usr-lib-setup/setup:106
+msgid ""
+"This machine appears to be using EFI/UEFI, but no EFI System Partition was "
+"found."
+msgstr "संभवतः मशीन पर EFI/UEFI प्रयुक्त है परन्तु कोई सिस्टम विभाजन नहीं मिला।"
+
+#: ../initrd-scripts/usr-lib-setup/setup:109
+msgid ""
+"You'll need to make an EFI System Partition in order to boot from the hard "
+"drive."
+msgstr "हार्ड ड्राइव से बूट करने हेतु EFI सिस्टम विभाजन होना आवश्यक है।"
+
+#: ../initrd-scripts/usr-lib-setup/setup:128
+msgid "Can't umount /var/log/mount.  Reboot machine and run setup again."
+msgstr "/var/log/mount को माउंट से हटाना विफल। मशीन को पुनः आरंभ कर सेटअप पुनः करें।"
+
+#: ../initrd-scripts/usr-lib-setup/setup:135
+msgid "Mount table corrupt.  Reboot machine and run setup again."
+msgstr "माउंट तालिका विकृत है। मशीन को पुनः आरंभ कर सेटअप पुनः करें।"
+
+#: ../initrd-scripts/usr-lib-setup/setup:168
+msgid "No Source Selected"
+msgstr "कोई स्रोत चयनित नहीं है"
+
+#: ../initrd-scripts/usr-lib-setup/setup:169
+msgid "The installer does not know where to find the source packages..."
+msgstr "इंस्टॉलर द्वारा स्रोत पैकेजों का स्थान ज्ञात करना विफल..."
+
+#: ../initrd-scripts/usr-lib-setup/setup:170
+#: ../initrd-scripts/usr-lib-setup/setup:188
+msgid "Press ENTER to return to the main menu."
+msgstr "मुख्य मेन्यू पर वापस जाने हेतु एंटर कुंजी दबाएँ।"
+
+#: ../initrd-scripts/usr-lib-setup/setup:179
+msgid "CANNOT INSTALL SOFTWARE YET"
+msgstr "इस समय सॉफ्टवेयर इंस्टॉल करना संभव नहीं है"
+
+#: ../initrd-scripts/usr-lib-setup/setup:180
+msgid "Before you can install software, complete the following tasks:"
+msgstr "सॉफ्टवेयर इंस्टॉल करने से पहले निम्नलिखित कार्य पूर्ण करना आवश्यक है :"
+
+#: ../initrd-scripts/usr-lib-setup/setup:182
+msgid "Select your source media."
+msgstr "स्रोत मीडिया का चयन।"
+
+#: ../initrd-scripts/usr-lib-setup/setup:183
+msgid "Set up your target Linux partition(s)."
+msgstr "लक्षित लिनक्स विभाजन का सेटअप।"
+
+#: ../initrd-scripts/usr-lib-setup/setup:185
+msgid ""
+"You may also optionally remap your keyboard and set up your swap "
+"partition(s)."
+msgstr "कुंजीपटल अभिन्यास परिवर्तन व स्वैप विभाजन सेटअप करने का भी विकल्प उपलब्ध है।"
+
+#: ../initrd-scripts/usr-lib-setup/setup:199
+#: ../initrd-scripts/usr-lib-setup/setup:214
+#: ../initrd-scripts/usr-lib-setup/setup:236
+#: ../initrd-scripts/usr-lib-setup/slackinstall:147
+msgid "CORE"
+msgstr "कोर"
+
+#: ../initrd-scripts/usr-lib-setup/setup:201
+#: ../initrd-scripts/usr-lib-setup/setup:218
+msgid "SELECT INSTALLATION MODE"
+msgstr "इंस्टॉल मोड चयन"
+
+#: ../initrd-scripts/usr-lib-setup/setup:203
+#: ../initrd-scripts/usr-lib-setup/setup:221
+msgid "Please select the installation mode you prefer from the following:"
+msgstr "कृपया निम्नलिखित में से इच्छित इंस्टॉल मोड का चयन करें :"
+
+#: ../initrd-scripts/usr-lib-setup/setup:205
+#: ../initrd-scripts/usr-lib-setup/setup:226
+msgid ""
+"BASIC will only install a minimal graphical environment and a web browser."
+msgstr "सामान्य में केवल एक सरल चित्रात्मक वातावरण व वेब ब्राउज़र इंस्टॉल होगा।"
+
+#: ../initrd-scripts/usr-lib-setup/setup:207
+#: ../initrd-scripts/usr-lib-setup/setup:228
+msgid ""
+"CORE will install only the minimum essentials for your system to start in "
+"console mode (no graphical environment included) and is ideal if you are an "
+"experienced user and want to fully customize your installation for any "
+"specific purpose."
+msgstr "कोर में केवल कंसोल सिस्टम (चित्रात्मक वातावरण रहित) आरंभ करने हेतु आवश्यक पैकेज ही इंस्टॉल होंगें व यह अनुभवी उपयोक्ताओं हेतु उपयुक्त है जो इंस्टॉल को किसी विशिष्ट उद्देश्य हेतु अनुकूलित करना चाहते हैं।"
+
+#: ../initrd-scripts/usr-lib-setup/setup:213
+#: ../initrd-scripts/usr-lib-setup/setup:235
+msgid "BASIC"
+msgstr "सामान्य"
+
+#: ../initrd-scripts/usr-lib-setup/setup:213
+#: ../initrd-scripts/usr-lib-setup/setup:235
+msgid "Install a minimal graphical environment"
+msgstr "सरल चित्रात्मक वातावरण इंस्टॉल करें"
+
+#: ../initrd-scripts/usr-lib-setup/setup:214
+#: ../initrd-scripts/usr-lib-setup/setup:236
+msgid "Install a minimal console system"
+msgstr "सरल कंसोल सिस्टम इंस्टॉल करें"
+
+#: ../initrd-scripts/usr-lib-setup/setup:223
+msgid ""
+"FULL (default) will install everything. That includes one application per "
+"task, such as an office suite, a multimedia player, a CD/DVD burner etc."
+msgstr "पूर्ण (डिफ़ॉल्ट) में सभी उपलब्ध पैकेज इंस्टॉल होंगें। इसमें एक अनुप्रयोग प्रति कार्य के विचार से प्रेरित एक ऑफिस सॉफ्टवेयर संग्रह, एक मल्टीमीडिया प्लेयर, एक सीडी/डीवीडी प्लेयर इत्यादि सम्मिलित हैं।"
+
+#: ../initrd-scripts/usr-lib-setup/setup:234
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:138
+#: ../initrd-scripts/usr-lib-setup/slackinstall:162
+msgid "FULL"
+msgstr "पूर्ण"
+
+#: ../initrd-scripts/usr-lib-setup/setup:234
+msgid "Install everything"
+msgstr "सभी इंस्टॉल करें"
+
+#: ../initrd-scripts/usr-lib-setup/setup:262
+msgid "REPLACE /etc/fstab?"
+msgstr "/etc/fstab को बदलें?"
+
+#: ../initrd-scripts/usr-lib-setup/setup:263
+msgid "You already have an /etc/fstab on your install partition."
+msgstr "आपके इंस्टॉल विभाजन पर पहले से /etc/fstab मौजूद है।"
+
+#: ../initrd-scripts/usr-lib-setup/setup:266
+msgid ""
+"If you were just adding software, you should probably keep your old "
+"/etc/fstab."
+msgstr "यदि आप केवल सॉफ्टवेयर ही जोड़ना चाहते हैं तो पुरानी /etc/fstab को ही उपयोग करना जारी रखें।"
+
+#: ../initrd-scripts/usr-lib-setup/setup:269
+msgid ""
+"If you've changed your partitioning scheme, you should use the new "
+"/etc/fstab."
+msgstr "यदि आपने विभाजन तालिका में परिवर्तन किया है तो नवीन /etc/fstab का उपयोग करें।"
+
+#: ../initrd-scripts/usr-lib-setup/setup:272
+msgid "Do you want to replace your old /etc/fstab with the new one?"
+msgstr "क्या आप पुराने /etc/fstab को नवीन वाले से बदलना चाहते हैं?"
+
+#: ../initrd-scripts/usr-lib-setup/setup:336
+#: ../initrd-scripts/usr-lib-setup/setup:343
+msgid "SALIX INSTALLATION IS COMPLETE"
+msgstr "सेलिक्स इंस्टॉल पूर्ण हुआ"
+
+#: ../initrd-scripts/usr-lib-setup/setup:337
+#: ../initrd-scripts/usr-lib-setup/setup:344
+msgid "Reboot now"
+msgstr "अभी पुनः आरंभ करें"
+
+#: ../initrd-scripts/usr-lib-setup/setup:338
+#: ../initrd-scripts/usr-lib-setup/setup:345
+msgid "Exit to command line"
+msgstr "बंद कर कमांड लाइन खोलें"
+
+#: ../initrd-scripts/usr-lib-setup/setup:339
+msgid ""
+"System configuration and installation is complete. Please remove the "
+"installation disc. You can either select to reboot your system now or choose"
+" to exit the installation to the command line if you would like to do any "
+"manual tweaking."
+msgstr "सिस्टम विन्यास व इंस्टॉल प्रक्रिया पूर्ण हुई। कृपया इंस्टॉल डिस्क हटा दें। आप सिस्टम को अभी पुनः आरंभ कर सकते हैं या फिर इंस्टॉल प्रक्रिया बंद कमांड लाइन खोल सकते हैं यदि आप सेटिंग्स हेतु किसी प्रकार का परिवर्तन करना चाहते हैं।"
+
+#: ../initrd-scripts/usr-lib-setup/setup:346
+msgid ""
+"System configuration and installation is complete. You can either select to "
+"reboot your system now or choose to exit the installation to the command "
+"line if you would like to do any manual tweaking."
+msgstr "सिस्टम विन्यास व इंस्टॉल प्रक्रिया पूर्ण हुई। आप सिस्टम को अभी पुनः आरंभ कर सकते हैं या फिर इंस्टॉल प्रक्रिया बंद कमांड लाइन खोल सकते हैं यदि आप सेटिंग्स हेतु किसी प्रकार का परिवर्तन करना चाहते हैं।"
+
+#: ../initrd-scripts/usr-lib-setup/INCISO:19
+msgid "Setup has found an ISO image in the source directory:"
+msgstr "सेटअप द्वारा स्रोत डायरेक्टरी में एक आईएसओ फाइल मिली :"
+
+#: ../initrd-scripts/usr-lib-setup/INCISO:23
+msgid "Do you want to use this image as an installationsource?"
+msgstr "क्या आप इस फाइल को इंस्टॉल के स्रोत हेतु उपयोग करना चाहते हैं?"
+
+#: ../initrd-scripts/usr-lib-setup/INCISO:28
+msgid "USE ISO IMAGE"
+msgstr "आईएसओ फाइल उपयोग करें"
+
+#: ../initrd-scripts/usr-lib-setup/INCISO:35
+msgid "Setup has found ISO images in the source directory."
+msgstr "सेटअप द्वारा स्रोत डायरेक्टरी में आईएसओ फाइलें मिली हैं।"
+
+#: ../initrd-scripts/usr-lib-setup/INCISO:38
+msgid "Select an image if you want to use it as an installation source."
+msgstr "यदि आप आईएसओ का इंस्टॉल के स्रोत हेतु उपयोग करना चाहते हैं तो इच्छित फाइल का चयन करें।"
+
+#: ../initrd-scripts/usr-lib-setup/INCISO:54
+msgid "Mounting ISO image..."
+msgstr "आईएसओ फाइल माउंट करना जारी..."
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:14
+msgid "SCANNING FOR CD or DVD DRIVE"
+msgstr "सीडी व डीवीडी ड्राइव हेतु खोज जारी"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:15
+msgid ""
+"Make sure the Salix disc is in your CD/DVD drive, and then press ENTER to "
+"begin the scanning process. Or, if you'd rather specify the device name "
+"manually (experts only), choose that option below."
+msgstr "सुनिश्चित करें कि सेलिक्स डिस्क आपकी सीडी/डीवीडी ड्राइव में उपस्थित है व फिर एंटर कुंजी दबाकर स्कैन प्रक्रिया आरंभ करें। या फिर यदि आप उपकरण नाम स्वयं निर्दिष्ट करना चाहते हैं (केवल अनुभवी उपयोक्ता हेतु) तो संबंधित विकल्प नीचे उपलब्ध है।"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:20
+msgid "Scan for the CD or DVD drive (recommended)"
+msgstr "सीडी या डीवीडी ड्राइव हेतु स्कैन करें (अनुशंसित)"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:21
+msgid "Manually specify CD or DVD by device name"
+msgstr "सीडी या डीवीडी ड्राइव के उपकरण नाम दर्ज कर उन्हें निर्दिष्ट करें"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:30
+msgid "MANUAL CD/DVD DEVICE SELECTION"
+msgstr "मैनुअल सीडी/डीवीडी उपकरण चयन"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:31
+msgid ""
+"Please select your CD/DVD device from the list below.  If you don't see your"
+" device listed, choose 'custom'.  This will let you type in any device name."
+" (and if necessary, will create the device)"
+msgstr "कृपया सूची से अपनी सीडी/डीवीडी उपकरण चुनें। यदि आपका उपकरण सूची में नहीं है तो 'अनुकूलित' चुनें। इस द्वारा आप इच्छित उपकरण का नाम दर्ज कर सकेंगें (व आवश्यकतानुसार उपकरण का सृजन भी)।"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:36
+msgid "Type in the CD or DVD device to use"
+msgstr "उपयोग हेतु सीडी/डीवीडी उपकरण दर्ज करें"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:37
+msgid "First CD/DVD drive"
+msgstr "पहली सीडी/डीवीडी ड्राइव"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:38
+msgid "Second CD/DVD drive"
+msgstr "दूसरी सीडी/डीवीडी ड्राइव"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:39
+msgid "Third CD/DVD drive"
+msgstr "तीसरी सीडी/डीवीडी ड्राइव"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:40
+msgid "Fourth CD/DVD drive"
+msgstr "चौथी सीडी/डीवीडी ड्राइव"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:41
+msgid "First parallel port ATAPI CD"
+msgstr "पहली समानांतर पोर्ट एटीएपीआई सीडी"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:42
+msgid "Second parallel port ATAPI CD"
+msgstr "दूसरी समानांतर पोर्ट एटीएपीआई सीडी"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:43
+msgid "Third parallel port ATAPI CD"
+msgstr "तीसरी समानांतर पोर्ट एटीएपीआई सीडी"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:44
+msgid "Fourth parallel port ATAPI CD"
+msgstr "चौथी समानांतर पोर्ट एटीएपीआई सीडी"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:45
+msgid "Non-IDE Aztech CD/DVD"
+msgstr "गैर-आईडीई एज़्टेक सीडी/डीवीडी"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:46
+msgid "Sony CDU-535 CD/DVD"
+msgstr "सोनी सीडीयू-535 सीडी/डीवीडी"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:47
+msgid "Non-IDE GoldStar CD/DVD"
+msgstr "गैर-आईडीई गोल्ड स्टार सीडी/डीवीडी"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:48
+msgid "Sony CDU-31a CD/DVD"
+msgstr "सोनी सीडीयू-31a सीडी/डीवीडी"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:49
+msgid "Optics Storage CD/DVD"
+msgstr "ऑप्टिक्स संचय सीडी/डीवीडी"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:50
+msgid "Sanyo non-IDE CD/DVD"
+msgstr "सान्यो गैर-आईडीई सीडी/डीवीडी"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:51
+msgid "Non-IDE Mitsumi drive 1"
+msgstr "गैर-आईडीई मित्सुमी ड्राइव 1"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:52
+msgid "Non-IDE Mitsumi drive 2"
+msgstr "गैर-आईडीई मित्सुमी ड्राइव 2"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:53
+msgid "Old non-IDE SoundBlaster CD/DVD"
+msgstr "पुरानी गैर-आईडीई साउंड ब्लास्टर सीडी/डीवीडी"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:54
+msgid "Philips LMS CM-205 CD/DVD"
+msgstr "फिलिप्स एलएमएस सीएम-205 सीडी/डीवीडी"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:55
+msgid "Philips LMS CM-206 CD/DVD"
+msgstr "फिलिप्स एलएमएस सीएम-206 सीडी/डीवीडी"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:56
+msgid "Old non-IDE Mitsumi CD/DVD"
+msgstr "पुरानी गैर-आईडीई मित्सुमी सीडी/डीवीडी"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:65
+msgid "ENTER CD/DVD DEVICE MANUALLY"
+msgstr "सीडी/डीवीडी उपकरण दर्ज करें"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:66
+msgid ""
+"Please enter the name of the CD/DVD device (such as /dev/hdc) that you wish "
+"to use to mount the Salix CD/DVD:"
+msgstr "कृपया उस सीडी/डीवीडी उपकरण (जैसे /dev/hdc) का नाम दर्ज करें जिसे आप सेलिक्स सीडी/डीवीडी को माउंट करने हेतु उपयोग करना चाहते हैं :"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:77
+msgid "MKNOD CD/DVD DEVICE"
+msgstr "सीडी/डीवीडी उपकरण हेतु MKNOD कमांड"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:78
+#, sh-format
+msgid ""
+"There doesn't seem to be a device by the name of $DRIVE_FOUND in the /dev "
+"directory, so we will have to create it using the major and minor numbers "
+"for the device.  If you're using a bootdisk with a custom CD/DVD driver on "
+"it, you should be able to find these numbers in the documentation.  Also, "
+"see the 'devices.txt' file that comes with the Linux kernel source.  If you "
+"don't know the numbers, you'll have to hit Esc to abort. Enter the major and"
+" minor numbers for the new device, separated by one space:"
+msgstr "प्रतीत होता है कि /dev डायरेक्टरी में $DRIVE_FOUND नामक कोई उपकरण नहीं है अतः इंस्टॉलर द्वारा उपकरण की मेजर व माइनर संख्याएँ उपयोग उपकरण का सृजन किया जाएगा। यदि आपकी बूट डिस्क में अनुकूलित सीडी/डीवीडी ड्राइवर सम्मिलित है तो आप इन संख्याओं को प्रलेखन से प्राप्त कर सकते हैं। इसके अतिरिक्त लिनक्स कर्नेल स्रोत के साथ संलग्न 'devices.txt' नामक फाइल भी देखें। यदि आपको ये संख्याओं नहीं पता है तो Esc कुंजी दबाकर प्रक्रिया निरस्त करें। एक रिक्त अक्षर (स्पेस) द्वारा पृथक कर नवीन उपकरण की मेजर व माइनर संख्याएँ दर्ज करें :"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:93
+msgid "MAKING DEVICE IN /dev"
+msgstr "/dev में उपकरण सृजन"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:98
+msgid "MKNOD FAILED"
+msgstr "MKNOD कमांड विफल"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:99
+msgid ""
+"Sorry, but the mknod command failed to make the device.  You'll need to go "
+"back and try selecting your source media again.  Press ENTER to abort the "
+"source media selection process."
+msgstr "क्षमा करें, mknod कमांड द्वारा उपकरण सृजन विफल रहा। आपको प्रक्रिया के आरंभिक चरण पर जाकर स्रोत मीडिया का पुनः चयन करना होगा। स्रोत मीडिया चयन प्रक्रिया को निरस्त करने हेतु एंटर कुंजी दबाएँ।"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:114
+#: ../initrd-scripts/usr-lib-setup/INSCD:131
+#: ../initrd-scripts/usr-lib-setup/INSCD:151
+msgid "SCANNING"
+msgstr "स्कैन करना जारी"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:114
+msgid "Scanning for a CD/DVD drive containing a Salix disc..."
+msgstr "सेलिक्स डिस्क युक्त सीडी/डीवीडी ड्राइव हेतु स्कैन करना जारी..."
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:131
+msgid ""
+"Scanning for a parallel port ATAPI CD/DVD drive containing a Salix disc..."
+msgstr "सेलिक्स डिस्क युक्त सामानांतर पोर्ट एटीएपीआई सीडी/डीवीडी ड्राइव हेतु स्कैन करना जारी..."
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:151
+msgid ""
+"No IDE/SCSI drive, so we will try scanning for CD drives on old proprietary interfaces, such as SoundBlaster pre-IDE CD drives, Sony CDU-31a, Sony 535, old Mitsumi pre-IDE, old Optics, etc.  For this scan to work at all, you'll need to be using a bootdisk that supports your CD drive.\n"
+"\n"
+"Please press ENTER to begin this last-chance scan for old, obsolete hardware."
+msgstr "कोई आईडीई/एससीएसई ड्राइव नहीं मिली अतः साउंड ब्लास्टर आईडीई-पूर्व सीडी ड्राइव, सोनी सीडीयू-31a, सोनी 535, पुरानी मित्सुमी आईडीई-पूर्व, पुरानी ऑप्टिक्स आदि जैसे पुराने अमुक्त स्रोत अंतरफलकों पर सीडी ड्राइव हेतु स्कैन किया जाएगा। स्कैन प्रक्रिया की सफलता हेतु ऐसी बूट डिस्क उपयोग करें जो आपकी सीडी ड्राइव का समर्थन करती हो।\n\nअत्यंत पुराने हार्डवेयर पर स्कैन करने हेतु इस अंतिम प्रयास को आरंभ करने के लिए एंटर कुंजी दबाएँ।"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:174
+msgid "CD/DVD DRIVE NOT FOUND"
+msgstr "सीडी/डीवीडी ड्राइव नहीं मिली"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:175
+msgid ""
+"A CD/DVD drive could not be found on any of the devices that were scanned.  "
+"Possible reasons include using a bootdisk or kernel that doesn't support "
+"your drive, failing to pass parameters needed by some drives to the kernel, "
+"not having the Salix disc in your CD/DVD drive, or using a drive connected "
+"to a Plug and Play soundcard (in this case, connecting the drive directly to"
+" the IDE interface often helps). Please make sure you are using the correct "
+"bootdisk for your hardware, consult the BOOTING file for possible "
+"information on forcing the detection of your drive, and then reattempt "
+"installation.  If all else fails, see FAQ.TXT for information about copying "
+"parts of this CD to your DOS partition and installing it from there."
+msgstr "स्कैन किए गए किसी उपकरण पर सीडी/डीवीडी ड्राइव नहीं मिली। संभावित कारण हैं : ड्राइव हेतु असमर्थित बूट डिस्क या कर्नेल का उपयोग, ड्राइव हेतु आवश्यक मापदंड कर्नेल के संलग्न न करना, सीडी/डीवीडी ड्राइव में सेलिक्स डिस्क की उपस्थित न होना, या फिर वहनीय साउंड कार्ड से कनेक्ट हो रखी ड्राइव उपयोग करना (इस स्थिति में ड्राइव को सीधे आईडीई अंतरफलक में कनेक्ट करना सहायक होता है)। कृपया सुनिश्चित करें कि प्रयुक्त बूट डिस्क आपके हार्डवेयर हेतु उचित है, सिस्टम द्वारा उपकरण की पहचान बाध्य करने हेतु बूटिंग फाइल से उपयोगी सूचना की प्राप्ति संभव है, एवं इसके उपरांत इंस्टॉल करने का पुनः प्रयास करें। सभी प्रयास विफल होने की स्थिति में इस सीडी के कुछ अनुभागों को अपने DOS विभाजन में कॉपी कर व फिर वहाँ से इंस्टॉल करने की प्रक्रिया के बारे में जानने हेतु FAQ.TXT फाइल देखें।"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:187
+msgid ""
+"You will now be returned to the main menu.  If you want to try looking for "
+"the CD again, you may skip directly to the SOURCE menu selection."
+msgstr "अब आप मुख्य मेन्यू पर वापस लौटेंगे। यदि आप सीडी हेतु पुनः खोज करना चाहते हैं तो सीधे स्रोत चयन मेन्यू पर जाएँ।"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:197
+msgid "CD/DVD DRIVE FOUND"
+msgstr "सीडी/डीवीडी ड्राइव मिली"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:198
+#, sh-format
+msgid "A Salix disc was found in device $DRIVE_FOUND."
+msgstr "$DRIVE_FOUND उपकरण में सेलिक्स डिस्क मिली।"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:201
+msgid "MOUNT ERROR"
+msgstr "माउंट त्रुटि"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:201
+#, sh-format
+msgid ""
+"There was an error attempting to mount the CD/DVD on $DRIVE_FOUND.  Maybe "
+"the device name is incorrect, the disc is not in the drive, or the kernel "
+"you are using does not support the device. (possibly an incorrect bootdisk) "
+"What would you like to do now?"
+msgstr "$DRIVE_FOUND पर सीडी/डीवीडी माउंट करते समय त्रुटि हुई। संभावित कारण हैं : उपकरण नाम उचित न होना, ड्राइव में डिस्क न होना, या फिर इस उपकरण हेतु प्रयुक्त कर्नेल असमर्थित है। (संभवतः त्रुटिपूर्ण बूट डिस्क) अब क्या करना चाहेंगे?"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:208
+msgid "Abort CD installation"
+msgstr "सीडी इंस्टॉल प्रक्रिया निरस्त करें"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:209
+msgid "Attempt to mount the CD/DVD device again"
+msgstr "सीडी/डीवीडी उपकरण को पुनः माउंट करना का प्रयास करें"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:210
+msgid "Ignore the error and continue"
+msgstr "त्रुटि को अनदेखा कर प्रक्रिया जारी रखें"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:222
+#, sh-format
+msgid "ATTEMPTING TO MOUNT CD/DVD on $DRIVE_FOUND"
+msgstr "$DRIVE_FOUND पर सीडी/डीवीडी माउंट करने हेतु प्रयासरत"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:223
+#, sh-format
+msgid "Attempting to mount your CD/DVD again with the following command:"
+msgstr "निम्नलिखित कमांड द्वारा सीडी/डीवीडी माउंट करने हेतु प्रयासरत :"
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:23
+msgid ""
+"Good! We're all set on the local end, but now we need to know where to find "
+"the software packages to install.  First, we need the IP address of the "
+"machine where the Salix sources are stored."
+msgstr "अच्छा! आपकी मशीन पर सब उचित है परन्तु अब यह ज्ञात करना होगा कि इंस्टॉल हेतु सॉफ्टवेयर पैकेज कहाँ हैं। प्रथमतया, उस मशीन का आईपी पता ज्ञात करें जहाँ सेलिक्स स्रोत संचित हैं।"
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:30
+#: ../initrd-scripts/usr-lib-setup/INSURL:72
+msgid ""
+"Since you're already running on the network, you should be able to use the "
+"hostname instead of an IP address if you wish."
+msgstr "आप नेटवर्क से कनेक्ट है अतः यदि इच्छा हो तो आप आईपी पते के स्थान पर होस्ट नाम उपयोग कर सकते हैं।"
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:35
+msgid "What is the IP address of your NFS server?"
+msgstr "आपके एनएफएस सर्वर का आईपी पता क्या है?"
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:37
+msgid "ENTER IP ADDRESS OF NFS SERVER"
+msgstr "एनएफएस सर्वर का आईपी पता दर्ज करें"
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:46
+#: ../initrd-scripts/usr-lib-setup/INSSMB:47
+#: ../initrd-scripts/usr-lib-setup/INSURL:86
+msgid ""
+"There must be a directory on the server with the Salix packages and files "
+"arranged in a tree like the FTP site."
+msgstr "सर्वर पर एफटीपी साइट की भाँति एक डायरेक्टरी उपस्थित होगी जहाँ पर सेलिक्स पैकेज व फाइलें शाखानुमा क्रम में प्रदर्शित होंगे।"
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:50
+msgid ""
+"The installation script needs to know the name of the directory on your "
+"server that contains the series' subdirectories. For example, if your A "
+"series is found at /stuff/salix/a, then you would respond: /stuff/salix"
+msgstr "इंस्टॉल स्क्रिप्ट द्वारा आपके सर्वर की डायरेक्टरी का नाम जानना आवश्यक है जिसमें श्रृंखला की उप-डायरेक्टरी आदि मौजूद हैं। उदाहरण - /stuff/salix/a में A श्रृंखला प्राप्त होने पर आपको उत्तर में /stuff/salix दर्ज करना होगा"
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:55
+#: ../initrd-scripts/usr-lib-setup/INSSMB:55
+#: ../initrd-scripts/usr-lib-setup/INSURL:96
+msgid "What is the Salix source directory?"
+msgstr "सेलिक्स स्रोत डायरेक्टरी क्या है?"
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:56
+#: ../initrd-scripts/usr-lib-setup/INSSMB:56
+#: ../initrd-scripts/usr-lib-setup/INSURL:97
+#: ../initrd-scripts/usr-lib-setup/INShd:123
+msgid "SELECT SOURCE DIRECTORY"
+msgstr "स्रोत डायरेक्टरी चुनें"
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:65
+msgid "In the next screen you should watch for NFS mount errors."
+msgstr "आगामी स्क्रीन पर एनएफएस माउंट त्रुटियों हेतु सचेत रहें।"
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:68
+msgid ""
+"If you see errors and you don't see your NFS server listed, then try setting"
+" up NFS again."
+msgstr "त्रुटियों प्रदर्शित होने पर यदि आपका एनएफएस सर्वर सूचीबद्ध न हो तो एनएफएस सर्वर को पुनः सेटअप करें।"
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:71
+msgid "NFS MOUNT INFORMATION"
+msgstr "एनएफएस माउंट सूचना"
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:80
+#, sh-format
+msgid "Mounting $REMOTE_PATH:"
+msgstr "$REMOTE_PATH माउंट करना जारी :"
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:85
+msgid "Didn't work."
+msgstr "विफल रहा।"
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:87
+msgid "Maybe you should check that the directory name is correct?"
+msgstr "सुनिश्चित करें कि डायरेक्टरी नाम उचित है ?"
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:94
+msgid "Current NFS mounts:"
+msgstr "वर्तमान एनएफएस माउंट :"
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:98
+msgid "Do you need to try setting up NFS again?"
+msgstr "क्या आप एनएफएस को पुनः सेटअप करना चाहते हैं?"
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:101
+#: ../initrd-scripts/usr-lib-setup/INSNFS:105
+msgid "NFS MOUNT RESULT"
+msgstr "एनएफएस माउंट परिणाम"
+
+#: ../initrd-scripts/usr-lib-setup/INSSMB:23
+msgid ""
+"Good! We're all set on the local end, but now we need to know where to find "
+"the software packages to install. First, we need the share address of the "
+"Samba server where the Salix sources are stored."
+msgstr "अच्छा! आपकी मशीन पर सब उचित है परन्तु अब यह ज्ञात करना होगा कि इंस्टॉल हेतु सॉफ्टवेयर पैकेज कहाँ हैं। प्रथमतया, उस सांबा सर्वर का सहभाजित पता ज्ञात करें जहाँ सेलिक्स स्रोत संचित हैं।"
+
+#: ../initrd-scripts/usr-lib-setup/INSSMB:28
+msgid "Example share address:"
+msgstr "सहभाजित पते का उदाहरण :"
+
+#: ../initrd-scripts/usr-lib-setup/INSSMB:32
+msgid ""
+"Since you're already running on the network, you should be able to use the "
+"hostname instead of an IP address if you wish.\n"
+msgstr "आप नेटवर्क से कनेक्ट है अतः यदि इच्छा हो तो आप आईपी पते के स्थान पर होस्ट नाम उपयोग कर सकते हैं।\n"
+
+#: ../initrd-scripts/usr-lib-setup/INSSMB:37
+msgid "What is the share address of your Samba server?"
+msgstr "आपके सांबा सर्वर का सहभाजित पता क्या है?"
+
+#: ../initrd-scripts/usr-lib-setup/INSSMB:38
+msgid "ENTER SHARE ADDRESS OF SAMBA SERVER"
+msgstr "सांबा सर्वर का सहभाजित पता दर्ज करें"
+
+#: ../initrd-scripts/usr-lib-setup/INSSMB:50
+msgid ""
+"The installation script needs to know the name of the directory below your "
+"Samba share that contains the series subdirectories. For example, if your A "
+"series is found at /stuff/salix/a, then you would respond: /stuff/salix"
+msgstr "इंस्टॉल स्क्रिप्ट द्वारा आपके सांबा सहभाजन के नीचे स्थित डायरेक्टरी का नाम जानना आवश्यक है जिसमें श्रृंखला की उप-डायरेक्टरी आदि मौजूद हैं। उदाहरण - /stuff/salix/a में A श्रृंखला प्राप्त होने पर आपको उत्तर में /stuff/salix दर्ज करना होगा"
+
+#: ../initrd-scripts/usr-lib-setup/INSSMB:65
+msgid "You should see no mount errors:"
+msgstr "कोई माउंट त्रुटि नहीं होगी :"
+
+#: ../initrd-scripts/usr-lib-setup/INSSMB:67
+#, sh-format
+msgid "Mounting $REMOTE_SHARE ..."
+msgstr "$REMOTE_SHARE माउंट करना जारी ..."
+
+#: ../initrd-scripts/usr-lib-setup/INSSMB:73
+msgid "Mount failed."
+msgstr "माउंट करना विफल।"
+
+#: ../initrd-scripts/usr-lib-setup/INSSMB:78
+msgid "Mounted Samba share(s):"
+msgstr "माउंट हो रखा सांबा सहभाजन :"
+
+#: ../initrd-scripts/usr-lib-setup/INSSMB:85
+msgid "A Salix package tree was found! Ready to continue."
+msgstr "शाखानुमा क्रम युक्त सेलिक्स पैकेज की प्राप्ति सफल। प्रक्रिया जारी रखना संभव है।"
+
+#: ../initrd-scripts/usr-lib-setup/INSSMB:89
+msgid "No Salix package tree found at the indicated path!"
+msgstr "निर्दिष्ट फोल्डर पथ पर शाखानुमा क्रम युक्त सेलिक्स पैकेज की प्राप्ति विफल!"
+
+#: ../initrd-scripts/usr-lib-setup/INSSMB:95
+msgid "Do you want to try setting up Samba again?"
+msgstr "क्या आप सांबा को पुनः सेटअप करना चाहते हैं?"
+
+#: ../initrd-scripts/usr-lib-setup/INSSMB:99
+#: ../initrd-scripts/usr-lib-setup/INSSMB:103
+msgid "MOUNT RESULT"
+msgstr "माउंट परिणाम"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:63
+msgid ""
+"Good! We're all set on the local end, but now we need to know where to find "
+"the software packages to install. First, we need the URL of the ftp or http "
+"server where the Salix sources are stored."
+msgstr "अच्छा! आपकी मशीन पर सब उचित है परन्तु अब यह ज्ञात करना होगा कि इंस्टॉल हेतु सॉफ्टवेयर पैकेज कहाँ हैं। प्रथमतया, उस एफटीपी या एचटीटीपी सर्वर का यूआरएल ज्ञात करें जहाँ सेलिक्स स्रोत संचित हैं।"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:68
+msgid "URL examples are:"
+msgstr "यूआरएल के उदाहरण :"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:76
+msgid "What is the URL of your FTP/HTTP server?"
+msgstr "आपके एफटीपी/एचटीटीपी सर्वर का यूआरएल क्या है?"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:77
+msgid "ENTER URL OF FTP/HTTP SERVER"
+msgstr "एफटीपी/एचटीटीपी सर्वर का यूआरएल दर्ज करें"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:90
+msgid ""
+"The installation script needs to know the name of the directory on your "
+"server that contains the series subdirectories. For example, if your A "
+"series is found at /stuff/salix/a, then you would respond: /stuff/salix"
+msgstr "इंस्टॉल स्क्रिप्ट द्वारा आपके सर्वर की डायरेक्टरी का नाम जानना आवश्यक है जिसमें श्रृंखला की उप-डायरेक्टरी आदि मौजूद हैं। उदाहरण - /stuff/salix/a में A श्रृंखला प्राप्त होने पर आपको उत्तर में /stuff/salix दर्ज करना होगा"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:107
+msgid "In the next screen you should watch for possible errors."
+msgstr "आगामी स्क्रीन पर संभावित त्रुटियों हेतु सचेत रहें।"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:110
+msgid ""
+"First, we'll download the PACKAGES.TXT from the parent of the directory that you entered before (which should be the root of the remote Salix tree).  If that succeeds, then we use PACKAGES.TXT to reconstruct a local cache of the package tree (should take a minute or less on an average system).\n"
+"After that, we're all set to go!"
+msgstr "सर्वप्रथम, पिछले चरण में आप द्वारा दर्ज की गई डायरेक्टरी के मूल फोल्डर (यह दूरस्थ शाखानुमा क्रम युक्त सेलिक्स का रुट फोल्डर है) से PACKAGES.TXT फाइल डाउनलोड होगी। इसके सफल होने के उपरांत PACKAGES.TXT उपयोग कर शाखानुमा क्रम युक्त पैकेज की लोकल कैश का पुनः सृजन होगा (एक औसत सिस्टम पर इसे पूर्ण होने में एक या एक से कम मिनट का समय लगता है)।\nयह सब पूर्ण होने पर प्रक्रिया आगे बढ़ाना संभव होगा!"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:117
+msgid "Downloading PACKAGES.TXT at the Salix root starts after you press OK."
+msgstr "आप द्वारा 'ठीक है' दर्ज करने के बाद ही सेलिक्स रुट से PACKAGES.TXT का डाउनलोड आरंभ होगा।"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:119
+msgid ""
+"That file is several hundreds of KB in size so it may take some time to get "
+"here..."
+msgstr "फाइल का आकार सैंकड़ों केबी में होने के कारण अंतरण पूर्ण होने में समय लग सकता है..."
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:121
+msgid "DOWNLOAD INFORMATION"
+msgstr "डाउनलोड की सूचना"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:130
+msgid "Downloading PACKAGES.TXT ..."
+msgstr "PACKAGES.TXT डाउनलोड करना जारी ..."
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:135
+msgid "> Download failed. Going to try one directory lower."
+msgstr "> डाउनलोड विफल। निचली डायरेक्टरी हेतु प्रयास होगा।"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:141
+msgid "> Download failed again."
+msgstr "> डाउनलोड फिर से विफल।"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:148
+msgid "A Salix 'PACKAGES.TXT' is available. Ready to continue!"
+msgstr "सेलिक्स की 'PACKAGES.TXT' उपलब्ध है। प्रक्रिया जारी रखने हेतु तैयार हैं!"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:153
+msgid "No file 'PACKAGES.TXT' was found. Wrong URL?"
+msgstr "कोई 'PACKAGES.TXT' नहीं मिली। अनुचित यूआरएल?"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:158
+msgid "Do you want to try setting up FTP/HTTP again? "
+msgstr "क्या आप एफटीपी/एचटीटीपी को पुनः सेटअप करना चाहते हैं?"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:161
+#: ../initrd-scripts/usr-lib-setup/INSURL:165
+msgid "DOWNLOAD RESULT"
+msgstr "डाउनलोड का परिणाम"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:186
+#: ../initrd-scripts/usr-lib-setup/INSURL:226
+#: ../initrd-scripts/usr-lib-setup/INSURL:230
+msgid "INITIALIZING PACKAGE TREE"
+msgstr "शाखानुमा क्रम युक्त पैकेज का आरंभिकरण जारी"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:187
+msgid "Setting up local cache for the FTP/HTTP server's package tree ...\n"
+msgstr "एफटीपी/एचटीटीपी सर्वर के शाखानुमा क्रम युक्त पैकेज हेतु लोकल कैश सेट करना जारी ...\n"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:227
+#, sh-format
+msgid "processing ${TOTALP} Salix packages..."
+msgstr "${TOTALP} सेलिक्स पैकेजों का संसाधन जारी ..."
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:231
+msgid ""
+"\n"
+"Retrieving tagfile information for the package tree ..."
+msgstr "\nशाखानुमा क्रम युक्त पैकेज हेतु उपनाम फाइल सूचना की प्राप्ति जारी ..."
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:239
+msgid "REMOTE SERVER CONFIGURATION"
+msgstr "दूरस्थ सर्वर विन्यास"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:240
+msgid "Failed to configure for installation from remote server."
+msgstr "दूरस्थ सर्वर से इंस्टॉल हेतु विन्यास करना विफल।"
+
+#: ../initrd-scripts/usr-lib-setup/INSUSB:13
+msgid "SCANNING FOR USB STICK"
+msgstr "यूएसबी हेतु स्कैन जारी"
+
+#: ../initrd-scripts/usr-lib-setup/INSUSB:14
+msgid ""
+"Make sure the USB stick containing the Salix package directory is inserted "
+"into a USB port, and then press ENTER to begin the scanning process."
+msgstr "सुनिश्चित करें कि सेलिक्स पैकेज डायरेक्टरी युक्त यूएसबी उचित रूप से यूएसबी पोर्ट में लगी हुई है व फिर एंटर कुंजी दबाकर स्कैन प्रक्रिया आरंभ करें।"
+
+#: ../initrd-scripts/usr-lib-setup/INSUSB:36
+msgid "NO REMOVABLE USB DEVICES FOUND"
+msgstr "कोई यूएसबी उपकरण नहीं मिला"
+
+#: ../initrd-scripts/usr-lib-setup/INSUSB:37
+msgid ""
+"Sorry, but no removable USB devices could be found.  Exiting back to the top"
+" menu."
+msgstr "क्षमा करें परन्तु कोई यूएसबी उपकरण नहीं मिला। शीर्ष मेन्यू पर वापस लौटा जाएगा।"
+
+#: ../initrd-scripts/usr-lib-setup/INSUSB:88
+msgid "NO SALIX DIRECTORY FOUND"
+msgstr "कोई सेलिक्स डायरेक्टरी नहीं मिली"
+
+#: ../initrd-scripts/usr-lib-setup/INSUSB:89
+msgid ""
+"Sorry, but a Salix directory could not be found on any USB devices. Exiting "
+"back to the top menu."
+msgstr "क्षमा करें परन्तु किसी यूएसबी उपकरण पर कोई सेलिक्स डायरेक्टरी नहीं मिली। शीर्ष मेन्यू पर वापस लौटा जाएगा।"
+
+#: ../initrd-scripts/usr-lib-setup/INSUSB:98
+msgid "USB PACKAGE SOURCE FOUND"
+msgstr "यूएसबी पैकेज स्रोत मिला"
+
+#: ../initrd-scripts/usr-lib-setup/INSUSB:99
+#, sh-format
+msgid "A Salix package directory was found on device $DRIVE_FOUND."
+msgstr "$DRIVE_FOUND उपकरण में सेलिक्स पैकेज डायरेक्टरी मिली।"
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:17
+#: ../initrd-scripts/usr-lib-setup/INShd:17
+msgid "Setup failed to unmount a required directory:"
+msgstr "सेटअप द्वारा आवश्यक डायरेक्टरी को माउंट से हटाना विफल :"
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:21
+msgid "Please reboot the machine and try again."
+msgstr "कृपया मशीन को पुनः आरंभ करने के बाद पुनः प्रयास करें।"
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:24
+#: ../initrd-scripts/usr-lib-setup/INShd:23
+msgid "ERROR"
+msgstr "त्रुटि"
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:25
+#: ../initrd-scripts/usr-lib-setup/INShd:24
+msgid "REBOOT"
+msgstr "पुनः आरंभ"
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:26
+#: ../initrd-scripts/usr-lib-setup/INShd:25
+msgid "CANCEL"
+msgstr "रद्द"
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:40
+msgid ""
+"Please provide the path to a directory containing the contents (or an ISO "
+"image) of a Salix installation disc."
+msgstr "कृपया सेलिक्स इंस्टॉल डिस्क की सामग्री (या आईएसओ फाइल) युक्त डायरेक्टरी का पथ दर्ज करें।"
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:44
+msgid ""
+"Note: You may use any directory within the current filesystem except '/mnt' "
+"or '/var/log/mount' as these are required by setup."
+msgstr "ध्यान दें : आप '/mnt' या '/var/log/mount' के सिवाय वर्तमान फाइल सिस्टम की कोई भी डायरेक्टरी उपयोग कर सकते हैं; ये दोनों सेटअप हेतु आवश्यक हैं।"
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:49
+msgid "SELECT A PRE-MOUNTED DIRECTORY"
+msgstr "पहले से माउंट हो रखी डायरेक्टरी चुनें"
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:50
+#: ../initrd-scripts/usr-lib-setup/INShd:124
+msgid "Browse"
+msgstr "ब्राउज़ करें"
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:63
+#: ../initrd-scripts/usr-lib-setup/INShd:137
+msgid "SELECT A DIRECTORY"
+msgstr "डायरेक्टरी चुनें"
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:85
+msgid "The ISO image you specified is not valid:"
+msgstr "आपके द्वारा निर्दिष्ट आईएसओ फाइल अमान्य है :"
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:89
+#: ../initrd-scripts/usr-lib-setup/INSdir:114
+#: ../initrd-scripts/usr-lib-setup/INShd:185
+msgid "Please check and try again."
+msgstr "कृपया जाँचकर पुनः प्रयास करें।"
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:91
+#: ../initrd-scripts/usr-lib-setup/INShd:168
+msgid "INVALID ISO IMAGE"
+msgstr "अमान्य आईएसओ फाइल"
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:92
+#: ../initrd-scripts/usr-lib-setup/INSdir:118
+#: ../initrd-scripts/usr-lib-setup/INShd:93
+#: ../initrd-scripts/usr-lib-setup/INShd:107
+#: ../initrd-scripts/usr-lib-setup/INShd:169
+#: ../initrd-scripts/usr-lib-setup/INShd:188
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:540
+msgid "OK"
+msgstr "ठीक है"
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:109
+#: ../initrd-scripts/usr-lib-setup/INShd:181
+msgid "The directory you specified is not valid:"
+msgstr "आपके द्वारा निर्दिष्ट डायरेक्टरी अमान्य है :"
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:117
+#: ../initrd-scripts/usr-lib-setup/INShd:187
+msgid "INVALID SOURCE DIRECTORY"
+msgstr "अमान्य स्रोत डायरेक्टरी"
+
+#: ../initrd-scripts/usr-lib-setup/INShd:20
+msgid "Please reboot the machine an try again."
+msgstr "कृपया मशीन को पुनः आरंभ करने के बाद पुनः प्रयास करें।"
+
+#: ../initrd-scripts/usr-lib-setup/INShd:39
+msgid ""
+"Please specify which partition on your hard disk or USB stick contains the "
+"contents (or an ISO image) of a Salix installation disc."
+msgstr "कृपया सेलिक्स इंस्टॉल डिस्क की सामग्री (या आईएसओ फाइल) युक्त हार्ड डिस्क या यूएसबी का विभाजन निर्दिष्ट करें।"
+
+#: ../initrd-scripts/usr-lib-setup/INShd:43
+msgid "Example:"
+msgstr "उदाहरण :"
+
+#: ../initrd-scripts/usr-lib-setup/INShd:45
+msgid "Note: Use the <Partitions> button to list available partitions."
+msgstr "ध्यान दें : <Partitions> बटन उपयोग कर उपलब्ध विभाजन सूचीबद्ध करें।"
+
+#: ../initrd-scripts/usr-lib-setup/INShd:48
+msgid "SELECT HARD DISK PARTITION"
+msgstr "हार्ड डिस्क विभाजन चुनें"
+
+#: ../initrd-scripts/usr-lib-setup/INShd:49
+msgid "Partitions"
+msgstr "विभाजन"
+
+#: ../initrd-scripts/usr-lib-setup/INShd:61
+msgid "PARTITIONS LIST"
+msgstr "विभाजन सूची"
+
+#: ../initrd-scripts/usr-lib-setup/INShd:92
+msgid "MOUNT FAILURE"
+msgstr "माउंट करना विफल"
+
+#: ../initrd-scripts/usr-lib-setup/INShd:106
+msgid "MOUNT SUCCESS"
+msgstr "माउंट करना सफल"
+
+#: ../initrd-scripts/usr-lib-setup/INShd:115
+msgid ""
+"Now please provide the path to a directory containing the contents (or an "
+"ISO image) of a Salix installation disc."
+msgstr "अब कृपया सेलिक्स इंस्टॉल डिस्क की सामग्री (या आईएसओ फाइल) युक्त डायरेक्टरी का पथ दर्ज करें।"
+
+#: ../initrd-scripts/usr-lib-setup/INShd:118
+msgid ""
+"Note: The path you enter must be relative to the mount point. So, "
+"'/var/log/mount/salix-xfce' should be entered as '/salix-xfce'."
+msgstr "ध्यान दें : दर्ज किया गया फोल्डर पथ माउंट पॉइंट के अनुरूप होना आवश्यक है। अतः '/var/log/mount/salix-xfce' को '/salix-xfce' के रूप में दर्ज करें।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:28
+#, sh-format
+msgid "Setting permissions on NTFS partition $DOS_PART"
+msgstr "NTFS विभाजन $DOS_PART हेतु अनुमतियाँ निर्धारित करना जारी"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:29
+#, sh-format
+msgid "SET SECURITY FOR NTFS PARTITION $DOS_PART"
+msgstr "NTFS विभाजन $DOS_PART हेतु सुरक्षा निर्धारित करना जारी"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:31
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:54
+#, sh-format
+msgid ""
+"Because users could go snooping through (or destroy, depending on the "
+"settings) your Windows partition, you should choose how much access would "
+"you like your non-root users to have to partition $DOS_PART.  The access "
+"level can range from no access at all, to read-only for everyone, to read-"
+"write access for every user on the machine.  A reasonable default (read-"
+"write for root only) is chosen, but you may set this any way that you like."
+msgstr "उपयोक्ताओं द्वारा आपके विंडोज विभाजन की सामग्री हेतु निर्विरोध अभिगम करना (या सेटिंग्स अनुसार नष्ट करना संभव है) इसीलिए आप $DOS_PART विभाजन हेतु गैर-रूट उपयोक्ताओं का अभिगम स्तर निर्धारित करें। मशीन के उपयोक्ता हेतु उपलब्ध स्तर हैं : कोई अभिगम नहीं, सभी को केवल रीड योग्य अभिगम, सभी को रीड व राइट योग्य अभिगम। एक उचित डिफ़ॉल्ट सेटिंग (केवल रूट को ही रीड व राइट उपलब्ध) चयनित है, परन्तु आप अपने अनुसार कोई अन्य सेटिंग भी सेट कर सकते हैं।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:38
+msgid "Root has read/write access, users have no access (ntfs-3g)"
+msgstr "रूट को रीड व राइट अभिगम उपलब्ध, उपयोक्ता हेतु कुछ नहीं (ntfs-3g)"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:39
+msgid "Everyone has read only access (built-in kernel ntfs driver)"
+msgstr "सभी के पास केवल रीड हेतु अभिगम (सम्मिलित कर्नेल ntfs ड्राइवर)"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:40
+msgid "Everyone has read access, but only root can write (ntfs-3g)"
+msgstr "सभी को रीड हेतु अभिगम, परन्तु केवल रूट को राइट हेतु अभिगम (ntfs-3g)"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:41
+msgid "All users can read/write to any file (ntfs-3g)"
+msgstr "सभी उपयोक्ता किसी भी फाइल पर रीड/राइट कर सकते हैं (ntfs-3g)"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:51
+#, sh-format
+msgid "Setting permissions on FAT partition $DOS_PART"
+msgstr "FAT विभाजन $DOS_PART हेतु अनुमतियाँ निर्धारित करना जारी"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:52
+#, sh-format
+msgid "SET SECURITY FOR FAT PARTITION $DOS_PART"
+msgstr "FAT विभाजन $DOS_PART हेतु सुरक्षा निर्धारित करना जारी"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:61
+msgid "Root has read/write access, users have no access"
+msgstr "रूट को रीड व राइट अभिगम उपलब्ध, उपयोक्ता हेतु कुछ नहीं"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:62
+msgid "Everyone has read only access"
+msgstr "सभी के पास केवल रीड हेतु अभिगम"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:63
+msgid "Everyone has read access, but only root can write"
+msgstr "सभी को रीड हेतु अभिगम, परन्तु केवल रूट को राइट हेतु अभिगम"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:64
+msgid "All users can read/write to any file"
+msgstr "सभी उपयोक्ता किसी भी फाइल पर रीड/राइट कर सकते हैं"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:99
+msgid "Setting up non-Linux partitions."
+msgstr "गैर-लिनक्स विभाजन सेटअप करना जारी।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:100
+msgid "FAT or NTFS PARTITIONS DETECTED"
+msgstr "FAT या NTFS विभाजन मिले"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:101
+msgid ""
+"Partitions of type FAT or NTFS (commonly used by DOS and Windows) have been "
+"found on your system.  Would you like to add these partitions to your "
+"/etc/fstab so that these partitions are visible from Linux?"
+msgstr "आपके सिस्टम पर FAT या NTFS विभाजन (सामान्यतः DOS व विंडोज द्वारा प्रयुक्त) मिले हैं। क्या आप इन विभाजनों को /etc/fstab पर जोड़ना चाहेंगे ताकि ये लिनक्स सिस्टम पर भी दृश्यमान हो?"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:113
+msgid "Selecting non-Linux partitions."
+msgstr "गैर-लिनक्स विभाजन का चयन जारी।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:115
+msgid "SELECT PARTITION TO ADD TO /etc/fstab"
+msgstr "/etc/fstab पर जोड़ने हेतु विभाजन चुनें"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:119
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:416
+msgid "Continue"
+msgstr "जारी रखें"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:121
+msgid ""
+"In order to make these partitions visible from Linux, we  need to add them "
+"to your /etc/fstab.  Please pick a partition to  add to /etc/fstab, or "
+"select '---' to continue with the installation  process."
+msgstr "इन विभाजनों को लिनक्स सिस्टम पर दृश्यमान करने हेतु आपको इन्हें /etc/fstab पर जोड़ना होगा। कृपया /etc/fstab पर जोड़ने हेतु विभाजन चुनें या '---' का चयन कर इंस्टॉल प्रक्रिया जारी रखें।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:140
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:164
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:200
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:443
+msgid "IN USE"
+msgstr "कार्यरत है"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:140
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:193
+msgid "on"
+msgstr "इस पर"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:146
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:147
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:148
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:149
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:150
+msgid "done, continue with setup"
+msgstr "पूर्ण, सेटअप जारी रखें"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:185
+#, sh-format
+msgid "Selecting a location to mount $DOS_PART."
+msgstr "$DOS_PART माउंट करने हेतु स्थान चयन जारी।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:186
+#, sh-format
+msgid "PICK MOUNT POINT FOR $DOS_PART"
+msgstr "$DOS_PART हेतु माउंट पॉइंट चुनें"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:187
+#, sh-format
+msgid ""
+"Now this partition must be mounted somewhere in your  directory tree.  "
+"Please enter the directory under which  you would like to put it.  For "
+"instance, you might want to  enter /fat-c or /fat-d or something similar.   "
+"NOTE: This partition will not actually be mounted until you reboot.   Where "
+"would you like to mount $DOS_PART?"
+msgstr "अब आपको यह विभाजन शाखानुमा क्रम युक्त डायरेक्टरी में किसी स्थान पर माउंट करना होगा। कृपया इच्छित डायरेक्टरी दर्ज करें। उदाहरण के रूप में आप /fat-c या /fat-d जैसा कुछ दर्ज करना चाहेंगे। ध्यान दें : यह विभाजन सिस्टम पुनः आरंभ के उपरांत ही माउंट होगा। आप $DOS_PART को कहाँ माउंट करना चाहते हैं?"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:216
+#: ../initrd-scripts/usr-lib-setup/SeTEFI:73
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:535
+msgid "Adding this information to your /etc/fstab:"
+msgstr "यह सूचना आपके /etc/fstab में जोड़ी जाएगी :"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:219
+msgid "Finished setting up non-Linux partitions."
+msgstr "गैर-लिनक्स विभाजन सेटअप करना पूर्ण।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:220
+msgid "DONE ADDING FAT or NTFS PARTITIONS"
+msgstr "FAT या NTFS विभाजन जोड़ना पूर्ण"
+
+#: ../initrd-scripts/usr-lib-setup/SeTEFI:44
+#, sh-format
+msgid "FORMAT EFI PARTITION ${PREFERRED_EFI_PARTITION}?"
+msgstr "EFI विभाजन ${PREFERRED_EFI_PARTITION} को फॉर्मेट करें?"
+
+#: ../initrd-scripts/usr-lib-setup/SeTEFI:45
+#, sh-format
+msgid ""
+"An EFI System Partition was found on ${PREFERRED_EFI_PARTITION}, but it has "
+"not yet been formatted.  Would you like to format this partition?"
+msgstr "${PREFERRED_EFI_PARTITION} पर EFI सिस्टम विभाजन प्राप्त, परन्तु उसे अभी तक फॉर्मेट नहीं किया गया है। क्या आप इस विभाजन को फॉर्मेट करना चाहते हैं?"
+
+#: ../initrd-scripts/usr-lib-setup/SeTEFI:53
+#, sh-format
+msgid "FORMATTING EFI PARTITION ${PREFERRED_EFI_PARTITION}"
+msgstr "EFI विभाजन ${PREFERRED_EFI_PARTITION} को फॉर्मेट करना जारी"
+
+#: ../initrd-scripts/usr-lib-setup/SeTEFI:54
+#, sh-format
+msgid "Formatting EFI System Partition ${PREFERRED_EFI_PARTITION} as FAT32."
+msgstr "EFI सिस्टम विभाजन ${PREFERRED_EFI_PARTITION} को FAT32 के रूप में फॉर्मेट करना जारी।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTEFI:76
+msgid "Finished setting up EFI System Partition."
+msgstr "EFI सिस्टम विभाजन सेटअप करना पूर्ण।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTEFI:77
+msgid "EFI SYSTEM PARTITION RECOGNIZED"
+msgstr "EFI सिस्टम विभाजन मिला"
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:67
+msgid "DONE INSTALLING PACKAGES"
+msgstr "पैकेज इंस्टॉल करना पूर्ण"
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:68
+msgid "Preparing to configure your new Linux system..."
+msgstr "आपके नवीन लिनक्स सिस्टम के विन्यास की तैयारी जारी..."
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:73
+msgid "Boot Loader"
+msgstr "बूट लोड साधन"
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:74
+msgid "Please choose the Boot Loader that you would like to use"
+msgstr "कृपया उपयोग हेतु इच्छित बूट लोड साधन चुनें"
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:76
+msgid "Install Lilo"
+msgstr "लीलो इंस्टॉल करें"
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:77
+msgid "Install Grub"
+msgstr "Grub लीलो इंस्टॉल करें"
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:78
+msgid "(Do not install boot loader)"
+msgstr "(बूट लोड साधन इंस्टॉल न करें)"
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:207
+msgid "Loading locales..."
+msgstr "स्थानिकी लोड हो रही है ..."
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:211
+msgid "Updating caches..."
+msgstr "कैश अपडेट हो रही है ..."
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:216
+msgid "Numlock configuration"
+msgstr "नमलॉक विन्यास"
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:217
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:230
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:239
+msgid "Enabled"
+msgstr "सक्रिय"
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:217
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:230
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:239
+msgid "Disabled"
+msgstr "निष्क्रिय"
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:218
+msgid "Do you want to have numlock enabled or disabled on boot?"
+msgstr "आप सिस्टम आरंभ पर नमलॉक को सक्रिय चाहते हैं या निष्क्रिय?"
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:229
+msgid "IBus configuration"
+msgstr "आईबस विन्यास"
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:232
+msgid ""
+"IBus is an input platform for Chinese, Japanese, Korean and many other "
+"languages. Do you want to have it enabled or disabled on boot?"
+msgstr "आईबस - चीनी, जापानी, कोरियाई व कई अन्य भाषाओँ हेतु एक इनपुट माध्यम है। आप सिस्टम आरंभ पर इसे सक्रिय चाहते हैं या निष्क्रिय?"
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:238
+msgid "SCIM configuration"
+msgstr "एससीआईएम विन्यास"
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:241
+msgid ""
+"SCIM is an input platform for Chinese, Japanese, Korean and many other "
+"languages. Do you want to have it enabled or disabled on boot?"
+msgstr "एससीआईएम - चीनी, जापानी, कोरियाई व कई अन्य भाषाओँ हेतु एक इनपुट माध्यम है। आप सिस्टम आरंभ पर इसे सक्रिय चाहते हैं या निष्क्रिय?"
+
+#: ../initrd-scripts/usr-lib-setup/SeTdisk:21
+msgid "Go"
+msgstr "जारी रखें"
+
+#: ../initrd-scripts/usr-lib-setup/SeTdisk:22
+msgid "Exit"
+msgstr "बंद करें"
+
+#: ../initrd-scripts/usr-lib-setup/SeTdisk:23
+msgid "PARTITIONS EDITOR"
+msgstr "विभाजन संपादक"
+
+#: ../initrd-scripts/usr-lib-setup/SeTdisk:24
+msgid ""
+"Welcome to the Salix partition editor. Press <SPACE> to select a disk and "
+"select Go to start partitioning. If you don't want to alter the partition "
+"layout, select Exit."
+msgstr "सेलिक्स विभाजन संपादक में स्वागत है। डिस्क चयन करने हेतु <SPACE> दबाएं व इसके बाद विभाजन संपादन आरंभ करने हेतु जारी रखें चुनें। यदि आप विभाजन अभिन्यास में परिवर्तन नहीं करना चाहते हैं तो बंद करें को चुनें।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTdisk:28
+msgid ""
+"NOTE: If you are planning to use BTRFS for your / filesystem, LILO the "
+"default boot loader will not be able to boot it. In that case, you will need"
+" a separate /boot partition with another filesystem."
+msgstr "ध्यान दें : यदि आप / फाइल सिस्टम हेतु BTRFS उपयोग करना कहते हैं तो यह जान लें कि डिफ़ॉल्ट बूट लोड साधन - लीलो द्वारा इसे बूट करना संभव नहीं है। इस स्थिति में आपको अन्य फाइल सिस्टम पर एक पृथक /boot विभाजन की आवश्यकता होगी।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTdisk:33
+msgid "You usually need at least 2 partitions:"
+msgstr "सामान्यतः 2 विभाजनों की आवश्यकता होती है :"
+
+#: ../initrd-scripts/usr-lib-setup/SeTdisk:34
+msgid "1 LINUX bootable partition (10GB minimum recommended)"
+msgstr "1 बूट योग्य लिनक्स विभाजन (कम-से-कम 10 जीबी आकार अनुशंसित)"
+
+#: ../initrd-scripts/usr-lib-setup/SeTdisk:35
+msgid "1 SWAP partition (1GB minimum recommended)"
+msgstr "1 स्वैप विभाजन (कम-से-कम 1 जीबी आकार अनुशंसित)"
+
+#: ../initrd-scripts/usr-lib-setup/SeTfull:15
+msgid "ERROR: TARGET PARTITION FULL"
+msgstr "त्रुटि : लक्षित विभाजन में अप्रयुक्त स्पेस नहीं है"
+
+#: ../initrd-scripts/usr-lib-setup/SeTfull:15
+msgid ""
+"Setup has detected that one or more of your target partitions has become "
+"full.  I'm sorry, but you will have to try installing again onto a partition"
+" or partitions with more free space.  You could also try selecting fewer "
+"packages to install.  Since there is no longer any space for setup to make "
+"its temporary files, this is an unrecoverable error.  Press control-alt-"
+"delete to reboot and try again.  Before doing that, you might want to switch"
+" to another console (Alt-F2) and use df (disk free utility) to see if you "
+"can get an idea of how to avoid this the next time around."
+msgstr "सेटअप द्वारा पाया गया कि एक या एकाधिक लक्षित विभाजन में अप्रयुक्त स्पेस नहीं है। क्षमा करें परन्तु आपको ऐसे विभाजन या विभाजनों पर इंस्टॉल प्रक्रिया पुनः करनी होगी जिन पर स्पेस उपलब्ध हो। आप इंस्टॉल होने वाले पैकेजों की संख्या कम कर सकते हैं। सेटअप की आवश्यक अस्थायी फाइलों के सृजन हेतु स्पेस अनुपलब्ध होने के कारण यह एक अप्राप्य त्रुटि है। Ctrl+Alt+Del द्वारा सिस्टम पुनः आरंभ करके पुनः प्रयास करें। इससे पहले आप अन्य कंसोल (Alt+F2) द्वारा df (डिस्क फ्री साधन) उपयोग कर ज्ञात करें कि डिस्क पर स्पेस कहाँ व कैसे प्रयुक्त है।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTkeymap:18
+msgid "KEYBOARD MAP SELECTION"
+msgstr "कुंजीपटल अभिन्यास चयन"
+
+#: ../initrd-scripts/usr-lib-setup/SeTkeymap:21
+#, sh-format
+msgid ""
+"You may select one of the following keyboard maps.  If you do not select a "
+"keyboard map, $DefaultKeyMap is the current value.  Use the UP/DOWN arrow "
+"keys and PageUp/PageDown to scroll through the whole list of choices."
+msgstr "आप निम्नलिखित में से कुंजीपटल अभिन्यास का चयन कर सकते हैं। कोई चयन नहीं होने पर, वर्तमान मान $DefaultKeyMap होगा। ऊपर/नीचे तीर कुंजी व PgUp/PgDn द्वारा उपलब्ध विकल्पों की पूर्ण सूची देखें।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTkeymap:198
+msgid "Test keyboard map"
+msgstr "कुंजीपटल अभिन्यास जाँचें"
+
+#: ../initrd-scripts/usr-lib-setup/SeTkeymap:199
+msgid "Accept keymap"
+msgstr "कुंजीपटल अभिन्यास स्वीकारें"
+
+#: ../initrd-scripts/usr-lib-setup/SeTkeymap:200
+msgid "Reject keymap"
+msgstr "कुंजीपटल अभिन्यास नकारें"
+
+#: ../initrd-scripts/usr-lib-setup/SeTkeymap:201
+msgid ""
+"You may now test the new keyboard map by typing some text. You can accept "
+"the keyboard map or reject it and select another one. The installer only "
+"supports ASCII characters, so don't try any special characters here or use "
+"them during installation!"
+msgstr "अब आप कुछ शब्द टाइप कर अपने नवीन कुंजीपटल अभिन्यास को जाँच सकते हैं। आप उसे स्वीकार या नकार सकते हैं एवं कोई अन्य चुन सकते हैं। इंस्टॉलर द्वारा केवल ASCII अक्षर समर्थित हैं अतः यहाँ या इंस्टॉल प्रक्रिया के दौरान कोई विशिष्ट अक्षर उपयोग न करें।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTmedia:11
+msgid "Select Salix installation source."
+msgstr "सेलिक्स इंस्टॉल हेतु स्रोत चयन।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTmedia:12
+msgid "SOURCE MEDIA SELECTION"
+msgstr "स्रोत मीडिया चयन"
+
+#: ../initrd-scripts/usr-lib-setup/SeTmedia:14
+msgid "Please select the media from which to install Salix Linux:"
+msgstr "कृपया सेलिक्स लिनक्स इंस्टॉल करने हेतु मीडिया चुनें :"
+
+#: ../initrd-scripts/usr-lib-setup/SeTmedia:16
+msgid "Install from a Salix USB stick"
+msgstr "सेलिक्स यूएसबी से इंस्टॉल"
+
+#: ../initrd-scripts/usr-lib-setup/SeTmedia:17
+msgid "Install from a Salix CD or DVD"
+msgstr "सेलिक्स सीडी या डीवीडी से इंस्टॉल"
+
+#: ../initrd-scripts/usr-lib-setup/SeTmedia:18
+msgid "Install from a hard drive partition"
+msgstr "हार्ड ड्राइव विभाजन से इंस्टॉल"
+
+#: ../initrd-scripts/usr-lib-setup/SeTmedia:19
+msgid "Install from a pre-mounted directory"
+msgstr "पहले से माउंट हो रखी डायरेक्टरी से इंस्टॉल"
+
+#: ../initrd-scripts/usr-lib-setup/SeTmedia:20
+msgid "Install from FTP/HTTP server"
+msgstr "एफटीपी/एचटीटीपी सर्वर से इंस्टॉल"
+
+#: ../initrd-scripts/usr-lib-setup/SeTmedia:21
+msgid "Install from NFS (Network File System)"
+msgstr "एनएफएस (नेटवर्क फाइल सिस्टम) से इंस्टॉल"
+
+#: ../initrd-scripts/usr-lib-setup/SeTmedia:22
+msgid "Install from a Samba share"
+msgstr "सहभाजित सांबा से इंस्टॉल"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:103
+msgid ""
+"\n"
+"You will now get a chance to probe your network interfaces.\n"
+msgstr "\nअब आप नेटवर्क अंतरफलक हेतु खोज कर सकते हैं।\n"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:106
+#: ../initrd-scripts/usr-lib-setup/SeTnet:119
+msgid "PROBING NETWORK DEVICES"
+msgstr "नेटवर्क उपकरणों हेतु खोज जारी"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:113
+msgid ""
+"\n"
+"Are you OK with the network interface which was detected? If not, select 'No' to get back to the network probe program. You can try to load another driver explicitly, by using 'P <driver_name>'.\n"
+"\n"
+"If you are satisfied, select 'Yes' to continue with network configuration."
+msgstr "\nक्या आपके अनुसार पहचान किए गए नेटवर्क अंतरफलक उचित है? यदि नहीं तो 'नहीं' का चयन कर नेटवर्क खोज प्रोग्राम पर वापस लौटें। आप 'P <driver_name>' उपयोग कर स्पष्ट रूप से अन्य ड्राइवर लोड करने का प्रयास कर सकते हैं।\n\nयदि आप खोज परिणामों से संतुष्ट हैं तो 'हाँ' का चयन कर नेटवर्क विन्यास जारी रखें।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:135
+#: ../initrd-scripts/usr-lib-setup/SeTnet:291
+msgid "INITIALIZING NETWORK"
+msgstr "नेटवर्क आरंभ हो रहा है"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:136
+msgid ""
+"\n"
+"Waiting a few seconds for DHCP polling to settle ..."
+msgstr "\nडीएचसीपी द्वारा नेटवर्क उपलब्धता जाँच के कारण कुछ सेकंड के लिए प्रतीक्षारत ..."
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:159
+msgid ""
+"You're running off the hard drive filesystem. Is this machine currently running on the network you plan to install from? If so, we won't try to reconfigure your ethernet card.\n"
+"\n"
+"Are you up-and-running on the network?"
+msgstr "आप अभी हार्ड ड्राइव फाइल सिस्टम उपयोग कर रहे हैं। क्या यह मशीन भी वहीँ नेटवर्क उपयोग कर रही हैं जिस द्वारा आप इंस्टॉल कर रहे हैं? यदि हाँ तो आपका ईथरनेट कार्ड को पुनः विन्यस्त करने का कोई प्रयास नहीं होगा।\n\nक्या आपका नेटवर्क सक्रिय व कार्यरत है?"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:164
+#: ../initrd-scripts/usr-lib-setup/SeTnet:284
+msgid "NETWORK CONFIGURATION"
+msgstr "नेटवर्क विन्यास"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:173
+#, sh-format
+msgid ""
+"\n"
+"I can configure your network interface $ENET_DEVICE fully automatically using DHCP. If you want this, please select 'yes'.\n"
+"\n"
+"If you select 'no' instead, then you will be able to assign the IP address, netmask and gateway manually.\n"
+msgstr "\nडीएचसीपी द्वारा आपके नेटवर्क अंतरफलक $ENET_DEVICE को पूर्ण रूप से स्वतः ही विन्यस्त करना संभव है। यदि आप ऐसा करना चाहते हैं तो 'हाँ' चुनें।\n\n'नहीं' चुनने पर आप आईपी पता, नेट मास्क व गेटवे स्वयं ही सेट कर सकेंगे।\n"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:180
+msgid "DHCP CONFIGURATION"
+msgstr "डीएचसीपी विन्यास"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:205
+msgid ""
+"\n"
+"You will need to enter the IP address you wish to assign to this machine. Example: 111.112.113.114\n"
+"\n"
+"What is your IP address?"
+msgstr "\nमशीन हेतु इच्छित आईपी पता दर्ज करें। उदाहरण : 111.112.113.114\n\nआपका आईपी पता क्या है ?"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:213
+msgid "ASSIGN IP ADDRESS"
+msgstr "आईपी पता निर्धारित करें"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:222
+msgid ""
+"\n"
+"Now we need to know your netmask. Typically this will be 255.255.255.0 but this can be different depending on your local setup.\n"
+"\n"
+"What is your netmask?"
+msgstr "\nअब प्रक्रिया हेतु नेट मास्क की आवश्यकता है। सामान्यतः यह 255.255.255.0 होता है परन्तु लोकल सेटअप अनुसार यह भिन्न भी हो सकता है।\n\nआपका नेट मास्क क्या है?"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:231
+msgid "ASSIGN NETMASK"
+msgstr "नेट मास्क निर्धारित करें"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:240
+msgid "Do you have a gateway?"
+msgstr "क्या आपके पास गेटवे है?"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:251
+msgid "ASSIGN GATEWAY ADDRESS"
+msgstr "गेटवे पता निर्धारित करें"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:252
+msgid ""
+"\n"
+"What is the IP address for your gateway?"
+msgstr "\nआपके गेटवे का आईपी पता क्या है?"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:272
+#, sh-format
+msgid ""
+"\n"
+"This is the proposed network configuration for $ENET_DEVICE - If this is OK, then select 'Yes'.\n"
+"If this is not OK and you want to configure again, select 'No'.\n"
+"\n"
+"* IP Address: $LOCAL_IPADDR\n"
+"* Netmask:    $LOCAL_NETMASK"
+msgstr "\n$ENET_DEVICE हेतु यह प्रस्तावित नेटवर्क विन्यास है - यदि यह उचित है तो 'हाँ' चुनें।\nयदि प्रस्ताव उचित नहीं है और आप पुनः विन्यास करना चाहते हैं तो 'नहीं' चुनें।\n\n* आईपी पता : $LOCAL_IPADDR\n* नेट मास्क   : $LOCAL_NETMASK"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:292
+#, sh-format
+msgid ""
+"\n"
+"Configuring your network interface $ENET_DEVICE ..."
+msgstr "\nनेटवर्क अंतरफलक $ENET_DEVICE विन्यस्त करना जारी ..."
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:329
+msgid "FETCHING CONFIGURATION"
+msgstr "विन्यास प्राप्ति जारी"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:330
+#, sh-format
+msgid ""
+"\n"
+"Attempting to fetch a remote configuration file using $PROTO ..."
+msgstr "\n$PROTO द्वारा दूरस्थ विन्यास फाइल की प्राप्ति हेतु प्रयास जारी ..."
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:27
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:48
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:73
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:98
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:123
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:146
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:165
+msgid "FORMATTING"
+msgstr "फॉर्मेट करना जारी"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:28
+#, sh-format
+msgid "Formatting $ArG1 with filesystem btrfs."
+msgstr "btrfs फाइल सिस्टम के रूप में $ArG1 को फॉर्मेट करना जारी।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:29
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE \n"
+"Filesystem type: btrfs"
+msgstr "$ArG1 को फॉर्मेट करना जारी\n1K ब्लॉक की इकाईओं में आकार : $SIZE\nफाइल सिस्टम प्रकार : btrfs"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:49
+#, sh-format
+msgid "Formatting $ArG1 with filesystem ext2."
+msgstr "ext2 फाइल सिस्टम के रूप में $ArG1 को फॉर्मेट करना जारी।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:50
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE\n"
+"Filesystem type: ext2"
+msgstr "$ArG1 को फॉर्मेट करना जारी\n1K ब्लॉक की इकाईओं में आकार : $SIZE\nफाइल सिस्टम प्रकार : ext2"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:74
+#, sh-format
+msgid "Formatting $ArG1 with filesystem ext3."
+msgstr "ext3 फाइल सिस्टम के रूप में $ArG1 को फॉर्मेट करना जारी।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:75
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE\n"
+"Filesystem type: ext3"
+msgstr "$ArG1 को फॉर्मेट करना जारी\n1K ब्लॉक की इकाईओं में आकार : $SIZE\nफाइल सिस्टम प्रकार : ext3"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:99
+#, sh-format
+msgid "Formatting $ArG1 with filesystem ext4."
+msgstr "ext4 फाइल सिस्टम के रूप में $ArG1 को फॉर्मेट करना जारी।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:100
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE\n"
+"Filesystem type: ext4"
+msgstr "$ArG1 को फॉर्मेट करना जारी\n1K ब्लॉक की इकाईओं में आकार : $SIZE\nफाइल सिस्टम प्रकार : ext4"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:124
+#, sh-format
+msgid "Formatting $ArG1 with filesystem jfs."
+msgstr "jfs फाइल सिस्टम के रूप में $ArG1 को फॉर्मेट करना जारी।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:125
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE\n"
+"Filesystem type: jfs"
+msgstr "$ArG1 को फॉर्मेट करना जारी\n1K ब्लॉक की इकाईओं में आकार : $SIZE\nफाइल सिस्टम प्रकार : jfs"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:147
+#, sh-format
+msgid "Formatting $ArG1 with filesystem reiserfs."
+msgstr "reiserfs फाइल सिस्टम के रूप में $ArG1 को फॉर्मेट करना जारी।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:148
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE\n"
+"Filesystem type: reiserfs"
+msgstr "$ArG1 को फॉर्मेट करना जारी\n1K ब्लॉक की इकाईओं में आकार : $SIZE\nफाइल सिस्टम प्रकार : reiserfs"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:166
+#, sh-format
+msgid "Formatting $ArG1 with filesystem xfs."
+msgstr "xfs फाइल सिस्टम के रूप में $ArG1 को फॉर्मेट करना जारी।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:167
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE\n"
+"Filesystem type: xfs"
+msgstr "$ArG1 को फॉर्मेट करना जारी\n1K ब्लॉक की इकाईओं में आकार : $SIZE\nफाइल सिस्टम प्रकार : xfs"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:203
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:204
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:205
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:206
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:207
+msgid "done adding partitions, continue with setup"
+msgstr "विभाजन जोड़ना पूर्ण, सेटअप करना जारी रखें"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:214
+#, sh-format
+msgid "Do you want to format Linux partition ${ArG1}?"
+msgstr "क्या आप लिनक्स विभाजन ${ArG1} को फॉर्मेट करना चाहते हैं?"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:215
+#, sh-format
+msgid "FORMAT PARTITION $ArG1"
+msgstr "$ArG1 विभाजन को फॉर्मेट करें"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:215
+#, sh-format
+msgid ""
+"If this partition has not been formatted, you should format it.  NOTE: This "
+"will erase all data on it.  Would you like to format this partition?"
+msgstr "यदि इस विभाजन को फॉर्मेट नहीं किया गया है तो आप इसे फॉर्मेट करें। ध्यान दें : इससे विभाजन पर मौजूद सारा डेटा नष्ट हो जाएगा। क्या आप इस विभाजन को फॉर्मेट करना चाहते हैं?"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:219
+msgid "Quick format with no bad block checking"
+msgstr "विकृत ब्लॉक जाँच रहित त्वरित फॉर्मेट"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:220
+msgid "Slow format that checks for bad blocks"
+msgstr "विकृत ब्लॉक जाँच सहित मंद फॉर्मेट"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:221
+msgid "No, do not format this partition"
+msgstr "इस विभाजन को फॉर्मेट न करें"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:234
+msgid "Ext2 is the traditional Linux file system and is fast and stable."
+msgstr "Ext2 - एक पारंपरिक लिनक्स फाइल सिस्टम है और यह तीव्र व स्थिर है।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:237
+msgid "Ext3 is the journaling version of the Ext2 filesystem."
+msgstr "Ext3 - Ext2 फाइल सिस्टम का जर्नल सुविधा युक्त संस्करण है।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:241
+msgid "Ext4 is the successor to the ext3 filesystem. "
+msgstr "Ext4 - Ext3 फाइल सिस्टम का ही उन्नत संस्करण है।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:245
+msgid ""
+"ReiserFS is a journaling filesystem that stores all files and filenames in a"
+" balanced tree structure."
+msgstr "ReiserFS - जर्नल सुविधा युक्त फाइल सिस्टम है जिसमें फाइल व फाइल नामों का संचय एक शाखानुमा क्रम युक्त संतुलित संरचना में होता है।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:248
+msgid "Btrfs is a B-tree copy-on-write filesystem."
+msgstr "Btrfs- बी-ट्री कॉपी-ऑन-राइट फाइल सिस्टम है।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:253
+msgid ""
+"JFS is IBM's Journaled Filesystem, currently used in IBM enterprise servers."
+msgstr "JFS - आईबीएम का जर्नल सुविधा युक्त फाइल सिस्टम है एवं यह वर्तमान में आईबीएम के उद्यम सर्वरों में प्रयुक्त होता है। "
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:256
+msgid "XFS is SGI's journaling filesystem that originated on IRIX."
+msgstr "XFS - एसजीआई का जर्नल सुविधा युक्त फाइल सिस्टम है जिसका उत्पत्ति IRIX में हुई। "
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:260
+#, sh-format
+msgid "SELECT FILESYSTEM FOR $ArG1 "
+msgstr "$ArG1 हेतु फाइल सिस्टम चुनें"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:262
+#, sh-format
+msgid "Partition $ArG1 will be formatted."
+msgstr "$ArG1 विभाजन को फॉर्मेट किया जाएगा।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:266
+msgid ""
+"Please select the type of filesystem to use for the specified device.  Here "
+"are descriptions of the available filesystems:"
+msgstr "कृपया निर्दिष्ट उपकरण पर उपयोग हेतु फाइल सिस्टम का प्रकार चुनें। उपलब्ध फाइल सिस्टम के विवरण नीचे दिए गए हैं :"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:271
+msgid "Standard Linux Ext2 Filesystem"
+msgstr "सामान्य लिनक्स Ext2 फाइल सिस्टम"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:274
+msgid "Ext3 Journaling Filesystem"
+msgstr "Ext3 जर्नल युक्त फाइल सिस्टम"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:277
+msgid "Ext4 Journaling Filesystem"
+msgstr "Ext4 जर्नल युक्त फाइल सिस्टम"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:280
+msgid "IBM's Journaled Filesystem"
+msgstr "आईबीएम का जर्नल युक्त फाइल सिस्टम"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:283
+msgid "ReiserFS Journaling Filesystem"
+msgstr "Reiserfs जर्नल युक्त फाइल सिस्टम"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:286
+msgid "Btrfs Copy-on-Write B-tree Filesystem"
+msgstr "Btrfs कॉपी-ऑन-राइट बी-ट्री फाइल सिस्टम"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:289
+msgid "SGI's Journaling Filesystem"
+msgstr "एसजीआई का जर्नल युक्त फाइल सिस्टम"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:319
+msgid "Setting up root Linux partition."
+msgstr "रूट लिनक्स विभाजन सेटअप करना जारी।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:321
+msgid "Select Linux installation partition:"
+msgstr "लिनक्स इंस्टॉल हेतु विभाजन चुनें :"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:325
+msgid "Cancel"
+msgstr "रद्द करें"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:327
+msgid ""
+"Please select a partition from the following list to use for your root (/) "
+"Linux partition."
+msgstr "कृपया अपने रूट (/) लिनक्स विभाजन हेतु उपयोग करने के लिए निम्नलिखित सूची से एक विभाजन चुनें।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:410
+msgid "Setting up other Linux partitions."
+msgstr "अन्य लिनक्स विभाजन सेटअप करना जारी।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:412
+msgid "Select other Linux partitions for /etc/fstab"
+msgstr "/etc/fstab हेतु अन्य लिनक्स विभाजन चुनें"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:418
+#, sh-format
+msgid ""
+"You seem to have more than one partition tagged as type Linux.  You may use "
+"these to distribute your Linux system across more than one partition.  "
+"Currently, you have $ROOT_DEVICE mounted as your / partition.  You might "
+"want to mount directories such as /home or /usr/local on separate "
+"partitions.  You should not try to mount /etc, /sbin, or /bin on their own "
+"partitions since they contain utilities needed to bring the system up and "
+"mount partitions.  Also, do not reuse a partition that you've already "
+"entered before.  Please select one of the Linux partitions listed below, or "
+"if you're done, hit <Continue>."
+msgstr "प्रतीत होता है कि एकाधिक विभाजनों के साथ संलग्न उपनाम का प्रकार लिनक्स है। आप इनके द्वारा अपने लिनक्स सिस्टम को एकाधिक विभाजनों पर वितरित कर सकते हैं। वर्तमान में आपके / विभाजन के रूप में $ROOT_DEVICE माउंट है। संभवतः आप /home या /usr/local जैसी डायरेक्टरी को भी भिन्न विभाजनों पर माउंट करना चाहेंगे। /etc, /sbin या /binको उनके विभाजनों पर माउंट करने का प्रयास न करें क्योंकि उनमें मौजूद साधन सिस्टम आरंभ करने व विभाजन माउंट प्रक्रिया हेतु आवश्यक है। इसके अतिरिक्त वह विभाजन पुनः उपयोग न करें जिसे आप पहले ही दर्ज कर चुके हैं। कृपया निम्नलिखित में से कोई लिनक्स विभाजन चुनें या फिर यदि आपके अनुसार प्रक्रिया पूर्ण हो गई है तो <Continue> दबाएँ।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:453
+#, sh-format
+msgid "Partition $NEXT_PARTITION will not be reformatted."
+msgstr "$NEXT_PARTITION विभाजन को फॉर्मेट नहीं किया जाएगा।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:458
+#, sh-format
+msgid "Partition $NEXT_PARTITION will be formatted with $NEXT_SYS_TYPE."
+msgstr "$NEXT_PARTITION विभाजन को  $NEXT_SYS_TYPE के रूप में फॉर्मेट किया जाएगा।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:495
+#, sh-format
+msgid "SELECT MOUNT POINT FOR $NEXT_PARTITION"
+msgstr "$NEXT_PARTITION हेतु माउंट पॉइंट चुनें"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:496
+#, sh-format
+msgid ""
+"OK, now you need to specify where you want the new partition mounted.  For example, if you want to put it under /usr/local, then respond:  /usr/local\n"
+"Where would you like to mount $NEXT_PARTITION?"
+msgstr "अब आपको विभाजन माउंट करने हेतु स्थान निर्दिष्ट करना होगा। उदाहरण के तौर पर यदि इच्छित स्थान /usr/local है तो आपको /usr/local दर्ज करना होगा।\nआप $NEXT_PARTITION को कहाँ माउंट करना चाहते हैं?"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:538
+msgid "Finished setting up Linux partitions."
+msgstr "लिनक्स विभाजन सेटअप करना पूर्ण।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:539
+msgid "DONE ADDING LINUX PARTITIONS TO /etc/fstab"
+msgstr "/etc/fstab पर लिनक्स विभाजन जोड़ना पूर्ण"
+
+#: ../initrd-scripts/usr-lib-setup/SeTswap:26
+msgid "NO SWAP SPACE DETECTED"
+msgstr "कोई स्वैप स्पेस नहीं मिला"
+
+#: ../initrd-scripts/usr-lib-setup/SeTswap:26
+msgid ""
+"You have not created a swap partition with Linux fdisk.  Do you want to "
+"continue installing without one? "
+msgstr "आपने लिनक्स fdisk द्वारा स्वैप विभाजन का सृजन नहीं किया है। क्या आप इसके बिना ही इंस्टॉल प्रक्रिया जारी रखना चाहते हैं?"
+
+#: ../initrd-scripts/usr-lib-setup/SeTswap:30
+msgid "ABORTING INSTALLATION"
+msgstr "इंस्टॉल रद्द हो रहा है"
+
+#: ../initrd-scripts/usr-lib-setup/SeTswap:30
+msgid "Create a swap partition with Linux fdisk, and then try this again."
+msgstr "लिनक्स fdisk द्वारा स्वैप विभाजन का सृजन करें व इसके उपरांत पुनः प्रयास करें।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTswap:39
+#: ../initrd-scripts/usr-lib-setup/SeTswap:79
+msgid "Setting up swap partitions."
+msgstr "स्वैप विभाजन सेट करना जारी"
+
+#: ../initrd-scripts/usr-lib-setup/SeTswap:41
+msgid "SWAP SPACE DETECTED"
+msgstr "स्वैप स्पेस मिला"
+
+#: ../initrd-scripts/usr-lib-setup/SeTswap:43
+msgid ""
+"Salix Setup has detected one or more swap partitions on your system.  These "
+"partitions have been preselected to be set up as swap space.  If there are "
+"any swap partitions that you do not wish to use with this installation, "
+"please unselect them with the up and down arrows and spacebar.  If you wish "
+"to use all of them (this is recommended), simply hit the ENTER key."
+msgstr "सेलिक्स सेटअप द्वारा आपके सिस्टम पर एक या अधिक स्वैप विभाजन की पहचान की गई। ये विभाजन स्वैप स्पेस हेतु प्रयुक्त होने के लिए पहले से चयनित हैं। यदि आप इन स्वैप विभाजनों में से किसी को उस इंस्टॉल हेतु उपयोग करना नहीं चाहते हैं तो कृपया इच्छित विभाजनों को ऊपर/नीचे तीर कुंजी व स्पेस बार द्वारा उन्हें अचयनित करें। यदि आप उन सभी को उपयोग करना चाहते हैं (अनुशंसित) तो केवल एंटर कुंजी दबाकर प्रक्रिया जारी रखें।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTswap:56
+#, sh-format
+msgid "Linux swap partition, ${PARTSIZE}"
+msgstr "लिनक्स स्वैप विभाजन, ${PARTSIZE}"
+
+#: ../initrd-scripts/usr-lib-setup/SeTswap:80
+msgid "CHECK SWAP PARTITIONS FOR BAD BLOCKS?"
+msgstr "स्वैप विभाजनों की विकृत ब्लॉक हेतु जाँच करें?"
+
+#: ../initrd-scripts/usr-lib-setup/SeTswap:81
+msgid ""
+"Salix Setup will now prepare your system's swap space.  When formatting swap"
+" partitions with mkswap you may also check them for bad blocks.  This is not"
+" the default since nearly all modern hard drives check themselves for bad "
+"blocks anyway.  Would you like to check for bad blocks while running mkswap?"
+msgstr "अब सेलिक्स सेटअप आपके सिस्टम हेतु स्वैप स्पेस निर्धारित करेगा। mkswap द्वारा स्वैप विभाजन फॉर्मेट करते समय आप उन्हें विकृत ब्लॉक हेतु जाँच भी सकते हैं। यह एक डिफ़ॉल्ट सेटिंग नहीं है क्योंकि लगभग सभी आधुनिक हार्ड ड्राइव स्वतः ही में विकृत ब्लॉकों की जाँच करने में सक्षम हैं। क्या आप mkswap के निष्पादन के दौरान विकृत ब्लॉक जाँचना चाहते हैं?"
+
+#: ../initrd-scripts/usr-lib-setup/SeTswap:101
+#, sh-format
+msgid "Activating swap partition ${swappartition}:"
+msgstr "स्वैप विभाजन ${swappartition} करना जारी :"
+
+#: ../initrd-scripts/usr-lib-setup/SeTswap:117
+msgid ""
+"Your swapspace has been configured. This information   will be added to your"
+" /etc/fstab:"
+msgstr "आपके स्वैप स्पेस का विन्यास पूर्ण हुआ। यह सूचना आपके /etc/fstab में संलग्न होगी :"
+
+#: ../initrd-scripts/usr-lib-setup/SeTswap:122
+msgid "SWAP SPACE CONFIGURED"
+msgstr "स्वैप स्पेस विन्यास पूर्ण"
+
+#: ../initrd-scripts/usr-lib-setup/SeTusers:9
+msgid "User setup"
+msgstr "उपयोक्ता सेटअप"
+
+#: ../initrd-scripts/usr-lib-setup/SeTusers:10
+msgid ""
+"You will now be presented with some dialogs so that you can create one or "
+"more user accounts in your new system."
+msgstr "अब कुछ विंडो प्रस्तुत होंगी जिनके माध्यम से आप अपने नवीन सिस्टम हेतु एक या अधिक उपयोक्ता अकाउंट का सृजन कर सकते हैं।"
+
+#: ../initrd-scripts/usr-lib-setup/SeTusers:13
+msgid ""
+"The first user you will create, will be able to run commands as a privileged"
+" user through sudo. Any other user will not be able to run commands with "
+"sudo unless you add them to the wheel group."
+msgstr "आपके द्वारा सृजन किया गया प्रथम उपयोक्ता एक विशेषाधिकार प्राप्त उपयोक्ता होगा जो sudo द्वारा कमांड निष्पादित करने में सक्षम होगा। कोई अन्य उपयोक्ता sudo द्वारा कमांड निष्पादन नहीं कर सकता है अन्यथा उन्हें आपने व्हील समूह में जोड़ा हो। "
+
+#: ../initrd-scripts/usr-lib-setup/SeTusers:17
+msgid "The root user is disabled by default."
+msgstr "रुट उपयोक्ता डिफ़ॉल्ट रूप से निष्क्रिय।"
+
+#: ../initrd-scripts/usr-lib-setup/slackinstall:55
+msgid "FTP/HTTP DOWNLOAD FAILURE"
+msgstr "एफ़टीपी/एचटीटीपी डाउनलोड विफल"
+
+#: ../initrd-scripts/usr-lib-setup/slackinstall:77
+#, sh-format
+msgid "installpkg error #$ArG1"
+msgstr "installpkg त्रुटि #$ArG1"
+
+#: ../initrd-scripts/usr-lib-setup/slackinstall:78
+#, sh-format
+msgid ""
+"There was a fatal error attempting to install $ArG2.  The package may be "
+"corrupt, the installation media may be bad, or something else has caused the"
+" package to be unable to be read without error.  You may hit enter to "
+"continue if you wish, but if this is an important required package then your"
+" installation may not work as-is."
+msgstr "$ArG2 के इंस्टॉल का प्रयास करते समय एक गंभीर त्रुटि हुई। संभावित कारण : विकृत पैकेज, विकृत इंस्टॉल मीडिया, या किसी कारण से पैकेज रीड करने में त्रुटि हुई। यदि आप जारी रखना चाहते हैं तो एंटर कुंजी दबाएँ परन्तु यदि यह पैकेज अति आवश्यक है तो इस त्रुटि के परिणामस्वरूप आपका इंस्टॉल की अपेक्षित कार्यक्षमता प्रभावित हो सकती है।"
+
+#: ../initrd-scripts/usr-lib-setup/slackinstall:115
+msgid "Installing package set:"
+msgstr "पैकेज समूह इंस्टॉल करना जारी :"
+
+#: ../initrd-scripts/usr-lib-setup/slackinstall:125
+#: ../initrd-scripts/usr-lib-setup/slackinstall:137
+#: ../initrd-scripts/usr-lib-setup/slackinstall:151
+#: ../initrd-scripts/usr-lib-setup/slackinstall:166
+#: ../initrd-scripts/usr-lib-setup/slackinstall:179
+#: ../initrd-scripts/usr-lib-setup/slackinstall:192
+#: ../initrd-scripts/usr-lib-setup/slackinstall:203
+msgid "Installing:"
+msgstr "इंस्टॉल करना जारी :"
