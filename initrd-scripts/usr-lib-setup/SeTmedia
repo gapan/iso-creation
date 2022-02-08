@@ -2,7 +2,7 @@
 export TEXTDOMAIN=salix-installer
 TMP=/var/log/setup/tmp
 if [ ! -d $TMP ]; then
-	mkdir -p $TMP
+  mkdir -p $TMP
 fi
 
 while [ 0 ]; do

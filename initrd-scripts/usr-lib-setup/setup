@@ -92,7 +92,7 @@ select 'Exit installation'"`" 0 0 0 \
 	  # that may exist from before the boot:
 	  vgchange -ay 1> /dev/null 2> /dev/null
 	  if probe -l 2> /dev/null | grep -E 'Linux$' 1> /dev/null 2> /dev/null ; then
-		probe -l 2> /dev/null | grep -E 'Linux$' | sort 1> $TMP/SeTplist 2> /dev/null
+		probe -l 2> /dev/null | grep -E 'Linux$' | sort | uniq 1> $TMP/SeTplist 2> /dev/null
 		MAINSELECT="ADDSWAP"
 	  else
 		dialog --title "`gettext "NO LINUX PARTITIONS DETECTED"`" \
@@ -257,6 +257,10 @@ installation for any specific purpose."`
 	  --srcpath $SRCPATH --mountpoint /var/log/mount \
       --target $T_PX --series $SERIES
   fi
+  # Run ldconfig on the newly installed system:
+  if [ -x $T_PX/sbin/ldconfig ]; then
+    $T_PX/sbin/ldconfig -r $T_PX
+  fi
   MAINSELECT="CONFIGURE"
  fi
 
@@ -305,7 +309,7 @@ to replace your old /etc/fstab with the new one?"`" 0 0
  fi
 
  if [ "$MAINSELECT" = "EXIT" ]; then
-   break
+  break
  fi
 
 done # end of main loop
@@ -374,7 +378,8 @@ rmdir /var/log/mntiso 2>/dev/null
 rm -rf $TMP/pkgrepo
 rm -rf $TMP/treecache
 rm -rf $TMP/pkgcache
-rmdir /mnt/tmp/orbit-root 2> /dev/null
+rmdir ${T_PX}/tmp/orbit-root 2> /dev/null
+sync
 # end Salix setup script
 if [ $retval -eq 0 ]; then
 	reboot

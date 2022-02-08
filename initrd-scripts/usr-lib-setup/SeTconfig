@@ -108,8 +108,7 @@ if [ -d $T_PX/var/log/setup ]; then
       chroot $T_PX /sbin/vgscan --mknodes --ignorelockingfailure 1> /dev/null 2> /dev/null
     fi
   fi
-  
-  for INSTALL_SCRIPTS in $T_PX/var/log/setup/setup.*; do
+  for INSTALL_SCRIPTS in $T_PX/var/log/setup/setup.* ; do
     SCRIPT=`basename $INSTALL_SCRIPTS`
     # Here, we call each script in /var/log/setup. Two arguments are provided:
     # 1 -- the target prefix (normally /, but ${T_PX} from the bootdisk)

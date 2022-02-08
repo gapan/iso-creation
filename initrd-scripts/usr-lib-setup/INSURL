@@ -9,6 +9,7 @@ if [ -f $TMP/Punattended ]; then
  eval $(grep "^REMOTE_URL=" $TMP/Punattended)
  eval $(grep "^REMOTE_PATH=" $TMP/Punattended)
 fi
+
 # Return a package name that has been stripped of the dirname portion
 # and any of the valid extensions (only):
 pkgbase() {

@@ -191,7 +191,7 @@ Filesystem type: xfs"`" 0 0
    if mount | grep "$1 " 1> $NDIR 2> $NDIR ; then
       umount $1 2> $NDIR
    fi
-   mkfs.xfs -n ftype=1 -f $1 1> $REDIR 2> $REDIR
+   mkfs.xfs -f $1 1> $REDIR 2> $REDIR
 }
 
 # gen_part_list() - Prints out a partition listing for the system into the
@@ -570,12 +570,3 @@ dialog --backtitle "`gettext "Finished setting up Linux partitions."`" \
 --exit-label "`gettext "OK"`" \
 --textbox $TMP/tempmsg 15 80
 
-# Before calling migrate.sh we will copy $TMP/pkeymap to $TMP/SeTkeymap
-# as the latter will be migrated, not the former
-cp $TMP/Pkeymap $TMP/SeTkeymap
-
-# Now, move our /tmp storage onto the target partition if possible:
-/usr/lib/setup/migrate.sh
-
-# get back $TMP/Pkeymap
-cp $TMP/SeTkeymap $TMP/Pkeymap
