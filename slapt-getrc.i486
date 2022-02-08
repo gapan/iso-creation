@@ -6,9 +6,9 @@ WORKINGDIR=/var/slapt-get
 # under /mnt/repos
 
 # The Slackware repository
-SOURCE=file:///mnt/repos/i486/slackware-14.2/:OFFICIAL
-SOURCE=file:///mnt/repos/i486/slackware-14.2/extra/:OFFICIAL
+SOURCE=file:///mnt/repos/i486/slackware-15.0/:OFFICIAL
+#SOURCE=file:///mnt/repos/i486/slackware-15.0/extra/:OFFICIAL
 
 # The Salix repository
-SOURCE=file:///mnt/repos/i486/14.2/:PREFERRED
+SOURCE=file:///mnt/repos/i486/15.0/:PREFERRED
 
