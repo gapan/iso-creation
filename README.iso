@@ -3,16 +3,16 @@ do that, you need to edit your /etc/slapt-get/slapt-getrc file. Edit it
 with your favourite text editor (as user root) and comment every SOURCE
 line in it, by putting a # in front of every line, for example this:
 
-  SOURCE=http://download.salixos.org/i486/slackware-14.2/:OFFICIAL
+  SOURCE=http://download.salixos.org/i486/slackware-15.0/:OFFICIAL
 
 should become:
 
-  #SOURCE=http://download.salixos.org/i486/slackware-14.2/:OFFICIAL
+  #SOURCE=http://download.salixos.org/i486/slackware-15.0/:OFFICIAL
 
 then add a new SOURCE line that points to your mounted optical disc, for
 example:
 
-  SOURCE=file:///media/Salix_14.2/:OFFICIAL
+  SOURCE=file:///media/Salix_15.0/:OFFICIAL
 
 You will need to update your slapt-get package database by running:
 
