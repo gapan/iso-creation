@@ -1,7 +1,7 @@
 aaa_base
 aaa_terminfo
-acl
-attr
+aaa_glibc-solibs
+aaa_libraries
 coreutils
 etc
 glibc-zoneinfo
