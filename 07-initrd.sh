@@ -216,7 +216,7 @@ rm -f /boot/initrd-tree/{wait-for-root,rootfs,rootdev,initrd-name}
 (
   cd /boot/initrd-tree
   find . -print | cpio -o --owner root:root -H newc \
-  | xz -9 > $CWD/initrd/$arch/initrd.img
+  | xz -9 -C crc32 > $CWD/initrd/$arch/initrd.img
 )
 
 # clean up
