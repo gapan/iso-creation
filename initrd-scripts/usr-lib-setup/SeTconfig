@@ -129,6 +129,7 @@ if [ -d $T_PX/var/log/setup ]; then
             [ "$SCRIPT" == "setup.setconsolefont" ] || \
             [ "$SCRIPT" == "setup.netconfig" ] || \
             [ "$SCRIPT" == "setup.timeconfig" ] || \
+            [ "$SCRIPT" == "setup.vi-ex" ] || \
             [ "$SCRIPT" == "setup.80.make-bootdisk" ]; then
           sleep 0
          # netsetup should not be run in FULL mode
