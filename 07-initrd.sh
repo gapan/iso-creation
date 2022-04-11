@@ -184,16 +184,6 @@ rm -rf $TMPDIR
 }
 install_locales_definitions
 
-# lets'install nano, a newbie friendly text editor, and its dependency
-# libmagic.
-install_nano() {
-echo "Installing nano and its dependency libmagic..."
-tar -xf iso/salix/core/nano-*.txz -C /boot/initrd-tree usr/bin/nano
-tar -xf iso/salix/core/file-*.txz -C /boot/initrd-tree \
-  usr/lib$LIBDIRSUFFIX/libmagic.so.1.0.0
-}
-install_nano
-
 echo "Tweaking config files..."
 # network logon message
 cat << EOF > /boot/initrd-tree/etc/motd.net
