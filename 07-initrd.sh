@@ -203,7 +203,7 @@ rm -rf /boot/initrd-tree/usr/{doc,include,man,src}
 # For localization, we need /boot/initrd-tree/usr/share/locale!
 # rm -rf /boot/initrd-tree/usr/share/locale
 rm -rf /boot/initrd-tree/usr/src
-rm -rf /boot/initrd-tree/var/log/packages
+rm -rf /boot/initrd-tree/var/lib/pkgtools
 # remove cyrus-sasl stuff - No mre installed - Didier
 # rm -f /boot/initrd-tree/usr/sbin/{pluginviewer,saslauthd,sasldblistusers2,saslpasswd2,testsaslauthd}
 # rm -f /boot/initrd-tree/etc/rc.d/rc.saslauthd
