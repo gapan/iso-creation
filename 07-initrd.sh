@@ -82,7 +82,7 @@ fi
 SLACKREPO=http://download.salixos.org/$arch/slackware-$VER
 
 mkdir -p initrd/$arch
-rm -rf initrd/$arch/*initrd*.img
+rm -rf initrd/$arch/initrd.img
 
 # get the slack initrd
 echo "Getting the slackware initrd..."
