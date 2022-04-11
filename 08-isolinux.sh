@@ -29,10 +29,10 @@ mkdir -p isolinux/$arch
 
 # copy the isolinux.bin from the system (it's exactly the same for both
 # architectures)
-cp /usr/share/syslinux/isolinux.bin isolinux/$arch
+cp /usr/share/syslinux/isolinux.bin isolinux/$arch/
 
 # copy the initrd (it should already be there)
-cp initrd/$arch/*.img isolinux/$arch/
+cp initrd/$arch/initrd.img isolinux/$arch/
 
 # copy the rest of the files
 cp isolinux-files/$arch/* isolinux/$arch/
