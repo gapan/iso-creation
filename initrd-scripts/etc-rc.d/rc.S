@@ -209,7 +209,11 @@ export SLACK_KERNEL
 
 clear
 
-# Now let's start the setup
-if ! grep -wq nosetup /proc/cmdline ; then
-  /usr/lib/setup/setup
-fi
+# Inform the user, let them start the installation
+echo "Welcome to the Salix installation!"
+echo ""
+echo "You may type \"setup\" to start the installation."
+echo ""
+echo "You can also use this installation medium as a rescue system."
+echo "You can open additional virtual terminals by using Ctrl-Alt-F1 to F4."
+echo ""
