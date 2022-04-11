@@ -1088,7 +1088,7 @@ msgstr "Selecció d'una ubicació per muntar-hi $DOS_PART."
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:186
 #, sh-format
 msgid "PICK MOUNT POINT FOR $DOS_PART"
-msgstr "ESCOLLIU UN PUNT DE MUNTATGE PER A "
+msgstr "ESCOLLIU UN PUNT DE MUNTATGE PER A $DOS_PART"
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:187
 #, sh-format

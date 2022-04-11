@@ -1448,7 +1448,7 @@ msgid ""
 "\n"
 "* IP Address: $LOCAL_IPADDR\n"
 "* Netmask:    $LOCAL_NETMASK"
-msgstr "\nEzk lesznek a hálózati eszköz, $ENET_DEVICE beállításai. Ha megfelelő, válassza az \"Igent\"-t!\nHa nem elégedett, válassza a \"Nem\"-et!\n\n* IP cím: $LOCAL_IPADDR\n* Netmaszk: $LOCAL_IPADDR"
+msgstr "\nEzk lesznek a hálózati eszköz, $ENET_DEVICE beállításai. Ha megfelelő, válassza az \"Igent\"-t!\nHa nem elégedett, válassza a \"Nem\"-et!\n\n* IP cím: $LOCAL_IPADDR\n* Netmaszk: $LOCAL_NETMASK"
 
 #: ../initrd-scripts/usr-lib-setup/SeTnet:292
 #, sh-format
