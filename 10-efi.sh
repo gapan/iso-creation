@@ -64,9 +64,9 @@ cp /boot/elilo-x86_64.efi efi/EFI/BOOT/BOOTx64.EFI
 
 # Finally copy elilo menu files
 # in the efiboot.img
-cp efi-files/* $MOUNTPOINT/EFI/BOOT/
+cp efi-files/elilo/* $MOUNTPOINT/EFI/BOOT/
 # as well as the efi directory...
-cp efi-files/* efi/EFI/BOOT/
+cp efi-files/elilo/* efi/EFI/BOOT/
 
 # copy the kernel and initrd.img in the efi dir...
 cp kernel/x86_64/huge.s/bzImage efi/EFI/BOOT/
