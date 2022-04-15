@@ -44,7 +44,7 @@ rm -rf efi
 mkdir -p efi/EFI/BOOT
 
 # Create the efiboot.img file
-dd if=/dev/zero of=isolinux/x86_64/efiboot.img bs=1M count=51
+dd if=/dev/zero of=isolinux/x86_64/efiboot.img bs=1M count=61
 
 # Format the image as FAT12:
 mkdosfs -F 12 isolinux/x86_64/efiboot.img
