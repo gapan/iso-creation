@@ -10,7 +10,7 @@ FILES="bootx64.efi grub-embedded.cfg grub.cfg osdetect.cfg tools.cfg"
 MIRROR=https://download.salixos.org
 cd efi/EFI/BOOT
 for f in $FILES; do
-	wget -q $MIRROR/x86_64/slackware-$VER/EFI/BOOT/$f
+	[ ! -f $f ] && wget -q $MIRROR/x86_64/slackware-$VER/EFI/BOOT/$f
 done
 cd -
 cp initrd/x86_64/initrd.img efi/EFI/BOOT/
