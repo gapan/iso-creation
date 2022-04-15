@@ -47,7 +47,8 @@ answer="$(eval dialog \
 	'Openbox' 'o' \
 	'Fluxbox' 'o' \
 	'LXDE' 'o' \
-	'Core' 'o' )"
+	'Core' 'o' \
+	'None' 'o' )"
 retval=$?
 if [ $retval -eq 1 ] || [ $retval -eq 255 ]; then
 	exit 0

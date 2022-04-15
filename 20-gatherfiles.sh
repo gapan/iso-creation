@@ -12,6 +12,13 @@ else
 	arch=`cat ARCH`
 fi
 
+if [ ! -f EDITION ]; then
+	echo "No EDITION file."
+	exit 1
+else
+	edition=`cat EDITION | tr '[:upper:]' '[:lower:]'`
+fi
+
 rm -rf iso/{isolinux,kernels,README,EFI}
 
 mkdir -p iso/isolinux
@@ -25,3 +32,6 @@ if [ $arch == "x86_64" ]; then
 	cp -r efi/EFI iso/
 fi
 
+if [ $edition == "none" ]; then
+	rm iso/salix/*/*
+fi
