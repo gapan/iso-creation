@@ -33,5 +33,5 @@ if [ $arch == "x86_64" ]; then
 fi
 
 if [ $edition == "none" ]; then
-	rm iso/salix/*/*
+	rm -f iso/salix/*/*
 fi
