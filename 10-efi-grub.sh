@@ -1,5 +1,12 @@
 #!/bin/bash
 
+if [ "$UID" -ne "0" ]; then
+	echo "You need to be root to run this"
+	exit 1
+fi
+
+set -e
+
 VER=`cat VERSION`
 SLACKREPO=http://download.salixos.org/x86_64/slackware-$VER
 
@@ -18,3 +25,5 @@ cp efi-files/grub/grub.cfg efi/EFI/BOOT/
 cp kernel/x86_64/huge.s/bzImage efi/EFI/BOOT/huge.s
 wget $SLACKREPO/isolinux/efiboot.img -O isolinux/x86_64/efiboot.img
 
+echo "DONE!"
+set +e
