@@ -133,6 +133,7 @@ libpcap
 libpthread-stubs
 libpwquality
 libraw1394
+libseccomp
 libsigsegv
 libsodium
 libssh
