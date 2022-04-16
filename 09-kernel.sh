@@ -18,36 +18,36 @@ else
 	arch=`cat ARCH`
 fi
 
+if [ ! -f VERSION ]; then
+	echo "No VERSION file."
+	exit 1
+else
+	VER=`cat VERSION`
+fi
+
+REPO=https://download.salixos.org/$arch/slackware-$VER/kernels
+
 rm -rf kernel/$arch
-mkdir -p kernel/$arch
+
+get_kernel() {
+	KERNEL=$1
+	mkdir -p kernel/$arch/$KERNEL
+	cd kernel/$arch/$KERNEL
+	wget --no-verbose $REPO/$KERNEL/bzImage
+	wget --no-verbose $REPO/$KERNEL/System.map.gz
+	wget --no-verbose $REPO/$KERNEL/config
+	cd ../../..
+}
 
 # get the slack kernel
 echo "Getting the slackware kernel..."
 if [[ "$arch" == "i486" ]]; then
-	mkdir kernel/$arch/hugesmp.s
-	tar --wildcards -xf iso/salix/kernels/kernel-huge-smp-*-i686-*.txz \
-		boot/vmlinuz-huge-* -O > kernel/$arch/hugesmp.s/bzImage
-	tar --wildcards -xf iso/salix/kernels/kernel-huge-smp-*-i686-*.txz \
-		boot/System.map-huge-* -O | gzip > kernel/$arch/hugesmp.s/System.map.gz
-	tar --wildcards -xf iso/salix/kernels/kernel-huge-*-i686-*.txz \
-		boot/config-huge-* -O > kernel/$arch/hugesmp.s/config
+	get_kernel hugesmp.s
 	if [ -f iso/salix/kernels/kernel-huge-*-i586-*.txz ]; then
-		mkdir kernel/$arch/huge.s
-		tar --wildcards -xf iso/salix/kernels/kernel-huge-*-i586-*.txz \
-			boot/vmlinuz-huge-* -O > kernel/$arch/huge.s/bzImage
-		tar --wildcards -xf iso/salix/kernels/kernel-huge-*-i586-*.txz \
-			boot/System.map-huge-* -O | gzip > kernel/$arch/huge.s/System.map.gz
-		tar --wildcards -xf iso/salix/kernels/kernel-huge-*-i586-*.txz \
-			boot/config-huge-* -O > kernel/$arch/huge.s/config
+		get_kernel huge.s
 	fi
 else
-	mkdir kernel/$arch/huge.s
-	tar --wildcards -xf iso/salix/kernels/kernel-huge-*-x86_64-*.txz \
-		boot/vmlinuz-huge-* -O > kernel/$arch/huge.s/bzImage
-	tar --wildcards -xf iso/salix/kernels/kernel-huge-*-x86_64-*.txz \
-		boot/System.map-huge-* -O | gzip > kernel/$arch/huge.s/System.map.gz
-	tar --wildcards -xf iso/salix/kernels/kernel-huge-*-x86_64-*.txz \
-		boot/config-huge-* -O > kernel/$arch/huge.s/config
+	get_kernel huge.s
 fi
 
 echo "DONE!"
