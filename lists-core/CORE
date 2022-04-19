@@ -176,6 +176,7 @@ nc
 ncompress
 ncurses
 ndctl
+neovim
 net-snmp
 net-tools
 netkit-ftp
@@ -258,7 +259,6 @@ usb_modeswitch
 usbutils
 utempter
 util-linux
-vim
 vlan
 wget
 wheel-sudo
