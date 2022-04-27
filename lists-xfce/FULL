@@ -135,7 +135,7 @@ vorbis-tools
 wavpack
 webkit2gtk
 woff2
-wpa_supplicant
+wpa_supplicant-nogui
 wpebackend-fdo
 xdg-user-dirs
 xfburn
