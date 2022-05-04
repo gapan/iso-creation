@@ -180,7 +180,6 @@ libyaml
 lightdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
-liso-xfwm4-theme
 listres
 llvm
 lmdb
@@ -191,7 +190,6 @@ mate-icon-theme
 mesa
 mkcomposecache
 mkfontscale
-mowi-xfwm4-theme
 mozilla-firefox
 mozilla-nss
 mozjs78
@@ -219,6 +217,7 @@ rendercheck
 retrosmart-icon-theme
 rgb
 salix-artwork
+salix-xfwm4-theme
 salixtools-gtk
 samba
 sazanami-fonts-ttf
