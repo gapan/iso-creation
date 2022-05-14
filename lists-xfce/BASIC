@@ -6,14 +6,17 @@ alsa-oss
 alsa-plugins
 alsa-utils
 appres
+appstream-glib
 at-spi2-atk
 at-spi2-core
 atk
 audiofile
 bdftopcf
 cairo
+cmake-nogui
 cups
 cups-filters
+dconf
 dejavu-fonts-ttf
 desktop-file-utils
 enchant
@@ -22,6 +25,8 @@ esound
 exo
 fftw
 flac
+flatpak
+flatpak-tools
 font-adobe-100dpi
 font-alias
 font-bh-100dpi
@@ -79,6 +84,7 @@ imake
 intltool
 jansson
 jasper
+json-glib
 l3afpad
 lame
 lcms
@@ -146,6 +152,7 @@ libmng
 libmtp
 libnih
 libnotify
+libostree
 libpciaccess
 libplist
 libpng
@@ -216,6 +223,7 @@ radeontool
 rendercheck
 retrosmart-icon-theme
 rgb
+rpm
 salix-artwork
 salix-polkit-settings
 salix-xfwm4-theme

@@ -14,7 +14,6 @@ bsddb3
 cairomm
 catfish
 claws-mail
-dconf
 depfinder
 djvulibre
 engrampa
@@ -50,7 +49,6 @@ ipw2100-fw
 ipw2200-fw
 iso-codes
 iw
-json-glib
 keybinder3
 libao
 libass
