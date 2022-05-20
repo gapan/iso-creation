@@ -192,8 +192,6 @@ llvm
 lmdb
 luit
 makedepend
-mate-colors-icon-theme
-mate-icon-theme
 mesa
 mkcomposecache
 mkfontscale
@@ -202,7 +200,6 @@ mozilla-nss
 mozjs78
 mtdev
 numlockx
-obsidian-cursors
 openjpeg
 opus
 orc
@@ -218,6 +215,7 @@ pygobject
 pygobject3
 pygtk
 python-textconfig
+qogir-icon-theme
 qpdf
 radeontool
 rendercheck
@@ -252,7 +250,6 @@ udisks
 udisks2
 upower
 util-macros
-vanilla-dmz-cursors
 vbetool
 viewres
 volume_key
