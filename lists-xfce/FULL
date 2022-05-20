@@ -129,7 +129,7 @@ thunar-media-tags-plugin
 transmission
 tumbler
 urlgrabber
-v4l-utils
+v4l-utils-nogui
 vid.stab
 vorbis-tools
 wavpack
