@@ -92,15 +92,15 @@ mkdir -p initrd/$arch
 rm -rf initrd/$arch/initrd.img
 
 # get the slack initrd
-[ $DOWNLOAD -eq 0 ] && \
-	[ ! -f initrd/$arch/slack-initrd.img ] && \
-	echo "Getting the slackware initrd..." && \
-	rm -f initrd/$arch/slack-initrd.img && \
+if [ $DOWNLOAD -eq 0 ] && [ ! -f initrd/$arch/slack-initrd.img ]; then
+	echo "Getting the slackware initrd..."
+	rm -f initrd/$arch/slack-initrd.img
 	wget $SLACKREPO/isolinux/initrd.img -O initrd/$arch/slack-initrd.img
-[ $? -ne 0 ] && \
-	echo "Download failed" && \
-	exit 1
-
+	if [ $? -ne 0]; then
+		echo "Download failed"
+		exit 1
+	fi
+fi
 
 # unpack slack initrd
 echo "Unpacking slackware initrd..."
