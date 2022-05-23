@@ -240,5 +240,5 @@ echo "DONE!"
 
 read -p 'Delete the Slackware initrd? Enter "y" to delete: ' DELETE
 [ $DELETE == "y" ] && \
-	echo "Deleting slack-initrd.img."
+	echo "Deleting slack-initrd.img." && \
 	rm initrd/$arch/slack-initrd.img
