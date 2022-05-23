@@ -108,10 +108,7 @@ rm -rf /boot/initrd-tree
 mkdir /boot/initrd-tree
 cd /boot/initrd-tree
 xzcat < $CWD/initrd/$arch/slack-initrd.img | cpio -i
-# not needed anymore
 cd $CWD
-[ $DOWNLOAD -eq 0 ] && \
-	rm initrd/$arch/slack-initrd.img
 
 # replace rc.d scripts
 echo "Replacing rc.d scripts..."
@@ -240,3 +237,8 @@ rm -rf /boot/initrd-tree
 chown -R ${user}:users initrd
 
 echo "DONE!"
+
+read -p 'Delete the Slackware initrd? Enter "y" to delete: ' DELETE
+[ $DELETE == "y" ] && \
+	echo "Deleting slack-initrd.img."
+	rm initrd/$arch/slack-initrd.img
