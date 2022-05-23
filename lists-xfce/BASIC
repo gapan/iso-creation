@@ -85,6 +85,7 @@ intltool
 jansson
 jasper
 json-glib
+krb5
 l3afpad
 lame
 lcms
