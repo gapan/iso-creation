@@ -13,8 +13,6 @@
 #
 # You need to be running a stock slackware kernel.
 
-set -e
-
 CWD=`pwd`
 SCRIPTSDIR=$CWD/initrd-scripts
 
@@ -238,4 +236,3 @@ rm -rf /boot/initrd-tree
 chown -R ${user}:users initrd
 
 echo "DONE!"
-set +e
