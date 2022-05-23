@@ -74,6 +74,15 @@ if [ $retval -eq 1 ] || [ $retval -eq 255 ]; then
 	exit 0
 fi
 
+MSG="Do you want to download the slackware initrd? If you have done\n\
+this already, you don't have to do it again. Reply yes if you don't\n\
+know."
+
+dialog --title "Do you want to download the Slackware initrd?" \
+	--defaultno \
+	--yesno "$MSG" 0 0
+DOWNLOAD=$?
+
 unset LIBDIRSUFFIX
 if [[ "$arch" == "x86_64" ]]; then
 	export LIBDIRSUFFIX="64"
@@ -86,7 +95,9 @@ rm -rf initrd/$arch/initrd.img
 
 # get the slack initrd
 echo "Getting the slackware initrd..."
-wget $SLACKREPO/isolinux/initrd.img -O initrd/$arch/slack-initrd.img
+[ $DOWNLOAD -eq 0 ] && \
+[ ! -f initrd/$arch/slack-initrd.img ] && \
+	wget $SLACKREPO/isolinux/initrd.img -O initrd/$arch/slack-initrd.img
 
 
 # unpack slack initrd
@@ -97,7 +108,8 @@ cd /boot/initrd-tree
 xzcat < $CWD/initrd/$arch/slack-initrd.img | cpio -i
 # not needed anymore
 cd $CWD
-rm initrd/$arch/slack-initrd.img
+[ $DOWNLOAD -eq 0 ] && \
+	rm initrd/$arch/slack-initrd.img
 
 # replace rc.d scripts
 echo "Replacing rc.d scripts..."
