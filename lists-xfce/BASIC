@@ -12,6 +12,7 @@ at-spi2-core
 atk
 audiofile
 bdftopcf
+bubblewrap
 cairo
 cmake-nogui
 cups
