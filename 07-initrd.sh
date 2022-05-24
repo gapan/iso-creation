@@ -139,6 +139,14 @@ mv /boot/initrd-tree/usr/bin/xzdec /boot/initrd-tree/bin/xzdec
 }
 install_xzdec
 
+# pv is useful sometimes, especially when used with dd
+install_pv () {
+echo "Installing pv..."
+tar xf iso/salix/core/pv-*.txz -C /boot/initrd-tree usr/bin/pv
+mv /boot/initrd-tree/usr/bin/pv /boot/initrd-tree/bin/pv
+}
+install_pv
+
 # We need gettext (but not gettext-tools) - Didier
 install_gettext() {
 echo "Installing gettext..."
