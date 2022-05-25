@@ -171,7 +171,7 @@ if [ ! "$MODE" = "`gettext 'CORE'`" ]; then
 	done
 	# On EFI systems, also install the respective GUI packages
 	if [ -d /sys/firmware/efi ]; then
-		for package in $SRCPATH/efi/*.t?z ; do
+		for package in $SRCPATH/efi-gui/*.t?z ; do
 		  [ -n "$REMOTESVR" ] && get_pkg efi-gui $(basename $package) '-q'
 		  dialog --progressbox "`gettext "Installing:"` `basename $package`" 17 80 < ${package%t[glbx]z}desc
 		  spkg -i --root=$ROOTDIR -qq --no-ldconfig --no-gtk-update-icon-cache $package
