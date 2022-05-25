@@ -106,10 +106,12 @@ pidgin
 poppler-data
 pycups
 pycurl
+python-chardet
 python-pexpect
 python-pillow
 python-ptyprocess
 python-setuptools
+python-six
 pyxdg
 qrencode
 ristretto
