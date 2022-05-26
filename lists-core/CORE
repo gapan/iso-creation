@@ -59,7 +59,6 @@ gc
 gdbm
 gettext
 gettext-tools
-getty-ps
 git
 glib2
 glibc
