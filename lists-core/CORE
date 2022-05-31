@@ -232,6 +232,7 @@ slapt-get
 slapt-src
 slkbuild
 smartmontools
+sof
 spi
 spkg
 sqlite
