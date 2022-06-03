@@ -21,6 +21,7 @@ cdparanoia
 cpio
 cpufrequtils
 cracklib
+crda
 cryptsetup
 curl
 cyrus-sasl
