@@ -168,6 +168,7 @@ mhash
 mkinitrd
 mlocate
 mm
+moreutils
 most
 mpfr
 nano
@@ -202,6 +203,7 @@ pciutils
 pcmciautils
 pcre
 perl
+perl-IPC-Run
 pidentd
 pkg-config
 pkgtools
