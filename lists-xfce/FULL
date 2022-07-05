@@ -39,6 +39,7 @@ gtkman
 gtkmm3
 gtksourceview3
 gtkspell
+gucharmap
 gutenprint
 hplip-nogui
 hyphen
