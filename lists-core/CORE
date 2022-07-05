@@ -49,6 +49,7 @@ eudev
 exfatprogs
 expat
 f2fs-tools
+fakeroot
 file
 findutils
 flex
