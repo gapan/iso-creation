@@ -217,6 +217,7 @@ pygobject
 pygobject3
 pygtk
 python-textconfig
+python2-module-collection
 qogir-icon-theme
 qpdf
 radeontool
