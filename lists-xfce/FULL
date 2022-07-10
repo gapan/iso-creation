@@ -35,7 +35,6 @@ gimp
 glibmm
 gnome-keyring
 gst-plugins-good
-gtkman
 gtkmm3
 gtksourceview3
 gtkspell
