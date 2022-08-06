@@ -229,6 +229,7 @@ rendercheck
 rgb
 rpm
 salix-artwork
+salix-gtk-theme
 salix-polkit-settings
 salix-xfwm4-theme
 salixtools-gtk
