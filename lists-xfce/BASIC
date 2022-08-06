@@ -202,6 +202,7 @@ mozilla-firefox
 mozilla-nss
 mozjs78
 mtdev
+mugshot
 numlockx
 openjpeg
 opus
@@ -217,6 +218,8 @@ pycairo
 pygobject
 pygobject3
 pygtk
+python-pexpect
+python-ptyprocess
 python-textconfig
 python2-module-collection
 qogir-icon-theme
@@ -333,6 +336,7 @@ xfce4-panel-profiles-salix
 xfce4-session
 xfce4-settings
 xfce4-terminal
+xfce4-whiskermenu-plugin
 xfconf
 xfd
 xfdesktop
