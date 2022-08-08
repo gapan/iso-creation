@@ -45,7 +45,7 @@ msgstr "Selecionar outro mapa de teclado"
 msgid ""
 "Welcome to the installation of Salix, The Bonsai OS!\n"
 "Before you proceed with the rest of the installation, you might want to select your keyboard map (keymap). The current keymap is $KMAP."
-msgstr "Bem-vindo à instalação do Salix, o OS Bonsai!\nAntes de continuar com a instalação, poderá querer selecionar o seu esquema (mapa) de teclado. O esquema de teclado atual é o $KMAP."
+msgstr "Bem-vindo à instalação do Salix, o sistema operativo Bonsai!\nAntes de continuar com a instalação, poderá querer selecionar o seu esquema (mapa) de teclado. O esquema de teclado atual é o $KMAP."
 
 #: ../initrd-scripts/usr-lib-setup/setup:63
 msgid "Salix Installation"
@@ -776,7 +776,7 @@ msgstr "A INICIAR ÁRVORE DE PACOTES"
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:187
 msgid "Setting up local cache for the FTP/HTTP server's package tree ...\n"
-msgstr "Configurando cache local para a árvore de pacotes do servidor FTP/HTTP ...\n"
+msgstr "A configurar cache local para a árvore de pacotes do servidor FTP/HTTP ...\n"
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:227
 #, sh-format
@@ -991,7 +991,7 @@ msgid ""
 "level can range from no access at all, to read-only for everyone, to read-"
 "write access for every user on the machine.  A reasonable default (read-"
 "write for root only) is chosen, but you may set this any way that you like."
-msgstr "Porque os utilizadores podiam espiar (ou destruir, dependendo das definições) a sua partição Windows, deve escolher a quantidade de acesso que gostaria que seus utilizadores não-root tivessem na partição $DOS_PART. O nível de acesso varia, podendo ser nenhum acesso, apenas-leitura para todos ou até leitura-escrita para todos os utilizadores na máquina. Um padrão razoável (leitura-escrita apenas para o root) é escolhido, mas pode configurar como preferir."
+msgstr "Uma vez que os utilizadores podem bisbilhotar (ou destruir, dependendo das definições) a sua partição do Windows, deve escolher quanto acesso gostaria que seus utilizadores não-root tivessem na partição $DOS_PART. O nível de acesso pode variar entre nenhum acesso, apenas-leitura para todos e acesso de leitura-escrita para todos os utilizadores no computador. Um padrão razoável (leitura-escrita apenas para o root) é escolhido, mas pode definir isto da forma que desejar."
 
 #: ../initrd-scripts/usr-lib-setup/SeTDOS:38
 msgid "Root has read/write access, users have no access (ntfs-3g)"
@@ -1711,7 +1711,7 @@ msgstr "Selecione uma partição da lista a seguir para ser usada como a partiç
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:410
 msgid "Setting up other Linux partitions."
-msgstr "Configurando outras partições do Linux."
+msgstr "A configurar outras partições do Linux."
 
 #: ../initrd-scripts/usr-lib-setup/SeTpartitions:412
 msgid "Select other Linux partitions for /etc/fstab"
@@ -1782,7 +1782,7 @@ msgstr "Criar uma partição swap com o fdisk do Linux e então tentar novamente
 #: ../initrd-scripts/usr-lib-setup/SeTswap:39
 #: ../initrd-scripts/usr-lib-setup/SeTswap:79
 msgid "Setting up swap partitions."
-msgstr "Configurando partições swap."
+msgstr "A configurar as partições swap."
 
 #: ../initrd-scripts/usr-lib-setup/SeTswap:41
 msgid "SWAP SPACE DETECTED"
