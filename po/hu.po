@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# gapan <vlahavas@gmail.com>, 2022
 # Zoltán Siposs <zoltan.siposs@gmail.com>, 2016
 msgid ""
 msgstr ""
@@ -10,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-08 18:53+0300\n"
 "PO-Revision-Date: 2016-05-26 20:33+0000\n"
-"Last-Translator: Zoltán Siposs <zoltan.siposs@gmail.com>, 2016\n"
+"Last-Translator: gapan <vlahavas@gmail.com>, 2022\n"
 "Language-Team: Hungarian (http://www.transifex.com/gapan/salix/language/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1448,7 +1449,7 @@ msgid ""
 "\n"
 "* IP Address: $LOCAL_IPADDR\n"
 "* Netmask:    $LOCAL_NETMASK"
-msgstr "\nEzk lesznek a hálózati eszköz, $ENET_DEVICE beállításai. Ha megfelelő, válassza az \"Igent\"-t!\nHa nem elégedett, válassza a \"Nem\"-et!\n\n* IP cím: $LOCAL_IPADDR\n* Netmaszk: $LOCAL_IPADDR"
+msgstr "\nEzk lesznek a hálózati eszköz, $ENET_DEVICE beállításai. Ha megfelelő, válassza az \"Igent\"-t!\nHa nem elégedett, válassza a \"Nem\"-et!\n\n* IP cím: $LOCAL_IPADDR\n* Netmaszk: $LOCAL_NETMASK"
 
 #: ../initrd-scripts/usr-lib-setup/SeTnet:292
 #, sh-format
