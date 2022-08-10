@@ -10,20 +10,20 @@
 # gapan <vlahavas@gmail.com>, 2016
 # Yarema aka Knedlyk <yupadmin@gmail.com>, 2016
 # Кісіль Андрій <kisilams@gmail.com>, 2013
-# Микола Ткач <znadibnyk@gmail.com>, 2013
+# Микола Ткач <chistomov@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-08 18:53+0300\n"
-"PO-Revision-Date: 2017-09-22 23:42+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"PO-Revision-Date: 2016-05-26 20:33+0000\n"
+"Last-Translator: Yarema aka Knedlyk <yupadmin@gmail.com>, 2016\n"
 "Language-Team: Ukrainian (http://www.transifex.com/gapan/salix/language/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: uk\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
 #: ../initrd-scripts/usr-lib-setup/setup:51
 msgid "WELCOME TO THE SALIX INSTALLATION"
