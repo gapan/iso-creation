@@ -42,6 +42,8 @@ through the whole list of choices."`" \
 "dvorak/dvorak-l.map" "" \
 "dvorak/dvorak-r.map" "" \
 "dvorak/dvorak.map" "" \
+"dvorak/dvp.map" "" \
+"dvorak/dvpx.map" "" \
 "dvorak/no-dvorak.map" "" \
 "fgGIod/tr_f-latin5.map" "" \
 "fgGIod/trf-fgGIod.map" "" \

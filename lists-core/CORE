@@ -98,6 +98,7 @@ ispell
 jfsutils
 json-c
 kbd
+kbd-extra
 kernel-firmware
 kernel-headers
 keyutils

@@ -155,6 +155,34 @@ tar xf iso/salix/core/gettext-[[:digit:]]*.txz -C /boot/initrd-tree --wildcards 
 }
 install_gettext
 
+# add some extra keymaps
+add_keymaps () {
+echo "Adding some extra keymaps..."
+mkdir -p initrd/tmp
+tar xf iso/salix/core/kbd-extra-*.txz \
+  --strip-components=6 \
+  -C initrd/tmp/ \
+  usr/share/kbd/keymaps/i386/*/*.map.gz
+for i in `ls initrd/tmp/*.map.gz`; do
+  gunzip $i
+  loadkeys -b $i > $i.bmap
+  rm $i
+done
+cd initrd/tmp
+rename .map.bmap .bmap *.bmap
+cd -
+mkdir -p initrd/keymaps
+tar xf /boot/initrd-tree/etc/keymaps.tar.gz -C initrd/keymaps
+mv initrd/tmp/*.bmap initrd/keymaps/
+rmdir initrd/tmp
+rm /boot/initrd-tree/etc/keymaps.tar.gz
+cd initrd/keymaps
+tar cvzf /boot/initrd-tree/etc/keymaps.tar.gz *.bmap
+cd -
+rm -rf initrd/keymaps
+}
+add_keymaps
+
 # We need appropriate fonts for each locale - Didier
 install_fonts() {
 echo "Installing terminus fonts..."
