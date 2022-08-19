@@ -212,8 +212,8 @@ clear
 # Inform the user, let them start the installation
 echo "Welcome to the Salix installation!"
 echo ""
-echo "You may type \"setup\", or alternatively, \"1\" (without quotes) to"
-echo "start the installation."
+echo "You may type \"setup\" to start the installation (or you can just"
+echo "press the up arrow)"
 echo ""
 echo "You may also use this installation medium as a rescue system."
 echo "You may open additional virtual terminals by using Ctrl-Alt-F1 to F3."

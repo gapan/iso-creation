@@ -244,6 +244,9 @@ EOF
 sed "s/slackware/salix${LIBDIRSUFFIX}/g" -i /boot/initrd-tree/etc/HOSTNAME
 sed "/^127.0.0.1/s|slackware|salix${LIBDIRSUFFIX}|g" -i /boot/initrd-tree/etc/hosts
 
+# add "setup" to bash history so it can be recalled with up arrow
+echo "setup" > /boot/initrd-tree/.bash_history
+
 # remove not needed dirs
 echo "Removing unnecessary stuff..."
 rm -rf /boot/initrd-tree/usr/{doc,include,man,src}
