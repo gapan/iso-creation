@@ -776,7 +776,7 @@ msgstr "A INICIAR ÁRVORE DE PACOTES"
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:187
 msgid "Setting up local cache for the FTP/HTTP server's package tree ...\n"
-msgstr "A donfigurar cache local para a árvore de pacotes do servidor FTP/HTTP ...\n"
+msgstr "A configurar cache local para a árvore de pacotes do servidor FTP/HTTP ...\n"
 
 #: ../initrd-scripts/usr-lib-setup/INSURL:227
 #, sh-format
