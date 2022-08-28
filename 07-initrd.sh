@@ -160,24 +160,23 @@ add_keymaps () {
 echo "Adding some extra keymaps..."
 mkdir -p initrd/tmp
 tar xf iso/salix/core/kbd-extra-*.txz \
+  --wildcards \
   --strip-components=6 \
   -C initrd/tmp/ \
   usr/share/kbd/keymaps/i386/*/*.map.gz
 for i in `ls initrd/tmp/*.map.gz`; do
+  MAP=`echo $i | sed "s/\(.*\)\.map\.gz/\1/"`
   gunzip $i
-  loadkeys -b $i > $i.bmap
-  rm $i
+  loadkeys -b $MAP.map > $MAP.bmap
+  rm $MAP.map
 done
-cd initrd/tmp
-rename .map.bmap .bmap *.bmap
-cd -
 mkdir -p initrd/keymaps
 tar xf /boot/initrd-tree/etc/keymaps.tar.gz -C initrd/keymaps
 mv initrd/tmp/*.bmap initrd/keymaps/
 rmdir initrd/tmp
 rm /boot/initrd-tree/etc/keymaps.tar.gz
 cd initrd/keymaps
-tar cvzf /boot/initrd-tree/etc/keymaps.tar.gz *.bmap
+tar czf /boot/initrd-tree/etc/keymaps.tar.gz *.bmap
 cd -
 rm -rf initrd/keymaps
 }
@@ -278,6 +277,6 @@ chown -R ${user}:users initrd
 echo "DONE!"
 
 read -p 'Delete the Slackware initrd? Enter "y" to delete: ' DELETE
-[ $DELETE == "y" ] && \
+[ x"$DELETE" == "xy" ] && \
 	echo "Deleting slack-initrd.img." && \
 	rm initrd/$arch/slack-initrd.img
