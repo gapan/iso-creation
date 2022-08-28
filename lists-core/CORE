@@ -238,7 +238,6 @@ slapt-src
 slkbuild
 smartmontools
 sof
-spi
 spkg
 sqlite
 strace
