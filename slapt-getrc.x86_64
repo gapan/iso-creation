@@ -12,3 +12,6 @@ SOURCE=file:///mnt/repos/x86_64/slackware-15.0/:OFFICIAL
 # The Salix repository
 SOURCE=file:///mnt/repos/x86_64/15.0/:PREFERRED
 
+# The Xfce 4.18 repo for Salix 15.0
+SOURCE=file:///mnt/repos/x86_64/xfce4.18-15.0/:PREFERRED
+
