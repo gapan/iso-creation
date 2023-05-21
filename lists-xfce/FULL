@@ -121,6 +121,7 @@ poppler-data
 pycups
 pycurl
 python-chardet
+python-distro
 python-pillow
 python-setuptools
 python-six
