@@ -282,6 +282,8 @@ xcompmgr
 xcursor-themes
 xcursorgen
 xdbedizzy
+xdg-desktop-portal
+xdg-desktop-portal-gtk
 xdg-utils
 xdpyinfo
 xdriinfo
